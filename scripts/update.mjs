@@ -75,6 +75,23 @@ async function alive(url) {
   } catch { return false; }
 }
 
+// Aracın kendi sitesindeki paylaşım görselini (og:image) bulur
+async function ogImage(t) {
+  if (t.source === 'github') return 'https://opengraph.githubassets.com/1/' + t.repo;
+  try {
+    const r = await get(t.url, { headers });
+    if (!r.ok) return null;
+    const html = (await r.text()).slice(0, 300000);
+    for (const m of html.match(/<meta\s[^>]*>/gi) || []) {
+      if (!/(?:property|name)=["'](?:og:image|og:image:secure_url|twitter:image)["']/i.test(m)) continue;
+      const c = m.match(/content=["']([^"']+)["']/i);
+      if (!c) continue;
+      try { const u = new URL(decode(c[1]), r.url); if (u.protocol === 'https:') return u.href; } catch {}
+    }
+  } catch {}
+  return null;
+}
+
 async function updateTools() {
   const db = await read('data/tools.json', { tools: [] });
   const block = await read('data/blocklist.json', { ids: [], words: [] });
@@ -123,7 +140,17 @@ async function updateTools() {
   for (let i = 0; i < tools.length; i += 8) await Promise.all(tools.slice(i, i + 8).map(check));
   tools = tools.filter(t => !t.remove);
 
-  // c) "Yeni" rozeti
+  // c) Görseller: elle girilmiş görsellere dokunulmaz, otomatik olanlar haftada bir yenilenir
+  const weekAgo = now - 7 * 864e5;
+  const need = tools.filter(t => !t.locked && t.status !== 'inactive' && (t.imageSource === 'og' || !t.image) &&
+    (!t.imageCheckedAt || new Date(t.imageCheckedAt) < weekAgo));
+  for (let i = 0; i < need.length; i += 8) await Promise.all(need.slice(i, i + 8).map(async t => {
+    const img = await ogImage(t);
+    t.imageCheckedAt = now.toISOString();
+    if (img) { t.image = img; t.imageSource = 'og'; }
+  }));
+
+  // d) "Yeni" rozeti
   tools.forEach(t => { t.isNew = (now - new Date(t.addedAt)) < NEW_DAYS * 864e5; });
 
   await write('data/tools.json', { updatedAt: now.toISOString(), tools });
