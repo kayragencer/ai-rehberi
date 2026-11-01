@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T22:25:50.021Z",
+  "updatedAt": "2026-11-01T22:55:20.974Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -12,7 +12,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "claude-anthropic",
@@ -25,7 +26,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "midjourney",
@@ -38,7 +40,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "deepseek",
@@ -51,7 +54,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "google-gemini",
@@ -63,8 +67,9 @@
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
       "status": "active",
-      "failCount": 0,
-      "addedAt": "2026-11-02"
+      "failCount": 1,
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "perplexity",
@@ -77,7 +82,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "microsoft-copilot",
@@ -90,7 +96,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "grok",
@@ -103,7 +110,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "le-chat-mistral",
@@ -116,7 +124,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "deepl",
@@ -129,7 +138,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "flux-1-black-forest-labs",
@@ -142,7 +152,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "leonardo-ai",
@@ -155,7 +166,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "ideogram",
@@ -168,7 +180,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "adobe-firefly",
@@ -181,7 +194,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "canva-magic-studio",
@@ -194,7 +208,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "stability-ai",
@@ -207,7 +222,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "suno",
@@ -220,7 +236,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "udio",
@@ -233,7 +250,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "elevenlabs",
@@ -246,7 +264,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "cursor",
@@ -259,7 +278,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "github-copilot",
@@ -272,7 +292,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "windsurf",
@@ -285,7 +306,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "replit",
@@ -298,7 +320,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "v0-vercel",
@@ -311,7 +334,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "openai-sora",
@@ -324,7 +348,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "runway",
@@ -337,7 +362,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "pika",
@@ -350,7 +376,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "luma-dream-machine",
@@ -363,7 +390,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "kling-ai",
@@ -376,7 +404,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "heygen",
@@ -389,7 +418,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "gamma",
@@ -402,7 +432,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "notion-ai",
@@ -415,7 +446,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "jasper",
@@ -428,7 +460,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "otter-ai",
@@ -441,7 +474,8 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
     },
     {
       "id": "descript",
@@ -454,7 +488,233 @@
       "source": "curated",
       "status": "active",
       "failCount": 0,
-      "addedAt": "2026-11-02"
+      "addedAt": "2026-11-02",
+      "isNew": true
+    },
+    {
+      "id": "gh-ccch1mneyyy-dsh-go",
+      "title": "dsh-Go",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://github.com/ccch1mneyyy/dsh-Go",
+      "featured": false,
+      "desc": "dsh-go — DeepSeek Harness 装进口袋：手机本机运行，也能遥控你的电脑。\n\nAçık kaynak proje. GitHub: https://github.com/ccch1mneyyy/dsh-Go (⭐ 4591)",
+      "source": "github",
+      "repo": "ccch1mneyyy/dsh-Go",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-wangzan101-mika",
+      "title": "Mika",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://github.com/wangzan101/Mika",
+      "featured": false,
+      "desc": "An on-device AI agent for Android that operates apps and the web to get things done for you.\n\nAçık kaynak proje. GitHub: https://github.com/wangzan101/Mika (⭐ 3780)",
+      "source": "github",
+      "repo": "wangzan101/Mika",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-jackwener-dsh-android",
+      "title": "DSH-Android",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://github.com/jackwener/DSH-Android",
+      "featured": false,
+      "desc": "免 ROOT 免 Termux，一个 APK 在安卓手机上跑 DeepSeek Harness。引擎内嵌 App 进程 · 读屏操作 App · 改系统设置 · 定时/条件自动化 · 可选 Shizuku\n\nAçık kaynak proje. GitHub: https://github.com/jackwener/DSH-Android (⭐ 692)",
+      "source": "github",
+      "repo": "jackwener/DSH-Android",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-n1neman-sapper-v2",
+      "title": "sapper-v2",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://github.com/N1nEmAn/sapper-v2",
+      "featured": false,
+      "desc": "Autonomous pentest legion — AI commander + worker swarm + layered fact-intent graph. 3rd Tencent Intelligent Attack-Defense online champion (634 teams · 8h unattended · 1B tokens beat 4.5B). The Nüwa Test: give AIs Create/Language/History, let a civilization grow.\n\nAçık kaynak proje. GitHub: https://github.com/N1nEmAn/sapper-v2 (⭐ 432)",
+      "source": "github",
+      "repo": "N1nEmAn/sapper-v2",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-modelflare-ai-anymodelbot",
+      "title": "AnyModelBot",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://anymodel.bot/",
+      "featured": false,
+      "desc": "🤖 Open-source, local-first alternative to Grok Bot, OpenAI dots and Claude Duet. Your own AI bots on any model: GPT, Claude, Gemini, Grok, DeepSeek, Kimi, GLM and 70+ more through one Modelflare key. Reach them in the app, WeChat or Feishu; they remember you, work in the background, run commands and use your computer. Pay per use.\n\nAçık kaynak proje. GitHub: https://github.com/modelflare-ai/AnyModelBot (⭐ 385)",
+      "source": "github",
+      "repo": "modelflare-ai/AnyModelBot",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-wanghao-sunsky-cs329z-chinese",
+      "title": "cs329z-chinese",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://cs329z-course-review-20261029.wanghao162263.chatgpt.site",
+      "featured": false,
+      "desc": "斯坦福 Stanford CS329Z Engineering AI Agents 中文教程：面向 Python 开发者的 AI 智能体课程，19 讲与 4 项实践，涵盖 LLM、RAG、工具调用、记忆、多智能体、评测与安全。完整 Markdown、在线与离线 HTML。Chinese course notes.\n\nAçık kaynak proje. GitHub: https://github.com/wanghao-SunSky/cs329z-chinese (⭐ 384)",
+      "source": "github",
+      "repo": "wanghao-SunSky/cs329z-chinese",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-jmanico-grim-prompter",
+      "title": "grim-prompter",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://github.com/jmanico/grim-prompter",
+      "featured": false,
+      "desc": "Threat modeling for AI coding agents: point Claude Code, Codex or any agent at your repo and get an evidence-traced threat model. 36 architectures, 29 methods, MIT.\n\nAçık kaynak proje. GitHub: https://github.com/jmanico/grim-prompter (⭐ 334)",
+      "source": "github",
+      "repo": "jmanico/grim-prompter",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-junwan666-astrbot-for-android",
+      "title": "astrbot-for-android",
+      "category": "Metin",
+      "price": "Ücretsiz",
+      "url": "https://github.com/JunWan666/astrbot-for-android",
+      "featured": false,
+      "desc": "在 Android 手机上本地部署和管理 AstrBot 与 NapCat，内置 PRoot Ubuntu 运行环境，支持原生管理界面、WebUI、日志、备份恢复和独立更新，无需 Root。\n\nAçık kaynak proje. GitHub: https://github.com/JunWan666/astrbot-for-android (⭐ 303)",
+      "source": "github",
+      "repo": "JunWan666/astrbot-for-android",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-cattmonkey-chaosintelligence",
+      "title": "ChaosIntelligence",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://github.com/Cattmonkey/ChaosIntelligence",
+      "featured": false,
+      "desc": "把智能体当函数，把想法写成程序。Agent-native functional language with a CLI, Web IDE, goal-driven bots and live UI. Source-available; no AI training.\n\nAçık kaynak proje. GitHub: https://github.com/Cattmonkey/ChaosIntelligence (⭐ 205)",
+      "source": "github",
+      "repo": "Cattmonkey/ChaosIntelligence",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-tavern-labs-ai-persona-ai-sdk",
+      "title": "persona-ai-sdk",
+      "category": "Metin",
+      "price": "Ücretsiz",
+      "url": "https://www.npmjs.com/package/persona-ai-sdk",
+      "featured": false,
+      "desc": "Persona AI SDK: default personas, durable character memory, and Bedrock/OpenAI adapters in one package.\n\nAçık kaynak proje. GitHub: https://github.com/tavern-labs-ai/persona-ai-sdk (⭐ 192)",
+      "source": "github",
+      "repo": "tavern-labs-ai/persona-ai-sdk",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-rddmwmddr-android-ad-cleaner",
+      "title": "android-ad-cleaner",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://github.com/rddmwmddr/android-ad-cleaner",
+      "featured": false,
+      "desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。\n\nAçık kaynak proje. GitHub: https://github.com/rddmwmddr/android-ad-cleaner (⭐ 5625)",
+      "source": "github",
+      "repo": "rddmwmddr/android-ad-cleaner",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-jacke-pp-ai-wallet-binance",
+      "title": "ai-wallet-binance",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://www.npmjs.com/package/ai-wallet-binance",
+      "featured": false,
+      "desc": "让任何 AI 用你自己的币安 AI 钱包交易：秒买秒卖、狙击 Agent 专属发射台（Four、Flap、GANG）、AI 专属 Mint、本机交易页面。币安签名，不碰私钥。免费开源 MIT · 作者：Jacke_pp · 联系：X @Jacke_pp（私信）\n\nAçık kaynak proje. GitHub: https://github.com/jacke-pp/ai-wallet-binance (⭐ 310)",
+      "source": "github",
+      "repo": "jacke-pp/ai-wallet-binance",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-xpropel-pi-remote",
+      "title": "Pi-Remote",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://github.com/Xpropel/Pi-Remote",
+      "featured": false,
+      "desc": "Remote control for your pi coding agent. Pi-Remote mirrors live pi terminal sessions to any browser, so you can watch runs, answer prompts, and send commands from your phone — end-to-end encrypted over a self-hosted relay.\n\nAçık kaynak proje. GitHub: https://github.com/Xpropel/Pi-Remote (⭐ 200)",
+      "source": "github",
+      "repo": "Xpropel/Pi-Remote",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-patch-gg-anymove",
+      "title": "anymove",
+      "category": "Video",
+      "price": "Ücretsiz",
+      "url": "https://patch.gg",
+      "featured": false,
+      "desc": "Motion capture for any creature from one AI video: two cameras in one frame, a DINOv2 joint reader, the rig fitted in both views, a GLB out.\n\nAçık kaynak proje. GitHub: https://github.com/patch-gg/anymove (⭐ 460)",
+      "source": "github",
+      "repo": "patch-gg/anymove",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
+    },
+    {
+      "id": "gh-patch-gg-trompe",
+      "title": "trompe",
+      "category": "Görsel",
+      "price": "Ücretsiz",
+      "url": "https://patch.gg",
+      "featured": false,
+      "desc": "Texture a whole game level from a gray blockout with image models: plan cameras, paint, project, bake. Real shadows, glTF out.\n\nAçık kaynak proje. GitHub: https://github.com/patch-gg/trompe (⭐ 183)",
+      "source": "github",
+      "repo": "patch-gg/trompe",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "isNew": true
     }
   ]
 }
