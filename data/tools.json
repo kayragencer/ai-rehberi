@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T22:55:20.974Z",
+  "updatedAt": "2026-11-01T23:25:38.357Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -13,7 +13,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "claude-anthropic",
@@ -27,7 +28,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "midjourney",
@@ -41,7 +43,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "deepseek",
@@ -55,7 +58,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://www.deepseek.com/images/deepseek-social.jpg",
+      "imageSource": "og"
     },
     {
       "id": "google-gemini",
@@ -67,9 +73,10 @@
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
       "status": "active",
-      "failCount": 1,
+      "failCount": 2,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "perplexity",
@@ -83,7 +90,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "microsoft-copilot",
@@ -97,7 +105,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://copilot.microsoft.com/static/cmc/images/meta-image.jpg",
+      "imageSource": "og"
     },
     {
       "id": "grok",
@@ -111,7 +122,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://grok.com/icon-512x512.png",
+      "imageSource": "og"
     },
     {
       "id": "le-chat-mistral",
@@ -125,7 +139,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "deepl",
@@ -139,7 +154,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://www.deepl.com/img/favicon/automatic_social_share_deepl.png",
+      "imageSource": "og"
     },
     {
       "id": "flux-1-black-forest-labs",
@@ -153,7 +171,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://bfl.ai/opengraph-image-j8qpfc.png?47e2121a0eb4d5b0",
+      "imageSource": "og"
     },
     {
       "id": "leonardo-ai",
@@ -167,7 +188,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "ideogram",
@@ -181,7 +203,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "adobe-firefly",
@@ -195,7 +218,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "canva-magic-studio",
@@ -209,7 +233,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "stability-ai",
@@ -223,7 +248,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "suno",
@@ -237,7 +263,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://cdn-o.suno.com/meta-preview.jpg",
+      "imageSource": "og"
     },
     {
       "id": "udio",
@@ -251,7 +280,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://imagedelivery.net/C9yUr1FL21Q6JwfYYh2ozQ/1647e9a2-47d6-4d95-5ae0-02bae7a44000/public",
+      "imageSource": "og"
     },
     {
       "id": "elevenlabs",
@@ -265,7 +297,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://elevenlabs.io/cover.png",
+      "imageSource": "og"
     },
     {
       "id": "cursor",
@@ -279,7 +314,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/og/opengraph-default.png",
+      "imageSource": "og"
     },
     {
       "id": "github-copilot",
@@ -293,7 +331,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://images.ctfassets.net/8aevphvgewt8/4KxWJH8PVVXdqBLs1V3UJ8/7b7f6e8405daa24565374f993c0fca68/github-copilot-open-graph-img.jpg",
+      "imageSource": "og"
     },
     {
       "id": "windsurf",
@@ -307,7 +348,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://devin.ai/assets/images/desktop/og-desktop.png",
+      "imageSource": "og"
     },
     {
       "id": "replit",
@@ -321,7 +365,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://replit.com/public/images/opengraph_rebrand.jpg",
+      "imageSource": "og"
     },
     {
       "id": "v0-vercel",
@@ -335,7 +382,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://v0.app/chat/api/og",
+      "imageSource": "og"
     },
     {
       "id": "openai-sora",
@@ -349,7 +399,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "runway",
@@ -363,7 +414,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://d3phaj0sisr2ct.cloudfront.net/site/assets/homepage-og-card-v3.webp",
+      "imageSource": "og"
     },
     {
       "id": "pika",
@@ -377,7 +431,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://pika.art/brand/opengraph.png",
+      "imageSource": "og"
     },
     {
       "id": "luma-dream-machine",
@@ -391,7 +448,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://cdn.sanity.io/images/2ylxvaa2/production/ff7469d468f6f7e447ccb4a50276f1cb03c6664d-1200x630.jpg?w=1200&h=630&fm=jpg",
+      "imageSource": "og"
     },
     {
       "id": "kling-ai",
@@ -405,7 +465,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://s16-kling.klingai.com/kos/s101/nlav112918/kling-web/kling-logo-payment-en.png",
+      "imageSource": "og"
     },
     {
       "id": "heygen",
@@ -419,7 +482,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://cdn.sanity.io/images/pdhqcmb1/production/e6fbae484791e59b8d30413bb33dda951fb1027c-1200x630.png?fit=max&fm=png",
+      "imageSource": "og"
     },
     {
       "id": "gamma",
@@ -433,7 +499,8 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z"
     },
     {
       "id": "notion-ai",
@@ -447,7 +514,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://www.notion.com/front-static/meta/teams-and-agents.jpg",
+      "imageSource": "og"
     },
     {
       "id": "jasper",
@@ -461,7 +531,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://cdn.prod.website-files.com/6807ee8d73c233fb82842313/6846454bda26628fcf51d54c_9650916b48ce089735bcc21cc8e43f2f_OpenGraph%20-%20Home.png",
+      "imageSource": "og"
     },
     {
       "id": "otter-ai",
@@ -475,7 +548,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/67dd5a945aeed07e329d4e10_fb6d82f0792801a1a0d814599859e23e_og-image-otter-optim.jpg",
+      "imageSource": "og"
     },
     {
       "id": "descript",
@@ -489,7 +565,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-02",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://cdn.sanity.io/images/lsw4j9eq/production/126b70d12a747eb60c81bad5b72942f7d75041dd-1200x630.jpg?fit=max&auto=format",
+      "imageSource": "og"
     },
     {
       "id": "gh-ccch1mneyyy-dsh-go",
@@ -504,7 +583,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/ccch1mneyyy/dsh-Go",
+      "imageSource": "og"
     },
     {
       "id": "gh-wangzan101-mika",
@@ -519,7 +601,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/wangzan101/Mika",
+      "imageSource": "og"
     },
     {
       "id": "gh-jackwener-dsh-android",
@@ -534,7 +619,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/jackwener/DSH-Android",
+      "imageSource": "og"
     },
     {
       "id": "gh-n1neman-sapper-v2",
@@ -549,7 +637,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/N1nEmAn/sapper-v2",
+      "imageSource": "og"
     },
     {
       "id": "gh-modelflare-ai-anymodelbot",
@@ -564,7 +655,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/modelflare-ai/AnyModelBot",
+      "imageSource": "og"
     },
     {
       "id": "gh-wanghao-sunsky-cs329z-chinese",
@@ -579,7 +673,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/wanghao-SunSky/cs329z-chinese",
+      "imageSource": "og"
     },
     {
       "id": "gh-jmanico-grim-prompter",
@@ -594,7 +691,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/jmanico/grim-prompter",
+      "imageSource": "og"
     },
     {
       "id": "gh-junwan666-astrbot-for-android",
@@ -609,7 +709,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/JunWan666/astrbot-for-android",
+      "imageSource": "og"
     },
     {
       "id": "gh-cattmonkey-chaosintelligence",
@@ -624,7 +727,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/Cattmonkey/ChaosIntelligence",
+      "imageSource": "og"
     },
     {
       "id": "gh-tavern-labs-ai-persona-ai-sdk",
@@ -639,7 +745,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/tavern-labs-ai/persona-ai-sdk",
+      "imageSource": "og"
     },
     {
       "id": "gh-rddmwmddr-android-ad-cleaner",
@@ -654,7 +763,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/rddmwmddr/android-ad-cleaner",
+      "imageSource": "og"
     },
     {
       "id": "gh-jacke-pp-ai-wallet-binance",
@@ -669,7 +781,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/jacke-pp/ai-wallet-binance",
+      "imageSource": "og"
     },
     {
       "id": "gh-xpropel-pi-remote",
@@ -684,7 +799,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/Xpropel/Pi-Remote",
+      "imageSource": "og"
     },
     {
       "id": "gh-patch-gg-anymove",
@@ -699,7 +817,10 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
-      "isNew": true
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/patch-gg/anymove",
+      "imageSource": "og"
     },
     {
       "id": "gh-patch-gg-trompe",
@@ -714,6 +835,27 @@
       "status": "active",
       "failCount": 0,
       "addedAt": "2026-11-01",
+      "isNew": true,
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/patch-gg/trompe",
+      "imageSource": "og"
+    },
+    {
+      "id": "gh-muaaz9329-cheap-ag",
+      "title": "cheap-ag",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://cheapag.com",
+      "featured": false,
+      "desc": "50x your Claude usage with cheap-ag. Opus plans, a dirt-cheap model writes every line, and tests decide what ships. Your $20 plan stops hitting limits. One MCP server for Claude Code.\n\nAçık kaynak proje. GitHub: https://github.com/muaaz9329/cheap-ag (⭐ 193)",
+      "source": "github",
+      "repo": "muaaz9329/cheap-ag",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-01",
+      "imageCheckedAt": "2026-11-01T23:25:38.357Z",
+      "image": "https://opengraph.githubassets.com/1/muaaz9329/cheap-ag",
+      "imageSource": "og",
       "isNew": true
     }
   ]
