@@ -322,7 +322,7 @@ var CLS = {
 /* ---------- Veri ---------- */
 function buildDatabase() {
   return TOOLS.map(function(t, i) {
-    return { id: i + 1, title: t[0], category: t[1], price: t[2], url: t[3], isVip: t[4], desc: t[5], image: IMG[t[1]],
+    return { id: i + 1, title: t[0], category: t[1], price: t[2], url: t[3], isVip: t[4], desc: t[5], image: IMG[t[1]], fallback: IMG[t[1]],
              tags: [t[1].toLowerCase(), "ai", "yapay zeka"] };
   });
 }
@@ -351,6 +351,7 @@ function renderCardHTML(item, featured) {
         '<h3 class="text-lg font-bold mb-2 dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(item.title) + '</h3>' +
         '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed line-clamp-2">' + esc(item.desc) + '</p></div></div>' +
     '<div class="px-6 pb-6"><div class="w-full text-center py-2.5 dark:bg-gray-800/50 bg-gray-100 group-hover:bg-purple-600 dark:text-gray-200 text-gray-700 group-hover:text-white rounded-2xl text-xs font-bold transition">Detayları İncele & Yorumlar ↗</div></div>';
+  var im = card.querySelector('img'); im.onerror = function() { im.onerror = null; im.src = item.fallback || IMG.Metin; };
   card.querySelector('[data-fav]').onclick = function(e) { toggleFavorite(item.id, e); };
   return card;
 }
@@ -447,7 +448,7 @@ function openToolDetail(id) {
   document.getElementById('detailToolCategory').textContent = "# " + tool.category;
   document.getElementById('detailToolDesc').textContent = tool.desc;
   document.getElementById('detailToolLink').href = safeUrl(tool.url);
-  var img = document.getElementById('detailToolImage'); img.src = tool.image; img.alt = tool.title;
+  var img = document.getElementById('detailToolImage'); img.onerror = function() { img.onerror = null; img.src = tool.fallback || IMG.Metin; }; img.src = tool.image; img.alt = tool.title;
   document.getElementById('detailToolPrice').textContent = tool.price;
 
   var grid = document.getElementById('detailSameCatGrid');
@@ -459,7 +460,7 @@ function openToolDetail(id) {
     var c = document.createElement('div');
     c.className = "p-4 rounded-2xl dark:bg-gray-950 bg-gray-100 border dark:border-gray-800 border-gray-200 cursor-pointer hover:border-purple-500 transition shadow flex items-center space-x-3";
     c.onclick = function() { openToolDetail(sim.id); };
-    c.innerHTML = '<img src="' + esc(sim.image) + '" alt="" class="w-12 h-12 rounded-xl object-cover flex-shrink-0">' +
+    c.innerHTML = '<img src="' + esc(sim.image) + '" alt="" onerror="this.onerror=null;this.src=\'' + esc(sim.fallback || IMG.Metin) + '\'" class="w-12 h-12 rounded-xl object-cover flex-shrink-0">' +
       '<div class="overflow-hidden"><div class="font-bold text-xs dark:text-white text-gray-900 truncate mb-1">' + esc(sim.title) + '</div>' +
       '<div class="text-[11px] text-gray-400 truncate">' + esc(sim.price) + '</div></div>';
     grid.appendChild(c);
@@ -645,7 +646,7 @@ function refreshTools() {
       if (!d.tools || !d.tools.length) return;
       appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive'; }).map(function(t) {
         return { id: t.id, title: t.title, category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew,
-                 desc: t.desc, addedAt: t.addedAt || '', image: IMG[t.category] || IMG.Metin, tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
+                 desc: t.desc, addedAt: t.addedAt || '', image: t.image || IMG[t.category] || IMG.Metin, fallback: IMG[t.category] || IMG.Metin, tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
       if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
     }).catch(function() {});
