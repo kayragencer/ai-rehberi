@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark" id="htmlTag">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Rehberi | Türkiye'nin Yapay Zeka Dizini</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = { darkMode: 'class' }</script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Plus Jakarta Sans', sans-serif; transition: background-color .3s, color .3s; }
+.dark body { background-color: #090d16; color: #f8fafc; }
+.light body { background-color: #f1f5f9; color: #0f172a; }
+/* Açık tema: dark: öneki olmayan açık renkli yazıları okunur yap */
+html.light .text-gray-200, html.light .text-gray-300 { color: #334155; }
+html.light .text-gray-400 { color: #64748b; }
+html.light .bg-gray-800\/50, html.light .bg-gray-800 { background-color: #e2e8f0; }
+html.light .hover\:bg-gray-800:hover { background-color: #e2e8f0; }
+html.light .bg-gray-900.cat-red { background-color: #fff; }
+</style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+<header class="border-b dark:border-gray-800 border-gray-200 dark:bg-gray-950/80 bg-white/90 backdrop-blur-md p-4 sticky top-0 z-40 transition">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-2.5 cursor-pointer" onclick="switchPage('directory')">
+        <div class="w-10 h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-purple-600/30">AI</div>
+        <span class="text-xl font-bold dark:text-white text-gray-900">AI<span class="text-purple-500">Rehberi</span></span>
+      </div>
+      <nav class="hidden lg:flex items-center space-x-1 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold">
+        <button onclick="switchPage('directory')" id="navDirBtn" class="px-3.5 py-2 rounded-lg">🤖 AI Rehberi</button>
+        <button onclick="switchPage('news')" id="navNewsBtn" class="px-3.5 py-2 rounded-lg">📰 AI Haberleri</button>
+        <button onclick="switchPage('github')" id="navGitHubBtn" class="px-3.5 py-2 rounded-lg">⭐ Open-Source AI</button>
+      </nav>
+    </div>
+    <div class="flex items-center space-x-2">
+      <button onclick="toggleDarkMode()" title="Tema Değiştir" class="px-3 py-2.5 dark:bg-gray-800/60 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-300 text-gray-700 rounded-xl transition text-xs font-bold flex items-center space-x-1">
+        <span id="themeIcon">🌙</span><span class="hidden md:inline" id="themeText">Dark</span>
+      </button>
+      <button onclick="openProfileModal()" title="Favorilerim" class="p-2.5 dark:bg-gray-800/60 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-300 text-gray-700 rounded-xl transition flex items-center space-x-1">
+        <span>👤</span><span class="text-xs font-bold hidden md:inline">Profil</span>
+      </button>
+      <button onclick="openProModal()" class="px-3.5 py-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white font-bold text-xs rounded-xl shadow-lg shadow-amber-500/20 transition">PREMIUM</button>
+    </div>
+  </div>
+</header>
+
+<div class="lg:hidden flex justify-center space-x-1 p-2 dark:bg-gray-900 bg-white border-b dark:border-gray-800 border-gray-200 text-[11px] font-bold">
+  <button onclick="switchPage('directory')" id="mobDirBtn" class="flex-1 py-2 rounded-lg text-center">🤖 Rehber</button>
+  <button onclick="switchPage('news')" id="mobNewsBtn" class="flex-1 py-2 rounded-lg text-center">📰 Haberler</button>
+  <button onclick="switchPage('github')" id="mobGitHubBtn" class="flex-1 py-2 rounded-lg text-center">⭐ GitHub</button>
+</div>
+
+<main class="max-w-6xl mx-auto px-4 py-10 flex-grow w-full">
+
+  <!-- SAYFA 1 -->
+  <div id="pageDirectory" class="space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">✨ Akıllı Yapay Zeka Dizini</div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Ne Oluşturmak İstiyorsun?</h1>
+      <p class="text-gray-400 text-sm sm:text-base">İhtiyacını yaz (örn: "ses klonlama", "logo", "ChatGPT alternatifi", "video").</p>
+
+      <div class="mt-6 relative">
+        <input type="text" id="searchInput" oninput="filterTools()" placeholder="AI araçlarında ara: DeepSeek, Flux, Avatar, Logo, Python, Sora..."
+          class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 text-sm sm:text-base shadow-2xl transition">
+      </div>
+
+      <div class="flex flex-col sm:flex-row justify-between items-center mt-6 pt-4 border-t dark:border-gray-800/80 border-gray-300 text-xs gap-3">
+        <div class="flex items-center space-x-1 dark:bg-gray-900 bg-white p-1 rounded-xl border dark:border-gray-800 border-gray-300">
+          <button onclick="setPrice('all')" id="price_all" class="price-btn px-3.5 py-1.5 rounded-lg">Tüm Fiyatlar</button>
+          <button onclick="setPrice('Ücretsiz')" id="price_Ücretsiz" class="price-btn px-3.5 py-1.5 rounded-lg">Ücretsiz</button>
+          <button onclick="setPrice('Freemium')" id="price_Freemium" class="price-btn px-3.5 py-1.5 rounded-lg">Freemium</button>
+          <button onclick="setPrice('Ücretli')" id="price_Ücretli" class="price-btn px-3.5 py-1.5 rounded-lg">Ücretli</button>
+        </div>
+        <div class="text-gray-400 font-medium">Toplam <span id="resultCount" class="text-purple-400 font-bold">0</span> araç listeleniyor</div>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-2 mt-8 text-xs" id="categoryChips">
+        <button onclick="setCat('all')" id="chip_all" class="cat-btn px-3.5 py-1.5 rounded-xl">Tümü</button>
+        <button onclick="setCat('favorites')" id="chip_favorites" class="cat-btn px-3.5 py-1.5 rounded-xl">#Favorilerim ❤️</button>
+        <button onclick="setCat('Metin')" id="chip_Metin" class="cat-btn px-3.5 py-1.5 rounded-xl">#Metin & Chat</button>
+        <button onclick="setCat('Görsel')" id="chip_Görsel" class="cat-btn px-3.5 py-1.5 rounded-xl">#Görsel & Tasarım</button>
+        <button onclick="setCat('Müzik')" id="chip_Müzik" class="cat-btn px-3.5 py-1.5 rounded-xl">#Müzik & Ses</button>
+        <button onclick="setCat('Kodlama')" id="chip_Kodlama" class="cat-btn px-3.5 py-1.5 rounded-xl">#Kodlama</button>
+        <button onclick="setCat('Video')" id="chip_Video" class="cat-btn px-3.5 py-1.5 rounded-xl">#Video & 3D</button>
+        <button onclick="setCat('Üretkenlik')" id="chip_Üretkenlik" class="cat-btn px-3.5 py-1.5 rounded-xl">#Üretkenlik & SEO</button>
+      </div>
+
+      <div class="mt-10 text-left">
+        <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">🔥 Editörün Önerdiği 3 Yapay Zeka</span></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featuredRecommendedGrid"></div>
+      </div>
+    </div>
+
+    <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    <div id="favoritesRecommendedSection" class="hidden mt-16 pt-10 border-t dark:border-gray-800 border-gray-200">
+      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">💡 Favorilerine Ekleyebileceğin Editör Önerileri</span></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="favoritesRecommendedGrid"></div>
+    </div>
+
+    <div id="loadMoreContainer" class="text-center mt-12 mb-6">
+      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">⚡ Daha Fazla Yükle (+30 Araç)</button>
+    </div>
+
+    <div id="emptyState" class="hidden text-center py-20">
+      <div class="w-16 h-16 dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">🔍</div>
+      <h3 class="text-lg font-bold dark:text-white text-gray-900">Aradığınız kriterde yapay zeka bulunamadı</h3>
+      <p class="text-gray-400 text-sm mt-1">Farklı anahtar kelimeler deneyebilirsiniz.</p>
+      <button onclick="resetApp()" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold">Aramayı Sıfırla</button>
+    </div>
+  </div>
+
+  <!-- SAYFA 2 -->
+  <div id="pageNews" class="hidden space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-4">📡 Küresel AI Haber Akışı (otomatik güncellenir)</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Yapay Zeka Dünyasından Haberler</h1>
+      <p class="text-gray-400 text-sm">Yapay zeka modelleri, güncellemeler ve yeni çıkan araçlar.</p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <input type="text" id="newsSearchInput" oninput="filterNews()" placeholder="Haberlerde ara (örn: OpenAI, Google, Model)..."
+          class="w-full sm:w-96 p-3.5 pl-5 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 text-xs focus:outline-none focus:border-blue-500 shadow-xl">
+        <button onclick="fetchLiveAINews()" class="px-5 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs rounded-2xl transition shadow-lg shadow-blue-600/20">🔄 Haberleri Güncelle</button>
+      </div>
+    </div>
+    <div id="newsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="newsLoadingState" class="text-center py-20">
+      <div class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p class="text-gray-400 text-xs">Haberler yükleniyor...</p>
+    </div>
+    <p id="newsError" class="hidden text-center text-sm text-gray-400 py-10">Haberler şu an alınamadı. Lütfen daha sonra tekrar deneyin.</p>
+  </div>
+
+  <!-- SAYFA 3 -->
+  <div id="pageGitHub" class="hidden space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-8">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-500 border border-amber-500/20 mb-4">⭐ GitHub Popüler Open-Source AI Projeleri</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Popüler Açık Kaynak AI Araçları</h1>
+      <p class="text-gray-400 text-sm">Kendi bilgisayarınıza kurabileceğiniz veya bulutta çalıştırabileceğiniz popüler açık kaynak yapay zeka depoları.</p>
+    </div>
+    <div id="githubGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="githubLoadingState" class="text-center py-20">
+      <div class="w-12 h-12 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p class="text-gray-400 text-xs">GitHub API üzerinden güncel veriler çekiliyor...</p>
+    </div>
+  </div>
+
+  <!-- SAYFA 4 -->
+  <div id="pageToolDetail" class="hidden space-y-6 max-w-4xl mx-auto">
+    <div><button onclick="switchPage('directory')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-purple-600 hover:text-white transition">← Geri Dön</button></div>
+    <div class="rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl overflow-hidden">
+      <div class="h-48 sm:h-64 w-full relative overflow-hidden bg-gray-900">
+        <img id="detailToolImage" src="" alt="" class="w-full h-full object-cover opacity-90">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-4 left-6 right-6 flex items-end justify-between">
+          <div>
+            <span id="detailToolCategory" class="px-3 py-1 rounded-lg bg-purple-600 text-white text-xs font-bold inline-block mb-2 shadow"></span>
+            <h1 id="detailToolTitle" class="text-2xl sm:text-4xl font-extrabold text-white"></h1>
+          </div>
+          <span id="detailToolPrice" class="hidden sm:inline px-3 py-1 rounded-xl bg-black/60 backdrop-blur-md text-white text-xs font-bold border border-white/20"></span>
+        </div>
+      </div>
+      <div class="p-6 sm:p-10 space-y-6">
+        <div>
+          <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Araç Hakkında</h3>
+          <p id="detailToolDesc" class="dark:text-gray-300 text-gray-700 text-sm sm:text-base leading-relaxed whitespace-pre-line"></p>
+        </div>
+        <a id="detailToolLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 text-white font-bold rounded-2xl text-sm shadow-xl shadow-purple-600/20 transition">Siteye Git & Kullan ↗</a>
+      </div>
+    </div>
+
+    <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
+      <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Aynı Kategorideki Diğer Araçlar</h3>
+      <div id="detailSameCatGrid" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
+    </div>
+
+    <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl space-y-6">
+      <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider">Kullanıcı Yorumları</h3>
+      <form onsubmit="submitUserReview(event)" class="space-y-3 bg-gray-50 dark:bg-gray-950 p-4 rounded-2xl border dark:border-gray-800 border-gray-200">
+        <input type="text" id="reviewAuthor" required maxlength="40" placeholder="Adınız / Kullanıcı Adınız" class="w-full p-3 rounded-xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 text-xs dark:text-white text-gray-900 focus:outline-none focus:border-purple-500">
+        <textarea id="reviewText" required maxlength="500" rows="2" placeholder="Bu yapay zeka aracı hakkında ne düşünüyorsunuz?" class="w-full p-3 rounded-xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 text-xs dark:text-white text-gray-900 focus:outline-none focus:border-purple-500"></textarea>
+        <button type="submit" class="py-2.5 px-5 bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs rounded-xl transition shadow">Yorum Gönder</button>
+      </form>
+      <div id="detailReviewsList" class="space-y-3"></div>
+    </div>
+  </div>
+</main>
+
+<!-- Modallar -->
+<div id="newsDetailModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
+  <div class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-3xl p-6 w-full max-w-lg relative shadow-2xl">
+    <button onclick="closeNewsModal()" class="absolute top-5 right-5 text-gray-400 font-bold text-lg hover:text-blue-500">✕</button>
+    <span id="modalNewsDate" class="text-[11px] text-blue-400 font-bold"></span>
+    <h3 class="text-xl font-bold mt-1 mb-3 dark:text-white text-gray-900" id="modalNewsTitle"></h3>
+    <p class="dark:text-gray-300 text-gray-700 text-xs leading-relaxed mb-6" id="modalNewsDesc"></p>
+    <div class="flex gap-3">
+      <a id="modalNewsLink" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs text-center transition">Kaynağından Oku ↗</a>
+      <button onclick="closeNewsModal()" class="py-3 px-5 dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold rounded-xl text-xs">Kapat</button>
+    </div>
+  </div>
+</div>
+
+<div id="profileModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
+  <div class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-3xl p-6 w-full max-w-md relative shadow-2xl text-center">
+    <button onclick="closeProfileModal()" class="absolute top-5 right-5 text-gray-400 font-bold text-lg hover:text-purple-500">✕</button>
+    <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center text-3xl text-white mx-auto mb-3 shadow-xl">👤</div>
+    <h3 class="text-xl font-bold dark:text-white text-gray-900">Misafir</h3>
+    <p class="text-gray-400 text-xs mb-5">Favorilerin bu tarayıcıda saklanır.</p>
+    <div class="p-3.5 dark:bg-gray-950 bg-gray-100 rounded-2xl text-xs mb-6">
+      <div class="text-gray-400">Favoriler</div>
+      <div class="text-lg font-bold text-purple-400 mt-1" id="profFavCount">0</div>
+    </div>
+    <button onclick="switchPage('directory'); setCat('favorites'); closeProfileModal();" class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs mb-2">❤️ Favorilerime Git</button>
+    <button onclick="closeProfileModal()" class="w-full py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold rounded-xl text-xs">Kapat</button>
+  </div>
+</div>
+
+<div id="proModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
+  <div class="dark:bg-gray-900 bg-white border border-amber-500/50 rounded-3xl p-6 w-full max-w-sm text-center relative shadow-2xl">
+    <button onclick="closeProModal()" class="absolute top-4 right-4 text-gray-400 font-bold text-lg hover:text-purple-500">✕</button>
+    <div class="w-14 h-14 bg-gradient-to-tr from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl mx-auto mb-4 font-bold">★</div>
+    <h3 class="text-xl font-bold mb-1 dark:text-white text-gray-900">PREMIUM Üyelik</h3>
+    <p class="text-gray-400 text-xs mb-4">Premium üyelik çok yakında. Gelişmelerden haberdar olmak için takipte kal.</p>
+    <button onclick="closeProModal()" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold rounded-2xl text-xs">Tamam</button>
+  </div>
+</div>
+
+<footer class="border-t dark:border-gray-800 border-gray-300 dark:bg-gray-950 bg-white p-6 text-center text-xs text-gray-500 transition">
+  © 2026 AI Rehberi - Tüm Hakları Saklıdır.
+</footer>
+
+<script>
+var IMG = {
+  Metin: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80",
+  Görsel: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=1200&q=80",
+  Müzik: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80",
+  Kodlama: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+  Video: "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1200&q=80",
+  Üretkenlik: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1200&q=80"
+};
+
+// [başlık, kategori, fiyat, gerçek url, editör önerisi mi, açıklama]
+var TOOLS = [
+  ["ChatGPT (OpenAI)","Metin","Freemium","https://chatgpt.com",true,"OpenAI'ın çok modlu sohbet ve akıl yürütme asistanı.\n\nMetin, görsel ve ses girdileriyle çalışır; özetleme, çeviri, kodlama, veri analizi ve içerik üretimi gibi geniş bir alanda kullanılır. Web arama ve özelleştirilebilir GPT'ler gibi özellikler sunar."],
+  ["Claude (Anthropic)","Metin","Freemium","https://claude.ai",true,"Anthropic'in geliştirdiği yapay zeka asistanı.\n\nUzun belgeleri analiz etme, yazılım geliştirme ve akıcı Türkçe metin üretme konularında öne çıkar. Artifacts özelliğiyle kod, sayfa ve diyagramları canlı önizleyebilirsiniz."],
+  ["Midjourney","Görsel","Ücretli","https://www.midjourney.com",true,"Metin komutlarından yüksek kaliteli görseller, illüstrasyonlar ve konsept tasarımlar üreten popüler görsel yapay zeka.\n\nSanatçılar, tasarımcılar ve pazarlamacılar tarafından yaygın kullanılır."],
+  ["DeepSeek","Metin","Ücretsiz","https://www.deepseek.com",false,"Açık ağırlıklı yaklaşımı ve güçlü muhakeme (reasoning) modelleriyle bilinen yapay zeka sohbet asistanı."],
+  ["Google Gemini","Metin","Freemium","https://gemini.google.com",false,"Google'ın çok modlu yapay zeka asistanı; Google hizmetleriyle entegre çalışır."],
+  ["Perplexity","Metin","Freemium","https://www.perplexity.ai",false,"Kaynak göstererek yanıt veren yapay zeka destekli arama ve araştırma aracı."],
+  ["Microsoft Copilot","Metin","Freemium","https://copilot.microsoft.com",false,"Microsoft'un sohbet asistanı; Windows ve Office ekosistemiyle bütünleşir."],
+  ["Grok","Metin","Freemium","https://grok.com",false,"xAI tarafından geliştirilen sohbet asistanı."],
+  ["Le Chat (Mistral)","Metin","Freemium","https://chat.mistral.ai",false,"Avrupa merkezli Mistral AI'ın sohbet asistanı."],
+  ["DeepL","Metin","Freemium","https://www.deepl.com",false,"Doğal ve akıcı çeviriler sunan yapay zeka destekli çeviri aracı."],
+  ["FLUX.1 (Black Forest Labs)","Görsel","Freemium","https://bfl.ai",false,"Detay odaklı güçlü görsel üretim modelleri sunan Black Forest Labs'ın FLUX ailesi."],
+  ["Leonardo AI","Görsel","Freemium","https://leonardo.ai",false,"Oyun varlıkları, illüstrasyon ve konsept sanat için görsel üretim platformu."],
+  ["Ideogram","Görsel","Freemium","https://ideogram.ai",false,"Görsel içinde okunaklı metin üretmede güçlü görsel yapay zeka."],
+  ["Adobe Firefly","Görsel","Freemium","https://firefly.adobe.com",false,"Adobe'nin üretken görsel yapay zeka aracı; Photoshop ve Illustrator ile entegre."],
+  ["Canva (Magic Studio)","Görsel","Freemium","https://www.canva.com",false,"Yapay zeka destekli tasarım özellikleriyle sosyal medya, sunum ve logo tasarım platformu."],
+  ["Stability AI","Görsel","Freemium","https://stability.ai",false,"Stable Diffusion modellerinin geliştiricisi; açık kaynak görsel üretim çözümleri."],
+  ["Suno","Müzik","Freemium","https://suno.com",false,"Söz ve müzik tarzı girerek saniyeler içinde şarkı üreten yapay zeka."],
+  ["Udio","Müzik","Freemium","https://www.udio.com",false,"Metin komutlarından müzik üreten yapay zeka platformu."],
+  ["ElevenLabs","Müzik","Freemium","https://elevenlabs.io",false,"Gerçekçi metinden sese (TTS), ses klonlama ve dublaj aracı."],
+  ["Cursor","Kodlama","Freemium","https://cursor.com",false,"Tüm kod tabanınızı anlayan, yapay zeka odaklı kod editörü."],
+  ["GitHub Copilot","Kodlama","Freemium","https://github.com/features/copilot",false,"Editörünüzde kod tamamlama ve sohbet desteği sunan yapay zeka kodlama yardımcısı."],
+  ["Windsurf","Kodlama","Freemium","https://windsurf.com",false,"Ajan tabanlı çalışan yapay zeka destekli IDE."],
+  ["Replit","Kodlama","Freemium","https://replit.com",false,"Tarayıcıda kod yazın, yapay zeka ajanıyla uygulama geliştirin ve yayınlayın."],
+  ["v0 (Vercel)","Kodlama","Freemium","https://v0.dev",false,"Metin komutlarından React/Tailwind arayüz ve uygulama üreten araç."],
+  ["OpenAI Sora","Video","Ücretli","https://sora.com",false,"OpenAI'ın metinden video üreten modeli."],
+  ["Runway","Video","Freemium","https://runwayml.com",false,"Video üretimi ve düzenleme için yapay zeka araçları sunan yaratıcı platform."],
+  ["Pika","Video","Freemium","https://pika.art",false,"Metin ve görselden kısa videolar üreten yapay zeka aracı."],
+  ["Luma Dream Machine","Video","Freemium","https://lumalabs.ai",false,"Metin ve görselden video ile 3D içerik üreten Luma AI platformu."],
+  ["Kling AI","Video","Freemium","https://klingai.com",false,"Kuaishou'nun geliştirdiği video üretim yapay zekası."],
+  ["HeyGen","Video","Freemium","https://www.heygen.com",false,"Yapay zeka avatarlarla konuşan video üretimi ve çok dilli dublaj."],
+  ["Gamma","Üretkenlik","Freemium","https://gamma.app",false,"Yapay zeka ile sunum, doküman ve web sayfası hazırlama aracı."],
+  ["Notion AI","Üretkenlik","Ücretli","https://www.notion.com",false,"Notion içinde yazma, özetleme ve bilgi arama desteği sunan yapay zeka."],
+  ["Jasper","Üretkenlik","Ücretli","https://www.jasper.ai",false,"Pazarlama ekipleri için içerik ve metin üretim platformu."],
+  ["Otter.ai","Üretkenlik","Freemium","https://otter.ai",false,"Toplantıları otomatik yazıya döken ve özetleyen asistan."],
+  ["Descript","Üretkenlik","Freemium","https://www.descript.com",false,"Ses ve videoyu metin üzerinden düzenlemenizi sağlayan yapay zeka destekli editör."]
+];
+
+var appState = {
+  allTools: [], favorites: [], currentCat: 'all', currentPrice: 'all', visibleLimit: 30,
+  activePage: 'directory', liveNewsList: [], githubDataFetched: false, currentActiveToolId: null, reviewsDB: {},
+  githubRepos: [
+    { repo: "ollama/ollama", desc: "Yerel bilgisayarınızda büyük dil modellerini kolayca çalıştırmanızı sağlar." },
+    { repo: "AUTOMATIC1111/stable-diffusion-webui", desc: "Stable Diffusion ile görsel üretmek için web arayüzü." },
+    { repo: "langchain-ai/langchain", desc: "Dil modellerini harici veri kaynaklarıyla birleştiren çatı." },
+    { repo: "FlowiseAI/Flowise", desc: "Sürükle-bırak yöntemiyle LLM iş akışları tasarlayın." },
+    { repo: "langfuse/langfuse", desc: "Yapay zeka uygulamalarını izleme ve maliyet analizi için." },
+    { repo: "abi/screenshot-to-code", desc: "Ekran görüntülerini HTML/Tailwind koduna dönüştürür." },
+    { repo: "langgenius/dify", desc: "Üretken AI uygulamaları oluşturmak için açık kaynaklı platform." },
+    { repo: "Significant-Gravitas/AutoGPT", desc: "Hedefe yönelik plan yapan otonom yapay zeka ajanı." },
+    { repo: "OpenInterpreter/open-interpreter", desc: "Bilgisayarınızda kod ve terminal komutları çalıştıran yerel asistan." },
+    { repo: "Mintplex-Labs/anything-llm", desc: "Belgelerinizle yerel veya bulut LLM'ler üzerinden sohbet etmenizi sağlar." }
+  ]
+};
+
+/* ---------- Yardımcılar ---------- */
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, function(c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
+}
+function safeUrl(u) {
+  try { var p = new URL(u); return (p.protocol === 'http:' || p.protocol === 'https:') ? p.href : '#'; }
+  catch (e) { return '#'; }
+}
+function stripHtml(s) { var d = document.createElement('div'); d.innerHTML = s || ''; return d.textContent || ''; }
+
+var CLS = {
+  nav: { on: "px-3.5 py-2 rounded-lg text-white transition shadow ", off: "px-3.5 py-2 rounded-lg dark:text-gray-400 text-gray-600 hover:text-purple-500 transition" },
+  mob: { on: "flex-1 py-2 rounded-lg text-white text-center ", off: "flex-1 py-2 rounded-lg dark:text-gray-400 text-gray-600 text-center" },
+  priceOn: "price-btn px-3.5 py-1.5 rounded-lg text-white bg-purple-600 font-bold transition shadow-lg shadow-purple-600/20",
+  priceOff: "price-btn px-3.5 py-1.5 rounded-lg text-gray-400 hover:text-purple-600 transition",
+  catOn: "cat-btn px-3.5 py-1.5 rounded-xl bg-purple-600 text-white font-bold transition shadow-lg shadow-purple-600/20",
+  catOff: "cat-btn px-3.5 py-1.5 rounded-xl dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 border dark:border-gray-800 border-gray-300 hover:bg-purple-600/20 transition",
+  favOn: "cat-btn px-3.5 py-1.5 rounded-xl bg-red-600 text-white font-bold transition shadow-lg shadow-red-600/20",
+  favOff: "cat-btn px-3.5 py-1.5 rounded-xl dark:bg-gray-900 bg-white text-red-400 border border-red-500/30 hover:bg-red-500/10 transition"
+};
+
+/* ---------- Veri ---------- */
+function buildDatabase() {
+  return TOOLS.map(function(t, i) {
+    return { id: i + 1, title: t[0], category: t[1], price: t[2], url: t[3], isVip: t[4], desc: t[5], image: IMG[t[1]],
+             tags: [t[1].toLowerCase(), "ai", "yapay zeka"] };
+  });
+}
+
+/* ---------- Kartlar ---------- */
+function renderCardHTML(item, featured) {
+  var isFav = appState.favorites.indexOf(item.id) > -1;
+  var vip = featured || item.isVip;
+  var card = document.createElement('div');
+  card.className = vip
+    ? "rounded-3xl flex flex-col justify-between bg-gradient-to-br from-amber-500/15 via-white to-white dark:via-slate-900 dark:to-slate-900 border border-amber-500/50 shadow-xl overflow-hidden hover:border-amber-500/80 transition duration-300 group cursor-pointer"
+    : "rounded-3xl flex flex-col justify-between dark:bg-gray-900/90 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500 transition duration-300 group shadow-md overflow-hidden cursor-pointer";
+  card.onclick = function() { openToolDetail(item.id); };
+  card.innerHTML =
+    '<div><div class="h-40 w-full relative overflow-hidden bg-gray-900">' +
+      '<img src="' + esc(item.image) + '" alt="' + esc(item.title) + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>' +
+      '<div class="absolute top-3 left-3 right-3 flex justify-between items-center">' +
+        (featured ? '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-500 text-black">🔥 Önerilen</span>'
+                  : '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-black/60 backdrop-blur-md text-white border border-white/20">' + esc(item.price) + '</span>') +
+        '<button data-fav="' + item.id + '" class="w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-sm transition hover:bg-black">' + (isFav ? '❤️' : '🤍') + '</button>' +
+      '</div></div>' +
+      '<div class="p-6"><div class="flex justify-between items-center mb-2">' +
+        '<span class="text-xs text-purple-400 font-bold"># ' + esc(item.category) + '</span>' +
+        '<span class="text-[11px] text-gray-400 font-bold">' + (item.isNew ? '🆕 Yeni · ' : '') + esc(item.price) + '</span></div>' +
+        '<h3 class="text-lg font-bold mb-2 dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(item.title) + '</h3>' +
+        '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed line-clamp-2">' + esc(item.desc) + '</p></div></div>' +
+    '<div class="px-6 pb-6"><div class="w-full text-center py-2.5 dark:bg-gray-800/50 bg-gray-100 group-hover:bg-purple-600 dark:text-gray-200 text-gray-700 group-hover:text-white rounded-2xl text-xs font-bold transition">Detayları İncele & Yorumlar ↗</div></div>';
+  card.querySelector('[data-fav]').onclick = function(e) { toggleFavorite(item.id, e); };
+  return card;
+}
+
+function renderFeatured(gridId) {
+  var grid = document.getElementById(gridId);
+  if (!grid) return;
+  grid.innerHTML = '';
+  appState.allTools.filter(function(t) { return t.isVip; }).slice(0, 3).forEach(function(t) {
+    grid.appendChild(renderCardHTML(t, true));
+  });
+}
+
+function renderTools(list) {
+  var grid = document.getElementById('toolsGrid');
+  var empty = document.getElementById('emptyState');
+  var loadMoreBtn = document.getElementById('loadMoreContainer');
+  var favRec = document.getElementById('favoritesRecommendedSection');
+  grid.innerHTML = '';
+  document.getElementById('resultCount').innerText = list.length;
+
+  if (appState.currentCat === 'favorites') { favRec.classList.remove('hidden'); renderFeatured('favoritesRecommendedGrid'); }
+  else favRec.classList.add('hidden');
+
+  if (list.length === 0) { empty.classList.remove('hidden'); loadMoreBtn.classList.add('hidden'); return; }
+  empty.classList.add('hidden');
+
+  var sorted = list.slice().sort(function(a, b) {
+    if (a.isVip !== b.isVip) return a.isVip ? -1 : 1;
+    if (a.isNew !== b.isNew) return a.isNew ? -1 : 1;
+    return (b.addedAt || '').localeCompare(a.addedAt || '');
+  });
+  var slice = sorted.slice(0, appState.visibleLimit);
+  if (slice.length < sorted.length && appState.currentCat !== 'favorites') loadMoreBtn.classList.remove('hidden');
+  else loadMoreBtn.classList.add('hidden');
+
+  slice.forEach(function(item) { grid.appendChild(renderCardHTML(item, false)); });
+}
+
+function filterTools() {
+  var q = document.getElementById('searchInput').value.toLowerCase().trim();
+  var words = q.split(/\s+/).filter(Boolean);
+  var filtered = appState.allTools.filter(function(item) {
+    if (appState.currentCat === 'favorites') { if (appState.favorites.indexOf(item.id) === -1) return false; }
+    else if (appState.currentCat !== 'all' && item.category !== appState.currentCat) return false;
+    if (appState.currentPrice !== 'all' && item.price !== appState.currentPrice) return false;
+    if (!words.length) return true;
+    var text = (item.title + " " + item.desc + " " + item.category + " " + item.tags.join(' ')).toLowerCase();
+    return words.every(function(w) { return text.indexOf(w) !== -1; });
+  });
+  renderTools(filtered);
+}
+
+function loadMoreTools() { appState.visibleLimit += 30; filterTools(); }
+
+function setCat(cat) {
+  appState.currentCat = cat; appState.visibleLimit = 30;
+  document.querySelectorAll('.cat-btn').forEach(function(btn) {
+    var isFav = btn.id === 'chip_favorites', active = btn.id === 'chip_' + cat;
+    btn.className = isFav ? (active ? CLS.favOn : CLS.favOff) : (active ? CLS.catOn : CLS.catOff);
+  });
+  filterTools();
+}
+
+function setPrice(price) {
+  appState.currentPrice = price; appState.visibleLimit = 30;
+  document.querySelectorAll('.price-btn').forEach(function(btn) {
+    btn.className = btn.id === 'price_' + price ? CLS.priceOn : CLS.priceOff;
+  });
+  filterTools();
+}
+
+function resetApp() {
+  document.getElementById('searchInput').value = '';
+  setPrice('all'); setCat('all');
+}
+
+/* ---------- Favoriler ---------- */
+function toggleFavorite(id, event) {
+  event.stopPropagation();
+  var i = appState.favorites.indexOf(id);
+  if (i > -1) appState.favorites.splice(i, 1); else appState.favorites.push(id);
+  try { localStorage.setItem('ai_directory_favs', JSON.stringify(appState.favorites)); } catch (e) {}
+  filterTools(); renderFeatured('featuredRecommendedGrid'); updateProfileStats();
+}
+function updateProfileStats() { document.getElementById('profFavCount').innerText = appState.favorites.length; }
+
+/* ---------- Detay sayfası ---------- */
+function openToolDetail(id) {
+  var tool = appState.allTools.find(function(t) { return t.id === id; });
+  if (!tool) return;
+  appState.currentActiveToolId = id;
+  document.getElementById('detailToolTitle').textContent = tool.title;
+  document.getElementById('detailToolCategory').textContent = "# " + tool.category;
+  document.getElementById('detailToolDesc').textContent = tool.desc;
+  document.getElementById('detailToolLink').href = safeUrl(tool.url);
+  var img = document.getElementById('detailToolImage'); img.src = tool.image; img.alt = tool.title;
+  document.getElementById('detailToolPrice').textContent = tool.price;
+
+  var grid = document.getElementById('detailSameCatGrid');
+  grid.innerHTML = '';
+  var similar = appState.allTools.filter(function(t) { return t.category === tool.category && t.id !== tool.id; }).slice(0, 3);
+  if (!similar.length) {
+    grid.innerHTML = '<p class="text-xs text-gray-500 col-span-3">Bu kategoride başka araç bulunamadı.</p>';
+  } else similar.forEach(function(sim) {
+    var c = document.createElement('div');
+    c.className = "p-4 rounded-2xl dark:bg-gray-950 bg-gray-100 border dark:border-gray-800 border-gray-200 cursor-pointer hover:border-purple-500 transition shadow flex items-center space-x-3";
+    c.onclick = function() { openToolDetail(sim.id); };
+    c.innerHTML = '<img src="' + esc(sim.image) + '" alt="" class="w-12 h-12 rounded-xl object-cover flex-shrink-0">' +
+      '<div class="overflow-hidden"><div class="font-bold text-xs dark:text-white text-gray-900 truncate mb-1">' + esc(sim.title) + '</div>' +
+      '<div class="text-[11px] text-gray-400 truncate">' + esc(sim.price) + '</div></div>';
+    grid.appendChild(c);
+  });
+  renderReviews(id);
+  switchPage('toolDetail');
+}
+
+function renderReviews(toolId) {
+  var list = document.getElementById('detailReviewsList');
+  list.innerHTML = '';
+  var reviews = appState.reviewsDB[toolId] || [];
+  if (!reviews.length) {
+    var p = document.createElement('p'); p.className = 'text-xs text-gray-400'; p.textContent = 'Henüz yorum yok. İlk yorumu sen yaz!';
+    list.appendChild(p); return;
+  }
+  reviews.forEach(function(rev) {
+    var item = document.createElement('div');
+    item.className = "p-4 rounded-2xl dark:bg-gray-950 bg-gray-100 border dark:border-gray-800 border-gray-200 text-xs";
+    var head = document.createElement('div'); head.className = "flex justify-between items-center mb-1";
+    var a = document.createElement('span'); a.className = "font-bold dark:text-white text-gray-900"; a.textContent = rev.author;
+    var d = document.createElement('span'); d.className = "text-[10px] text-gray-400"; d.textContent = rev.date;
+    head.appendChild(a); head.appendChild(d);
+    var t = document.createElement('p'); t.className = "dark:text-gray-300 text-gray-700 leading-relaxed"; t.textContent = rev.text;
+    item.appendChild(head); item.appendChild(t); list.appendChild(item);
+  });
+}
+
+function submitUserReview(e) {
+  e.preventDefault();
+  var author = document.getElementById('reviewAuthor').value.trim();
+  var text = document.getElementById('reviewText').value.trim();
+  if (!author || !text) return;
+  var id = appState.currentActiveToolId;
+  if (!appState.reviewsDB[id]) appState.reviewsDB[id] = [];
+  appState.reviewsDB[id].unshift({ author: author, text: text, date: "Az önce" });
+  document.getElementById('reviewAuthor').value = '';
+  document.getElementById('reviewText').value = '';
+  renderReviews(id);
+}
+
+/* ---------- Sayfa geçişi ---------- */
+function switchPage(page) {
+  appState.activePage = page;
+  var pages = { directory: 'pageDirectory', news: 'pageNews', github: 'pageGitHub', toolDetail: 'pageToolDetail' };
+  Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
+  var navs = { directory: ['navDirBtn', 'mobDirBtn', 'bg-purple-600'], news: ['navNewsBtn', 'mobNewsBtn', 'bg-blue-600'], github: ['navGitHubBtn', 'mobGitHubBtn', 'bg-amber-500'] };
+  Object.keys(navs).forEach(function(k) {
+    var on = k === page, n = navs[k];
+    document.getElementById(n[0]).className = on ? CLS.nav.on + n[2] : CLS.nav.off;
+    document.getElementById(n[1]).className = on ? CLS.mob.on + n[2] : CLS.mob.off;
+  });
+  if (page === 'news' && !appState.liveNewsList.length) fetchLiveAINews();
+  if (page === 'github' && !appState.githubDataFetched) fetchGitHubRepos();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ---------- GitHub ---------- */
+function fetchGitHubRepos() {
+  var loading = document.getElementById('githubLoadingState');
+  loading.classList.remove('hidden');
+  Promise.all(appState.githubRepos.map(function(item) {
+    return fetch('https://api.github.com/repos/' + item.repo)
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .catch(function() { return null; });
+  })).then(function(results) {
+    loading.classList.add('hidden');
+    appState.githubDataFetched = results.some(Boolean);
+    renderGitHubRepos(results);
+  });
+}
+
+function renderGitHubRepos(repos) {
+  var grid = document.getElementById('githubGrid');
+  grid.innerHTML = '';
+  repos.forEach(function(repo, i) {
+    var info = appState.githubRepos[i];
+    var ok = repo && !repo.message;
+    var stars = ok && repo.stargazers_count != null ? repo.stargazers_count.toLocaleString('tr-TR') : '—';
+    var forks = ok && repo.forks_count != null ? repo.forks_count.toLocaleString('tr-TR') : '—';
+    var lang = ok && repo.language ? repo.language : '—';
+    var name = ok ? repo.name : info.repo.split('/')[1];
+    var href = ok ? repo.html_url : 'https://github.com/' + info.repo;
+    var card = document.createElement('div');
+    card.className = "p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-amber-500 transition shadow-md group";
+    card.innerHTML =
+      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
+        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">⭐ ' + esc(stars) + '</span>' +
+        '<span class="text-gray-400 font-mono text-[11px]">' + esc(lang) + '</span></div>' +
+        '<h3 class="text-base font-bold mb-2 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono">' + esc(name) + '</h3>' +
+        '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(info.desc) + '</p></div>' +
+      '<div><div class="flex justify-between items-center text-[11px] text-gray-500 mb-4 pb-2 border-b dark:border-gray-800 border-gray-100">' +
+        '<span>Fork: <b>' + esc(forks) + '</b></span><span>Açık Kaynak</span></div>' +
+        '<a href="' + esc(safeUrl(href)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da İncele ↗</a></div>';
+    grid.appendChild(card);
+  });
+}
+
+/* ---------- Haberler ---------- */
+function fetchLiveAINews() {
+  var loading = document.getElementById('newsLoadingState'), err = document.getElementById('newsError');
+  if (!appState.liveNewsList.length) loading.classList.remove('hidden');
+  err.classList.add('hidden');
+  fetch('data/news.json?t=' + Date.now())
+    .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function(d) { if (!d.items || !d.items.length) throw 0; return d.items; })
+    .catch(function() {
+      var rss = 'https://techcrunch.com/category/artificial-intelligence/feed/';
+      return fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rss))
+        .then(function(r) { return r.json(); }).then(function(d) { return d.items || []; });
+    })
+    .then(function(items) {
+      loading.classList.add('hidden');
+      if (!items.length) return showNewsError();
+      appState.liveNewsList = items; filterNews();
+    })
+    .catch(showNewsError);
+}
+function showNewsError() {
+  document.getElementById('newsLoadingState').classList.add('hidden');
+  document.getElementById('newsGrid').innerHTML = '';
+  document.getElementById('newsError').classList.remove('hidden');
+}
+
+function renderNews(list) {
+  var grid = document.getElementById('newsGrid');
+  grid.innerHTML = '';
+  list.forEach(function(item) {
+    var plain = stripHtml(item.description);
+    var cleanDesc = plain ? plain.substring(0, 140) + '...' : 'Haber detayları için tıklayın.';
+    var dateStr = item.pubDate ? item.pubDate.split(' ')[0] : 'Güncel';
+    var card = document.createElement('div');
+    card.className = "p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-blue-500 transition shadow-md group";
+    card.innerHTML =
+      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
+        '<span class="px-2.5 py-1 rounded-lg bg-blue-500/10 text-blue-400 font-bold border border-blue-500/20">📡 AI Haber</span>' +
+        '<span class="text-gray-400">' + esc((item.source ? item.source + ' · ' : '') + dateStr) + '</span></div>' +
+        '<h3 class="text-base font-bold mb-2 dark:text-white text-gray-900 group-hover:text-blue-400 transition">' + esc(item.title) + '</h3>' +
+        '<p class="text-gray-400 text-xs leading-relaxed">' + esc(cleanDesc) + '</p></div>' +
+      '<button class="mt-6 w-full py-2.5 dark:bg-gray-800 bg-gray-100 hover:bg-blue-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition">Haberi Oku ↗</button>';
+    card.querySelector('button').onclick = function() { openNewsDetail(item.title, plain, item.link, dateStr); };
+    grid.appendChild(card);
+  });
+}
+
+function filterNews() {
+  var q = document.getElementById('newsSearchInput').value.toLowerCase().trim();
+  if (!q) return renderNews(appState.liveNewsList);
+  renderNews(appState.liveNewsList.filter(function(n) {
+    return (n.title || '').toLowerCase().indexOf(q) > -1 || stripHtml(n.description).toLowerCase().indexOf(q) > -1;
+  }));
+}
+
+function openNewsDetail(title, desc, link, date) {
+  document.getElementById('modalNewsTitle').textContent = title;
+  document.getElementById('modalNewsDesc').textContent = desc;
+  document.getElementById('modalNewsLink').href = safeUrl(link);
+  document.getElementById('modalNewsDate').textContent = "Yayın Tarihi: " + date;
+  document.getElementById('newsDetailModal').classList.remove('hidden');
+}
+function closeNewsModal() { document.getElementById('newsDetailModal').classList.add('hidden'); }
+
+/* ---------- Tema & modallar ---------- */
+function toggleDarkMode() {
+  var html = document.getElementById('htmlTag');
+  var dark = html.classList.contains('dark');
+  html.classList.toggle('dark', !dark);
+  html.classList.toggle('light', dark);
+  document.getElementById('themeIcon').innerText = dark ? "☀️" : "🌙";
+  document.getElementById('themeText').innerText = dark ? "Light" : "Dark";
+  try { localStorage.setItem('ai_directory_theme', dark ? 'light' : 'dark'); } catch (e) {}
+}
+function openProfileModal() { updateProfileStats(); document.getElementById('profileModal').classList.remove('hidden'); }
+function closeProfileModal() { document.getElementById('profileModal').classList.add('hidden'); }
+function openProModal() { document.getElementById('proModal').classList.remove('hidden'); }
+function closeProModal() { document.getElementById('proModal').classList.add('hidden'); }
+
+/* ---------- Otomatik araç güncelleme ---------- */
+function refreshTools() {
+  fetch('data/tools.json?t=' + Date.now())
+    .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function(d) {
+      if (!d.tools || !d.tools.length) return;
+      appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive'; }).map(function(t) {
+        return { id: t.id, title: t.title, category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew,
+                 desc: t.desc, addedAt: t.addedAt || '', image: IMG[t.category] || IMG.Metin, tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
+      });
+      if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
+    }).catch(function() {});
+}
+
+/* ---------- Başlat (tek sefer) ---------- */
+var started = false;
+function startApp() {
+  if (started) return;
+  started = true;
+  appState.allTools = buildDatabase();
+  try {
+    var favs = JSON.parse(localStorage.getItem('ai_directory_favs') || '[]');
+    if (Array.isArray(favs)) appState.favorites = favs;
+    if (localStorage.getItem('ai_directory_theme') === 'light') toggleDarkMode();
+  } catch (e) {}
+  setPrice('all'); setCat('all');
+  switchPage('directory');
+  renderFeatured('featuredRecommendedGrid');
+  refreshTools();
+  setInterval(refreshTools, 300000);
+  setInterval(function() { if (appState.activePage === 'news') fetchLiveAINews(); }, 300000);
+}
+document.addEventListener('DOMContentLoaded', startApp);
+</script>
+</body>
+</html>
