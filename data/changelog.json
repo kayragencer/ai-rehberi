@@ -1,122 +1,500 @@
 [
-  {
-    "at": "2026-11-02T16:52:13.584Z",
-    "type": "added",
-    "id": "gh-saos-3624-dsh-see-now",
-    "title": "dsh-see-now"
-  },
-  {
-    "at": "2026-11-02T13:59:33.912Z",
-    "type": "added",
-    "id": "gh-aa1143-namiagent",
-    "title": "NamiAgent"
-  },
-  {
-    "at": "2026-11-02T00:46:52.087Z",
-    "type": "hidden",
-    "id": "google-gemini",
-    "title": "Google Gemini"
-  },
-  {
-    "at": "2026-11-01T23:57:25.908Z",
-    "type": "added",
-    "id": "gh-balanov-uncut",
-    "title": "uncut"
-  },
-  {
-    "at": "2026-11-01T23:25:38.357Z",
-    "type": "added",
-    "id": "gh-muaaz9329-cheap-ag",
-    "title": "cheap-ag"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-patch-gg-trompe",
-    "title": "trompe"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-patch-gg-anymove",
-    "title": "anymove"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-xpropel-pi-remote",
-    "title": "Pi-Remote"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-jacke-pp-ai-wallet-binance",
-    "title": "ai-wallet-binance"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-rddmwmddr-android-ad-cleaner",
-    "title": "android-ad-cleaner"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-tavern-labs-ai-persona-ai-sdk",
-    "title": "persona-ai-sdk"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-cattmonkey-chaosintelligence",
-    "title": "ChaosIntelligence"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-junwan666-astrbot-for-android",
-    "title": "astrbot-for-android"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-jmanico-grim-prompter",
-    "title": "grim-prompter"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-wanghao-sunsky-cs329z-chinese",
-    "title": "cs329z-chinese"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-modelflare-ai-anymodelbot",
-    "title": "AnyModelBot"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-n1neman-sapper-v2",
-    "title": "sapper-v2"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-jackwener-dsh-android",
-    "title": "DSH-Android"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-wangzan101-mika",
-    "title": "Mika"
-  },
-  {
-    "at": "2026-11-01T22:55:20.974Z",
-    "type": "added",
-    "id": "gh-ccch1mneyyy-dsh-go",
-    "title": "dsh-Go"
-  }
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-slmonker-comfyui-moss-merge-presets",
+  "title": "ComfyUI-MOSS-Merge-Presets"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-deeyu-ai-costume-gallery-zh",
+  "title": "ai-costume-gallery-zh"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-agentic-system-lab-agent-loop-visualizer",
+  "title": "agent-loop-visualizer"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-ofat34764e-interviewcopilot-rpocket-team",
+  "title": "InterviewCopilot-rpocket-team"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-wiva-hq-coderail",
+  "title": "CodeRail"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-ngocanhnckh-renderlint",
+  "title": "renderlint"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-lemonadesaltbagel-airlock",
+  "title": "Airlock"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-sheernox-cedr",
+  "title": "cedr"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-bearisbug-imbo",
+  "title": "imbo"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-bjarneo-shoulder",
+  "title": "shoulder"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-aiseo-virtualabdigital-mcp-video-editor",
+  "title": "mcp-video-editor"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-codician-team-diffinery",
+  "title": "diffinery"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-papilotai-papilot",
+  "title": "papilot"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-hubastard-speedrun",
+  "title": "speedrun"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-lordon1a-agents-md",
+  "title": "agents.md"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-globalmpc-nomore",
+  "title": "nomore"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-noahelhadedy-double-shot",
+  "title": "double-shot"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-duyunzhoudyz-dyz-med-paper-skills",
+  "title": "dyz-med-paper-skills"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-fush520-fush-vue-mcp",
+  "title": "fush-vue-mcp"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-onurozcan-omux",
+  "title": "omux"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-jefferysha0627-agent-office-3d",
+  "title": "agent-office-3d"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-sirioberati-youtube-ai-motion-graphics",
+  "title": "YouTube-AI-Motion-Graphics"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-eduwxyz-tucano",
+  "title": "tucano"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-khanh020905-my-office",
+  "title": "my-office"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-rtora-munorai",
+  "title": "munorai"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-davemessew-agentflux",
+  "title": "AgentFlux"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-sloemo01-diorama",
+  "title": "diorama"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-yjid-kensaku",
+  "title": "kensaku"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-emanuele-em-kanzo",
+  "title": "kanzo"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-daveebbelaar-bama",
+  "title": "bama"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-uncensoredlabs-uncensored-ai-api",
+  "title": "uncensored-ai-api"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-patch-gg-trompe",
+  "title": "trompe"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-patch-gg-anymove",
+  "title": "anymove"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-laoma528-gptplussub",
+  "title": "GPTplusSub"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-boyuchengz-canvas-mcp",
+  "title": "canvas-mcp"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-hhtower-price-comparison",
+  "title": "price-comparison"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-problem99-io-kodeblue",
+  "title": "kodeblue"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-jumbomuffin777-frontier-ui",
+  "title": "Frontier-UI"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-maefdancer29436-rpocket-team-elden-ring",
+  "title": "rpocket-team-elden-ring"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-banan1cee-whale-gril",
+  "title": "whale_gril"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-glincker-awesome-selfhosted-ai",
+  "title": "awesome-selfhosted-ai"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-w0ldan-exoproc",
+  "title": "exoproc"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-rtmandreyev-construct",
+  "title": "construct"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-peterpoal134-memory-brain",
+  "title": "memory-brain"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-yc-software-minecraft-agent-harness",
+  "title": "minecraft-agent-harness"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-aevonix-flashalign",
+  "title": "FlashAlign"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-gh9ko8y-graphmemory",
+  "title": "graphmemory"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-saos-3624-dsh-see-now",
+  "title": "dsh-see-now"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-interactive-active-ai-nexttransformer",
+  "title": "NextTransformer"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-aa1143-namigpt",
+  "title": "NamiGPT"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-aa1143-namiagent",
+  "title": "NamiAgent"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-tavern-labs-ai-persona-ai-sdk",
+  "title": "persona-ai-sdk"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-lwh0630-tokenbar",
+  "title": "TokenBar"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-muaaz9329-cheap-ag",
+  "title": "cheap-ag"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-junwan666-astrbot-for-android",
+  "title": "astrbot-for-android"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-jmanico-grim-prompter",
+  "title": "grim-prompter"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-wanghao-sunsky-cs329z-chinese",
+  "title": "cs329z-chinese"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-balanov-uncut",
+  "title": "uncut"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-n1neman-sapper-v2",
+  "title": "sapper-v2"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-jackwener-dsh-android",
+  "title": "DSH-Android"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-modelflare-ai-anymodelbot",
+  "title": "AnyModelBot"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-wangzan101-mika",
+  "title": "Mika"
+ },
+ {
+  "at": "2026-11-02T23:07:57.224Z",
+  "type": "added",
+  "id": "gh-ccch1mneyyy-dsh-go",
+  "title": "dsh-Go"
+ },
+ {
+  "at": "2026-11-02T16:52:13.584Z",
+  "type": "added",
+  "id": "gh-saos-3624-dsh-see-now",
+  "title": "dsh-see-now"
+ },
+ {
+  "at": "2026-11-02T13:59:33.912Z",
+  "type": "added",
+  "id": "gh-aa1143-namiagent",
+  "title": "NamiAgent"
+ },
+ {
+  "at": "2026-11-02T00:46:52.087Z",
+  "type": "hidden",
+  "id": "google-gemini",
+  "title": "Google Gemini"
+ },
+ {
+  "at": "2026-11-01T23:57:25.908Z",
+  "type": "added",
+  "id": "gh-balanov-uncut",
+  "title": "uncut"
+ },
+ {
+  "at": "2026-11-01T23:25:38.357Z",
+  "type": "added",
+  "id": "gh-muaaz9329-cheap-ag",
+  "title": "cheap-ag"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-patch-gg-trompe",
+  "title": "trompe"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-patch-gg-anymove",
+  "title": "anymove"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-xpropel-pi-remote",
+  "title": "Pi-Remote"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-jacke-pp-ai-wallet-binance",
+  "title": "ai-wallet-binance"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-rddmwmddr-android-ad-cleaner",
+  "title": "android-ad-cleaner"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-tavern-labs-ai-persona-ai-sdk",
+  "title": "persona-ai-sdk"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-cattmonkey-chaosintelligence",
+  "title": "ChaosIntelligence"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-junwan666-astrbot-for-android",
+  "title": "astrbot-for-android"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-jmanico-grim-prompter",
+  "title": "grim-prompter"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-wanghao-sunsky-cs329z-chinese",
+  "title": "cs329z-chinese"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-modelflare-ai-anymodelbot",
+  "title": "AnyModelBot"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-n1neman-sapper-v2",
+  "title": "sapper-v2"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-jackwener-dsh-android",
+  "title": "DSH-Android"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-wangzan101-mika",
+  "title": "Mika"
+ },
+ {
+  "at": "2026-11-01T22:55:20.974Z",
+  "type": "added",
+  "id": "gh-ccch1mneyyy-dsh-go",
+  "title": "dsh-Go"
+ }
 ]
