@@ -1,3 +1,4 @@
+[]
 // AI Rehberi otomatik g\u00fcncelleyici (Node 20+, ba\u011f\u0131ml\u0131l\u0131ks\u0131z)
 import fs from 'node:fs/promises';
 
