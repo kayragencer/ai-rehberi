@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-02T18:44:39.911Z",
+  "updatedAt": "2026-11-02T19:44:12.366Z",
   "items": [
+    {
+      "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
+      "link": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+      "source": "TechCrunch",
+      "description": "The New York Times is suing privacy-focused web browser company Brave for allegedly scraping the outlet’s copyrighted and unlawfully distributing it to its own customers, like Anthropic and Perplexity.",
+      "pubDate": "2026-11-02 19:19:17"
+    },
+    {
+      "title": "Anthropic clamps down on Claude’s AI video game clones",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+      "source": "The Verge",
+      "description": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while Anthropic will still let people use Claude Code to make games, it doesn't want people to [&#8230;]",
+      "pubDate": "2026-11-02 18:56:02"
+    },
     {
       "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
       "link": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
@@ -93,6 +107,13 @@
       "pubDate": "2026-11-02 09:00:00"
     },
     {
+      "title": "Qodo builds context into AI code review with Codex",
+      "link": "https://openai.com/index/qodo-codex-plugin",
+      "source": "OpenAI",
+      "description": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request.",
+      "pubDate": "2026-11-02 00:00:00"
+    },
+    {
       "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
       "link": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
       "source": "TechCrunch",
@@ -105,6 +126,13 @@
       "source": "TechCrunch",
       "description": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
       "pubDate": "2026-11-01 20:57:58"
+    },
+    {
+      "title": "Data centers are now a midterm issue, even in Brooklyn",
+      "link": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
+      "source": "TechCrunch",
+      "description": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
+      "pubDate": "2026-11-01 02:22:10"
     },
     {
       "title": "Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’",
