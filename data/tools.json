@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T19:44:12.366Z",
+  "updatedAt": "2026-11-02T20:36:53.524Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -73,7 +73,7 @@
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
       "status": "inactive",
-      "failCount": 22,
+      "failCount": 23,
       "addedAt": "2026-11-02",
       "isNew": true,
       "imageCheckedAt": "2026-11-01T23:25:38.357Z"
@@ -863,7 +863,7 @@
       "title": "uncut",
       "category": "Kodlama",
       "price": "Ücretsiz",
-      "url": "https://github.com/Balanov/uncut",
+      "url": "https://uncut.kimi.page",
       "featured": false,
       "desc": "The lossless, headless coding agent harness. One 7 MB static binary, four tools, plain stdin/stdout, no silent cuts.\n\nAçık kaynak proje. GitHub: https://github.com/Balanov/uncut (⭐ 210)",
       "source": "github",
