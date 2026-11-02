@@ -1,5 +1,11 @@
 [
   {
+    "at": "2026-11-02T00:46:52.087Z",
+    "type": "hidden",
+    "id": "google-gemini",
+    "title": "Google Gemini"
+  },
+  {
     "at": "2026-11-01T23:57:25.908Z",
     "type": "added",
     "id": "gh-balanov-uncut",

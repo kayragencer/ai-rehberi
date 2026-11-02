@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T23:57:25.908Z",
+  "updatedAt": "2026-11-02T00:46:52.087Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -72,8 +72,8 @@
       "featured": false,
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
-      "status": "active",
-      "failCount": 3,
+      "status": "inactive",
+      "failCount": 4,
       "addedAt": "2026-11-02",
       "isNew": true,
       "imageCheckedAt": "2026-11-01T23:25:38.357Z"
@@ -865,7 +865,7 @@
       "price": "Ücretsiz",
       "url": "https://github.com/Balanov/uncut",
       "featured": false,
-      "desc": "A 7 MB lossless coding-agent harness for shell, CI, and local models. No TUI. No silent context cuts.\n\nAçık kaynak proje. GitHub: https://github.com/Balanov/uncut (⭐ 201)",
+      "desc": "The lossless, headless coding agent harness. One 7 MB static binary, four tools, plain stdin/stdout, no silent cuts.\n\nAçık kaynak proje. GitHub: https://github.com/Balanov/uncut (⭐ 210)",
       "source": "github",
       "repo": "Balanov/uncut",
       "status": "active",
