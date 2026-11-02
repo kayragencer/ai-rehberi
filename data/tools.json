@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T12:48:03.734Z",
+  "updatedAt": "2026-11-02T13:59:33.912Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -73,7 +73,7 @@
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
       "status": "inactive",
-      "failCount": 15,
+      "failCount": 16,
       "addedAt": "2026-11-02",
       "isNew": true,
       "imageCheckedAt": "2026-11-01T23:25:38.357Z"
@@ -873,6 +873,24 @@
       "addedAt": "2026-11-01",
       "imageCheckedAt": "2026-11-01T23:57:25.908Z",
       "image": "https://opengraph.githubassets.com/1/Balanov/uncut",
+      "imageSource": "og",
+      "isNew": true
+    },
+    {
+      "id": "gh-aa1143-namiagent",
+      "title": "NamiAgent",
+      "category": "Kodlama",
+      "price": "Ücretsiz",
+      "url": "https://namiai.tech/agent/",
+      "featured": false,
+      "desc": "零基础入门 AI Agent 的基础教程。不只是教程，也是一个能在本地跑起来的 Agent：读写文件、执行命令、MCP、长期记忆，自带网页端看清每一步。从 100 行最小循环开始，一课加一个能力，最后拆解 Claude Code、Codex 等主流 Agent\n\nAçık kaynak proje. GitHub: https://github.com/aa1143/NamiAgent (⭐ 166)",
+      "source": "github",
+      "repo": "aa1143/NamiAgent",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-02",
+      "imageCheckedAt": "2026-11-02T13:59:33.912Z",
+      "image": "https://opengraph.githubassets.com/1/aa1143/NamiAgent",
       "imageSource": "og",
       "isNew": true
     }

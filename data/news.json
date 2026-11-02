@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-11-02T12:48:03.734Z",
+  "updatedAt": "2026-11-02T13:59:33.912Z",
   "items": [
+    {
+      "title": "OpenAI is finally merging ChatGPT&#8217;s chat and Work tabs",
+      "link": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+      "source": "TechCrunch",
+      "description": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.",
+      "pubDate": "2026-11-02 13:57:53"
+    },
+    {
+      "title": "Stop counting tokens, start counting what ships",
+      "link": "https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/",
+      "source": "MIT Technology Review",
+      "description": "When a developer gives an AI agent a coding task, the agent does more than answer once. It plans, generates code, runs tests, and repeats the process to correct errors. A single task can use 10 to 50 times more tokens than a basic chat prompt. The more useful the agent becomes, the more calls&#8230;",
+      "pubDate": "2026-11-02 13:10:32"
+    },
     {
       "title": "The agentic web is here",
       "link": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",

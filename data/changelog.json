@@ -1,5 +1,11 @@
 [
   {
+    "at": "2026-11-02T13:59:33.912Z",
+    "type": "added",
+    "id": "gh-aa1143-namiagent",
+    "title": "NamiAgent"
+  },
+  {
     "at": "2026-11-02T00:46:52.087Z",
     "type": "hidden",
     "id": "google-gemini",
