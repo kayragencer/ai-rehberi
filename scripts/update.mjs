@@ -10,6 +10,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
 const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 50, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14 };
 
+if (E.ANTHROPIC_API_KEY) CFG.TR_PER_RUN = 160;
 const FEEDS = [
   ['TechCrunch', 'https://techcrunch.com/category/artificial-intelligence/feed/', 'en'],
   ['The Verge', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', 'en'],
@@ -40,7 +41,10 @@ async function get(url, opt = {}) {
   const c = new AbortController(); const t = setTimeout(() => c.abort(), 15000);
   try { return await fetch(url, { redirect: 'follow', ...opt, signal: c.signal }); } finally { clearTimeout(t); }
 }
-const decode = s => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'");
+const decode = s => s.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;/g, "'")
+  .replace(/&#x([0-9a-f]+);/gi, (m, h) => { try { return String.fromCodePoint(parseInt(h, 16)); } catch { return m; } })
+  .replace(/&#(\d+);/g, (m, d) => { try { return String.fromCodePoint(+d); } catch { return m; } })
+  .replace(/&(nbsp|hellip|rsquo|lsquo|ldquo|rdquo|ndash|mdash);/g, (m, n) => ({ nbsp: ' ', hellip: '...', rsquo: "'", lsquo: "'", ldquo: '"', rdquo: '"', ndash: '-', mdash: '-' })[n]);
 const strip = s => decode(s).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 const tag = (b, n) => { const m = b.match(new RegExp('<' + n + '[^>]*>([\\s\\S]*?)</' + n + '>', 'i')); return m ? m[1] : ''; };
 const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -69,16 +73,41 @@ async function claudeTr(texts) {
   if (!Array.isArray(arr) || arr.length !== texts.length) throw new Error('Claude \u00e7\u0131kt\u0131s\u0131 uyumsuz');
   return arr.map(String);
 }
+const TSTAT = { ok: 0, fail: 0, provider: '', lastError: '' };
+const dead = { gtx: 0, mymemory: 0 };
+const NONLATIN = /[\u0400-\u04ff\u0590-\u06ff\u0900-\u0dff\u0e00-\u0e7f\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/;
+async function mymemory(text) {
+  if (NONLATIN.test(text)) throw new Error('latin disi metin');
+  const r = await get('https://api.mymemory.translated.net/get?langpair=en%7Ctr&q=' + encodeURIComponent(text.slice(0, 450)), { headers });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  const j = await r.json(); const t = j && j.responseData && j.responseData.translatedText;
+  if (!t || Number(j.responseStatus) !== 200 || /MYMEMORY WARNING|QUERY LENGTH|INVALID/i.test(t)) throw new Error('yanit: ' + String(j.responseDetails || t || 'bos').slice(0, 80));
+  return t;
+}
 async function translate(texts) {
-  if (E.ANTHROPIC_API_KEY) { try { return await claudeTr(texts); } catch (e) { console.warn('Claude \u00e7eviri hatas\u0131:', e.message); } }
+  if (E.ANTHROPIC_API_KEY) {
+    try { const r = await claudeTr(texts); TSTAT.ok += r.length; TSTAT.provider = 'claude'; return r; }
+    catch (e) { TSTAT.lastError = 'claude: ' + e.message; console.warn('Claude ceviri hatasi:', e.message); }
+  }
   const out = [];
-  for (const t of texts) { try { out.push(await gtx(t)); } catch { out.push(null); } await sleep(E.FAST ? 0 : 300); }
+  for (const t of texts) {
+    let res = null;
+    for (const [name, fn] of [['gtx', gtx], ['mymemory', mymemory]]) {
+      if (dead[name] >= 4) continue;
+      try { res = await fn(t); if (res && res.trim()) { dead[name] = 0; TSTAT.provider = name; break; } res = null; dead[name]++; }
+      catch (e) { dead[name]++; TSTAT.lastError = name + ': ' + String(e.message).slice(0, 100); }
+    }
+    if (res) TSTAT.ok++; else TSTAT.fail++;
+    out.push(res);
+    await sleep(E.FAST ? 0 : 300);
+  }
   return out;
 }
 
 /* ---------- 1) HABERLER ---------- */
 async function updateNews() {
   const old = await read('data/news.json', { items: [] });
+  old.items.forEach(i => { i.title = strip(i.title || ''); i.description = strip(i.description || ''); if (i.titleOrig) i.titleOrig = strip(i.titleOrig); });
   const map = new Map(old.items.map(i => [i.link, i]));
   for (const [source, url, lang] of FEEDS) {
     try {
@@ -148,6 +177,7 @@ async function updateTools() {
       else { t.descOrig = t.desc || ''; t.tr = true; }
     }
   }
+  tools = tools.filter(t => !(t.source === 'github' && !t.tr && NONLATIN.test(t.descOrig || '')));
   const byId = new Map(tools.map(t => [t.id, t]));
   const hosts = new Set(tools.map(t => hostOf(t.url)));
   const bad = txt => block.words.some(w => txt.includes(w));
@@ -155,7 +185,7 @@ async function updateTools() {
   const addRepo = (p, announce) => {
     const id = 'gh-' + slug(p.full_name);
     const text = (p.name + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ')).toLowerCase();
-    if (byId.has(id) || block.ids.includes(id) || p.fork || p.archived || !p.description || bad(text) || tools.length >= CFG.MAX_TOOLS) return;
+    if (byId.has(id) || block.ids.includes(id) || p.fork || p.archived || !p.description || NONLATIN.test(p.description) || bad(text) || tools.length >= CFG.MAX_TOOLS) return;
     const t = { id, title: p.name, category: guess(text), price: '\u00dccretsiz', url: p.homepage && /^https?:/.test(p.homepage) ? p.homepage : p.html_url,
       featured: false, descOrig: p.description, tr: false, source: 'github', repo: p.full_name, stars: p.stargazers_count,
       status: 'active', failCount: 0, addedAt: (p.created_at || now.toISOString()).slice(0, 10) };
@@ -250,3 +280,5 @@ async function updateTools() {
 
 await updateNews();
 await updateTools();
+await save('data/status.json', JSON.stringify({ translate: TSTAT }) + '\n');
+console.log('Ceviri durumu:', JSON.stringify(TSTAT));
