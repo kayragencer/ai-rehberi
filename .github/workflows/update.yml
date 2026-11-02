@@ -1,4 +1,3 @@
-{"ids":[],"words":["nsfw","porn","undress","deepfake","hentai","casino","onlyfans","xxx"]}
 name: AI Rehberi Otomatik Guncelleme
 on:
   schedule:
@@ -26,27 +25,3 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add data
           git diff --staged --quiet || (git commit -m "Otomatik guncelleme $(date -u +%F\ %H:%M)" && git pull --rebase && git push)
-name: AI Rehberi Otomatik Güncelleme
-on:
-  schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
-permissions:
-  contents: write
-concurrency: ai-rehberi-update
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 20 }
-      - run: node scripts/update.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Değişiklikleri kaydet
-        run: |
-          git config user.name "ai-rehberi-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add data
-          git diff --staged --quiet || git commit -m "Otomatik güncelleme $(date -u +%F\ %H:%M)" && git push
