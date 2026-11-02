@@ -1,3 +1,50 @@
+// AI Rehberi Asistan\u0131 - Cloudflare Worker (iste\u011fe ba\u011fl\u0131 ger\u00e7ek yapay zeka modu)
+// Gizli anahtar kodda durmaz: Cloudflare panelinde ANTHROPIC_API_KEY ad\u0131yla "Secret" olarak eklenir.
+const ALLOWED = ['https://kayragencer.github.io'];
+
+export default {
+  async fetch(req, env) {
+    const origin = req.headers.get('Origin') || '';
+    const cors = {
+      'Access-Control-Allow-Origin': ALLOWED.includes(origin) ? origin : ALLOWED[0],
+      'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type', Vary: 'Origin'
+    };
+    const json = (o, status = 200) => new Response(JSON.stringify(o), { status, headers: { ...cors, 'Content-Type': 'application/json' } });
+    if (req.method === 'OPTIONS') return new Response(null, { headers: cors });
+    if (req.method !== 'POST' || !ALLOWED.includes(origin)) return json({ reply: 'Yetkisiz istek.' }, 403);
+
+    let body; try { body = await req.json(); } catch { return json({ reply: 'Hatal\u0131 istek.' }, 400); }
+    const messages = (body.messages || []).slice(-8).map(m => ({ role: m.role === 'assistant' ? 'assistant' : 'user', content: String(m.content || '').slice(0, 800) }));
+    while (messages.length && messages[0].role !== 'user') messages.shift();
+    if (!messages.length) return json({ reply: 'Mesaj bo\u015f.' }, 400);
+
+    const tools = (body.tools || []).slice(0, 8).map(t => `- ${String(t.title).slice(0, 60)} (${String(t.category).slice(0, 20)}, ${String(t.price).slice(0, 15)}): ${String(t.desc).slice(0, 160)}`).join('\n');
+    const system = `Sen AI Rehberi sitesinin T\u00fcrk\u00e7e konu\u015fan yard\u0131mc\u0131 asistan\u0131s\u0131n. AI Rehberi, yapay zeka ara\u00e7lar\u0131n\u0131 listeleyen bir dizin sitesidir.
+G\u00f6revlerin: (1) kullan\u0131c\u0131n\u0131n ihtiyac\u0131na uygun yapay zeka arac\u0131n\u0131 \u00f6nermek, (2) siteyi (arama, favoriler, profil, haberler, premium) anlatmak, (3) sorun bildiren kullan\u0131c\u0131ya nazik\u00e7e yard\u0131m etmek.
+Kurallar:
+- K\u0131sa, samimi ve net yaz (en fazla 4-5 c\u00fcmle). T\u00fcrk\u00e7e cevap ver.
+- Ara\u00e7 \u00f6nerirken YALNIZCA a\u015fa\u011f\u0131daki "Site ara\u00e7lar\u0131" listesindeki ara\u00e7lar\u0131 \u00f6ner; listede olmayan bir arac\u0131 varm\u0131\u015f gibi anlatma. Uygun ara\u00e7 yoksa bunu d\u00fcr\u00fcst\u00e7e s\u00f6yle.
+- Fiyat veya \u00f6zellik konusunda emin de\u011filsen uydurma, arac\u0131n kendi sitesine bakmas\u0131n\u0131 s\u00f6yle.
+- Ki\u015fisel veri, \u015fifre veya \u00f6deme bilgisi isteme.
+- Premium \u00fcyelik hen\u00fcz aktif de\u011fildir, \u00f6deme al\u0131nmamaktad\u0131r.
+- Konu d\u0131\u015f\u0131 veya zararl\u0131 isteklerde nazik\u00e7e reddet ve siteyle ilgili yard\u0131m teklif et.
+Site ara\u00e7lar\u0131 (kullan\u0131c\u0131n\u0131n sorusuna g\u00f6re se\u00e7ildi):
+${tools || '(bu soru i\u00e7in e\u015fle\u015fen ara\u00e7 bulunamad\u0131)'}`;
+
+    try {
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
+        body: JSON.stringify({ model: 'claude-haiku-5-5', max_tokens: 500, system, messages })
+      });
+      if (!r.ok) throw new Error(r.status);
+      const d = await r.json();
+      return json({ reply: (d.content || []).map(c => c.text || '').join('').trim() });
+    } catch {
+      return json({ reply: '\u015eu an yan\u0131t veremiyorum, biraz sonra tekrar dener misin?' });
+    }
+  }
+};
 <!DOCTYPE html>
 <html lang="tr" class="dark" id="htmlTag">
 <head>
