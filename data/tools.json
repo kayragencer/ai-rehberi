@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T14:57:04.040Z",
+  "updatedAt": "2026-11-02T15:51:42.265Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -73,7 +73,7 @@
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
       "status": "inactive",
-      "failCount": 17,
+      "failCount": 18,
       "addedAt": "2026-11-02",
       "isNew": true,
       "imageCheckedAt": "2026-11-01T23:25:38.357Z"
