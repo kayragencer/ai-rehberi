@@ -1,6 +1,13 @@
 {
-  "updatedAt": "2026-11-02T16:52:13.584Z",
+  "updatedAt": "2026-11-02T17:47:30.027Z",
   "items": [
+    {
+      "title": "Raising the quality of insights in agentic analytics",
+      "link": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+      "source": "MIT Technology Review",
+      "description": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on agent insights. But there is a problem: The quality of insights that agents currently generate&#8230;",
+      "pubDate": "2026-11-02 17:00:00"
+    },
     {
       "title": "42AI comes out of stealth with $62.5M and a world model that can &#8216;predict human behavior&#8217;",
       "link": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
@@ -56,6 +63,13 @@
       "source": "MIT Technology Review",
       "description": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet designed to be navigated by autonomous software agents that could address our every&#8230;",
       "pubDate": "2026-11-02 09:35:19"
+    },
+    {
+      "title": "LifeVal",
+      "link": "https://openai.com/index/lifeval",
+      "source": "OpenAI",
+      "description": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+      "pubDate": "2026-11-02 09:00:00"
     },
     {
       "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
