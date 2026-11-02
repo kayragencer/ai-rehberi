@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T15:51:42.265Z",
+  "updatedAt": "2026-11-02T16:52:13.584Z",
   "tools": [
     {
       "id": "chatgpt-openai",
@@ -73,7 +73,7 @@
       "desc": "Google'Ä±n Ã§ok modlu yapay zeka asistanÄ±; Google hizmetleriyle entegre Ã§alÄ±ÅŸÄ±r.",
       "source": "curated",
       "status": "inactive",
-      "failCount": 18,
+      "failCount": 19,
       "addedAt": "2026-11-02",
       "isNew": true,
       "imageCheckedAt": "2026-11-01T23:25:38.357Z"
@@ -891,6 +891,24 @@
       "addedAt": "2026-11-02",
       "imageCheckedAt": "2026-11-02T13:59:33.912Z",
       "image": "https://opengraph.githubassets.com/1/aa1143/NamiAgent",
+      "imageSource": "og",
+      "isNew": true
+    },
+    {
+      "id": "gh-saos-3624-dsh-see-now",
+      "title": "dsh-see-now",
+      "category": "Üretkenlik",
+      "price": "Ücretsiz",
+      "url": "https://github.com/SAOS-3624/dsh-see-now",
+      "featured": false,
+      "desc": "让 AI 实时看见你的屏幕：按变化量筛选帧、多帧拼进一张图，静止画面几乎不花 token\n\nAçık kaynak proje. GitHub: https://github.com/SAOS-3624/dsh-see-now (⭐ 154)",
+      "source": "github",
+      "repo": "SAOS-3624/dsh-see-now",
+      "status": "active",
+      "failCount": 0,
+      "addedAt": "2026-11-02",
+      "imageCheckedAt": "2026-11-02T16:52:13.584Z",
+      "image": "https://opengraph.githubassets.com/1/SAOS-3624/dsh-see-now",
       "imageSource": "og",
       "isNew": true
     }
