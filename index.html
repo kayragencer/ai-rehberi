@@ -175,6 +175,116 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
     <div id="bizDetailBody" class="space-y-6"></div>
   </div>
 
+  <!-- PROFIL -->
+  <div id="pageProfile" class="hidden max-w-4xl mx-auto">
+    <div class="h-24 rounded-3xl bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 mb-[-2rem]"></div>
+    <div class="px-2 sm:px-6">
+
+    <div id="authView" class="px-6 pb-6 -mt-8">
+      <div class="w-16 h-16 rounded-2xl bg-white dark:bg-gray-950 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center text-3xl mb-3">&#128100;</div>
+      <h3 class="text-lg font-extrabold dark:text-white text-gray-900">AI Rehberi'ne Ho&#351; Geldin</h3>
+      <p class="text-xs text-gray-400 mb-4">Hesap olu&#351;tur, ilgi alanlar&#305;na g&#246;re ki&#351;iselle&#351;tirilmi&#351; &#246;neriler al.</p>
+      <div class="flex p-1 rounded-xl dark:bg-gray-950 bg-gray-100 text-xs font-bold mb-4">
+        <button id="tabLogin" onclick="switchAuthTab('login')" class="flex-1 py-2 rounded-lg">Giri&#351; Yap</button>
+        <button id="tabRegister" onclick="switchAuthTab('register')" class="flex-1 py-2 rounded-lg">Kay&#305;t Ol</button>
+      </div>
+      <div id="authMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
+      <form id="loginForm" onsubmit="doLogin(event)" class="space-y-3">
+        <input id="loginEmail" type="email" required placeholder="E-posta" autocomplete="email" class="fld">
+        <input id="loginPass" type="password" required placeholder="&#350;ifre" autocomplete="current-password" class="fld">
+        <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Giri&#351; Yap</button>
+      </form>
+      <form id="registerForm" onsubmit="doRegister(event)" class="space-y-3 hidden">
+        <input id="regName" type="text" required maxlength="40" placeholder="Ad Soyad" autocomplete="name" class="fld">
+        <input id="regEmail" type="email" required placeholder="E-posta" autocomplete="email" class="fld">
+        
+        <input id="regPass" type="password" required minlength="8" placeholder="&#350;ifre (en az 8 karakter)" autocomplete="new-password" class="fld">
+        <input id="regPass2" type="password" required minlength="8" placeholder="&#350;ifre tekrar" autocomplete="new-password" class="fld">
+        <div><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">&#304;lgi alanlar&#305;n</div><div id="regInterests" class="flex flex-wrap gap-2"></div></div>
+        <div class="p-3 rounded-xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200">
+          <label for="capA" class="text-[11px] font-bold text-gray-400 uppercase block mb-2">&#129302; Robot de&#287;ilsin, de&#287;il mi? &#199;&#246;z: <span id="capQ" class="text-purple-400"></span></label>
+          <div class="flex gap-2"><input id="capA" type="number" inputmode="numeric" required placeholder="Cevap" class="fld"><button type="button" onclick="newCaptcha()" title="Yeni soru" class="px-3 rounded-xl dark:bg-gray-800 bg-gray-200 text-sm">&#128260;</button></div>
+          <input id="hpWebsite" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        </div>
+        <label class="flex items-start gap-2 text-[11px] text-gray-400 leading-relaxed cursor-pointer"><input id="regConsent" type="checkbox" required class="mt-0.5"><span>Bilgilerimin bu taray&#305;c&#305;da saklanmas&#305;n&#305; kabul ediyorum.</span></label>
+        <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Hesap Olu&#351;tur</button>
+      </form>
+      <p class="mt-4 text-[11px] text-gray-400 leading-relaxed">&#128274; &#350;ifren cihaz&#305;nda &#351;ifrelenerek (PBKDF2) saklan&#305;r, bize g&#246;nderilmez. Hesab&#305;n &#351;u an yaln&#305;zca bu taray&#305;c&#305;da ge&#231;erlidir.</p>
+    </div>
+
+    <div id="accountView" class="px-6 pb-6 -mt-10 hidden">
+      <div id="profAvatarBig" class="w-20 h-20 rounded-3xl bg-white dark:bg-gray-950 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center text-4xl mb-2">&#129302;</div>
+      <div id="profEmailLine" class="text-[11px] text-gray-400 mb-3"></div>
+      <div id="profAvatarPicker" class="flex flex-wrap gap-1.5 mb-4"></div>
+      <div class="space-y-3">
+        <input id="profNameInput" type="text" maxlength="40" placeholder="Ad Soyad" class="fld">
+        
+        <textarea id="profBio" rows="2" maxlength="140" placeholder="Hakk&#305;nda k&#305;sa bir not..." class="fld"></textarea>
+        <div><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">&#304;lgi alanlar&#305;n (&#246;neriler buna g&#246;re s&#305;ralan&#305;r)</div><div id="profInterests" class="flex flex-wrap gap-2"></div></div>
+      </div>
+      <div class="grid grid-cols-3 gap-2 text-center text-xs my-4">
+        <div class="p-3 dark:bg-gray-950 bg-gray-100 rounded-2xl"><div class="text-gray-400">Favori</div><div id="profFavCount" class="text-lg font-bold text-purple-400">0</div></div>
+        <div class="p-3 dark:bg-gray-950 bg-gray-100 rounded-2xl"><div class="text-gray-400">&#304;ncelenen</div><div id="profViewCount" class="text-lg font-bold text-blue-400">0</div></div>
+        <div class="p-3 dark:bg-gray-950 bg-gray-100 rounded-2xl"><div class="text-gray-400">Yorum</div><div id="profReviewCount" class="text-lg font-bold text-amber-400">0</div></div>
+      </div>
+      <div class="mb-4"><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Son bakt&#305;klar&#305;n</div><div id="profRecent" class="space-y-1.5"></div></div>
+      <div id="accMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
+      <div class="grid grid-cols-2 gap-2">
+        <button onclick="saveAccount()" class="py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">&#128190; Kaydet</button>
+        <button onclick="switchPage('profile');" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#10084;&#65039; Favorilerim</button>
+        <button onclick="doLogout()" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#128682; &#199;&#305;k&#305;&#351; Yap</button>
+        <button onclick="deleteAccount()" class="py-3 bg-red-500/10 text-red-500 font-bold rounded-xl text-xs">&#128465; Hesab&#305; Sil</button>
+      </div>
+    </div>
+
+    <div id="profileFavs" class="mt-12 space-y-10">
+      <div class="flex items-center gap-2 px-1">
+        <span class="w-9 h-9 rounded-2xl bg-rose-500/10 flex items-center justify-center text-base">&#10084;&#65039;</span>
+        <span class="text-xs font-bold uppercase tracking-wider text-rose-500">Favorilerim</span>
+        <span id="profFavTotal" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
+      </div>
+      <div id="favEmptyAll" class="hidden text-center py-12 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200">
+        <div class="text-3xl mb-3">&#129293;</div>
+        <h3 class="text-base font-bold dark:text-white text-gray-900">Hen&#252;z favorin yok</h3>
+        <p class="text-gray-400 text-xs mt-1 mb-4">Kartlardaki kalp simgesine basarak buraya ekleyebilirsin.</p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <button onclick="switchPage('tools')" class="px-4 py-2.5 rounded-xl bg-purple-600 text-white text-xs font-bold">AI Ara&#231;lar&#305;</button>
+          <button onclick="switchPage('plugins')" class="px-4 py-2.5 rounded-xl bg-amber-500 text-white text-xs font-bold">Eklentiler</button>
+          <button onclick="switchPage('ebooks')" class="px-4 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-bold">E-Kitaplar</button>
+        </div>
+      </div>
+      <div id="favSections" class="space-y-12"></div>
+    </div>
+
+    <div class="mt-12 p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="w-9 h-9 rounded-2xl bg-sky-500/10 flex items-center justify-center text-base">&#128172;</span>
+        <h3 class="text-sm font-extrabold dark:text-white text-gray-900">&#214;neri ve &#350;ikayet</h3>
+      </div>
+      <p class="text-xs text-gray-400 mb-5 leading-relaxed">Eksik buldu&#287;un bir ara&#231;, bir hata ya da fikrin mi var? Yaz, bize e-posta olarak ula&#351;s&#305;n.</p>
+      <form onsubmit="sendFeedback(event)" class="space-y-3">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <select id="fbType" class="fld font-bold">
+            <option value="Oneri">&#128161; &#214;neri</option>
+            <option value="Sikayet">&#9888;&#65039; &#350;ikayet</option>
+            <option value="Hata bildirimi">&#128030; Hata bildirimi</option>
+            <option value="Arac ekleme talebi">&#10133; Ara&#231; ekleme talebi</option>
+            <option value="Diger">&#128172; Di&#287;er</option>
+          </select>
+          <input id="fbEmail" type="email" placeholder="E-posta adresin (iste&#287;e ba&#287;l&#305;)" autocomplete="email" class="fld">
+        </div>
+        <textarea id="fbText" required rows="4" maxlength="1500" placeholder="Mesaj&#305;n&#305; buraya yaz..." class="fld"></textarea>
+        <div id="fbMsg" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <button type="submit" class="flex-1 py-3 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-xl text-xs">&#9993;&#65039; E-posta ile G&#246;nder</button>
+          <button type="button" onclick="copyFeedback()" class="py-3 px-5 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#128203; Metni Kopyala</button>
+        </div>
+        <p id="fbHint" class="text-[11px] text-gray-400 leading-relaxed"></p>
+      </form>
+    </div>
+    </div>
+  </div>
+
   <!-- CLAUDE EKLENTILERI -->
   <div id="pagePlugins" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
@@ -301,69 +411,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </div>
 </div>
 
-<div id="profileModal" class="hidden fixed z-50 pointer-events-none">
-  <div class="pointer-events-auto dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-3xl w-full max-w-md sm:ml-auto relative shadow-2xl overflow-y-auto" id="profilePanel">
-    <div class="h-20 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 rounded-t-3xl"></div>
-    <button onclick="closeProfileModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/30 text-white font-bold hover:bg-black/50">&#10005;</button>
 
-    <div id="authView" class="px-6 pb-6 -mt-8">
-      <div class="w-16 h-16 rounded-2xl bg-white dark:bg-gray-950 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center text-3xl mb-3">&#128100;</div>
-      <h3 class="text-lg font-extrabold dark:text-white text-gray-900">AI Rehberi'ne Ho&#351; Geldin</h3>
-      <p class="text-xs text-gray-400 mb-4">Hesap olu&#351;tur, ilgi alanlar&#305;na g&#246;re ki&#351;iselle&#351;tirilmi&#351; &#246;neriler al.</p>
-      <div class="flex p-1 rounded-xl dark:bg-gray-950 bg-gray-100 text-xs font-bold mb-4">
-        <button id="tabLogin" onclick="switchAuthTab('login')" class="flex-1 py-2 rounded-lg">Giri&#351; Yap</button>
-        <button id="tabRegister" onclick="switchAuthTab('register')" class="flex-1 py-2 rounded-lg">Kay&#305;t Ol</button>
-      </div>
-      <div id="authMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
-      <form id="loginForm" onsubmit="doLogin(event)" class="space-y-3">
-        <input id="loginEmail" type="email" required placeholder="E-posta" autocomplete="email" class="fld">
-        <input id="loginPass" type="password" required placeholder="&#350;ifre" autocomplete="current-password" class="fld">
-        <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Giri&#351; Yap</button>
-      </form>
-      <form id="registerForm" onsubmit="doRegister(event)" class="space-y-3 hidden">
-        <input id="regName" type="text" required maxlength="40" placeholder="Ad Soyad" autocomplete="name" class="fld">
-        <input id="regEmail" type="email" required placeholder="E-posta" autocomplete="email" class="fld">
-        
-        <input id="regPass" type="password" required minlength="8" placeholder="&#350;ifre (en az 8 karakter)" autocomplete="new-password" class="fld">
-        <input id="regPass2" type="password" required minlength="8" placeholder="&#350;ifre tekrar" autocomplete="new-password" class="fld">
-        <div><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">&#304;lgi alanlar&#305;n</div><div id="regInterests" class="flex flex-wrap gap-2"></div></div>
-        <div class="p-3 rounded-xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200">
-          <label for="capA" class="text-[11px] font-bold text-gray-400 uppercase block mb-2">&#129302; Robot de&#287;ilsin, de&#287;il mi? &#199;&#246;z: <span id="capQ" class="text-purple-400"></span></label>
-          <div class="flex gap-2"><input id="capA" type="number" inputmode="numeric" required placeholder="Cevap" class="fld"><button type="button" onclick="newCaptcha()" title="Yeni soru" class="px-3 rounded-xl dark:bg-gray-800 bg-gray-200 text-sm">&#128260;</button></div>
-          <input id="hpWebsite" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-        </div>
-        <label class="flex items-start gap-2 text-[11px] text-gray-400 leading-relaxed cursor-pointer"><input id="regConsent" type="checkbox" required class="mt-0.5"><span>Bilgilerimin bu taray&#305;c&#305;da saklanmas&#305;n&#305; kabul ediyorum.</span></label>
-        <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Hesap Olu&#351;tur</button>
-      </form>
-      <p class="mt-4 text-[11px] text-gray-400 leading-relaxed">&#128274; &#350;ifren cihaz&#305;nda &#351;ifrelenerek (PBKDF2) saklan&#305;r, bize g&#246;nderilmez. Hesab&#305;n &#351;u an yaln&#305;zca bu taray&#305;c&#305;da ge&#231;erlidir.</p>
-    </div>
-
-    <div id="accountView" class="px-6 pb-6 -mt-10 hidden">
-      <div id="profAvatarBig" class="w-20 h-20 rounded-3xl bg-white dark:bg-gray-950 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center text-4xl mb-2">&#129302;</div>
-      <div id="profEmailLine" class="text-[11px] text-gray-400 mb-3"></div>
-      <div id="profAvatarPicker" class="flex flex-wrap gap-1.5 mb-4"></div>
-      <div class="space-y-3">
-        <input id="profNameInput" type="text" maxlength="40" placeholder="Ad Soyad" class="fld">
-        
-        <textarea id="profBio" rows="2" maxlength="140" placeholder="Hakk&#305;nda k&#305;sa bir not..." class="fld"></textarea>
-        <div><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">&#304;lgi alanlar&#305;n (&#246;neriler buna g&#246;re s&#305;ralan&#305;r)</div><div id="profInterests" class="flex flex-wrap gap-2"></div></div>
-      </div>
-      <div class="grid grid-cols-3 gap-2 text-center text-xs my-4">
-        <div class="p-3 dark:bg-gray-950 bg-gray-100 rounded-2xl"><div class="text-gray-400">Favori</div><div id="profFavCount" class="text-lg font-bold text-purple-400">0</div></div>
-        <div class="p-3 dark:bg-gray-950 bg-gray-100 rounded-2xl"><div class="text-gray-400">&#304;ncelenen</div><div id="profViewCount" class="text-lg font-bold text-blue-400">0</div></div>
-        <div class="p-3 dark:bg-gray-950 bg-gray-100 rounded-2xl"><div class="text-gray-400">Yorum</div><div id="profReviewCount" class="text-lg font-bold text-amber-400">0</div></div>
-      </div>
-      <div class="mb-4"><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Son bakt&#305;klar&#305;n</div><div id="profRecent" class="space-y-1.5"></div></div>
-      <div id="accMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
-      <div class="grid grid-cols-2 gap-2">
-        <button onclick="saveAccount()" class="py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">&#128190; Kaydet</button>
-        <button onclick="switchPage('tools'); setCat('favorites'); closeProfileModal();" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#10084;&#65039; Favorilerim</button>
-        <button onclick="doLogout()" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#128682; &#199;&#305;k&#305;&#351; Yap</button>
-        <button onclick="deleteAccount()" class="py-3 bg-red-500/10 text-red-500 font-bold rounded-xl text-xs">&#128465; Hesab&#305; Sil</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div id="proModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
   <div class="dark:bg-gray-900 bg-white border border-amber-500/50 rounded-3xl w-full max-w-2xl relative shadow-2xl max-h-[92vh] overflow-y-auto">
@@ -650,6 +698,7 @@ function toggleFav(kind, id, event) {
   lsSet(kind === 'plugin' ? 'ai_directory_fav_plugins' : 'ai_directory_fav_ebooks', arr);
   updateProfileStats();
   if (kind === 'plugin') { renderPluginChips(); filterPlugins(); } else { renderEbookChips(); filterEbooks(); }
+  if (appState.activePage === 'profile') renderFavorites();
 }
 function heartBtn(kind, id) {
   var on = (kind === 'plugin' ? appState.favPlugins : appState.favEbooks).indexOf(id) > -1;
@@ -661,6 +710,7 @@ function toggleFavorite(id, event) {
   if (i > -1) appState.favorites.splice(i, 1); else appState.favorites.push(id);
   try { localStorage.setItem('ai_directory_favs', JSON.stringify(appState.favorites)); } catch (e) {}
   filterTools(); renderFeatured('featuredRecommendedGrid'); renderChips(); updateProfileStats();
+  if (appState.activePage === 'profile') renderFavorites();
 }
 
 /* ---------- Detay sayfas\u0131 ---------- */
@@ -734,11 +784,13 @@ function submitUserReview(e) {
 /* ---------- Sayfa ge\u00e7i\u015fi ---------- */
 function switchPage(page) {
   appState.activePage = page;
-  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
+  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', profile: 'pageProfile', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
   Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
   renderNav();
+  hashYaz();
   if (page === 'news' && !appState.liveNewsList.length) fetchLiveAINews();
   if (page === 'biz') { renderBizTabs(); renderBiz(); }
+  if (page === 'profile') { if (!appState.plugins.length) fetchPlugins(); if (!appState.ebooks.length) fetchEbooks(); renderAccountUI(); renderFavorites(); fbHazirla(); }
   if (page === 'plugins' && !appState.plugins.length) fetchPlugins();
   if (page === 'ebooks' && !appState.ebooks.length) fetchEbooks();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -955,7 +1007,7 @@ function filterTools() {
 
 /* ===== Kategori \u00e7ipleri ===== */
 var CATS = [
-  ['all', 'T\u00fcm\u00fc', '\u2728', 'from-purple-600 to-indigo-600'], ['favorites', 'Favorilerim', '\u2764\ufe0f', 'from-rose-500 to-red-600'],
+  ['all', 'T\u00fcm\u00fc', '\u2728', 'from-purple-600 to-indigo-600'],
   ['Metin', 'Metin & Sohbet', '\ud83d\udcac', 'from-sky-500 to-blue-600'], ['G\u00f6rsel', 'G\u00f6rsel & Tasar\u0131m', '\ud83c\udfa8', 'from-fuchsia-500 to-pink-600'],
   ['M\u00fczik', 'M\u00fczik & Ses', '\ud83c\udfb5', 'from-emerald-500 to-teal-600'], ['Kodlama', 'Kodlama', '\ud83d\udcbb', 'from-slate-500 to-slate-700'],
   ['Video', 'Video & 3D', '\ud83c\udfac', 'from-orange-500 to-red-500'], ['\u00dcretkenlik', '\u00dcretkenlik & SEO', '\u26a1', 'from-amber-500 to-yellow-600'],
@@ -1118,43 +1170,8 @@ function updateProfileStats() {
   set('headerAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
   set('headerUserName', profile.loggedIn ? (profile.name.split(' ')[0] || 'Profil') : 'Giri\u015f Yap');
 }
-function positionProfilePanel() {
-  var box = document.getElementById('profileModal'), panel = document.getElementById('profilePanel');
-  if (!box || box.classList.contains('hidden')) return;
-  var head = document.querySelector('header'), btn = document.getElementById('profileBtn');
-  var top = head ? head.getBoundingClientRect().bottom : 64;
-  if (top < 8) top = 8;
-  var vw = document.documentElement.clientWidth, w = Math.min(448, vw - 24);
-  var left = 12;
-  if (btn && vw >= 640) {
-    var r = btn.getBoundingClientRect();
-    left = Math.min(Math.max(12, r.right - w), vw - w - 12);
-  } else {
-    left = Math.round((vw - w) / 2);
-  }
-  box.style.top = (top + 8) + 'px';
-  box.style.left = left + 'px';
-  box.style.width = w + 'px';
-  panel.style.maxHeight = (window.innerHeight - top - 28) + 'px';
-}
-function openProfileModal() {
-  renderAccountUI(); updateProfileStats();
-  var box = document.getElementById('profileModal');
-  box.classList.remove('hidden');
-  positionProfilePanel();
-  requestAnimationFrame(positionProfilePanel);
-}
-function closeProfileModal() { document.getElementById('profileModal').classList.add('hidden'); }
-window.addEventListener('resize', positionProfilePanel);
-window.addEventListener('scroll', positionProfilePanel, { passive: true });
-document.addEventListener('click', function (e) {
-  var box = document.getElementById('profileModal');
-  if (!box || box.classList.contains('hidden')) return;
-  if (box.contains(e.target)) return;
-  if (e.target.closest && e.target.closest('[title="Favorilerim"]')) return;
-  closeProfileModal();
-});
-document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeProfileModal(); });
+function openProfileModal() { switchPage('profile'); }
+function closeProfileModal() {}
 
 /* ===== Premium ===== */
 function openProModal() { if (profile.email) document.getElementById('waitEmail').value = profile.email; document.getElementById('proModal').classList.remove('hidden'); }
@@ -1721,8 +1738,54 @@ function openBizDetail(baslik) {
   switchPage('bizDetail');
 }
 
+function favBolum(baslik, simge, renk, sayi, kartlar, bosMesaj, sayfa) {
+  var wrap = document.createElement('div');
+  wrap.innerHTML =
+    '<div class="flex items-center justify-between mb-4 px-1">' +
+      '<div class="flex items-center gap-2">' +
+        '<span class="w-9 h-9 rounded-2xl bg-' + renk + '-500/10 flex items-center justify-center text-base">' + simge + '</span>' +
+        '<span class="text-xs font-bold uppercase tracking-wider text-' + renk + '-500">' + esc(baslik) + '</span>' +
+        '<span class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">' + sayi + '</span>' +
+      '</div>' +
+      '<button class="text-xs font-bold text-gray-400 hover:text-' + renk + '-500 transition">Daha fazla ekle \u2192</button>' +
+    '</div>';
+  wrap.querySelector('button').onclick = function () { switchPage(sayfa); };
+  if (!kartlar.length) {
+    var e = document.createElement('p');
+    e.className = 'text-xs text-gray-400 px-1';
+    e.textContent = bosMesaj;
+    wrap.appendChild(e);
+  } else {
+    var grid = document.createElement('div');
+    grid.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6';
+    kartlar.forEach(function (c) { grid.appendChild(c); });
+    wrap.appendChild(grid);
+  }
+  return wrap;
+}
+function renderFavorites() {
+  var box = document.getElementById('favSections'), bos = document.getElementById('favEmptyAll');
+  if (!box) return;
+  box.innerHTML = '';
+  var t = appState.allTools.filter(function (x) { return appState.favorites.indexOf(x.id) > -1; });
+  var p = appState.plugins.filter(function (x) { return appState.favPlugins.indexOf(x.id) > -1; });
+  var e = appState.ebooks.filter(function (x) { return appState.favEbooks.indexOf(x.id) > -1; });
+  var toplam = t.length + p.length + e.length;
+  bos.classList.toggle('hidden', toplam > 0);
+  box.classList.toggle('hidden', toplam === 0);
+  var tot = document.getElementById('profFavTotal');
+  if (tot) tot.textContent = toplam;
+  if (!toplam) return;
+  box.appendChild(favBolum('AI Ara\u00e7lar\u0131', '\ud83e\uddf0', 'purple', t.length,
+    t.map(function (x) { return renderCardHTML(x, false); }), 'Hen\u00fcz favori arac\u0131n yok.', 'tools'));
+  box.appendChild(favBolum('Claude Eklentileri', '\ud83e\udde9', 'amber', p.length,
+    p.map(pluginCard), 'Hen\u00fcz favori eklentin yok.', 'plugins'));
+  box.appendChild(favBolum('E-Kitap ve Kaynaklar', '\ud83d\udcda', 'emerald', e.length,
+    e.map(ebookCard), 'Hen\u00fcz favori kayna\u011f\u0131n yok.', 'ebooks'));
+}
+
 /* ===== Claude eklentileri ===== */
-var PLUGIN_CATS = ['Tumu', 'Favorilerim', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
+var PLUGIN_CATS = ['Tumu', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
 function fetchPlugins() {
   var load = document.getElementById('pluginsLoading');
   if (!appState.plugins.length) load.classList.remove('hidden');
@@ -1745,6 +1808,20 @@ function renderPluginChips() {
     box.appendChild(b);
   });
 }
+function pluginCard(p) {
+    var c = document.createElement('div');
+    c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-amber-500 transition shadow-md group';
+    c.innerHTML =
+      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
+        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">\u2b50 ' + esc((p.stars || 0).toLocaleString('tr-TR')) + '</span>' +
+        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 \u{1F195}' : '') + '</span>' + heartBtn('plugin', p.id) + '</span></div>' +
+        '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono break-all">' + esc(p.title) + '</h3>' +
+        '<div class="text-[11px] text-gray-400 mb-2 font-mono">' + esc(p.owner || '') + '</div>' +
+        '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(fixText(p.desc || '')) + '</p></div>' +
+      '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da Incele \u2197</a>';
+    c.querySelector('[data-fav]').onclick = function (e) { toggleFav('plugin', p.id, e); };
+  return c;
+}
 function filterPlugins() {
   var q = norm(document.getElementById('pluginSearch').value);
   var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
@@ -1758,20 +1835,7 @@ function filterPlugins() {
   document.getElementById('pluginCount').textContent = list.length;
   document.getElementById('pluginsEmpty').classList.toggle('hidden', list.length > 0);
   var grid = document.getElementById('pluginsGrid'); grid.innerHTML = '';
-  list.slice(0, appState.pluginLimit).forEach(function (p) {
-    var c = document.createElement('div');
-    c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-amber-500 transition shadow-md group';
-    c.innerHTML =
-      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
-        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">\u2b50 ' + esc((p.stars || 0).toLocaleString('tr-TR')) + '</span>' +
-        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 \u{1F195}' : '') + '</span>' + heartBtn('plugin', p.id) + '</span></div>' +
-        '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono break-all">' + esc(p.title) + '</h3>' +
-        '<div class="text-[11px] text-gray-400 mb-2 font-mono">' + esc(p.owner || '') + '</div>' +
-        '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(fixText(p.desc || '')) + '</p></div>' +
-      '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da Incele \u2197</a>';
-    c.querySelector('[data-fav]').onclick = function (e) { toggleFav('plugin', p.id, e); };
-    grid.appendChild(c);
-  });
+  list.slice(0, appState.pluginLimit).forEach(function (p) { grid.appendChild(pluginCard(p)); });
   if (list.length > appState.pluginLimit) {
     var more = document.createElement('button');
     more.className = 'col-span-full mx-auto mt-4 px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-amber-500 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl';
@@ -1793,7 +1857,7 @@ function fetchEbooks() {
 }
 function renderEbookChips() {
   var box = document.getElementById('ebookChips'); box.innerHTML = '';
-  var cats = ['Tumu', 'Favorilerim'];
+  var cats = ['Tumu'];
   appState.ebooks.forEach(function (b) { if (cats.indexOf(b.topic) === -1) cats.push(b.topic); });
   cats.forEach(function (c) {
     var fav = c === 'Favorilerim', on = appState.ebookCat === c, b = document.createElement('button');
@@ -1804,6 +1868,20 @@ function renderEbookChips() {
   });
 }
 var LEVEL_COLOR = { 'Baslangic': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20', 'Orta': 'bg-amber-500/10 text-amber-500 border-amber-500/20', 'Ileri': 'bg-rose-500/10 text-rose-500 border-rose-500/20' };
+function ebookCard(b) {
+    var c = document.createElement('div');
+    c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-emerald-500 transition shadow-md group';
+    c.innerHTML =
+      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
+        '<span class="px-2.5 py-1 rounded-lg font-bold border ' + (LEVEL_COLOR[b.level] || LEVEL_COLOR.Orta) + '">' + esc(b.level) + '</span>' +
+        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(b.topic) + '</span>' + heartBtn('ebook', b.id) + '</span></div>' +
+        '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-emerald-500 transition">' + esc(b.title) + '</h3>' +
+        '<div class="text-[11px] text-gray-400 mb-2">' + esc(b.author) + '</div>' +
+        '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed mb-4">' + esc(fixText(b.desc || '')) + '</p></div>' +
+      '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-emerald-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">Ucretsiz Oku \u2197</a>';
+    c.querySelector('[data-fav]').onclick = function (e) { toggleFav('ebook', b.id, e); };
+  return c;
+}
 function filterEbooks() {
   var q = norm(document.getElementById('ebookSearch').value);
   var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
@@ -1817,20 +1895,7 @@ function filterEbooks() {
   document.getElementById('ebookCount').textContent = list.length;
   document.getElementById('ebooksEmpty').classList.toggle('hidden', list.length > 0);
   var grid = document.getElementById('ebooksGrid'); grid.innerHTML = '';
-  list.forEach(function (b) {
-    var c = document.createElement('div');
-    c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-emerald-500 transition shadow-md group';
-    c.innerHTML =
-      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
-        '<span class="px-2.5 py-1 rounded-lg font-bold border ' + (LEVEL_COLOR[b.level] || LEVEL_COLOR.Orta) + '">' + esc(b.level) + '</span>' +
-        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(b.topic) + '</span>' + heartBtn('ebook', b.id) + '</span></div>' +
-        '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-emerald-500 transition">' + esc(b.title) + '</h3>' +
-        '<div class="text-[11px] text-gray-400 mb-2">' + esc(b.author) + '</div>' +
-        '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed mb-4">' + esc(fixText(b.desc || '')) + '</p></div>' +
-      '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-emerald-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">Ucretsiz Oku \u2197</a>';
-    c.querySelector('[data-fav]').onclick = function (e) { toggleFav('ebook', b.id, e); };
-    grid.appendChild(c);
-  });
+  list.forEach(function (b) { grid.appendChild(ebookCard(b)); });
 }
 
 /* ===== Prompt rehberi ===== */
@@ -1873,6 +1938,83 @@ function copyPrompt() {
   }
 }
 
+
+/* ===== Adres cubugu yonlendirmesi ===== */
+var SLUG = { directory: '', tools: 'araclar', news: 'haberler', biz: 'is-modelleri', plugins: 'eklentiler',
+             ebooks: 'e-kitap', prompt: 'prompt', profile: 'profil', toolDetail: 'arac', bizDetail: 'is-modeli' };
+var SLUG_REV = {};
+Object.keys(SLUG).forEach(function (k) { if (SLUG[k]) SLUG_REV[SLUG[k]] = k; });
+var yonlendirme = false, ilkAcilis = true;
+function hashYaz() {
+  var p = appState.activePage, h = SLUG[p] || '';
+  if (p === 'toolDetail' && appState.currentActiveToolId != null) h += '/' + appState.currentActiveToolId;
+  if (p === 'bizDetail' && appState.bizDetail) h += '/' + encodeURIComponent(appState.bizDetail);
+  var yeni = h ? '#' + h : location.pathname + location.search;
+  if (yeni === location.href || yeni === location.hash) return;
+  try {
+    if (yonlendirme || ilkAcilis) history.replaceState(null, '', yeni);
+    else history.pushState(null, '', yeni);
+  } catch (e) { if (h) location.hash = h; }
+}
+function hashOku() {
+  var h = (location.hash || '').replace(/^#\/?/, '');
+  yonlendirme = true;
+  try {
+    if (!h) { if (appState.activePage !== 'directory') switchPage('directory'); return; }
+    var parca = h.split('/'), kok = SLUG_REV[parca[0]];
+    if (!kok) return;
+    if (kok === 'toolDetail' && parca[1]) { openToolDetail(isNaN(+parca[1]) ? parca[1] : +parca[1]); return; }
+    if (kok === 'bizDetail' && parca[1]) { openBizDetail(decodeURIComponent(parca[1])); return; }
+    if (kok !== appState.activePage) switchPage(kok);
+  } finally { yonlendirme = false; }
+}
+window.addEventListener('hashchange', hashOku);
+window.addEventListener('popstate', hashOku);
+
+/* ===== Oneri ve sikayet ===== */
+function fbGovde() {
+  var tip = document.getElementById('fbType').value;
+  var mail = document.getElementById('fbEmail').value.trim();
+  var metin = document.getElementById('fbText').value.trim();
+  return { tip: tip, konu: 'AI Rehberi - ' + tip,
+    govde: metin + '\n\n---\nTur: ' + tip + (mail ? '\nIletisim: ' + mail : '') +
+           (profile.loggedIn ? '\nKullanici: ' + profile.email : '') + '\nSayfa: ' + location.href, metin: metin };
+}
+function fbGoster(yazi, ok) {
+  var el = document.getElementById('fbMsg');
+  el.textContent = yazi;
+  el.className = 'p-3 rounded-xl text-xs font-semibold ' + (ok ? 'bg-emerald-500/10 text-emerald-500' : 'bg-amber-500/10 text-amber-600');
+}
+function sendFeedback(e) {
+  e.preventDefault();
+  var d = fbGovde();
+  if (!d.metin) return;
+  if (!CONTACT_EMAIL) { fbGoster('Iletisim adresi henuz tanimlanmadi. Mesajini kopyalayip bize ulastirabilirsin.', false); return; }
+  var baglanti = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(d.konu) + '&body=' + encodeURIComponent(d.govde);
+  window.location.href = baglanti;
+  fbGoster('E-posta uygulaman aciliyor. Acilmazsa "Metni Kopyala" ile gonderebilirsin.', true);
+}
+function copyFeedback() {
+  var d = fbGovde();
+  if (!d.metin) { fbGoster('Once mesajini yaz.', false); return; }
+  var yazi = (CONTACT_EMAIL ? 'Kime: ' + CONTACT_EMAIL + '\n' : '') + 'Konu: ' + d.konu + '\n\n' + d.govde;
+  var ok = function () { fbGoster('Panoya kopyalandi. E-posta olarak gonderebilirsin.', true); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(yazi).then(ok, yedek);
+  else yedek();
+  function yedek() {
+    var ta = document.createElement('textarea'); ta.value = yazi; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); ok(); } catch (err) { fbGoster('Kopyalanamadi, metni elle secip kopyala.', false); }
+    document.body.removeChild(ta);
+  }
+}
+function fbHazirla() {
+  var h = document.getElementById('fbHint');
+  if (h) h.textContent = CONTACT_EMAIL ? 'Mesajin ' + CONTACT_EMAIL + ' adresine gonderilir.' : 'Iletisim adresi henuz tanimli degil.';
+  var em = document.getElementById('fbEmail');
+  if (em && profile.email && !em.value) em.value = profile.email;
+}
+
 /* ---------- Otomatik ara\u00e7 g\u00fcncelleme ---------- */
 function refreshTools() {
   fetch('data/tools.json', { cache: 'no-cache' })
@@ -1903,6 +2045,8 @@ function startApp() {
   } catch (e) {}
   setPrice('all'); setCat('all');
   switchPage('directory');
+  hashOku();
+  ilkAcilis = false;
   renderFeatured('featuredRecommendedGrid');
   updateProfileStats();
   refreshTools();
