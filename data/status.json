@@ -1,1 +1,1 @@
-{"translate":{"ok":120,"fail":0,"provider":"mymemory","lastError":"gtx: 429"}}
+{"translate":{"ok":44,"fail":0,"provider":"mymemory","tried":{"gtx":9,"lingva":5,"mymemory":41},"lastError":"gtx: HTTP 429"}}
