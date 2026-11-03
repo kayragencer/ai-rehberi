@@ -81,7 +81,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 
     <div>
       <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#129517; Sitede Neler Var?</span></div>
-      <div id="homeSections" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+      <div id="homeSections" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4"></div>
     </div>
   </div>
 
@@ -192,14 +192,10 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   <div id="pagePrompt" class="hidden space-y-10">
     <div class="text-center max-w-3xl mx-auto">
       <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-4">&#9999;&#65039; Prompt Yazma Rehberi</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Yapay Zekaya Nasil Soru Sorulur?</h1>
-      <p class="text-gray-400 text-sm">Ayni yapay zeka, iyi yazilmis bir istemle cok daha iyi sonuc verir. Asagidaki 8 dersi sirayla oku, sonra kendi istemini olustur.</p>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Prompt Olusturucu</h1>
+      <p class="text-gray-400 text-sm">Alanlari doldur, yapay zekaya yapistirabilecegin hazir istemi an&#305;nda al.</p>
     </div>
 
-    <div>
-      <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">&#128214; Dersler</span></div>
-      <div id="promptLessons" class="space-y-3"></div>
-    </div>
 
     <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
       <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-1">&#128736;&#65039; Prompt Olusturucu</h3>
@@ -222,10 +218,6 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
       </div>
     </div>
 
-    <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
-      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-4">&#9989; Gondermeden Once Kontrol Listesi</h3>
-      <div id="promptChecklist" class="space-y-2"></div>
-    </div>
   </div>
 
   <!-- SAYFA 4 -->
@@ -446,7 +438,7 @@ var TOOLS = [
 ];
 
 var appState = {
-  allTools: [], favorites: [], currentCat: 'all', currentPrice: 'all', visibleLimit: 30,
+  allTools: [], favorites: [], favPlugins: [], favEbooks: [], currentCat: 'all', currentPrice: 'all', visibleLimit: 30,
   activePage: 'directory', plugins: [], pluginCat: 'Tumu', pluginLimit: 30, ebooks: [], ebookCat: 'Tumu', liveNewsList: [], currentActiveToolId: null, reviewsDB: {},
 };
 
@@ -625,6 +617,19 @@ function resetApp() {
 }
 
 /* ---------- Favoriler ---------- */
+function toggleFav(kind, id, event) {
+  if (event) event.stopPropagation();
+  var key = kind === 'plugin' ? 'favPlugins' : 'favEbooks';
+  var arr = appState[key], i = arr.indexOf(id);
+  if (i > -1) arr.splice(i, 1); else arr.push(id);
+  lsSet(kind === 'plugin' ? 'ai_directory_fav_plugins' : 'ai_directory_fav_ebooks', arr);
+  updateProfileStats();
+  if (kind === 'plugin') { renderPluginChips(); filterPlugins(); } else { renderEbookChips(); filterEbooks(); }
+}
+function heartBtn(kind, id) {
+  var on = (kind === 'plugin' ? appState.favPlugins : appState.favEbooks).indexOf(id) > -1;
+  return '<button type="button" data-fav="1" title="Favorilere ekle" class="w-8 h-8 rounded-full dark:bg-gray-800 bg-gray-100 hover:bg-rose-500/20 flex items-center justify-center text-sm transition">' + (on ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>';
+}
 function toggleFavorite(id, event) {
   event.stopPropagation();
   var i = appState.favorites.indexOf(id);
@@ -729,7 +734,7 @@ function fetchLiveAINews() {
     .then(function(items) {
       loading.classList.add('hidden');
       if (!items.length) return showNewsError();
-      appState.liveNewsList = items; filterNews();
+      appState.liveNewsList = items; filterNews(); updateHomeCounts();
     })
     .catch(showNewsError);
 }
@@ -957,6 +962,8 @@ function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch
 function loadProfile() {
   var g = lsGet('ai_directory_profile', {});
   profile = { name: '', avatar: g.avatar || '\ud83e\udd16', bio: '', job: '', city: '', email: '', interests: g.interests || [], viewed: lsGet('ai_directory_viewed', []), loggedIn: false };
+  appState.favPlugins = lsGet('ai_directory_fav_plugins', []) || [];
+  appState.favEbooks = lsGet('ai_directory_fav_ebooks', []) || [];
   var email = lsGet(SESSION_KEY, null), u = email && lsGet(USERS_KEY, {})[email];
   if (u) { profile.loggedIn = true; profile.email = u.email; profile.name = u.name || ''; profile.avatar = u.avatar || profile.avatar; profile.bio = u.bio || ''; profile.job = u.job || ''; profile.city = u.city || ''; profile.interests = u.interests || []; }
 }
@@ -1080,7 +1087,7 @@ function renderAccountUI() {
 }
 function updateProfileStats() {
   var set = function(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
-  set('profFavCount', appState.favorites.length); set('profViewCount', profile.viewed.length);
+  set('profFavCount', appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length); set('profViewCount', profile.viewed.length);
   var rc = 0; Object.keys(appState.reviewsDB).forEach(function(k) { rc += appState.reviewsDB[k].length; }); set('profReviewCount', rc);
   set('headerAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
   set('headerUserName', profile.loggedIn ? (profile.name.split(' ')[0] || 'Profil') : 'Giri\u015f Yap');
@@ -1211,24 +1218,43 @@ function renderNav() {
   });
 }
 var HOME_SECTIONS = [
-  ['tools', '\u{1F9F0}', 'AI Araclari', 'Yuzlerce yapay zeka aracini ara ve filtrele.', 'from-purple-600 to-indigo-600'],
-  ['news', '\u{1F4F0}', 'AI Haberleri', 'Dunyadan ve Turkiye\'den guncel gelismeler, Turkce.', 'from-blue-600 to-sky-600'],
-  ['plugins', '\u{1F9E9}', 'Claude Eklentileri', 'Claude\'u kendi araclarina baglayan MCP eklentileri.', 'from-amber-500 to-orange-500'],
-  ['ebooks', '\u{1F4DA}', 'E-Kitap', 'Ucretsiz yapay zeka kitaplari ve kurslari.', 'from-emerald-600 to-teal-600'],
-  ['prompt', '\u270d\ufe0f', 'Prompt Rehberi', 'Yapay zekadan daha iyi sonuc almanin yollari.', 'from-sky-600 to-cyan-600']
+  ['tools', '\ud83e\uddf0', 'AI Ara\u00e7lar\u0131', 'Y\u00fczlerce yapay zeka arac\u0131n\u0131 ara, kategoriye ve fiyata g\u00f6re filtrele.', 'from-purple-600 to-indigo-600', 'lg:col-span-3', 'toolCount', 'ara\u00e7'],
+  ['news', '\ud83d\udcf0', 'AI Haberleri', 'D\u00fcnyadan ve T\u00fcrkiye\u2019den g\u00fcncel geli\u015fmeler, T\u00fcrk\u00e7e \u00e7evrilmi\u015f olarak.', 'from-blue-600 to-sky-600', 'lg:col-span-3', 'newsCount', 'haber'],
+  ['plugins', '\ud83e\udde9', 'Claude Eklentileri', 'Claude\u2019u kendi ara\u00e7lar\u0131na ba\u011flayan eklentiler.', 'from-amber-500 to-orange-500', 'lg:col-span-2', 'pluginTotal', 'eklenti'],
+  ['ebooks', '\ud83d\udcda', 'E-Kitap', '\u00dccretsiz yapay zeka kitaplar\u0131 ve kurslar\u0131.', 'from-emerald-600 to-teal-600', 'lg:col-span-2', 'ebookTotal', 'kaynak'],
+  ['prompt', '\u270d\ufe0f', 'Prompt Olu\u015fturucu', 'Yapay zekadan daha iyi sonu\u00e7 veren istemi haz\u0131rla.', 'from-sky-600 to-cyan-600', 'lg:col-span-2', '', '']
 ];
 function renderHomeSections() {
   var box = document.getElementById('homeSections'); if (!box) return;
   box.innerHTML = '';
-  HOME_SECTIONS.forEach(function (s) {
+  HOME_SECTIONS.forEach(function (sec) {
+    var big = sec[5] === 'lg:col-span-3';
     var c = document.createElement('button');
-    c.className = 'text-left p-5 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500 transition shadow-md group';
-    c.innerHTML = '<div class="w-11 h-11 rounded-2xl bg-gradient-to-br ' + s[4] + ' flex items-center justify-center text-xl mb-3">' + s[1] + '</div>' +
-      '<div class="font-bold text-sm dark:text-white text-gray-900 mb-1 group-hover:text-purple-500 transition">' + esc(s[2]) + '</div>' +
-      '<div class="text-xs text-gray-400 leading-relaxed">' + esc(s[3]) + '</div>';
-    c.onclick = function () { switchPage(s[0]); };
+    c.className = 'group relative overflow-hidden text-left rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500 hover:-translate-y-0.5 transition shadow-md ' + sec[5] + ' ' + (big ? 'p-6 sm:p-7' : 'p-5');
+    c.innerHTML =
+      '<div class="absolute -right-6 -top-6 w-24 h-24 rounded-full bg-gradient-to-br ' + sec[4] + ' opacity-10 group-hover:opacity-20 transition"></div>' +
+      '<div class="relative flex items-start gap-4">' +
+        '<div class="w-12 h-12 flex-shrink-0 rounded-2xl bg-gradient-to-br ' + sec[4] + ' flex items-center justify-center text-xl shadow-lg">' + sec[1] + '</div>' +
+        '<div class="min-w-0 flex-1">' +
+          '<div class="flex items-center gap-2 mb-1">' +
+            '<span class="font-extrabold ' + (big ? 'text-base' : 'text-sm') + ' dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(sec[2]) + '</span>' +
+            (sec[6] ? '<span id="' + sec[6] + '" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">\u2026</span>' : '') +
+          '</div>' +
+          '<div class="text-xs text-gray-400 leading-relaxed">' + esc(sec[3]) + '</div>' +
+        '</div>' +
+        '<span class="text-gray-300 dark:text-gray-700 group-hover:text-purple-500 transition font-bold">\u2192</span>' +
+      '</div>';
+    c.onclick = function () { switchPage(sec[0]); };
     box.appendChild(c);
   });
+  updateHomeCounts();
+}
+function updateHomeCounts() {
+  var set = function (id, n, w) { var el = document.getElementById(id); if (el) el.textContent = n ? n.toLocaleString('tr-TR') + ' ' + w : '\u2026'; };
+  set('toolCount', appState.allTools.length, 'ara\u00e7');
+  set('newsCount', appState.liveNewsList.length, 'haber');
+  set('pluginTotal', appState.plugins.length, 'eklenti');
+  set('ebookTotal', appState.ebooks.length, 'kaynak');
 }
 
 /* ===== Ana sayfa aramasi ===== */
@@ -1281,7 +1307,7 @@ function renderHomeExamples() {
 }
 
 /* ===== Claude eklentileri ===== */
-var PLUGIN_CATS = ['Tumu', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
+var PLUGIN_CATS = ['Tumu', 'Favorilerim', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
 function fetchPlugins() {
   var load = document.getElementById('pluginsLoading');
   if (!appState.plugins.length) load.classList.remove('hidden');
@@ -1290,16 +1316,16 @@ function fetchPlugins() {
     .then(function (d) {
       load.classList.add('hidden');
       appState.plugins = (d.plugins || []).filter(function (p) { return p.status !== 'inactive'; });
-      renderPluginChips(); filterPlugins();
+      renderPluginChips(); filterPlugins(); updateHomeCounts();
     })
     .catch(function () { load.classList.add('hidden'); document.getElementById('pluginsEmpty').classList.remove('hidden'); });
 }
 function renderPluginChips() {
   var box = document.getElementById('pluginChips'); box.innerHTML = '';
   PLUGIN_CATS.forEach(function (c) {
-    var on = appState.pluginCat === c, b = document.createElement('button');
-    b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? 'bg-amber-500 text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-amber-500');
-    b.textContent = c;
+    var fav = c === 'Favorilerim', on = appState.pluginCat === c, b = document.createElement('button');
+    b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? (fav ? 'bg-rose-600' : 'bg-amber-500') + ' text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white ' + (fav ? 'text-rose-400 border-rose-500/30' : 'dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300') + ' hover:border-amber-500');
+    b.textContent = fav ? '\u2764\ufe0f ' + c + ' (' + appState.favPlugins.length + ')' : c;
     b.onclick = function () { appState.pluginCat = c; appState.pluginLimit = 30; renderPluginChips(); filterPlugins(); };
     box.appendChild(b);
   });
@@ -1308,7 +1334,8 @@ function filterPlugins() {
   var q = norm(document.getElementById('pluginSearch').value);
   var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
   var list = appState.plugins.filter(function (p) {
-    if (appState.pluginCat !== 'Tumu' && p.category !== appState.pluginCat) return false;
+    if (appState.pluginCat === 'Favorilerim') { if (appState.favPlugins.indexOf(p.id) === -1) return false; }
+    else if (appState.pluginCat !== 'Tumu' && p.category !== appState.pluginCat) return false;
     if (!words.length) return true;
     var h = norm(p.title + ' ' + p.desc + ' ' + p.category + ' ' + (p.owner || '') + ' ' + (p.repo || ''));
     return words.every(function (w) { return h.indexOf(w) !== -1; });
@@ -1322,11 +1349,12 @@ function filterPlugins() {
     c.innerHTML =
       '<div><div class="flex justify-between items-center mb-3 text-xs">' +
         '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">\u2b50 ' + esc((p.stars || 0).toLocaleString('tr-TR')) + '</span>' +
-        '<span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 \u{1F195}' : '') + '</span></div>' +
+        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 \u{1F195}' : '') + '</span>' + heartBtn('plugin', p.id) + '</span></div>' +
         '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono break-all">' + esc(p.title) + '</h3>' +
         '<div class="text-[11px] text-gray-400 mb-2 font-mono">' + esc(p.owner || '') + '</div>' +
         '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(fixText(p.desc || '')) + '</p></div>' +
       '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da Incele \u2197</a>';
+    c.querySelector('[data-fav]').onclick = function (e) { toggleFav('plugin', p.id, e); };
     grid.appendChild(c);
   });
   if (list.length > appState.pluginLimit) {
@@ -1344,18 +1372,18 @@ function fetchEbooks() {
     .then(function (r) { if (!r.ok) throw 0; return r.json(); })
     .then(function (d) {
       appState.ebooks = (d.books || []).filter(function (b) { return b.status !== 'inactive'; });
-      renderEbookChips(); filterEbooks();
+      renderEbookChips(); filterEbooks(); updateHomeCounts();
     })
     .catch(function () { document.getElementById('ebooksEmpty').classList.remove('hidden'); });
 }
 function renderEbookChips() {
   var box = document.getElementById('ebookChips'); box.innerHTML = '';
-  var cats = ['Tumu'];
+  var cats = ['Tumu', 'Favorilerim'];
   appState.ebooks.forEach(function (b) { if (cats.indexOf(b.topic) === -1) cats.push(b.topic); });
   cats.forEach(function (c) {
-    var on = appState.ebookCat === c, b = document.createElement('button');
-    b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? 'bg-emerald-600 text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-emerald-500');
-    b.textContent = c;
+    var fav = c === 'Favorilerim', on = appState.ebookCat === c, b = document.createElement('button');
+    b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? (fav ? 'bg-rose-600' : 'bg-emerald-600') + ' text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white ' + (fav ? 'text-rose-400 border-rose-500/30' : 'dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300') + ' hover:border-emerald-500');
+    b.textContent = fav ? '\u2764\ufe0f ' + c + ' (' + appState.favEbooks.length + ')' : c;
     b.onclick = function () { appState.ebookCat = c; renderEbookChips(); filterEbooks(); };
     box.appendChild(b);
   });
@@ -1365,7 +1393,8 @@ function filterEbooks() {
   var q = norm(document.getElementById('ebookSearch').value);
   var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
   var list = appState.ebooks.filter(function (b) {
-    if (appState.ebookCat !== 'Tumu' && b.topic !== appState.ebookCat) return false;
+    if (appState.ebookCat === 'Favorilerim') { if (appState.favEbooks.indexOf(b.id) === -1) return false; }
+    else if (appState.ebookCat !== 'Tumu' && b.topic !== appState.ebookCat) return false;
     if (!words.length) return true;
     var h = norm(b.title + ' ' + b.author + ' ' + b.desc + ' ' + b.topic + ' ' + b.level);
     return words.every(function (w) { return h.indexOf(w) !== -1; });
@@ -1379,76 +1408,17 @@ function filterEbooks() {
     c.innerHTML =
       '<div><div class="flex justify-between items-center mb-3 text-xs">' +
         '<span class="px-2.5 py-1 rounded-lg font-bold border ' + (LEVEL_COLOR[b.level] || LEVEL_COLOR.Orta) + '">' + esc(b.level) + '</span>' +
-        '<span class="text-gray-400 font-bold text-[11px]">' + esc(b.topic) + '</span></div>' +
+        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(b.topic) + '</span>' + heartBtn('ebook', b.id) + '</span></div>' +
         '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-emerald-500 transition">' + esc(b.title) + '</h3>' +
         '<div class="text-[11px] text-gray-400 mb-2">' + esc(b.author) + '</div>' +
         '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed mb-4">' + esc(fixText(b.desc || '')) + '</p></div>' +
       '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-emerald-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">Ucretsiz Oku \u2197</a>';
+    c.querySelector('[data-fav]').onclick = function (e) { toggleFav('ebook', b.id, e); };
     grid.appendChild(c);
   });
 }
 
 /* ===== Prompt rehberi ===== */
-var LESSONS = [
-  ['\u{1F3AF}', 'Ne istedigini acik yaz',
-   'Yapay zeka aklindan gecenleri bilmez. "Bir seyler yaz" demek yerine konuyu, amaci ve kimin okuyacagini soyle. Belirsiz birakirsan ortalama bir cevap alirsin.',
-   'Bana pazarlama hakkinda bir sey yaz.',
-   'Yeni acilan bir kahve dukkanini mahalledeki universite ogrencilerine tanitan, samimi tonda bir Instagram gonderisi yaz.'],
-  ['\u{1F9F1}', 'Baglam ver',
-   'Modelin bilmedigi her sey tahmine donusur. Urunun, hedef kitlen, kisitlarin ve elindeki bilgiler neyse paylas. Baglam arttikca cevap seninkine benzer.',
-   'Bu e-postaya cevap yaz.',
-   'Musterimiz teslimat gecikmesinden sikayet ediyor. Siparisi 3 gun gecikti, kargo firmasindan kaynaklandi. Ozur dileyen, kargo takip numarasi veren ve yuzde 10 indirim sunan kisa bir cevap yaz.'],
-  ['\u{1F464}', 'Rol ver',
-   'Modele kim gibi davranmasini istedigini soylemek, dili ve bakis acisini degistirir. "Deneyimli bir mali musavir gibi davran" demek, cevabin derinligini artirir.',
-   'Vergi konusunda bilgi ver.',
-   'Turkiye\'de calisan deneyimli bir mali musavir gibi davran. Yeni sirket kuran birine, ilk yil dikkat etmesi gereken vergi yukumluluklerini sade bir dille anlat.'],
-  ['\u{1F4D0}', 'Cikti bicimini belirt',
-   'Tablo mu, madde listesi mi, JSON mu, kac kelime? Bicimi soylemezsen model kendi secer ve genelde uzun paragraflar yazar.',
-   'Bu urunleri karsilastir.',
-   'Bu 3 telefonu karsilastir. Ciktiyi bir tablo olarak ver; sutunlar: model, ekran, pil, fiyat, kimin icin uygun. Her hucre en fazla 6 kelime olsun.'],
-  ['\u{1F4DD}', 'Ornek goster',
-   'Istedigin uslubu anlatmak yerine bir ornek vermek cok daha etkilidir. Bir veya iki ornek, modelin tonu ve yapiyi yakalamasini saglar.',
-   'Urun aciklamalari yaz.',
-   'Su uslupta urun aciklamalari yaz. Ornek: "Sabah telasinda kurtarici. 40 saniyede demleyen, 2 kisilik capta filtre kahve makinesi." Simdi ayni uslupla su 3 urun icin yaz: ...'],
-  ['\u{1FA9C}', 'Isi adimlara bol',
-   'Buyuk bir isi tek istemde istemek kaliteyi dusurur. Once plan iste, onayla, sonra parca parca yazdir. Her adimda duzeltme sansin olur.',
-   'Bana 20 sayfalik bir is plani yaz.',
-   'Once kahve dukkani is plani icin sadece bolum basliklarindan olusan bir taslak cikar. Onayladiktan sonra bolumleri tek tek yazacagiz.'],
-  ['\u{1F6AB}', 'Yapilmasini istedigini yaz, yapilmamasini degil',
-   '"Sikici olmasin" demek modele ne yapacagini soylemez. Olumlu talimat daha iyi calisir: "kisa cumleler kur, somut ornek ver" gibi.',
-   'Cok resmi ve sikici olmasin.',
-   'Gunluk konusma dilinde yaz, cumleleri kisa tut ve her fikir icin somut bir ornek ekle.'],
-  ['\u{1F504}', 'Duzelterek ilerle',
-   'Ilk cevap nadiren en iyisidir. Neyi begenmedigini soyleyip tekrar iste. "Ikinci paragrafi koru, gerisini daha kisa yaz" gibi hedefli geri bildirim en hizli yoldur.',
-   'Begenmedim, tekrar yaz.',
-   'Giris paragrafi iyi olmus, onu koru. Orta bolum fazla uzun, yariya indir. Sondaki cagriyi daha net bir eylem cumlesine cevir.']
-];
-function renderLessons() {
-  var box = document.getElementById('promptLessons'); if (!box) return;
-  box.innerHTML = '';
-  LESSONS.forEach(function (l, i) {
-    var d = document.createElement('div');
-    d.className = 'rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md overflow-hidden';
-    d.innerHTML =
-      '<button class="w-full flex items-center gap-3 p-5 text-left" type="button">' +
-        '<span class="w-10 h-10 rounded-2xl bg-sky-500/10 flex items-center justify-center text-lg flex-shrink-0">' + l[0] + '</span>' +
-        '<span class="flex-1 min-w-0"><span class="block text-[11px] font-bold text-sky-400">DERS ' + (i + 1) + '</span>' +
-        '<span class="block font-bold text-sm dark:text-white text-gray-900">' + esc(l[1]) + '</span></span>' +
-        '<span class="text-gray-400 font-bold text-lg flex-shrink-0 arrow">+</span></button>' +
-      '<div class="hidden px-5 pb-5 space-y-3 body">' +
-        '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(l[2]) + '</p>' +
-        '<div class="p-3 rounded-2xl bg-rose-500/5 border border-rose-500/20"><div class="text-[11px] font-bold text-rose-500 mb-1">\u274c Zayif istem</div>' +
-        '<div class="text-xs dark:text-gray-300 text-gray-700">' + esc(l[3]) + '</div></div>' +
-        '<div class="p-3 rounded-2xl bg-emerald-500/5 border border-emerald-500/20"><div class="text-[11px] font-bold text-emerald-500 mb-1">\u2705 Iyi istem</div>' +
-        '<div class="text-xs dark:text-gray-300 text-gray-700">' + esc(l[4]) + '</div></div></div>';
-    var btn = d.querySelector('button'), body = d.querySelector('.body'), arrow = d.querySelector('.arrow');
-    btn.onclick = function () {
-      var open = body.classList.toggle('hidden');
-      arrow.textContent = open ? '+' : '\u2212';
-    };
-    box.appendChild(d);
-  });
-}
 var PB = {
   pbRole: ['Deneyimli bir pazarlama uzmani', 'Kidemli bir yazilim gelistirici', 'Sabirli bir ogretmen', 'Profesyonel bir editor', 'Mali musavir', 'Is analisti', 'Sosyal medya uzmani'],
   pbFormat: ['Duz metin', 'Maddeler halinde liste', 'Tablo', 'Adim adim talimat', 'E-posta', 'Sosyal medya gonderisi', 'JSON'],
@@ -1487,17 +1457,6 @@ function copyPrompt() {
     document.body.removeChild(ta);
   }
 }
-var CHECKS = ['Ne istedigimi tek cumlede acikca yazdim mi?', 'Modelin bilmedigi bilgileri verdim mi?', 'Cikti bicimini ve uzunlugunu soyledim mi?', 'Bir ornek gosterdim mi?', 'Yapilmasini istedigimi olumlu dille yazdim mi?', 'Buyuk isi adimlara boldum mu?'];
-function renderChecklist() {
-  var box = document.getElementById('promptChecklist'); if (!box) return;
-  box.innerHTML = '';
-  CHECKS.forEach(function (t, i) {
-    var l = document.createElement('label');
-    l.className = 'flex items-start gap-3 p-3 rounded-2xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 cursor-pointer text-xs dark:text-gray-200 text-gray-800';
-    l.innerHTML = '<input type="checkbox" class="mt-0.5"><span>' + esc(t) + '</span>';
-    box.appendChild(l);
-  });
-}
 
 /* ---------- Otomatik ara\u00e7 g\u00fcncelleme ---------- */
 function refreshTools() {
@@ -1509,7 +1468,7 @@ function refreshTools() {
         return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew,
                  desc: fixText(t.desc), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
-      renderChips(); if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
+      renderChips(); updateHomeCounts(); if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
     }).catch(function() {});
 }
 
@@ -1520,7 +1479,7 @@ function startApp() {
   started = true;
   appState.allTools = buildDatabase();
   loadProfile(); renderExamples(); renderHomeExamples(); renderHomeSections(); renderNav();
-  fillPromptSelects(); buildPrompt(); renderLessons(); renderChecklist();
+  fillPromptSelects(); buildPrompt();
   startPlaceholderRotation();
   try {
     var favs = JSON.parse(localStorage.getItem('ai_directory_favs') || '[]');
@@ -1532,6 +1491,7 @@ function startApp() {
   renderFeatured('featuredRecommendedGrid');
   updateProfileStats();
   refreshTools();
+  setTimeout(function () { fetchPlugins(); fetchEbooks(); fetchLiveAINews(); }, 1200);
   setInterval(refreshTools, 900000);
   setInterval(function() { if (appState.activePage === 'news') fetchLiveAINews(); }, 300000);
 }
