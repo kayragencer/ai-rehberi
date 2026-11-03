@@ -10,7 +10,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
 const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14 };
 
-if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 160;
+if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 120;
 const FEEDS = [
   ['TechCrunch', 'https://techcrunch.com/category/artificial-intelligence/feed/', 'en'],
   ['The Verge', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', 'en'],
@@ -153,15 +153,21 @@ async function translate(texts) {
   if (E.ANTHROPIC_API_KEY) batch.push(['claude', claudeTr]);
   for (const [name, fn] of batch) {
     if (dead[name] >= 3) continue;
-    TSTAT.tried[name] = (TSTAT.tried[name] || 0) + 1;
-    try {
-      const r = await fn(texts);
-      dead[name] = 0; TSTAT.ok += r.length; TSTAT.provider = name;
-      return r;
-    } catch (e) {
-      dead[name] = (dead[name] || 0) + 1;
-      TSTAT.lastError = name + ': ' + String(e.message).slice(0, 120);
-      console.warn('Ceviri hatasi (' + name + '):', e.message);
+    for (var attempt = 0; attempt < 2; attempt++) {
+      TSTAT.tried[name] = (TSTAT.tried[name] || 0) + 1;
+      try {
+        const r = await fn(texts);
+        dead[name] = 0; TSTAT.ok += r.length; TSTAT.provider = name;
+        await sleep(E.FAST ? 0 : 4500);
+        return r;
+      } catch (e) {
+        const rate = /429|quota|rate.?limit|RESOURCE_EXHAUSTED/i.test(e.message);
+        TSTAT.lastError = name + ': ' + String(e.message).slice(0, 120);
+        if (rate && attempt === 0) { TSTAT.waited = (TSTAT.waited || 0) + 1; await sleep(E.FAST ? 0 : 30000); continue; }
+        dead[name] = (dead[name] || 0) + 1;
+        console.warn('Ceviri hatasi (' + name + '):', e.message);
+        break;
+      }
     }
   }
   const solo = [['gtx', gtx], ['lingva', lingva], ['mymemory', mymemory]];
@@ -374,6 +380,8 @@ const PLUGIN_QUERIES = [
   ['topic:anthropic stars:>40 fork:false archived:false', 'Claude Araci'],
   ['"claude code" plugin in:name,description stars:>25 fork:false archived:false', 'Claude Code']
 ];
+const PLUGIN_REL = /claude|\bmcp\b|mcp-|model.context.protocol|anthropic/i;
+const isPlugin = o => PLUGIN_REL.test((o.title || o.name || '') + ' ' + (o.descOrig || o.description || '') + ' ' + (o.repo || o.full_name || '') + ' ' + ((o.topics || []).join(' ')));
 function pluginCat(p, fallback) {
   const s = (p.name + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ')).toLowerCase();
   if (/\bsdk\b|client library|api client/.test(s)) return 'SDK';
@@ -395,6 +403,7 @@ async function updatePlugins() {
       const id = 'gh-' + slug(p.full_name);
       const text = (p.name + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ')).toLowerCase();
       if (byId.has(id) || block.ids.includes(id) || !p.description || NONLATIN.test(p.description)) continue;
+      if (!isPlugin(p)) continue;
       if (block.words.some(w => text.includes(w)) || plugins.length >= 600) continue;
       const t = { id, repo: p.full_name, title: p.name, url: p.html_url, desc: '', descOrig: p.description, tr: false,
         stars: p.stargazers_count, owner: (p.owner || {}).login || p.full_name.split('/')[0],
@@ -404,6 +413,7 @@ async function updatePlugins() {
     await sleep(SEARCH_WAIT);
   }
 
+  plugins = plugins.filter(isPlugin);
   // Saglik kontrolu ve guncelleme
   const batch = plugins.sort((a, b) => (a.checkedAt || '').localeCompare(b.checkedAt || '')).slice(0, 60);
   for (let i = 0; i < batch.length; i += 8) await Promise.all(batch.slice(i, i + 8).map(async t => {
