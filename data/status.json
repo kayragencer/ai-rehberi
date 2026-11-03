@@ -1,1 +1,1 @@
-{"translate":{"ok":220,"fail":0,"provider":"gemini","tried":{"gemini":28,"gtx":16},"lastError":"gemini: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and bil"}}
+{"translate":{"ok":182,"fail":0,"provider":"gemini","tried":{"gemini":24},"lastError":""}}
