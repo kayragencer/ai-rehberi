@@ -10,7 +10,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
 const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 50, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14 };
 
-if (E.ANTHROPIC_API_KEY) CFG.TR_PER_RUN = 160;
+if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 160;
 const FEEDS = [
   ['TechCrunch', 'https://techcrunch.com/category/artificial-intelligence/feed/', 'en'],
   ['The Verge', 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', 'en'],
@@ -52,50 +52,133 @@ const isTr = t => /[\u011f\u011e\u015f\u015e\u0131\u0130]/.test(t || '');
 
 /* ---------- T\u00fcrk\u00e7e \u00e7eviri ----------
    ANTHROPIC_API_KEY tan\u0131ml\u0131ysa Claude ile (daha kaliteli), de\u011filse \u00fccretsiz Google \u00e7eviri u\u00e7 noktas\u0131yla \u00e7evirir. */
-async function gtx(text) {
-  const u = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=tr&dt=t&q=' + encodeURIComponent(text.slice(0, 1500));
-  const r = await get(u, { headers }); if (!r.ok) throw new Error(r.status);
-  const j = await r.json(); return j[0].map(x => x[0]).join('');
+/* ---------- Turkce ceviri ----------
+   Saglayici sirasi: Gemini (ucretsiz anahtar) -> Claude -> Google gtx -> Lingva -> MyMemory
+   Hangi anahtar tanimliysa o kullanilir; hicbiri yoksa anahtarsiz servisler denenir. */
+const TSTAT = { ok: 0, fail: 0, provider: '', tried: {}, lastError: '' };
+const dead = {};
+const NONLATIN = new RegExp('[' + [[0x400,0x4ff],[0x590,0x6ff],[0x900,0xdff],[0xe00,0xe7f],[0x3040,0x30ff],[0x3400,0x9fff],[0xac00,0xd7af]].map(function(r){return String.fromCharCode(r[0])+'-'+String.fromCharCode(r[1]);}).join('') + ']');
+const SYS_TR = 'Sen yapay zeka haberleri ve araclari konusunda uzman bir Turkce editorsun. Verilen JSON dizisindeki her metni dogal, akici ve dogru Turkceye cevir. Urun, marka ve model adlarini cevirme. Yalnizca ayni uzunlukta bir JSON dizisi dondur, baska hicbir sey yazma.';
+
+function parseArr(txt, n) {
+  const a = txt.indexOf('['), b = txt.lastIndexOf(']');
+  if (a < 0 || b < a) throw new Error('dizi bulunamadi');
+  const arr = JSON.parse(txt.slice(a, b + 1));
+  if (!Array.isArray(arr) || arr.length !== n) throw new Error('uzunluk uyumsuz (' + (arr || []).length + '/' + n + ')');
+  return arr.map(String);
 }
+
+/* --- Gemini: Google AI Studio ucretsiz anahtari (GEMINI_API_KEY) --- */
+let geminiModel = null;
+async function geminiPick() {
+  if (geminiModel) return geminiModel;
+  const r = await get('https://generativelanguage.googleapis.com/v1beta/models?key=' + E.GEMINI_API_KEY, { headers });
+  if (!r.ok) throw new Error('model listesi HTTP ' + r.status);
+  const ms = ((await r.json()).models || []).filter(m => (m.supportedGenerationMethods || []).includes('generateContent') && !/embedding|aqa|image|vision|tts|audio|video|learnlm/i.test(m.name));
+  if (!ms.length) throw new Error('uygun model yok');
+  const score = m => {
+    const n = m.name; let s = 0;
+    if (/flash/i.test(n)) s += 20;
+    if (/lite/i.test(n)) s += 4;
+    if (/pro/i.test(n)) s += 2;
+    if (/preview|exp|thinking/i.test(n)) s -= 8;
+    const v = parseFloat((n.match(/-(\d+(?:\.\d+)?)-/) || [])[1] || 0);
+    return s + v;
+  };
+  ms.sort((a, b) => score(b) - score(a));
+  geminiModel = ms[0].name.replace(/^models\//, '');
+  console.log('Gemini modeli:', geminiModel);
+  return geminiModel;
+}
+async function geminiTr(texts) {
+  const model = await geminiPick();
+  const r = await get('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + E.GEMINI_API_KEY, {
+    method: 'POST', headers: { ...headers, 'content-type': 'application/json' },
+    body: JSON.stringify({
+      systemInstruction: { parts: [{ text: SYS_TR }] },
+      contents: [{ role: 'user', parts: [{ text: JSON.stringify(texts) }] }],
+      generationConfig: { temperature: 0.2, maxOutputTokens: 8000, responseMimeType: 'application/json' }
+    })
+  });
+  if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 120));
+  const parts = (((await r.json()).candidates || [])[0] || {}).content;
+  return parseArr(((parts || {}).parts || []).map(p => p.text || '').join(''), texts.length);
+}
+
+/* --- Claude (ANTHROPIC_API_KEY) --- */
 async function claudeTr(texts) {
   const r = await get('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'content-type': 'application/json', 'x-api-key': E.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
-    body: JSON.stringify({
-      model: 'claude-haiku-5-5', max_tokens: 4000,
-      system: 'Sen yapay zeka haberleri ve ara\u00e7lar\u0131 konusunda uzman bir T\u00fcrk\u00e7e edit\u00f6rs\u00fcn. Verilen JSON dizisindeki her metni do\u011fal, ak\u0131c\u0131 ve do\u011fru T\u00fcrk\u00e7eye \u00e7evir. \u00dcr\u00fcn, marka ve model adlar\u0131n\u0131 \u00e7evirme. Yaln\u0131zca ayn\u0131 uzunlukta bir JSON dizisi d\u00f6nd\u00fcr, ba\u015fka hi\u00e7bir \u015fey yazma.',
-      messages: [{ role: 'user', content: JSON.stringify(texts) }]
-    })
+    body: JSON.stringify({ model: 'claude-haiku-5-5', max_tokens: 4000, system: SYS_TR, messages: [{ role: 'user', content: JSON.stringify(texts) }] })
   });
-  if (!r.ok) throw new Error('Claude ' + r.status);
-  const txt = ((await r.json()).content || []).map(c => c.text || '').join('');
-  const arr = JSON.parse(txt.slice(txt.indexOf('['), txt.lastIndexOf(']') + 1));
-  if (!Array.isArray(arr) || arr.length !== texts.length) throw new Error('Claude \u00e7\u0131kt\u0131s\u0131 uyumsuz');
-  return arr.map(String);
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  return parseArr(((await r.json()).content || []).map(c => c.text || '').join(''), texts.length);
 }
-const TSTAT = { ok: 0, fail: 0, provider: '', lastError: '' };
-const dead = { gtx: 0, mymemory: 0 };
-const NONLATIN = /[\u0400-\u04ff\u0590-\u06ff\u0900-\u0dff\u0e00-\u0e7f\u3040-\u30ff\u3400-\u9fff\uac00-\ud7af]/;
+
+/* --- Anahtarsiz ucretsiz servisler (metin metin) --- */
+async function gtx(text) {
+  const r = await get('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=tr&dt=t&q=' + encodeURIComponent(text.slice(0, 1500)), { headers });
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  const j = await r.json();
+  return j[0].map(x => x[0]).join('');
+}
+async function lingva(text) {
+  const hosts = ['lingva.ml', 'lingva.garudalinux.org', 'translate.plausibility.cloud'];
+  let last = '';
+  for (const h of hosts) {
+    try {
+      const r = await get('https://' + h + '/api/v1/auto/tr/' + encodeURIComponent(text.slice(0, 1200)), { headers });
+      if (!r.ok) { last = 'HTTP ' + r.status; continue; }
+      const t = (await r.json()).translation;
+      if (t && t.trim()) return t;
+      last = 'bos yanit';
+    } catch (e) { last = e.message; }
+  }
+  throw new Error(last || 'ulasilamadi');
+}
 async function mymemory(text) {
   if (NONLATIN.test(text)) throw new Error('latin disi metin');
-  const r = await get('https://api.mymemory.translated.net/get?langpair=en%7Ctr&q=' + encodeURIComponent(text.slice(0, 450)), { headers });
+  const mail = E.MYMEMORY_EMAIL ? '&de=' + encodeURIComponent(E.MYMEMORY_EMAIL) : '';
+  const r = await get('https://api.mymemory.translated.net/get?langpair=en%7Ctr' + mail + '&q=' + encodeURIComponent(text.slice(0, 450)), { headers });
   if (!r.ok) throw new Error('HTTP ' + r.status);
-  const j = await r.json(); const t = j && j.responseData && j.responseData.translatedText;
-  if (!t || Number(j.responseStatus) !== 200 || /MYMEMORY WARNING|QUERY LENGTH|INVALID/i.test(t)) throw new Error('yanit: ' + String(j.responseDetails || t || 'bos').slice(0, 80));
+  const j = await r.json(), t = j && j.responseData && j.responseData.translatedText;
+  if (!t || Number(j.responseStatus) !== 200 || /MYMEMORY WARNING|QUERY LENGTH|INVALID|LIMIT/i.test(t)) throw new Error(String(j.responseDetails || t || 'bos').slice(0, 80));
   return t;
 }
+
 async function translate(texts) {
-  if (E.ANTHROPIC_API_KEY) {
-    try { const r = await claudeTr(texts); TSTAT.ok += r.length; TSTAT.provider = 'claude'; return r; }
-    catch (e) { TSTAT.lastError = 'claude: ' + e.message; console.warn('Claude ceviri hatasi:', e.message); }
+  const batch = [];
+  if (E.GEMINI_API_KEY) batch.push(['gemini', geminiTr]);
+  if (E.ANTHROPIC_API_KEY) batch.push(['claude', claudeTr]);
+  for (const [name, fn] of batch) {
+    if (dead[name] >= 3) continue;
+    TSTAT.tried[name] = (TSTAT.tried[name] || 0) + 1;
+    try {
+      const r = await fn(texts);
+      dead[name] = 0; TSTAT.ok += r.length; TSTAT.provider = name;
+      return r;
+    } catch (e) {
+      dead[name] = (dead[name] || 0) + 1;
+      TSTAT.lastError = name + ': ' + String(e.message).slice(0, 120);
+      console.warn('Ceviri hatasi (' + name + '):', e.message);
+    }
   }
+  const solo = [['gtx', gtx], ['lingva', lingva], ['mymemory', mymemory]];
   const out = [];
   for (const t of texts) {
     let res = null;
-    for (const [name, fn] of [['gtx', gtx], ['mymemory', mymemory]]) {
-      if (dead[name] >= 4) continue;
-      try { res = await fn(t); if (res && res.trim()) { dead[name] = 0; TSTAT.provider = name; break; } res = null; dead[name]++; }
-      catch (e) { dead[name]++; TSTAT.lastError = name + ': ' + String(e.message).slice(0, 100); }
+    for (const [name, fn] of solo) {
+      if (dead[name] >= 5) continue;
+      TSTAT.tried[name] = (TSTAT.tried[name] || 0) + 1;
+      try {
+        const v = await fn(t);
+        if (v && v.trim()) { dead[name] = 0; TSTAT.provider = name; res = v; break; }
+        dead[name] = (dead[name] || 0) + 1;
+      } catch (e) {
+        dead[name] = (dead[name] || 0) + 1;
+        TSTAT.lastError = name + ': ' + String(e.message).slice(0, 120);
+      }
     }
     if (res) TSTAT.ok++; else TSTAT.fail++;
     out.push(res);
