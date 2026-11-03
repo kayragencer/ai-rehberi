@@ -457,6 +457,33 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </form>
 </div>
 
+<div id="profileMenu" class="hidden fixed z-50 w-60">
+  <div class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-2xl shadow-2xl overflow-hidden">
+    <div class="px-4 py-3 border-b dark:border-gray-800 border-gray-100 flex items-center gap-3">
+      <span id="pmAvatar" class="w-9 h-9 rounded-xl dark:bg-gray-950 bg-gray-100 flex items-center justify-center text-lg">&#128100;</span>
+      <span class="min-w-0">
+        <span id="pmName" class="block text-xs font-bold dark:text-white text-gray-900 truncate">Misafir</span>
+        <span id="pmSub" class="block text-[11px] text-gray-400 truncate">Giri&#351; yapmad&#305;n</span>
+      </span>
+    </div>
+    <div class="p-1.5">
+      <button onclick="pmGit('profil')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white transition">
+        <span>&#128100;</span><span class="flex-1 text-left">Profilim</span><span>&#8594;</span>
+      </button>
+      <button onclick="pmGit('favoriler')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-rose-600 hover:text-white transition">
+        <span>&#10084;&#65039;</span><span class="flex-1 text-left">Favorilerim</span>
+        <span id="pmFavCount" class="px-1.5 py-0.5 rounded-full text-[10px] dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
+      </button>
+      <button onclick="pmGit('oneri')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-sky-600 hover:text-white transition">
+        <span>&#128172;</span><span class="flex-1 text-left">&#214;neri / &#350;ikayet</span><span>&#8594;</span>
+      </button>
+    </div>
+    <div class="p-1.5 border-t dark:border-gray-800 border-gray-100">
+      <button id="pmAuth" onclick="pmAuthTikla()" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition"></button>
+    </div>
+  </div>
+</div>
+
 <footer class="border-t dark:border-gray-800 border-gray-300 dark:bg-gray-950 bg-white p-6 text-center text-xs text-gray-500 transition">
   &#169; 2026 AI Rehberi - T&#252;m Haklar&#305; Sakl&#305;d&#305;r.
 </footer>
@@ -1168,10 +1195,77 @@ function updateProfileStats() {
   set('profFavCount', appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length); set('profViewCount', profile.viewed.length);
   var rc = 0; Object.keys(appState.reviewsDB).forEach(function(k) { rc += appState.reviewsDB[k].length; }); set('profReviewCount', rc);
   set('headerAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
+  if (document.getElementById('profileMenu')) pmYenile();
   set('headerUserName', profile.loggedIn ? (profile.name.split(' ')[0] || 'Profil') : 'Giri\u015f Yap');
 }
-function openProfileModal() { switchPage('profile'); }
-function closeProfileModal() {}
+/* ===== Profil acilir menusu ===== */
+function pmKonum() {
+  var box = document.getElementById('profileMenu'), btn = document.getElementById('profileBtn');
+  if (!box || box.classList.contains('hidden')) return;
+  var head = document.querySelector('header');
+  var top = head ? head.getBoundingClientRect().bottom : 64;
+  if (top < 8) top = 8;
+  var vw = document.documentElement.clientWidth, w = box.offsetWidth || 240;
+  var left = 12;
+  if (btn) { var r = btn.getBoundingClientRect(); left = Math.min(Math.max(12, r.right - w), vw - w - 12); }
+  box.style.top = (top + 8) + 'px';
+  box.style.left = left + 'px';
+}
+function pmYenile() {
+  var toplam = appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length;
+  var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
+  set('pmFavCount', toplam);
+  set('pmAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
+  set('pmName', profile.loggedIn ? (profile.name || 'Hesabim') : 'Misafir');
+  set('pmSub', profile.loggedIn ? profile.email : 'Giris yapmadin');
+  var a = document.getElementById('pmAuth');
+  if (a) {
+    a.innerHTML = profile.loggedIn
+      ? '<span>\ud83d\udeaa</span><span class="flex-1 text-left">Cikis Yap</span>'
+      : '<span>\ud83d\udd11</span><span class="flex-1 text-left">Giris Yap / Kayit Ol</span>';
+    a.className = 'w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition ' +
+      (profile.loggedIn ? 'text-rose-500 hover:bg-rose-500/10' : 'dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white');
+  }
+}
+function pmAc() {
+  var box = document.getElementById('profileMenu');
+  pmYenile();
+  box.classList.remove('hidden');
+  pmKonum();
+  requestAnimationFrame(pmKonum);
+}
+function pmKapat() { var b = document.getElementById('profileMenu'); if (b) b.classList.add('hidden'); }
+function openProfileModal() {
+  var box = document.getElementById('profileMenu');
+  if (box.classList.contains('hidden')) pmAc(); else pmKapat();
+}
+function closeProfileModal() { pmKapat(); }
+function pmKaydir(id) {
+  var el = document.getElementById(id);
+  if (el) setTimeout(function () { el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 120);
+}
+function pmGit(nereye) {
+  pmKapat();
+  switchPage('profile');
+  if (nereye === 'favoriler') pmKaydir('profileFavs');
+  if (nereye === 'oneri') pmKaydir('fbText');
+}
+function pmAuthTikla() {
+  pmKapat();
+  if (profile.loggedIn) { doLogout(); return; }
+  switchPage('profile');
+  pmKaydir('authView');
+}
+window.addEventListener('resize', pmKonum);
+window.addEventListener('scroll', pmKonum, { passive: true });
+document.addEventListener('click', function (e) {
+  var box = document.getElementById('profileMenu');
+  if (!box || box.classList.contains('hidden')) return;
+  if (box.contains(e.target)) return;
+  if (e.target.closest && e.target.closest('#profileBtn')) return;
+  pmKapat();
+});
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') pmKapat(); });
 
 /* ===== Premium ===== */
 function openProModal() { if (profile.email) document.getElementById('waitEmail').value = profile.email; document.getElementById('proModal').classList.remove('hidden'); }
