@@ -21,7 +21,8 @@ html.light .bg-gray-900.cat-red { background-color: #fff; }
 .dark .fld{background:#030712;border-color:#1f2937;color:#fff}
 .fld:focus{border-color:#a855f7}
 html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
-@media (max-width:640px){input,select,textarea,.fld{font-size:16px !important}}
+@media (max-width:640px),(hover:none){input,select,textarea,.fld{font-size:16px !important}}
+@media (hover:none){button,a{-webkit-tap-highlight-color:rgba(168,85,247,.18)}}
 /* Yatay kaydirma cubuklarini gizle, kaydirma calismaya devam eder */
 .overflow-x-auto{scrollbar-width:none;-ms-overflow-style:none}
 .overflow-x-auto::-webkit-scrollbar{display:none;width:0;height:0}
@@ -237,24 +238,6 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
       </div>
     </div>
 
-    <div id="profileFavs" class="mt-12 space-y-10">
-      <div class="flex items-center gap-2 px-1">
-        <span class="w-9 h-9 rounded-2xl bg-rose-500/10 flex items-center justify-center text-base">&#10084;&#65039;</span>
-        <span class="text-xs font-bold uppercase tracking-wider text-rose-500">Favorilerim</span>
-        <span id="profFavTotal" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
-      </div>
-      <div id="favEmptyAll" class="hidden text-center py-12 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200">
-        <div class="text-3xl mb-3">&#129293;</div>
-        <h3 class="text-base font-bold dark:text-white text-gray-900">Hen&#252;z favorin yok</h3>
-        <p class="text-gray-400 text-xs mt-1 mb-4">Kartlardaki kalp simgesine basarak buraya ekleyebilirsin.</p>
-        <div class="flex flex-wrap justify-center gap-2">
-          <button onclick="switchPage('tools')" class="px-4 py-2.5 rounded-xl bg-purple-600 text-white text-xs font-bold">AI Ara&#231;lar&#305;</button>
-          <button onclick="switchPage('plugins')" class="px-4 py-2.5 rounded-xl bg-amber-500 text-white text-xs font-bold">Eklentiler</button>
-          <button onclick="switchPage('ebooks')" class="px-4 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-bold">E-Kitaplar</button>
-        </div>
-      </div>
-      <div id="favSections" class="space-y-12"></div>
-    </div>
 
     <div class="mt-12 p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
       <div class="flex items-center gap-2 mb-1">
@@ -283,6 +266,33 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
       </form>
     </div>
     </div>
+  </div>
+
+  <!-- FAVORILER -->
+  <div id="pageFavorites" class="hidden max-w-5xl mx-auto space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-2">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-500/10 text-rose-500 border border-rose-500/20 mb-4">&#10084;&#65039; Favorilerim</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Kaydettiklerim</h1>
+      <p class="text-gray-400 text-sm">Be&#287;endi&#287;in ara&#231;lar, eklentiler ve kaynaklar kategorilere ayr&#305;lm&#305;&#351; halde burada.</p>
+    </div>
+  <div id="profileFavs" class="space-y-10">
+    <div class="flex items-center gap-2 px-1">
+      <span class="w-9 h-9 rounded-2xl bg-rose-500/10 flex items-center justify-center text-base">&#10084;&#65039;</span>
+      <span class="text-xs font-bold uppercase tracking-wider text-rose-500">Favorilerim</span>
+      <span id="profFavTotal" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
+    </div>
+    <div id="favEmptyAll" class="hidden text-center py-12 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200">
+      <div class="text-3xl mb-3">&#129293;</div>
+      <h3 class="text-base font-bold dark:text-white text-gray-900">Hen&#252;z favorin yok</h3>
+      <p class="text-gray-400 text-xs mt-1 mb-4">Kartlardaki kalp simgesine basarak buraya ekleyebilirsin.</p>
+      <div class="flex flex-wrap justify-center gap-2">
+        <button onclick="switchPage('tools')" class="px-4 py-2.5 rounded-xl bg-purple-600 text-white text-xs font-bold">AI Ara&#231;lar&#305;</button>
+        <button onclick="switchPage('plugins')" class="px-4 py-2.5 rounded-xl bg-amber-500 text-white text-xs font-bold">Eklentiler</button>
+        <button onclick="switchPage('ebooks')" class="px-4 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-bold">E-Kitaplar</button>
+      </div>
+    </div>
+    <div id="favSections" class="space-y-12"></div>
+  </div>
   </div>
 
   <!-- CLAUDE EKLENTILERI -->
@@ -415,7 +425,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 
 <div id="proModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
   <div class="dark:bg-gray-900 bg-white border border-amber-500/50 rounded-3xl w-full max-w-2xl relative shadow-2xl max-h-[92vh] overflow-y-auto">
-    <button onclick="closeProModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/30 text-white font-bold hover:bg-black/50">&#10005;</button>
+    <button onclick="closeProModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 text-white font-bold hover:bg-black/50">&#10005;</button>
     <div class="p-6 sm:p-8 text-center bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-transparent rounded-t-3xl">
       <span class="inline-block px-3 py-1 rounded-full bg-amber-500 text-black text-[11px] font-extrabold mb-3">&#199;OK YAKINDA</span>
       <h3 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-2">AI Rehberi Premium</h3>
@@ -447,7 +457,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 <div id="asstPanel" class="hidden fixed bottom-5 right-5 z-50 w-[calc(100vw-2.5rem)] sm:w-96 h-[32rem] max-h-[85vh] flex flex-col rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-2xl overflow-hidden">
   <div class="px-4 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-between">
     <div><div class="font-extrabold text-sm">&#129302; AI Rehberi Asistan&#305;</div><div class="text-[11px] opacity-80">Ara&#231; &#246;ner, siteyi anlat, destek ol</div></div>
-    <button onclick="toggleAssistant()" class="w-8 h-8 rounded-full bg-white/20 hover:bg-white/30 font-bold">&#10005;</button>
+    <button onclick="toggleAssistant()" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 font-bold">&#10005;</button>
   </div>
   <div id="asstMsgs" class="flex-1 overflow-y-auto p-4 space-y-3 text-xs"></div>
   <div id="asstChips" class="px-3 pb-2 flex gap-1.5 overflow-x-auto"></div>
@@ -642,7 +652,7 @@ function renderCardHTML(item, featured) {
       '<div class="absolute top-3 left-3 right-3 flex justify-between items-center">' +
         (featured ? '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-500 text-black">\ud83d\udd25 \u00d6nerilen</span>'
                   : '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-black/60 backdrop-blur-md text-white border border-white/20">' + esc(item.price) + '</span>') +
-        '<button data-fav="' + item.id + '" class="w-7 h-7 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-sm transition hover:bg-black">' + (isFav ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>' +
+        '<button data-fav="' + item.id + '" class="w-9 h-9 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-sm transition hover:bg-black">' + (isFav ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>' +
       '</div></div>' +
       '<div class="p-6"><div class="flex justify-between items-center mb-2">' +
         '<span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-gradient-to-r ' + catMeta(item.category)[3] + ' text-white">' + catMeta(item.category)[2] + ' ' + esc(catMeta(item.category)[1]) + '</span>' +
@@ -725,11 +735,11 @@ function toggleFav(kind, id, event) {
   lsSet(kind === 'plugin' ? 'ai_directory_fav_plugins' : 'ai_directory_fav_ebooks', arr);
   updateProfileStats();
   if (kind === 'plugin') { renderPluginChips(); filterPlugins(); } else { renderEbookChips(); filterEbooks(); }
-  if (appState.activePage === 'profile') renderFavorites();
+  if (appState.activePage === 'favorites') renderFavorites();
 }
 function heartBtn(kind, id) {
   var on = (kind === 'plugin' ? appState.favPlugins : appState.favEbooks).indexOf(id) > -1;
-  return '<button type="button" data-fav="1" title="Favorilere ekle" class="w-8 h-8 rounded-full dark:bg-gray-800 bg-gray-100 hover:bg-rose-500/20 flex items-center justify-center text-sm transition">' + (on ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>';
+  return '<button type="button" data-fav="1" title="Favorilere ekle" class="w-9 h-9 rounded-full dark:bg-gray-800 bg-gray-100 hover:bg-rose-500/20 flex items-center justify-center text-sm transition">' + (on ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>';
 }
 function toggleFavorite(id, event) {
   event.stopPropagation();
@@ -737,7 +747,7 @@ function toggleFavorite(id, event) {
   if (i > -1) appState.favorites.splice(i, 1); else appState.favorites.push(id);
   try { localStorage.setItem('ai_directory_favs', JSON.stringify(appState.favorites)); } catch (e) {}
   filterTools(); renderFeatured('featuredRecommendedGrid'); renderChips(); updateProfileStats();
-  if (appState.activePage === 'profile') renderFavorites();
+  if (appState.activePage === 'favorites') renderFavorites();
 }
 
 /* ---------- Detay sayfas\u0131 ---------- */
@@ -811,13 +821,14 @@ function submitUserReview(e) {
 /* ---------- Sayfa ge\u00e7i\u015fi ---------- */
 function switchPage(page) {
   appState.activePage = page;
-  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', profile: 'pageProfile', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
+  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', profile: 'pageProfile', favorites: 'pageFavorites', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
   Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
   renderNav();
   hashYaz();
   if (page === 'news' && !appState.liveNewsList.length) fetchLiveAINews();
   if (page === 'biz') { renderBizTabs(); renderBiz(); }
-  if (page === 'profile') { if (!appState.plugins.length) fetchPlugins(); if (!appState.ebooks.length) fetchEbooks(); renderAccountUI(); renderFavorites(); fbHazirla(); }
+  if (page === 'profile') { renderAccountUI(); fbHazirla(); }
+  if (page === 'favorites') { if (!appState.plugins.length) fetchPlugins(); if (!appState.ebooks.length) fetchEbooks(); renderFavorites(); }
   if (page === 'plugins' && !appState.plugins.length) fetchPlugins();
   if (page === 'ebooks' && !appState.ebooks.length) fetchEbooks();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1246,8 +1257,8 @@ function pmKaydir(id) {
 }
 function pmGit(nereye) {
   pmKapat();
+  if (nereye === 'favoriler') { switchPage('favorites'); return; }
   switchPage('profile');
-  if (nereye === 'favoriler') pmKaydir('profileFavs');
   if (nereye === 'oneri') pmKaydir('fbText');
 }
 function pmAuthTikla() {
@@ -2035,18 +2046,19 @@ function copyPrompt() {
 
 /* ===== Adres cubugu yonlendirmesi ===== */
 var SLUG = { directory: '', tools: 'araclar', news: 'haberler', biz: 'is-modelleri', plugins: 'eklentiler',
-             ebooks: 'e-kitap', prompt: 'prompt', profile: 'profil', toolDetail: 'arac', bizDetail: 'is-modeli' };
+             ebooks: 'e-kitap', prompt: 'prompt', profile: 'profil', favorites: 'favoriler', toolDetail: 'arac', bizDetail: 'is-modeli' };
 var SLUG_REV = {};
 Object.keys(SLUG).forEach(function (k) { if (SLUG[k]) SLUG_REV[SLUG[k]] = k; });
 var yonlendirme = false, ilkAcilis = true;
 function hashYaz() {
+  if (ilkAcilis) return;
   var p = appState.activePage, h = SLUG[p] || '';
   if (p === 'toolDetail' && appState.currentActiveToolId != null) h += '/' + appState.currentActiveToolId;
   if (p === 'bizDetail' && appState.bizDetail) h += '/' + encodeURIComponent(appState.bizDetail);
   var yeni = h ? '#' + h : location.pathname + location.search;
   if (yeni === location.href || yeni === location.hash) return;
   try {
-    if (yonlendirme || ilkAcilis) history.replaceState(null, '', yeni);
+    if (yonlendirme) history.replaceState(null, '', yeni);
     else history.pushState(null, '', yeni);
   } catch (e) { if (h) location.hash = h; }
 }
@@ -2141,6 +2153,7 @@ function startApp() {
   switchPage('directory');
   hashOku();
   ilkAcilis = false;
+  yonlendirme = true; hashYaz(); yonlendirme = false;
   renderFeatured('featuredRecommendedGrid');
   updateProfileStats();
   refreshTools();
