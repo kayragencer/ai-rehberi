@@ -169,6 +169,12 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
     <div id="bizGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </div>
 
+  <!-- IS MODELI DETAY -->
+  <div id="pageBizDetail" class="hidden space-y-6 max-w-4xl mx-auto">
+    <div><button onclick="switchPage('biz')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-green-600 hover:text-white transition">&#8592; &#304;&#351; Modellerine D&#246;n</button></div>
+    <div id="bizDetailBody" class="space-y-6"></div>
+  </div>
+
   <!-- CLAUDE EKLENTILERI -->
   <div id="pagePlugins" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
@@ -728,7 +734,7 @@ function submitUserReview(e) {
 /* ---------- Sayfa ge\u00e7i\u015fi ---------- */
 function switchPage(page) {
   appState.activePage = page;
-  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', plugins: 'pagePlugins', ebooks: 'pageEbooks', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
+  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
   Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
   renderNav();
   if (page === 'news' && !appState.liveNewsList.length) fetchLiveAINews();
@@ -1260,7 +1266,7 @@ function renderNav() {
   if (!d || !m) return;
   d.innerHTML = ''; m.innerHTML = '';
   NAV.forEach(function (n) {
-    var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail');
+    var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail');
     var b = document.createElement('button');
     b.className = 'px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
     b.textContent = n[3] + ' ' + n[1];
@@ -1513,7 +1519,7 @@ function renderBiz() {
       return appState.bizAsc ? d : -d;
     });
     liste.forEach(function (m) {
-      grid.appendChild(bizCard(
+      var kart = bizCard(
         '<div class="flex items-start gap-3 mb-3">' +
           '<span class="w-11 h-11 rounded-2xl bg-green-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
           '<div class="min-w-0"><h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3>' +
@@ -1523,7 +1529,10 @@ function renderBiz() {
           '<div class="p-2 rounded-xl dark:bg-gray-950 bg-gray-50"><div class="text-gray-400">Ilk gelir</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[4]) + '</div></div></div>' +
         '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[5]) + '</p>' +
         '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Nasil baslanir</div>' + liList(m[6], 'green') +
-        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">Ise yarayan araclar</div>' + tagRow(m[7], 'green'), 'green'));
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">Ise yarayan araclar</div>' + tagRow(m[7], 'green') +
+        (BIZ_DETAY[m[1]] ? '<div class="mt-4 pt-3 border-t dark:border-gray-800 border-gray-100 text-xs font-bold text-green-500 flex items-center gap-1">Detayli oku <span>\u2192</span></div>' : ''), 'green');
+      if (BIZ_DETAY[m[1]]) { kart.classList.add('cursor-pointer'); kart.onclick = function () { openBizDetail(m[1]); }; }
+      grid.appendChild(kart);
     });
   } else if (appState.bizTab === 'kullanim') {
     note.textContent = 'Sektorune gore yapay zekanin nerede ise yaradigi ve hangi aracla baslayabilecegin.';
@@ -1551,6 +1560,165 @@ function renderBiz() {
         '</div>', 'purple'));
     });
   }
+}
+
+var BIZ_DETAY = {
+  'Icerik ve SEO yazarligi': {
+    ozet: 'Isletmelerin blog, urun ve tanitim metinlerini yazarsin. Yapay zeka taslagi dakikalar icinde cikarir; senin katkin konuyu dogrulamak, markanin diline uyarlamak ve okunur hale getirmektir. Musteri sana yaziyi degil, zamani ve guveni satin alir.',
+    uygun: ['Yazmaktan sikilmayan, arastirmayi seven kisiler', 'Bir konuda zaten bilgisi olanlar (saglik, finans, yazilim, e-ticaret)', 'Duzenli calisma saati ayirabilenler'],
+    beceri: ['Temiz ve akici Turkce yazabilmek', 'Kaynak dogrulama aliskanligi', 'Temel SEO mantigi: baslik yapisi, anahtar kelime, ic link', 'Musteriyle net iletisim'],
+    adimlar: ['Bir dikey sec. "Her konuda yazarim" diyen kalabaliga karisir, "dis klinikleri icin yazarim" diyen aranir.', 'Kendi blogunda veya Medium\'da 3-5 ornek yazi yayinla. Portfolyo olmadan is almak zor.', 'Bir fiyat listesi hazirla: yazi basina, paket halinde ve aylik olarak.', 'LinkedIn\'de ne yaptigini yaz, hedefledigin sektordeki isletmelere ulas.', 'Ilk 2-3 isi referans icin uygun fiyata yap, sonra fiyati sabitle.', 'Her teslimde kisa bir rapor ekle: neyi neden boyle yazdin.'],
+    musteri: ['LinkedIn ve sektor gruplari', 'Bionluk, Fiverr, Upwork gibi platformlar', 'Dijital pazarlama ajanslarina taseron olarak', 'Kendi sitesinde blogu olup guncellemeyen isletmelere dogrudan teklif'],
+    fiyat: 'Kelime basina fiyatlama baslangicta kolaydir ama seni yavas yazmaya tesvik eder. Yazi basina veya aylik paket (orn: ayda 8 yazi) daha saglikli. Fiyati belirlerken yaziyi kac saatte bitirdigini ol, saatlik hedefini belirle ve ona gore paketle. Arastirma gerektiren teknik konular icin daha yuksek fiyat normaldir.',
+    hatalar: ['Yapay zeka ciktisini okumadan teslim etmek. Uydurma bilgi itibarini bitirir.', 'Her konuda is almak, hicbirinde uzmanlasmamak', 'Sinirsiz revizyon vaat etmek', 'Yaziyi teslim edip sonucu takip etmemek. Trafik artisi gosterirsen fiyatini yukseltirsin.'],
+    kategori: 'Metin'
+  },
+  'Gorsel ve logo tasarimi': {
+    ozet: 'Sosyal medya gorseli, kapak, logo ve urun fotografi uretirsin. Yapay zeka secenek uretir; senin isin marka kimligine uygun olani secmek, duzeltmek ve kullanilabilir dosya formatlarinda teslim etmektir.',
+    uygun: ['Gorsel zevki olan, detaya dikkat eden kisiler', 'Temel tasarim araclarini ogrenmeye acik olanlar', 'Musteri geri bildirimiyle calisabilenler'],
+    beceri: ['Renk, tipografi ve hizalama konusunda temel bilgi', 'Canva veya Figma gibi bir arac kullanabilmek', 'Dosya formatlari: PNG, SVG, PDF farkini bilmek', 'Marka kimligi mantigini anlamak'],
+    adimlar: ['Bir tarz belirle ve o tarzda 10 ornek uret. Dagilan portfolyo guven vermez.', 'Logo icin yapay zeka ciktisini oldugu gibi satma; vektorel hale getir, olceklenebilir yap.', 'Paket tanimla: 3 konsept + 2 revizyon + kaynak dosyalar gibi.', 'Teslim suresini net yaz ve ona uy.', 'Ticari kullanim haklarini sozlesmede acikca belirt.'],
+    musteri: ['Yeni acilan kafe, kuafor, butik gibi yerel isletmeler', 'Instagram uzerinden satis yapan kucuk markalar', 'Fiverr, Bionluk', 'Youtuber ve podcast yapanlar (kapak gorseli)'],
+    fiyat: 'Tek gorsel basina fiyat dusuk kalir; aylik sosyal medya paketi (orn: ayda 15 gorsel) daha iyi gelir saglar. Logo isi tek seferliktir ama marka kimligi rehberi ekleyerek fiyati artirabilirsin. Acil isler icin ek ucret almak normaldir.',
+    hatalar: ['Yapay zeka ciktisini dusuk cozunurlukte teslim etmek', 'Baska bir markanin logosuna benzeyen tasarim uretmek', 'Kaynak dosyalari vermemek konusunda belirsiz kalmak', 'Her revizyonu ucretsiz yapmak'],
+    kategori: 'Gorsel'
+  },
+  'Kisa video ureticiligi': {
+    ozet: 'Markalar icin Reels, TikTok ve Shorts uretirsin. Senaryo, seslendirme ve altyazi yapay zekayla hizlanir; kurgu ritmi, muzik secimi ve ilk 3 saniyenin dikkat cekmesi senin isindir.',
+    uygun: ['Sosyal medyayi zaten takip eden, trendleri bilen kisiler', 'Video kurguyu ogrenmeye vakti olanlar', 'Duzenli uretim temposunu kaldirabilenler'],
+    beceri: ['Temel video kurgu (CapCut yeterli)', 'Ritim ve tempo duygusu', 'Altyazi ve metin yerlesimi', 'Platform farklarini bilmek (Reels, TikTok, Shorts ayni degil)'],
+    adimlar: ['Bir sektor sec ve o sektor icin 5 ornek video uret.', 'Markanin rengini, fontunu ve tonunu sablonlastir, her videoda sifirdan baslama.', 'Aylik paket sat: orn. ayda 12 video, 2 revizyon.', 'Teslim takvimini bastan belirle, icerik onay surecini netlestir.', 'Performansi olc: izlenme ve etkilesim raporu paylas.'],
+    musteri: ['Restoran, kafe, spor salonu gibi gorsel isletmeler', 'Kisisel marka olusturan avukat, doktor, danisman', 'E-ticaret markalari', 'Ajanslara taseron olarak'],
+    fiyat: 'Video basina fiyat yerine aylik abonelik mantigi kur. Sablon kurdugun icin ikinci aydan sonra sure kisalir, kar marjin artar. Senaryo ve cekim de senden isteniyorsa ayri kalemde fiyatla.',
+    hatalar: ['Her video icin sifirdan tasarim yapmak', 'Telifli muzik kullanmak', 'Musterinin urununu anlamadan genel icerik uretmek', 'Revizyon sinirini bastan konusmamak'],
+    kategori: 'Video'
+  },
+  'Seslendirme ve dublaj': {
+    ozet: 'Reklam, egitim videosu, podcast ve yabanci icerik icin Turkce ses uretirsin. Yapay zeka sesi olusturur; senin isin dogru tonu secmek, vurgu ve zamanlamayi duzeltmek ve temiz bir kayit teslim etmektir.',
+    uygun: ['Kulagi iyi olan, tonlama farkini duyan kisiler', 'Ses duzenlemeyi ogrenmeye acik olanlar', 'Detayci calisabilenler'],
+    beceri: ['Temel ses duzenleme (kesme, normalize etme, gurultu temizleme)', 'Turkce vurgu ve noktalama bilgisi', 'Zamanlama ve dudak senkronu mantigi (dublajda)', 'Dosya formatlari ve kalite ayarlari'],
+    adimlar: ['Farkli tonlarda (reklam, egitim, belgesel) 5 ornek kayit hazirla.', 'Egitim iceregi ureten firmalara ve ajanslara ulas.', 'Dakika veya proje basina fiyatla, duzeltme turunu bastan belirle.', 'Yabanci icerigi Turkcelestirirken ceviriyi de pakete ekleyip fiyati artir.', 'Teslim formatini musteriyle netlestir (WAV, MP3, bit hizi).'],
+    musteri: ['Online egitim platformlari', 'Reklam ve prod\u00fcksiyon ajanslari', 'Youtube kanallari', 'Kurumsal tanitim videosu yaptiran sirketler'],
+    fiyat: 'Dakika basina fiyat sektorde yaygindir. Ancak duzeltme ve senkron isi uzun suruyorsa proje basina fiyatlamak daha dogru. Kurumsal isler bireysel islerden daha yuksek butceye sahiptir.',
+    hatalar: ['Baskasinin sesini izinsiz klonlamak. Bu hem yasal sorun hem itibar kaybi.', 'Ham yapay zeka ciktisini duzeltmeden teslim etmek', 'Telif ve kullanim haklarini yaziya dokmemek', 'Dusuk kaliteli kayit formatiyla teslim'],
+    kategori: 'Muzik'
+  },
+  'Otomasyon kurulumu': {
+    ozet: 'Kucuk isletmelerin tekrar eden islerini otomatiklestirirsin: gelen formu tabloya isleme, fatura okuma, raporu otomatik gonderme, musteri takibi. Kurulum ucreti ve aylik bakim olarak iki kalemde gelir getirir.',
+    uygun: ['Mantik kurmayi seven, sabirli kisiler', 'Kod yazmayi bilmeyen ama ogrenmeye acik olanlar', 'Isletme sureclerini anlamak isteyenler'],
+    beceri: ['n8n veya Make gibi bir arac', 'Temel API ve webhook mantigi', 'Elektronik tablo ve veri duzeni', 'Sureci musteriden dogru dinleyip cizebilmek'],
+    adimlar: ['Once kendi isinde bir akis kur, bizzat kullan.', 'Tek bir sektorde tek bir problemi coz. Orn: emlakcilar icin randevu hatirlatma.', 'Demo hazirla, musteriye canli goster. Anlatmak degil gostermek satiyor.', 'Kurulum ucreti + aylik destek olarak fiyatla.', 'Musterinin verisinin nerede durdugunu ve kimin erisebildigini yazili belgele.', 'Akis bozulursa ne yapilacagini bastan planla.'],
+    musteri: ['Muhasebe ve danismanlik ofisleri', 'Emlak ofisleri', 'Kucuk e-ticaret isletmeleri', 'Klinik ve randevulu calisan yerler'],
+    fiyat: 'Kurulum tek seferlik, bakim aylik. Asil gelir aylik bakimdan gelir, bu yuzden kurulumu makul fiyatla ama bakimi mutlaka sat. Akis sayisina gore kademeli paket yapabilirsin.',
+    hatalar: ['Musterinin sureci degistiginde akisin bozulacagini hesaba katmamak', 'Hassas veriyi (musteri bilgisi, fatura) guvensiz yerde tutmak', 'Bakim anlasmasi yapmadan kurulum teslim etmek', 'Cok karmasik akis kurup musterinin anlamamasi'],
+    kategori: 'Uretkenlik'
+  },
+  'Chatbot ve musteri destegi kurulumu': {
+    ozet: 'Isletmenin kendi belgeleriyle calisan soru-cevap botu kurarsin. Bot, musterinin sik sorulan sorularini yanitlar; yanitlayamadigini insana aktarir. WhatsApp, web sitesi veya Instagram uzerinden calisir.',
+    uygun: ['Teknik ogrenmeye istekli kisiler', 'Musteri hizmetleri surecini anlayanlar', 'Sorumluluk alabilen, test etmeyi seven kisiler'],
+    beceri: ['Dify, Flowise gibi bir arac', 'Belge hazirlama ve duzenleme (bot ancak verdigin belge kadar iyi)', 'Test etme disiplini', 'Beklentiyi dogru yonetme'],
+    adimlar: ['Kendi demo botunu kur ve musteriye canli goster.', 'Isletmenin SSS, fiyat listesi ve politika belgelerini topla, temizle.', 'Botu kur, en az 50 gercek soruyla test et.', 'Yanlis cevap riskini musteriye acikca anlat ve insana aktarma yolunu mutlaka birak.', 'Kurulum + aylik kullanim bedeli olarak fiyatla.', 'Ilk ay yanitlari gozden gecir ve belgeleri guncelle.'],
+    musteri: ['Online satis yapan markalar', 'Klinik, veteriner, guzellik merkezi', 'Egitim kurumlari', 'Emlak ve otomotiv bayileri'],
+    fiyat: 'Kurulum ucreti + aylik bakim. Aylik bedel model kullanim maliyetini karsilamali, o yuzden tahmini mesaj sayisini bastan hesapla. Cok yogun kullanan musteriye kademeli paket sun.',
+    hatalar: ['Botun yanlis bilgi verebilecegini musteriye soylememek', 'Insana aktarma secenegini koymamak', 'Belgeleri guncellemeyi unutmak', 'Kullanim maliyetini hesaplamadan sabit fiyat vermek'],
+    kategori: 'Uretkenlik'
+  },
+  'Mikro SaaS / kucuk arac gelistirme': {
+    ozet: 'Dar bir problemi cozen kucuk bir web araci yapip aylik abonelikle satarsin. Yapay zeka kodlamayi hizlandirir ama urunu buyutmek, kullanici bulmak ve destek vermek zaman ister. En yavas ama en olceklenebilir yol budur.',
+    uygun: ['Uzun vadeli dusunebilen, sabirli kisiler', 'Teknik ogrenmeye acik olanlar', 'Gelir hemen gelmezse pes etmeyecekler'],
+    beceri: ['Temel web gelistirme veya yapay zeka destekli kodlama araclari', 'Veritabani mantigi', 'Kullanici geri bildirimini dinleme', 'Basit pazarlama'],
+    adimlar: ['Kendi yasadigin veya yakinen gordugun bir problemi sec.', 'En kucuk calisan surumu 2-4 haftada cikar, mukemmel olmasini bekleme.', 'Ilk 10 kullaniciyi elle bul ve birebir konus.', 'Ucretsiz deneme + aylik abonelik kur.', 'Destek ve hata duzeltme icin haftalik zaman ayir.', 'Buyume yavassa urunu degil, kitleyi sorgula.'],
+    musteri: ['Belirli bir meslegin uyeleri (diyetisyen, emlakci, ogretmen)', 'Kucuk ajanslar', 'Kendi sektorundeki tanidiklarin', 'Ilgili topluluk ve forumlar'],
+    fiyat: 'Aylik abonelik standarttir. Fiyati dusuk tutup cok kullanici aramak yerine, dar bir kitleye daha yuksek fiyatla satmak kucuk urunlerde daha kolaydir. Yillik odemeye indirim koy, nakit akisini rahatlatir.',
+    hatalar: ['Kullaniciyla konusmadan aylarca gelistirmek', 'Cok genis bir problem secmek', 'Destek yukunu hesaba katmamak', 'Altyapi maliyetini fiyata yansitmamak'],
+    kategori: 'Kodlama'
+  },
+  'Dijital urun satisi': {
+    ozet: 'Bir kere uretip defalarca satilan urunler: sablon, prompt paketi, e-kitap, Notion sablonu, kurs. Gelir yavas baslar, zamanla birikir. Asil zorluk urun uretmek degil, duyurmaktir.',
+    uygun: ['Bir konuda birikimi olan kisiler', 'Pazarlama ogrenmeye acik olanlar', 'Hemen gelir beklemeyenler'],
+    beceri: ['Icerik duzenleme ve sunum', 'Basit tasarim', 'Satis sayfasi yazabilmek', 'Sosyal medyada duzenli paylasim'],
+    adimlar: ['Belirli bir meslegin islerini kolaylastiran bir urun tasarla.', 'Ucretsiz bir mini surum cikar, e-posta listesi topla.', 'Gumroad veya Shopier gibi bir satis sayfasi ac.', 'Urunu kullanan birkac kisiden gercek yorum al.', 'Urunu guncel tut; eskiyen sablon satmaz.', 'Ikinci urunu ilkinin musterisine sat, en kolay satis odur.'],
+    musteri: ['Kendi sektorundeki meslektaslar', 'Sosyal medya takipcilerin', 'E-posta listen', 'Ilgili topluluklar'],
+    fiyat: 'Dusuk fiyat + yuksek adet mi, yuksek fiyat + az adet mi, bunu kitleye gore sec. Kurumsal alicilar icin cok kullanicili lisans ayri fiyatlandirilir. Paket halinde satmak tek tek satmaktan daha verimlidir.',
+    hatalar: ['Urunu yapip duyurmamak', 'Ucretsiz bulunabilen seyi satmaya calismak', 'Guncelleme sozu verip tutmamak', 'Iade kosullarini belirtmemek'],
+    kategori: 'Uretkenlik'
+  },
+  'Ceviri ve yerellestirme': {
+    ozet: 'Web sitesi, uygulama arayuzu, egitim icerigi ve belge cevirisi yaparsin. Yapay zeka ilk ceviriyi saniyeler icinde yapar; senin katkin anlam, terim tutarliligi ve kultur uyumudur.',
+    uygun: ['Iki dili de iyi bilen kisiler', 'Detayci ve sabirli olanlar', 'Bir alanda terim bilgisi olanlar'],
+    beceri: ['Hedef dilde akici yazabilmek', 'Terim sozlugu olusturma', 'Baglami anlama', 'Teslim formatlarini koruma (HTML, JSON gibi)'],
+    adimlar: ['Bir alanda uzmanlas: teknik, hukuk, pazarlama, oyun.', 'O alanda terim sozlugu olustur, tutarlilik satar.', 'Ornek ceviriler hazirla, once-sonra goster.', 'Kelime basina degil proje basina fiyatlamayi dene.', 'Makine ciktisini mutlaka duzelt, oldugu gibi teslim etme.'],
+    musteri: ['Turkiye pazarina acilan yabanci yazilim ve uygulamalar', 'Egitim platformlari', 'Oyun stuydolari', 'Ceviri burolarina taseron olarak'],
+    fiyat: 'Kelime basina fiyat sektor standardidir ama yapay zeka kullandiginda sure kisaldigi icin proje basina fiyatlamak daha karli olabilir. Acil isler ve teknik metinler icin ek ucret normaldir.',
+    hatalar: ['Makine ciktisini duzeltmeden teslim etmek', 'Terim tutarsizligi', 'Kultur farkini gozetmemek (birebir ceviri komik durabilir)', 'Dosya yapisini bozmak'],
+    kategori: 'Metin'
+  },
+  'Egitim ve danismanlik': {
+    ozet: 'Isletmelere ve bireylere yapay zeka araclarini ogretir, is akislarini birlikte kurarsin. Saatlik danismanlik, kurumsal egitim ve surekli danismanlik olarak satilir. En hizli gelire donen yollardan biridir cunku urun degil zaman satarsin.',
+    uygun: ['Anlatmayi seven, sabirli kisiler', 'Araclari gercekten kullanmis olanlar', 'Sunum yapabilenler'],
+    beceri: ['Araclari uygulamali bilmek', 'Karsidakinin seviyesine inebilmek', 'Sunum hazirlama', 'Somut ornekle anlatma'],
+    adimlar: ['Bir sektore odaklan ve o sektorun diliyle anlat.', 'Ucretsiz bir web semineri veya atolye ile basla, guven olustur.', 'Kurum ici egitim paketi hazirla: yarim gun, tam gun, takip oturumu.', 'Somut kazanim goster: "bu is 3 saatten 20 dakikaya indi".', 'Egitim sonrasi destek paketi sun, surekli gelir saglar.'],
+    musteri: ['KOBI\'ler ve aile sirketleri', 'Meslek odalari ve dernekler', 'Ajanslar', 'Bireysel ogrenmek isteyenler'],
+    fiyat: 'Saatlik danismanlik en basit modeldir. Kurumsal egitimde gun basina fiyat verilir ve hazirlik suresi de hesaba katilmalidir. Surekli danismanlik (aylik belirli saat) en istikrarli gelirdir.',
+    hatalar: ['Araci kendin kullanmadan ogretmeye kalkmak', 'Cok teknik anlatip kitleyi kaybetmek', 'Hazirlik suresini fiyata katmamak', 'Egitim sonrasi destek vermemek'],
+    kategori: 'Metin'
+  }
+};
+
+function bizBlok(baslik, icerik, renk) {
+  return '<div class="p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md">' +
+    '<h3 class="text-xs font-bold uppercase tracking-wider text-' + renk + '-500 mb-3">' + baslik + '</h3>' + icerik + '</div>';
+}
+function bizMadde(arr, renk) {
+  return '<ul class="space-y-2">' + arr.map(function (x) {
+    return '<li class="flex gap-2.5 text-xs dark:text-gray-300 text-gray-600 leading-relaxed"><span class="text-' + renk + '-500 flex-shrink-0 font-bold">\u2022</span><span>' + esc(x) + '</span></li>';
+  }).join('') + '</ul>';
+}
+function bizNumarali(arr) {
+  return '<ol class="space-y-3">' + arr.map(function (x, i) {
+    return '<li class="flex gap-3 text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' +
+      '<span class="w-6 h-6 flex-shrink-0 rounded-lg bg-green-600 text-white font-bold flex items-center justify-center text-[11px]">' + (i + 1) + '</span>' +
+      '<span class="pt-0.5">' + esc(x) + '</span></li>';
+  }).join('') + '</ol>';
+}
+function openBizDetail(baslik) {
+  var m = null;
+  for (var i = 0; i < BIZ_GELIR.length; i++) if (BIZ_GELIR[i][1] === baslik) m = BIZ_GELIR[i];
+  var d = BIZ_DETAY[baslik];
+  if (!m || !d) return;
+  var box = document.getElementById('bizDetailBody');
+  box.innerHTML =
+    '<div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-green-600/15 via-emerald-600/5 to-transparent border border-green-500/30 shadow-xl">' +
+      '<div class="flex items-start gap-4 mb-4">' +
+        '<span class="w-14 h-14 rounded-2xl bg-green-600/15 flex items-center justify-center text-2xl flex-shrink-0">' + m[0] + '</span>' +
+        '<div><h1 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 mb-2">' + esc(m[1]) + '</h1>' +
+        '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
+      '<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4 text-xs">' +
+        '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Zorluk</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[2]) + '</div></div>' +
+        '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Baslangic maliyeti</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[3]) + '</div></div>' +
+        '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Ilk gelir</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[4]) + '</div></div></div>' +
+      '<p class="text-sm dark:text-gray-200 text-gray-700 leading-relaxed">' + esc(d.ozet) + '</p>' +
+    '</div>' +
+    '<div class="grid md:grid-cols-2 gap-6">' +
+      bizBlok('\ud83d\udc64 Kimler icin uygun', bizMadde(d.uygun, 'green'), 'green') +
+      bizBlok('\ud83c\udfaf Gereken beceriler', bizMadde(d.beceri, 'green'), 'green') +
+    '</div>' +
+    bizBlok('\ud83d\uddfa\ufe0f Adim adim nasil baslanir', bizNumarali(d.adimlar), 'green') +
+    '<div class="grid md:grid-cols-2 gap-6">' +
+      bizBlok('\ud83e\udd1d Ilk musteriyi nerede bulursun', bizMadde(d.musteri, 'blue'), 'blue') +
+      bizBlok('\u26a0\ufe0f Sik yapilan hatalar', bizMadde(d.hatalar, 'rose'), 'rose') +
+    '</div>' +
+    bizBlok('\ud83d\udcb5 Nasil fiyatlanir', '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(d.fiyat) + '</p>', 'amber') +
+    bizBlok('\ud83e\uddf0 Ise yarayan araclar',
+      '<div class="flex flex-wrap gap-2 mb-4">' + m[7].map(function (x) {
+        return '<span class="px-3 py-1.5 rounded-xl text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20">' + esc(x) + '</span>';
+      }).join('') + '</div>' +
+      '<button id="bizToolsBtn" class="w-full py-3 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 text-white text-xs font-bold shadow-lg">Bu alandaki tum AI araclarini gor \u2192</button>', 'green') +
+    '<p class="text-[11px] text-gray-400 text-center leading-relaxed px-4">Bu sayfa bir kazanc garantisi vermez. Sureler ve maliyetler genel tahmindir; sonuc emegine, sectigin alana ve musteri bulma becerine gore degisir.</p>';
+  var btn = document.getElementById('bizToolsBtn');
+  if (btn) btn.onclick = function () { switchPage('tools'); setCat(d.kategori); };
+  appState.bizDetail = baslik;
+  switchPage('bizDetail');
 }
 
 /* ===== Claude eklentileri ===== */
