@@ -455,7 +455,8 @@ async function updateEbooks() {
   for (let i = 0; i < batch.length; i += 5) await Promise.all(batch.slice(i, i + 5).map(async b => {
     b.checkedAt = now.toISOString();
     if (await alive(b.url)) { b.failCount = 0; b.status = 'active'; }
-    else { b.failCount = (b.failCount || 0) + 1; if (b.failCount >= CFG.FAIL_LIMIT) b.status = 'inactive'; }
+    else { b.failCount = (b.failCount || 0) + 1; if (b.failCount >= CFG.FAIL_LIMIT && !b.pin) b.status = 'inactive'; }
+    if (b.pin) b.status = 'active'; // elle kontrol edilmis kitap: bot gizlemez
   }));
   await saveList('data/ebooks.json', 'books', books);
   console.log('E-kitap:', books.length, '| erisilemeyen:', books.filter(b => b.status === 'inactive').length);
