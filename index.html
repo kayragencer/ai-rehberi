@@ -150,6 +150,17 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </div>
 
   <!-- SAYFA 3 -->
+  <!-- AI IS MODELLERI -->
+  <div id="pageBiz" class="hidden space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-2">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20 mb-4">&#128188; AI &#304;&#351; Modelleri</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Yapay Zeka ile &#304;&#351; ve Gelir</h1>
+      <div id="bizTabs" class="mt-6 flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0"></div>
+      <p id="bizNote" class="mt-4 text-xs text-gray-400 leading-relaxed max-w-2xl mx-auto"></p>
+    </div>
+    <div id="bizGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+
   <!-- CLAUDE EKLENTILERI -->
   <div id="pagePlugins" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
@@ -191,7 +202,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   <!-- PROMPT REHBERI -->
   <div id="pagePrompt" class="hidden space-y-10">
     <div class="text-center max-w-3xl mx-auto">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-4">&#9999;&#65039; Prompt Yazma Rehberi</div>
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-4">&#9999;&#65039; Prompt Olu&#351;turucu</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Prompt Olusturucu</h1>
       <p class="text-gray-400 text-sm">Alanlari doldur, yapay zekaya yapistirabilecegin hazir istemi an&#305;nda al.</p>
     </div>
@@ -276,8 +287,8 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </div>
 </div>
 
-<div id="profileModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
-  <div class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-3xl w-full max-w-md relative shadow-2xl max-h-[92vh] overflow-y-auto">
+<div id="profileModal" class="hidden fixed inset-x-0 z-50 px-4 pointer-events-none">
+  <div class="pointer-events-auto dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-3xl w-full max-w-md sm:ml-auto relative shadow-2xl overflow-y-auto" id="profilePanel">
     <div class="h-20 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 rounded-t-3xl"></div>
     <button onclick="closeProfileModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-black/30 text-white font-bold hover:bg-black/50">&#10005;</button>
 
@@ -439,7 +450,7 @@ var TOOLS = [
 
 var appState = {
   allTools: [], favorites: [], favPlugins: [], favEbooks: [], currentCat: 'all', currentPrice: 'all', visibleLimit: 30,
-  activePage: 'directory', plugins: [], pluginCat: 'Tumu', pluginLimit: 30, ebooks: [], ebookCat: 'Tumu', liveNewsList: [], currentActiveToolId: null, reviewsDB: {},
+  activePage: 'directory', bizTab: 'gelir', plugins: [], pluginCat: 'Tumu', pluginLimit: 30, ebooks: [], ebookCat: 'Tumu', liveNewsList: [], currentActiveToolId: null, reviewsDB: {},
 };
 
 /* ---------- Yard\u0131mc\u0131lar ---------- */
@@ -709,10 +720,11 @@ function submitUserReview(e) {
 /* ---------- Sayfa ge\u00e7i\u015fi ---------- */
 function switchPage(page) {
   appState.activePage = page;
-  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', plugins: 'pagePlugins', ebooks: 'pageEbooks', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
+  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', plugins: 'pagePlugins', ebooks: 'pageEbooks', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
   Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
   renderNav();
   if (page === 'news' && !appState.liveNewsList.length) fetchLiveAINews();
+  if (page === 'biz') { renderBizTabs(); renderBiz(); }
   if (page === 'plugins' && !appState.plugins.length) fetchPlugins();
   if (page === 'ebooks' && !appState.ebooks.length) fetchEbooks();
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -1092,8 +1104,32 @@ function updateProfileStats() {
   set('headerAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
   set('headerUserName', profile.loggedIn ? (profile.name.split(' ')[0] || 'Profil') : 'Giri\u015f Yap');
 }
-function openProfileModal() { renderAccountUI(); updateProfileStats(); document.getElementById('profileModal').classList.remove('hidden'); }
+function positionProfilePanel() {
+  var box = document.getElementById('profileModal'), panel = document.getElementById('profilePanel');
+  if (!box || box.classList.contains('hidden')) return;
+  var head = document.querySelector('header');
+  var top = head ? head.getBoundingClientRect().bottom : 64;
+  box.style.top = Math.max(8, top + 8) + 'px';
+  panel.style.maxHeight = (window.innerHeight - top - 24) + 'px';
+}
+function openProfileModal() {
+  renderAccountUI(); updateProfileStats();
+  var box = document.getElementById('profileModal');
+  box.classList.remove('hidden');
+  positionProfilePanel();
+  requestAnimationFrame(positionProfilePanel);
+}
 function closeProfileModal() { document.getElementById('profileModal').classList.add('hidden'); }
+window.addEventListener('resize', positionProfilePanel);
+window.addEventListener('scroll', positionProfilePanel, { passive: true });
+document.addEventListener('click', function (e) {
+  var box = document.getElementById('profileModal');
+  if (!box || box.classList.contains('hidden')) return;
+  if (box.contains(e.target)) return;
+  if (e.target.closest && e.target.closest('[title="Favorilerim"]')) return;
+  closeProfileModal();
+});
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeProfileModal(); });
 
 /* ===== Premium ===== */
 function openProModal() { if (profile.email) document.getElementById('waitEmail').value = profile.email; document.getElementById('proModal').classList.remove('hidden'); }
@@ -1195,9 +1231,10 @@ var NAV = [
   ['directory', 'Ana Sayfa', 'Ana Sayfa', '\u{1F3E0}', 'bg-purple-600'],
   ['tools', 'AI Araclari', 'Araclar', '\u{1F9F0}', 'bg-purple-600'],
   ['news', 'AI Haberleri', 'Haberler', '\u{1F4F0}', 'bg-blue-600'],
+  ['biz', 'AI \u0130\u015f Modelleri', '\u0130\u015f', '\ud83d\udcbc', 'bg-green-600'],
   ['plugins', 'Claude Eklentileri', 'Eklenti', '\u{1F9E9}', 'bg-amber-500'],
   ['ebooks', 'E-Kitap', 'E-Kitap', '\u{1F4DA}', 'bg-emerald-600'],
-  ['prompt', 'Prompt Rehberi', 'Prompt', '\u270d\ufe0f', 'bg-sky-600']
+  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', '\u270d\ufe0f', 'bg-sky-600']
 ];
 function renderNav() {
   var d = document.getElementById('navDesktop'), m = document.getElementById('navMobile');
@@ -1222,6 +1259,7 @@ var HOME_SECTIONS = [
   ['news', '\ud83d\udcf0', 'AI Haberleri', 'D\u00fcnyadan ve T\u00fcrkiye\u2019den g\u00fcncel geli\u015fmeler, T\u00fcrk\u00e7e \u00e7evrilmi\u015f olarak.', 'from-blue-600 to-sky-600', 'lg:col-span-3', 'newsCount', 'haber'],
   ['plugins', '\ud83e\udde9', 'Claude Eklentileri', 'Claude\u2019u kendi ara\u00e7lar\u0131na ba\u011flayan eklentiler.', 'from-amber-500 to-orange-500', 'lg:col-span-2', 'pluginTotal', 'eklenti'],
   ['ebooks', '\ud83d\udcda', 'E-Kitap', '\u00dccretsiz yapay zeka kitaplar\u0131 ve kurslar\u0131.', 'from-emerald-600 to-teal-600', 'lg:col-span-2', 'ebookTotal', 'kaynak'],
+  ['biz', '\ud83d\udcbc', 'AI \u0130\u015f Modelleri', 'Yapay zeka ile gelir yollar\u0131 ve i\u015fletme kullan\u0131mlar\u0131.', 'from-green-600 to-emerald-600', 'lg:col-span-2', '', ''],
   ['prompt', '\u270d\ufe0f', 'Prompt Olu\u015fturucu', 'Yapay zekadan daha iyi sonu\u00e7 veren istemi haz\u0131rla.', 'from-sky-600 to-cyan-600', 'lg:col-span-2', '', '']
 ];
 function renderHomeSections() {
@@ -1304,6 +1342,189 @@ function renderHomeExamples() {
     b.onclick = function () { document.getElementById('homeSearch').value = t; goSearch(); };
     box.appendChild(b);
   });
+}
+
+/* ===== AI Is Modelleri ===== */
+var BIZ_TABS = [
+  ['gelir', '\u{1F4B0}', 'Para Kazanma Yollari', 'from-green-600 to-emerald-600'],
+  ['kullanim', '\u{1F3E2}', 'Isletmelerde Kullanim', 'from-blue-600 to-indigo-600'],
+  ['sirket', '\u{1F3DB}\ufe0f', 'AI Sirketlerinin Modeli', 'from-purple-600 to-fuchsia-600']
+];
+var BIZ_GELIR = [
+  ['\u270d\ufe0f', 'Icerik ve SEO yazarligi', 'Kolay', 'Dusuk', '1-4 hafta',
+   'Blog yazisi, urun aciklamasi ve SEO metni ureten freelance hizmet. Yapay zeka taslagi cikarir, sen duzenler ve dogrularsin. Musteri genelde kucuk isletmeler ve e-ticaret siteleridir.',
+   ['Bir konuda uzmanlas (saglik, yazilim, e-ticaret gibi)', 'Kendi blogunda 3-5 ornek yazi yayinla', 'Freelance platformlarinda ve LinkedIn\'de hizmet ilani ac', 'Yazi basina veya aylik paket halinde fiyatla'],
+   ['ChatGPT', 'Claude', 'Grammarly', 'Writesonic']],
+  ['\u{1F3A8}', 'Gorsel ve logo tasarimi', 'Kolay', 'Dusuk', '2-6 hafta',
+   'Sosyal medya gorseli, kapak tasarimi, logo ve urun fotografi uretimi. Yapay zeka taslak uretir, sen marka kimligine uyarlar ve dosyayi teslime hazirlarsin.',
+   ['Bir tarz belirle ve portfolyo olustur', 'Fiverr, Bionluk gibi platformlarda ilan ac', 'Paket sun: 3 secenek + 2 revizyon gibi', 'Ticari kullanim haklarini sozlesmede net yaz'],
+   ['Midjourney', 'Recraft', 'Canva', 'Photoroom']],
+  ['\u{1F3AC}', 'Kisa video ureticiligi', 'Orta', 'Dusuk', '1-3 ay',
+   'Markalar icin Reels, TikTok ve YouTube Shorts uretimi. Senaryo, seslendirme ve altyazi yapay zeka ile hizlanir; kurgu ve ritim senin isin.',
+   ['Bir sektor sec ve 5 ornek video uret', 'Aylik icerik paketi olarak sat (orn: 12 video / ay)', 'Musterinin marka rengini ve tonunu sablonlastir', 'Teslim suresini net ver, revizyon sayisini sinirla'],
+   ['CapCut', 'Opus Clip', 'ElevenLabs', 'Runway']],
+  ['\u{1F399}\ufe0f', 'Seslendirme ve dublaj', 'Orta', 'Dusuk', '1-3 ay',
+   'Reklam, egitim videosu ve podcast icin seslendirme; yabanci icerigin Turkce dublaji. Yapay zeka sesi uretir, sen tonlama ve zamanlamayi duzeltirsin.',
+   ['Farkli tonlarda ornek kayitlar hazirla', 'Egitim ve reklam ajanslarina ulas', 'Dakika veya proje basina fiyatla', 'Baskasinin sesini izinsiz klonlama, bu yasal sorun yaratir'],
+   ['ElevenLabs', 'Murf AI', 'Adobe Podcast', 'HeyGen']],
+  ['\u2699\ufe0f', 'Otomasyon kurulumu', 'Orta', 'Dusuk', '1-3 ay',
+   'Kucuk isletmelere tekrar eden islerini otomatiklestirme: gelen formu CRM\'e isleme, fatura okuma, raporu otomatik gonderme. Kurulum ucreti + aylik bakim seklinde gelir getirir.',
+   ['n8n veya Make ogren, kendi isinde bir akis kur', 'Bir sektorde tek bir problemi coz (orn: emlakci randevu takibi)', 'Kurulum + aylik destek olarak fiyatla', 'Musterinin verisini nasil sakladigini yaz ile belgele'],
+   ['n8n', 'Make', 'Zapier', 'Claude']],
+  ['\u{1F916}', 'Chatbot ve musteri destegi kurulumu', 'Orta', 'Orta', '2-4 ay',
+   'Isletmenin kendi belgeleriyle calisan soru-cevap botu kurma. WhatsApp, web sitesi veya Instagram uzerinden musteri sorularini yanitlar.',
+   ['Once kendi demo botunu kur ve goster', 'Isletmenin SSS ve belgelerini topla', 'Yanlis cevap riskini musteriye acikca anlat', 'Kurulum + aylik kullanim bedeli al'],
+   ['Dify', 'Flowise', 'OpenAI', 'Claude']],
+  ['\u{1F4BB}', 'Mikro SaaS / kucuk arac gelistirme', 'Zor', 'Orta', '3-12 ay',
+   'Dar bir problemi cozen kucuk bir web araci yapip aylik abonelikle satmak. Yapay zeka kodlamayi hizlandirir ama urunu buyutmek zaman ister.',
+   ['Kendi yasadigin bir problemi sec', 'En kucuk calisan surumu 2-4 haftada cikar', 'Ucretsiz deneme + aylik abonelik kur', 'Ilk 10 kullaniciyi elle bul ve konus'],
+   ['Cursor', 'Lovable', 'Supabase', 'Vercel']],
+  ['\u{1F4E6}', 'Dijital urun satisi', 'Kolay', 'Dusuk', '2-8 hafta',
+   'Sablon, prompt paketi, e-kitap, Notion sablonu gibi bir kere uretip defalarca satilan urunler. Gelir yavas baslar, zamanla birikir.',
+   ['Belirli bir meslegin isini kolaylastiran bir urun yap', 'Gumroad, Shopier gibi bir satis sayfasi ac', 'Ucretsiz bir mini surumle liste olustur', 'Urunu guncel tut, eskiyen icerik satmaz'],
+   ['Claude', 'Canva', 'Gamma', 'Notion']],
+  ['\u{1F30D}', 'Ceviri ve yerellestirme', 'Kolay', 'Dusuk', '2-6 hafta',
+   'Web sitesi, uygulama ve egitim iceriginin Turkcelestirilmesi. Yapay zeka ilk ceviriyi yapar, sen anlam ve kultur uyumunu duzeltirsin.',
+   ['Bir alanda uzmanlas (teknik, hukuk, pazarlama)', 'Kelime basina degil, proje basina fiyatlamayi dene', 'Terim sozlugu olustur, tutarlilik satar', 'Makine ciktisini duzeltmeden teslim etme'],
+   ['DeepL', 'Claude', 'ChatGPT', 'Gemini']],
+  ['\u{1F393}', 'Egitim ve danismanlik', 'Orta', 'Dusuk', '1-4 ay',
+   'Isletmelere ve bireylere yapay zeka araclarini ogretmek, is akislarini birlikte kurmak. Saatlik danismanlik veya kurumsal egitim paketi olarak satilir.',
+   ['Bir sektore odaklan ve o sektorun diliyle anlat', 'Ucretsiz bir web semineri ile basla', 'Kurum ici egitim paketi hazirla (yarim gun / tam gun)', 'Somut kazanim goster: su is 3 saatten 20 dakikaya indi'],
+   ['ChatGPT', 'Claude', 'Gamma', 'NotebookLM']]
+];
+var BIZ_KULLANIM = [
+  ['\u{1F6D2}', 'E-ticaret', 'Yuzlerce urun aciklamasi yazmak, gorsel hazirlamak ve ayni sorulari yanitlamak zaman aliyor.',
+   ['Urun aciklamasi ve baslik uretimi', 'Urun fotografi arka plani temizleme', 'Musteri sorularini yanitlayan bot', 'Yorum analizi ve ozet cikarma'],
+   ['Claude', 'Photoroom', 'Dify']],
+  ['\u{1F4E3}', 'Pazarlama', 'Reklam metni, sosyal medya takvimi ve kampanya fikirleri surekli uretilmesi gereken islerdir.',
+   ['Reklam metni varyasyonlari uretme', 'Aylik icerik takvimi olusturma', 'Hedef kitleye gore mesaj uyarlama', 'Rakip icerik analizi'],
+   ['ChatGPT', 'Jasper', 'Canva']],
+  ['\u{1F4AC}', 'Musteri hizmetleri', 'Ayni sorularin tekrari ekibin vaktini alir, yogun saatlerde yanit suresi uzar.',
+   ['SSS tabanli otomatik yanit botu', 'Gelen talebi dogru birime yonlendirme', 'Gorusme ozeti ve not cikarma', 'Memnuniyet analizi'],
+   ['Dify', 'Flowise', 'Fireflies.ai']],
+  ['\u{1F4CA}', 'Muhasebe ve finans', 'Fatura girisi, mutabakat ve raporlama elle yapildiginda hem yavas hem hataya acik.',
+   ['Fatura ve fis goruntusunden veri okuma', 'Aylik rapor taslagi hazirlama', 'Gider kategorilendirme', 'Nakit akisi senaryolari yazma'],
+   ['Claude', 'n8n', 'Excel eklentileri']],
+  ['\u{1F465}', 'Insan kaynaklari', 'Ilan yazmak, yuzlerce basvuruyu okumak ve mulakat notu tutmak uzun suruyor.',
+   ['Is ilani metni hazirlama', 'Basvurularda on degerlendirme ozeti', 'Mulakat sorusu seti olusturma', 'Mulakat kaydi ozeti'],
+   ['ChatGPT', 'Otter.ai', 'Claude']],
+  ['\u{1F4BB}', 'Yazilim gelistirme', 'Kod incelemesi, test yazimi ve dokumantasyon genelde en geriye birakilan isler.',
+   ['Kod tamamlama ve refactor onerisi', 'Birim testi uretme', 'Hata ayiklama destegi', 'Teknik dokumantasyon yazimi'],
+   ['Cursor', 'GitHub Copilot', 'Claude']],
+  ['\u{1F3EA}', 'Kucuk isletme ve esnaf', 'Sosyal medya, menu, ilan ve musteri mesajlari tek kisinin uzerinde kaliyor.',
+   ['Sosyal medya gonderisi ve gorseli', 'Menu ve fiyat listesi tasarimi', 'Google isletme yorumlarina yanit', 'Basit randevu hatirlatma akisi'],
+   ['Canva', 'ChatGPT', 'Make']],
+  ['\u{1F4DA}', 'Egitim', 'Ders plani, materyal ve olcme araci hazirlamak ogretmenin en cok vakit alan isi.',
+   ['Ders plani ve etkinlik onerisi', 'Seviyeye gore soru uretimi', 'Ogrenci geri bildirimi taslagi', 'Kaynak ozetleme'],
+   ['NotebookLM', 'Claude', 'Gamma']],
+  ['\u{1F3E0}', 'Emlak', 'Ilan metni, gorsel duzenleme ve musteri takibi dagilan isler.',
+   ['Ilan aciklamasi yazma', 'Ic mekan fotografi iyilestirme', 'Musteri sorularini yanitlama', 'Randevu takibi otomasyonu'],
+   ['ChatGPT', 'Magnific', 'n8n']],
+  ['\u2696\ufe0f', 'Hukuk ve sozlesme', 'Uzun belgeleri okumak ve ozetlemek zaman alir; son karar her zaman uzmana aittir.',
+   ['Sozlesme ozeti cikarma', 'Belge icinde madde arama', 'Taslak metin hazirlama', 'Terim aciklama'],
+   ['Claude', 'Legora', 'NotebookLM']]
+];
+var BIZ_SIRKET = [
+  ['\u{1F4C5}', 'Aylik abonelik', 'Kullaniciya sabit aylik ucretle gelismis model, daha yuksek kullanim hakki ve ek ozellikler sunulur. Gelir ongorulebilir, kullanici icin maliyet nettir.',
+   ['ChatGPT Plus', 'Claude Pro', 'Midjourney'],
+   'Ongorulebilir gelir, sadik kullanici', 'Agir kullanici sirkete pahaliya mal olabilir'],
+  ['\u{1F50C}', 'Kullanim basina API ucreti', 'Gelistiriciler modeli kendi uygulamasina baglar, isledigi metin miktari kadar oder. Buyuyen urun daha cok oder, kucuk proje az.',
+   ['OpenAI API', 'Anthropic API', 'Gemini API'],
+   'Kullanimla birlikte buyuyen gelir', 'Maliyet tahmini kullanici icin zordur'],
+  ['\u{1F381}', 'Freemium', 'Temel surum ucretsiz verilir, sinirlar dolunca ucretli plana gecis beklenir. Hizli kullanici kazandirir.',
+   ['Perplexity', 'Canva', 'Hugging Face'],
+   'Hizli buyume, genis kitle', 'Ucretsiz kullanicinin maliyeti yuksek'],
+  ['\u{1F3E2}', 'Kurumsal lisans', 'Sirketlere guvenlik, yonetim paneli, veri gizliligi ve destek iceren ozel anlasmalar satilir. Tek musteriden yuksek gelir gelir.',
+   ['ChatGPT Enterprise', 'Claude for Work', 'Microsoft Copilot'],
+   'Yuksek ve istikrarli gelir', 'Satis sureci uzun, destek yuku agir'],
+  ['\u{1F513}', 'Acik agirlik + hizmet', 'Model ucretsiz indirilebilir, sirket bulut barindirma, destek ve kurumsal surumden kazanir. Ekosistem buyutur.',
+   ['Mistral', 'Meta Llama', 'DeepSeek'],
+   'Hizli yayilim ve topluluk', 'Dogrudan gelire cevirmek zor'],
+  ['\u{1F5A5}\ufe0f', 'Donanim ve altyapi', 'Modelleri egitmek ve calistirmak icin gereken cip, sunucu ve bulut kapasitesi satilir. Yapay zeka buyudukce talep artar.',
+   ['Nvidia', 'AWS', 'Google Cloud'],
+   'Tum sektorun buyumesinden pay', 'Yuksek sermaye ve uretim bagimliligi'],
+  ['\u{1F6D6}', 'Pazar yeri ve platform', 'Baskalarinin modellerini barindirip calistiran platformlar, kullanim veya komisyon uzerinden kazanir.',
+   ['Hugging Face', 'Replicate', 'Poe'],
+   'Tek modele bagimli degil', 'Rekabet yogun, kar marji dar'],
+  ['\u{1F9E9}', 'Mevcut urune ekleme', 'Yapay zeka ayri bir urun olarak degil, var olan yazilimin icine ozellik olarak konur ve ust pakete dahil edilir.',
+   ['Notion AI', 'Adobe Firefly', 'Slack'],
+   'Hazir kullanici kitlesi', 'Tek basina gelir olcmek zordur']
+];
+
+var BIZ_LEVEL = { 'Kolay': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20', 'Orta': 'bg-amber-500/10 text-amber-500 border-amber-500/20', 'Zor': 'bg-rose-500/10 text-rose-500 border-rose-500/20' };
+function renderBizTabs() {
+  var box = document.getElementById('bizTabs'); if (!box) return;
+  box.innerHTML = '';
+  BIZ_TABS.forEach(function (t) {
+    var on = appState.bizTab === t[0], b = document.createElement('button');
+    b.className = 'flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold border transition ' +
+      (on ? 'bg-gradient-to-r ' + t[3] + ' text-white border-transparent shadow-lg' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
+    b.innerHTML = '<span>' + t[1] + '</span><span>' + esc(t[2]) + '</span>';
+    b.onclick = function () { appState.bizTab = t[0]; renderBizTabs(); renderBiz(); };
+    box.appendChild(b);
+  });
+}
+function bizCard(inner, border) {
+  var c = document.createElement('div');
+  c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md hover:border-' + border + '-500 transition';
+  c.innerHTML = inner;
+  return c;
+}
+function liList(arr, color) {
+  return '<ul class="space-y-1.5">' + arr.map(function (x) {
+    return '<li class="flex gap-2 text-xs dark:text-gray-300 text-gray-600 leading-relaxed"><span class="text-' + color + '-500 flex-shrink-0">\u2022</span><span>' + esc(x) + '</span></li>';
+  }).join('') + '</ul>';
+}
+function tagRow(arr, color) {
+  return '<div class="flex flex-wrap gap-1.5 mt-3">' + arr.map(function (x) {
+    return '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-' + color + '-500/10 text-' + color + '-500 border border-' + color + '-500/20">' + esc(x) + '</span>';
+  }).join('') + '</div>';
+}
+function renderBiz() {
+  var grid = document.getElementById('bizGrid'), note = document.getElementById('bizNote');
+  if (!grid) return;
+  grid.innerHTML = '';
+  if (appState.bizTab === 'gelir') {
+    note.textContent = 'Bu yollar bir kazanc garantisi degil, baslangic icin yol haritasidir. Gelir; emegine, sectigin alana ve musteri bulma becerine gore degisir.';
+    BIZ_GELIR.forEach(function (m) {
+      grid.appendChild(bizCard(
+        '<div class="flex items-start gap-3 mb-3">' +
+          '<span class="w-11 h-11 rounded-2xl bg-green-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
+          '<div class="min-w-0"><h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3>' +
+          '<span class="inline-block mt-1 px-2 py-0.5 rounded-lg text-[10px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
+        '<div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">' +
+          '<div class="p-2 rounded-xl dark:bg-gray-950 bg-gray-50"><div class="text-gray-400">Baslangic maliyeti</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[3]) + '</div></div>' +
+          '<div class="p-2 rounded-xl dark:bg-gray-950 bg-gray-50"><div class="text-gray-400">Ilk gelir</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[4]) + '</div></div></div>' +
+        '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[5]) + '</p>' +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Nasil baslanir</div>' + liList(m[6], 'green') +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">Ise yarayan araclar</div>' + tagRow(m[7], 'green'), 'green'));
+    });
+  } else if (appState.bizTab === 'kullanim') {
+    note.textContent = 'Sektorune gore yapay zekanin nerede ise yaradigi ve hangi aracla baslayabilecegin.';
+    BIZ_KULLANIM.forEach(function (m) {
+      grid.appendChild(bizCard(
+        '<div class="flex items-center gap-3 mb-3">' +
+          '<span class="w-11 h-11 rounded-2xl bg-blue-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
+          '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
+        '<p class="text-xs text-gray-400 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Kullanim alanlari</div>' + liList(m[3], 'blue') +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">Onerilen araclar</div>' + tagRow(m[4], 'blue'), 'blue'));
+    });
+  } else {
+    note.textContent = 'Yapay zeka sirketleri nasil para kazaniyor? Fiyatlar sik degistigi icin burada rakam degil, modelin kendisi anlatiliyor.';
+    BIZ_SIRKET.forEach(function (m) {
+      grid.appendChild(bizCard(
+        '<div class="flex items-center gap-3 mb-3">' +
+          '<span class="w-11 h-11 rounded-2xl bg-purple-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
+          '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
+        '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-1">Ornekler</div>' + tagRow(m[3], 'purple') +
+        '<div class="mt-3 space-y-2">' +
+          '<div class="p-2.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs"><span class="font-bold text-emerald-500">Artisi: </span><span class="dark:text-gray-300 text-gray-700">' + esc(m[4]) + '</span></div>' +
+          '<div class="p-2.5 rounded-xl bg-rose-500/5 border border-rose-500/20 text-xs"><span class="font-bold text-rose-500">Zorlugu: </span><span class="dark:text-gray-300 text-gray-700">' + esc(m[5]) + '</span></div>' +
+        '</div>', 'purple'));
+    });
+  }
 }
 
 /* ===== Claude eklentileri ===== */
