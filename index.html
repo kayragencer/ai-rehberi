@@ -80,12 +80,33 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
       <div id="homeExamples" class="mt-4 flex flex-wrap justify-center gap-2 text-xs"></div>
     </div>
 
+
+    <div id="spotlightWrap" class="hidden">
+      <div class="flex items-end justify-between mb-4 px-1">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">&#127775; G&#252;n&#252;n Arac&#305;</span>
+        <span id="spotlightTag" class="text-[11px] text-gray-500">Her g&#252;n yenilenir</span>
+      </div>
+      <div id="spotlightCard"></div>
+    </div>
     <div>
       <div class="flex items-end justify-between mb-4 px-1">
         <span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128293; Editorun Onerdigi Yapay Zekalar</span>
         <button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">Tumunu gor &#8594;</button>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featuredRecommendedGrid"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="p-5 sm:p-6 rounded-3xl dark:bg-gray-900/90 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
+        <div class="flex items-end justify-between mb-1"><span class="text-xs font-bold uppercase tracking-wider text-emerald-400">&#127381; Yeni Eklenenler</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
+        <p class="text-[11px] text-gray-500 mb-4">Bot her saat yeni &#231;&#305;kan yapay zeka projelerini tarar.</p>
+        <div id="homeNewList" class="space-y-1"></div>
+      </div>
+      <div class="p-5 sm:p-6 rounded-3xl dark:bg-gray-900/90 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
+        <div class="flex items-end justify-between mb-1"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">&#11088; En Pop&#252;ler A&#231;&#305;k Kaynak</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
+        <p class="text-[11px] text-gray-500 mb-4">GitHub'da geli&#351;tiricilerin en &#231;ok y&#305;ld&#305;z verdi&#287;i projeler.</p>
+        <div id="homePopList" class="space-y-1"></div>
+      </div>
     </div>
 
     <div>
@@ -392,8 +413,8 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
     </div>
 
     <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
-      <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Ayn&#305; Kategorideki Di&#287;er Ara&#231;lar</h3>
-      <div id="detailSameCatGrid" class="grid grid-cols-1 sm:grid-cols-3 gap-4"></div>
+      <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Alternatifleri</h3><p class="text-[11px] text-gray-500 -mt-2 mb-4">Ayn&#305; i&#351;i yapan di&#287;er ara&#231;lar</p>
+      <div id="detailSameCatGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </div>
 
     <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl space-y-6">
@@ -776,7 +797,8 @@ function openToolDetail(id) {
 
   var grid = document.getElementById('detailSameCatGrid');
   grid.innerHTML = '';
-  var similar = appState.allTools.filter(function(t) { return t.category === tool.category && t.id !== tool.id; }).slice(0, 3);
+  var similar = appState.allTools.filter(function(t) { return t.category === tool.category && t.id !== tool.id; })
+    .sort(function(a, b) { return (b.isVip - a.isVip) || (RANK[a.source || 'curated'] - RANK[b.source || 'curated']) || ((b.stars || 0) - (a.stars || 0)); }).slice(0, 6);
   if (!similar.length) {
     grid.innerHTML = '<p class="text-xs text-gray-500 col-span-3">Bu kategoride ba\u015fka ara\u00e7 bulunamad\u0131.</p>';
   } else similar.forEach(function(sim) {
@@ -2169,12 +2191,77 @@ function refreshTools() {
     .then(function(d) {
       if (!d.tools || !d.tools.length) return;
       appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive'; }).map(function(t) {
-        return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew,
+        return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew, tr: t.tr !== false,
                  desc: fixText(t.desc), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
-      renderChips(); updateHomeCounts(); if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
+      renderChips(); updateHomeCounts(); renderHomeExtras(); if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
     }).catch(function() {});
 }
+
+
+/* ===== Ana sayfa: Gunun Araci, Bu Hafta Eklenenler, En Populer ===== */
+var SPOTLIGHT_SPONSOR = null; // ileride ucretli one cikarma: { id: 'arac-id', etiket: 'Sponsorlu' }
+function gunFarki(tarih) {
+  var d = Date.parse(tarih + 'T00:00:00'); if (isNaN(d)) return '';
+  var g = Math.floor((Date.now() - d) / 86400000);
+  return g <= 0 ? 'bug\u00fcn' : g === 1 ? 'd\u00fcn' : g + ' g\u00fcn \u00f6nce';
+}
+function kisaSayi(n) { return n >= 10000 ? Math.round(n / 1000) + ' bin' : n >= 1000 ? (Math.round(n / 100) / 10).toString().replace('.', ',') + ' bin' : String(n); }
+function aracSatiri(t, sag) {
+  var r = document.createElement('div');
+  r.className = 'flex items-center gap-3 p-2.5 -mx-2.5 rounded-2xl cursor-pointer hover:bg-purple-500/10 transition';
+  r.onclick = function() { openToolDetail(t.id); };
+  r.innerHTML = '<div class="row-logo w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden"></div>' +
+    '<div class="min-w-0 flex-1"><div class="flex items-center gap-2"><span class="font-bold text-sm dark:text-white text-gray-900 truncate">' + esc(t.title) + '</span>' +
+    '<span class="flex-shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded-md dark:bg-gray-800 bg-gray-100 text-gray-400">' + catMeta(t.category)[2] + ' ' + esc(catMeta(t.category)[1]) + '</span></div>' +
+    '<div class="text-[11px] text-gray-500 truncate">' + esc(String(t.desc || '').split('\n')[0]) + '</div></div>' +
+    '<div class="flex-shrink-0 text-[11px] font-bold text-gray-400 text-right">' + sag + '</div>';
+  fillTile(r.querySelector('.row-logo'), t.brand, t.title, { img: 'w-7 h-7 object-contain', letter: 'text-lg' });
+  return r;
+}
+function renderHomeLists() {
+  var yeni = document.getElementById('homeNewList'), pop = document.getElementById('homePopList');
+  if (!yeni || !pop) return;
+  var tools = appState.allTools || [];
+  var y = tools.filter(function(t) { return t.isNew; })
+    .sort(function(a, b) { return (b.addedAt || '').localeCompare(a.addedAt || '') || ((b.stars || 0) - (a.stars || 0)); })
+    .filter(function(t) { return t.tr && ((t.stars || 0) >= 100 || t.source !== 'github'); }).slice(0, 6);
+  var p = tools.filter(function(t) { return t.source === 'github' && t.stars; })
+    .sort(function(a, b) { return b.stars - a.stars; }).slice(0, 6);
+  yeni.innerHTML = ''; pop.innerHTML = '';
+  if (!y.length) yeni.innerHTML = '<p class="text-xs text-gray-500 py-4">Son iki haftada yeni ara\u00e7 eklenmedi.</p>';
+  y.forEach(function(t) { yeni.appendChild(aracSatiri(t, gunFarki(t.addedAt))); });
+  p.forEach(function(t) { pop.appendChild(aracSatiri(t, '\u2b50 ' + kisaSayi(t.stars))); });
+}
+function renderSpotlight() {
+  var wrap = document.getElementById('spotlightWrap'), box = document.getElementById('spotlightCard');
+  if (!wrap || !box) return;
+  var tools = appState.allTools || [], t = null, sponsor = false;
+  if (SPOTLIGHT_SPONSOR) { t = tools.find(function(x) { return x.id === SPOTLIGHT_SPONSOR.id; }); sponsor = !!t; }
+  if (!t) {
+    var havuz = tools.filter(function(x) { return x.source === 'curated' && !x.isVip; });
+    if (!havuz.length) return;
+    var gun = Math.floor(Date.now() / 86400000);
+    t = havuz[(gun * 7919) % havuz.length];
+  }
+  document.getElementById('spotlightTag').textContent = sponsor ? (SPOTLIGHT_SPONSOR.etiket || 'Sponsorlu') : 'Her g\u00fcn yenilenir';
+  box.innerHTML = '';
+  var c = document.createElement('div');
+  c.className = 'relative overflow-hidden rounded-3xl border border-amber-500/40 bg-gradient-to-br from-amber-500/15 via-purple-600/10 to-transparent dark:bg-gray-900 bg-white shadow-xl p-5 sm:p-7 flex flex-col sm:flex-row gap-5 sm:items-center cursor-pointer hover:border-amber-500/80 transition group';
+  c.onclick = function() { openToolDetail(t.id); };
+  c.innerHTML = '<div class="spot-logo w-20 h-20 sm:w-24 sm:h-24 rounded-3xl flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg"></div>' +
+    '<div class="min-w-0 flex-1"><div class="flex flex-wrap items-center gap-2 mb-1.5">' +
+      '<span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-gradient-to-r ' + catMeta(t.category)[3] + ' text-white">' + catMeta(t.category)[2] + ' ' + esc(catMeta(t.category)[1]) + '</span>' +
+      '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full dark:bg-gray-800 bg-gray-100 text-gray-400">' + esc(t.price) + '</span>' +
+      (sponsor ? '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-500 text-black">' + esc(SPOTLIGHT_SPONSOR.etiket || 'Sponsorlu') + '</span>' : '') + '</div>' +
+      '<h3 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 group-hover:text-amber-400 transition mb-1.5">' + esc(t.title) + '</h3>' +
+      '<p class="text-xs sm:text-sm dark:text-gray-300 text-gray-600 leading-relaxed line-clamp-2">' + esc(String(t.desc || '').split('\n')[0]) + '</p></div>' +
+    '<div class="flex-shrink-0"><span class="inline-block px-5 py-3 rounded-2xl bg-amber-500 group-hover:bg-amber-400 text-black text-xs font-extrabold transition">\u0130ncele \u2192</span></div>';
+  fillTile(c.querySelector('.spot-logo'), t.brand, t.title, { img: 'w-12 h-12 object-contain', letter: 'text-4xl' });
+  box.appendChild(c);
+  wrap.classList.remove('hidden');
+}
+function renderHomeExtras() { renderSpotlight(); renderHomeLists(); }
 
 /* ---------- Ba\u015flat (tek sefer) ---------- */
 var started = false;
@@ -2195,7 +2282,7 @@ function startApp() {
   hashOku();
   ilkAcilis = false;
   yonlendirme = true; hashYaz(); yonlendirme = false;
-  renderFeatured('featuredRecommendedGrid');
+  renderFeatured('featuredRecommendedGrid'); renderHomeExtras();
   updateProfileStats();
   refreshTools();
   setTimeout(function () { fetchPlugins(); fetchEbooks(); fetchLiveAINews(); }, 1200);
