@@ -8,7 +8,7 @@ const headers = { 'User-Agent': 'ai-rehberi-bot/1.0' };
 const ghHeaders = { ...headers, Accept: 'application/vnd.github+json', ...(E.GITHUB_TOKEN ? { Authorization: 'Bearer ' + E.GITHUB_TOKEN } : {}) };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
-const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 50, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14 };
+const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14 };
 
 if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 160;
 const FEEDS = [
@@ -231,6 +231,8 @@ const ghNote = t => t.source === 'github' ? '\n\nA\u00e7\u0131k kaynak proje. Gi
 const compose = t => ((t.descTr || t.descOrig || '') + ghNote(t)).trim();
 const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return ''; } };
 
+const JUNK = /(^|[^a-z])(awesome|tutorials?|courses?|roadmaps?|cheat.?sheets?|interviews?|handbooks?|curriculum|bootcamp|lectures?|notes?|papers?|surveys?|collections?|resources?|guides?|books?|examples?|demos?|templates?|boilerplate|starter|playground|exercises?|practice|learning|study|zero.to|from.scratch|100.?days|prompts?|katas?|challenges?|portfolio|blog|docs?|dotfiles|config)([^a-z]|$)/i;
+const isJunk = t => JUNK.test(t) || String(t).length < 25;
 const GH_TOPICS = ['llm', 'chatgpt', 'generative-ai', 'ai-agents', 'large-language-models', 'text-to-image', 'stable-diffusion', 'text-to-speech', 'speech-recognition', 'code-generation', 'rag', 'ai-tools', 'openai', 'langchain', 'image-generation', 'text-to-video', 'ai-assistant', 'chatbot'];
 
 async function ghSearch(q, page) {
@@ -260,7 +262,7 @@ async function updateTools() {
       else { t.descOrig = t.desc || ''; t.tr = true; }
     }
   }
-  tools = tools.filter(t => !(t.source === 'github' && !t.tr && NONLATIN.test(t.descOrig || '')));
+  tools = tools.filter(t => !(t.source === 'github' && (NONLATIN.test(t.descOrig || '') || isJunk(t.title + ' ' + (t.descOrig || '')))));
   const byId = new Map(tools.map(t => [t.id, t]));
   const hosts = new Set(tools.map(t => hostOf(t.url)));
   const bad = txt => block.words.some(w => txt.includes(w));
@@ -269,6 +271,7 @@ async function updateTools() {
     const id = 'gh-' + slug(p.full_name);
     const text = (p.name + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ')).toLowerCase();
     if (byId.has(id) || block.ids.includes(id) || p.fork || p.archived || !p.description || NONLATIN.test(p.description) || bad(text) || tools.length >= CFG.MAX_TOOLS) return;
+    if (isJunk(p.name + ' ' + p.description)) return;
     const t = { id, title: p.name, category: guess(text), price: '\u00dccretsiz', url: p.homepage && /^https?:/.test(p.homepage) ? p.homepage : p.html_url,
       featured: false, descOrig: p.description, tr: false, source: 'github', repo: p.full_name, stars: p.stargazers_count,
       status: 'active', failCount: 0, addedAt: (p.created_at || now.toISOString()).slice(0, 10) };
@@ -361,7 +364,96 @@ async function updateTools() {
   console.log('Toplam ara\u00e7:', tools.length, '| \u00e7evrilen:', need.filter(t => t.tr).length);
 }
 
+/* ---------- 3) CLAUDE EKLENTILERI (MCP sunuculari, Claude Code araclari) ---------- */
+const PLUGIN_QUERIES = [
+  ['topic:mcp-server stars:>20 fork:false archived:false', 'MCP Sunucusu'],
+  ['topic:model-context-protocol stars:>20 fork:false archived:false', 'MCP Sunucusu'],
+  ['topic:mcp stars:>60 fork:false archived:false', 'MCP Sunucusu'],
+  ['topic:claude-code stars:>15 fork:false archived:false', 'Claude Code'],
+  ['topic:claude stars:>40 fork:false archived:false', 'Claude Araci'],
+  ['topic:anthropic stars:>40 fork:false archived:false', 'Claude Araci'],
+  ['"claude code" plugin in:name,description stars:>25 fork:false archived:false', 'Claude Code']
+];
+function pluginCat(p, fallback) {
+  const s = (p.name + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ')).toLowerCase();
+  if (/\bsdk\b|client library|api client/.test(s)) return 'SDK';
+  if (/mcp[- ]?server|model.context.protocol/.test(s)) return 'MCP Sunucusu';
+  if (/claude.code|slash command|subagent|skill/.test(s)) return 'Claude Code';
+  if (/awesome|curated|list of/.test(s)) return 'Derleme';
+  return fallback || 'Claude Araci';
+}
+async function updatePlugins() {
+  const db = await read('data/plugins.json', { plugins: [] });
+  const block = await read('data/blocklist.json', { ids: [], words: [] });
+  let plugins = db.plugins || [];
+  const byId = new Map(plugins.map(p => [p.id, p]));
+
+  for (const [q, cat] of PLUGIN_QUERIES) {
+    const items = await ghSearch(q, 1);
+    if (items === null) { console.warn('GitHub arama limiti (eklenti)'); break; }
+    for (const p of items) {
+      const id = 'gh-' + slug(p.full_name);
+      const text = (p.name + ' ' + (p.description || '') + ' ' + (p.topics || []).join(' ')).toLowerCase();
+      if (byId.has(id) || block.ids.includes(id) || !p.description || NONLATIN.test(p.description)) continue;
+      if (block.words.some(w => text.includes(w)) || plugins.length >= 600) continue;
+      const t = { id, repo: p.full_name, title: p.name, url: p.html_url, desc: '', descOrig: p.description, tr: false,
+        stars: p.stargazers_count, owner: (p.owner || {}).login || p.full_name.split('/')[0],
+        category: pluginCat(p, cat), status: 'active', failCount: 0, addedAt: (p.created_at || now.toISOString()).slice(0, 10) };
+      plugins.push(t); byId.set(id, t);
+    }
+    await sleep(SEARCH_WAIT);
+  }
+
+  // Saglik kontrolu ve guncelleme
+  const batch = plugins.sort((a, b) => (a.checkedAt || '').localeCompare(b.checkedAt || '')).slice(0, 60);
+  for (let i = 0; i < batch.length; i += 8) await Promise.all(batch.slice(i, i + 8).map(async t => {
+    t.checkedAt = now.toISOString();
+    const r = await get('https://api.github.com/repos/' + t.repo, { headers: ghHeaders }).catch(() => null);
+    if (r && (r.status === 404 || r.status === 451)) { t.remove = true; return; }
+    if (r && r.ok) {
+      const p = await r.json();
+      if (p.archived) { t.remove = true; return; }
+      t.stars = p.stargazers_count;
+      t.url = p.html_url;
+      t.owner = (p.owner || {}).login || t.owner;
+      if (p.description && p.description !== t.descOrig) { t.descOrig = p.description; t.tr = false; delete t.descTr; }
+      t.category = pluginCat(p, t.category);
+    }
+  }));
+  plugins = plugins.filter(p => !p.remove);
+
+  // Turkce ceviri
+  plugins.forEach(p => { if (!p.tr && isTr(p.descOrig)) p.tr = true; });
+  const need = plugins.filter(p => !p.tr && p.descOrig).sort((a, b) => (b.stars || 0) - (a.stars || 0)).slice(0, 60);
+  for (let i = 0; i < need.length; i += 8) {
+    const b = need.slice(i, i + 8);
+    const out = await translate(b.map(p => p.descOrig.slice(0, 300)));
+    b.forEach((p, k) => { if (out[k]) { p.descTr = out[k]; p.tr = true; } });
+  }
+  plugins.forEach(p => { p.desc = (p.descTr || p.descOrig || '').trim(); p.isNew = (now - new Date(p.addedAt)) < CFG.NEW_DAYS * 864e5; });
+  plugins.sort((a, b) => (b.stars || 0) - (a.stars || 0));
+  await saveList('data/plugins.json', 'plugins', plugins);
+  console.log('Claude eklentisi:', plugins.length, '| cevrilen:', need.filter(p => p.tr).length);
+}
+
+/* ---------- 4) E-KITAPLAR (baglanti sagligi) ---------- */
+async function updateEbooks() {
+  const db = await read('data/ebooks.json', { books: [] });
+  const books = db.books || [];
+  if (!books.length) return;
+  const batch = books.sort((a, b) => (a.checkedAt || '').localeCompare(b.checkedAt || '')).slice(0, 20);
+  for (let i = 0; i < batch.length; i += 5) await Promise.all(batch.slice(i, i + 5).map(async b => {
+    b.checkedAt = now.toISOString();
+    if (await alive(b.url)) { b.failCount = 0; b.status = 'active'; }
+    else { b.failCount = (b.failCount || 0) + 1; if (b.failCount >= CFG.FAIL_LIMIT) b.status = 'inactive'; }
+  }));
+  await saveList('data/ebooks.json', 'books', books);
+  console.log('E-kitap:', books.length, '| erisilemeyen:', books.filter(b => b.status === 'inactive').length);
+}
+
 await updateNews();
 await updateTools();
+await updatePlugins();
+await updateEbooks();
 await save('data/status.json', JSON.stringify({ translate: TSTAT }) + '\n');
 console.log('Ceviri durumu:', JSON.stringify(TSTAT));
