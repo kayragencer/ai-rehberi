@@ -1,1 +1,1 @@
-{"translate":{"ok":120,"fail":0,"provider":"gemini","tried":{"gemini":15},"lastError":""}}
+{"translate":{"ok":122,"fail":0,"provider":"gtx","tried":{"gemini":3,"gtx":122,"lingva":2,"mymemory":2},"lastError":"gemini: This operation was aborted"}}
