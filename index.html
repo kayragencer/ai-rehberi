@@ -33,11 +33,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-base sm:text-lg text-white shadow-lg shadow-purple-600/30">AI</div>
         <span class="text-base sm:text-xl font-bold dark:text-white text-gray-900">AI<span class="text-purple-500">Rehberi</span></span>
       </div>
-      <nav class="hidden lg:flex items-center space-x-1 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold">
-        <button onclick="switchPage('directory')" id="navDirBtn" class="px-3.5 py-2 rounded-lg">&#129302; AI Rehberi</button>
-        <button onclick="switchPage('news')" id="navNewsBtn" class="px-3.5 py-2 rounded-lg">&#128240; AI Haberleri</button>
-        <button onclick="switchPage('github')" id="navGitHubBtn" class="px-3.5 py-2 rounded-lg">&#11088; Open-Source AI</button>
-      </nav>
+      <nav id="navDesktop" class="hidden lg:flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav>
     </div>
     <div class="flex items-center space-x-2">
       <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="px-2.5 sm:px-3 py-2.5 dark:bg-gray-800/60 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-300 text-gray-700 rounded-xl transition text-xs font-bold flex items-center space-x-1">
@@ -51,54 +47,85 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </div>
 </header>
 
-<div class="lg:hidden flex justify-center space-x-1 p-2 dark:bg-gray-900 bg-white border-b dark:border-gray-800 border-gray-200 text-[11px] font-bold">
-  <button onclick="switchPage('directory')" id="mobDirBtn" class="flex-1 py-2 rounded-lg text-center">&#129302; Rehber</button>
-  <button onclick="switchPage('news')" id="mobNewsBtn" class="flex-1 py-2 rounded-lg text-center">&#128240; Haberler</button>
-  <button onclick="switchPage('github')" id="mobGitHubBtn" class="flex-1 py-2 rounded-lg text-center">&#11088; GitHub</button>
+<div class="lg:hidden border-b dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white">
+  <div id="navMobile" class="flex gap-1.5 overflow-x-auto px-3 py-2 text-[11px] font-bold"></div>
 </div>
 
 <main class="max-w-6xl mx-auto px-4 py-10 flex-grow w-full">
 
   <!-- SAYFA 1 -->
-  <div id="pageDirectory" class="space-y-6">
-    <div class="text-center max-w-3xl mx-auto mb-10">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#10024; Ak&#305;ll&#305; Yapay Zeka Dizini</div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Ne Olu&#351;turmak &#304;stiyorsun?</h1>
-      <p class="text-gray-400 text-sm sm:text-base">&#304;htiyac&#305;n&#305; yaz (&#246;rn: "ses klonlama", "logo", "ChatGPT alternatifi", "video").</p>
+  <!-- ANA SAYFA -->
+  <div id="pageDirectory" class="space-y-14">
+    <div class="text-center max-w-3xl mx-auto">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#10024; Akilli Yapay Zeka Dizini</div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Ne Olusturmak Istiyorsun?</h1>
+      <p class="text-gray-400 text-sm sm:text-base">Ihtiyacini yaz, sana uygun yapay zeka aracini bulalim.</p>
 
-      <div class="mt-6 relative">
-        <input type="text" id="searchInput" oninput="filterTools()" placeholder="Ne yapmak istiyorsun? &#214;rn: bana bir video yap"
+      <form onsubmit="goSearch(event)" class="mt-6 relative" autocomplete="off">
+        <input type="text" id="homeSearch" oninput="homeSuggest()" onfocus="homeSuggest()"
+          placeholder="Ne yapmak istiyorsun? Orn: bana bir video yap"
+          class="w-full p-4 pl-6 pr-28 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 text-sm sm:text-base shadow-2xl transition">
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold">Ara</button>
+        <div id="homeSuggestBox" class="hidden absolute z-30 left-0 right-0 mt-2 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-2xl overflow-hidden text-left"></div>
+      </form>
+      <div id="homeExamples" class="mt-4 flex flex-wrap justify-center gap-2 text-xs"></div>
+    </div>
+
+    <div>
+      <div class="flex items-end justify-between mb-4 px-1">
+        <span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128293; Editorun Onerdigi Yapay Zekalar</span>
+        <button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">Tumunu gor &#8594;</button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featuredRecommendedGrid"></div>
+    </div>
+
+    <div>
+      <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#129517; Sitede Neler Var?</span></div>
+      <div id="homeSections" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+    </div>
+  </div>
+
+  <!-- AI ARACLARI -->
+  <div id="pageTools" class="hidden space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-6">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#129520; Tum Yapay Zeka Araclari</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">AI Araclari</h1>
+      <p class="text-gray-400 text-sm">Arama yap, kategoriye ve fiyata gore filtrele.</p>
+      <div class="mt-6">
+        <input type="text" id="searchInput" oninput="filterTools()" placeholder="Ne yapmak istiyorsun? Orn: bana bir video yap"
           class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 text-sm sm:text-base shadow-2xl transition">
       </div>
-
       <div id="searchHint" class="mt-4 min-h-[1.25rem] text-xs font-semibold text-purple-400"></div>
       <div id="searchExamples" class="mt-3 flex flex-wrap justify-center gap-2 text-xs"></div>
-      <div class="mt-4 pt-4 border-t dark:border-gray-800/80 border-gray-300 text-xs text-gray-400 font-medium">Toplam <span id="resultCount" class="text-purple-400 font-bold">0</span> ara&#231; listeleniyor</div>
-
-      <div id="categoryChips" class="mt-8 flex gap-2.5 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
-
-      <div class="mt-10 text-left">
-        <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128293; Edit&#246;r&#252;n &#214;nerdi&#287;i 3 Yapay Zeka</span></div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featuredRecommendedGrid"></div>
+      <div id="categoryChips" class="mt-6 flex gap-2.5 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
+      <div class="mt-5 flex flex-wrap items-center justify-center gap-2 text-xs">
+        <select id="priceFilter" onchange="filterTools()" class="fld w-auto font-bold">
+          <option value="">Tum fiyatlar</option><option>Ucretsiz</option><option>Freemium</option><option>Ucretli</option>
+        </select>
+        <select id="sortFilter" onchange="filterTools()" class="fld w-auto font-bold">
+          <option value="rec">Onerilen siralama</option><option value="new">En yeni</option><option value="pop">En populer</option><option value="az">A-Z</option>
+        </select>
+        <button type="button" onclick="resetApp()" class="px-3 py-2.5 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold">Sifirla</button>
+        <span class="text-gray-400 font-medium ml-1"><span id="resultCount" class="text-purple-400 font-bold">0</span> arac</span>
       </div>
     </div>
 
     <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
     <div id="favoritesRecommendedSection" class="hidden mt-16 pt-10 border-t dark:border-gray-800 border-gray-200">
-      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128161; Favorilerine Ekleyebilece&#287;in Edit&#246;r &#214;nerileri</span></div>
+      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128161; Favorilerine Ekleyebilecegin Editor Onerileri</span></div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="favoritesRecommendedGrid"></div>
     </div>
 
     <div id="loadMoreContainer" class="text-center mt-12 mb-6">
-      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">&#9889; Daha Fazla Y&#252;kle (+30 Ara&#231;)</button>
+      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">&#9889; Daha Fazla Yukle (+30 Arac)</button>
     </div>
 
     <div id="emptyState" class="hidden text-center py-20">
       <div class="w-16 h-16 dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">&#128269;</div>
-      <h3 class="text-lg font-bold dark:text-white text-gray-900">Arad&#305;&#287;&#305;n&#305;z kriterde yapay zeka bulunamad&#305;</h3>
-      <p class="text-gray-400 text-sm mt-1">Farkl&#305; anahtar kelimeler deneyebilirsiniz.</p>
-      <button onclick="resetApp()" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold">Aramay&#305; S&#305;f&#305;rla</button>
+      <h3 class="text-lg font-bold dark:text-white text-gray-900">Aradiginiz kriterde yapay zeka bulunamadi</h3>
+      <p class="text-gray-400 text-sm mt-1">Farkli anahtar kelimeler deneyebilirsiniz.</p>
+      <button onclick="resetApp()" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold">Aramayi Sifirla</button>
     </div>
   </div>
 
@@ -123,16 +150,81 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </div>
 
   <!-- SAYFA 3 -->
-  <div id="pageGitHub" class="hidden space-y-6">
-    <div class="text-center max-w-3xl mx-auto mb-8">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-500 border border-amber-500/20 mb-4">&#11088; GitHub Pop&#252;ler Open-Source AI Projeleri</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Pop&#252;ler A&#231;&#305;k Kaynak AI Ara&#231;lar&#305;</h1>
-      <p class="text-gray-400 text-sm">Kendi bilgisayar&#305;n&#305;za kurabilece&#287;iniz veya bulutta &#231;al&#305;&#351;t&#305;rabilece&#287;iniz pop&#252;ler a&#231;&#305;k kaynak yapay zeka depolar&#305;.</p>
+  <!-- CLAUDE EKLENTILERI -->
+  <div id="pagePlugins" class="hidden space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-6">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-500 border border-amber-500/20 mb-4">&#129513; Claude Eklentileri</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Claude Eklentileri ve MCP Sunuculari</h1>
+      <p class="text-gray-400 text-sm">Claude'u kendi araclariniza, dosyalariniza ve servislerinize baglayan acik kaynak eklentiler.</p>
+      <div class="mt-6">
+        <input type="text" id="pluginSearch" oninput="filterPlugins()" placeholder="Eklenti ara: dosya, takvim, veritabani, github, slack..."
+          class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-amber-500 text-sm sm:text-base shadow-2xl transition">
+      </div>
+      <div id="pluginChips" class="mt-5 flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
+      <div class="mt-3 text-xs text-gray-400 font-medium"><span id="pluginCount" class="text-amber-500 font-bold">0</span> eklenti listeleniyor</div>
     </div>
-    <div id="githubGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    <div id="githubLoadingState" class="text-center py-20">
+    <div id="pluginsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="pluginsLoading" class="text-center py-20">
       <div class="w-12 h-12 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-      <p class="text-gray-400 text-xs">GitHub API &#252;zerinden g&#252;ncel veriler &#231;ekiliyor...</p>
+      <p class="text-gray-400 text-xs">Eklentiler yukleniyor...</p>
+    </div>
+    <p id="pluginsEmpty" class="hidden text-center text-sm text-gray-400 py-16">Bu aramaya uygun eklenti bulunamadi.</p>
+  </div>
+
+  <!-- E-KITAP -->
+  <div id="pageEbooks" class="hidden space-y-6">
+    <div class="text-center max-w-3xl mx-auto mb-6">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 mb-4">&#128218; Ucretsiz Kaynaklar</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">E-Kitap ve Egitim Kaynaklari</h1>
+      <p class="text-gray-400 text-sm">Yapay zeka ogrenmek icin secilmis, tamami ucretsiz kitaplar ve kurslar. Icerik buyuk olcude Ingilizcedir.</p>
+      <div class="mt-6">
+        <input type="text" id="ebookSearch" oninput="filterEbooks()" placeholder="Kitap ara: derin ogrenme, matematik, prompt, NLP..."
+          class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm sm:text-base shadow-2xl transition">
+      </div>
+      <div id="ebookChips" class="mt-5 flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
+      <div class="mt-3 text-xs text-gray-400 font-medium"><span id="ebookCount" class="text-emerald-500 font-bold">0</span> kaynak listeleniyor</div>
+    </div>
+    <div id="ebooksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <p id="ebooksEmpty" class="hidden text-center text-sm text-gray-400 py-16">Bu aramaya uygun kaynak bulunamadi.</p>
+  </div>
+
+  <!-- PROMPT REHBERI -->
+  <div id="pagePrompt" class="hidden space-y-10">
+    <div class="text-center max-w-3xl mx-auto">
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-4">&#9999;&#65039; Prompt Yazma Rehberi</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Yapay Zekaya Nasil Soru Sorulur?</h1>
+      <p class="text-gray-400 text-sm">Ayni yapay zeka, iyi yazilmis bir istemle cok daha iyi sonuc verir. Asagidaki 8 dersi sirayla oku, sonra kendi istemini olustur.</p>
+    </div>
+
+    <div>
+      <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">&#128214; Dersler</span></div>
+      <div id="promptLessons" class="space-y-3"></div>
+    </div>
+
+    <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
+      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-1">&#128736;&#65039; Prompt Olusturucu</h3>
+      <p class="text-xs text-gray-400 mb-5">Asagidaki alanlari doldur, altta hazir istemini kopyala.</p>
+      <div class="grid sm:grid-cols-2 gap-3">
+        <select id="pbRole" onchange="buildPrompt()" class="fld"><option value="">Kim gibi davransin? (rol)</option></select>
+        <select id="pbFormat" onchange="buildPrompt()" class="fld"><option value="">Cikti bicimi</option></select>
+        <select id="pbTone" onchange="buildPrompt()" class="fld"><option value="">Uslup</option></select>
+        <select id="pbLength" onchange="buildPrompt()" class="fld"><option value="">Uzunluk</option></select>
+      </div>
+      <textarea id="pbTask" oninput="buildPrompt()" rows="2" maxlength="400" placeholder="Ne yapmasini istiyorsun? Orn: urunumu tanitan bir Instagram metni yaz" class="fld mt-3"></textarea>
+      <textarea id="pbContext" oninput="buildPrompt()" rows="2" maxlength="400" placeholder="Bilmesi gerekenler: hedef kitle, urun, kisitlar... (istege bagli)" class="fld mt-3"></textarea>
+      <div class="mt-5">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Hazir istemin</span>
+          <button onclick="copyPrompt()" class="px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold">&#128203; Kopyala</button>
+        </div>
+        <pre id="pbOutput" class="p-4 rounded-2xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 text-xs dark:text-gray-200 text-gray-800 whitespace-pre-wrap leading-relaxed min-h-[6rem]"></pre>
+        <div id="pbCopied" class="hidden mt-2 text-xs font-bold text-emerald-500">Panoya kopyalandi.</div>
+      </div>
+    </div>
+
+    <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
+      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-4">&#9989; Gondermeden Once Kontrol Listesi</h3>
+      <div id="promptChecklist" class="space-y-2"></div>
     </div>
   </div>
 
@@ -248,7 +340,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
       <div id="accMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
       <div class="grid grid-cols-2 gap-2">
         <button onclick="saveAccount()" class="py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">&#128190; Kaydet</button>
-        <button onclick="switchPage('directory'); setCat('favorites'); closeProfileModal();" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#10084;&#65039; Favorilerim</button>
+        <button onclick="switchPage('tools'); setCat('favorites'); closeProfileModal();" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#10084;&#65039; Favorilerim</button>
         <button onclick="doLogout()" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#128682; &#199;&#305;k&#305;&#351; Yap</button>
         <button onclick="deleteAccount()" class="py-3 bg-red-500/10 text-red-500 font-bold rounded-xl text-xs">&#128465; Hesab&#305; Sil</button>
       </div>
@@ -355,19 +447,7 @@ var TOOLS = [
 
 var appState = {
   allTools: [], favorites: [], currentCat: 'all', currentPrice: 'all', visibleLimit: 30,
-  activePage: 'directory', liveNewsList: [], githubDataFetched: false, currentActiveToolId: null, reviewsDB: {},
-  githubRepos: [
-    { repo: "ollama/ollama", desc: "Yerel bilgisayar\u0131n\u0131zda b\u00fcy\u00fck dil modellerini kolayca \u00e7al\u0131\u015ft\u0131rman\u0131z\u0131 sa\u011flar." },
-    { repo: "AUTOMATIC1111/stable-diffusion-webui", desc: "Stable Diffusion ile g\u00f6rsel \u00fcretmek i\u00e7in web aray\u00fcz\u00fc." },
-    { repo: "langchain-ai/langchain", desc: "Dil modellerini harici veri kaynaklar\u0131yla birle\u015ftiren \u00e7at\u0131." },
-    { repo: "FlowiseAI/Flowise", desc: "S\u00fcr\u00fckle-b\u0131rak y\u00f6ntemiyle LLM i\u015f ak\u0131\u015flar\u0131 tasarlay\u0131n." },
-    { repo: "langfuse/langfuse", desc: "Yapay zeka uygulamalar\u0131n\u0131 izleme ve maliyet analizi i\u00e7in." },
-    { repo: "abi/screenshot-to-code", desc: "Ekran g\u00f6r\u00fcnt\u00fclerini HTML/Tailwind koduna d\u00f6n\u00fc\u015ft\u00fcr\u00fcr." },
-    { repo: "langgenius/dify", desc: "\u00dcretken AI uygulamalar\u0131 olu\u015fturmak i\u00e7in a\u00e7\u0131k kaynakl\u0131 platform." },
-    { repo: "Significant-Gravitas/AutoGPT", desc: "Hedefe y\u00f6nelik plan yapan otonom yapay zeka ajan\u0131." },
-    { repo: "OpenInterpreter/open-interpreter", desc: "Bilgisayar\u0131n\u0131zda kod ve terminal komutlar\u0131 \u00e7al\u0131\u015ft\u0131ran yerel asistan." },
-    { repo: "Mintplex-Labs/anything-llm", desc: "Belgelerinizle yerel veya bulut LLM'ler \u00fczerinden sohbet etmenizi sa\u011flar." }
-  ]
+  activePage: 'directory', plugins: [], pluginCat: 'Tumu', pluginLimit: 30, ebooks: [], ebookCat: 'Tumu', liveNewsList: [], currentActiveToolId: null, reviewsDB: {},
 };
 
 /* ---------- Yard\u0131mc\u0131lar ---------- */
@@ -539,6 +619,8 @@ function setPrice(price) {
 
 function resetApp() {
   document.getElementById('searchInput').value = '';
+  var pf = document.getElementById('priceFilter'), sf = document.getElementById('sortFilter');
+  if (pf) pf.value = ''; if (sf) sf.value = 'rec';
   setPrice('all'); setCat('all');
 }
 
@@ -622,58 +704,13 @@ function submitUserReview(e) {
 /* ---------- Sayfa ge\u00e7i\u015fi ---------- */
 function switchPage(page) {
   appState.activePage = page;
-  var pages = { directory: 'pageDirectory', news: 'pageNews', github: 'pageGitHub', toolDetail: 'pageToolDetail' };
+  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', plugins: 'pagePlugins', ebooks: 'pageEbooks', prompt: 'pagePrompt', toolDetail: 'pageToolDetail' };
   Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
-  var navs = { directory: ['navDirBtn', 'mobDirBtn', 'bg-purple-600'], news: ['navNewsBtn', 'mobNewsBtn', 'bg-blue-600'], github: ['navGitHubBtn', 'mobGitHubBtn', 'bg-amber-500'] };
-  Object.keys(navs).forEach(function(k) {
-    var on = k === page, n = navs[k];
-    document.getElementById(n[0]).className = on ? CLS.nav.on + n[2] : CLS.nav.off;
-    document.getElementById(n[1]).className = on ? CLS.mob.on + n[2] : CLS.mob.off;
-  });
+  renderNav();
   if (page === 'news' && !appState.liveNewsList.length) fetchLiveAINews();
-  if (page === 'github' && !appState.githubDataFetched) fetchGitHubRepos();
+  if (page === 'plugins' && !appState.plugins.length) fetchPlugins();
+  if (page === 'ebooks' && !appState.ebooks.length) fetchEbooks();
   window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-/* ---------- GitHub ---------- */
-function fetchGitHubRepos() {
-  var loading = document.getElementById('githubLoadingState');
-  loading.classList.remove('hidden');
-  Promise.all(appState.githubRepos.map(function(item) {
-    return fetch('https://api.github.com/repos/' + item.repo)
-      .then(function(r) { return r.ok ? r.json() : null; })
-      .catch(function() { return null; });
-  })).then(function(results) {
-    loading.classList.add('hidden');
-    appState.githubDataFetched = results.some(Boolean);
-    renderGitHubRepos(results);
-  });
-}
-
-function renderGitHubRepos(repos) {
-  var grid = document.getElementById('githubGrid');
-  grid.innerHTML = '';
-  repos.forEach(function(repo, i) {
-    var info = appState.githubRepos[i];
-    var ok = repo && !repo.message;
-    var stars = ok && repo.stargazers_count != null ? repo.stargazers_count.toLocaleString('tr-TR') : '\u2014';
-    var forks = ok && repo.forks_count != null ? repo.forks_count.toLocaleString('tr-TR') : '\u2014';
-    var lang = ok && repo.language ? repo.language : '\u2014';
-    var name = ok ? repo.name : info.repo.split('/')[1];
-    var href = ok ? repo.html_url : 'https://github.com/' + info.repo;
-    var card = document.createElement('div');
-    card.className = "p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-amber-500 transition shadow-md group";
-    card.innerHTML =
-      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
-        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">\u2b50 ' + esc(stars) + '</span>' +
-        '<span class="text-gray-400 font-mono text-[11px]">' + esc(lang) + '</span></div>' +
-        '<h3 class="text-base font-bold mb-2 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono">' + esc(name) + '</h3>' +
-        '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(info.desc) + '</p></div>' +
-      '<div><div class="flex justify-between items-center text-[11px] text-gray-500 mb-4 pb-2 border-b dark:border-gray-800 border-gray-100">' +
-        '<span>Fork: <b>' + esc(forks) + '</b></span><span>A\u00e7\u0131k Kaynak</span></div>' +
-        '<a href="' + esc(safeUrl(href)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da \u0130ncele \u2197</a></div>';
-    grid.appendChild(card);
-  });
 }
 
 /* ---------- Haberler ---------- */
@@ -818,6 +855,7 @@ function scoreItem(it, info) {
   var s = 0;
   info.tokens.forEach(function(pair) { var w = tokenScore(it, pair[0]); if (!w && pair[1] !== pair[0]) w = tokenScore(it, pair[1]); s += w; });
   if (info.intents.length && info.intents.indexOf(it.category) > -1) s += 15 + (info.intents[0] === it.category ? 3 : 0);
+  if (s > 0) s += (it.source === 'curated' ? 12 : it.source === 'producthunt' ? 4 : 0);
   if (s > 0 && info.free && (it.price === '\u00dccretsiz' || it.price === 'Freemium')) s += 4;
   if (s > 0 && info.open && it.openSource) s += 6;
   return s;
@@ -862,10 +900,21 @@ function filterTools() {
   var info = q ? parseQuery(q) : null;
   updateSearchHint(info);
   var list = appState.allTools.filter(function(item) {
+    var pf = (document.getElementById('priceFilter') || {}).value || '';
+    if (pf && item.price !== pf.replace('Ucretsiz', '\u00dccretsiz').replace('Ucretli', '\u00dccretli')) return false;
     if (appState.currentCat === 'favorites') return appState.favorites.indexOf(item.id) > -1;
     if (appState.currentCat === 'open') return !!item.openSource;
     return appState.currentCat === 'all' || item.category === appState.currentCat;
   });
+  var sf = (document.getElementById('sortFilter') || {}).value || 'rec';
+  if (sf !== 'rec') {
+    list = list.slice().sort(function (a, b) {
+      if (sf === 'new') return (b.addedAt || '').localeCompare(a.addedAt || '');
+      if (sf === 'pop') return (b.stars || 0) - (a.stars || 0);
+      return a.title.localeCompare(b.title, 'tr');
+    });
+    if (!info) return renderTools(list, true);
+  }
   if (!info) return renderTools(list);
   var scored = [];
   list.forEach(function(it) { var sc = scoreItem(it, info); if (sc > 0) { it._score = sc; scored.push(it); } });
@@ -895,7 +944,7 @@ function renderChips() {
     box.appendChild(b);
   });
 }
-function setCat(cat) { appState.currentCat = cat; appState.visibleLimit = 30; renderChips(); filterTools(); }
+function setCat(cat) { appState.currentCat = cat; if (appState.activePage === 'directory') switchPage('tools'); appState.visibleLimit = 30; renderChips(); filterTools(); }
 
 /* ===== Hesap / Profil ===== */
 var AVATARS = ['\ud83e\udd16', '\ud83e\udd8a', '\ud83d\udc3c', '\ud83d\ude80', '\ud83e\udde0', '\ud83c\udfa8', '\ud83d\udcbb', '\ud83c\udfa7', '\u26a1', '\ud83c\udf1f'];
@@ -1133,6 +1182,323 @@ function asstSend(e, preset) {
   asstReply(text).then(function(r) { typing.remove(); asstAdd('bot', r.text, r.tools, r); asstHistory.push({ role: 'assistant', content: r.text }); });
 }
 
+
+/* ===== Gezinme ===== */
+var NAV = [
+  ['directory', 'Ana Sayfa', 'Ana Sayfa', '\u{1F3E0}', 'bg-purple-600'],
+  ['tools', 'AI Araclari', 'Araclar', '\u{1F9F0}', 'bg-purple-600'],
+  ['news', 'AI Haberleri', 'Haberler', '\u{1F4F0}', 'bg-blue-600'],
+  ['plugins', 'Claude Eklentileri', 'Eklenti', '\u{1F9E9}', 'bg-amber-500'],
+  ['ebooks', 'E-Kitap', 'E-Kitap', '\u{1F4DA}', 'bg-emerald-600'],
+  ['prompt', 'Prompt Rehberi', 'Prompt', '\u270d\ufe0f', 'bg-sky-600']
+];
+function renderNav() {
+  var d = document.getElementById('navDesktop'), m = document.getElementById('navMobile');
+  if (!d || !m) return;
+  d.innerHTML = ''; m.innerHTML = '';
+  NAV.forEach(function (n) {
+    var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail');
+    var b = document.createElement('button');
+    b.className = 'px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
+    b.textContent = n[3] + ' ' + n[1];
+    b.onclick = function () { switchPage(n[0]); };
+    d.appendChild(b);
+    var s = document.createElement('button');
+    s.className = 'flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap ' + (on ? n[4] + ' text-white' : 'dark:text-gray-400 text-gray-600');
+    s.textContent = n[3] + ' ' + n[2];
+    s.onclick = function () { switchPage(n[0]); };
+    m.appendChild(s);
+  });
+}
+var HOME_SECTIONS = [
+  ['tools', '\u{1F9F0}', 'AI Araclari', 'Yuzlerce yapay zeka aracini ara ve filtrele.', 'from-purple-600 to-indigo-600'],
+  ['news', '\u{1F4F0}', 'AI Haberleri', 'Dunyadan ve Turkiye\'den guncel gelismeler, Turkce.', 'from-blue-600 to-sky-600'],
+  ['plugins', '\u{1F9E9}', 'Claude Eklentileri', 'Claude\'u kendi araclarina baglayan MCP eklentileri.', 'from-amber-500 to-orange-500'],
+  ['ebooks', '\u{1F4DA}', 'E-Kitap', 'Ucretsiz yapay zeka kitaplari ve kurslari.', 'from-emerald-600 to-teal-600'],
+  ['prompt', '\u270d\ufe0f', 'Prompt Rehberi', 'Yapay zekadan daha iyi sonuc almanin yollari.', 'from-sky-600 to-cyan-600']
+];
+function renderHomeSections() {
+  var box = document.getElementById('homeSections'); if (!box) return;
+  box.innerHTML = '';
+  HOME_SECTIONS.forEach(function (s) {
+    var c = document.createElement('button');
+    c.className = 'text-left p-5 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500 transition shadow-md group';
+    c.innerHTML = '<div class="w-11 h-11 rounded-2xl bg-gradient-to-br ' + s[4] + ' flex items-center justify-center text-xl mb-3">' + s[1] + '</div>' +
+      '<div class="font-bold text-sm dark:text-white text-gray-900 mb-1 group-hover:text-purple-500 transition">' + esc(s[2]) + '</div>' +
+      '<div class="text-xs text-gray-400 leading-relaxed">' + esc(s[3]) + '</div>';
+    c.onclick = function () { switchPage(s[0]); };
+    box.appendChild(c);
+  });
+}
+
+/* ===== Ana sayfa aramasi ===== */
+function goSearch(e) {
+  if (e) e.preventDefault();
+  var q = document.getElementById('homeSearch').value.trim();
+  document.getElementById('homeSuggestBox').classList.add('hidden');
+  document.getElementById('searchInput').value = q;
+  switchPage('tools');
+  filterTools();
+}
+function homeSuggest() {
+  var inp = document.getElementById('homeSearch'), box = document.getElementById('homeSuggestBox');
+  var q = norm(inp.value);
+  if (q.length < 2) { box.classList.add('hidden'); return; }
+  var found = topTools(q, 6, 3);
+  box.innerHTML = '';
+  if (!found.length) { box.classList.add('hidden'); return; }
+  found.forEach(function (t) {
+    var b = document.createElement('button'); b.type = 'button';
+    b.className = 'w-full text-left px-4 py-3 flex items-center gap-3 hover:bg-purple-600/10 transition border-b dark:border-gray-800 border-gray-100';
+    b.innerHTML = '<span class="w-8 h-8 rounded-xl flex items-center justify-center text-sm flex-shrink-0" style="background:' + esc(t.brand.bg) + '">' +
+      (t.brand.icon ? '<img src="' + esc(t.brand.icon) + '" alt="" class="w-4 h-4 object-contain">' : '<span class="text-white font-bold text-xs">' + esc(t.title.charAt(0).toUpperCase()) + '</span>') + '</span>' +
+      '<span class="min-w-0"><span class="block font-bold text-xs dark:text-white text-gray-900 truncate">' + esc(t.title) + '</span>' +
+      '<span class="block text-[11px] text-gray-400 truncate">' + esc(catMeta(t.category)[1] + ' \u00b7 ' + t.price) + '</span></span>';
+    b.onclick = function () { box.classList.add('hidden'); openToolDetail(t.id); };
+    box.appendChild(b);
+  });
+  var all = document.createElement('button'); all.type = 'button';
+  all.className = 'w-full px-4 py-3 text-xs font-bold text-purple-400 hover:bg-purple-600/10 transition';
+  all.textContent = 'Tum sonuclari gor \u2192';
+  all.onclick = function () { goSearch(); };
+  box.appendChild(all);
+  box.classList.remove('hidden');
+}
+document.addEventListener('click', function (e) {
+  var box = document.getElementById('homeSuggestBox'), inp = document.getElementById('homeSearch');
+  if (box && !box.contains(e.target) && e.target !== inp) box.classList.add('hidden');
+});
+function renderHomeExamples() {
+  var box = document.getElementById('homeExamples'); if (!box) return;
+  box.innerHTML = '';
+  EXAMPLES.slice(0, 5).forEach(function (t) {
+    var b = document.createElement('button'); b.type = 'button';
+    b.className = 'px-3 py-1.5 rounded-full dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 dark:text-gray-300 text-gray-700 hover:border-purple-500 hover:text-purple-500 transition';
+    b.textContent = '\u{1F4A1} ' + t;
+    b.onclick = function () { document.getElementById('homeSearch').value = t; goSearch(); };
+    box.appendChild(b);
+  });
+}
+
+/* ===== Claude eklentileri ===== */
+var PLUGIN_CATS = ['Tumu', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
+function fetchPlugins() {
+  var load = document.getElementById('pluginsLoading');
+  if (!appState.plugins.length) load.classList.remove('hidden');
+  fetch('data/plugins.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (d) {
+      load.classList.add('hidden');
+      appState.plugins = (d.plugins || []).filter(function (p) { return p.status !== 'inactive'; });
+      renderPluginChips(); filterPlugins();
+    })
+    .catch(function () { load.classList.add('hidden'); document.getElementById('pluginsEmpty').classList.remove('hidden'); });
+}
+function renderPluginChips() {
+  var box = document.getElementById('pluginChips'); box.innerHTML = '';
+  PLUGIN_CATS.forEach(function (c) {
+    var on = appState.pluginCat === c, b = document.createElement('button');
+    b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? 'bg-amber-500 text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-amber-500');
+    b.textContent = c;
+    b.onclick = function () { appState.pluginCat = c; appState.pluginLimit = 30; renderPluginChips(); filterPlugins(); };
+    box.appendChild(b);
+  });
+}
+function filterPlugins() {
+  var q = norm(document.getElementById('pluginSearch').value);
+  var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
+  var list = appState.plugins.filter(function (p) {
+    if (appState.pluginCat !== 'Tumu' && p.category !== appState.pluginCat) return false;
+    if (!words.length) return true;
+    var h = norm(p.title + ' ' + p.desc + ' ' + p.category + ' ' + (p.owner || '') + ' ' + (p.repo || ''));
+    return words.every(function (w) { return h.indexOf(w) !== -1; });
+  });
+  document.getElementById('pluginCount').textContent = list.length;
+  document.getElementById('pluginsEmpty').classList.toggle('hidden', list.length > 0);
+  var grid = document.getElementById('pluginsGrid'); grid.innerHTML = '';
+  list.slice(0, appState.pluginLimit).forEach(function (p) {
+    var c = document.createElement('div');
+    c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-amber-500 transition shadow-md group';
+    c.innerHTML =
+      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
+        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">\u2b50 ' + esc((p.stars || 0).toLocaleString('tr-TR')) + '</span>' +
+        '<span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 \u{1F195}' : '') + '</span></div>' +
+        '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono break-all">' + esc(p.title) + '</h3>' +
+        '<div class="text-[11px] text-gray-400 mb-2 font-mono">' + esc(p.owner || '') + '</div>' +
+        '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(fixText(p.desc || '')) + '</p></div>' +
+      '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da Incele \u2197</a>';
+    grid.appendChild(c);
+  });
+  if (list.length > appState.pluginLimit) {
+    var more = document.createElement('button');
+    more.className = 'col-span-full mx-auto mt-4 px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-amber-500 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl';
+    more.textContent = '\u26a1 Daha Fazla Yukle';
+    more.onclick = function () { appState.pluginLimit += 30; filterPlugins(); };
+    grid.appendChild(more);
+  }
+}
+
+/* ===== E-kitaplar ===== */
+function fetchEbooks() {
+  fetch('data/ebooks.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+    .then(function (d) {
+      appState.ebooks = (d.books || []).filter(function (b) { return b.status !== 'inactive'; });
+      renderEbookChips(); filterEbooks();
+    })
+    .catch(function () { document.getElementById('ebooksEmpty').classList.remove('hidden'); });
+}
+function renderEbookChips() {
+  var box = document.getElementById('ebookChips'); box.innerHTML = '';
+  var cats = ['Tumu'];
+  appState.ebooks.forEach(function (b) { if (cats.indexOf(b.topic) === -1) cats.push(b.topic); });
+  cats.forEach(function (c) {
+    var on = appState.ebookCat === c, b = document.createElement('button');
+    b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? 'bg-emerald-600 text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-emerald-500');
+    b.textContent = c;
+    b.onclick = function () { appState.ebookCat = c; renderEbookChips(); filterEbooks(); };
+    box.appendChild(b);
+  });
+}
+var LEVEL_COLOR = { 'Baslangic': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20', 'Orta': 'bg-amber-500/10 text-amber-500 border-amber-500/20', 'Ileri': 'bg-rose-500/10 text-rose-500 border-rose-500/20' };
+function filterEbooks() {
+  var q = norm(document.getElementById('ebookSearch').value);
+  var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
+  var list = appState.ebooks.filter(function (b) {
+    if (appState.ebookCat !== 'Tumu' && b.topic !== appState.ebookCat) return false;
+    if (!words.length) return true;
+    var h = norm(b.title + ' ' + b.author + ' ' + b.desc + ' ' + b.topic + ' ' + b.level);
+    return words.every(function (w) { return h.indexOf(w) !== -1; });
+  });
+  document.getElementById('ebookCount').textContent = list.length;
+  document.getElementById('ebooksEmpty').classList.toggle('hidden', list.length > 0);
+  var grid = document.getElementById('ebooksGrid'); grid.innerHTML = '';
+  list.forEach(function (b) {
+    var c = document.createElement('div');
+    c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-emerald-500 transition shadow-md group';
+    c.innerHTML =
+      '<div><div class="flex justify-between items-center mb-3 text-xs">' +
+        '<span class="px-2.5 py-1 rounded-lg font-bold border ' + (LEVEL_COLOR[b.level] || LEVEL_COLOR.Orta) + '">' + esc(b.level) + '</span>' +
+        '<span class="text-gray-400 font-bold text-[11px]">' + esc(b.topic) + '</span></div>' +
+        '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-emerald-500 transition">' + esc(b.title) + '</h3>' +
+        '<div class="text-[11px] text-gray-400 mb-2">' + esc(b.author) + '</div>' +
+        '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed mb-4">' + esc(fixText(b.desc || '')) + '</p></div>' +
+      '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-emerald-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">Ucretsiz Oku \u2197</a>';
+    grid.appendChild(c);
+  });
+}
+
+/* ===== Prompt rehberi ===== */
+var LESSONS = [
+  ['\u{1F3AF}', 'Ne istedigini acik yaz',
+   'Yapay zeka aklindan gecenleri bilmez. "Bir seyler yaz" demek yerine konuyu, amaci ve kimin okuyacagini soyle. Belirsiz birakirsan ortalama bir cevap alirsin.',
+   'Bana pazarlama hakkinda bir sey yaz.',
+   'Yeni acilan bir kahve dukkanini mahalledeki universite ogrencilerine tanitan, samimi tonda bir Instagram gonderisi yaz.'],
+  ['\u{1F9F1}', 'Baglam ver',
+   'Modelin bilmedigi her sey tahmine donusur. Urunun, hedef kitlen, kisitlarin ve elindeki bilgiler neyse paylas. Baglam arttikca cevap seninkine benzer.',
+   'Bu e-postaya cevap yaz.',
+   'Musterimiz teslimat gecikmesinden sikayet ediyor. Siparisi 3 gun gecikti, kargo firmasindan kaynaklandi. Ozur dileyen, kargo takip numarasi veren ve yuzde 10 indirim sunan kisa bir cevap yaz.'],
+  ['\u{1F464}', 'Rol ver',
+   'Modele kim gibi davranmasini istedigini soylemek, dili ve bakis acisini degistirir. "Deneyimli bir mali musavir gibi davran" demek, cevabin derinligini artirir.',
+   'Vergi konusunda bilgi ver.',
+   'Turkiye\'de calisan deneyimli bir mali musavir gibi davran. Yeni sirket kuran birine, ilk yil dikkat etmesi gereken vergi yukumluluklerini sade bir dille anlat.'],
+  ['\u{1F4D0}', 'Cikti bicimini belirt',
+   'Tablo mu, madde listesi mi, JSON mu, kac kelime? Bicimi soylemezsen model kendi secer ve genelde uzun paragraflar yazar.',
+   'Bu urunleri karsilastir.',
+   'Bu 3 telefonu karsilastir. Ciktiyi bir tablo olarak ver; sutunlar: model, ekran, pil, fiyat, kimin icin uygun. Her hucre en fazla 6 kelime olsun.'],
+  ['\u{1F4DD}', 'Ornek goster',
+   'Istedigin uslubu anlatmak yerine bir ornek vermek cok daha etkilidir. Bir veya iki ornek, modelin tonu ve yapiyi yakalamasini saglar.',
+   'Urun aciklamalari yaz.',
+   'Su uslupta urun aciklamalari yaz. Ornek: "Sabah telasinda kurtarici. 40 saniyede demleyen, 2 kisilik capta filtre kahve makinesi." Simdi ayni uslupla su 3 urun icin yaz: ...'],
+  ['\u{1FA9C}', 'Isi adimlara bol',
+   'Buyuk bir isi tek istemde istemek kaliteyi dusurur. Once plan iste, onayla, sonra parca parca yazdir. Her adimda duzeltme sansin olur.',
+   'Bana 20 sayfalik bir is plani yaz.',
+   'Once kahve dukkani is plani icin sadece bolum basliklarindan olusan bir taslak cikar. Onayladiktan sonra bolumleri tek tek yazacagiz.'],
+  ['\u{1F6AB}', 'Yapilmasini istedigini yaz, yapilmamasini degil',
+   '"Sikici olmasin" demek modele ne yapacagini soylemez. Olumlu talimat daha iyi calisir: "kisa cumleler kur, somut ornek ver" gibi.',
+   'Cok resmi ve sikici olmasin.',
+   'Gunluk konusma dilinde yaz, cumleleri kisa tut ve her fikir icin somut bir ornek ekle.'],
+  ['\u{1F504}', 'Duzelterek ilerle',
+   'Ilk cevap nadiren en iyisidir. Neyi begenmedigini soyleyip tekrar iste. "Ikinci paragrafi koru, gerisini daha kisa yaz" gibi hedefli geri bildirim en hizli yoldur.',
+   'Begenmedim, tekrar yaz.',
+   'Giris paragrafi iyi olmus, onu koru. Orta bolum fazla uzun, yariya indir. Sondaki cagriyi daha net bir eylem cumlesine cevir.']
+];
+function renderLessons() {
+  var box = document.getElementById('promptLessons'); if (!box) return;
+  box.innerHTML = '';
+  LESSONS.forEach(function (l, i) {
+    var d = document.createElement('div');
+    d.className = 'rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md overflow-hidden';
+    d.innerHTML =
+      '<button class="w-full flex items-center gap-3 p-5 text-left" type="button">' +
+        '<span class="w-10 h-10 rounded-2xl bg-sky-500/10 flex items-center justify-center text-lg flex-shrink-0">' + l[0] + '</span>' +
+        '<span class="flex-1 min-w-0"><span class="block text-[11px] font-bold text-sky-400">DERS ' + (i + 1) + '</span>' +
+        '<span class="block font-bold text-sm dark:text-white text-gray-900">' + esc(l[1]) + '</span></span>' +
+        '<span class="text-gray-400 font-bold text-lg flex-shrink-0 arrow">+</span></button>' +
+      '<div class="hidden px-5 pb-5 space-y-3 body">' +
+        '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(l[2]) + '</p>' +
+        '<div class="p-3 rounded-2xl bg-rose-500/5 border border-rose-500/20"><div class="text-[11px] font-bold text-rose-500 mb-1">\u274c Zayif istem</div>' +
+        '<div class="text-xs dark:text-gray-300 text-gray-700">' + esc(l[3]) + '</div></div>' +
+        '<div class="p-3 rounded-2xl bg-emerald-500/5 border border-emerald-500/20"><div class="text-[11px] font-bold text-emerald-500 mb-1">\u2705 Iyi istem</div>' +
+        '<div class="text-xs dark:text-gray-300 text-gray-700">' + esc(l[4]) + '</div></div></div>';
+    var btn = d.querySelector('button'), body = d.querySelector('.body'), arrow = d.querySelector('.arrow');
+    btn.onclick = function () {
+      var open = body.classList.toggle('hidden');
+      arrow.textContent = open ? '+' : '\u2212';
+    };
+    box.appendChild(d);
+  });
+}
+var PB = {
+  pbRole: ['Deneyimli bir pazarlama uzmani', 'Kidemli bir yazilim gelistirici', 'Sabirli bir ogretmen', 'Profesyonel bir editor', 'Mali musavir', 'Is analisti', 'Sosyal medya uzmani'],
+  pbFormat: ['Duz metin', 'Maddeler halinde liste', 'Tablo', 'Adim adim talimat', 'E-posta', 'Sosyal medya gonderisi', 'JSON'],
+  pbTone: ['Samimi ve gunluk', 'Profesyonel', 'Resmi', 'Esprili', 'Ikna edici', 'Yalin ve teknik'],
+  pbLength: ['Cok kisa (1-2 cumle)', 'Kisa (1 paragraf)', 'Orta (3-4 paragraf)', 'Uzun ve detayli']
+};
+function fillPromptSelects() {
+  Object.keys(PB).forEach(function (id) {
+    var sel = document.getElementById(id); if (!sel) return;
+    PB[id].forEach(function (v) { var o = document.createElement('option'); o.textContent = v; sel.appendChild(o); });
+  });
+}
+function buildPrompt() {
+  var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
+  var task = v('pbTask'), lines = [];
+  if (v('pbRole')) lines.push(v('pbRole') + ' gibi davran.');
+  lines.push(task ? 'Gorevin: ' + task : 'Gorevin: (ne yapmasini istedigini yukaridaki kutuya yaz)');
+  if (v('pbContext')) lines.push('\nBilmen gerekenler:\n' + v('pbContext'));
+  var k = [];
+  if (v('pbFormat')) k.push('Ciktiyi su bicimde ver: ' + v('pbFormat') + '.');
+  if (v('pbTone')) k.push('Uslup: ' + v('pbTone') + '.');
+  if (v('pbLength')) k.push('Uzunluk: ' + v('pbLength') + '.');
+  k.push('Emin olmadigin bir sey varsa uydurma, bana sor.');
+  lines.push('\nKurallar:\n- ' + k.join('\n- '));
+  document.getElementById('pbOutput').textContent = lines.join('\n');
+}
+function copyPrompt() {
+  var txt = document.getElementById('pbOutput').textContent, done = document.getElementById('pbCopied');
+  var ok = function () { done.classList.remove('hidden'); setTimeout(function () { done.classList.add('hidden'); }, 2000); };
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(ok, fallback);
+  else fallback();
+  function fallback() {
+    var ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); ok(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+}
+var CHECKS = ['Ne istedigimi tek cumlede acikca yazdim mi?', 'Modelin bilmedigi bilgileri verdim mi?', 'Cikti bicimini ve uzunlugunu soyledim mi?', 'Bir ornek gosterdim mi?', 'Yapilmasini istedigimi olumlu dille yazdim mi?', 'Buyuk isi adimlara boldum mu?'];
+function renderChecklist() {
+  var box = document.getElementById('promptChecklist'); if (!box) return;
+  box.innerHTML = '';
+  CHECKS.forEach(function (t, i) {
+    var l = document.createElement('label');
+    l.className = 'flex items-start gap-3 p-3 rounded-2xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 cursor-pointer text-xs dark:text-gray-200 text-gray-800';
+    l.innerHTML = '<input type="checkbox" class="mt-0.5"><span>' + esc(t) + '</span>';
+    box.appendChild(l);
+  });
+}
+
 /* ---------- Otomatik ara\u00e7 g\u00fcncelleme ---------- */
 function refreshTools() {
   fetch('data/tools.json', { cache: 'no-cache' })
@@ -1153,7 +1519,9 @@ function startApp() {
   if (started) return;
   started = true;
   appState.allTools = buildDatabase();
-  loadProfile(); renderExamples(); startPlaceholderRotation();
+  loadProfile(); renderExamples(); renderHomeExamples(); renderHomeSections(); renderNav();
+  fillPromptSelects(); buildPrompt(); renderLessons(); renderChecklist();
+  startPlaceholderRotation();
   try {
     var favs = JSON.parse(localStorage.getItem('ai_directory_favs') || '[]');
     if (Array.isArray(favs)) appState.favorites = favs;
