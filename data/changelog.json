@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-04T01:07:03.945Z",
+  "type": "removed",
+  "id": "gh-langchain-ai-agent-chat-ui",
+  "title": "agent-chat-ui"
+ },
+ {
   "at": "2026-11-04T00:38:09.106Z",
   "type": "removed",
   "id": "gh-run-llama-rags",
