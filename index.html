@@ -84,7 +84,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 
   <!-- SAYFA 1 -->
   <!-- ANA SAYFA -->
-  <div id="pageDirectory" class="space-y-14">
+  <div id="pageDirectory" class="space-y-16 sm:pt-6">
     <div class="text-center max-w-3xl mx-auto">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>Her saat g&#252;ncellenen T&#252;rk&#231;e yapay zeka dizini</div><h1 class="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight dark:text-white text-gray-900 leading-[1.05]">Her i&#351; i&#231;in do&#287;ru<br class="hidden sm:block"> <span class="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">yapay zeka arac&#305;</span></h1><p class="text-gray-400 text-sm sm:text-base">Ne yapmak istedi&#287;ini kendi c&#252;mlenle yaz, sana uygun arac&#305; bulal&#305;m.</p><div id="heroStats" class="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs dark:text-gray-400 text-gray-500"></div>
 
@@ -99,34 +99,6 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <div id="homeExamples" class="mt-4 flex flex-wrap justify-center gap-2 text-xs"></div>
     </div>
 
-
-    <div id="spotlightWrap" class="hidden">
-      <div class="flex items-end justify-between mb-4 px-1">
-        <div><div class="sec-h dark:text-white text-gray-900">G&#252;n&#252;n Arac&#305;</div><div class="sec-sub">Edit&#246;rlerimizin bug&#252;n &#246;ne &#231;&#305;kard&#305;&#287;&#305; ara&#231;</div></div>
-        <span id="spotlightTag" class="pill pill-pick">Her g&#252;n yenilenir</span>
-      </div>
-      <div id="spotlightCard"></div>
-    </div>
-    <div>
-      <div class="flex items-end justify-between mb-4 px-1">
-        <div><div class="sec-h dark:text-white text-gray-900">Edit&#246;r&#252;n Se&#231;imi</div><div class="sec-sub">Herkesin denemesi gereken en iyi ara&#231;lar</div></div>
-        <button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252;n&#252; g&#246;r &#8594;</button>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="featuredRecommendedGrid"></div>
-    </div>
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div class="p-5 sm:p-6 rounded-2xl dark:bg-gray-900/60 bg-white border dark:border-gray-800 border-gray-200">
-        <div class="flex items-end justify-between mb-1"><span class="sec-h dark:text-white text-gray-900">Yeni Eklenenler</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
-        <p class="text-[11px] text-gray-500 mb-4">Bot her saat yeni &#231;&#305;kan yapay zeka projelerini tarar.</p>
-        <div id="homeNewList" class="space-y-1"></div>
-      </div>
-      <div class="p-5 sm:p-6 rounded-2xl dark:bg-gray-900/60 bg-white border dark:border-gray-800 border-gray-200">
-        <div class="flex items-end justify-between mb-1"><span class="sec-h dark:text-white text-gray-900">En Pop&#252;ler A&#231;&#305;k Kaynak</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
-        <p class="text-[11px] text-gray-500 mb-4">GitHub'da geli&#351;tiricilerin en &#231;ok y&#305;ld&#305;z verdi&#287;i projeler.</p>
-        <div id="homePopList" class="space-y-1"></div>
-      </div>
-    </div>
 
     <div>
       <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900">Sitede Neler Var?</div><div class="sec-sub">Ara&#231;lardan haberlere, para kazanma yollar&#305;ndan &#252;cretsiz kitaplara</div></div>
@@ -159,7 +131,31 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       </div>
     </div>
 
-    <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="toolsHighlights" class="space-y-6">
+    <div id="spotlightWrap" class="hidden">
+      <div class="flex items-end justify-between mb-4 px-1">
+        <div><div class="sec-h dark:text-white text-gray-900">G&#252;n&#252;n Arac&#305;</div><div class="sec-sub">Her g&#252;n ba&#351;ka bir arac&#305; ke&#351;fet</div></div>
+        <span id="spotlightTag" class="pill pill-pick">Her g&#252;n yenilenir</span>
+      </div>
+      <div id="spotlightCard"></div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div class="p-5 sm:p-6 rounded-2xl dark:bg-gray-900/60 bg-white border dark:border-gray-800 border-gray-200">
+        <div class="flex items-end justify-between mb-1"><span class="sec-h dark:text-white text-gray-900">Yeni Eklenenler</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
+        <p class="text-[11px] text-gray-500 mb-4">Bot her saat yeni &#231;&#305;kan yapay zeka projelerini tarar.</p>
+        <div id="homeNewList" class="space-y-1"></div>
+      </div>
+      <div class="p-5 sm:p-6 rounded-2xl dark:bg-gray-900/60 bg-white border dark:border-gray-800 border-gray-200">
+        <div class="flex items-end justify-between mb-1"><span class="sec-h dark:text-white text-gray-900">En Pop&#252;ler A&#231;&#305;k Kaynak</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
+        <p class="text-[11px] text-gray-500 mb-4">GitHub'da geli&#351;tiricilerin en &#231;ok y&#305;ld&#305;z verdi&#287;i projeler.</p>
+        <div id="homePopList" class="space-y-1"></div>
+      </div>
+    </div>
+
+      <div class="pt-2 px-1"><div class="sec-h dark:text-white text-gray-900">T&#252;m Ara&#231;lar</div><div class="sec-sub">Edit&#246;r&#252;n se&#231;tikleri en &#252;stte</div></div>
+    </div>
+
+    <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
     <div id="favoritesRecommendedSection" class="hidden mt-16 pt-10 border-t dark:border-gray-800 border-gray-200">
       <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128161; Favorilerine Ekleyebilece&#287;in Edit&#246;r &#214;nerileri</span></div>
@@ -196,6 +192,16 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <p class="text-gray-400 text-xs">Haberler y&#252;kleniyor...</p>
     </div>
     <p id="newsError" class="hidden text-center text-sm text-gray-400 py-10">Haberler &#351;u an al&#305;namad&#305;. L&#252;tfen daha sonra tekrar deneyin.</p>
+  </div>
+
+  <!-- HABER DETAY -->
+  <div id="pageNewsDetail" class="hidden max-w-3xl mx-auto space-y-8">
+    <div><button onclick="switchPage('news')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-blue-600 hover:text-white transition">&#8592; Haberlere D&#246;n</button></div>
+    <article id="newsDetailBody" class="rounded-2xl dark:bg-gray-900/70 bg-white border dark:border-gray-800 border-gray-200 p-6 sm:p-10"></article>
+    <div>
+      <div class="px-1 mb-4"><div class="sec-h dark:text-white text-gray-900">Di&#287;er Haberler</div><div class="sec-sub">Yapay zeka d&#252;nyas&#305;ndan son geli&#351;meler</div></div>
+      <div id="newsDetailMore" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+    </div>
   </div>
 
   <!-- SAYFA 3 -->
@@ -455,18 +461,6 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 </main>
 
 <!-- Modallar -->
-<div id="newsDetailModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
-  <div class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-3xl p-6 w-full max-w-lg relative shadow-2xl">
-    <button onclick="closeNewsModal()" class="absolute top-5 right-5 text-gray-400 font-bold text-lg hover:text-blue-500">&#10005;</button>
-    <span id="modalNewsDate" class="text-[11px] text-blue-400 font-bold"></span>
-    <h3 class="text-xl font-bold mt-1 mb-3 dark:text-white text-gray-900" id="modalNewsTitle"></h3>
-    <p class="dark:text-gray-300 text-gray-700 text-xs leading-relaxed mb-6 whitespace-pre-line" id="modalNewsDesc"></p>
-    <div class="flex gap-3">
-      <a id="modalNewsLink" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl text-xs text-center transition">Kayna&#287;&#305;ndan Oku &#8599;</a>
-      <button onclick="closeNewsModal()" class="py-3 px-5 dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold rounded-xl text-xs">Kapat</button>
-    </div>
-  </div>
-</div>
 
 
 
@@ -870,7 +864,7 @@ function submitUserReview(e) {
 /* ---------- Sayfa ge\u00e7i\u015fi ---------- */
 function switchPage(page) {
   appState.activePage = page;
-  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', profile: 'pageProfile', favorites: 'pageFavorites', prompt: 'pagePrompt', toolDetail: 'pageToolDetail', legal: 'pageLegal' };
+  var pages = { directory: 'pageDirectory', tools: 'pageTools', news: 'pageNews', biz: 'pageBiz', bizDetail: 'pageBizDetail', plugins: 'pagePlugins', ebooks: 'pageEbooks', profile: 'pageProfile', favorites: 'pageFavorites', prompt: 'pagePrompt', toolDetail: 'pageToolDetail', legal: 'pageLegal', newsDetail: 'pageNewsDetail' };
   Object.keys(pages).forEach(function(k) { document.getElementById(pages[k]).classList.toggle('hidden', k !== page); });
   renderNav();
   hashYaz();
@@ -917,15 +911,15 @@ function renderNews(list) {
     var cleanDesc = plain ? plain.substring(0, 140) + '...' : 'Haber detaylar\u0131 i\u00e7in t\u0131klay\u0131n.';
     var dateStr = item.pubDate ? item.pubDate.split(' ')[0] : 'G\u00fcncel';
     var card = document.createElement('div');
-    card.className = "p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-blue-500 transition shadow-md group";
+    card.className = "tcard p-6 rounded-2xl dark:bg-gray-900/70 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-blue-500/70 cursor-pointer group";
     card.innerHTML =
       '<div><div class="flex justify-between items-center mb-3 text-xs">' +
-        '<span class="px-2.5 py-1 rounded-lg bg-blue-500/10 text-blue-400 font-bold border border-blue-500/20">\ud83d\udce1 AI Haber</span>' +
-        '<span class="text-gray-400">' + esc((item.source ? item.source + ' \u00b7 ' : '') + dateStr) + '</span></div>' +
+        '<span class="pill" style="background:rgba(59,130,246,.12);color:#60a5fa">' + esc(item.source || 'AI Haber') + '</span>' +
+        '<span class="text-gray-400">' + esc(haberTarih(dateStr)) + '</span></div>' +
         '<h3 class="text-base font-bold mb-2 dark:text-white text-gray-900 group-hover:text-blue-400 transition">' + esc(item.title) + '</h3>' +
         '<p class="text-gray-400 text-xs leading-relaxed">' + esc(cleanDesc) + '</p></div>' +
-      '<button class="mt-6 w-full py-2.5 dark:bg-gray-800 bg-gray-100 hover:bg-blue-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition">Haberi Oku \u2197</button>';
-    card.querySelector('button').onclick = function() { openNewsDetail(item.title, plain + (item.titleOrig && item.titleOrig !== item.title ? '\n\nOrijinal ba\u015fl\u0131k: ' + item.titleOrig : ''), item.link, dateStr); };
+      '<div class="mt-5 text-[12px] font-semibold text-gray-500 group-hover:text-blue-400 transition">Haberi oku \u2192</div>';
+    card.onclick = function() { openNewsDetail(item); };
     grid.appendChild(card);
   });
 }
@@ -938,14 +932,53 @@ function filterNews() {
   }));
 }
 
-function openNewsDetail(title, desc, link, date) {
-  document.getElementById('modalNewsTitle').textContent = title;
-  document.getElementById('modalNewsDesc').textContent = desc;
-  document.getElementById('modalNewsLink').href = safeUrl(link);
-  document.getElementById('modalNewsDate').textContent = "Yay\u0131n Tarihi: " + date;
-  document.getElementById('newsDetailModal').classList.remove('hidden');
+function haberId(it) {
+  var s = String(it.link || it.title || ''), h = 5381;
+  for (var i = 0; i < s.length; i++) h = ((h * 33) ^ s.charCodeAt(i)) >>> 0;
+  return h.toString(36);
 }
-function closeNewsModal() { document.getElementById('newsDetailModal').classList.add('hidden'); }
+var AYLAR = ['Ocak','\u015eubat','Mart','Nisan','May\u0131s','Haziran','Temmuz','A\u011fustos','Eyl\u00fcl','Ekim','Kas\u0131m','Aral\u0131k'];
+function haberTarih(d) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(d || ''); if (!m) return d || '';
+  return (+m[3]) + ' ' + AYLAR[+m[2] - 1] + ' ' + m[1];
+}
+function openNewsById(id) {
+  var bul = function () { return appState.liveNewsList.find(function (n) { return haberId(n) === id; }); };
+  var it = bul();
+  if (it) return openNewsDetail(it);
+  if (appState.liveNewsList.length) return switchPage('news');
+  fetch('data/news.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (d) {
+    appState.liveNewsList = d.items || []; var x = bul(); if (x) openNewsDetail(x); else switchPage('news');
+  }).catch(function () { switchPage('news'); });
+}
+function openNewsDetail(item) {
+  appState.newsId = haberId(item);
+  var plain = stripHtml(item.description);
+  var dateStr = item.pubDate ? item.pubDate.split(' ')[0] : '';
+  var box = document.getElementById('newsDetailBody');
+  box.innerHTML =
+    '<div class="flex flex-wrap items-center gap-2 mb-4 text-xs"><span class="pill" style="background:rgba(59,130,246,.12);color:#60a5fa">' + esc(item.source || 'AI Haber') + '</span>' +
+      (dateStr ? '<span class="text-gray-400">' + esc(haberTarih(dateStr)) + '</span>' : '') +
+      (item.tr && item.lang === 'en' ? '<span class="pill pill-paid">Otomatik \u00e7eviri</span>' : '') + '</div>' +
+    '<h1 class="text-2xl sm:text-4xl font-extrabold leading-tight dark:text-white text-gray-900 mb-3">' + esc(item.title) + '</h1>' +
+    (item.titleOrig && item.titleOrig !== item.title ? '<div class="text-xs text-gray-500 mb-6">Orijinal ba\u015fl\u0131k: ' + esc(item.titleOrig) + '</div>' : '<div class="mb-6"></div>') +
+    '<p class="text-[15px] leading-relaxed dark:text-gray-300 text-gray-700 whitespace-pre-line">' + esc(plain || 'Bu haberin \u00f6zeti yok, ayr\u0131nt\u0131lar i\u00e7in kayna\u011f\u0131na g\u00f6z at.') + '</p>' +
+    '<div class="mt-8 pt-6 border-t dark:border-gray-800 border-gray-200 flex flex-col sm:flex-row sm:items-center gap-3">' +
+      '<a href="' + esc(safeUrl(item.link)) + '" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold transition">Haberin tamam\u0131n\u0131 oku \u2197</a>' +
+      '<span class="text-[11px] text-gray-500">Burada haberin k\u0131sa \u00f6zeti var. Tamam\u0131 yay\u0131nc\u0131n\u0131n sitesinde.</span>' +
+    '</div>';
+  var more = document.getElementById('newsDetailMore'); more.innerHTML = '';
+  appState.liveNewsList.filter(function (n) { return haberId(n) !== appState.newsId; }).slice(0, 6).forEach(function (n) {
+    var c = document.createElement('div');
+    c.className = 'tcard p-4 rounded-2xl dark:bg-gray-900/70 bg-white border dark:border-gray-800 border-gray-200 hover:border-blue-500/70 cursor-pointer group';
+    c.innerHTML = '<div class="text-[11px] text-gray-500 mb-1.5">' + esc((n.source || '') + (n.pubDate ? ' \u00b7 ' + haberTarih(n.pubDate.split(' ')[0]) : '')) + '</div>' +
+      '<div class="text-sm font-bold leading-snug dark:text-white text-gray-900 group-hover:text-blue-400 transition line-clamp-2">' + esc(n.title) + '</div>';
+    c.onclick = function () { openNewsDetail(n); };
+    more.appendChild(c);
+  });
+  if (appState.activePage === 'newsDetail') { hashYaz(); window.scrollTo({ top: 0, behavior: 'smooth' }); } else switchPage('newsDetail');
+}
+function closeNewsModal() {}
 
 /* ---------- Tema & modallar ---------- */
 function toggleDarkMode() {
@@ -1066,6 +1099,8 @@ function updateSearchHint(info) {
 }
 function filterTools() {
   var q = norm(document.getElementById('searchInput').value);
+  var hl = document.getElementById('toolsHighlights');
+  if (hl) hl.classList.toggle('hidden', !!q || appState.currentCat !== 'all' || !!((document.getElementById('priceFilter') || {}).value) || ((document.getElementById('sortFilter') || {}).value || 'rec') !== 'rec');
   if (q !== appState.lastQ) { appState.visibleLimit = 30; appState.lastQ = q; }
   var info = q ? parseQuery(q) : null;
   updateSearchHint(info);
@@ -1472,7 +1507,7 @@ function renderNav() {
   d.innerHTML = ''; m.innerHTML = '';
   var fav = appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length;
   NAV.forEach(function (n) {
-    var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail');
+    var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail') || (n[0] === 'news' && appState.activePage === 'newsDetail');
     var rozet = n[0] === 'favorites' ? ' <span class="navFav ml-0.5 px-1.5 rounded-full text-[10px] font-bold ' + (fav ? 'bg-rose-500 text-white' : 'dark:bg-gray-800 bg-gray-200 text-gray-500') + '">' + fav + '</span>' : '';
     var b = document.createElement('button');
     b.className = 'navlink ' + (on ? 'dark:bg-white/10 bg-gray-900/5 dark:text-white text-gray-900' : 'dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900');
@@ -2163,7 +2198,7 @@ function openLegal(bolum) {
 
 /* ===== Adres cubugu yonlendirmesi ===== */
 var SLUG = { directory: '', tools: 'araclar', news: 'haberler', biz: 'is-modelleri', plugins: 'eklentiler',
-             ebooks: 'e-kitap', prompt: 'prompt', profile: 'profil', favorites: 'favoriler', toolDetail: 'arac', bizDetail: 'is-modeli', legal: 'yasal' };
+             ebooks: 'e-kitap', prompt: 'prompt', profile: 'profil', favorites: 'favoriler', toolDetail: 'arac', bizDetail: 'is-modeli', legal: 'yasal', newsDetail: 'haber' };
 var SLUG_REV = {};
 Object.keys(SLUG).forEach(function (k) { if (SLUG[k]) SLUG_REV[SLUG[k]] = k; });
 var yonlendirme = false, ilkAcilis = true;
@@ -2173,6 +2208,7 @@ function hashYaz() {
   if (p === 'toolDetail' && appState.currentActiveToolId != null) h += '/' + appState.currentActiveToolId;
   if (p === 'bizDetail' && appState.bizDetail) h += '/' + encodeURIComponent(appState.bizDetail);
   if (p === 'legal' && LG_AKTIF) h += '/' + LG_AKTIF;
+  if (p === 'newsDetail' && appState.newsId) h += '/' + appState.newsId;
   var yeni = h ? '#' + h : location.pathname + location.search;
   if (yeni === location.href || yeni === location.hash) return;
   try {
@@ -2190,6 +2226,7 @@ function hashOku() {
     if (kok === 'toolDetail' && parca[1]) { openToolDetail(isNaN(+parca[1]) ? parca[1] : +parca[1]); return; }
     if (kok === 'bizDetail' && parca[1]) { openBizDetail(decodeURIComponent(parca[1])); return; }
     if (kok === 'legal') { openLegal(parca[1] || 'gizlilik'); return; }
+    if (kok === 'newsDetail') { if (parca[1]) openNewsById(parca[1]); else switchPage('news'); return; }
     if (kok !== appState.activePage) switchPage(kok);
   } finally { yonlendirme = false; }
 }
