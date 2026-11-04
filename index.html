@@ -56,25 +56,24 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 <body class="min-h-screen flex flex-col justify-between">
 
 <header class="border-b dark:border-gray-800 border-gray-200 dark:bg-gray-950/80 bg-white/90 backdrop-blur-md p-3 sm:p-4 sticky top-0 z-40 transition">
-  <div class="max-w-6xl mx-auto flex justify-between items-center gap-3">
-    <div class="flex items-center gap-5 min-w-0">
+  <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+    <div class="flex items-center gap-4 min-w-0">
       <div class="flex items-center space-x-2.5 cursor-pointer" onclick="switchPage('directory')">
         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-base sm:text-lg text-white shadow-lg shadow-purple-600/30">AI</div>
-        <span class="text-base sm:text-xl font-bold dark:text-white text-gray-900">AI<span class="text-purple-500">Rehberi</span></span>
+        <span class="text-base sm:text-xl font-bold dark:text-white text-gray-900 whitespace-nowrap">AI<span class="text-purple-500">Rehberi</span></span>
       </div>
-      
+      <nav id="navDesktop" class="hidden lg:flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav>
     </div>
     <div class="flex items-center gap-2">
       <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
-        <span id="themeIcon">&#127769;</span><span class="hidden md:inline" id="themeText">Dark</span>
+        <span id="themeIcon">&#127769;</span><span class="hidden md:inline lg:hidden" id="themeText">Dark</span>
       </button>
       <button id="profileBtn" onclick="openProfileModal()" title="Hesab&#305;m" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
         <span id="headerAvatar">&#128100;</span><span id="headerUserName" class="text-xs font-bold hidden md:inline">Giri&#351; Yap</span>
       </button>
-      <button onclick="openProModal()" class="hbtn bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white shadow-lg shadow-amber-500/20">&#11088;<span class="hidden sm:inline">Premium</span></button>
+      <button onclick="openProModal()" class="hbtn bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white shadow-lg shadow-amber-500/20">PREMIUM</button>
     </div>
   </div>
-  <div class="max-w-6xl mx-auto hidden lg:flex justify-center pt-3"><nav id="navDesktop" class="flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav></div>
 </header>
 
 <div class="lg:hidden border-b dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white">
@@ -1513,8 +1512,8 @@ function renderNav() {
   NAV.forEach(function (n) {
     var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail') || (n[0] === 'news' && appState.activePage === 'newsDetail');
     var b = document.createElement('button');
-    b.className = 'px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
-    b.textContent = n[3] + ' ' + n[1];
+    b.className = 'px-2 xl:px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
+    b.innerHTML = n[3] + ' <span class="2xl:hidden">' + esc(n[2]) + '</span><span class="hidden 2xl:inline">' + esc(n[1]) + '</span>';
     b.onclick = function () { switchPage(n[0]); };
     d.appendChild(b);
     var x = document.createElement('button');
