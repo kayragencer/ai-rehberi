@@ -62,7 +62,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-base sm:text-lg text-white shadow-lg shadow-purple-600/30">AI</div>
         <span class="text-base sm:text-xl font-bold dark:text-white text-gray-900">AI<span class="text-purple-500">Rehberi</span></span>
       </div>
-      <nav id="navDesktop" class="hidden xl:flex items-center gap-0.5 text-[13px]"></nav>
+      
     </div>
     <div class="flex items-center gap-2">
       <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
@@ -74,9 +74,10 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <button onclick="openProModal()" class="hbtn bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white shadow-lg shadow-amber-500/20">&#11088;<span class="hidden sm:inline">Premium</span></button>
     </div>
   </div>
+  <div class="max-w-6xl mx-auto hidden lg:flex justify-center pt-3"><nav id="navDesktop" class="flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav></div>
 </header>
 
-<div class="xl:hidden border-b dark:border-gray-800 border-gray-200 dark:bg-gray-950 bg-white">
+<div class="lg:hidden border-b dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white">
   <div id="navMobile" class="flex gap-1.5 overflow-x-auto px-3 py-2 text-[11px] font-bold"></div>
 </div>
 
@@ -520,6 +521,10 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
     <div class="p-1.5">
       <button onclick="pmGit('profil')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white transition">
         <span>&#128100;</span><span class="flex-1 text-left">Profilim</span><span>&#8594;</span>
+      </button>
+      <button onclick="pmGit('favoriler')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-rose-600 hover:text-white transition">
+        <span>&#10084;&#65039;</span><span class="flex-1 text-left">Favorilerim</span>
+        <span id="pmFavCount" class="px-1.5 py-0.5 rounded-full text-[10px] dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
       </button>
       <button onclick="pmGit('oneri')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-sky-600 hover:text-white transition">
         <span>&#128172;</span><span class="flex-1 text-left">&#214;neri / &#350;ikayet</span><span>&#8594;</span>
@@ -1309,6 +1314,7 @@ function pmKonum() {
 function pmYenile() {
   var toplam = appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length;
   var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
+  set('pmFavCount', toplam);
   document.querySelectorAll('.navFav').forEach(function (e) { e.textContent = toplam; e.className = 'navFav ml-0.5 px-1.5 rounded-full text-[10px] font-bold ' + (toplam ? 'bg-rose-500 text-white' : 'dark:bg-gray-800 bg-gray-200 text-gray-500'); });
   set('pmAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
   set('pmName', profile.loggedIn ? (profile.name || 'Hesabim') : 'Misafir');
@@ -1379,7 +1385,7 @@ var ASSISTANT_API_URL = '';
 var asstHistory = [];
 var ASST_TOPICS = [['hesap','\ud83d\udc64','Hesap ve giri\u015f'],['favori','\u2764\ufe0f','Favoriler'],['arac','\ud83d\udd0e','Ara\u00e7 bulma'],['premium','\u2b50','Premium'],['gizlilik','\ud83d\udd12','Gizlilik ve verilerim'],['sorun','\ud83d\udc1e','Sorun bildir'],['site','\ud83e\udded','Bu site ne i\u015fe yarar?'],['insan','\u2709\ufe0f','Bize yaz']];
 var HELP = [['hesap', /(kayit|uye ol|giris|hesap|sifre|profil|cikis|oturum)/, 'Hesap a\u00e7mak i\u00e7in sa\u011f \u00fcstteki \ud83d\udc64 butonuna, sonra "Giri\u015f Yap / Kay\u0131t Ol"a bas. Ad, e-posta ve \u015fifre yeterli.\n\nBilmen gereken: Hesab\u0131n \u015fu an yaln\u0131zca kay\u0131t oldu\u011fun taray\u0131c\u0131da saklan\u0131yor. Ba\u015fka cihazdan ayn\u0131 hesapla giri\u015f yapamazs\u0131n, taray\u0131c\u0131 verilerini silersen hesap da silinir.\n\n\u015eifreni unuttuysan \u015fimdilik yeni bir hesap a\u00e7man gerekiyor.', [['Kay\u0131t ol / Giri\u015f yap','giris'],['Profilime git','profil']]],
-  ['favori', /(favori|kalp|kaydet|begendi)/, 'Bir arac\u0131n, eklentinin ya da e-kitab\u0131n kart\u0131ndaki \ud83e\udd0d simgesine bas\u0131nca favorilerine eklenir.\n\nHepsini \u00fcst men\u00fcdeki \u2764\ufe0f Favoriler sekmesinde, ara\u00e7 / eklenti / e-kitap diye ayr\u0131lm\u0131\u015f h\u00e2lde g\u00f6r\u00fcrs\u00fcn. Favoriler i\u00e7in hesap a\u00e7man gerekmez.', [['Favorilerime git','favoriler']]],
+  ['favori', /(favori|kalp|kaydet|begendi)/, 'Bir arac\u0131n, eklentinin ya da e-kitab\u0131n kart\u0131ndaki \ud83e\udd0d simgesine bas\u0131nca favorilerine eklenir.\n\nHepsini sa\u011f \u00fcstteki \ud83d\udc64 butonuna bas\u0131p \u2764\ufe0f Favorilerim\'e girerek g\u00f6r\u00fcrs\u00fcn; ara\u00e7, eklenti ve e-kitap diye ayr\u0131lm\u0131\u015f h\u00e2lde. Favoriler i\u00e7in hesap a\u00e7man gerekmez.', [['Favorilerime git','favoriler']]],
   ['arac', /(arac bul|nasil ara|arama|bulamiyorum|arac oner|hangi arac|ne kullan)/, 'Ana sayfadaki arama kutusuna ne yapmak istedi\u011fini kendi c\u00fcmlenle yazman yeterli. \u00d6rne\u011fin: "bana bir video yap", "\u00fccretsiz logo arac\u0131", "sesimi klonla".\n\nAra\u00e7lar sayfas\u0131nda kategoriye ve fiyata g\u00f6re de filtreleyebilirsin. \u0130stersen ihtiyac\u0131n\u0131 buraya da yazabilirsin, ben de birka\u00e7 ara\u00e7 \u00f6nereyim.', [['Ara\u00e7lar sayfas\u0131','araclar']]],
   ['premium', /(premium|uyelik|abonelik|odeme|para|ucret|fiyat)/, 'Sitedeki b\u00fct\u00fcn ara\u00e7lar, haberler ve rehberler \u00fccretsiz. Premium \u00fcyelik hen\u00fcz a\u00e7\u0131lmad\u0131, \u015fu an hi\u00e7bir \u00f6deme al\u0131nm\u0131yor.\n\nA\u00e7\u0131ld\u0131\u011f\u0131nda haber almak istersen sa\u011f \u00fcstteki \u2b50 Premium butonundan bekleme listesine kat\u0131labilirsin. Ara\u00e7lar\u0131n kendi fiyatlar\u0131 i\u015fe o arac\u0131n sitesinde belirlenir.', [['Bekleme listesi','premium']]],
   ['gizlilik', /(gizlilik|kvkk|verilerim|veri|cerez|guvenli|kisisel)/, 'Hesap bilgilerin, favorilerin ve ayarlar\u0131n bize g\u00f6nderilmez, yaln\u0131zca senin taray\u0131c\u0131nda saklan\u0131r. \u015eifren de cihaz\u0131nda \u015fifrelenerek tutulur.\n\nZiyaret istatistikleri \u00e7erezsiz ve anonim. Ayr\u0131nt\u0131lar Gizlilik Politikas\u0131 ve KVKK Ayd\u0131nlatma Metni sayfalar\u0131nda.', [['Gizlilik Politikas\u0131','gizlilik'],['KVKK Metni','kvkk']]],
@@ -1498,26 +1504,22 @@ var NAV = [
   ['biz', 'AI \u0130\u015f Modelleri', '\u0130\u015f', '\ud83d\udcbc', 'bg-green-600'],
   ['plugins', 'Claude Eklentileri', 'Eklenti', '\u{1F9E9}', 'bg-amber-500'],
   ['ebooks', 'E-Kitap', 'E-Kitap', '\u{1F4DA}', 'bg-emerald-600'],
-  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', '\u270d\ufe0f', 'bg-sky-600'],
-  ['favorites', 'Favoriler', 'Favoriler', '\u2764\ufe0f', 'bg-rose-600']
+  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', '\u270d\ufe0f', 'bg-sky-600']
 ];
 function renderNav() {
   var d = document.getElementById('navDesktop'), m = document.getElementById('navMobile');
   if (!d || !m) return;
   d.innerHTML = ''; m.innerHTML = '';
-  var fav = appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length;
   NAV.forEach(function (n) {
     var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail') || (n[0] === 'news' && appState.activePage === 'newsDetail');
-    var rozet = n[0] === 'favorites' ? ' <span class="navFav ml-0.5 px-1.5 rounded-full text-[10px] font-bold ' + (fav ? 'bg-rose-500 text-white' : 'dark:bg-gray-800 bg-gray-200 text-gray-500') + '">' + fav + '</span>' : '';
     var b = document.createElement('button');
-    b.className = 'navlink ' + (on ? 'dark:bg-white/10 bg-gray-900/5 dark:text-white text-gray-900' : 'dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900');
-    var KISA = { tools: 'Ara\u00e7lar', news: 'Haberler', biz: '\u0130\u015f Modelleri', plugins: 'Eklentiler', prompt: 'Prompt' };
-    b.innerHTML = (n[0] === 'favorites' ? '\u2764\ufe0f ' : '') + esc(KISA[n[0]] || n[1]) + rozet;
+    b.className = 'px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
+    b.textContent = n[3] + ' ' + n[1];
     b.onclick = function () { switchPage(n[0]); };
     d.appendChild(b);
     var x = document.createElement('button');
-    x.className = 'flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap font-semibold ' + (on ? 'dark:bg-white/10 bg-gray-900/5 dark:text-white text-gray-900' : 'dark:text-gray-400 text-gray-600');
-    x.innerHTML = n[3] + ' ' + esc(n[2]) + rozet;
+    x.className = 'flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap ' + (on ? n[4] + ' text-white' : 'dark:text-gray-400 text-gray-600');
+    x.textContent = n[3] + ' ' + n[2];
     x.onclick = function () { switchPage(n[0]); };
     m.appendChild(x);
   });
