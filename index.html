@@ -6,7 +6,7 @@
 <title>AI Rehberi | T&#252;rkiye'nin Yapay Zeka Dizini</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config = { darkMode: 'class' }</script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 body { font-family: 'Plus Jakarta Sans', sans-serif; transition: background-color .3s, color .3s; }
 .dark body { background-color: #090d16; color: #f8fafc; }
@@ -30,33 +30,53 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 #asstMsgs::-webkit-scrollbar{width:6px}
 #asstMsgs::-webkit-scrollbar-thumb{background:rgba(148,163,184,.35);border-radius:9999px}
 #asstMsgs::-webkit-scrollbar-track{background:transparent}
+
+/* ---- Profesyonel gorunum ---- */
+body { font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif; letter-spacing: -0.005em; }
+.dark body { background-color: #0a0d14; }
+.light body { background-color: #f6f7f9; }
+h1, h2, h3 { letter-spacing: -0.02em; }
+.hbtn { height: 2.5rem; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: 0 .8rem; border-radius: .75rem; font-size: .75rem; font-weight: 700; white-space: nowrap; transition: background-color .15s, color .15s, border-color .15s; }
+.navlink { position: relative; padding: .5rem .7rem; border-radius: .6rem; white-space: nowrap; font-weight: 600; transition: color .15s, background-color .15s; }
+.sec-h { font-size: 1.15rem; font-weight: 800; }
+.sec-sub { font-size: .75rem; color: #8b93a3; margin-top: .15rem; }
+.tcard { transition: border-color .15s, transform .15s, box-shadow .15s; }
+.tcard:hover { transform: translateY(-2px); }
+.pill { display: inline-flex; align-items: center; gap: .3rem; font-size: 11px; font-weight: 700; padding: .15rem .55rem; border-radius: 9999px; white-space: nowrap; }
+.pill-free { background: rgba(16,185,129,.12); color: #10b981; }
+.pill-freemium { background: rgba(59,130,246,.12); color: #60a5fa; }
+.pill-paid { background: rgba(148,163,184,.14); color: #94a3b8; }
+.pill-new { background: rgba(168,85,247,.14); color: #c084fc; }
+.pill-pick { background: rgba(245,158,11,.14); color: #f59e0b; }
+html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #9333ea; } html.light .pill-pick { color: #b45309; } html.light .pill-free { color: #047857; }
+.help-topic { display: flex; align-items: center; gap: .6rem; width: 100%; text-align: left; padding: .6rem .75rem; border-radius: .9rem; font-size: 12px; font-weight: 600; transition: background-color .15s, border-color .15s; }
 </style>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4e3d64208b55407a9fc300707c531651"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body class="min-h-screen flex flex-col justify-between">
 
 <header class="border-b dark:border-gray-800 border-gray-200 dark:bg-gray-950/80 bg-white/90 backdrop-blur-md p-3 sm:p-4 sticky top-0 z-40 transition">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
-    <div class="flex items-center space-x-4">
+  <div class="max-w-6xl mx-auto flex justify-between items-center gap-3">
+    <div class="flex items-center gap-5 min-w-0">
       <div class="flex items-center space-x-2.5 cursor-pointer" onclick="switchPage('directory')">
         <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-base sm:text-lg text-white shadow-lg shadow-purple-600/30">AI</div>
         <span class="text-base sm:text-xl font-bold dark:text-white text-gray-900">AI<span class="text-purple-500">Rehberi</span></span>
       </div>
-      <nav id="navDesktop" class="hidden lg:flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav>
+      <nav id="navDesktop" class="hidden xl:flex items-center gap-0.5 text-[13px]"></nav>
     </div>
-    <div class="flex items-center space-x-2">
-      <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="px-2.5 sm:px-3 py-2.5 dark:bg-gray-800/60 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-300 text-gray-700 rounded-xl transition text-xs font-bold flex items-center space-x-1">
+    <div class="flex items-center gap-2">
+      <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
         <span id="themeIcon">&#127769;</span><span class="hidden md:inline" id="themeText">Dark</span>
       </button>
-      <button id="profileBtn" onclick="openProfileModal()" title="Favorilerim" class="p-2.5 dark:bg-gray-800/60 bg-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-gray-300 text-gray-700 rounded-xl transition flex items-center space-x-1">
+      <button id="profileBtn" onclick="openProfileModal()" title="Hesab&#305;m" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
         <span id="headerAvatar">&#128100;</span><span id="headerUserName" class="text-xs font-bold hidden md:inline">Giri&#351; Yap</span>
       </button>
-      <button onclick="openProModal()" class="px-2.5 sm:px-3.5 py-2 bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white font-bold text-xs rounded-xl shadow-lg shadow-amber-500/20 transition">PREMIUM</button>
+      <button onclick="openProModal()" class="hbtn bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white shadow-lg shadow-amber-500/20">&#11088;<span class="hidden sm:inline">Premium</span></button>
     </div>
   </div>
 </header>
 
-<div class="lg:hidden border-b dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white">
+<div class="xl:hidden border-b dark:border-gray-800 border-gray-200 dark:bg-gray-950 bg-white">
   <div id="navMobile" class="flex gap-1.5 overflow-x-auto px-3 py-2 text-[11px] font-bold"></div>
 </div>
 
@@ -66,15 +86,14 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   <!-- ANA SAYFA -->
   <div id="pageDirectory" class="space-y-14">
     <div class="text-center max-w-3xl mx-auto">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#10024; Akilli Yapay Zeka Dizini</div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Ne Olusturmak Istiyorsun?</h1>
-      <p class="text-gray-400 text-sm sm:text-base">Ihtiyacini yaz, sana uygun yapay zeka aracini bulalim.</p>
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-semibold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>Her saat g&#252;ncellenen T&#252;rk&#231;e yapay zeka dizini</div><h1 class="text-4xl sm:text-6xl font-extrabold mb-4 tracking-tight dark:text-white text-gray-900 leading-[1.05]">Her i&#351; i&#231;in do&#287;ru<br class="hidden sm:block"> <span class="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">yapay zeka arac&#305;</span></h1><p class="text-gray-400 text-sm sm:text-base">Ne yapmak istedi&#287;ini kendi c&#252;mlenle yaz, sana uygun arac&#305; bulal&#305;m.</p><div id="heroStats" class="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs dark:text-gray-400 text-gray-500"></div>
 
       <form onsubmit="goSearch(event)" class="mt-6 relative" autocomplete="off">
+        <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input type="text" id="homeSearch" oninput="homeSuggest()" onfocus="homeSuggest()"
-          placeholder="Ne yapmak istiyorsun? Orn: bana bir video yap"
-          class="w-full p-4 pl-6 pr-28 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 text-sm sm:text-base shadow-2xl transition">
-        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold">Ara</button>
+          placeholder="Ne yapmak istiyorsun? &#214;rn: bana bir video yap"
+          class="w-full p-4 sm:p-5 pl-12 sm:pl-14 pr-28 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-700 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-4 focus:ring-purple-500/15 text-sm sm:text-base shadow-xl transition">
+        <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2.5 sm:py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold">Ara</button>
         <div id="homeSuggestBox" class="hidden absolute z-30 left-0 right-0 mt-2 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-2xl overflow-hidden text-left"></div>
       </form>
       <div id="homeExamples" class="mt-4 flex flex-wrap justify-center gap-2 text-xs"></div>
@@ -83,34 +102,34 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 
     <div id="spotlightWrap" class="hidden">
       <div class="flex items-end justify-between mb-4 px-1">
-        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">&#127775; G&#252;n&#252;n Arac&#305;</span>
-        <span id="spotlightTag" class="text-[11px] text-gray-500">Her g&#252;n yenilenir</span>
+        <div><div class="sec-h dark:text-white text-gray-900">G&#252;n&#252;n Arac&#305;</div><div class="sec-sub">Edit&#246;rlerimizin bug&#252;n &#246;ne &#231;&#305;kard&#305;&#287;&#305; ara&#231;</div></div>
+        <span id="spotlightTag" class="pill pill-pick">Her g&#252;n yenilenir</span>
       </div>
       <div id="spotlightCard"></div>
     </div>
     <div>
       <div class="flex items-end justify-between mb-4 px-1">
-        <span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128293; Editorun Onerdigi Yapay Zekalar</span>
-        <button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">Tumunu gor &#8594;</button>
+        <div><div class="sec-h dark:text-white text-gray-900">Edit&#246;r&#252;n Se&#231;imi</div><div class="sec-sub">Herkesin denemesi gereken en iyi ara&#231;lar</div></div>
+        <button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252;n&#252; g&#246;r &#8594;</button>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="featuredRecommendedGrid"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="featuredRecommendedGrid"></div>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div class="p-5 sm:p-6 rounded-3xl dark:bg-gray-900/90 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
-        <div class="flex items-end justify-between mb-1"><span class="text-xs font-bold uppercase tracking-wider text-emerald-400">&#127381; Yeni Eklenenler</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
+      <div class="p-5 sm:p-6 rounded-2xl dark:bg-gray-900/60 bg-white border dark:border-gray-800 border-gray-200">
+        <div class="flex items-end justify-between mb-1"><span class="sec-h dark:text-white text-gray-900">Yeni Eklenenler</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
         <p class="text-[11px] text-gray-500 mb-4">Bot her saat yeni &#231;&#305;kan yapay zeka projelerini tarar.</p>
         <div id="homeNewList" class="space-y-1"></div>
       </div>
-      <div class="p-5 sm:p-6 rounded-3xl dark:bg-gray-900/90 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
-        <div class="flex items-end justify-between mb-1"><span class="text-xs font-bold uppercase tracking-wider text-sky-400">&#11088; En Pop&#252;ler A&#231;&#305;k Kaynak</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
+      <div class="p-5 sm:p-6 rounded-2xl dark:bg-gray-900/60 bg-white border dark:border-gray-800 border-gray-200">
+        <div class="flex items-end justify-between mb-1"><span class="sec-h dark:text-white text-gray-900">En Pop&#252;ler A&#231;&#305;k Kaynak</span><button onclick="switchPage('tools')" class="text-xs font-bold text-gray-400 hover:text-purple-500">T&#252;m&#252; &#8594;</button></div>
         <p class="text-[11px] text-gray-500 mb-4">GitHub'da geli&#351;tiricilerin en &#231;ok y&#305;ld&#305;z verdi&#287;i projeler.</p>
         <div id="homePopList" class="space-y-1"></div>
       </div>
     </div>
 
     <div>
-      <div class="mb-4 px-1"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#129517; Sitede Neler Var?</span></div>
+      <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900">Sitede Neler Var?</div><div class="sec-sub">Ara&#231;lardan haberlere, para kazanma yollar&#305;ndan &#252;cretsiz kitaplara</div></div>
       <div id="homeSections" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </div>
   </div>
@@ -118,11 +137,11 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   <!-- AI ARACLARI -->
   <div id="pageTools" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#129520; Tum Yapay Zeka Araclari</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">AI Araclari</h1>
-      <p class="text-gray-400 text-sm">Arama yap, kategoriye ve fiyata gore filtrele.</p>
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#129520; T&#252;m Yapay Zeka Ara&#231;lar&#305;</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">AI Ara&#231;lar&#305;</h1>
+      <p class="text-gray-400 text-sm">Arama yap, kategoriye ve fiyata g&#246;re filtrele.</p>
       <div class="mt-6">
-        <input type="text" id="searchInput" oninput="filterTools()" placeholder="Ne yapmak istiyorsun? Orn: bana bir video yap"
+        <input type="text" id="searchInput" oninput="filterTools()" placeholder="Ne yapmak istiyorsun? &#214;rn: bana bir video yap"
           class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 text-sm sm:text-base shadow-2xl transition">
       </div>
       <div id="searchHint" class="mt-4 min-h-[1.25rem] text-xs font-semibold text-purple-400"></div>
@@ -130,32 +149,32 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
       <div id="categoryChips" class="mt-6 flex gap-2.5 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
       <div class="mt-5 flex flex-wrap items-center justify-center gap-2 text-xs">
         <select id="priceFilter" onchange="filterTools()" class="fld w-auto font-bold">
-          <option value="">Tum fiyatlar</option><option>Ucretsiz</option><option>Freemium</option><option>Ucretli</option>
+          <option value="">T&#252;m fiyatlar</option><option>&#220;cretsiz</option><option>Freemium</option><option>&#220;cretli</option>
         </select>
         <select id="sortFilter" onchange="filterTools()" class="fld w-auto font-bold">
-          <option value="rec">Onerilen siralama</option><option value="new">En yeni</option><option value="pop">En populer</option><option value="az">A-Z</option>
+          <option value="rec">&#214;nerilen s&#305;ralama</option><option value="new">En yeni</option><option value="pop">En pop&#252;ler</option><option value="az">A-Z</option>
         </select>
-        <button type="button" onclick="resetApp()" class="px-3 py-2.5 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold">Sifirla</button>
-        <span class="text-gray-400 font-medium ml-1"><span id="resultCount" class="text-purple-400 font-bold">0</span> arac</span>
+        <button type="button" onclick="resetApp()" class="px-3 py-2.5 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold">S&#305;f&#305;rla</button>
+        <span class="text-gray-400 font-medium ml-1"><span id="resultCount" class="text-purple-400 font-bold">0</span> ara&#231;</span>
       </div>
     </div>
 
     <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
     <div id="favoritesRecommendedSection" class="hidden mt-16 pt-10 border-t dark:border-gray-800 border-gray-200">
-      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128161; Favorilerine Ekleyebilecegin Editor Onerileri</span></div>
+      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128161; Favorilerine Ekleyebilece&#287;in Edit&#246;r &#214;nerileri</span></div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="favoritesRecommendedGrid"></div>
     </div>
 
     <div id="loadMoreContainer" class="text-center mt-12 mb-6">
-      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">&#9889; Daha Fazla Yukle (+30 Arac)</button>
+      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">&#9889; Daha Fazla Y&#252;kle (+30 Ara&#231;)</button>
     </div>
 
     <div id="emptyState" class="hidden text-center py-20">
       <div class="w-16 h-16 dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">&#128269;</div>
-      <h3 class="text-lg font-bold dark:text-white text-gray-900">Aradiginiz kriterde yapay zeka bulunamadi</h3>
-      <p class="text-gray-400 text-sm mt-1">Farkli anahtar kelimeler deneyebilirsiniz.</p>
-      <button onclick="resetApp()" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold">Aramayi Sifirla</button>
+      <h3 class="text-lg font-bold dark:text-white text-gray-900">Arad&#305;&#287;&#305;n&#305;z kriterde yapay zeka bulunamad&#305;</h3>
+      <p class="text-gray-400 text-sm mt-1">Farkl&#305; anahtar kelimeler deneyebilirsiniz.</p>
+      <button onclick="resetApp()" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold">Aramay&#305; S&#305;f&#305;rla</button>
     </div>
   </div>
 
@@ -321,10 +340,10 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   <div id="pagePlugins" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
       <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-500 border border-amber-500/20 mb-4">&#129513; Claude Eklentileri</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Claude Eklentileri ve MCP Sunuculari</h1>
-      <p class="text-gray-400 text-sm">Claude'u kendi araclariniza, dosyalariniza ve servislerinize baglayan acik kaynak eklentiler.</p>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Claude Eklentileri ve MCP Sunucular&#305;</h1>
+      <p class="text-gray-400 text-sm">Claude'u kendi ara&#231;lar&#305;n&#305;za, dosyalariniza ve servislerinize ba&#287;layan a&#231;&#305;k kaynak eklentiler.</p>
       <div class="mt-6">
-        <input type="text" id="pluginSearch" oninput="filterPlugins()" placeholder="Eklenti ara: dosya, takvim, veritabani, github, slack..."
+        <input type="text" id="pluginSearch" oninput="filterPlugins()" placeholder="Eklenti ara: dosya, takvim, veritaban&#305;, github, slack..."
           class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-amber-500 text-sm sm:text-base shadow-2xl transition">
       </div>
       <div id="pluginChips" class="mt-5 flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
@@ -333,55 +352,55 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
     <div id="pluginsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
     <div id="pluginsLoading" class="text-center py-20">
       <div class="w-12 h-12 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-      <p class="text-gray-400 text-xs">Eklentiler yukleniyor...</p>
+      <p class="text-gray-400 text-xs">Eklentiler y&#252;kleniyor...</p>
     </div>
-    <p id="pluginsEmpty" class="hidden text-center text-sm text-gray-400 py-16">Bu aramaya uygun eklenti bulunamadi.</p>
+    <p id="pluginsEmpty" class="hidden text-center text-sm text-gray-400 py-16">Bu aramaya uygun eklenti bulunamad&#305;.</p>
   </div>
 
   <!-- E-KITAP -->
   <div id="pageEbooks" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 mb-4">&#128218; Ucretsiz Kaynaklar</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">E-Kitap ve Egitim Kaynaklari</h1>
-      <p class="text-gray-400 text-sm">Yapay zeka ogrenmek icin secilmis, tamami ucretsiz kitaplar ve kurslar. Icerik buyuk olcude Ingilizcedir.</p>
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 mb-4">&#128218; &#220;cretsiz Kaynaklar</div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">E-Kitap ve E&#287;itim Kaynaklar&#305;</h1>
+      <p class="text-gray-400 text-sm">Yapay zeka &#246;&#287;renmek i&#231;in se&#231;ilmi&#351;, tamam&#305; &#252;cretsiz kitaplar ve kurslar. &#304;&#231;erik b&#252;y&#252;k &#246;l&#231;&#252;de &#304;ngilizcedir.</p>
       <div class="mt-6">
-        <input type="text" id="ebookSearch" oninput="filterEbooks()" placeholder="Kitap ara: derin ogrenme, matematik, prompt, NLP..."
+        <input type="text" id="ebookSearch" oninput="filterEbooks()" placeholder="Kitap ara: derin &#246;&#287;renme, matematik, prompt, NLP..."
           class="w-full p-4 pl-6 rounded-2xl dark:bg-gray-900 bg-white border-2 dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-emerald-500 text-sm sm:text-base shadow-2xl transition">
       </div>
       <div id="ebookChips" class="mt-5 flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 text-xs"></div>
       <div class="mt-3 text-xs text-gray-400 font-medium"><span id="ebookCount" class="text-emerald-500 font-bold">0</span> kaynak listeleniyor</div>
     </div>
     <div id="ebooksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-    <p id="ebooksEmpty" class="hidden text-center text-sm text-gray-400 py-16">Bu aramaya uygun kaynak bulunamadi.</p>
+    <p id="ebooksEmpty" class="hidden text-center text-sm text-gray-400 py-16">Bu aramaya uygun kaynak bulunamad&#305;.</p>
   </div>
 
   <!-- PROMPT REHBERI -->
   <div id="pagePrompt" class="hidden space-y-10">
     <div class="text-center max-w-3xl mx-auto">
       <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-4">&#9999;&#65039; Prompt Olu&#351;turucu</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Prompt Olusturucu</h1>
-      <p class="text-gray-400 text-sm">Alanlari doldur, yapay zekaya yapistirabilecegin hazir istemi an&#305;nda al.</p>
+      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Prompt Olu&#351;turucu</h1>
+      <p class="text-gray-400 text-sm">Alanlar&#305; doldur, yapay zekaya yap&#305;&#351;t&#305;rabilece&#287;in haz&#305;r istemi an&#305;nda al.</p>
     </div>
 
 
     <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
-      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-1">&#128736;&#65039; Prompt Olusturucu</h3>
-      <p class="text-xs text-gray-400 mb-5">Asagidaki alanlari doldur, altta hazir istemini kopyala.</p>
+      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-1">&#128736;&#65039; Prompt Olu&#351;turucu</h3>
+      <p class="text-xs text-gray-400 mb-5">A&#351;a&#287;&#305;daki alanlar&#305; doldur, altta haz&#305;r istemini kopyala.</p>
       <div class="grid sm:grid-cols-2 gap-3">
-        <select id="pbRole" onchange="buildPrompt()" class="fld"><option value="">Kim gibi davransin? (rol)</option></select>
-        <select id="pbFormat" onchange="buildPrompt()" class="fld"><option value="">Cikti bicimi</option></select>
-        <select id="pbTone" onchange="buildPrompt()" class="fld"><option value="">Uslup</option></select>
+        <select id="pbRole" onchange="buildPrompt()" class="fld"><option value="">Kim gibi davrans&#305;n? (rol)</option></select>
+        <select id="pbFormat" onchange="buildPrompt()" class="fld"><option value="">&#199;&#305;kt&#305; bi&#231;imi</option></select>
+        <select id="pbTone" onchange="buildPrompt()" class="fld"><option value="">&#220;slup</option></select>
         <select id="pbLength" onchange="buildPrompt()" class="fld"><option value="">Uzunluk</option></select>
       </div>
-      <textarea id="pbTask" oninput="buildPrompt()" rows="2" maxlength="400" placeholder="Ne yapmasini istiyorsun? Orn: urunumu tanitan bir Instagram metni yaz" class="fld mt-3"></textarea>
-      <textarea id="pbContext" oninput="buildPrompt()" rows="2" maxlength="400" placeholder="Bilmesi gerekenler: hedef kitle, urun, kisitlar... (istege bagli)" class="fld mt-3"></textarea>
+      <textarea id="pbTask" oninput="buildPrompt()" rows="2" maxlength="400" placeholder="Ne yapmas&#305;n&#305; istiyorsun? &#214;rn: &#252;r&#252;n&#252;m&#252; tan&#305;tan bir Instagram metni yaz" class="fld mt-3"></textarea>
+      <textarea id="pbContext" oninput="buildPrompt()" rows="2" maxlength="400" placeholder="Bilmesi gerekenler: hedef kitle, &#252;r&#252;n, k&#305;s&#305;tlar... (iste&#287;e ba&#287;l&#305;)" class="fld mt-3"></textarea>
       <div class="mt-5">
         <div class="flex items-center justify-between mb-2">
-          <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Hazir istemin</span>
+          <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Haz&#305;r istemin</span>
           <button onclick="copyPrompt()" class="px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold">&#128203; Kopyala</button>
         </div>
         <pre id="pbOutput" class="p-4 rounded-2xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 text-xs dark:text-gray-200 text-gray-800 whitespace-pre-wrap leading-relaxed min-h-[6rem]"></pre>
-        <div id="pbCopied" class="hidden mt-2 text-xs font-bold text-emerald-500">Panoya kopyalandi.</div>
+        <div id="pbCopied" class="hidden mt-2 text-xs font-bold text-emerald-500">Panoya kopyaland&#305;.</div>
       </div>
     </div>
 
@@ -431,7 +450,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   <!-- YASAL -->
   <div id="pageLegal" class="hidden max-w-3xl mx-auto space-y-5">
     <div class="flex gap-1 p-1 rounded-xl dark:bg-gray-900 bg-gray-100 text-xs font-bold overflow-x-auto no-scrollbar"><button data-lg="gizlilik" onclick="openLegal('gizlilik')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#128274; Gizlilik Politikas&#305;</button><button data-lg="kvkk" onclick="openLegal('kvkk')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#128196; KVKK Ayd&#305;nlatma Metni</button><button data-lg="kullanim-sartlari" onclick="openLegal('kullanim-sartlari')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#128220; Kullan&#305;m &#350;artlar&#305;</button><button data-lg="cerezler" onclick="openLegal('cerezler')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#127850; &#199;erez Politikas&#305;</button></div>
-    <div class="rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl p-6 sm:p-8 text-sm leading-relaxed dark:text-gray-300 text-gray-700"><section id="lg-gizlilik" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">Gizlilik Politikas&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">Bu politika, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> (bundan sonra &#8220;Site&#8221;) kullan&#305;l&#305;rken hangi bilgilerin nerede tutuldu&#287;unu ve nas&#305;l kullan&#305;ld&#305;&#287;&#305;n&#305; a&#231;&#305;klar. K&#305;sa &#246;zet: <strong class="dark:text-gray-100 text-gray-900">Hesap bilgilerin, favorilerin ve ayarlar&#305;n sunucumuza g&#246;nderilmez; yaln&#305;zca senin taray&#305;c&#305;nda saklan&#305;r.</strong></p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Senin taray&#305;c&#305;nda saklanan bilgiler</h3><p class="mb-3">Site, a&#351;a&#287;&#305;daki bilgileri taray&#305;c&#305;n&#305;n yerel depolama alan&#305;nda (localStorage) tutar. Bu bilgiler bize ya da ba&#351;ka bir sunucuya iletilmez; taray&#305;c&#305; verilerini sildi&#287;inde kal&#305;c&#305; olarak silinir:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Hesap olu&#351;turursan: ad soyad, e-posta adresi, ilgi alanlar&#305;n, profil notun ve se&#231;ti&#287;in avatar</li><li>&#350;ifren: d&#252;z metin olarak de&#287;il, cihaz&#305;nda PBKDF2 y&#246;ntemiyle &#351;ifrelenmi&#351; (hash) h&#226;liyle</li><li>Favoriye ekledi&#287;in ara&#231;lar, eklentiler ve e-kitaplar; son bakt&#305;&#287;&#305;n ara&#231;lar</li><li>Tema tercihin (a&#231;&#305;k/koyu) ve ara&#231; sayfalar&#305;na yazd&#305;&#287;&#305;n yorumlar</li></ul><p class="mb-3">Hesab&#305;n &#351;u an yaln&#305;zca kulland&#305;&#287;&#305;n taray&#305;c&#305;da ge&#231;erlidir. Ba&#351;ka bir cihazdan giri&#351; yapamazs&#305;n ve taray&#305;c&#305; verilerini temizlersen hesab&#305;n da silinir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Ziyaret istatistikleri</h3><p class="mb-3">Sitenin ka&#231; ki&#351;i taraf&#305;ndan ve hangi sayfalar&#305;n&#305;n ziyaret edildi&#287;ini g&#246;rmek i&#231;in <strong class="dark:text-gray-100 text-gray-900">Cloudflare Web Analytics</strong> kullan&#305;yoruz. Bu hizmet &#231;erez kullanmaz, seni ki&#351;isel olarak tan&#305;mlamaz ve ziyaret&#231;ileri tek tek takip etmez. Biz yaln&#305;zca toplam ziyaret say&#305;s&#305;, g&#246;r&#252;nt&#252;lenen sayfalar, &#252;lke, taray&#305;c&#305; ve cihaz t&#252;r&#252; gibi <strong class="dark:text-gray-100 text-gray-900">toplu ve anonim</strong> say&#305;lar&#305; g&#246;r&#252;r&#252;z.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. Bar&#305;nd&#305;rma ve &#252;&#231;&#252;nc&#252; taraf hizmetler</h3><p class="mb-3">Site <strong class="dark:text-gray-100 text-gray-900">GitHub Pages</strong> &#252;zerinde yay&#305;nlan&#305;r. Bir web sayfas&#305; a&#231;t&#305;&#287;&#305;nda taray&#305;c&#305;n, sayfay&#305; sunan sunuculara IP adresin ve taray&#305;c&#305; bilgilerin gibi teknik bilgileri teknik zorunluluk gere&#287;i iletir. Sitenin d&#252;zg&#252;n g&#246;r&#252;nmesi i&#231;in a&#351;a&#287;&#305;daki hizmetlerden dosya y&#252;klenir; bu hizmetler kendi gizlilik politikalar&#305;na tabidir:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>GitHub Pages (sitenin bar&#305;nd&#305;r&#305;lmas&#305;)</li><li>Cloudflare (ziyaret istatistikleri)</li><li>Tailwind CSS CDN ve Google Fonts (tasar&#305;m ve yaz&#305; tipleri)</li><li>Google favicon servisi, Simple Icons ve Unsplash (ara&#231; logolar&#305; ve g&#246;rseller)</li><li>rss2json (yaln&#305;zca kendi haber listemiz y&#252;klenemezse yedek haber kayna&#287;&#305; olarak)</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. &#214;neri ve &#351;ik&#226;yet mesajlar&#305;</h3><p class="mb-3">Profil sayfas&#305;ndaki &#214;neri / &#350;ik&#226;yet formunu kulland&#305;&#287;&#305;nda mesaj&#305;n <strong class="dark:text-gray-100 text-gray-900">kendi e-posta uygulaman</strong> &#252;zerinden bize g&#246;nderilir. Bu durumda e-posta adresini ve yazd&#305;&#287;&#305;n mesaj&#305; g&#246;r&#252;r&#252;z. Bu bilgileri yaln&#305;zca mesaj&#305;na cevap vermek ve Siteyi geli&#351;tirmek i&#231;in kullan&#305;r&#305;z; &#252;&#231;&#252;nc&#252; ki&#351;ilerle payla&#351;may&#305;z ve satmay&#305;z.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. D&#305;&#351; ba&#287;lant&#305;lar</h3><p class="mb-3">Site, listelenen yapay zeka ara&#231;lar&#305;n&#305;n, haber kaynaklar&#305;n&#305;n ve di&#287;er sitelerin ba&#287;lant&#305;lar&#305;n&#305; i&#231;erir. Bu ba&#287;lant&#305;lara t&#305;klad&#305;&#287;&#305;nda o sitenin kendi gizlilik politikas&#305; ge&#231;erli olur; o sitelerin uygulamalar&#305;ndan sorumlu de&#287;iliz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. &#199;ocuklar</h3><p class="mb-3">Site genel bilgilendirme ama&#231;l&#305;d&#305;r. 18 ya&#351;&#305;ndan k&#252;&#231;&#252;ksen hesap olu&#351;turmadan &#246;nce bir velinden izin alman&#305; &#246;neririz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. De&#287;i&#351;iklikler ve ileti&#351;im</h3><p class="mb-3">Bu politikay&#305; gerekti&#287;inde g&#252;ncelleyebiliriz; g&#252;ncel h&#226;li her zaman bu sayfadad&#305;r. Sorular&#305;n&#305; <span class="lgContact"></span> iletebilirsin.</p></section><section id="lg-kvkk" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">KVKK Ayd&#305;nlatma Metni</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">6698 say&#305;l&#305; Ki&#351;isel Verilerin Korunmas&#305; Kanunu (&#8220;KVKK&#8221;) kapsam&#305;nda, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> ziyaret&#231;ilerini ve kullan&#305;c&#305;lar&#305;n&#305; bilgilendirmek amac&#305;yla bu metin haz&#305;rlanm&#305;&#351;t&#305;r.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Veri sorumlusu</h3><p class="mb-3">Veri sorumlusu: <strong class="dark:text-gray-100 text-gray-900"><span class="lgOwner"></span></strong>. Bize <span class="lgContact"></span> ula&#351;abilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Hangi ki&#351;isel veriler i&#351;leniyor?</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li><strong class="dark:text-gray-100 text-gray-900">Hesap bilgileri</strong> (ad soyad, e-posta, ilgi alanlar&#305;): Yaln&#305;zca senin taray&#305;c&#305;nda saklan&#305;r, taraf&#305;m&#305;za aktar&#305;lmaz.</li><li><strong class="dark:text-gray-100 text-gray-900">&#304;leti&#351;im bilgileri</strong> (e-posta adresin ve mesaj i&#231;eri&#287;in): Yaln&#305;zca &#246;neri/&#351;ik&#226;yet i&#231;in bize e-posta g&#246;nderdi&#287;inde taraf&#305;m&#305;za ula&#351;&#305;r.</li><li><strong class="dark:text-gray-100 text-gray-900">Teknik veriler</strong> (IP adresi, taray&#305;c&#305; ve cihaz bilgisi): Sayfa a&#231;&#305;l&#305;rken bar&#305;nd&#305;rma ve altyap&#305; sa&#287;lay&#305;c&#305;lar&#305;na teknik zorunluluk gere&#287;i iletilir. Ziyaret istatistikleri anonim ve toplu olarak tutulur.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#304;&#351;leme ama&#231;lar&#305;</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Siteyi sunmak, g&#252;venli&#287;ini ve d&#252;zg&#252;n &#231;al&#305;&#351;mas&#305;n&#305; sa&#287;lamak</li><li>&#214;neri ve &#351;ik&#226;yetlerine cevap vermek</li><li>Toplu ziyaret istatistikleriyle Siteyi geli&#351;tirmek</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Hukuki sebepler</h3><p class="mb-3">Ki&#351;isel verilerin KVKK madde 5/2 kapsam&#305;nda; bir s&#246;zle&#351;menin kurulmas&#305; veya ifas&#305;yla do&#287;rudan ilgili olmas&#305;, veri sorumlusunun hukuki y&#252;k&#252;ml&#252;l&#252;&#287;&#252;n&#252; yerine getirmesi ve temel hak ve &#246;zg&#252;rl&#252;klerine zarar vermemek kayd&#305;yla veri sorumlusunun me&#351;ru menfaati hukuki sebeplerine dayan&#305;larak i&#351;lenir. Hesap bilgilerinin taray&#305;c&#305;nda saklanmas&#305; ise kay&#305;t s&#305;ras&#305;nda verdi&#287;in onaya dayan&#305;r.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. Aktar&#305;m</h3><p class="mb-3">Ki&#351;isel verilerini satmay&#305;z ve pazarlama amac&#305;yla kimseyle payla&#351;may&#305;z. Site, yurt d&#305;&#351;&#305;nda sunucular&#305; bulunan hizmet sa&#287;lay&#305;c&#305;lar (GitHub, Cloudflare, Google gibi) &#252;zerinden &#231;al&#305;&#351;t&#305;&#287;&#305; i&#231;in sayfa a&#231;&#305;l&#305;rken olu&#351;an teknik veriler bu sa&#287;lay&#305;c&#305;lar&#305;n sunucular&#305;na iletilebilir. Yasal bir zorunluluk olmas&#305; h&#226;linde yetkili kamu kurumlar&#305;yla payla&#351;&#305;m yap&#305;labilir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. Saklama s&#252;resi</h3><p class="mb-3">Taray&#305;c&#305;nda tutulan bilgiler sen silene kadar cihaz&#305;nda kal&#305;r. Bize g&#246;nderdi&#287;in e-postalar, talebin sonu&#231;land&#305;ktan sonra en fazla 2 y&#305;l saklan&#305;r ve ard&#305;ndan silinir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. Haklar&#305;n (KVKK madde 11)</h3><p class="mb-3">Bize ba&#351;vurarak; ki&#351;isel verilerinin i&#351;lenip i&#351;lenmedi&#287;ini &#246;&#287;renme, i&#351;lenmi&#351;se bilgi talep etme, i&#351;lenme amac&#305;n&#305; ve amac&#305;na uygun kullan&#305;l&#305;p kullan&#305;lmad&#305;&#287;&#305;n&#305; &#246;&#287;renme, aktar&#305;ld&#305;&#287;&#305; &#252;&#231;&#252;nc&#252; ki&#351;ileri bilme, eksik veya yanl&#305;&#351; i&#351;lenmi&#351;se d&#252;zeltilmesini, KVKK'daki &#351;artlar &#231;er&#231;evesinde silinmesini veya yok edilmesini isteme, bu i&#351;lemlerin aktar&#305;lan &#252;&#231;&#252;nc&#252; ki&#351;ilere bildirilmesini isteme, otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonu&#231; &#231;&#305;kmas&#305;na itiraz etme ve kanuna ayk&#305;r&#305; i&#351;leme nedeniyle zarara u&#287;raman h&#226;linde zarar&#305;n giderilmesini talep etme haklar&#305;na sahipsin.</p><p class="mb-3">Ba&#351;vurular&#305;n&#305; <span class="lgContact"></span> iletebilirsin. Ba&#351;vurun en ge&#231; 30 g&#252;n i&#231;inde &#252;cretsiz olarak sonu&#231;land&#305;r&#305;l&#305;r.</p></section><section id="lg-kullanim-sartlari" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">Kullan&#305;m &#350;artlar&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">Bu &#351;artlar, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> (bundan sonra &#8220;Site&#8221;) kullan&#305;m&#305;n&#305; d&#252;zenler. Siteyi kullanarak bu &#351;artlar&#305; kabul etmi&#351; say&#305;l&#305;rs&#305;n.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Sitenin amac&#305;</h3><p class="mb-3">Site, yapay zeka ara&#231;lar&#305;, haberleri, eklentileri, e-kitaplar&#305; ve i&#351; modelleri hakk&#305;nda <strong class="dark:text-gray-100 text-gray-900">&#252;cretsiz ve genel bilgilendirme</strong> ama&#231;l&#305; bir rehberdir. Buradaki i&#231;erikler yat&#305;r&#305;m, hukuk, vergi veya mesleki dan&#305;&#351;manl&#305;k de&#287;ildir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Bilgilerin do&#287;rulu&#287;u</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Ara&#231; listeleri, a&#231;&#305;klamalar ve haberlerin bir k&#305;sm&#305; otomatik sistemlerle toplan&#305;r ve yapay zeka yard&#305;m&#305;yla T&#252;rk&#231;eye &#231;evrilir. Bu nedenle hatal&#305;, eksik veya g&#252;ncelli&#287;ini yitirmi&#351; bilgi bulunabilir.</li><li>Ara&#231;lar&#305;n fiyatlar&#305;, &#246;zellikleri ve kullan&#305;m ko&#351;ullar&#305; ilgili &#351;irketler taraf&#305;ndan haber verilmeden de&#287;i&#351;tirilebilir. Bir arac&#305; kullanmadan veya sat&#305;n almadan &#246;nce bilgileri her zaman arac&#305;n kendi sitesinden kontrol et.</li><li>&#304;&#351; modelleri b&#246;l&#252;m&#252;ndeki kazan&#231; &#246;rnekleri garanti de&#287;ildir; sonu&#231;lar ki&#351;iden ki&#351;iye b&#252;y&#252;k farkl&#305;l&#305;k g&#246;sterir.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#220;&#231;&#252;nc&#252; taraf siteler ve markalar</h3><p class="mb-3">Sitede listelenen ara&#231;lar ve ba&#287;lant&#305; verilen siteler bize ait de&#287;ildir; onlar&#305; kullan&#305;rken o sitelerin kendi &#351;artlar&#305; ve gizlilik politikalar&#305; ge&#231;erlidir. Sitede ge&#231;en marka, logo ve &#252;r&#252;n adlar&#305; sahiplerine aittir ve yaln&#305;zca tan&#305;t&#305;m ve bilgilendirme amac&#305;yla kullan&#305;l&#305;r. Bir markan&#305;n sahibiysen ve i&#231;eri&#287;in kald&#305;r&#305;lmas&#305;n&#305; ya da d&#252;zeltilmesini istiyorsan bize ula&#351;abilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Hesaplar</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Hesab&#305;n yaln&#305;zca kulland&#305;&#287;&#305;n taray&#305;c&#305;da saklan&#305;r. Taray&#305;c&#305; verilerini silersen hesab&#305;n, favorilerin ve ayarlar&#305;n geri getirilemez &#351;ekilde silinir.</li><li>&#350;ifreni g&#252;vende tutmak senin sorumlulu&#287;undad&#305;r.</li><li>Sitede ileride &#252;cretli (premium) &#246;zellikler sunulabilir. Bu durumda &#252;cretli &#246;zelliklere &#246;zel &#351;artlar ayr&#305;ca duyurulur.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. Kullan&#305;m kurallar&#305;</h3><p class="mb-3">Siteyi kullan&#305;rken &#351;unlar&#305; yapmamay&#305; kabul edersin:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Siteye zarar verecek, a&#351;&#305;r&#305; y&#252;k bindirecek veya g&#252;venli&#287;ini a&#351;maya &#231;al&#305;&#351;acak i&#351;lemler</li><li>Yorum veya mesajlarda hakaret, nefret s&#246;ylemi, spam ya da yasa d&#305;&#351;&#305; i&#231;erik payla&#351;mak</li><li>Sitenin i&#231;eri&#287;ini toplu olarak kopyalay&#305;p kendi i&#231;eri&#287;inmi&#351; gibi yay&#305;nlamak</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. Fikri m&#252;lkiyet</h3><p class="mb-3">Sitenin tasar&#305;m&#305;, &#246;zg&#252;n metinleri, i&#351; modeli ve prompt rehberleri gibi i&#231;erikleri <span class="lgSite">AI Rehberi</span> y&#246;netimine aittir. Kaynak g&#246;stererek k&#305;sa al&#305;nt&#305; yapabilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. Sorumlulu&#287;un s&#305;n&#305;r&#305;</h3><p class="mb-3">Site &#8220;oldu&#287;u gibi&#8221; sunulur. Sitenin kesintisiz veya hatas&#305;z &#231;al&#305;&#351;aca&#287;&#305;n&#305; garanti etmeyiz. Sitedeki bilgilere dayanarak ald&#305;&#287;&#305;n kararlardan ve &#252;&#231;&#252;nc&#252; taraf ara&#231;lar&#305;n kullan&#305;m&#305;ndan do&#287;abilecek zararlardan, yasalar&#305;n izin verdi&#287;i &#246;l&#231;&#252;de sorumlu de&#287;iliz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">8. De&#287;i&#351;iklikler ve uygulanacak hukuk</h3><p class="mb-3">Bu &#351;artlar&#305; gerekti&#287;inde g&#252;ncelleyebiliriz; g&#252;ncel h&#226;li her zaman bu sayfadad&#305;r. Bu &#351;artlar T&#252;rkiye Cumhuriyeti hukukuna tabidir. Sorular&#305;n&#305; <span class="lgContact"></span> iletebilirsin.</p></section><section id="lg-cerezler" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">&#199;erez Politikas&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">K&#305;sa cevap: <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span> &#231;erez kullanmaz.</strong></p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Taray&#305;c&#305; depolamas&#305;</h3><p class="mb-3">&#199;erez yerine, hesab&#305;n&#305;, favorilerini ve tema tercihini hat&#305;rlamak i&#231;in taray&#305;c&#305;n&#305;n yerel depolama alan&#305;n&#305; (localStorage) kullan&#305;r&#305;z. Bu bilgiler yaln&#305;zca senin cihaz&#305;nda kal&#305;r, bize g&#246;nderilmez ve reklam ya da takip amac&#305;yla kullan&#305;lmaz. Sitenin bu &#246;zellikleri sunabilmesi i&#231;in gereklidir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. &#304;statistik</h3><p class="mb-3">Ziyaret istatistikleri i&#231;in kulland&#305;&#287;&#305;m&#305;z Cloudflare Web Analytics &#231;erezsiz &#231;al&#305;&#351;&#305;r ve seni ki&#351;isel olarak tan&#305;mlamaz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#220;&#231;&#252;nc&#252; taraf hizmetler</h3><p class="mb-3">Tasar&#305;m ve g&#246;rseller i&#231;in dosya y&#252;kledi&#287;imiz hizmetler (Google Fonts, Tailwind CDN, Unsplash gibi) kendi teknik kay&#305;tlar&#305;n&#305; tutabilir. Bu hizmetler kendi politikalar&#305;na tabidir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Nas&#305;l silebilirim?</h3><p class="mb-3">Taray&#305;c&#305;n&#305;n ayarlar&#305;ndan bu siteye ait &#8220;site verilerini&#8221; sildi&#287;inde t&#252;m bilgiler kald&#305;r&#305;l&#305;r. Bunu yaparsan hesab&#305;n ve favorilerin de silinir.</p></section><p class="mt-8 pt-4 border-t dark:border-gray-800 border-gray-200 text-[11px] text-gray-400">Bu metinler genel bilgilendirme amac&#305;yla haz&#305;rlanm&#305;&#351;t&#305;r.</p></div>
+    <div class="rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl p-6 sm:p-8 text-sm leading-relaxed dark:text-gray-300 text-gray-700"><section id="lg-gizlilik" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">Gizlilik Politikas&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">Bu politika, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> (bundan sonra &#8220;Site&#8221;) kullan&#305;l&#305;rken hangi bilgilerin nerede tutuldu&#287;unu ve nas&#305;l kullan&#305;ld&#305;&#287;&#305;n&#305; a&#231;&#305;klar. K&#305;sa &#246;zet: <strong class="dark:text-gray-100 text-gray-900">Hesap bilgilerin, favorilerin ve ayarlar&#305;n sunucumuza g&#246;nderilmez; yaln&#305;zca senin taray&#305;c&#305;nda saklan&#305;r.</strong></p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Senin taray&#305;c&#305;nda saklanan bilgiler</h3><p class="mb-3">Site, a&#351;a&#287;&#305;daki bilgileri taray&#305;c&#305;n&#305;n yerel depolama alan&#305;nda (localStorage) tutar. Bu bilgiler bize ya da ba&#351;ka bir sunucuya iletilmez; taray&#305;c&#305; verilerini sildi&#287;inde kal&#305;c&#305; olarak silinir:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Hesap olu&#351;turursan: ad soyad, e-posta adresi, ilgi alanlar&#305;n, profil notun ve se&#231;ti&#287;in avatar</li><li>&#350;ifren: d&#252;z metin olarak de&#287;il, cihaz&#305;nda PBKDF2 y&#246;ntemiyle &#351;ifrelenmi&#351; (hash) h&#226;liyle</li><li>Favoriye ekledi&#287;in ara&#231;lar, eklentiler ve e-kitaplar; son bakt&#305;&#287;&#305;n ara&#231;lar</li><li>Tema tercihin (a&#231;&#305;k/koyu) ve ara&#231; sayfalar&#305;na yazd&#305;&#287;&#305;n yorumlar</li></ul><p class="mb-3">Hesab&#305;n &#351;u an yaln&#305;zca kulland&#305;&#287;&#305;n taray&#305;c&#305;da ge&#231;erlidir. Ba&#351;ka bir cihazdan giri&#351; yapamazs&#305;n ve taray&#305;c&#305; verilerini temizlersen hesab&#305;n da silinir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Ziyaret istatistikleri</h3><p class="mb-3">Sitenin ka&#231; ki&#351;i taraf&#305;ndan ve hangi sayfalar&#305;n&#305;n ziyaret edildi&#287;ini g&#246;rmek i&#231;in <strong class="dark:text-gray-100 text-gray-900">Cloudflare Web Analytics</strong> kullan&#305;yoruz. Bu hizmet &#231;erez kullanmaz, seni ki&#351;isel olarak tan&#305;mlamaz ve ziyaret&#231;ileri tek tek takip etmez. Biz yaln&#305;zca toplam ziyaret say&#305;s&#305;, g&#246;r&#252;nt&#252;lenen sayfalar, &#252;lke, taray&#305;c&#305; ve cihaz t&#252;r&#252; gibi <strong class="dark:text-gray-100 text-gray-900">toplu ve anonim</strong> say&#305;lar&#305; g&#246;r&#252;r&#252;z.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. Bar&#305;nd&#305;rma ve &#252;&#231;&#252;nc&#252; taraf hizmetler</h3><p class="mb-3">Site <strong class="dark:text-gray-100 text-gray-900">GitHub Pages</strong> &#252;zerinde yay&#305;nlan&#305;r. Bir web sayfas&#305; a&#231;t&#305;&#287;&#305;nda taray&#305;c&#305;n, sayfay&#305; sunan sunuculara IP adresin ve taray&#305;c&#305; bilgilerin gibi teknik bilgileri teknik zorunluluk gere&#287;i iletir. Sitenin d&#252;zg&#252;n g&#246;r&#252;nmesi i&#231;in a&#351;a&#287;&#305;daki hizmetlerden dosya y&#252;klenir; bu hizmetler kendi gizlilik politikalar&#305;na tabidir:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>GitHub Pages (sitenin bar&#305;nd&#305;r&#305;lmas&#305;)</li><li>Cloudflare (ziyaret istatistikleri)</li><li>Tailwind CSS CDN ve Google Fonts (tasar&#305;m ve yaz&#305; tipleri)</li><li>Google favicon servisi, Simple Icons ve Unsplash (ara&#231; logolar&#305; ve g&#246;rseller)</li><li>rss2json (yaln&#305;zca kendi haber listemiz y&#252;klenemezse yedek haber kayna&#287;&#305; olarak)</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. &#214;neri ve &#351;ik&#226;yet mesajlar&#305;</h3><p class="mb-3">Profil sayfas&#305;ndaki &#214;neri / &#350;ik&#226;yet formunu kulland&#305;&#287;&#305;nda mesaj&#305;n <strong class="dark:text-gray-100 text-gray-900">kendi e-posta uygulaman</strong> &#252;zerinden bize g&#246;nderilir. Bu durumda e-posta adresini ve yazd&#305;&#287;&#305;n mesaj&#305; g&#246;r&#252;r&#252;z. Bu bilgileri yaln&#305;zca mesaj&#305;na cevap vermek ve Siteyi geli&#351;tirmek i&#231;in kullan&#305;r&#305;z; &#252;&#231;&#252;nc&#252; ki&#351;ilerle payla&#351;may&#305;z ve satmay&#305;z.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. D&#305;&#351; ba&#287;lant&#305;lar</h3><p class="mb-3">Site, listelenen yapay zeka ara&#231;lar&#305;n&#305;n, haber kaynaklar&#305;n&#305;n ve di&#287;er sitelerin ba&#287;lant&#305;lar&#305;n&#305; i&#231;erir. Bu ba&#287;lant&#305;lara t&#305;klad&#305;&#287;&#305;nda o sitenin kendi gizlilik politikas&#305; ge&#231;erli olur; o sitelerin uygulamalar&#305;ndan sorumlu de&#287;iliz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. &#199;ocuklar</h3><p class="mb-3">Site genel bilgilendirme ama&#231;l&#305;d&#305;r. 18 ya&#351;&#305;ndan k&#252;&#231;&#252;ksen hesap olu&#351;turmadan &#246;nce bir velinden izin alman&#305; &#246;neririz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. De&#287;i&#351;iklikler ve ileti&#351;im</h3><p class="mb-3">Bu politikay&#305; gerekti&#287;inde g&#252;ncelleyebiliriz; g&#252;ncel h&#226;li her zaman bu sayfadad&#305;r. Sorular&#305;n&#305; <span class="lgContact"></span> iletebilirsin.</p></section><section id="lg-kvkk" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">KVKK Ayd&#305;nlatma Metni</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">6698 say&#305;l&#305; Ki&#351;isel Verilerin Korunmas&#305; Kanunu (&#8220;KVKK&#8221;) kapsam&#305;nda, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> ziyaret&#231;ilerini ve kullan&#305;c&#305;lar&#305;n&#305; bilgilendirmek amac&#305;yla bu metin haz&#305;rlanm&#305;&#351;t&#305;r.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Veri sorumlusu</h3><p class="mb-3">Veri sorumlusu: <strong class="dark:text-gray-100 text-gray-900"><span class="lgOwner"></span></strong>. Bize <span class="lgContact"></span> ula&#351;abilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Hangi ki&#351;isel veriler i&#351;leniyor?</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li><strong class="dark:text-gray-100 text-gray-900">Hesap bilgileri</strong> (ad soyad, e-posta, ilgi alanlar&#305;): Yaln&#305;zca senin taray&#305;c&#305;nda saklan&#305;r, taraf&#305;m&#305;za aktar&#305;lmaz.</li><li><strong class="dark:text-gray-100 text-gray-900">&#304;leti&#351;im bilgileri</strong> (e-posta adresin ve mesaj i&#231;eri&#287;in): Yaln&#305;zca &#246;neri/&#351;ik&#226;yet i&#231;in bize e-posta g&#246;nderdi&#287;inde taraf&#305;m&#305;za ula&#351;&#305;r.</li><li><strong class="dark:text-gray-100 text-gray-900">Teknik veriler</strong> (IP adresi, taray&#305;c&#305; ve cihaz bilgisi): Sayfa a&#231;&#305;l&#305;rken bar&#305;nd&#305;rma ve altyap&#305; sa&#287;lay&#305;c&#305;lar&#305;na teknik zorunluluk gere&#287;i iletilir. Ziyaret istatistikleri anonim ve toplu olarak tutulur.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#304;&#351;leme ama&#231;lar&#305;</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Siteyi sunmak, g&#252;venli&#287;ini ve d&#252;zg&#252;n &#231;al&#305;&#351;mas&#305;n&#305; sa&#287;lamak</li><li>&#214;neri ve &#351;ik&#226;yetlerine cevap vermek</li><li>Toplu ziyaret istatistikleriyle Siteyi geli&#351;tirmek</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Hukuki sebepler</h3><p class="mb-3">Ki&#351;isel verilerin KVKK madde 5/2 kapsam&#305;nda; bir s&#246;zle&#351;menin kurulmas&#305; veya ifas&#305;yla do&#287;rudan ilgili olmas&#305;, veri sorumlusunun hukuki y&#252;k&#252;ml&#252;l&#252;&#287;&#252;n&#252; yerine getirmesi ve temel hak ve &#246;zg&#252;rl&#252;klerine zarar vermemek kayd&#305;yla veri sorumlusunun me&#351;ru menfaati hukuki sebeplerine dayan&#305;larak i&#351;lenir. Hesap bilgilerinin taray&#305;c&#305;nda saklanmas&#305; i&#351;e kay&#305;t s&#305;ras&#305;nda verdi&#287;in onaya dayan&#305;r.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. Aktar&#305;m</h3><p class="mb-3">Ki&#351;isel verilerini satmay&#305;z ve pazarlama amac&#305;yla kimseyle payla&#351;may&#305;z. Site, yurt d&#305;&#351;&#305;nda sunucular&#305; bulunan hizmet sa&#287;lay&#305;c&#305;lar (GitHub, Cloudflare, Google gibi) &#252;zerinden &#231;al&#305;&#351;t&#305;&#287;&#305; i&#231;in sayfa a&#231;&#305;l&#305;rken olu&#351;an teknik veriler bu sa&#287;lay&#305;c&#305;lar&#305;n sunucular&#305;na iletilebilir. Yasal bir zorunluluk olmas&#305; h&#226;linde yetkili kamu kurumlar&#305;yla payla&#351;&#305;m yap&#305;labilir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. Saklama s&#252;resi</h3><p class="mb-3">Taray&#305;c&#305;nda tutulan bilgiler sen silene kadar cihaz&#305;nda kal&#305;r. Bize g&#246;nderdi&#287;in e-postalar, talebin sonu&#231;land&#305;ktan sonra en fazla 2 y&#305;l saklan&#305;r ve ard&#305;ndan silinir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. Haklar&#305;n (KVKK madde 11)</h3><p class="mb-3">Bize ba&#351;vurarak; ki&#351;isel verilerinin i&#351;lenip i&#351;lenmedi&#287;ini &#246;&#287;renme, i&#351;lenmi&#351;se bilgi talep etme, i&#351;lenme amac&#305;n&#305; ve amac&#305;na uygun kullan&#305;l&#305;p kullan&#305;lmad&#305;&#287;&#305;n&#305; &#246;&#287;renme, aktar&#305;ld&#305;&#287;&#305; &#252;&#231;&#252;nc&#252; ki&#351;ileri bilme, eksik veya yanl&#305;&#351; i&#351;lenmi&#351;se d&#252;zeltilmesini, KVKK'daki &#351;artlar &#231;er&#231;evesinde silinmesini veya yok edilmesini isteme, bu i&#351;lemlerin aktar&#305;lan &#252;&#231;&#252;nc&#252; ki&#351;ilere bildirilmesini isteme, otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonu&#231; &#231;&#305;kmas&#305;na itiraz etme ve kanuna ayk&#305;r&#305; i&#351;leme nedeniyle zarara u&#287;raman h&#226;linde zarar&#305;n giderilmesini talep etme haklar&#305;na sahipsin.</p><p class="mb-3">Ba&#351;vurular&#305;n&#305; <span class="lgContact"></span> iletebilirsin. Ba&#351;vurun en ge&#231; 30 g&#252;n i&#231;inde &#252;cretsiz olarak sonu&#231;land&#305;r&#305;l&#305;r.</p></section><section id="lg-kullanim-sartlari" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">Kullan&#305;m &#350;artlar&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">Bu &#351;artlar, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> (bundan sonra &#8220;Site&#8221;) kullan&#305;m&#305;n&#305; d&#252;zenler. Siteyi kullanarak bu &#351;artlar&#305; kabul etmi&#351; say&#305;l&#305;rs&#305;n.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Sitenin amac&#305;</h3><p class="mb-3">Site, yapay zeka ara&#231;lar&#305;, haberleri, eklentileri, e-kitaplar&#305; ve i&#351; modelleri hakk&#305;nda <strong class="dark:text-gray-100 text-gray-900">&#252;cretsiz ve genel bilgilendirme</strong> ama&#231;l&#305; bir rehberdir. Buradaki i&#231;erikler yat&#305;r&#305;m, hukuk, vergi veya mesleki dan&#305;&#351;manl&#305;k de&#287;ildir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Bilgilerin do&#287;rulu&#287;u</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Ara&#231; listeleri, a&#231;&#305;klamalar ve haberlerin bir k&#305;sm&#305; otomatik sistemlerle toplan&#305;r ve yapay zeka yard&#305;m&#305;yla T&#252;rk&#231;eye &#231;evrilir. Bu nedenle hatal&#305;, eksik veya g&#252;ncelli&#287;ini yitirmi&#351; bilgi bulunabilir.</li><li>Ara&#231;lar&#305;n fiyatlar&#305;, &#246;zellikleri ve kullan&#305;m ko&#351;ullar&#305; ilgili &#351;irketler taraf&#305;ndan haber verilmeden de&#287;i&#351;tirilebilir. Bir arac&#305; kullanmadan veya sat&#305;n almadan &#246;nce bilgileri her zaman arac&#305;n kendi sitesinden kontrol et.</li><li>&#304;&#351; modelleri b&#246;l&#252;m&#252;ndeki kazan&#231; &#246;rnekleri garanti de&#287;ildir; sonu&#231;lar ki&#351;iden ki&#351;iye b&#252;y&#252;k farkl&#305;l&#305;k g&#246;sterir.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#220;&#231;&#252;nc&#252; taraf siteler ve markalar</h3><p class="mb-3">Sitede listelenen ara&#231;lar ve ba&#287;lant&#305; verilen siteler bize ait de&#287;ildir; onlar&#305; kullan&#305;rken o sitelerin kendi &#351;artlar&#305; ve gizlilik politikalar&#305; ge&#231;erlidir. Sitede ge&#231;en marka, logo ve &#252;r&#252;n adlar&#305; sahiplerine aittir ve yaln&#305;zca tan&#305;t&#305;m ve bilgilendirme amac&#305;yla kullan&#305;l&#305;r. Bir markan&#305;n sahibiysen ve i&#231;eri&#287;in kald&#305;r&#305;lmas&#305;n&#305; ya da d&#252;zeltilmesini istiyorsan bize ula&#351;abilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Hesaplar</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Hesab&#305;n yaln&#305;zca kulland&#305;&#287;&#305;n taray&#305;c&#305;da saklan&#305;r. Taray&#305;c&#305; verilerini silersen hesab&#305;n, favorilerin ve ayarlar&#305;n geri getirilemez &#351;ekilde silinir.</li><li>&#350;ifreni g&#252;vende tutmak senin sorumlulu&#287;undad&#305;r.</li><li>Sitede ileride &#252;cretli (premium) &#246;zellikler sunulabilir. Bu durumda &#252;cretli &#246;zelliklere &#246;zel &#351;artlar ayr&#305;ca duyurulur.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. Kullan&#305;m kurallar&#305;</h3><p class="mb-3">Siteyi kullan&#305;rken &#351;unlar&#305; yapmamay&#305; kabul edersin:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Siteye zarar verecek, a&#351;&#305;r&#305; y&#252;k bindirecek veya g&#252;venli&#287;ini a&#351;maya &#231;al&#305;&#351;acak i&#351;lemler</li><li>Yorum veya mesajlarda hakaret, nefret s&#246;ylemi, spam ya da yasa d&#305;&#351;&#305; i&#231;erik payla&#351;mak</li><li>Sitenin i&#231;eri&#287;ini toplu olarak kopyalay&#305;p kendi i&#231;eri&#287;inmi&#351; gibi yay&#305;nlamak</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. Fikri m&#252;lkiyet</h3><p class="mb-3">Sitenin tasar&#305;m&#305;, &#246;zg&#252;n metinleri, i&#351; modeli ve prompt rehberleri gibi i&#231;erikleri <span class="lgSite">AI Rehberi</span> y&#246;netimine aittir. Kaynak g&#246;stererek k&#305;sa al&#305;nt&#305; yapabilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. Sorumlulu&#287;un s&#305;n&#305;r&#305;</h3><p class="mb-3">Site &#8220;oldu&#287;u gibi&#8221; sunulur. Sitenin kesintisiz veya hatas&#305;z &#231;al&#305;&#351;aca&#287;&#305;n&#305; garanti etmeyiz. Sitedeki bilgilere dayanarak ald&#305;&#287;&#305;n kararlardan ve &#252;&#231;&#252;nc&#252; taraf ara&#231;lar&#305;n kullan&#305;m&#305;ndan do&#287;abilecek zararlardan, yasalar&#305;n izin verdi&#287;i &#246;l&#231;&#252;de sorumlu de&#287;iliz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">8. De&#287;i&#351;iklikler ve uygulanacak hukuk</h3><p class="mb-3">Bu &#351;artlar&#305; gerekti&#287;inde g&#252;ncelleyebiliriz; g&#252;ncel h&#226;li her zaman bu sayfadad&#305;r. Bu &#351;artlar T&#252;rkiye Cumhuriyeti hukukuna tabidir. Sorular&#305;n&#305; <span class="lgContact"></span> iletebilirsin.</p></section><section id="lg-cerezler" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">&#199;erez Politikas&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">K&#305;sa cevap: <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span> &#231;erez kullanmaz.</strong></p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Taray&#305;c&#305; depolamas&#305;</h3><p class="mb-3">&#199;erez yerine, hesab&#305;n&#305;, favorilerini ve tema tercihini hat&#305;rlamak i&#231;in taray&#305;c&#305;n&#305;n yerel depolama alan&#305;n&#305; (localStorage) kullan&#305;r&#305;z. Bu bilgiler yaln&#305;zca senin cihaz&#305;nda kal&#305;r, bize g&#246;nderilmez ve reklam ya da takip amac&#305;yla kullan&#305;lmaz. Sitenin bu &#246;zellikleri sunabilmesi i&#231;in gereklidir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. &#304;statistik</h3><p class="mb-3">Ziyaret istatistikleri i&#231;in kulland&#305;&#287;&#305;m&#305;z Cloudflare Web Analytics &#231;erezsiz &#231;al&#305;&#351;&#305;r ve seni ki&#351;isel olarak tan&#305;mlamaz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#220;&#231;&#252;nc&#252; taraf hizmetler</h3><p class="mb-3">Tasar&#305;m ve g&#246;rseller i&#231;in dosya y&#252;kledi&#287;imiz hizmetler (Google Fonts, Tailwind CDN, Unsplash gibi) kendi teknik kay&#305;tlar&#305;n&#305; tutabilir. Bu hizmetler kendi politikalar&#305;na tabidir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Nas&#305;l silebilirim?</h3><p class="mb-3">Taray&#305;c&#305;n&#305;n ayarlar&#305;ndan bu siteye ait &#8220;site verilerini&#8221; sildi&#287;inde t&#252;m bilgiler kald&#305;r&#305;l&#305;r. Bunu yaparsan hesab&#305;n ve favorilerin de silinir.</p></section><p class="mt-8 pt-4 border-t dark:border-gray-800 border-gray-200 text-[11px] text-gray-400">Bu metinler genel bilgilendirme amac&#305;yla haz&#305;rlanm&#305;&#351;t&#305;r.</p></div>
   </div>
 </main>
 
@@ -481,16 +500,16 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
   </div>
 </div>
 
-<button id="asstBtn" onclick="toggleAssistant()" class="fixed bottom-5 right-5 z-40 flex items-center gap-2 px-4 py-3 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-xs shadow-2xl shadow-purple-600/40 hover:scale-105 transition">&#129302; <span class="hidden sm:inline">AI Asistan</span></button>
+<button id="asstBtn" onclick="toggleAssistant()" class="fixed bottom-5 right-5 z-40 flex items-center gap-2 px-4 h-12 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs shadow-2xl shadow-purple-600/40 transition"><span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm">?</span><span class="hidden sm:inline">Yard&#305;m</span></button>
 <div id="asstPanel" class="hidden fixed bottom-5 right-5 z-50 w-[calc(100vw-2.5rem)] sm:w-96 h-[32rem] max-h-[85vh] flex flex-col rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-2xl overflow-hidden">
-  <div class="px-4 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-between">
-    <div><div class="font-extrabold text-sm">&#129302; AI Rehberi Asistan&#305;</div><div class="text-[11px] opacity-80">Ara&#231; &#246;ner, siteyi anlat, destek ol</div></div>
+  <div class="px-4 py-3 bg-purple-600 text-white flex items-center justify-between">
+    <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">&#128172;</span><div><div class="font-extrabold text-sm">Yard&#305;m Merkezi</div><div class="text-[11px] opacity-85 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>Sorular&#305;n&#305; hemen yan&#305;tlar</div></div></div>
     <button onclick="toggleAssistant()" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 font-bold">&#10005;</button>
   </div>
   <div id="asstMsgs" class="flex-1 overflow-y-auto p-4 space-y-3 text-xs"></div>
   <div id="asstChips" class="px-3 pb-2 flex gap-1.5 overflow-x-auto"></div>
   <form onsubmit="asstSend(event)" class="p-3 border-t dark:border-gray-800 border-gray-200 flex gap-2">
-    <input id="asstInput" type="text" maxlength="300" autocomplete="off" placeholder="Bir &#351;ey yaz: &#246;r. logo yapmak istiyorum" class="fld flex-1">
+    <input id="asstInput" type="text" maxlength="300" autocomplete="off" placeholder="Sorunu yaz: &#246;r. favorilerim nerede?" class="fld flex-1">
     <button type="submit" class="px-4 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs">G&#246;nder</button>
   </form>
 </div>
@@ -507,10 +526,6 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
     <div class="p-1.5">
       <button onclick="pmGit('profil')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white transition">
         <span>&#128100;</span><span class="flex-1 text-left">Profilim</span><span>&#8594;</span>
-      </button>
-      <button onclick="pmGit('favoriler')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-rose-600 hover:text-white transition">
-        <span>&#10084;&#65039;</span><span class="flex-1 text-left">Favorilerim</span>
-        <span id="pmFavCount" class="px-1.5 py-0.5 rounded-full text-[10px] dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
       </button>
       <button onclick="pmGit('oneri')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-sky-600 hover:text-white transition">
         <span>&#128172;</span><span class="flex-1 text-left">&#214;neri / &#350;ikayet</span><span>&#8594;</span>
@@ -578,7 +593,7 @@ var TOOLS = [
 
 var appState = {
   allTools: [], favorites: [], favPlugins: [], favEbooks: [], currentCat: 'all', currentPrice: 'all', visibleLimit: 30,
-  activePage: 'directory', bizTab: 'gelir', bizAsc: true, plugins: [], pluginCat: 'Tumu', pluginLimit: 30, ebooks: [], ebookCat: 'Tumu', liveNewsList: [], currentActiveToolId: null, reviewsDB: {},
+  activePage: 'directory', bizTab: 'gelir', bizAsc: true, plugins: [], pluginCat: 'T\u00fcm\u00fc', pluginLimit: 30, ebooks: [], ebookCat: 'T\u00fcm\u00fc', liveNewsList: [], currentActiveToolId: null, reviewsDB: {},
 };
 
 /* ---------- Yard\u0131mc\u0131lar ---------- */
@@ -625,7 +640,7 @@ function fillTile(tile, brand, title, cls) {
   var showFav = function() {
     if (!brand.fav) return letter();
     tile.style.background = brand.bg;
-    var im = document.createElement('img'); im.className = cls.img + ' rounded-2xl bg-white p-2 shadow-xl'; im.alt = title;
+    var im = document.createElement('img'); im.className = cls.img + (/w-(7|9|12) /.test(cls.img + ' ') ? ' rounded-lg bg-white p-1' : ' rounded-2xl bg-white p-2 shadow-xl'); im.alt = title;
     im.onerror = letter; im.onload = function() { if (im.naturalWidth < 40) letter(); };
     im.src = brand.fav; tile.innerHTML = ''; tile.appendChild(im);
   };
@@ -664,34 +679,38 @@ function buildDatabase() {
 }
 
 /* ---------- Kartlar ---------- */
+function fiyatPill(p) {
+  var n = norm(p || '');
+  var c = n.indexOf('freemium') > -1 ? 'pill-freemium' : (n.indexOf('ucretsiz') > -1 || n.indexOf('acik') > -1) ? 'pill-free' : 'pill-paid';
+  return '<span class="pill ' + c + '">' + esc(p || '') + '</span>';
+}
 function renderCardHTML(item, featured) {
   var isFav = appState.favorites.indexOf(item.id) > -1;
   var vip = featured || item.isVip;
+  var cm = catMeta(item.category);
   var card = document.createElement('div');
-  card.className = vip
-    ? "rounded-3xl flex flex-col justify-between bg-gradient-to-br from-amber-500/15 via-white to-white dark:via-slate-900 dark:to-slate-900 border border-amber-500/50 shadow-xl overflow-hidden hover:border-amber-500/80 transition duration-300 group cursor-pointer"
-    : "rounded-3xl flex flex-col justify-between dark:bg-gray-900/90 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500 transition duration-300 group shadow-md overflow-hidden cursor-pointer";
+  card.className = 'tcard group relative flex flex-col rounded-2xl p-5 cursor-pointer border ' +
+    (vip ? 'dark:bg-gray-900 bg-white border-amber-500/40 hover:border-amber-500/80 shadow-lg shadow-amber-500/5'
+         : 'dark:bg-gray-900/70 bg-white dark:border-gray-800 border-gray-200 hover:border-purple-500/70 hover:shadow-xl hover:shadow-purple-500/5');
   card.onclick = function() { openToolDetail(item.id); };
   card.innerHTML =
-    '<div><div class="h-40 w-full relative overflow-hidden bg-gray-900">' +
-      (item.hasOg ? '<img src="' + esc(item.image) + '" alt="' + esc(item.title) + '" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">' : '') +
-      '<div class="logo-tile absolute inset-0 flex items-center justify-center' + (item.hasOg ? ' hidden' : '') + '" style="background:' + esc(item.brand.bg) + '">' +
-        '</div>' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-gray-950 via-transparent to-transparent"></div>' +
-      '<div class="absolute top-3 left-3 right-3 flex justify-between items-center">' +
-        (featured ? '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-amber-500 text-black">\ud83d\udd25 \u00d6nerilen</span>'
-                  : '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-black/60 backdrop-blur-md text-white border border-white/20">' + esc(item.price) + '</span>') +
-        '<button data-fav="' + item.id + '" class="w-9 h-9 rounded-full bg-black/60 backdrop-blur-md flex items-center justify-center text-sm transition hover:bg-black">' + (isFav ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>' +
-      '</div></div>' +
-      '<div class="p-6"><div class="flex justify-between items-center mb-2">' +
-        '<span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-gradient-to-r ' + catMeta(item.category)[3] + ' text-white">' + catMeta(item.category)[2] + ' ' + esc(catMeta(item.category)[1]) + '</span>' +
-        '<span class="text-[11px] text-gray-400 font-bold">' + (item.isNew ? '\ud83c\udd95 Yeni \u00b7 ' : '') + esc(item.price) + '</span></div>' +
-        '<h3 class="text-lg font-bold mb-2 dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(item.title) + '</h3>' +
-        '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed line-clamp-2">' + esc(item.desc) + '</p></div></div>' +
-    '<div class="px-6 pb-6"><div class="w-full text-center py-2.5 dark:bg-gray-800/50 bg-gray-100 group-hover:bg-purple-600 dark:text-gray-200 text-gray-700 group-hover:text-white rounded-2xl text-xs font-bold transition">Detaylar\u0131 \u0130ncele & Yorumlar \u2197</div></div>';
-  var tile = card.querySelector('.logo-tile');
-  if (item.hasOg) { var im = card.querySelector('img'); im.onerror = function() { im.style.display = 'none'; tile.classList.remove('hidden'); }; }
-  fillTile(tile, item.brand, item.title, { img: 'w-20 h-20 object-contain', letter: 'text-6xl' });
+    '<div class="flex items-start gap-3.5">' +
+      '<div class="logo-tile w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 overflow-hidden" style="background:' + esc(item.brand.bg) + '"></div>' +
+      '<div class="min-w-0 flex-1 pt-0.5">' +
+        '<h3 class="font-bold text-[15px] leading-snug dark:text-white text-gray-900 group-hover:text-purple-400 transition truncate">' + esc(item.title) + '</h3>' +
+        '<div class="mt-1 text-[12px] text-gray-500 truncate">' + cm[2] + ' ' + esc(cm[1]) + '</div>' +
+      '</div>' +
+      '<button data-fav="' + item.id + '" title="Favorilere ekle" class="w-9 h-9 -mt-1 -mr-1 rounded-full flex items-center justify-center text-sm transition dark:hover:bg-gray-800 hover:bg-gray-100">' + (isFav ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>' +
+    '</div>' +
+    '<p class="mt-3.5 text-[13px] leading-relaxed dark:text-gray-400 text-gray-600 line-clamp-2 min-h-[2.6rem]">' + esc(String(item.desc || '').split('\n')[0]) + '</p>' +
+    '<div class="mt-4 flex items-center gap-1.5 flex-wrap">' +
+      fiyatPill(item.price) +
+      (vip ? '<span class="pill pill-pick">\u2605 Edit\u00f6r\u00fcn se\u00e7imi</span>' : '') +
+      (item.isNew ? '<span class="pill pill-new">Yeni</span>' : '') +
+      (item.stars ? '<span class="pill pill-paid">\u2b50 ' + kisaSayi(item.stars) + '</span>' : '') +
+      '<span class="ml-auto text-[12px] font-semibold text-gray-500 group-hover:text-purple-400 transition">\u0130ncele \u2192</span>' +
+    '</div>';
+  fillTile(card.querySelector('.logo-tile'), item.brand, item.title, { img: 'w-9 h-9 object-contain', letter: 'text-2xl' });
   card.querySelector('[data-fav]').onclick = function(e) { toggleFavorite(item.id, e); };
   return card;
 }
@@ -1025,7 +1044,7 @@ function renderExamples() {
   EXAMPLES.forEach(function(t) {
     var b = document.createElement('button'); b.type = 'button';
     b.className = 'px-3 py-1.5 rounded-full dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 dark:text-gray-300 text-gray-700 hover:border-purple-500 hover:text-purple-500 transition';
-    b.textContent = '\ud83d\udca1 ' + t; b.onclick = function() { useExample(t); }; box.appendChild(b);
+    b.textContent = t; b.onclick = function() { useExample(t); }; box.appendChild(b);
   });
 }
 function useExample(t) { document.getElementById('searchInput').value = t; filterTools(); }
@@ -1052,7 +1071,7 @@ function filterTools() {
   updateSearchHint(info);
   var list = appState.allTools.filter(function(item) {
     var pf = (document.getElementById('priceFilter') || {}).value || '';
-    if (pf && item.price !== pf.replace('Ucretsiz', '\u00dccretsiz').replace('Ucretli', '\u00dccretli')) return false;
+    if (pf && item.price !== pf.replace('\u00dccretsiz', '\u00dccretsiz').replace('\u00dccretli', '\u00dccretli')) return false;
     if (appState.currentCat === 'favorites') return appState.favorites.indexOf(item.id) > -1;
     if (appState.currentCat === 'open') return !!item.openSource;
     return appState.currentCat === 'all' || item.category === appState.currentCat;
@@ -1255,15 +1274,15 @@ function pmKonum() {
 function pmYenile() {
   var toplam = appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length;
   var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
-  set('pmFavCount', toplam);
+  document.querySelectorAll('.navFav').forEach(function (e) { e.textContent = toplam; e.className = 'navFav ml-0.5 px-1.5 rounded-full text-[10px] font-bold ' + (toplam ? 'bg-rose-500 text-white' : 'dark:bg-gray-800 bg-gray-200 text-gray-500'); });
   set('pmAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
   set('pmName', profile.loggedIn ? (profile.name || 'Hesabim') : 'Misafir');
-  set('pmSub', profile.loggedIn ? profile.email : 'Giris yapmadin');
+  set('pmSub', profile.loggedIn ? profile.email : 'Giri\u015f yapmad\u0131n');
   var a = document.getElementById('pmAuth');
   if (a) {
     a.innerHTML = profile.loggedIn
-      ? '<span>\ud83d\udeaa</span><span class="flex-1 text-left">Cikis Yap</span>'
-      : '<span>\ud83d\udd11</span><span class="flex-1 text-left">Giris Yap / Kayit Ol</span>';
+      ? '<span>\ud83d\udeaa</span><span class="flex-1 text-left">\u00c7\u0131k\u0131\u015f Yap</span>'
+      : '<span>\ud83d\udd11</span><span class="flex-1 text-left">Giri\u015f Yap / Kay\u0131t Ol</span>';
     a.className = 'w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition ' +
       (profile.loggedIn ? 'text-rose-500 hover:bg-rose-500/10' : 'dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white');
   }
@@ -1323,33 +1342,54 @@ function joinWaitlist(e) {
 // Ger\u00e7ek yapay zeka yan\u0131tlar\u0131 i\u00e7in worker/assistant-worker.js adresini buraya yaz. Bo\u015fsa asistan site i\u00e7i ak\u0131ll\u0131 modda \u00e7al\u0131\u015f\u0131r.
 var ASSISTANT_API_URL = '';
 var asstHistory = [];
-var ASST_CHIPS = ['Video yapmak istiyorum', '\u00dccretsiz logo arac\u0131', 'Premium nedir?', 'Nas\u0131l kay\u0131t olurum?'];
-var FAQ = [
-  [/^(merhaba|selam|slm|hey|gunaydin|iyi aksamlar|iyi gunler|naber|nasilsin)\b/, 'Merhaba! \ud83d\udc4b Ne yapmak istedi\u011fini yaz, sana uygun yapay zeka ara\u00e7lar\u0131n\u0131 bulay\u0131m. \u00d6rne\u011fin: bana bir video yap, logo tasarlamak istiyorum, \u00f6devim i\u00e7in yard\u0131m.'],
-  [/(tesekkur|sagol|saol|eyvallah)/, 'Rica ederim! Ba\u015fka bir \u015fey laz\u0131m olursa buraday\u0131m \ud83d\ude0a'],
-  [/(sen kimsin|adin ne|nesin|kim yapti)/, "Ben AI Rehberi'nin site asistan\u0131y\u0131m. \u0130htiyac\u0131na uygun yapay zeka ara\u00e7lar\u0131n\u0131 bulmana, siteyi kullanmana ve sorun ya\u015farsan destek almana yard\u0131m ederim."],
-  [/\b(premium|uyelik|abonelik|odeme)\b|\bfiyat(i|lari)?\b|\bucret(i)?\b/, 'Sitedeki t\u00fcm ara\u00e7lar\u0131 \u00fccretsiz inceleyebilirsin. Premium \u00fcyelik \u00e7ok yak\u0131nda geliyor; sa\u011f \u00fcstteki PREMIUM d\u00fc\u011fmesinden bekleme listesine kat\u0131labilirsin. \u015eu an \u00f6deme al\u0131nm\u0131yor. Her arac\u0131n kendi fiyat\u0131 ise o arac\u0131n sitesinde belirlenir.'],
-  [/(kayit ol|uye ol|giris yap|hesap|sifre|profil|cikis yap)/, 'Sa\u011f \u00fcstteki Profil d\u00fc\u011fmesine t\u0131klay\u0131p Kay\u0131t Ol sekmesinden hesap a\u00e7abilirsin. Hesab\u0131n \u015fu an yaln\u0131zca kay\u0131t oldu\u011fun taray\u0131c\u0131da saklan\u0131r, ba\u015fka cihazdan giri\u015f yap\u0131lamaz.'],
-  [/favori/, 'Bir arac\u0131n kart\u0131ndaki \ud83e\udd0d simgesine t\u0131klayarak favorilerine ekleyebilirsin. T\u00fcm\u00fcn\u00fc Favorilerim sekmesinde g\u00f6r\u00fcrs\u00fcn.'],
-  [/haber/, '\u00dcstteki AI Haberleri sekmesinde d\u00fcnyadan ve T\u00fcrkiye\u2019den yapay zeka haberlerini T\u00fcrk\u00e7e olarak okuyabilirsin. Haberler otomatik g\u00fcncellenir.'],
-  [/(arac ekle|araci ekle|site ekle|eklenmesini|kendi aracim|aracimi)/, 'Yeni \u00e7\u0131kan ara\u00e7lar sisteme otomatik eklenir. Listede eksik bir ara\u00e7 g\u00f6r\u00fcrsen sorun bildir yaz\u0131p bize iletebilirsin.'],
-  [/(hata|bug|calismiyor|bozuk|sorun|sikayet|destek|iletisim|bize ulas)/, 'Sorun ya\u015fad\u0131\u011f\u0131na \u00fcz\u00fcld\u00fcm \ud83d\ude41 Ne oldu\u011funu k\u0131saca anlat: hangi sayfada, ne yap\u0131nca oldu? A\u015fa\u011f\u0131daki d\u00fc\u011fmeyle bize iletebilirsin.', true],
-  [/(nasil calisiyor|site nedir|bu site ne|ne ise yarar)/, 'AI Rehberi, y\u00fczlerce yapay zeka arac\u0131n\u0131 T\u00fcrk\u00e7e olarak ke\u015ffedebilece\u011fin bir dizin. Arama kutusuna ne yapmak istedi\u011fini yaz, uygun ara\u00e7lar\u0131 bulal\u0131m.'],
-  [/(nasil ara|nasil kullan)/, 'Arama kutusuna sade bir c\u00fcmle yazman yeterli: bana bir video yap, logo tasarla, \u00fccretsiz m\u00fczik arac\u0131 gibi. Kategori \u00e7iplerinden de filtreleyebilirsin.']
-];
+var ASST_TOPICS = [['hesap','\ud83d\udc64','Hesap ve giri\u015f'],['favori','\u2764\ufe0f','Favoriler'],['arac','\ud83d\udd0e','Ara\u00e7 bulma'],['premium','\u2b50','Premium'],['gizlilik','\ud83d\udd12','Gizlilik ve verilerim'],['sorun','\ud83d\udc1e','Sorun bildir'],['site','\ud83e\udded','Bu site ne i\u015fe yarar?'],['insan','\u2709\ufe0f','Bize yaz']];
+var HELP = [['hesap', /(kayit|uye ol|giris|hesap|sifre|profil|cikis|oturum)/, 'Hesap a\u00e7mak i\u00e7in sa\u011f \u00fcstteki \ud83d\udc64 butonuna, sonra "Giri\u015f Yap / Kay\u0131t Ol"a bas. Ad, e-posta ve \u015fifre yeterli.\n\nBilmen gereken: Hesab\u0131n \u015fu an yaln\u0131zca kay\u0131t oldu\u011fun taray\u0131c\u0131da saklan\u0131yor. Ba\u015fka cihazdan ayn\u0131 hesapla giri\u015f yapamazs\u0131n, taray\u0131c\u0131 verilerini silersen hesap da silinir.\n\n\u015eifreni unuttuysan \u015fimdilik yeni bir hesap a\u00e7man gerekiyor.', [['Kay\u0131t ol / Giri\u015f yap','giris'],['Profilime git','profil']]],
+  ['favori', /(favori|kalp|kaydet|begendi)/, 'Bir arac\u0131n, eklentinin ya da e-kitab\u0131n kart\u0131ndaki \ud83e\udd0d simgesine bas\u0131nca favorilerine eklenir.\n\nHepsini \u00fcst men\u00fcdeki \u2764\ufe0f Favoriler sekmesinde, ara\u00e7 / eklenti / e-kitap diye ayr\u0131lm\u0131\u015f h\u00e2lde g\u00f6r\u00fcrs\u00fcn. Favoriler i\u00e7in hesap a\u00e7man gerekmez.', [['Favorilerime git','favoriler']]],
+  ['arac', /(arac bul|nasil ara|arama|bulamiyorum|arac oner|hangi arac|ne kullan)/, 'Ana sayfadaki arama kutusuna ne yapmak istedi\u011fini kendi c\u00fcmlenle yazman yeterli. \u00d6rne\u011fin: "bana bir video yap", "\u00fccretsiz logo arac\u0131", "sesimi klonla".\n\nAra\u00e7lar sayfas\u0131nda kategoriye ve fiyata g\u00f6re de filtreleyebilirsin. \u0130stersen ihtiyac\u0131n\u0131 buraya da yazabilirsin, ben de birka\u00e7 ara\u00e7 \u00f6nereyim.', [['Ara\u00e7lar sayfas\u0131','araclar']]],
+  ['premium', /(premium|uyelik|abonelik|odeme|para|ucret|fiyat)/, 'Sitedeki b\u00fct\u00fcn ara\u00e7lar, haberler ve rehberler \u00fccretsiz. Premium \u00fcyelik hen\u00fcz a\u00e7\u0131lmad\u0131, \u015fu an hi\u00e7bir \u00f6deme al\u0131nm\u0131yor.\n\nA\u00e7\u0131ld\u0131\u011f\u0131nda haber almak istersen sa\u011f \u00fcstteki \u2b50 Premium butonundan bekleme listesine kat\u0131labilirsin. Ara\u00e7lar\u0131n kendi fiyatlar\u0131 i\u015fe o arac\u0131n sitesinde belirlenir.', [['Bekleme listesi','premium']]],
+  ['gizlilik', /(gizlilik|kvkk|verilerim|veri|cerez|guvenli|kisisel)/, 'Hesap bilgilerin, favorilerin ve ayarlar\u0131n bize g\u00f6nderilmez, yaln\u0131zca senin taray\u0131c\u0131nda saklan\u0131r. \u015eifren de cihaz\u0131nda \u015fifrelenerek tutulur.\n\nZiyaret istatistikleri \u00e7erezsiz ve anonim. Ayr\u0131nt\u0131lar Gizlilik Politikas\u0131 ve KVKK Ayd\u0131nlatma Metni sayfalar\u0131nda.', [['Gizlilik Politikas\u0131','gizlilik'],['KVKK Metni','kvkk']]],
+  ['sorun', /(hata|bug|calismiyor|acilmiyor|bozuk|sorun|sikayet|yanlis)/, 'Sorun ya\u015fad\u0131\u011f\u0131na \u00fcz\u00fcld\u00fcm \ud83d\ude15 \u00c7o\u011fu sorunu \u015fu iki ad\u0131m \u00e7\u00f6z\u00fcyor:\n1. Sayfay\u0131 yenile (bilgisayarda Ctrl + F5).\n2. H\u00e2l\u00e2 olmuyorsa ba\u015fka bir taray\u0131c\u0131da dene.\n\nD\u00fczelmezse hangi sayfada, ne yap\u0131nca oldu\u011funu bize yaz, inceleyelim.', [['Sorunu bize bildir','oneri']]],
+  ['site', /(site ne|bu site|ne ise yarar|nedir burasi|hakkinda)/, 'Buras\u0131 yapay zeka ara\u00e7lar\u0131n\u0131 T\u00fcrk\u00e7e olarak ke\u015ffedebilece\u011fin bir rehber. Bot her saat yeni \u00e7\u0131kan ara\u00e7lar\u0131 ve haberleri tarar, a\u00e7\u0131klamalar\u0131 T\u00fcrk\u00e7eye \u00e7evirir.\n\nAra\u00e7lar\u0131n yan\u0131nda AI haberleri, yapay zekayla para kazanma yollar\u0131, Claude eklentileri, \u00fccretsiz e-kitaplar ve bir prompt olu\u015fturucu var.', [['Ara\u00e7lara g\u00f6z at','araclar'],['\u0130\u015f modelleri','is']]],
+  ['insan', /(insan|yetkili|biriyle|iletisim|ulas|mail|e-posta|eposta|bize yaz|oneri)/, '\u00d6neri, \u015fik\u00e2yet, hata bildirimi ya da ara\u00e7 ekleme talebin i\u00e7in Profil sayfas\u0131ndaki \u00d6neri / \u015eik\u00e2yet formunu kullanabilirsin. Mesaj\u0131n\u0131 okuyup d\u00f6n\u00fc\u015f yap\u0131yoruz.', [['Formu a\u00e7','oneri']]],
+  ['selam', /^(merhaba|selam|slm|hey|gunaydin|iyi aksamlar|iyi gunler|naber|nasilsin)\b/, 'Merhaba! \ud83d\udc4b Sana nas\u0131l yard\u0131mc\u0131 olabilirim? A\u015fa\u011f\u0131daki konulardan birini se\u00e7ebilir ya da sorunu kendi c\u00fcmlenle yazabilirsin.', []],
+  ['tesekkur', /(tesekkur|sagol|saol|eyvallah)/, 'Rica ederim! Ba\u015fka bir sorun olursa buraday\u0131m \ud83d\ude0a', []],
+  ['kim', /(sen kimsin|adin ne|nesin|bot musun|robot)/, 'Ben bu sitenin yard\u0131m asistan\u0131y\u0131m. Siteyle ilgili sorular\u0131n\u0131 yan\u0131tlar, ihtiyac\u0131na uygun yapay zeka arac\u0131n\u0131 bulmana yard\u0131m ederim.', []]];
+var ASST_ACT = {
+  giris: function () { toggleAssistant(); switchPage('profile'); pmKaydir('authView'); },
+  profil: function () { toggleAssistant(); switchPage('profile'); },
+  favoriler: function () { toggleAssistant(); switchPage('favorites'); },
+  araclar: function () { toggleAssistant(); switchPage('tools'); },
+  is: function () { toggleAssistant(); switchPage('biz'); },
+  premium: function () { toggleAssistant(); openProModal(); },
+  gizlilik: function () { toggleAssistant(); openLegal('gizlilik'); },
+  kvkk: function () { toggleAssistant(); openLegal('kvkk'); },
+  oneri: function () { toggleAssistant(); pmGit('oneri'); }
+};
+function helpByKey(k) { for (var i = 0; i < HELP.length; i++) if (HELP[i][0] === k) return HELP[i]; return null; }
 function toggleAssistant() {
   var p = document.getElementById('asstPanel'), b = document.getElementById('asstBtn'), open = p.classList.contains('hidden');
   p.classList.toggle('hidden', !open); b.classList.toggle('hidden', open);
   if (open) { if (!asstHistory.length) asstWelcome(); document.getElementById('asstInput').focus(); }
 }
 function asstWelcome() {
-  asstAdd('bot', 'Merhaba! Ben AI Rehberi asistan\u0131y\u0131m \ud83d\udc4b\nNe yapmak istedi\u011fini yaz, sana uygun yapay zeka ara\u00e7lar\u0131n\u0131 bulay\u0131m. Siteyle ilgili sorular\u0131na da yard\u0131mc\u0131 olurum.');
-  var box = document.getElementById('asstChips'); box.innerHTML = '';
-  ASST_CHIPS.forEach(function(t) {
+  asstAdd('bot', 'Merhaba! \ud83d\udc4b Ben bu sitenin yard\u0131m asistan\u0131y\u0131m.\nA\u015fa\u011f\u0131dan bir konu se\u00e7 ya da sorunu kendi c\u00fcmlenle yaz. Hangi yapay zeka arac\u0131n\u0131 kullanaca\u011f\u0131n\u0131 bilmiyorsan onu da sorabilirsin.');
+  var msgs = document.getElementById('asstMsgs'), grid = document.createElement('div');
+  grid.className = 'grid grid-cols-2 gap-1.5';
+  ASST_TOPICS.forEach(function (t) {
     var b = document.createElement('button'); b.type = 'button';
-    b.className = 'flex-shrink-0 px-3 py-1.5 rounded-full dark:bg-gray-800 bg-gray-100 dark:text-gray-200 text-gray-700 text-[11px] font-semibold hover:bg-purple-600 hover:text-white transition';
-    b.textContent = t; b.onclick = function() { asstSend(null, t); }; box.appendChild(b);
+    b.className = 'help-topic border dark:border-gray-800 border-gray-200 dark:bg-gray-950 bg-gray-50 dark:text-gray-200 text-gray-800 hover:border-purple-500';
+    b.innerHTML = '<span class="text-base">' + t[1] + '</span><span>' + esc(t[2]) + '</span>';
+    b.onclick = function () { asstKonu(t[0], t[2]); };
+    grid.appendChild(b);
   });
+  msgs.appendChild(grid);
+  var box = document.getElementById('asstChips'); box.innerHTML = '';
+}
+function asstKonu(k, etiket) {
+  asstAdd('user', etiket); asstHistory.push({ role: 'user', content: etiket });
+  var h = helpByKey(k);
+  var r = h ? { text: h[2], tools: [], actions: h[3] } : { text: 'Bu konuda yard\u0131mc\u0131 olamad\u0131m.', tools: [] };
+  asstAdd('bot', r.text, r.tools, r); asstHistory.push({ role: 'assistant', content: r.text });
 }
 function asstAdd(role, text, tools, extra) {
   var msgs = document.getElementById('asstMsgs'), wrap = document.createElement('div'), bot = role === 'bot';
@@ -1367,6 +1407,16 @@ function asstAdd(role, text, tools, extra) {
     b.onclick = function() { toggleAssistant(); openToolDetail(t.id); };
     c.appendChild(h); c.appendChild(m); c.appendChild(d); c.appendChild(b); wrap.appendChild(c);
   });
+  if (extra && extra.actions && extra.actions.length) {
+    var row = document.createElement('div'); row.className = 'mt-2 flex flex-wrap gap-1.5';
+    extra.actions.forEach(function (a) {
+      var ab = document.createElement('button'); ab.type = 'button';
+      ab.className = 'px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold';
+      ab.textContent = a[0] + ' \u2192'; ab.onclick = function () { (ASST_ACT[a[1]] || function () {})(); };
+      row.appendChild(ab);
+    });
+    wrap.appendChild(row);
+  }
   if (extra && extra.support && CONTACT_EMAIL) {
     var lastUser = ''; asstHistory.forEach(function(x) { if (x.role === 'user') lastUser = x.content; });
     var s = document.createElement('a'); s.className = 'mt-2 inline-block px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold';
@@ -1379,10 +1429,12 @@ function asstIntro(q) {
   return (names.length ? names.join(' / ') + ' i\u00e7in sana uygun ara\u00e7lar buldum:' : 'Aramana en yak\u0131n ara\u00e7lar bunlar:') + (info.free ? '\n(\u00dccretsiz se\u00e7enekleri \u00f6ne ald\u0131m.)' : '') + '\n\u0130stersen \u00fccretsiz olsun ya da a\u00e7\u0131k kaynak yazarak daraltabilirim.';
 }
 function asstLocal(q, found) {
-  if (found.length && found[0]._score >= 15) return { text: asstIntro(q), tools: found };
-  for (var i = 0; i < FAQ.length; i++) if (FAQ[i][0].test(q)) return { text: FAQ[i][1], tools: [], support: !!FAQ[i][2] };
+  for (var i = 0; i < HELP.length; i++) if (HELP[i][1].test(q)) {
+    if (HELP[i][0] === 'arac' && found.length && found[0]._score >= 15) break;
+    return { text: HELP[i][2], tools: [], actions: HELP[i][3] };
+  }
   if (found.length && found[0]._score >= 8) return { text: asstIntro(q), tools: found };
-  return { text: 'Tam anlayamad\u0131m \ud83e\udd14 Ne yapmak istedi\u011fini biraz daha a\u00e7\u0131k yazar m\u0131s\u0131n? \u00d6rne\u011fin: video \u00fcretmek, logo tasarlamak, kod yazmak, m\u00fczik yapmak, \u00f6dev i\u00e7in ara\u015ft\u0131rma. Bir sorun bildirmek istersen sorun ya\u015f\u0131yorum yazman yeterli.', tools: [] };
+  return { text: 'Bunu tam anlayamad\u0131m \ud83e\udd14 Sorunu biraz daha a\u00e7\u0131k yazar m\u0131s\u0131n? \u00d6rne\u011fin: "favorilerim nerede", "\u015fifremi unuttum", "video yapmak istiyorum".\n\nCevab\u0131n\u0131 bulamazsan bize do\u011frudan yazabilirsin.', tools: [], actions: [['Bize yaz', 'oneri']] };
 }
 function asstReply(text) {
   var q = norm(text), found = topTools(q, 4, 8);
@@ -1406,29 +1458,33 @@ function asstSend(e, preset) {
 /* ===== Gezinme ===== */
 var NAV = [
   ['directory', 'Ana Sayfa', 'Ana Sayfa', '\u{1F3E0}', 'bg-purple-600'],
-  ['tools', 'AI Araclari', 'Araclar', '\u{1F9F0}', 'bg-purple-600'],
+  ['tools', 'AI Ara\u00e7lar\u0131', 'Ara\u00e7lar', '\u{1F9F0}', 'bg-purple-600'],
   ['news', 'AI Haberleri', 'Haberler', '\u{1F4F0}', 'bg-blue-600'],
   ['biz', 'AI \u0130\u015f Modelleri', '\u0130\u015f', '\ud83d\udcbc', 'bg-green-600'],
   ['plugins', 'Claude Eklentileri', 'Eklenti', '\u{1F9E9}', 'bg-amber-500'],
   ['ebooks', 'E-Kitap', 'E-Kitap', '\u{1F4DA}', 'bg-emerald-600'],
-  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', '\u270d\ufe0f', 'bg-sky-600']
+  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', '\u270d\ufe0f', 'bg-sky-600'],
+  ['favorites', 'Favoriler', 'Favoriler', '\u2764\ufe0f', 'bg-rose-600']
 ];
 function renderNav() {
   var d = document.getElementById('navDesktop'), m = document.getElementById('navMobile');
   if (!d || !m) return;
   d.innerHTML = ''; m.innerHTML = '';
+  var fav = appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length;
   NAV.forEach(function (n) {
     var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail');
+    var rozet = n[0] === 'favorites' ? ' <span class="navFav ml-0.5 px-1.5 rounded-full text-[10px] font-bold ' + (fav ? 'bg-rose-500 text-white' : 'dark:bg-gray-800 bg-gray-200 text-gray-500') + '">' + fav + '</span>' : '';
     var b = document.createElement('button');
-    b.className = 'px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
-    b.textContent = n[3] + ' ' + n[1];
+    b.className = 'navlink ' + (on ? 'dark:bg-white/10 bg-gray-900/5 dark:text-white text-gray-900' : 'dark:text-gray-400 text-gray-600 dark:hover:text-white hover:text-gray-900');
+    var KISA = { tools: 'Ara\u00e7lar', news: 'Haberler', biz: '\u0130\u015f Modelleri', plugins: 'Eklentiler', prompt: 'Prompt' };
+    b.innerHTML = (n[0] === 'favorites' ? '\u2764\ufe0f ' : '') + esc(KISA[n[0]] || n[1]) + rozet;
     b.onclick = function () { switchPage(n[0]); };
     d.appendChild(b);
-    var s = document.createElement('button');
-    s.className = 'flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap ' + (on ? n[4] + ' text-white' : 'dark:text-gray-400 text-gray-600');
-    s.textContent = n[3] + ' ' + n[2];
-    s.onclick = function () { switchPage(n[0]); };
-    m.appendChild(s);
+    var x = document.createElement('button');
+    x.className = 'flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap font-semibold ' + (on ? 'dark:bg-white/10 bg-gray-900/5 dark:text-white text-gray-900' : 'dark:text-gray-400 text-gray-600');
+    x.innerHTML = n[3] + ' ' + esc(n[2]) + rozet;
+    x.onclick = function () { switchPage(n[0]); };
+    m.appendChild(x);
   });
 }
 var HOME_SECTIONS = [
@@ -1498,7 +1554,7 @@ function homeSuggest() {
   });
   var all = document.createElement('button'); all.type = 'button';
   all.className = 'w-full px-4 py-3 text-xs font-bold text-purple-400 hover:bg-purple-600/10 transition';
-  all.textContent = 'Tum sonuclari gor \u2192';
+  all.textContent = 'T\u00fcm sonu\u00e7lar\u0131 g\u00f6r \u2192';
   all.onclick = function () { goSearch(); };
   box.appendChild(all);
   box.classList.remove('hidden');
@@ -1521,109 +1577,109 @@ function renderHomeExamples() {
 
 /* ===== AI Is Modelleri ===== */
 var BIZ_TABS = [
-  ['gelir', '\u{1F4B0}', 'Para Kazanma Yollari', 'from-green-600 to-emerald-600'],
-  ['kullanim', '\u{1F3E2}', 'Isletmelerde Kullanim', 'from-blue-600 to-indigo-600'],
-  ['sirket', '\u{1F3DB}\ufe0f', 'AI Sirketlerinin Modeli', 'from-purple-600 to-fuchsia-600']
+  ['gelir', '\u{1F4B0}', 'Para Kazanma Yollar\u0131', 'from-green-600 to-emerald-600'],
+  ['kullanim', '\u{1F3E2}', '\u0130\u015fletmelerde Kullan\u0131m', 'from-blue-600 to-indigo-600'],
+  ['sirket', '\u{1F3DB}\ufe0f', 'AI \u015eirketlerinin Modeli', 'from-purple-600 to-fuchsia-600']
 ];
 var BIZ_GELIR = [
-  ['\u270d\ufe0f', 'Icerik ve SEO yazarligi', 'Kolay', 'Dusuk', '1-4 hafta',
-   'Blog yazisi, urun aciklamasi ve SEO metni ureten freelance hizmet. Yapay zeka taslagi cikarir, sen duzenler ve dogrularsin. Musteri genelde kucuk isletmeler ve e-ticaret siteleridir.',
-   ['Bir konuda uzmanlas (saglik, yazilim, e-ticaret gibi)', 'Kendi blogunda 3-5 ornek yazi yayinla', 'Freelance platformlarinda ve LinkedIn\'de hizmet ilani ac', 'Yazi basina veya aylik paket halinde fiyatla'],
+  ['\u270d\ufe0f', '\u0130\u00e7erik ve SEO yazarl\u0131\u011f\u0131', 'Kolay', 'D\u00fc\u015f\u00fck', '1-4 hafta',
+   'Blog yaz\u0131s\u0131, \u00fcr\u00fcn a\u00e7\u0131klamas\u0131 ve SEO metni \u00fcreten freelance hizmet. Yapay zeka tasla\u011f\u0131 \u00e7\u0131kar\u0131r, sen d\u00fczenler ve do\u011frulars\u0131n. M\u00fc\u015fteri genelde k\u00fc\u00e7\u00fck i\u015fletmeler ve e-ticaret siteleridir.',
+   ['Bir konuda uzmanla\u015f (sa\u011fl\u0131k, yaz\u0131l\u0131m, e-ticaret gibi)', 'Kendi blogunda 3-5 \u00f6rnek yaz\u0131 yay\u0131nla', 'Freelance platformlar\u0131nda ve LinkedIn\'de hizmet ilani a\u00e7', 'Yaz\u0131 ba\u015f\u0131na veya ayl\u0131k paket halinde fiyatla'],
    ['ChatGPT', 'Claude', 'Grammarly', 'Writesonic']],
-  ['\u{1F3A8}', 'Gorsel ve logo tasarimi', 'Kolay', 'Dusuk', '2-6 hafta',
-   'Sosyal medya gorseli, kapak tasarimi, logo ve urun fotografi uretimi. Yapay zeka taslak uretir, sen marka kimligine uyarlar ve dosyayi teslime hazirlarsin.',
-   ['Bir tarz belirle ve portfolyo olustur', 'Fiverr, Bionluk gibi platformlarda ilan ac', 'Paket sun: 3 secenek + 2 revizyon gibi', 'Ticari kullanim haklarini sozlesmede net yaz'],
+  ['\u{1F3A8}', 'G\u00f6rsel ve logo tasar\u0131m\u0131', 'Kolay', 'D\u00fc\u015f\u00fck', '2-6 hafta',
+   'Sosyal medya gorseli, kapak tasar\u0131m\u0131, logo ve \u00fcr\u00fcn foto\u011fraf\u0131 \u00fcretimi. Yapay zeka taslak \u00fcretir, sen marka kimli\u011fine uyarlar ve dosyayi teslime haz\u0131rlars\u0131n.',
+   ['Bir tarz belirle ve portfolyo olu\u015ftur', 'Fiverr, Bionluk gibi platformlarda ilan a\u00e7', 'Paket sun: 3 se\u00e7enek + 2 revizyon gibi', 'Ticari kullan\u0131m haklar\u0131n\u0131 s\u00f6zle\u015fmede net yaz'],
    ['Midjourney', 'Recraft', 'Canva', 'Photoroom']],
-  ['\u{1F3AC}', 'Kisa video ureticiligi', 'Orta', 'Dusuk', '1-3 ay',
-   'Markalar icin Reels, TikTok ve YouTube Shorts uretimi. Senaryo, seslendirme ve altyazi yapay zeka ile hizlanir; kurgu ve ritim senin isin.',
-   ['Bir sektor sec ve 5 ornek video uret', 'Aylik icerik paketi olarak sat (orn: 12 video / ay)', 'Musterinin marka rengini ve tonunu sablonlastir', 'Teslim suresini net ver, revizyon sayisini sinirla'],
+  ['\u{1F3AC}', 'K\u0131sa video \u00fcreticili\u011fi', 'Orta', 'D\u00fc\u015f\u00fck', '1-3 ay',
+   'Markalar i\u00e7in Reels, TikTok ve YouTube Shorts \u00fcretimi. Senaryo, seslendirme ve altyaz\u0131 yapay zeka ile h\u0131zlan\u0131r; kurgu ve ritim senin i\u015fin.',
+   ['Bir sekt\u00f6r se\u00e7 ve 5 \u00f6rnek video \u00fcret', 'Ayl\u0131k i\u00e7erik paketi olarak sat (\u00f6rn: 12 video / ay)', 'M\u00fc\u015fterinin marka rengini ve tonunu \u015fablonla\u015ft\u0131r', 'Teslim s\u00fcresini net ver, revizyon say\u0131s\u0131n\u0131 s\u0131n\u0131rla'],
    ['CapCut', 'Opus Clip', 'ElevenLabs', 'Runway']],
-  ['\u{1F399}\ufe0f', 'Seslendirme ve dublaj', 'Orta', 'Dusuk', '1-3 ay',
-   'Reklam, egitim videosu ve podcast icin seslendirme; yabanci icerigin Turkce dublaji. Yapay zeka sesi uretir, sen tonlama ve zamanlamayi duzeltirsin.',
-   ['Farkli tonlarda ornek kayitlar hazirla', 'Egitim ve reklam ajanslarina ulas', 'Dakika veya proje basina fiyatla', 'Baskasinin sesini izinsiz klonlama, bu yasal sorun yaratir'],
+  ['\u{1F399}\ufe0f', 'Seslendirme ve dublaj', 'Orta', 'D\u00fc\u015f\u00fck', '1-3 ay',
+   'Reklam, e\u011fitim videosu ve podcast i\u00e7in seslendirme; yabanc\u0131 i\u00e7eri\u011fin T\u00fcrk\u00e7e dublaji. Yapay zeka sesi \u00fcretir, sen tonlama ve zamanlamay\u0131 d\u00fczeltirsin.',
+   ['Farkl\u0131 tonlarda \u00f6rnek kay\u0131tlar haz\u0131rla', 'E\u011fitim ve reklam ajanslar\u0131na ula\u015f', 'Dakika veya proje ba\u015f\u0131na fiyatla', 'Ba\u015fkas\u0131n\u0131n sesini izinsiz klonlama, bu yasal sorun yarat\u0131r'],
    ['ElevenLabs', 'Murf AI', 'Adobe Podcast', 'HeyGen']],
-  ['\u2699\ufe0f', 'Otomasyon kurulumu', 'Orta', 'Dusuk', '1-3 ay',
-   'Kucuk isletmelere tekrar eden islerini otomatiklestirme: gelen formu CRM\'e isleme, fatura okuma, raporu otomatik gonderme. Kurulum ucreti + aylik bakim seklinde gelir getirir.',
-   ['n8n veya Make ogren, kendi isinde bir akis kur', 'Bir sektorde tek bir problemi coz (orn: emlakci randevu takibi)', 'Kurulum + aylik destek olarak fiyatla', 'Musterinin verisini nasil sakladigini yaz ile belgele'],
+  ['\u2699\ufe0f', 'Otomasyon kurulumu', 'Orta', 'D\u00fc\u015f\u00fck', '1-3 ay',
+   'K\u00fc\u00e7\u00fck i\u015fletmelere tekrar eden i\u015flerini otomatikle\u015ftirme: gelen formu CRM\'e i\u015fleme, fatura okuma, raporu otomatik g\u00f6nderme. Kurulum \u00fccreti + ayl\u0131k bak\u0131m \u015feklinde gelir getirir.',
+   ['n8n veya Make \u00f6\u011fren, kendi i\u015finde bir ak\u0131\u015f kur', 'Bir sekt\u00f6rde tek bir problemi \u00e7\u00f6z (\u00f6rn: emlak\u00e7\u0131 randevu takibi)', 'Kurulum + ayl\u0131k destek olarak fiyatla', 'M\u00fc\u015fterinin verisini nas\u0131l saklad\u0131\u011f\u0131n\u0131 yaz ile belgele'],
    ['n8n', 'Make', 'Zapier', 'Claude']],
-  ['\u{1F916}', 'Chatbot ve musteri destegi kurulumu', 'Orta', 'Orta', '2-4 ay',
-   'Isletmenin kendi belgeleriyle calisan soru-cevap botu kurma. WhatsApp, web sitesi veya Instagram uzerinden musteri sorularini yanitlar.',
-   ['Once kendi demo botunu kur ve goster', 'Isletmenin SSS ve belgelerini topla', 'Yanlis cevap riskini musteriye acikca anlat', 'Kurulum + aylik kullanim bedeli al'],
+  ['\u{1F916}', 'Chatbot ve m\u00fc\u015fteri deste\u011fi kurulumu', 'Orta', 'Orta', '2-4 ay',
+   '\u0130\u015fletmenin kendi belgeleriyle \u00e7al\u0131\u015fan soru-cevap botu kurma. WhatsApp, web sitesi veya Instagram \u00fczerinden m\u00fc\u015fteri sorular\u0131n\u0131 yan\u0131tlar.',
+   ['\u00d6nce kendi demo botunu kur ve g\u00f6ster', '\u0130\u015fletmenin SSS ve belgelerini topla', 'Yanl\u0131\u015f cevap riskini m\u00fc\u015fteriye a\u00e7\u0131k\u00e7a anlat', 'Kurulum + ayl\u0131k kullan\u0131m bedeli al'],
    ['Dify', 'Flowise', 'OpenAI', 'Claude']],
-  ['\u{1F4BB}', 'Mikro SaaS / kucuk arac gelistirme', 'Zor', 'Orta', '3-12 ay',
-   'Dar bir problemi cozen kucuk bir web araci yapip aylik abonelikle satmak. Yapay zeka kodlamayi hizlandirir ama urunu buyutmek zaman ister.',
-   ['Kendi yasadigin bir problemi sec', 'En kucuk calisan surumu 2-4 haftada cikar', 'Ucretsiz deneme + aylik abonelik kur', 'Ilk 10 kullaniciyi elle bul ve konus'],
+  ['\u{1F4BB}', 'Mikro SaaS / k\u00fc\u00e7\u00fck ara\u00e7 geli\u015ftirme', 'Zor', 'Orta', '3-12 ay',
+   'Dar bir problemi \u00e7\u00f6zen k\u00fc\u00e7\u00fck bir web arac\u0131 yap\u0131p ayl\u0131k abonelikle satmak. Yapay zeka kodlamayi h\u0131zland\u0131r\u0131r ama \u00fcr\u00fcn\u00fc b\u00fcy\u00fctmek zaman ister.',
+   ['Kendi ya\u015fad\u0131\u011f\u0131n bir problemi se\u00e7', 'En k\u00fc\u00e7\u00fck \u00e7al\u0131\u015fan s\u00fcr\u00fcm\u00fc 2-4 haftada \u00e7\u0131kar', '\u00dccretsiz deneme + ayl\u0131k abonelik kur', 'Ilk 10 kullan\u0131c\u0131y\u0131 elle bul ve konus'],
    ['Cursor', 'Lovable', 'Supabase', 'Vercel']],
-  ['\u{1F4E6}', 'Dijital urun satisi', 'Kolay', 'Dusuk', '2-8 hafta',
-   'Sablon, prompt paketi, e-kitap, Notion sablonu gibi bir kere uretip defalarca satilan urunler. Gelir yavas baslar, zamanla birikir.',
-   ['Belirli bir meslegin isini kolaylastiran bir urun yap', 'Gumroad, Shopier gibi bir satis sayfasi ac', 'Ucretsiz bir mini surumle liste olustur', 'Urunu guncel tut, eskiyen icerik satmaz'],
+  ['\u{1F4E6}', 'Dijital \u00fcr\u00fcn sat\u0131\u015f\u0131', 'Kolay', 'D\u00fc\u015f\u00fck', '2-8 hafta',
+   '\u015eablon, prompt paketi, e-kitap, Notion \u015fablonu gibi bir kere \u00fcretip defalarca sat\u0131lan \u00fcr\u00fcnler. Gelir yava\u015f ba\u015flar, zamanla birikir.',
+   ['Belirli bir mesle\u011fin i\u015fini kolayla\u015ft\u0131ran bir \u00fcr\u00fcn yap', 'Gumroad, Shopier gibi bir sat\u0131\u015f sayfas\u0131 a\u00e7', '\u00dccretsiz bir mini s\u00fcr\u00fcmle liste olu\u015ftur', '\u00dcr\u00fcn\u00fc g\u00fcncel tut, eskiyen i\u00e7erik satmaz'],
    ['Claude', 'Canva', 'Gamma', 'Notion']],
-  ['\u{1F30D}', 'Ceviri ve yerellestirme', 'Kolay', 'Dusuk', '2-6 hafta',
-   'Web sitesi, uygulama ve egitim iceriginin Turkcelestirilmesi. Yapay zeka ilk ceviriyi yapar, sen anlam ve kultur uyumunu duzeltirsin.',
-   ['Bir alanda uzmanlas (teknik, hukuk, pazarlama)', 'Kelime basina degil, proje basina fiyatlamayi dene', 'Terim sozlugu olustur, tutarlilik satar', 'Makine ciktisini duzeltmeden teslim etme'],
+  ['\u{1F30D}', '\u00c7eviri ve yerelle\u015ftirme', 'Kolay', 'D\u00fc\u015f\u00fck', '2-6 hafta',
+   'Web sitesi, uygulama ve e\u011fitim i\u00e7eri\u011finin T\u00fcrk\u00e7ele\u015ftirilmesi. Yapay zeka ilk \u00e7eviriyi yapar, sen anlam ve k\u00fclt\u00fcr uyumunu d\u00fczeltirsin.',
+   ['Bir alanda uzmanla\u015f (teknik, hukuk, pazarlama)', 'Kelime ba\u015f\u0131na de\u011fil, proje ba\u015f\u0131na fiyatlamayi dene', 'Terim s\u00f6zl\u00fc\u011f\u00fc olu\u015ftur, tutarl\u0131l\u0131k satar', 'Makine \u00e7\u0131kt\u0131s\u0131n\u0131 d\u00fczeltmeden teslim etme'],
    ['DeepL', 'Claude', 'ChatGPT', 'Gemini']],
-  ['\u{1F393}', 'Egitim ve danismanlik', 'Orta', 'Dusuk', '1-4 ay',
-   'Isletmelere ve bireylere yapay zeka araclarini ogretmek, is akislarini birlikte kurmak. Saatlik danismanlik veya kurumsal egitim paketi olarak satilir.',
-   ['Bir sektore odaklan ve o sektorun diliyle anlat', 'Ucretsiz bir web semineri ile basla', 'Kurum ici egitim paketi hazirla (yarim gun / tam gun)', 'Somut kazanim goster: su is 3 saatten 20 dakikaya indi'],
+  ['\u{1F393}', 'E\u011fitim ve dan\u0131\u015fmanl\u0131k', 'Orta', 'D\u00fc\u015f\u00fck', '1-4 ay',
+   '\u0130\u015fletmelere ve bireylere yapay zeka ara\u00e7lar\u0131n\u0131 \u00f6\u011fretmek, i\u015f ak\u0131\u015flar\u0131n\u0131 birlikte kurmak. Saatlik dan\u0131\u015fmanl\u0131k veya kurumsal e\u011fitim paketi olarak sat\u0131l\u0131r.',
+   ['Bir sekt\u00f6re odaklan ve o sekt\u00f6r\u00fcn diliyle anlat', '\u00dccretsiz bir web semineri ile ba\u015fla', 'Kurum i\u00e7i e\u011fitim paketi haz\u0131rla (yar\u0131m g\u00fcn / tam g\u00fcn)', 'Somut kazan\u0131m g\u00f6ster: \u015fu i\u015f 3 saatten 20 dakikaya indi'],
    ['ChatGPT', 'Claude', 'Gamma', 'NotebookLM']]
 ];
 var BIZ_KULLANIM = [
-  ['\u{1F6D2}', 'E-ticaret', 'Yuzlerce urun aciklamasi yazmak, gorsel hazirlamak ve ayni sorulari yanitlamak zaman aliyor.',
-   ['Urun aciklamasi ve baslik uretimi', 'Urun fotografi arka plani temizleme', 'Musteri sorularini yanitlayan bot', 'Yorum analizi ve ozet cikarma'],
+  ['\u{1F6D2}', 'E-ticaret', 'Y\u00fczlerce \u00fcr\u00fcn a\u00e7\u0131klamas\u0131 yazmak, g\u00f6rsel haz\u0131rlamak ve ayn\u0131 sorular\u0131 yan\u0131tlamak zaman al\u0131yor.',
+   ['\u00dcr\u00fcn a\u00e7\u0131klamas\u0131 ve ba\u015fl\u0131k \u00fcretimi', '\u00dcr\u00fcn foto\u011fraf\u0131 arka plan\u0131 temizleme', 'M\u00fc\u015fteri sorular\u0131n\u0131 yan\u0131tlayan bot', 'Yorum analizi ve \u00f6zet \u00e7\u0131karma'],
    ['Claude', 'Photoroom', 'Dify']],
-  ['\u{1F4E3}', 'Pazarlama', 'Reklam metni, sosyal medya takvimi ve kampanya fikirleri surekli uretilmesi gereken islerdir.',
-   ['Reklam metni varyasyonlari uretme', 'Aylik icerik takvimi olusturma', 'Hedef kitleye gore mesaj uyarlama', 'Rakip icerik analizi'],
+  ['\u{1F4E3}', 'Pazarlama', 'Reklam metni, sosyal medya takvimi ve kampanya fikirleri s\u00fcrekli \u00fcretilmesi gereken i\u015flerdir.',
+   ['Reklam metni varyasyonlar\u0131 \u00fcretme', 'Ayl\u0131k i\u00e7erik takvimi olu\u015fturma', 'Hedef kitleye g\u00f6re mesaj uyarlama', 'Rakip i\u00e7erik analizi'],
    ['ChatGPT', 'Jasper', 'Canva']],
-  ['\u{1F4AC}', 'Musteri hizmetleri', 'Ayni sorularin tekrari ekibin vaktini alir, yogun saatlerde yanit suresi uzar.',
-   ['SSS tabanli otomatik yanit botu', 'Gelen talebi dogru birime yonlendirme', 'Gorusme ozeti ve not cikarma', 'Memnuniyet analizi'],
+  ['\u{1F4AC}', 'M\u00fc\u015fteri hizmetleri', 'Ayn\u0131 sorular\u0131n tekrar\u0131 ekibin vaktini al\u0131r, yo\u011fun saatlerde yan\u0131t s\u00fcresi uzar.',
+   ['SSS tabanl\u0131 otomatik yan\u0131t botu', 'Gelen talebi do\u011fru birime y\u00f6nlendirme', 'G\u00f6r\u00fc\u015fme \u00f6zeti ve not \u00e7\u0131karma', 'Memnuniyet analizi'],
    ['Dify', 'Flowise', 'Fireflies.ai']],
-  ['\u{1F4CA}', 'Muhasebe ve finans', 'Fatura girisi, mutabakat ve raporlama elle yapildiginda hem yavas hem hataya acik.',
-   ['Fatura ve fis goruntusunden veri okuma', 'Aylik rapor taslagi hazirlama', 'Gider kategorilendirme', 'Nakit akisi senaryolari yazma'],
+  ['\u{1F4CA}', 'Muhasebe ve finans', 'Fatura giri\u015fi, mutabakat ve raporlama elle yap\u0131ld\u0131\u011f\u0131nda hem yava\u015f hem hataya a\u00e7\u0131k.',
+   ['Fatura ve fi\u015f g\u00f6r\u00fcnt\u00fcs\u00fcnden veri okuma', 'Ayl\u0131k rapor tasla\u011f\u0131 haz\u0131rlama', 'Gider kategorilendirme', 'Nakit ak\u0131\u015f\u0131 senaryolar\u0131 yazma'],
    ['Claude', 'n8n', 'Excel eklentileri']],
-  ['\u{1F465}', 'Insan kaynaklari', 'Ilan yazmak, yuzlerce basvuruyu okumak ve mulakat notu tutmak uzun suruyor.',
-   ['Is ilani metni hazirlama', 'Basvurularda on degerlendirme ozeti', 'Mulakat sorusu seti olusturma', 'Mulakat kaydi ozeti'],
+  ['\u{1F465}', '\u0130nsan kaynaklar\u0131', 'Ilan yazmak, y\u00fczlerce ba\u015fvuruyu okumak ve m\u00fclakat notu tutmak uzun s\u00fcr\u00fcyor.',
+   ['\u0130\u015f ilani metni haz\u0131rlama', 'Ba\u015fvurularda \u00f6n de\u011ferlendirme \u00f6zeti', 'M\u00fclakat sorusu seti olu\u015fturma', 'M\u00fclakat kayd\u0131 \u00f6zeti'],
    ['ChatGPT', 'Otter.ai', 'Claude']],
-  ['\u{1F4BB}', 'Yazilim gelistirme', 'Kod incelemesi, test yazimi ve dokumantasyon genelde en geriye birakilan isler.',
-   ['Kod tamamlama ve refactor onerisi', 'Birim testi uretme', 'Hata ayiklama destegi', 'Teknik dokumantasyon yazimi'],
+  ['\u{1F4BB}', 'Yaz\u0131l\u0131m geli\u015ftirme', 'Kod incelemesi, test yaz\u0131m\u0131 ve dok\u00fcmantasyon genelde en geriye b\u0131rak\u0131lan i\u015fler.',
+   ['Kod tamamlama ve refactor \u00f6nerisi', 'Birim testi \u00fcretme', 'Hata ay\u0131klama deste\u011fi', 'Teknik dok\u00fcmantasyon yaz\u0131m\u0131'],
    ['Cursor', 'GitHub Copilot', 'Claude']],
-  ['\u{1F3EA}', 'Kucuk isletme ve esnaf', 'Sosyal medya, menu, ilan ve musteri mesajlari tek kisinin uzerinde kaliyor.',
-   ['Sosyal medya gonderisi ve gorseli', 'Menu ve fiyat listesi tasarimi', 'Google isletme yorumlarina yanit', 'Basit randevu hatirlatma akisi'],
+  ['\u{1F3EA}', 'K\u00fc\u00e7\u00fck i\u015fletme ve esnaf', 'Sosyal medya, men\u00fc, ilan ve m\u00fc\u015fteri mesajlar\u0131 tek ki\u015finin \u00fczerinde kal\u0131yor.',
+   ['Sosyal medya g\u00f6nderisi ve gorseli', 'Men\u00fc ve fiyat listesi tasar\u0131m\u0131', 'Google i\u015fletme yorumlar\u0131na yan\u0131t', 'Basit randevu hat\u0131rlatma ak\u0131\u015f\u0131'],
    ['Canva', 'ChatGPT', 'Make']],
-  ['\u{1F4DA}', 'Egitim', 'Ders plani, materyal ve olcme araci hazirlamak ogretmenin en cok vakit alan isi.',
-   ['Ders plani ve etkinlik onerisi', 'Seviyeye gore soru uretimi', 'Ogrenci geri bildirimi taslagi', 'Kaynak ozetleme'],
+  ['\u{1F4DA}', 'E\u011fitim', 'Ders plan\u0131, materyal ve \u00f6l\u00e7me arac\u0131 haz\u0131rlamak \u00f6\u011fretmenin en \u00e7ok vakit alan i\u015fi.',
+   ['Ders plan\u0131 ve etkinlik \u00f6nerisi', 'Seviyeye g\u00f6re soru \u00fcretimi', '\u00d6\u011frenci geri bildirimi tasla\u011f\u0131', 'Kaynak \u00f6zetleme'],
    ['NotebookLM', 'Claude', 'Gamma']],
-  ['\u{1F3E0}', 'Emlak', 'Ilan metni, gorsel duzenleme ve musteri takibi dagilan isler.',
-   ['Ilan aciklamasi yazma', 'Ic mekan fotografi iyilestirme', 'Musteri sorularini yanitlama', 'Randevu takibi otomasyonu'],
+  ['\u{1F3E0}', 'Emlak', 'Ilan metni, g\u00f6rsel d\u00fczenleme ve m\u00fc\u015fteri takibi da\u011f\u0131lan i\u015fler.',
+   ['Ilan a\u00e7\u0131klamas\u0131 yazma', '\u0130\u00e7 mekan foto\u011fraf\u0131 iyile\u015ftirme', 'M\u00fc\u015fteri sorular\u0131n\u0131 yan\u0131tlama', 'Randevu takibi otomasyonu'],
    ['ChatGPT', 'Magnific', 'n8n']],
-  ['\u2696\ufe0f', 'Hukuk ve sozlesme', 'Uzun belgeleri okumak ve ozetlemek zaman alir; son karar her zaman uzmana aittir.',
-   ['Sozlesme ozeti cikarma', 'Belge icinde madde arama', 'Taslak metin hazirlama', 'Terim aciklama'],
+  ['\u2696\ufe0f', 'Hukuk ve s\u00f6zle\u015fme', 'Uzun belgeleri okumak ve \u00f6zetlemek zaman al\u0131r; son karar her zaman uzmana aittir.',
+   ['S\u00f6zle\u015fme \u00f6zeti \u00e7\u0131karma', 'Belge i\u00e7inde madde arama', 'Taslak metin haz\u0131rlama', 'Terim a\u00e7\u0131klama'],
    ['Claude', 'Legora', 'NotebookLM']]
 ];
 var BIZ_SIRKET = [
-  ['\u{1F4C5}', 'Aylik abonelik', 'Kullaniciya sabit aylik ucretle gelismis model, daha yuksek kullanim hakki ve ek ozellikler sunulur. Gelir ongorulebilir, kullanici icin maliyet nettir.',
+  ['\u{1F4C5}', 'Ayl\u0131k abonelik', 'Kullan\u0131c\u0131ya sabit ayl\u0131k \u00fccretle geli\u015fmi\u015f model, daha y\u00fcksek kullan\u0131m hakk\u0131 ve ek \u00f6zellikler sunulur. Gelir \u00f6ng\u00f6r\u00fclebilir, kullan\u0131c\u0131 i\u00e7in maliyet nettir.',
    ['ChatGPT Plus', 'Claude Pro', 'Midjourney'],
-   'Ongorulebilir gelir, sadik kullanici', 'Agir kullanici sirkete pahaliya mal olabilir'],
-  ['\u{1F50C}', 'Kullanim basina API ucreti', 'Gelistiriciler modeli kendi uygulamasina baglar, isledigi metin miktari kadar oder. Buyuyen urun daha cok oder, kucuk proje az.',
+   '\u00d6ng\u00f6r\u00fclebilir gelir, sad\u0131k kullan\u0131c\u0131', 'A\u011f\u0131r kullan\u0131c\u0131 \u015firkete pahal\u0131ya mal olabilir'],
+  ['\u{1F50C}', 'Kullan\u0131m ba\u015f\u0131na API \u00fccreti', 'Geli\u015ftiriciler modeli kendi uygulamas\u0131na ba\u011flar, i\u015fledi\u011fi metin miktari kadar \u00f6der. B\u00fcy\u00fcyen \u00fcr\u00fcn daha \u00e7ok \u00f6der, k\u00fc\u00e7\u00fck proje az.',
    ['OpenAI API', 'Anthropic API', 'Gemini API'],
-   'Kullanimla birlikte buyuyen gelir', 'Maliyet tahmini kullanici icin zordur'],
-  ['\u{1F381}', 'Freemium', 'Temel surum ucretsiz verilir, sinirlar dolunca ucretli plana gecis beklenir. Hizli kullanici kazandirir.',
+   'Kullan\u0131mla birlikte b\u00fcy\u00fcyen gelir', 'Maliyet tahmini kullan\u0131c\u0131 i\u00e7in zordur'],
+  ['\u{1F381}', 'Freemium', 'Temel s\u00fcr\u00fcm \u00fccretsiz verilir, s\u0131n\u0131rlar dolunca \u00fccretli plana ge\u00e7i\u015f beklenir. H\u0131zl\u0131 kullan\u0131c\u0131 kazand\u0131r\u0131r.',
    ['Perplexity', 'Canva', 'Hugging Face'],
-   'Hizli buyume, genis kitle', 'Ucretsiz kullanicinin maliyeti yuksek'],
-  ['\u{1F3E2}', 'Kurumsal lisans', 'Sirketlere guvenlik, yonetim paneli, veri gizliligi ve destek iceren ozel anlasmalar satilir. Tek musteriden yuksek gelir gelir.',
+   'H\u0131zl\u0131 b\u00fcy\u00fcme, geni\u015f kitle', '\u00dccretsiz kullan\u0131c\u0131n\u0131n maliyeti y\u00fcksek'],
+  ['\u{1F3E2}', 'Kurumsal lisans', '\u015eirketlere g\u00fcvenlik, y\u00f6netim paneli, veri gizlili\u011fi ve destek i\u00e7eren \u00f6zel anla\u015fmalar sat\u0131l\u0131r. Tek m\u00fc\u015fteriden y\u00fcksek gelir gelir.',
    ['ChatGPT Enterprise', 'Claude for Work', 'Microsoft Copilot'],
-   'Yuksek ve istikrarli gelir', 'Satis sureci uzun, destek yuku agir'],
-  ['\u{1F513}', 'Acik agirlik + hizmet', 'Model ucretsiz indirilebilir, sirket bulut barindirma, destek ve kurumsal surumden kazanir. Ekosistem buyutur.',
+   'Y\u00fcksek ve istikrarl\u0131 gelir', 'Sat\u0131\u015f s\u00fcreci uzun, destek y\u00fck\u00fc a\u011f\u0131r'],
+  ['\u{1F513}', 'A\u00e7\u0131k agirlik + hizmet', 'Model \u00fccretsiz indirilebilir, \u015firket bulut bar\u0131nd\u0131rma, destek ve kurumsal s\u00fcr\u00fcmden kazan\u0131r. Ekosistem b\u00fcy\u00fct\u00fcr.',
    ['Mistral', 'Meta Llama', 'DeepSeek'],
-   'Hizli yayilim ve topluluk', 'Dogrudan gelire cevirmek zor'],
-  ['\u{1F5A5}\ufe0f', 'Donanim ve altyapi', 'Modelleri egitmek ve calistirmak icin gereken cip, sunucu ve bulut kapasitesi satilir. Yapay zeka buyudukce talep artar.',
+   'H\u0131zl\u0131 yay\u0131l\u0131m ve topluluk', 'Do\u011frudan gelire \u00e7evirmek zor'],
+  ['\u{1F5A5}\ufe0f', 'Donan\u0131m ve altyap\u0131', 'Modelleri e\u011fitmek ve \u00e7al\u0131\u015ft\u0131rmak i\u00e7in gereken \u00e7ip, sunucu ve bulut kapasitesi sat\u0131l\u0131r. Yapay zeka b\u00fcy\u00fcd\u00fck\u00e7e talep artar.',
    ['Nvidia', 'AWS', 'Google Cloud'],
-   'Tum sektorun buyumesinden pay', 'Yuksek sermaye ve uretim bagimliligi'],
-  ['\u{1F6D6}', 'Pazar yeri ve platform', 'Baskalarinin modellerini barindirip calistiran platformlar, kullanim veya komisyon uzerinden kazanir.',
+   'T\u00fcm sekt\u00f6r\u00fcn b\u00fcy\u00fcmesinden pay', 'Y\u00fcksek sermaye ve \u00fcretim ba\u011f\u0131ml\u0131l\u0131\u011f\u0131'],
+  ['\u{1F6D6}', 'Pazar yeri ve platform', 'Ba\u015fkalar\u0131n\u0131n modellerini bar\u0131nd\u0131r\u0131p \u00e7al\u0131\u015ft\u0131ran platformlar, kullan\u0131m veya komisyon \u00fczerinden kazan\u0131r.',
    ['Hugging Face', 'Replicate', 'Poe'],
-   'Tek modele bagimli degil', 'Rekabet yogun, kar marji dar'],
-  ['\u{1F9E9}', 'Mevcut urune ekleme', 'Yapay zeka ayri bir urun olarak degil, var olan yazilimin icine ozellik olarak konur ve ust pakete dahil edilir.',
+   'Tek modele ba\u011f\u0131ml\u0131 de\u011fil', 'Rekabet yo\u011fun, kar marj\u0131 dar'],
+  ['\u{1F9E9}', 'Mevcut \u00fcr\u00fcne ekleme', 'Yapay zeka ayr\u0131 bir \u00fcr\u00fcn olarak de\u011fil, var olan yaz\u0131l\u0131m\u0131n i\u00e7ine \u00f6zellik olarak konur ve \u00fcst pakete dahil edilir.',
    ['Notion AI', 'Adobe Firefly', 'Slack'],
-   'Hazir kullanici kitlesi', 'Tek basina gelir olcmek zordur']
+   'Haz\u0131r kullan\u0131c\u0131 kitlesi', 'Tek ba\u015f\u0131na gelir \u00f6l\u00e7mek zordur']
 ];
 
 var BIZ_LEVEL = { 'Kolay': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20', 'Orta': 'bg-amber-500/10 text-amber-500 border-amber-500/20', 'Zor': 'bg-rose-500/10 text-rose-500 border-rose-500/20' };
@@ -1665,7 +1721,7 @@ function renderBiz() {
   sortWrap.classList.toggle('hidden', appState.bizTab !== 'gelir');
   document.getElementById('bizSortBtn').textContent = appState.bizAsc ? '\u2b06\ufe0f Kolaydan zora' : '\u2b07\ufe0f Zordan kolaya';
   if (appState.bizTab === 'gelir') {
-    note.textContent = 'Bu yollar bir kazanc garantisi degil, baslangic icin yol haritasidir. Gelir; emegine, sectigin alana ve musteri bulma becerine gore degisir.';
+    note.textContent = 'Bu yollar bir kazan\u00e7 garantisi de\u011fil, ba\u015flang\u0131\u00e7 i\u00e7in yol haritas\u0131d\u0131r. Gelir; eme\u011fine, se\u00e7ti\u011fin alana ve m\u00fc\u015fteri bulma becerine g\u00f6re de\u011fi\u015fir.';
     var liste = BIZ_GELIR.slice().sort(function (a, b) {
       var d = BIZ_ORDER[a[2]] - BIZ_ORDER[b[2]];
       return appState.bizAsc ? d : -d;
@@ -1677,142 +1733,142 @@ function renderBiz() {
           '<div class="min-w-0"><h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3>' +
           '<span class="inline-block mt-1 px-2 py-0.5 rounded-lg text-[10px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
         '<div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">' +
-          '<div class="p-2 rounded-xl dark:bg-gray-950 bg-gray-50"><div class="text-gray-400">Baslangic maliyeti</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[3]) + '</div></div>' +
+          '<div class="p-2 rounded-xl dark:bg-gray-950 bg-gray-50"><div class="text-gray-400">Ba\u015flang\u0131\u00e7 maliyeti</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[3]) + '</div></div>' +
           '<div class="p-2 rounded-xl dark:bg-gray-950 bg-gray-50"><div class="text-gray-400">Ilk gelir</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[4]) + '</div></div></div>' +
         '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[5]) + '</p>' +
-        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Nasil baslanir</div>' + liList(m[6], 'green') +
-        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">Ise yarayan araclar</div>' + tagRow(m[7], 'green') +
-        (BIZ_DETAY[m[1]] ? '<div class="mt-4 pt-3 border-t dark:border-gray-800 border-gray-100 text-xs font-bold text-green-500 flex items-center gap-1">Detayli oku <span>\u2192</span></div>' : ''), 'green');
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Nas\u0131l ba\u015flan\u0131r</div>' + liList(m[6], 'green') +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">\u0130\u015fe yarayan ara\u00e7lar</div>' + tagRow(m[7], 'green') +
+        (BIZ_DETAY[m[1]] ? '<div class="mt-4 pt-3 border-t dark:border-gray-800 border-gray-100 text-xs font-bold text-green-500 flex items-center gap-1">Detayl\u0131 oku <span>\u2192</span></div>' : ''), 'green');
       if (BIZ_DETAY[m[1]]) { kart.classList.add('cursor-pointer'); kart.onclick = function () { openBizDetail(m[1]); }; }
       grid.appendChild(kart);
     });
   } else if (appState.bizTab === 'kullanim') {
-    note.textContent = 'Sektorune gore yapay zekanin nerede ise yaradigi ve hangi aracla baslayabilecegin.';
+    note.textContent = 'Sekt\u00f6r\u00fcne g\u00f6re yapay zekan\u0131n nerede i\u015fe yarad\u0131\u011f\u0131 ve hangi ara\u00e7la ba\u015flayabilece\u011fin.';
     BIZ_KULLANIM.forEach(function (m) {
       grid.appendChild(bizCard(
         '<div class="flex items-center gap-3 mb-3">' +
           '<span class="w-11 h-11 rounded-2xl bg-blue-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
           '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
         '<p class="text-xs text-gray-400 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
-        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Kullanim alanlari</div>' + liList(m[3], 'blue') +
-        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">Onerilen araclar</div>' + tagRow(m[4], 'blue'), 'blue'));
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Kullan\u0131m alanlar\u0131</div>' + liList(m[3], 'blue') +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mt-3">\u00d6nerilen ara\u00e7lar</div>' + tagRow(m[4], 'blue'), 'blue'));
     });
   } else {
-    note.textContent = 'Yapay zeka sirketleri nasil para kazaniyor? Fiyatlar sik degistigi icin burada rakam degil, modelin kendisi anlatiliyor.';
+    note.textContent = 'Yapay zeka \u015firketleri nas\u0131l para kazan\u0131yor? Fiyatlar s\u0131k de\u011fi\u015fti\u011fi i\u00e7in burada rakam de\u011fil, modelin kendisi anlat\u0131l\u0131yor.';
     BIZ_SIRKET.forEach(function (m) {
       grid.appendChild(bizCard(
         '<div class="flex items-center gap-3 mb-3">' +
           '<span class="w-11 h-11 rounded-2xl bg-purple-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
           '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
         '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
-        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-1">Ornekler</div>' + tagRow(m[3], 'purple') +
+        '<div class="text-[11px] font-bold text-gray-400 uppercase mb-1">\u00d6rnekler</div>' + tagRow(m[3], 'purple') +
         '<div class="mt-3 space-y-2">' +
-          '<div class="p-2.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs"><span class="font-bold text-emerald-500">Artisi: </span><span class="dark:text-gray-300 text-gray-700">' + esc(m[4]) + '</span></div>' +
-          '<div class="p-2.5 rounded-xl bg-rose-500/5 border border-rose-500/20 text-xs"><span class="font-bold text-rose-500">Zorlugu: </span><span class="dark:text-gray-300 text-gray-700">' + esc(m[5]) + '</span></div>' +
+          '<div class="p-2.5 rounded-xl bg-emerald-500/5 border border-emerald-500/20 text-xs"><span class="font-bold text-emerald-500">Art\u0131\u015f\u0131: </span><span class="dark:text-gray-300 text-gray-700">' + esc(m[4]) + '</span></div>' +
+          '<div class="p-2.5 rounded-xl bg-rose-500/5 border border-rose-500/20 text-xs"><span class="font-bold text-rose-500">Zorlu\u011fu: </span><span class="dark:text-gray-300 text-gray-700">' + esc(m[5]) + '</span></div>' +
         '</div>', 'purple'));
     });
   }
 }
 
 var BIZ_DETAY = {
-  'Icerik ve SEO yazarligi': {
-    ozet: 'Isletmelerin blog, urun ve tanitim metinlerini yazarsin. Yapay zeka taslagi dakikalar icinde cikarir; senin katkin konuyu dogrulamak, markanin diline uyarlamak ve okunur hale getirmektir. Musteri sana yaziyi degil, zamani ve guveni satin alir.',
-    uygun: ['Yazmaktan sikilmayan, arastirmayi seven kisiler', 'Bir konuda zaten bilgisi olanlar (saglik, finans, yazilim, e-ticaret)', 'Duzenli calisma saati ayirabilenler'],
-    beceri: ['Temiz ve akici Turkce yazabilmek', 'Kaynak dogrulama aliskanligi', 'Temel SEO mantigi: baslik yapisi, anahtar kelime, ic link', 'Musteriyle net iletisim'],
-    adimlar: ['Bir dikey sec. "Her konuda yazarim" diyen kalabaliga karisir, "dis klinikleri icin yazarim" diyen aranir.', 'Kendi blogunda veya Medium\'da 3-5 ornek yazi yayinla. Portfolyo olmadan is almak zor.', 'Bir fiyat listesi hazirla: yazi basina, paket halinde ve aylik olarak.', 'LinkedIn\'de ne yaptigini yaz, hedefledigin sektordeki isletmelere ulas.', 'Ilk 2-3 isi referans icin uygun fiyata yap, sonra fiyati sabitle.', 'Her teslimde kisa bir rapor ekle: neyi neden boyle yazdin.'],
-    musteri: ['LinkedIn ve sektor gruplari', 'Bionluk, Fiverr, Upwork gibi platformlar', 'Dijital pazarlama ajanslarina taseron olarak', 'Kendi sitesinde blogu olup guncellemeyen isletmelere dogrudan teklif'],
-    fiyat: 'Kelime basina fiyatlama baslangicta kolaydir ama seni yavas yazmaya tesvik eder. Yazi basina veya aylik paket (orn: ayda 8 yazi) daha saglikli. Fiyati belirlerken yaziyi kac saatte bitirdigini ol, saatlik hedefini belirle ve ona gore paketle. Arastirma gerektiren teknik konular icin daha yuksek fiyat normaldir.',
-    hatalar: ['Yapay zeka ciktisini okumadan teslim etmek. Uydurma bilgi itibarini bitirir.', 'Her konuda is almak, hicbirinde uzmanlasmamak', 'Sinirsiz revizyon vaat etmek', 'Yaziyi teslim edip sonucu takip etmemek. Trafik artisi gosterirsen fiyatini yukseltirsin.'],
+  '\u0130\u00e7erik ve SEO yazarl\u0131\u011f\u0131': {
+    ozet: '\u0130\u015fletmelerin blog, \u00fcr\u00fcn ve tan\u0131t\u0131m metinlerini yazars\u0131n. Yapay zeka tasla\u011f\u0131 dakikalar i\u00e7inde \u00e7\u0131kar\u0131r; senin katk\u0131n konuyu do\u011frulamak, markan\u0131n diline uyarlamak ve okunur hale getirmektir. M\u00fc\u015fteri sana yaz\u0131y\u0131 de\u011fil, zaman\u0131 ve g\u00fcveni sat\u0131n al\u0131r.',
+    uygun: ['Yazmaktan s\u0131k\u0131lmayan, ara\u015ft\u0131rmay\u0131 seven ki\u015filer', 'Bir konuda zaten bilgisi olanlar (sa\u011fl\u0131k, finans, yaz\u0131l\u0131m, e-ticaret)', 'D\u00fczenli \u00e7al\u0131\u015fma saati ay\u0131rabilenler'],
+    beceri: ['Temiz ve ak\u0131c\u0131 T\u00fcrk\u00e7e yazabilmek', 'Kaynak do\u011frulama al\u0131\u015fkanl\u0131\u011f\u0131', 'Temel SEO mant\u0131\u011f\u0131: ba\u015fl\u0131k yap\u0131s\u0131, anahtar kelime, i\u00e7 link', 'M\u00fc\u015fteriyle net ileti\u015fim'],
+    adimlar: ['Bir dikey se\u00e7. "Her konuda yazarim" diyen kalabal\u0131\u011fa kar\u0131\u015f\u0131r, "di\u015f klinikleri i\u00e7in yazarim" diyen aran\u0131r.', 'Kendi blogunda veya Medium\'da 3-5 \u00f6rnek yaz\u0131 yay\u0131nla. Portfolyo olmadan i\u015f almak zor.', 'Bir fiyat listesi haz\u0131rla: yaz\u0131 ba\u015f\u0131na, paket halinde ve ayl\u0131k olarak.', 'LinkedIn\'de ne yapt\u0131\u011f\u0131n\u0131 yaz, hedefledi\u011fin sekt\u00f6rdeki i\u015fletmelere ula\u015f.', 'Ilk 2-3 i\u015fi referans i\u00e7in uygun fiyata yap, sonra fiyat\u0131 sabitle.', 'Her teslimde k\u0131sa bir rapor ekle: neyi neden b\u00f6yle yazdin.'],
+    musteri: ['LinkedIn ve sekt\u00f6r gruplar\u0131', 'Bionluk, Fiverr, Upwork gibi platformlar', 'Dijital pazarlama ajanslar\u0131na ta\u015feron olarak', 'Kendi sitesinde blogu olup g\u00fcncellemeyen i\u015fletmelere do\u011frudan teklif'],
+    fiyat: 'Kelime ba\u015f\u0131na fiyatlama ba\u015flang\u0131\u00e7ta kolayd\u0131r ama seni yava\u015f yazmaya te\u015fvik eder. Yaz\u0131 ba\u015f\u0131na veya ayl\u0131k paket (\u00f6rn: ayda 8 yaz\u0131) daha sa\u011fl\u0131kl\u0131. Fiyat\u0131 belirlerken yaz\u0131y\u0131 ka\u00e7 saatte bitirdi\u011fini ol, saatlik hedefini belirle ve ona g\u00f6re paketle. Ara\u015ft\u0131rma gerektiren teknik konular i\u00e7in daha y\u00fcksek fiyat normaldir.',
+    hatalar: ['Yapay zeka \u00e7\u0131kt\u0131s\u0131n\u0131 okumadan teslim etmek. Uydurma bilgi itibar\u0131n\u0131 bitirir.', 'Her konuda i\u015f almak, hi\u00e7birinde uzmanla\u015fmamak', 'S\u0131n\u0131rs\u0131z revizyon vaat etmek', 'Yaz\u0131y\u0131 teslim edip sonucu takip etmemek. Trafik art\u0131\u015f\u0131 g\u00f6sterirsen fiyat\u0131n\u0131 y\u00fckseltirsin.'],
     kategori: 'Metin'
   },
-  'Gorsel ve logo tasarimi': {
-    ozet: 'Sosyal medya gorseli, kapak, logo ve urun fotografi uretirsin. Yapay zeka secenek uretir; senin isin marka kimligine uygun olani secmek, duzeltmek ve kullanilabilir dosya formatlarinda teslim etmektir.',
-    uygun: ['Gorsel zevki olan, detaya dikkat eden kisiler', 'Temel tasarim araclarini ogrenmeye acik olanlar', 'Musteri geri bildirimiyle calisabilenler'],
-    beceri: ['Renk, tipografi ve hizalama konusunda temel bilgi', 'Canva veya Figma gibi bir arac kullanabilmek', 'Dosya formatlari: PNG, SVG, PDF farkini bilmek', 'Marka kimligi mantigini anlamak'],
-    adimlar: ['Bir tarz belirle ve o tarzda 10 ornek uret. Dagilan portfolyo guven vermez.', 'Logo icin yapay zeka ciktisini oldugu gibi satma; vektorel hale getir, olceklenebilir yap.', 'Paket tanimla: 3 konsept + 2 revizyon + kaynak dosyalar gibi.', 'Teslim suresini net yaz ve ona uy.', 'Ticari kullanim haklarini sozlesmede acikca belirt.'],
-    musteri: ['Yeni acilan kafe, kuafor, butik gibi yerel isletmeler', 'Instagram uzerinden satis yapan kucuk markalar', 'Fiverr, Bionluk', 'Youtuber ve podcast yapanlar (kapak gorseli)'],
-    fiyat: 'Tek gorsel basina fiyat dusuk kalir; aylik sosyal medya paketi (orn: ayda 15 gorsel) daha iyi gelir saglar. Logo isi tek seferliktir ama marka kimligi rehberi ekleyerek fiyati artirabilirsin. Acil isler icin ek ucret almak normaldir.',
-    hatalar: ['Yapay zeka ciktisini dusuk cozunurlukte teslim etmek', 'Baska bir markanin logosuna benzeyen tasarim uretmek', 'Kaynak dosyalari vermemek konusunda belirsiz kalmak', 'Her revizyonu ucretsiz yapmak'],
-    kategori: 'Gorsel'
+  'G\u00f6rsel ve logo tasar\u0131m\u0131': {
+    ozet: 'Sosyal medya gorseli, kapak, logo ve \u00fcr\u00fcn foto\u011fraf\u0131 \u00fcretirsin. Yapay zeka se\u00e7enek \u00fcretir; senin i\u015fin marka kimli\u011fine uygun olani se\u00e7mek, d\u00fczeltmek ve kullan\u0131labilir dosya formatlar\u0131nda teslim etmektir.',
+    uygun: ['G\u00f6rsel zevki olan, detaya dikkat eden ki\u015filer', 'Temel tasar\u0131m ara\u00e7lar\u0131n\u0131 \u00f6\u011frenmeye a\u00e7\u0131k olanlar', 'M\u00fc\u015fteri geri bildirimiyle \u00e7al\u0131\u015fabilenler'],
+    beceri: ['Renk, tipografi ve hizalama konusunda temel bilgi', 'Canva veya Figma gibi bir ara\u00e7 kullanabilmek', 'Dosya formatlar\u0131: PNG, SVG, PDF fark\u0131n\u0131 bilmek', 'Marka kimli\u011fi mant\u0131\u011f\u0131n\u0131 anlamak'],
+    adimlar: ['Bir tarz belirle ve o tarzda 10 \u00f6rnek \u00fcret. Da\u011f\u0131lan portfolyo g\u00fcven vermez.', 'Logo i\u00e7in yapay zeka \u00e7\u0131kt\u0131s\u0131n\u0131 oldu\u011fu gibi satma; vekt\u00f6rel hale getir, \u00f6l\u00e7eklenebilir yap.', 'Paket tan\u0131mla: 3 konsept + 2 revizyon + kaynak dosyalar gibi.', 'Teslim s\u00fcresini net yaz ve ona uy.', 'Ticari kullan\u0131m haklar\u0131n\u0131 s\u00f6zle\u015fmede a\u00e7\u0131k\u00e7a belirt.'],
+    musteri: ['Yeni a\u00e7\u0131lan kafe, kuaf\u00f6r, butik gibi yerel i\u015fletmeler', 'Instagram \u00fczerinden sat\u0131\u015f yapan k\u00fc\u00e7\u00fck markalar', 'Fiverr, Bionluk', 'Youtuber ve podcast yapanlar (kapak gorseli)'],
+    fiyat: 'Tek g\u00f6rsel ba\u015f\u0131na fiyat d\u00fc\u015f\u00fck kal\u0131r; ayl\u0131k sosyal medya paketi (\u00f6rn: ayda 15 g\u00f6rsel) daha iyi gelir sa\u011flar. Logo i\u015fi tek seferliktir ama marka kimli\u011fi rehberi ekleyerek fiyat\u0131 art\u0131rabilirsin. Acil i\u015fler i\u00e7in ek \u00fccret almak normaldir.',
+    hatalar: ['Yapay zeka \u00e7\u0131kt\u0131s\u0131n\u0131 d\u00fc\u015f\u00fck \u00e7\u00f6z\u00fcn\u00fcrl\u00fckte teslim etmek', 'Ba\u015fka bir markan\u0131n logosuna benzeyen tasar\u0131m \u00fcretmek', 'Kaynak dosyalari vermemek konusunda belirsiz kalmak', 'Her revizyonu \u00fccretsiz yapmak'],
+    kategori: 'G\u00f6rsel'
   },
-  'Kisa video ureticiligi': {
-    ozet: 'Markalar icin Reels, TikTok ve Shorts uretirsin. Senaryo, seslendirme ve altyazi yapay zekayla hizlanir; kurgu ritmi, muzik secimi ve ilk 3 saniyenin dikkat cekmesi senin isindir.',
-    uygun: ['Sosyal medyayi zaten takip eden, trendleri bilen kisiler', 'Video kurguyu ogrenmeye vakti olanlar', 'Duzenli uretim temposunu kaldirabilenler'],
-    beceri: ['Temel video kurgu (CapCut yeterli)', 'Ritim ve tempo duygusu', 'Altyazi ve metin yerlesimi', 'Platform farklarini bilmek (Reels, TikTok, Shorts ayni degil)'],
-    adimlar: ['Bir sektor sec ve o sektor icin 5 ornek video uret.', 'Markanin rengini, fontunu ve tonunu sablonlastir, her videoda sifirdan baslama.', 'Aylik paket sat: orn. ayda 12 video, 2 revizyon.', 'Teslim takvimini bastan belirle, icerik onay surecini netlestir.', 'Performansi olc: izlenme ve etkilesim raporu paylas.'],
-    musteri: ['Restoran, kafe, spor salonu gibi gorsel isletmeler', 'Kisisel marka olusturan avukat, doktor, danisman', 'E-ticaret markalari', 'Ajanslara taseron olarak'],
-    fiyat: 'Video basina fiyat yerine aylik abonelik mantigi kur. Sablon kurdugun icin ikinci aydan sonra sure kisalir, kar marjin artar. Senaryo ve cekim de senden isteniyorsa ayri kalemde fiyatla.',
-    hatalar: ['Her video icin sifirdan tasarim yapmak', 'Telifli muzik kullanmak', 'Musterinin urununu anlamadan genel icerik uretmek', 'Revizyon sinirini bastan konusmamak'],
+  'K\u0131sa video \u00fcreticili\u011fi': {
+    ozet: 'Markalar i\u00e7in Reels, TikTok ve Shorts \u00fcretirsin. Senaryo, seslendirme ve altyaz\u0131 yapay zekayla h\u0131zlan\u0131r; kurgu ritmi, m\u00fczik se\u00e7imi ve ilk 3 saniyenin dikkat \u00e7ekmesi senin i\u015findir.',
+    uygun: ['Sosyal medyay\u0131 zaten takip eden, trendleri bilen ki\u015filer', 'Video kurguyu \u00f6\u011frenmeye vakti olanlar', 'D\u00fczenli \u00fcretim temposunu kald\u0131rabilenler'],
+    beceri: ['Temel video kurgu (CapCut yeterli)', 'Ritim ve tempo duygusu', 'Altyaz\u0131 ve metin yerle\u015fimi', 'Platform farklar\u0131n\u0131 bilmek (Reels, TikTok, Shorts ayn\u0131 de\u011fil)'],
+    adimlar: ['Bir sekt\u00f6r se\u00e7 ve o sekt\u00f6r i\u00e7in 5 \u00f6rnek video \u00fcret.', 'Markan\u0131n rengini, fontunu ve tonunu \u015fablonla\u015ft\u0131r, her videoda s\u0131f\u0131rdan ba\u015flama.', 'Ayl\u0131k paket sat: \u00f6rn. ayda 12 video, 2 revizyon.', 'Teslim takvimini ba\u015ftan belirle, i\u00e7erik onay s\u00fcrecini netle\u015ftir.', 'Performans\u0131 \u00f6l\u00e7: izlenme ve etkile\u015fim raporu payla\u015f.'],
+    musteri: ['Restoran, kafe, spor salonu gibi g\u00f6rsel i\u015fletmeler', 'Ki\u015fisel marka olu\u015fturan avukat, doktor, dan\u0131\u015fman', 'E-ticaret markalar\u0131', 'Ajanslara ta\u015feron olarak'],
+    fiyat: 'Video ba\u015f\u0131na fiyat yerine ayl\u0131k abonelik mant\u0131\u011f\u0131 kur. \u015eablon kurdu\u011fun i\u00e7in ikinci aydan sonra s\u00fcre k\u0131sal\u0131r, kar marjin artar. Senaryo ve \u00e7ekim de senden isteniyorsa ayr\u0131 kalemde fiyatla.',
+    hatalar: ['Her video i\u00e7in s\u0131f\u0131rdan tasar\u0131m yapmak', 'Telifli m\u00fczik kullanmak', 'M\u00fc\u015fterinin \u00fcr\u00fcn\u00fcn\u00fc anlamadan genel i\u00e7erik \u00fcretmek', 'Revizyon s\u0131n\u0131r\u0131n\u0131 ba\u015ftan konu\u015fmamak'],
     kategori: 'Video'
   },
   'Seslendirme ve dublaj': {
-    ozet: 'Reklam, egitim videosu, podcast ve yabanci icerik icin Turkce ses uretirsin. Yapay zeka sesi olusturur; senin isin dogru tonu secmek, vurgu ve zamanlamayi duzeltmek ve temiz bir kayit teslim etmektir.',
-    uygun: ['Kulagi iyi olan, tonlama farkini duyan kisiler', 'Ses duzenlemeyi ogrenmeye acik olanlar', 'Detayci calisabilenler'],
-    beceri: ['Temel ses duzenleme (kesme, normalize etme, gurultu temizleme)', 'Turkce vurgu ve noktalama bilgisi', 'Zamanlama ve dudak senkronu mantigi (dublajda)', 'Dosya formatlari ve kalite ayarlari'],
-    adimlar: ['Farkli tonlarda (reklam, egitim, belgesel) 5 ornek kayit hazirla.', 'Egitim iceregi ureten firmalara ve ajanslara ulas.', 'Dakika veya proje basina fiyatla, duzeltme turunu bastan belirle.', 'Yabanci icerigi Turkcelestirirken ceviriyi de pakete ekleyip fiyati artir.', 'Teslim formatini musteriyle netlestir (WAV, MP3, bit hizi).'],
-    musteri: ['Online egitim platformlari', 'Reklam ve prod\u00fcksiyon ajanslari', 'Youtube kanallari', 'Kurumsal tanitim videosu yaptiran sirketler'],
-    fiyat: 'Dakika basina fiyat sektorde yaygindir. Ancak duzeltme ve senkron isi uzun suruyorsa proje basina fiyatlamak daha dogru. Kurumsal isler bireysel islerden daha yuksek butceye sahiptir.',
-    hatalar: ['Baskasinin sesini izinsiz klonlamak. Bu hem yasal sorun hem itibar kaybi.', 'Ham yapay zeka ciktisini duzeltmeden teslim etmek', 'Telif ve kullanim haklarini yaziya dokmemek', 'Dusuk kaliteli kayit formatiyla teslim'],
-    kategori: 'Muzik'
+    ozet: 'Reklam, e\u011fitim videosu, podcast ve yabanc\u0131 i\u00e7erik i\u00e7in T\u00fcrk\u00e7e ses \u00fcretirsin. Yapay zeka sesi olu\u015fturur; senin i\u015fin do\u011fru tonu se\u00e7mek, vurgu ve zamanlamay\u0131 d\u00fczeltmek ve temiz bir kay\u0131t teslim etmektir.',
+    uygun: ['Kula\u011f\u0131 iyi olan, tonlama fark\u0131n\u0131 duyan ki\u015filer', 'Ses d\u00fczenlemeyi \u00f6\u011frenmeye a\u00e7\u0131k olanlar', 'Detayc\u0131 \u00e7al\u0131\u015fabilenler'],
+    beceri: ['Temel ses d\u00fczenleme (kesme, normalize etme, g\u00fcr\u00fclt\u00fc temizleme)', 'T\u00fcrk\u00e7e vurgu ve noktalama bilgisi', 'Zamanlama ve dudak senkronu mant\u0131\u011f\u0131 (dublajda)', 'Dosya formatlar\u0131 ve kalite ayarlar\u0131'],
+    adimlar: ['Farkl\u0131 tonlarda (reklam, e\u011fitim, belgesel) 5 \u00f6rnek kay\u0131t haz\u0131rla.', 'E\u011fitim i\u00e7eri\u011fi \u00fcreten firmalara ve ajanslara ula\u015f.', 'Dakika veya proje ba\u015f\u0131na fiyatla, d\u00fczeltme t\u00fcr\u00fcn\u00fc ba\u015ftan belirle.', 'Yabanc\u0131 i\u00e7eri\u011fi T\u00fcrk\u00e7ele\u015ftirirken \u00e7eviriyi de pakete ekleyip fiyat\u0131 art\u0131r.', 'Teslim format\u0131n\u0131 m\u00fc\u015fteriyle netle\u015ftir (WAV, MP3, bit h\u0131z\u0131).'],
+    musteri: ['Online e\u011fitim platformlar\u0131', 'Reklam ve prod\u00fcksiyon ajanslar\u0131', 'Youtube kanallar\u0131', 'Kurumsal tan\u0131t\u0131m videosu yapt\u0131ran \u015firketler'],
+    fiyat: 'Dakika ba\u015f\u0131na fiyat sekt\u00f6rde yayg\u0131nd\u0131r. Ancak d\u00fczeltme ve senkron i\u015fi uzun s\u00fcr\u00fcyorsa proje ba\u015f\u0131na fiyatlamak daha do\u011fru. Kurumsal i\u015fler bireysel i\u015flerden daha y\u00fcksek b\u00fct\u00e7eye sahiptir.',
+    hatalar: ['Ba\u015fkas\u0131n\u0131n sesini izinsiz klonlamak. Bu hem yasal sorun hem itibar kayb\u0131.', 'Ham yapay zeka \u00e7\u0131kt\u0131s\u0131n\u0131 d\u00fczeltmeden teslim etmek', 'Telif ve kullan\u0131m haklar\u0131n\u0131 yaz\u0131ya d\u00f6kmemek', 'D\u00fc\u015f\u00fck kaliteli kay\u0131t format\u0131yla teslim'],
+    kategori: 'M\u00fczik'
   },
   'Otomasyon kurulumu': {
-    ozet: 'Kucuk isletmelerin tekrar eden islerini otomatiklestirirsin: gelen formu tabloya isleme, fatura okuma, raporu otomatik gonderme, musteri takibi. Kurulum ucreti ve aylik bakim olarak iki kalemde gelir getirir.',
-    uygun: ['Mantik kurmayi seven, sabirli kisiler', 'Kod yazmayi bilmeyen ama ogrenmeye acik olanlar', 'Isletme sureclerini anlamak isteyenler'],
-    beceri: ['n8n veya Make gibi bir arac', 'Temel API ve webhook mantigi', 'Elektronik tablo ve veri duzeni', 'Sureci musteriden dogru dinleyip cizebilmek'],
-    adimlar: ['Once kendi isinde bir akis kur, bizzat kullan.', 'Tek bir sektorde tek bir problemi coz. Orn: emlakcilar icin randevu hatirlatma.', 'Demo hazirla, musteriye canli goster. Anlatmak degil gostermek satiyor.', 'Kurulum ucreti + aylik destek olarak fiyatla.', 'Musterinin verisinin nerede durdugunu ve kimin erisebildigini yazili belgele.', 'Akis bozulursa ne yapilacagini bastan planla.'],
-    musteri: ['Muhasebe ve danismanlik ofisleri', 'Emlak ofisleri', 'Kucuk e-ticaret isletmeleri', 'Klinik ve randevulu calisan yerler'],
-    fiyat: 'Kurulum tek seferlik, bakim aylik. Asil gelir aylik bakimdan gelir, bu yuzden kurulumu makul fiyatla ama bakimi mutlaka sat. Akis sayisina gore kademeli paket yapabilirsin.',
-    hatalar: ['Musterinin sureci degistiginde akisin bozulacagini hesaba katmamak', 'Hassas veriyi (musteri bilgisi, fatura) guvensiz yerde tutmak', 'Bakim anlasmasi yapmadan kurulum teslim etmek', 'Cok karmasik akis kurup musterinin anlamamasi'],
-    kategori: 'Uretkenlik'
+    ozet: 'K\u00fc\u00e7\u00fck i\u015fletmelerin tekrar eden i\u015flerini otomatikle\u015ftirirsin: gelen formu tabloya i\u015fleme, fatura okuma, raporu otomatik g\u00f6nderme, m\u00fc\u015fteri takibi. Kurulum \u00fccreti ve ayl\u0131k bak\u0131m olarak iki kalemde gelir getirir.',
+    uygun: ['Mant\u0131k kurmay\u0131 seven, sab\u0131rl\u0131 ki\u015filer', 'Kod yazmay\u0131 bilmeyen ama \u00f6\u011frenmeye a\u00e7\u0131k olanlar', '\u0130\u015fletme s\u00fcre\u00e7lerini anlamak isteyenler'],
+    beceri: ['n8n veya Make gibi bir ara\u00e7', 'Temel API ve webhook mant\u0131\u011f\u0131', 'Elektronik tablo ve veri d\u00fczeni', 'S\u00fcreci m\u00fc\u015fteriden do\u011fru dinleyip \u00e7izebilmek'],
+    adimlar: ['\u00d6nce kendi i\u015finde bir ak\u0131\u015f kur, bizzat kullan.', 'Tek bir sekt\u00f6rde tek bir problemi \u00e7\u00f6z. \u00d6rn: emlak\u00e7\u0131lar i\u00e7in randevu hat\u0131rlatma.', 'Demo haz\u0131rla, m\u00fc\u015fteriye canli g\u00f6ster. Anlatmak de\u011fil g\u00f6stermek sat\u0131yor.', 'Kurulum \u00fccreti + ayl\u0131k destek olarak fiyatla.', 'M\u00fc\u015fterinin verisinin nerede durdu\u011funu ve kimin eri\u015febildi\u011fini yaz\u0131l\u0131 belgele.', 'Ak\u0131\u015f bozulursa ne yap\u0131laca\u011f\u0131n\u0131 ba\u015ftan planla.'],
+    musteri: ['Muhasebe ve dan\u0131\u015fmanl\u0131k ofisleri', 'Emlak ofisleri', 'K\u00fc\u00e7\u00fck e-ticaret i\u015fletmeleri', 'Klinik ve randevulu \u00e7al\u0131\u015fan yerler'],
+    fiyat: 'Kurulum tek seferlik, bak\u0131m ayl\u0131k. As\u0131l gelir ayl\u0131k bak\u0131mdan gelir, bu y\u00fczden kurulumu makul fiyatla ama bak\u0131m\u0131 mutlaka sat. Ak\u0131\u015f say\u0131s\u0131na g\u00f6re kademeli paket yapabilirsin.',
+    hatalar: ['M\u00fc\u015fterinin s\u00fcreci de\u011fi\u015fti\u011finde ak\u0131\u015f\u0131n bozulaca\u011f\u0131n\u0131 hesaba katmamak', 'Hassas veriyi (m\u00fc\u015fteri bilgisi, fatura) g\u00fcvensiz yerde tutmak', 'Bak\u0131m anla\u015fmas\u0131 yapmadan kurulum teslim etmek', '\u00c7ok karma\u015f\u0131k ak\u0131\u015f kurup m\u00fc\u015fterinin anlamamas\u0131'],
+    kategori: '\u00dcretkenlik'
   },
-  'Chatbot ve musteri destegi kurulumu': {
-    ozet: 'Isletmenin kendi belgeleriyle calisan soru-cevap botu kurarsin. Bot, musterinin sik sorulan sorularini yanitlar; yanitlayamadigini insana aktarir. WhatsApp, web sitesi veya Instagram uzerinden calisir.',
-    uygun: ['Teknik ogrenmeye istekli kisiler', 'Musteri hizmetleri surecini anlayanlar', 'Sorumluluk alabilen, test etmeyi seven kisiler'],
-    beceri: ['Dify, Flowise gibi bir arac', 'Belge hazirlama ve duzenleme (bot ancak verdigin belge kadar iyi)', 'Test etme disiplini', 'Beklentiyi dogru yonetme'],
-    adimlar: ['Kendi demo botunu kur ve musteriye canli goster.', 'Isletmenin SSS, fiyat listesi ve politika belgelerini topla, temizle.', 'Botu kur, en az 50 gercek soruyla test et.', 'Yanlis cevap riskini musteriye acikca anlat ve insana aktarma yolunu mutlaka birak.', 'Kurulum + aylik kullanim bedeli olarak fiyatla.', 'Ilk ay yanitlari gozden gecir ve belgeleri guncelle.'],
-    musteri: ['Online satis yapan markalar', 'Klinik, veteriner, guzellik merkezi', 'Egitim kurumlari', 'Emlak ve otomotiv bayileri'],
-    fiyat: 'Kurulum ucreti + aylik bakim. Aylik bedel model kullanim maliyetini karsilamali, o yuzden tahmini mesaj sayisini bastan hesapla. Cok yogun kullanan musteriye kademeli paket sun.',
-    hatalar: ['Botun yanlis bilgi verebilecegini musteriye soylememek', 'Insana aktarma secenegini koymamak', 'Belgeleri guncellemeyi unutmak', 'Kullanim maliyetini hesaplamadan sabit fiyat vermek'],
-    kategori: 'Uretkenlik'
+  'Chatbot ve m\u00fc\u015fteri deste\u011fi kurulumu': {
+    ozet: '\u0130\u015fletmenin kendi belgeleriyle \u00e7al\u0131\u015fan soru-cevap botu kurars\u0131n. Bot, m\u00fc\u015fterinin s\u0131k sorulan sorular\u0131n\u0131 yan\u0131tlar; yan\u0131tlayamad\u0131\u011f\u0131n\u0131 insana aktar\u0131r. WhatsApp, web sitesi veya Instagram \u00fczerinden \u00e7al\u0131\u015f\u0131r.',
+    uygun: ['Teknik \u00f6\u011frenmeye istekli ki\u015filer', 'M\u00fc\u015fteri hizmetleri s\u00fcrecini anlayanlar', 'Sorumluluk alabilen, test etmeyi seven ki\u015filer'],
+    beceri: ['Dify, Flowise gibi bir ara\u00e7', 'Belge haz\u0131rlama ve d\u00fczenleme (bot ancak verdi\u011fin belge kadar iyi)', 'Test etme disiplini', 'Beklentiyi do\u011fru y\u00f6netme'],
+    adimlar: ['Kendi demo botunu kur ve m\u00fc\u015fteriye canli g\u00f6ster.', '\u0130\u015fletmenin SSS, fiyat listesi ve politika belgelerini topla, temizle.', 'Botu kur, en az 50 ger\u00e7ek soruyla test et.', 'Yanl\u0131\u015f cevap riskini m\u00fc\u015fteriye a\u00e7\u0131k\u00e7a anlat ve insana aktarma yolunu mutlaka b\u0131rak.', 'Kurulum + ayl\u0131k kullan\u0131m bedeli olarak fiyatla.', 'Ilk ay yan\u0131tlar\u0131 g\u00f6zden ge\u00e7ir ve belgeleri g\u00fcncelle.'],
+    musteri: ['Online sat\u0131\u015f yapan markalar', 'Klinik, veteriner, g\u00fczellik merkezi', 'E\u011fitim kurumlar\u0131', 'Emlak ve otomotiv bayileri'],
+    fiyat: 'Kurulum \u00fccreti + ayl\u0131k bak\u0131m. Ayl\u0131k bedel model kullan\u0131m maliyetini kar\u015f\u0131lamal\u0131, o y\u00fczden tahmini mesaj say\u0131s\u0131n\u0131 ba\u015ftan hesapla. \u00c7ok yo\u011fun kullanan m\u00fc\u015fteriye kademeli paket sun.',
+    hatalar: ['Botun yanl\u0131\u015f bilgi verebilece\u011fini m\u00fc\u015fteriye s\u00f6ylememek', '\u0130nsana aktarma se\u00e7ene\u011fini koymamak', 'Belgeleri g\u00fcncellemeyi unutmak', 'Kullan\u0131m maliyetini hesaplamadan sabit fiyat vermek'],
+    kategori: '\u00dcretkenlik'
   },
-  'Mikro SaaS / kucuk arac gelistirme': {
-    ozet: 'Dar bir problemi cozen kucuk bir web araci yapip aylik abonelikle satarsin. Yapay zeka kodlamayi hizlandirir ama urunu buyutmek, kullanici bulmak ve destek vermek zaman ister. En yavas ama en olceklenebilir yol budur.',
-    uygun: ['Uzun vadeli dusunebilen, sabirli kisiler', 'Teknik ogrenmeye acik olanlar', 'Gelir hemen gelmezse pes etmeyecekler'],
-    beceri: ['Temel web gelistirme veya yapay zeka destekli kodlama araclari', 'Veritabani mantigi', 'Kullanici geri bildirimini dinleme', 'Basit pazarlama'],
-    adimlar: ['Kendi yasadigin veya yakinen gordugun bir problemi sec.', 'En kucuk calisan surumu 2-4 haftada cikar, mukemmel olmasini bekleme.', 'Ilk 10 kullaniciyi elle bul ve birebir konus.', 'Ucretsiz deneme + aylik abonelik kur.', 'Destek ve hata duzeltme icin haftalik zaman ayir.', 'Buyume yavassa urunu degil, kitleyi sorgula.'],
-    musteri: ['Belirli bir meslegin uyeleri (diyetisyen, emlakci, ogretmen)', 'Kucuk ajanslar', 'Kendi sektorundeki tanidiklarin', 'Ilgili topluluk ve forumlar'],
-    fiyat: 'Aylik abonelik standarttir. Fiyati dusuk tutup cok kullanici aramak yerine, dar bir kitleye daha yuksek fiyatla satmak kucuk urunlerde daha kolaydir. Yillik odemeye indirim koy, nakit akisini rahatlatir.',
-    hatalar: ['Kullaniciyla konusmadan aylarca gelistirmek', 'Cok genis bir problem secmek', 'Destek yukunu hesaba katmamak', 'Altyapi maliyetini fiyata yansitmamak'],
+  'Mikro SaaS / k\u00fc\u00e7\u00fck ara\u00e7 geli\u015ftirme': {
+    ozet: 'Dar bir problemi \u00e7\u00f6zen k\u00fc\u00e7\u00fck bir web arac\u0131 yap\u0131p ayl\u0131k abonelikle satars\u0131n. Yapay zeka kodlamayi h\u0131zland\u0131r\u0131r ama \u00fcr\u00fcn\u00fc b\u00fcy\u00fctmek, kullan\u0131c\u0131 bulmak ve destek vermek zaman ister. En yava\u015f ama en \u00f6l\u00e7eklenebilir yol budur.',
+    uygun: ['Uzun vadeli d\u00fc\u015f\u00fcnebilen, sab\u0131rl\u0131 ki\u015filer', 'Teknik \u00f6\u011frenmeye a\u00e7\u0131k olanlar', 'Gelir hemen gelmezse pe\u015f etmeyecekler'],
+    beceri: ['Temel web geli\u015ftirme veya yapay zeka destekli kodlama ara\u00e7lar\u0131', 'Veritaban\u0131 mant\u0131\u011f\u0131', 'Kullan\u0131c\u0131 geri bildirimini dinleme', 'Basit pazarlama'],
+    adimlar: ['Kendi ya\u015fad\u0131\u011f\u0131n veya yak\u0131ndan g\u00f6rd\u00fc\u011f\u00fcn bir problemi se\u00e7.', 'En k\u00fc\u00e7\u00fck \u00e7al\u0131\u015fan s\u00fcr\u00fcm\u00fc 2-4 haftada \u00e7\u0131kar, m\u00fckemmel olmasini bekleme.', 'Ilk 10 kullan\u0131c\u0131y\u0131 elle bul ve birebir konus.', '\u00dccretsiz deneme + ayl\u0131k abonelik kur.', 'Destek ve hata d\u00fczeltme i\u00e7in haftal\u0131k zaman ay\u0131r.', 'B\u00fcy\u00fcme yava\u015fsa \u00fcr\u00fcn\u00fc de\u011fil, kitleyi sorgula.'],
+    musteri: ['Belirli bir mesle\u011fin \u00fcyeleri (diyetisyen, emlak\u00e7\u0131, \u00f6\u011fretmen)', 'K\u00fc\u00e7\u00fck ajanslar', 'Kendi sekt\u00f6r\u00fcndeki tan\u0131d\u0131klar\u0131n', '\u0130lgili topluluk ve forumlar'],
+    fiyat: 'Ayl\u0131k abonelik standarttir. Fiyat\u0131 d\u00fc\u015f\u00fck tutup \u00e7ok kullan\u0131c\u0131 aramak yerine, dar bir kitleye daha y\u00fcksek fiyatla satmak k\u00fc\u00e7\u00fck \u00fcr\u00fcnlerde daha kolayd\u0131r. Y\u0131ll\u0131k \u00f6demeye indirim koy, nakit ak\u0131\u015f\u0131n\u0131 rahatlat\u0131r.',
+    hatalar: ['Kullan\u0131c\u0131yla konu\u015fmadan aylarca geli\u015ftirmek', '\u00c7ok geni\u015f bir problem se\u00e7mek', 'Destek y\u00fck\u00fcn\u00fc hesaba katmamak', 'Altyap\u0131 maliyetini fiyata yansitmamak'],
     kategori: 'Kodlama'
   },
-  'Dijital urun satisi': {
-    ozet: 'Bir kere uretip defalarca satilan urunler: sablon, prompt paketi, e-kitap, Notion sablonu, kurs. Gelir yavas baslar, zamanla birikir. Asil zorluk urun uretmek degil, duyurmaktir.',
-    uygun: ['Bir konuda birikimi olan kisiler', 'Pazarlama ogrenmeye acik olanlar', 'Hemen gelir beklemeyenler'],
-    beceri: ['Icerik duzenleme ve sunum', 'Basit tasarim', 'Satis sayfasi yazabilmek', 'Sosyal medyada duzenli paylasim'],
-    adimlar: ['Belirli bir meslegin islerini kolaylastiran bir urun tasarla.', 'Ucretsiz bir mini surum cikar, e-posta listesi topla.', 'Gumroad veya Shopier gibi bir satis sayfasi ac.', 'Urunu kullanan birkac kisiden gercek yorum al.', 'Urunu guncel tut; eskiyen sablon satmaz.', 'Ikinci urunu ilkinin musterisine sat, en kolay satis odur.'],
-    musteri: ['Kendi sektorundeki meslektaslar', 'Sosyal medya takipcilerin', 'E-posta listen', 'Ilgili topluluklar'],
-    fiyat: 'Dusuk fiyat + yuksek adet mi, yuksek fiyat + az adet mi, bunu kitleye gore sec. Kurumsal alicilar icin cok kullanicili lisans ayri fiyatlandirilir. Paket halinde satmak tek tek satmaktan daha verimlidir.',
-    hatalar: ['Urunu yapip duyurmamak', 'Ucretsiz bulunabilen seyi satmaya calismak', 'Guncelleme sozu verip tutmamak', 'Iade kosullarini belirtmemek'],
-    kategori: 'Uretkenlik'
+  'Dijital \u00fcr\u00fcn sat\u0131\u015f\u0131': {
+    ozet: 'Bir kere \u00fcretip defalarca sat\u0131lan \u00fcr\u00fcnler: \u015fablon, prompt paketi, e-kitap, Notion \u015fablonu, kurs. Gelir yava\u015f ba\u015flar, zamanla birikir. As\u0131l zorluk \u00fcr\u00fcn \u00fcretmek de\u011fil, duyurmaktir.',
+    uygun: ['Bir konuda birikimi olan ki\u015filer', 'Pazarlama \u00f6\u011frenmeye a\u00e7\u0131k olanlar', 'Hemen gelir beklemeyenler'],
+    beceri: ['\u0130\u00e7erik d\u00fczenleme ve sunum', 'Basit tasar\u0131m', 'Sat\u0131\u015f sayfas\u0131 yazabilmek', 'Sosyal medyada d\u00fczenli payla\u015f\u0131m'],
+    adimlar: ['Belirli bir mesle\u011fin i\u015flerini kolayla\u015ft\u0131ran bir \u00fcr\u00fcn tasarla.', '\u00dccretsiz bir mini s\u00fcr\u00fcm \u00e7\u0131kar, e-posta listesi topla.', 'Gumroad veya Shopier gibi bir sat\u0131\u015f sayfas\u0131 a\u00e7.', '\u00dcr\u00fcn\u00fc kullanan birka\u00e7 ki\u015fiden ger\u00e7ek yorum al.', '\u00dcr\u00fcn\u00fc g\u00fcncel tut; eskiyen \u015fablon satmaz.', '\u0130kinci \u00fcr\u00fcn\u00fc ilkinin m\u00fc\u015fterisine sat, en kolay sat\u0131\u015f odur.'],
+    musteri: ['Kendi sekt\u00f6r\u00fcndeki meslekta\u015flar', 'Sosyal medya takip\u00e7ilerin', 'E-posta listen', '\u0130lgili topluluklar'],
+    fiyat: 'D\u00fc\u015f\u00fck fiyat + y\u00fcksek adet mi, y\u00fcksek fiyat + az adet mi, bunu kitleye g\u00f6re se\u00e7. Kurumsal al\u0131c\u0131lar i\u00e7in \u00e7ok kullan\u0131c\u0131l\u0131 lisans ayr\u0131 fiyatland\u0131r\u0131l\u0131r. Paket halinde satmak tek tek satmaktan daha verimlidir.',
+    hatalar: ['\u00dcr\u00fcn\u00fc yap\u0131p duyurmamak', '\u00dccretsiz bulunabilen \u015feyi satmaya \u00e7al\u0131\u015fmak', 'G\u00fcncelleme s\u00f6z\u00fc verip tutmamak', 'Iade ko\u015fullar\u0131n\u0131 belirtmemek'],
+    kategori: '\u00dcretkenlik'
   },
-  'Ceviri ve yerellestirme': {
-    ozet: 'Web sitesi, uygulama arayuzu, egitim icerigi ve belge cevirisi yaparsin. Yapay zeka ilk ceviriyi saniyeler icinde yapar; senin katkin anlam, terim tutarliligi ve kultur uyumudur.',
-    uygun: ['Iki dili de iyi bilen kisiler', 'Detayci ve sabirli olanlar', 'Bir alanda terim bilgisi olanlar'],
-    beceri: ['Hedef dilde akici yazabilmek', 'Terim sozlugu olusturma', 'Baglami anlama', 'Teslim formatlarini koruma (HTML, JSON gibi)'],
-    adimlar: ['Bir alanda uzmanlas: teknik, hukuk, pazarlama, oyun.', 'O alanda terim sozlugu olustur, tutarlilik satar.', 'Ornek ceviriler hazirla, once-sonra goster.', 'Kelime basina degil proje basina fiyatlamayi dene.', 'Makine ciktisini mutlaka duzelt, oldugu gibi teslim etme.'],
-    musteri: ['Turkiye pazarina acilan yabanci yazilim ve uygulamalar', 'Egitim platformlari', 'Oyun stuydolari', 'Ceviri burolarina taseron olarak'],
-    fiyat: 'Kelime basina fiyat sektor standardidir ama yapay zeka kullandiginda sure kisaldigi icin proje basina fiyatlamak daha karli olabilir. Acil isler ve teknik metinler icin ek ucret normaldir.',
-    hatalar: ['Makine ciktisini duzeltmeden teslim etmek', 'Terim tutarsizligi', 'Kultur farkini gozetmemek (birebir ceviri komik durabilir)', 'Dosya yapisini bozmak'],
+  '\u00c7eviri ve yerelle\u015ftirme': {
+    ozet: 'Web sitesi, uygulama aray\u00fcz\u00fc, e\u011fitim i\u00e7eri\u011fi ve belge \u00e7evirisi yaparsin. Yapay zeka ilk \u00e7eviriyi saniyeler i\u00e7inde yapar; senin katk\u0131n anlam, terim tutarl\u0131l\u0131\u011f\u0131 ve k\u00fclt\u00fcr uyumudur.',
+    uygun: ['\u0130ki dili de iyi bilen ki\u015filer', 'Detayc\u0131 ve sab\u0131rl\u0131 olanlar', 'Bir alanda terim bilgisi olanlar'],
+    beceri: ['Hedef dilde ak\u0131c\u0131 yazabilmek', 'Terim s\u00f6zl\u00fc\u011f\u00fc olu\u015fturma', 'Ba\u011flam\u0131 anlama', 'Teslim formatlar\u0131n\u0131 koruma (HTML, JSON gibi)'],
+    adimlar: ['Bir alanda uzmanla\u015f: teknik, hukuk, pazarlama, oyun.', 'O alanda terim s\u00f6zl\u00fc\u011f\u00fc olu\u015ftur, tutarl\u0131l\u0131k satar.', '\u00d6rnek \u00e7eviriler haz\u0131rla, \u00f6nce-sonra g\u00f6ster.', 'Kelime ba\u015f\u0131na de\u011fil proje ba\u015f\u0131na fiyatlamayi dene.', 'Makine \u00e7\u0131kt\u0131s\u0131n\u0131 mutlaka d\u00fczelt, oldu\u011fu gibi teslim etme.'],
+    musteri: ['T\u00fcrkiye pazar\u0131na a\u00e7\u0131lan yabanc\u0131 yaz\u0131l\u0131m ve uygulamalar', 'E\u011fitim platformlar\u0131', 'Oyun st\u00fcdyolar\u0131', '\u00c7eviri b\u00fcrolar\u0131na ta\u015feron olarak'],
+    fiyat: 'Kelime ba\u015f\u0131na fiyat sekt\u00f6r standardidir ama yapay zeka kulland\u0131\u011f\u0131nda s\u00fcre k\u0131sald\u0131\u011f\u0131 i\u00e7in proje ba\u015f\u0131na fiyatlamak daha k\u00e2rl\u0131 olabilir. Acil i\u015fler ve teknik metinler i\u00e7in ek \u00fccret normaldir.',
+    hatalar: ['Makine \u00e7\u0131kt\u0131s\u0131n\u0131 d\u00fczeltmeden teslim etmek', 'Terim tutars\u0131zl\u0131\u011f\u0131', 'K\u00fclt\u00fcr fark\u0131n\u0131 g\u00f6zetmemek (birebir \u00e7eviri komik durabilir)', 'Dosya yap\u0131s\u0131n\u0131 bozmak'],
     kategori: 'Metin'
   },
-  'Egitim ve danismanlik': {
-    ozet: 'Isletmelere ve bireylere yapay zeka araclarini ogretir, is akislarini birlikte kurarsin. Saatlik danismanlik, kurumsal egitim ve surekli danismanlik olarak satilir. En hizli gelire donen yollardan biridir cunku urun degil zaman satarsin.',
-    uygun: ['Anlatmayi seven, sabirli kisiler', 'Araclari gercekten kullanmis olanlar', 'Sunum yapabilenler'],
-    beceri: ['Araclari uygulamali bilmek', 'Karsidakinin seviyesine inebilmek', 'Sunum hazirlama', 'Somut ornekle anlatma'],
-    adimlar: ['Bir sektore odaklan ve o sektorun diliyle anlat.', 'Ucretsiz bir web semineri veya atolye ile basla, guven olustur.', 'Kurum ici egitim paketi hazirla: yarim gun, tam gun, takip oturumu.', 'Somut kazanim goster: "bu is 3 saatten 20 dakikaya indi".', 'Egitim sonrasi destek paketi sun, surekli gelir saglar.'],
-    musteri: ['KOBI\'ler ve aile sirketleri', 'Meslek odalari ve dernekler', 'Ajanslar', 'Bireysel ogrenmek isteyenler'],
-    fiyat: 'Saatlik danismanlik en basit modeldir. Kurumsal egitimde gun basina fiyat verilir ve hazirlik suresi de hesaba katilmalidir. Surekli danismanlik (aylik belirli saat) en istikrarli gelirdir.',
-    hatalar: ['Araci kendin kullanmadan ogretmeye kalkmak', 'Cok teknik anlatip kitleyi kaybetmek', 'Hazirlik suresini fiyata katmamak', 'Egitim sonrasi destek vermemek'],
+  'E\u011fitim ve dan\u0131\u015fmanl\u0131k': {
+    ozet: '\u0130\u015fletmelere ve bireylere yapay zeka ara\u00e7lar\u0131n\u0131 \u00f6\u011fretir, i\u015f ak\u0131\u015flar\u0131n\u0131 birlikte kurars\u0131n. Saatlik dan\u0131\u015fmanl\u0131k, kurumsal e\u011fitim ve s\u00fcrekli dan\u0131\u015fmanl\u0131k olarak sat\u0131l\u0131r. En h\u0131zl\u0131 gelire d\u00f6nen yollardan biridir \u00e7\u00fcnk\u00fc \u00fcr\u00fcn de\u011fil zaman satars\u0131n.',
+    uygun: ['Anlatmay\u0131 seven, sab\u0131rl\u0131 ki\u015filer', 'Ara\u00e7lar\u0131 ger\u00e7ekten kullanm\u0131\u015f olanlar', 'Sunum yapabilenler'],
+    beceri: ['Ara\u00e7lar\u0131 uygulamal\u0131 bilmek', 'Kar\u015f\u0131dakinin seviyesine inebilmek', 'Sunum haz\u0131rlama', 'Somut ornekle anlatma'],
+    adimlar: ['Bir sekt\u00f6re odaklan ve o sekt\u00f6r\u00fcn diliyle anlat.', '\u00dccretsiz bir web semineri veya at\u00f6lye ile ba\u015fla, g\u00fcven olu\u015ftur.', 'Kurum i\u00e7i e\u011fitim paketi haz\u0131rla: yar\u0131m g\u00fcn, tam g\u00fcn, takip oturumu.', 'Somut kazan\u0131m g\u00f6ster: "bu i\u015f 3 saatten 20 dakikaya indi".', 'E\u011fitim sonrasi destek paketi sun, s\u00fcrekli gelir sa\u011flar.'],
+    musteri: ['KOBI\'ler ve aile \u015firketleri', 'Meslek odalar\u0131 ve dernekler', 'Ajanslar', 'Bireysel \u00f6\u011frenmek isteyenler'],
+    fiyat: 'Saatlik dan\u0131\u015fmanl\u0131k en basit modeldir. Kurumsal e\u011fitimde g\u00fcn ba\u015f\u0131na fiyat verilir ve haz\u0131rl\u0131k s\u00fcresi de hesaba kat\u0131lmal\u0131d\u0131r. S\u00fcrekli dan\u0131\u015fmanl\u0131k (ayl\u0131k belirli saat) en istikrarl\u0131 gelirdir.',
+    hatalar: ['Arac\u0131 kendin kullanmadan \u00f6\u011fretmeye kalkmak', '\u00c7ok teknik anlat\u0131p kitleyi kaybetmek', 'Haz\u0131rl\u0131k s\u00fcresini fiyata katmamak', 'E\u011fitim sonrasi destek vermemek'],
     kategori: 'Metin'
   }
 };
@@ -1847,26 +1903,26 @@ function openBizDetail(baslik) {
         '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
       '<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4 text-xs">' +
         '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Zorluk</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[2]) + '</div></div>' +
-        '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Baslangic maliyeti</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[3]) + '</div></div>' +
+        '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Ba\u015flang\u0131\u00e7 maliyeti</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[3]) + '</div></div>' +
         '<div class="p-3 rounded-2xl dark:bg-gray-950/60 bg-white/70"><div class="text-gray-400 text-[11px]">Ilk gelir</div><div class="font-bold dark:text-white text-gray-900">' + esc(m[4]) + '</div></div></div>' +
       '<p class="text-sm dark:text-gray-200 text-gray-700 leading-relaxed">' + esc(d.ozet) + '</p>' +
     '</div>' +
     '<div class="grid md:grid-cols-2 gap-6">' +
-      bizBlok('\ud83d\udc64 Kimler icin uygun', bizMadde(d.uygun, 'green'), 'green') +
+      bizBlok('\ud83d\udc64 Kimler i\u00e7in uygun', bizMadde(d.uygun, 'green'), 'green') +
       bizBlok('\ud83c\udfaf Gereken beceriler', bizMadde(d.beceri, 'green'), 'green') +
     '</div>' +
-    bizBlok('\ud83d\uddfa\ufe0f Adim adim nasil baslanir', bizNumarali(d.adimlar), 'green') +
+    bizBlok('\ud83d\uddfa\ufe0f Ad\u0131m ad\u0131m nas\u0131l ba\u015flan\u0131r', bizNumarali(d.adimlar), 'green') +
     '<div class="grid md:grid-cols-2 gap-6">' +
-      bizBlok('\ud83e\udd1d Ilk musteriyi nerede bulursun', bizMadde(d.musteri, 'blue'), 'blue') +
-      bizBlok('\u26a0\ufe0f Sik yapilan hatalar', bizMadde(d.hatalar, 'rose'), 'rose') +
+      bizBlok('\ud83e\udd1d Ilk m\u00fc\u015fteriyi nerede bulursun', bizMadde(d.musteri, 'blue'), 'blue') +
+      bizBlok('\u26a0\ufe0f S\u0131k yap\u0131lan hatalar', bizMadde(d.hatalar, 'rose'), 'rose') +
     '</div>' +
-    bizBlok('\ud83d\udcb5 Nasil fiyatlanir', '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(d.fiyat) + '</p>', 'amber') +
-    bizBlok('\ud83e\uddf0 Ise yarayan araclar',
+    bizBlok('\ud83d\udcb5 Nas\u0131l fiyatlan\u0131r', '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(d.fiyat) + '</p>', 'amber') +
+    bizBlok('\ud83e\uddf0 \u0130\u015fe yarayan ara\u00e7lar',
       '<div class="flex flex-wrap gap-2 mb-4">' + m[7].map(function (x) {
         return '<span class="px-3 py-1.5 rounded-xl text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20">' + esc(x) + '</span>';
       }).join('') + '</div>' +
-      '<button id="bizToolsBtn" class="w-full py-3 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 text-white text-xs font-bold shadow-lg">Bu alandaki tum AI araclarini gor \u2192</button>', 'green') +
-    '<p class="text-[11px] text-gray-400 text-center leading-relaxed px-4">Bu sayfa bir kazanc garantisi vermez. Sureler ve maliyetler genel tahmindir; sonuc emegine, sectigin alana ve musteri bulma becerine gore degisir.</p>';
+      '<button id="bizToolsBtn" class="w-full py-3 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 text-white text-xs font-bold shadow-lg">Bu alandaki t\u00fcm AI ara\u00e7lar\u0131n\u0131 g\u00f6r \u2192</button>', 'green') +
+    '<p class="text-[11px] text-gray-400 text-center leading-relaxed px-4">Bu sayfa bir kazan\u00e7 garantisi vermez. S\u00fcreler ve maliyetler genel tahmindir; sonu\u00e7 eme\u011fine, se\u00e7ti\u011fin alana ve m\u00fc\u015fteri bulma becerine g\u00f6re de\u011fi\u015fir.</p>';
   var btn = document.getElementById('bizToolsBtn');
   if (btn) btn.onclick = function () { switchPage('tools'); setCat(d.kategori); };
   appState.bizDetail = baslik;
@@ -1920,7 +1976,7 @@ function renderFavorites() {
 }
 
 /* ===== Claude eklentileri ===== */
-var PLUGIN_CATS = ['Tumu', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
+var PLUGIN_CATS = ['T\u00fcm\u00fc', 'MCP Sunucusu', 'Claude Code', 'SDK', 'Derleme', 'Claude Araci'];
 function fetchPlugins() {
   var load = document.getElementById('pluginsLoading');
   if (!appState.plugins.length) load.classList.remove('hidden');
@@ -1953,7 +2009,7 @@ function pluginCard(p) {
         '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono break-all">' + esc(p.title) + '</h3>' +
         '<div class="text-[11px] text-gray-400 mb-2 font-mono">' + esc(p.owner || '') + '</div>' +
         '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(fixText(p.desc || '')) + '</p></div>' +
-      '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da Incele \u2197</a>';
+      '<a href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-amber-500 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">GitHub\'da \u0130ncele \u2197</a>';
     c.querySelector('[data-fav]').onclick = function (e) { toggleFav('plugin', p.id, e); };
   return c;
 }
@@ -1962,7 +2018,7 @@ function filterPlugins() {
   var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
   var list = appState.plugins.filter(function (p) {
     if (appState.pluginCat === 'Favorilerim') { if (appState.favPlugins.indexOf(p.id) === -1) return false; }
-    else if (appState.pluginCat !== 'Tumu' && p.category !== appState.pluginCat) return false;
+    else if (appState.pluginCat !== 'T\u00fcm\u00fc' && p.category !== appState.pluginCat) return false;
     if (!words.length) return true;
     var h = norm(p.title + ' ' + p.desc + ' ' + p.category + ' ' + (p.owner || '') + ' ' + (p.repo || ''));
     return words.every(function (w) { return h.indexOf(w) !== -1; });
@@ -1974,7 +2030,7 @@ function filterPlugins() {
   if (list.length > appState.pluginLimit) {
     var more = document.createElement('button');
     more.className = 'col-span-full mx-auto mt-4 px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-amber-500 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl';
-    more.textContent = '\u26a1 Daha Fazla Yukle';
+    more.textContent = '\u26a1 Daha Fazla Y\u00fckle';
     more.onclick = function () { appState.pluginLimit += 30; filterPlugins(); };
     grid.appendChild(more);
   }
@@ -1992,7 +2048,7 @@ function fetchEbooks() {
 }
 function renderEbookChips() {
   var box = document.getElementById('ebookChips'); box.innerHTML = '';
-  var cats = ['Tumu'];
+  var cats = ['T\u00fcm\u00fc'];
   appState.ebooks.forEach(function (b) { if (cats.indexOf(b.topic) === -1) cats.push(b.topic); });
   cats.forEach(function (c) {
     var fav = c === 'Favorilerim', on = appState.ebookCat === c, b = document.createElement('button');
@@ -2002,7 +2058,7 @@ function renderEbookChips() {
     box.appendChild(b);
   });
 }
-var LEVEL_COLOR = { 'Baslangic': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20', 'Orta': 'bg-amber-500/10 text-amber-500 border-amber-500/20', 'Ileri': 'bg-rose-500/10 text-rose-500 border-rose-500/20' };
+var LEVEL_COLOR = { 'Ba\u015flang\u0131\u00e7': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20', 'Orta': 'bg-amber-500/10 text-amber-500 border-amber-500/20', '\u0130leri': 'bg-rose-500/10 text-rose-500 border-rose-500/20' };
 function ebookCard(b) {
     var c = document.createElement('div');
     c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-emerald-500 transition shadow-md group';
@@ -2013,7 +2069,7 @@ function ebookCard(b) {
         '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-emerald-500 transition">' + esc(b.title) + '</h3>' +
         '<div class="text-[11px] text-gray-400 mb-2">' + esc(b.author) + '</div>' +
         '<p class="dark:text-gray-300 text-gray-600 text-xs leading-relaxed mb-4">' + esc(fixText(b.desc || '')) + '</p></div>' +
-      '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-emerald-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">Ucretsiz Oku \u2197</a>';
+      '<a href="' + esc(safeUrl(b.url)) + '" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-3 dark:bg-gray-800 bg-gray-100 hover:bg-emerald-600 dark:text-gray-200 text-gray-700 hover:text-white rounded-xl text-xs font-bold transition shadow">\u00dccretsiz Oku \u2197</a>';
     c.querySelector('[data-fav]').onclick = function (e) { toggleFav('ebook', b.id, e); };
   return c;
 }
@@ -2022,7 +2078,7 @@ function filterEbooks() {
   var words = q.split(' ').filter(function (w) { return w.length > 1 && STOPSET[w] !== 1; });
   var list = appState.ebooks.filter(function (b) {
     if (appState.ebookCat === 'Favorilerim') { if (appState.favEbooks.indexOf(b.id) === -1) return false; }
-    else if (appState.ebookCat !== 'Tumu' && b.topic !== appState.ebookCat) return false;
+    else if (appState.ebookCat !== 'T\u00fcm\u00fc' && b.topic !== appState.ebookCat) return false;
     if (!words.length) return true;
     var h = norm(b.title + ' ' + b.author + ' ' + b.desc + ' ' + b.topic + ' ' + b.level);
     return words.every(function (w) { return h.indexOf(w) !== -1; });
@@ -2035,10 +2091,10 @@ function filterEbooks() {
 
 /* ===== Prompt rehberi ===== */
 var PB = {
-  pbRole: ['Deneyimli bir pazarlama uzmani', 'Kidemli bir yazilim gelistirici', 'Sabirli bir ogretmen', 'Profesyonel bir editor', 'Mali musavir', 'Is analisti', 'Sosyal medya uzmani'],
-  pbFormat: ['Duz metin', 'Maddeler halinde liste', 'Tablo', 'Adim adim talimat', 'E-posta', 'Sosyal medya gonderisi', 'JSON'],
-  pbTone: ['Samimi ve gunluk', 'Profesyonel', 'Resmi', 'Esprili', 'Ikna edici', 'Yalin ve teknik'],
-  pbLength: ['Cok kisa (1-2 cumle)', 'Kisa (1 paragraf)', 'Orta (3-4 paragraf)', 'Uzun ve detayli']
+  pbRole: ['Deneyimli bir pazarlama uzman\u0131', 'K\u0131demli bir yaz\u0131l\u0131m geli\u015ftirici', 'Sab\u0131rl\u0131 bir \u00f6\u011fretmen', 'Profesyonel bir edit\u00f6r', 'Mali m\u00fc\u015favir', '\u0130\u015f analisti', 'Sosyal medya uzman\u0131'],
+  pbFormat: ['D\u00fcz metin', 'Maddeler halinde liste', 'Tablo', 'Ad\u0131m ad\u0131m talimat', 'E-posta', 'Sosyal medya g\u00f6nderisi', 'JSON'],
+  pbTone: ['Samimi ve g\u00fcnl\u00fck', 'Profesyonel', 'Resmi', 'Esprili', '\u0130kna edici', 'Yal\u0131n ve teknik'],
+  pbLength: ['\u00c7ok k\u0131sa (1-2 c\u00fcmle)', 'K\u0131sa (1 paragraf)', 'Orta (3-4 paragraf)', 'Uzun ve detayl\u0131']
 };
 function fillPromptSelects() {
   Object.keys(PB).forEach(function (id) {
@@ -2050,13 +2106,13 @@ function buildPrompt() {
   var v = function (id) { var el = document.getElementById(id); return el ? el.value.trim() : ''; };
   var task = v('pbTask'), lines = [];
   if (v('pbRole')) lines.push(v('pbRole') + ' gibi davran.');
-  lines.push(task ? 'Gorevin: ' + task : 'Gorevin: (ne yapmasini istedigini yukaridaki kutuya yaz)');
+  lines.push(task ? 'G\u00f6revin: ' + task : 'G\u00f6revin: (ne yapmas\u0131n\u0131 istedi\u011fini yukar\u0131daki kutuya yaz)');
   if (v('pbContext')) lines.push('\nBilmen gerekenler:\n' + v('pbContext'));
   var k = [];
-  if (v('pbFormat')) k.push('Ciktiyi su bicimde ver: ' + v('pbFormat') + '.');
-  if (v('pbTone')) k.push('Uslup: ' + v('pbTone') + '.');
+  if (v('pbFormat')) k.push('\u00c7\u0131kt\u0131y\u0131 \u015fu bi\u00e7imde ver: ' + v('pbFormat') + '.');
+  if (v('pbTone')) k.push('\u00dcslup: ' + v('pbTone') + '.');
   if (v('pbLength')) k.push('Uzunluk: ' + v('pbLength') + '.');
-  k.push('Emin olmadigin bir sey varsa uydurma, bana sor.');
+  k.push('Emin olmad\u0131\u011f\u0131n bir \u015fey varsa uydurma, bana sor.');
   lines.push('\nKurallar:\n- ' + k.join('\n- '));
   document.getElementById('pbOutput').textContent = lines.join('\n');
 }
@@ -2158,28 +2214,28 @@ function sendFeedback(e) {
   e.preventDefault();
   var d = fbGovde();
   if (!d.metin) return;
-  if (!CONTACT_EMAIL) { fbGoster('Iletisim adresi henuz tanimlanmadi. Mesajini kopyalayip bize ulastirabilirsin.', false); return; }
+  if (!CONTACT_EMAIL) { fbGoster('\u0130leti\u015fim adresi hen\u00fcz tan\u0131mlanmad\u0131. Mesaj\u0131n\u0131 kopyalay\u0131p bize ula\u015ft\u0131rabilirsin.', false); return; }
   var baglanti = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(d.konu) + '&body=' + encodeURIComponent(d.govde);
   window.location.href = baglanti;
-  fbGoster('E-posta uygulaman aciliyor. Acilmazsa "Metni Kopyala" ile gonderebilirsin.', true);
+  fbGoster('E-posta uygulaman a\u00e7\u0131l\u0131yor. A\u00e7\u0131lmazsa "Metni Kopyala" ile g\u00f6nderebilirsin.', true);
 }
 function copyFeedback() {
   var d = fbGovde();
-  if (!d.metin) { fbGoster('Once mesajini yaz.', false); return; }
+  if (!d.metin) { fbGoster('\u00d6nce mesaj\u0131n\u0131 yaz.', false); return; }
   var yazi = (CONTACT_EMAIL ? 'Kime: ' + CONTACT_EMAIL + '\n' : '') + 'Konu: ' + d.konu + '\n\n' + d.govde;
-  var ok = function () { fbGoster('Panoya kopyalandi. E-posta olarak gonderebilirsin.', true); };
+  var ok = function () { fbGoster('Panoya kopyaland\u0131. E-posta olarak g\u00f6nderebilirsin.', true); };
   if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(yazi).then(ok, yedek);
   else yedek();
   function yedek() {
     var ta = document.createElement('textarea'); ta.value = yazi; ta.style.position = 'fixed'; ta.style.opacity = '0';
     document.body.appendChild(ta); ta.select();
-    try { document.execCommand('copy'); ok(); } catch (err) { fbGoster('Kopyalanamadi, metni elle secip kopyala.', false); }
+    try { document.execCommand('copy'); ok(); } catch (err) { fbGoster('Kopyalanamad\u0131, metni elle se\u00e7ip kopyala.', false); }
     document.body.removeChild(ta);
   }
 }
 function fbHazirla() {
   var h = document.getElementById('fbHint');
-  if (h) h.textContent = CONTACT_EMAIL ? 'Mesajin ' + CONTACT_EMAIL + ' adresine gonderilir.' : 'Iletisim adresi henuz tanimli degil.';
+  if (h) h.textContent = CONTACT_EMAIL ? 'Mesaj\u0131n ' + CONTACT_EMAIL + ' adresine g\u00f6nderilir.' : '\u0130leti\u015fim adresi hen\u00fcz tan\u0131ml\u0131 de\u011fil.';
   var em = document.getElementById('fbEmail');
   if (em && profile.email && !em.value) em.value = profile.email;
 }
@@ -2247,21 +2303,31 @@ function renderSpotlight() {
   document.getElementById('spotlightTag').textContent = sponsor ? (SPOTLIGHT_SPONSOR.etiket || 'Sponsorlu') : 'Her g\u00fcn yenilenir';
   box.innerHTML = '';
   var c = document.createElement('div');
-  c.className = 'relative overflow-hidden rounded-3xl border border-amber-500/40 bg-gradient-to-br from-amber-500/15 via-purple-600/10 to-transparent dark:bg-gray-900 bg-white shadow-xl p-5 sm:p-7 flex flex-col sm:flex-row gap-5 sm:items-center cursor-pointer hover:border-amber-500/80 transition group';
+  c.className = 'relative overflow-hidden rounded-2xl border dark:border-gray-800 border-gray-200 dark:bg-gray-900/70 bg-white p-5 sm:p-7 flex flex-col sm:flex-row gap-5 sm:items-center cursor-pointer hover:border-purple-500/70 transition group';
   c.onclick = function() { openToolDetail(t.id); };
   c.innerHTML = '<div class="spot-logo w-20 h-20 sm:w-24 sm:h-24 rounded-3xl flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg"></div>' +
     '<div class="min-w-0 flex-1"><div class="flex flex-wrap items-center gap-2 mb-1.5">' +
       '<span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-gradient-to-r ' + catMeta(t.category)[3] + ' text-white">' + catMeta(t.category)[2] + ' ' + esc(catMeta(t.category)[1]) + '</span>' +
       '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full dark:bg-gray-800 bg-gray-100 text-gray-400">' + esc(t.price) + '</span>' +
       (sponsor ? '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-500 text-black">' + esc(SPOTLIGHT_SPONSOR.etiket || 'Sponsorlu') + '</span>' : '') + '</div>' +
-      '<h3 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 group-hover:text-amber-400 transition mb-1.5">' + esc(t.title) + '</h3>' +
+      '<h3 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 group-hover:text-purple-400 transition mb-1.5">' + esc(t.title) + '</h3>' +
       '<p class="text-xs sm:text-sm dark:text-gray-300 text-gray-600 leading-relaxed line-clamp-2">' + esc(String(t.desc || '').split('\n')[0]) + '</p></div>' +
-    '<div class="flex-shrink-0"><span class="inline-block px-5 py-3 rounded-2xl bg-amber-500 group-hover:bg-amber-400 text-black text-xs font-extrabold transition">\u0130ncele \u2192</span></div>';
+    '<div class="flex-shrink-0"><span class="inline-block px-5 py-3 rounded-xl bg-purple-600 group-hover:bg-purple-500 text-white text-xs font-bold transition">\u0130ncele \u2192</span></div>';
   fillTile(c.querySelector('.spot-logo'), t.brand, t.title, { img: 'w-12 h-12 object-contain', letter: 'text-4xl' });
   box.appendChild(c);
   wrap.classList.remove('hidden');
 }
-function renderHomeExtras() { renderSpotlight(); renderHomeLists(); }
+function renderHeroStats() {
+  var box = document.getElementById('heroStats'); if (!box) return;
+  var t = (appState.allTools || []).length, yeni = (appState.allTools || []).filter(function (x) { return x.isNew; }).length;
+  var parca = [];
+  if (t > 200) parca.push('<b class="dark:text-white text-gray-900">' + t.toLocaleString('tr-TR') + '</b> ara\u00e7');
+  if (yeni) parca.push('<b class="dark:text-white text-gray-900">' + yeni + '</b> yeni (son 2 hafta)');
+  parca.push('<b class="dark:text-white text-gray-900">7</b> kategori');
+  parca.push('T\u00fcrk\u00e7e a\u00e7\u0131klamalar');
+  box.innerHTML = parca.map(function (p) { return '<span>' + p + '</span>'; }).join('<span class="opacity-30">\u2022</span>');
+}
+function renderHomeExtras() { renderSpotlight(); renderHomeLists(); renderHeroStats(); }
 
 /* ---------- Ba\u015flat (tek sefer) ---------- */
 var started = false;
