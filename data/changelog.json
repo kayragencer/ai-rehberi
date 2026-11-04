@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-04T00:38:09.106Z",
+  "type": "removed",
+  "id": "gh-run-llama-rags",
+  "title": "rags"
+ },
+ {
   "at": "2026-11-03T09:58:23.451Z",
   "type": "added",
   "id": "gh-exzade-exza-remote",
