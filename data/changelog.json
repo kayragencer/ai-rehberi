@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-04T10:07:40.057Z",
+  "type": "added",
+  "id": "gh-capri-com-capri-ai",
+  "title": "Capri-AI"
+ },
+ {
   "at": "2026-11-04T01:07:03.945Z",
   "type": "removed",
   "id": "gh-langchain-ai-agent-chat-ui",
