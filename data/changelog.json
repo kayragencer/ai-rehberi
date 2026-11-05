@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-05T02:16:06.523Z",
+  "type": "added",
+  "id": "gh-elysiumforge-labs-elysium-chain-mcp",
+  "title": "elysium-chain-mcp"
+ },
+ {
   "at": "2026-11-05T01:09:14.244Z",
   "type": "removed",
   "id": "gh-zhongyu09-openchatbi",
