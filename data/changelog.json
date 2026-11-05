@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-05T18:58:47.834Z",
+  "type": "removed",
+  "id": "gh-capri-com-capri-ai",
+  "title": "Capri-AI"
+ },
+ {
+  "at": "2026-11-05T18:58:47.834Z",
+  "type": "added",
+  "id": "gh-josssphzhou-poki",
+  "title": "poki"
+ },
+ {
   "at": "2026-11-05T17:19:06.252Z",
   "type": "added",
   "id": "gh-sandflow-ai-sand3d",
