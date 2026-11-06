@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-06T16:56:35.960Z",
+  "type": "hidden",
+  "id": "gh-devflowinc-trieve",
+  "title": "trieve"
+ },
+ {
+  "at": "2026-11-06T16:56:35.960Z",
+  "type": "hidden",
+  "id": "gh-catchthetornado-text-extract-api",
+  "title": "text-extract-api"
+ },
+ {
+  "at": "2026-11-06T16:56:35.960Z",
+  "type": "hidden",
+  "id": "gh-opencsgs-csghub",
+  "title": "csghub"
+ },
+ {
   "at": "2026-11-06T15:54:11.227Z",
   "type": "hidden",
   "id": "gh-deepflowio-deepflow",
@@ -580,23 +598,5 @@
   "type": "added",
   "id": "gh-muaaz9329-cheap-ag",
   "title": "cheap-ag"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-patch-gg-trompe",
-  "title": "trompe"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-patch-gg-anymove",
-  "title": "anymove"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-xpropel-pi-remote",
-  "title": "Pi-Remote"
  }
 ]
