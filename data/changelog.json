@@ -1,5 +1,83 @@
 [
  {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-coframe-coffee",
+  "title": "coffee"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-web",
+  "title": "alan-sdk-web"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-moazbuilds-codemachine-cli",
+  "title": "CodeMachine-CLI"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-lightricks-ltx-2",
+  "title": "LTX-2"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-wandb-openui",
+  "title": "openui"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-onepointai-onepoint",
+  "title": "onepoint"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-gustavz-datachad",
+  "title": "DataChad"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-engageintellect-spatz-2",
+  "title": "spatz-2"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-reflex-dev-reflex-chat",
+  "title": "reflex-chat"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-mqenergy-chatcat",
+  "title": "chatcat"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-edgenai-edgen",
+  "title": "edgen"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-opensource03-harnss",
+  "title": "harnss"
+ },
+ {
+  "at": "2026-11-06T21:45:34.213Z",
+  "type": "hidden",
+  "id": "gh-pawanosman-chatgpt-net",
+  "title": "ChatGPT.Net"
+ },
+ {
   "at": "2026-11-06T20:51:24.827Z",
   "type": "hidden",
   "id": "gh-devchat-ai-devchat",
@@ -520,83 +598,5 @@
   "type": "added",
   "id": "gh-lordon1a-agents-md",
   "title": "agents.md"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-globalmpc-nomore",
-  "title": "nomore"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-noahelhadedy-double-shot",
-  "title": "double-shot"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-duyunzhoudyz-dyz-med-paper-skills",
-  "title": "dyz-med-paper-skills"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-fush520-fush-vue-mcp",
-  "title": "fush-vue-mcp"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-onurozcan-omux",
-  "title": "omux"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-jefferysha0627-agent-office-3d",
-  "title": "agent-office-3d"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-sirioberati-youtube-ai-motion-graphics",
-  "title": "YouTube-AI-Motion-Graphics"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-eduwxyz-tucano",
-  "title": "tucano"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-khanh020905-my-office",
-  "title": "my-office"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-rtora-munorai",
-  "title": "munorai"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-davemessew-agentflux",
-  "title": "AgentFlux"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-sloemo01-diorama",
-  "title": "diorama"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-yjid-kensaku",
-  "title": "kensaku"
  }
 ]
