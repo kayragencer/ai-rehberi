@@ -1,5 +1,59 @@
 [
  {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-aledipa-free-gpt4-web-api",
+  "title": "Free-GPT4-WEB-API"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-aschmelyun-subvert",
+  "title": "subvert"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-chain-ml-council",
+  "title": "council"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-neumtry-neumai",
+  "title": "NeumAI"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-gair-nlp-factool",
+  "title": "factool"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-nodatafound-hackgpt",
+  "title": "hackGPT"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-ai-genie-chatgpt-vscode",
+  "title": "chatgpt-vscode"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-sobelio-llm-chain",
+  "title": "llm-chain"
+ },
+ {
+  "at": "2026-11-06T19:55:07.946Z",
+  "type": "hidden",
+  "id": "gh-okgodoit-openai-api-dotnet",
+  "title": "OpenAI-API-dotnet"
+ },
+ {
   "at": "2026-11-06T18:56:29.538Z",
   "type": "hidden",
   "id": "gh-memodb-io-memobase",
@@ -544,59 +598,5 @@
   "type": "added",
   "id": "gh-w0ldan-exoproc",
   "title": "exoproc"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-rtmandreyev-construct",
-  "title": "construct"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-peterpoal134-memory-brain",
-  "title": "memory-brain"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-yc-software-minecraft-agent-harness",
-  "title": "minecraft-agent-harness"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-aevonix-flashalign",
-  "title": "FlashAlign"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-gh9ko8y-graphmemory",
-  "title": "graphmemory"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-saos-3624-dsh-see-now",
-  "title": "dsh-see-now"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-interactive-active-ai-nexttransformer",
-  "title": "NextTransformer"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-aa1143-namigpt",
-  "title": "NamiGPT"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-aa1143-namiagent",
-  "title": "NamiAgent"
  }
 ]
