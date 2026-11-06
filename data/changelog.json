@@ -1,5 +1,53 @@
 [
  {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-undertheseanlp-underthesea",
+  "title": "underthesea"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-run-llama-llama-deploy",
+  "title": "llama_deploy"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-gammalabtechnologies-harmonist",
+  "title": "harmonist"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-tigerresearch-tigerbot",
+  "title": "TigerBot"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-instill-ai-instill-core",
+  "title": "instill-core"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-dot-agent-nextpy",
+  "title": "nextpy"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-fullagent-fulling",
+  "title": "fulling"
+ },
+ {
+  "at": "2026-11-06T17:53:31.014Z",
+  "type": "hidden",
+  "id": "gh-paulpierre-rasagpt",
+  "title": "RasaGPT"
+ },
+ {
   "at": "2026-11-06T16:56:35.960Z",
   "type": "hidden",
   "id": "gh-devflowinc-trieve",
@@ -550,53 +598,5 @@
   "type": "added",
   "id": "gh-jackwener-dsh-android",
   "title": "DSH-Android"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-modelflare-ai-anymodelbot",
-  "title": "AnyModelBot"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-wangzan101-mika",
-  "title": "Mika"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-ccch1mneyyy-dsh-go",
-  "title": "dsh-Go"
- },
- {
-  "at": "2026-11-02T16:52:13.584Z",
-  "type": "added",
-  "id": "gh-saos-3624-dsh-see-now",
-  "title": "dsh-see-now"
- },
- {
-  "at": "2026-11-02T13:59:33.912Z",
-  "type": "added",
-  "id": "gh-aa1143-namiagent",
-  "title": "NamiAgent"
- },
- {
-  "at": "2026-11-02T00:46:52.087Z",
-  "type": "hidden",
-  "id": "google-gemini",
-  "title": "Google Gemini"
- },
- {
-  "at": "2026-11-01T23:57:25.908Z",
-  "type": "added",
-  "id": "gh-balanov-uncut",
-  "title": "uncut"
- },
- {
-  "at": "2026-11-01T23:25:38.357Z",
-  "type": "added",
-  "id": "gh-muaaz9329-cheap-ag",
-  "title": "cheap-ag"
  }
 ]
