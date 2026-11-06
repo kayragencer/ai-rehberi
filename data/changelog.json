@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-06T11:06:58.816Z",
+  "type": "hidden",
+  "id": "google-gemini",
+  "title": "Google Gemini"
+ },
+ {
   "at": "2026-11-06T09:00:28.436Z",
   "type": "added",
   "id": "gh-glen-web-app-best-agent-memory-mcp",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-n1neman-sapper-v2",
   "title": "sapper-v2"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-jackwener-dsh-android",
-  "title": "DSH-Android"
  }
 ]
