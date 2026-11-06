@@ -1,5 +1,59 @@
 [
  {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-memodb-io-memobase",
+  "title": "memobase"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-opengvlab-ask-anything",
+  "title": "Ask-Anything"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-tbxark-chatgpt-telegram-workers",
+  "title": "ChatGPT-Telegram-Workers"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-qwenaudio-cosyvoice",
+  "title": "CosyVoice"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-haotian-liu-llava",
+  "title": "LLaVA"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-laion-ai-open-assistant",
+  "title": "Open-Assistant"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-eylonmiz-react-agent",
+  "title": "react-agent"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-swark-io-swark",
+  "title": "swark"
+ },
+ {
+  "at": "2026-11-06T18:56:29.538Z",
+  "type": "hidden",
+  "id": "gh-patoles-agent-flow",
+  "title": "agent-flow"
+ },
+ {
   "at": "2026-11-06T17:53:31.014Z",
   "type": "hidden",
   "id": "gh-undertheseanlp-underthesea",
@@ -544,59 +598,5 @@
   "type": "added",
   "id": "gh-aa1143-namiagent",
   "title": "NamiAgent"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-tavern-labs-ai-persona-ai-sdk",
-  "title": "persona-ai-sdk"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-lwh0630-tokenbar",
-  "title": "TokenBar"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-muaaz9329-cheap-ag",
-  "title": "cheap-ag"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-junwan666-astrbot-for-android",
-  "title": "astrbot-for-android"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-jmanico-grim-prompter",
-  "title": "grim-prompter"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-wanghao-sunsky-cs329z-chinese",
-  "title": "cs329z-chinese"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-balanov-uncut",
-  "title": "uncut"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-n1neman-sapper-v2",
-  "title": "sapper-v2"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-jackwener-dsh-android",
-  "title": "DSH-Android"
  }
 ]
