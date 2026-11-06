@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-06T11:56:15.569Z",
+  "type": "hidden",
+  "id": "tabnine",
+  "title": "Tabnine"
+ },
+ {
+  "at": "2026-11-06T11:56:15.569Z",
+  "type": "hidden",
+  "id": "playht",
+  "title": "PlayHT"
+ },
+ {
   "at": "2026-11-06T11:06:58.816Z",
   "type": "hidden",
   "id": "google-gemini",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "gh-wanghao-sunsky-cs329z-chinese",
   "title": "cs329z-chinese"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-modelflare-ai-anymodelbot",
-  "title": "AnyModelBot"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-n1neman-sapper-v2",
-  "title": "sapper-v2"
  }
 ]
