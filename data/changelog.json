@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-06T14:22:04.746Z",
+  "type": "hidden",
+  "id": "gh-plandex-ai-plandex",
+  "title": "plandex"
+ },
+ {
   "at": "2026-11-06T13:08:48.720Z",
   "type": "hidden",
   "id": "gh-tencent-weknora",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-cattmonkey-chaosintelligence",
   "title": "ChaosIntelligence"
- },
- {
-  "at": "2026-11-01T22:55:20.974Z",
-  "type": "added",
-  "id": "gh-junwan666-astrbot-for-android",
-  "title": "astrbot-for-android"
  }
 ]
