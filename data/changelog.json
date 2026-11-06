@@ -1,5 +1,89 @@
 [
  {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-devchat-ai-devchat",
+  "title": "devchat"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-zaki-1052-gptportal",
+  "title": "GPTPortal"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-pawanosman-googlebard",
+  "title": "GoogleBard"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-lee88688-aider-composer",
+  "title": "aider-composer"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-hemulgm-chatgpt",
+  "title": "ChatGPT"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-lencx-gpthub",
+  "title": "GPTHub"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-kaarthik108-snowchat",
+  "title": "snowChat"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-gptgenius-chatgpt-vercel",
+  "title": "chatgpt-vercel"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-agentify-sh-desktop",
+  "title": "desktop"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-efugier-smartcat",
+  "title": "smartcat"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-jasonlovesdoggo-caddy-defender",
+  "title": "caddy-defender"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-kyegomez-zeta",
+  "title": "zeta"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-lgrammel-rubberduck-vscode",
+  "title": "rubberduck-vscode"
+ },
+ {
+  "at": "2026-11-06T20:51:24.827Z",
+  "type": "hidden",
+  "id": "gh-chatbot-all-chatbot-app",
+  "title": "chatbot-app"
+ },
+ {
   "at": "2026-11-06T19:55:07.946Z",
   "type": "hidden",
   "id": "gh-aledipa-free-gpt4-web-api",
@@ -514,89 +598,5 @@
   "type": "added",
   "id": "gh-yjid-kensaku",
   "title": "kensaku"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-emanuele-em-kanzo",
-  "title": "kanzo"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-daveebbelaar-bama",
-  "title": "bama"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-uncensoredlabs-uncensored-ai-api",
-  "title": "uncensored-ai-api"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-patch-gg-trompe",
-  "title": "trompe"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-patch-gg-anymove",
-  "title": "anymove"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-laoma528-gptplussub",
-  "title": "GPTplusSub"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-boyuchengz-canvas-mcp",
-  "title": "canvas-mcp"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-hhtower-price-comparison",
-  "title": "price-comparison"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-problem99-io-kodeblue",
-  "title": "kodeblue"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-jumbomuffin777-frontier-ui",
-  "title": "Frontier-UI"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-maefdancer29436-rpocket-team-elden-ring",
-  "title": "rpocket-team-elden-ring"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-banan1cee-whale-gril",
-  "title": "whale_gril"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-glincker-awesome-selfhosted-ai",
-  "title": "awesome-selfhosted-ai"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-w0ldan-exoproc",
-  "title": "exoproc"
  }
 ]
