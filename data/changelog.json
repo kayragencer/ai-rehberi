@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-06T07:20:37.061Z",
+  "type": "added",
+  "id": "gh-yucezerey-turkish-anti-ai-skill",
+  "title": "turkish-anti-ai-skill"
+ },
+ {
   "at": "2026-11-06T05:01:46.471Z",
   "type": "removed",
   "id": "gh-nvidia-ai-blueprints-rag",
