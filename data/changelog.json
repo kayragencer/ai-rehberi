@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-06T22:47:09.804Z",
+  "type": "hidden",
+  "id": "gh-corespeed-io-zypher-agent",
+  "title": "zypher-agent"
+ },
+ {
+  "at": "2026-11-06T22:47:09.804Z",
+  "type": "hidden",
+  "id": "gh-ivaniscoding-resullme",
+  "title": "ResuLLMe"
+ },
+ {
+  "at": "2026-11-06T22:47:09.804Z",
+  "type": "hidden",
+  "id": "gh-taylorsatula-mira",
+  "title": "mira"
+ },
+ {
+  "at": "2026-11-06T22:47:09.804Z",
+  "type": "hidden",
+  "id": "gh-mrwadams-stride-gpt",
+  "title": "stride-gpt"
+ },
+ {
+  "at": "2026-11-06T22:47:09.804Z",
+  "type": "added",
+  "id": "gh-voyager-so-vork",
+  "title": "vork"
+ },
+ {
   "at": "2026-11-06T21:45:34.213Z",
   "type": "hidden",
   "id": "gh-coframe-coffee",
@@ -568,35 +598,5 @@
   "type": "added",
   "id": "gh-bjarneo-shoulder",
   "title": "shoulder"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-aiseo-virtualabdigital-mcp-video-editor",
-  "title": "mcp-video-editor"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-codician-team-diffinery",
-  "title": "diffinery"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-papilotai-papilot",
-  "title": "papilot"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-hubastard-speedrun",
-  "title": "speedrun"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-lordon1a-agents-md",
-  "title": "agents.md"
  }
 ]
