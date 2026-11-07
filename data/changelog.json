@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-07T02:53:17.325Z",
+  "type": "hidden",
+  "id": "gh-zhangjinhahaha-agentlens",
+  "title": "AgentLens"
+ },
+ {
+  "at": "2026-11-07T02:53:17.325Z",
+  "type": "hidden",
+  "id": "gh-andrepimenta-claude-code-chat",
+  "title": "claude-code-chat"
+ },
+ {
   "at": "2026-11-07T01:59:45.671Z",
   "type": "hidden",
   "id": "gh-pentesterflow-agent",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "gh-ofat34764e-interviewcopilot-rpocket-team",
   "title": "InterviewCopilot-rpocket-team"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-wiva-hq-coderail",
-  "title": "CodeRail"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-ngocanhnckh-renderlint",
-  "title": "renderlint"
  }
 ]
