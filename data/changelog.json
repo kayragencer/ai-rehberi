@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-07T17:40:45.437Z",
+  "type": "hidden",
+  "id": "gh-enginebai-pymessager",
+  "title": "PyMessager"
+ },
+ {
+  "at": "2026-11-07T17:40:45.437Z",
+  "type": "hidden",
+  "id": "gh-botlibre-botlibre",
+  "title": "BotLibre"
+ },
+ {
+  "at": "2026-11-07T17:40:45.437Z",
+  "type": "hidden",
+  "id": "gh-ahmadfaizalbh-chatbot",
+  "title": "Chatbot"
+ },
+ {
+  "at": "2026-11-07T17:40:45.437Z",
+  "type": "hidden",
+  "id": "gh-operable-cog",
+  "title": "cog"
+ },
+ {
   "at": "2026-11-07T16:45:03.582Z",
   "type": "hidden",
   "id": "gh-claudiajs-claudia-bot-builder",
@@ -574,29 +598,5 @@
   "type": "hidden",
   "id": "gh-opensource03-harnss",
   "title": "harnss"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-pawanosman-chatgpt-net",
-  "title": "ChatGPT.Net"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-devchat-ai-devchat",
-  "title": "devchat"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-zaki-1052-gptportal",
-  "title": "GPTPortal"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-pawanosman-googlebard",
-  "title": "GoogleBard"
  }
 ]
