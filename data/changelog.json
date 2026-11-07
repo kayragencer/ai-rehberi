@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-07T03:53:39.779Z",
+  "type": "hidden",
+  "id": "gh-homanp-infinite-monitor",
+  "title": "infinite-monitor"
+ },
+ {
+  "at": "2026-11-07T03:53:39.779Z",
+  "type": "hidden",
+  "id": "gh-2arons-duel-agents",
+  "title": "Duel-Agents"
+ },
+ {
+  "at": "2026-11-07T03:53:39.779Z",
+  "type": "hidden",
+  "id": "gh-getclawe-clawe",
+  "title": "clawe"
+ },
+ {
+  "at": "2026-11-07T03:53:39.779Z",
+  "type": "hidden",
+  "id": "gh-vllora-vllora",
+  "title": "vllora"
+ },
+ {
+  "at": "2026-11-07T03:53:39.779Z",
+  "type": "hidden",
+  "id": "gh-christopherkarani-wax",
+  "title": "Wax"
+ },
+ {
   "at": "2026-11-07T02:53:17.325Z",
   "type": "hidden",
   "id": "gh-zhangjinhahaha-agentlens",
@@ -568,35 +598,5 @@
   "type": "added",
   "id": "gh-toyhom-awesome-computational-character-modeling",
   "title": "awesome-computational-character-modeling"
- },
- {
-  "at": "2026-11-02T23:56:41.818Z",
-  "type": "added",
-  "id": "gh-faixiang-moodle-mcp",
-  "title": "Moodle-MCP"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-slmonker-comfyui-moss-merge-presets",
-  "title": "ComfyUI-MOSS-Merge-Presets"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-deeyu-ai-costume-gallery-zh",
-  "title": "ai-costume-gallery-zh"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-agentic-system-lab-agent-loop-visualizer",
-  "title": "agent-loop-visualizer"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-ofat34764e-interviewcopilot-rpocket-team",
-  "title": "InterviewCopilot-rpocket-team"
  }
 ]
