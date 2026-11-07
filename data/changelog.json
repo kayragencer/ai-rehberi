@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-07T15:44:12.414Z",
+  "type": "hidden",
+  "id": "gh-lightricks-ltx-video",
+  "title": "LTX-Video"
+ },
+ {
+  "at": "2026-11-07T15:44:12.414Z",
+  "type": "hidden",
+  "id": "gh-foundationvision-omnitokenizer",
+  "title": "OmniTokenizer"
+ },
+ {
+  "at": "2026-11-07T15:44:12.414Z",
+  "type": "hidden",
+  "id": "gh-ha0tang-selectiongan",
+  "title": "SelectionGAN"
+ },
+ {
   "at": "2026-11-07T14:46:33.370Z",
   "type": "hidden",
   "id": "gh-pnkvalavala-repochat",
@@ -580,23 +598,5 @@
   "type": "hidden",
   "id": "gh-kaarthik108-snowchat",
   "title": "snowChat"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-gptgenius-chatgpt-vercel",
-  "title": "chatgpt-vercel"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-agentify-sh-desktop",
-  "title": "desktop"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-efugier-smartcat",
-  "title": "smartcat"
  }
 ]
