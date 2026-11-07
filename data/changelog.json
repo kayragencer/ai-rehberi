@@ -1,5 +1,41 @@
 [
  {
+  "at": "2026-11-07T08:55:44.782Z",
+  "type": "hidden",
+  "id": "gh-semperai-amica",
+  "title": "amica"
+ },
+ {
+  "at": "2026-11-07T08:55:44.782Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-ios",
+  "title": "alan-sdk-ios"
+ },
+ {
+  "at": "2026-11-07T08:55:44.782Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-pcf",
+  "title": "alan-sdk-pcf"
+ },
+ {
+  "at": "2026-11-07T08:55:44.782Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-reactnative",
+  "title": "alan-sdk-reactnative"
+ },
+ {
+  "at": "2026-11-07T08:55:44.782Z",
+  "type": "hidden",
+  "id": "gh-vonage-vonage-php-sdk-core",
+  "title": "vonage-php-sdk-core"
+ },
+ {
+  "at": "2026-11-07T08:55:44.782Z",
+  "type": "hidden",
+  "id": "gh-codeforequity-at-botium-speech-processing",
+  "title": "botium-speech-processing"
+ },
+ {
   "at": "2026-11-07T08:04:39.416Z",
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-ionic",
@@ -562,41 +598,5 @@
   "type": "removed",
   "id": "gh-klavis-ai-klavis",
   "title": "klavis"
- },
- {
-  "at": "2026-11-06T14:22:04.746Z",
-  "type": "hidden",
-  "id": "gh-plandex-ai-plandex",
-  "title": "plandex"
- },
- {
-  "at": "2026-11-06T13:08:48.720Z",
-  "type": "hidden",
-  "id": "gh-tencent-weknora",
-  "title": "WeKnora"
- },
- {
-  "at": "2026-11-06T13:08:48.720Z",
-  "type": "hidden",
-  "id": "gh-milvus-io-milvus",
-  "title": "milvus"
- },
- {
-  "at": "2026-11-06T11:56:15.569Z",
-  "type": "hidden",
-  "id": "tabnine",
-  "title": "Tabnine"
- },
- {
-  "at": "2026-11-06T11:56:15.569Z",
-  "type": "hidden",
-  "id": "playht",
-  "title": "PlayHT"
- },
- {
-  "at": "2026-11-06T11:06:58.816Z",
-  "type": "hidden",
-  "id": "google-gemini",
-  "title": "Google Gemini"
  }
 ]
