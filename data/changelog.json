@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-07T01:59:45.671Z",
+  "type": "hidden",
+  "id": "gh-pentesterflow-agent",
+  "title": "agent"
+ },
+ {
+  "at": "2026-11-07T01:59:45.671Z",
+  "type": "hidden",
+  "id": "gh-lynpoint-cyberverse",
+  "title": "CyberVerse"
+ },
+ {
   "at": "2026-11-07T01:01:46.175Z",
   "type": "hidden",
   "id": "gh-fellouai-eko",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "gh-ngocanhnckh-renderlint",
   "title": "renderlint"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-lemonadesaltbagel-airlock",
-  "title": "Airlock"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-sheernox-cedr",
-  "title": "cedr"
  }
 ]
