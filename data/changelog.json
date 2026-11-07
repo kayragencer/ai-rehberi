@@ -1,5 +1,47 @@
 [
  {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-ionic",
+  "title": "alan-sdk-ionic"
+ },
+ {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-flutter",
+  "title": "alan-sdk-flutter"
+ },
+ {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-alan-ai-alan-sdk-android",
+  "title": "alan-sdk-android"
+ },
+ {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-metavoiceio-metavoice-src",
+  "title": "metavoice-src"
+ },
+ {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-open-mmlab-amphion",
+  "title": "Amphion"
+ },
+ {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-wolverinn-stable-diffusion-multi-user",
+  "title": "stable-diffusion-multi-user"
+ },
+ {
+  "at": "2026-11-07T08:04:39.416Z",
+  "type": "hidden",
+  "id": "gh-dakenf-diffusers-js",
+  "title": "diffusers.js"
+ },
+ {
   "at": "2026-11-07T07:00:18.123Z",
   "type": "hidden",
   "id": "gh-carefree0910-carefree-drawboard",
@@ -556,47 +598,5 @@
   "type": "hidden",
   "id": "google-gemini",
   "title": "Google Gemini"
- },
- {
-  "at": "2026-11-06T09:00:28.436Z",
-  "type": "added",
-  "id": "gh-glen-web-app-best-agent-memory-mcp",
-  "title": "best-agent-memory-mcp"
- },
- {
-  "at": "2026-11-06T09:00:28.436Z",
-  "type": "added",
-  "id": "gh-orkbot-run-ork",
-  "title": "ork"
- },
- {
-  "at": "2026-11-06T07:20:37.061Z",
-  "type": "added",
-  "id": "gh-yucezerey-turkish-anti-ai-skill",
-  "title": "turkish-anti-ai-skill"
- },
- {
-  "at": "2026-11-06T05:01:46.471Z",
-  "type": "removed",
-  "id": "gh-nvidia-ai-blueprints-rag",
-  "title": "rag"
- },
- {
-  "at": "2026-11-05T18:58:47.834Z",
-  "type": "removed",
-  "id": "gh-capri-com-capri-ai",
-  "title": "Capri-AI"
- },
- {
-  "at": "2026-11-05T18:58:47.834Z",
-  "type": "added",
-  "id": "gh-josssphzhou-poki",
-  "title": "poki"
- },
- {
-  "at": "2026-11-05T17:19:06.252Z",
-  "type": "added",
-  "id": "gh-sandflow-ai-sand3d",
-  "title": "sand3d"
  }
 ]
