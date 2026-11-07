@@ -1,5 +1,41 @@
 [
  {
+  "at": "2026-11-07T11:44:54.952Z",
+  "type": "hidden",
+  "id": "gh-zhimaai-chatclaw",
+  "title": "ChatClaw"
+ },
+ {
+  "at": "2026-11-07T11:44:54.952Z",
+  "type": "hidden",
+  "id": "gh-ramseygithub-ai-legal-compliance-assistant",
+  "title": "ai-legal-compliance-assistant"
+ },
+ {
+  "at": "2026-11-07T11:44:54.952Z",
+  "type": "hidden",
+  "id": "gh-ilearn-lab-novelclaw",
+  "title": "NovelClaw"
+ },
+ {
+  "at": "2026-11-07T11:44:54.952Z",
+  "type": "hidden",
+  "id": "gh-mindinventory-mindsql",
+  "title": "MindSQL"
+ },
+ {
+  "at": "2026-11-07T11:44:54.952Z",
+  "type": "hidden",
+  "id": "gh-premai-io-premsql",
+  "title": "premsql"
+ },
+ {
+  "at": "2026-11-07T11:44:54.952Z",
+  "type": "hidden",
+  "id": "gh-tilmangriesel-chipper",
+  "title": "chipper"
+ },
+ {
   "at": "2026-11-07T10:48:11.835Z",
   "type": "hidden",
   "id": "gh-afx-team-petercat",
@@ -562,41 +598,5 @@
   "type": "hidden",
   "id": "gh-gammalabtechnologies-harmonist",
   "title": "harmonist"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-tigerresearch-tigerbot",
-  "title": "TigerBot"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-instill-ai-instill-core",
-  "title": "instill-core"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-dot-agent-nextpy",
-  "title": "nextpy"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-fullagent-fulling",
-  "title": "fulling"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-paulpierre-rasagpt",
-  "title": "RasaGPT"
- },
- {
-  "at": "2026-11-06T16:56:35.960Z",
-  "type": "hidden",
-  "id": "gh-devflowinc-trieve",
-  "title": "trieve"
  }
 ]
