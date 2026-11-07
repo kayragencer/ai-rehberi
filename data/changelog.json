@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-07T05:52:05.746Z",
+  "type": "hidden",
+  "id": "gh-lightricks-comfyui-ltxvideo",
+  "title": "ComfyUI-LTXVideo"
+ },
+ {
+  "at": "2026-11-07T05:52:05.746Z",
+  "type": "hidden",
+  "id": "gh-bigscience-workshop-data-preparation",
+  "title": "data-preparation"
+ },
+ {
+  "at": "2026-11-07T05:52:05.746Z",
+  "type": "hidden",
+  "id": "gh-tonicai-tonic-validate",
+  "title": "tonic_validate"
+ },
+ {
+  "at": "2026-11-07T05:52:05.746Z",
+  "type": "hidden",
+  "id": "gh-dataprofessor-llama2",
+  "title": "llama2"
+ },
+ {
   "at": "2026-11-07T04:56:04.624Z",
   "type": "hidden",
   "id": "gh-wenhaochai-moviechat",
@@ -574,29 +598,5 @@
   "type": "removed",
   "id": "gh-zerodayevil-ai-security-tool",
   "title": "ai-security-tool"
- },
- {
-  "at": "2026-11-04T23:47:34.397Z",
-  "type": "removed",
-  "id": "gh-strands-agents-tools",
-  "title": "tools"
- },
- {
-  "at": "2026-11-04T10:07:40.057Z",
-  "type": "added",
-  "id": "gh-capri-com-capri-ai",
-  "title": "Capri-AI"
- },
- {
-  "at": "2026-11-04T01:07:03.945Z",
-  "type": "removed",
-  "id": "gh-langchain-ai-agent-chat-ui",
-  "title": "agent-chat-ui"
- },
- {
-  "at": "2026-11-04T00:38:09.106Z",
-  "type": "removed",
-  "id": "gh-run-llama-rags",
-  "title": "rags"
  }
 ]
