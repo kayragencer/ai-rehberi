@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-07T07:00:18.123Z",
+  "type": "hidden",
+  "id": "gh-carefree0910-carefree-drawboard",
+  "title": "carefree-drawboard"
+ },
+ {
+  "at": "2026-11-07T07:00:18.123Z",
+  "type": "hidden",
+  "id": "gh-isekaidev-stable-art",
+  "title": "stable.art"
+ },
+ {
+  "at": "2026-11-07T07:00:18.123Z",
+  "type": "hidden",
+  "id": "gh-deforum-sd-webui-deforum",
+  "title": "sd-webui-deforum"
+ },
+ {
+  "at": "2026-11-07T07:00:18.123Z",
+  "type": "hidden",
+  "id": "gh-assemblyai-community-minimagen",
+  "title": "MinImagen"
+ },
+ {
   "at": "2026-11-07T05:52:05.746Z",
   "type": "hidden",
   "id": "gh-lightricks-comfyui-ltxvideo",
@@ -574,29 +598,5 @@
   "type": "added",
   "id": "gh-sandflow-ai-sand3d",
   "title": "sand3d"
- },
- {
-  "at": "2026-11-05T03:58:26.578Z",
-  "type": "removed",
-  "id": "gh-maefdancer29436-rpocket-team-elden-ring",
-  "title": "rpocket-team-elden-ring"
- },
- {
-  "at": "2026-11-05T02:16:06.523Z",
-  "type": "added",
-  "id": "gh-elysiumforge-labs-elysium-chain-mcp",
-  "title": "elysium-chain-mcp"
- },
- {
-  "at": "2026-11-05T01:09:14.244Z",
-  "type": "removed",
-  "id": "gh-zhongyu09-openchatbi",
-  "title": "openchatbi"
- },
- {
-  "at": "2026-11-04T23:47:34.397Z",
-  "type": "removed",
-  "id": "gh-zerodayevil-ai-security-tool",
-  "title": "ai-security-tool"
  }
 ]
