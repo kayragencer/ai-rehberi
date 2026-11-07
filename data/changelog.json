@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-07T01:01:46.175Z",
+  "type": "hidden",
+  "id": "gh-fellouai-eko",
+  "title": "eko"
+ },
+ {
+  "at": "2026-11-07T01:01:46.175Z",
+  "type": "hidden",
+  "id": "gh-datahaven-xyz-datahaven",
+  "title": "datahaven"
+ },
+ {
   "at": "2026-11-06T22:47:09.804Z",
   "type": "hidden",
   "id": "gh-corespeed-io-zypher-agent",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "gh-sheernox-cedr",
   "title": "cedr"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-bearisbug-imbo",
-  "title": "imbo"
- },
- {
-  "at": "2026-11-02T23:07:57.224Z",
-  "type": "added",
-  "id": "gh-bjarneo-shoulder",
-  "title": "shoulder"
  }
 ]
