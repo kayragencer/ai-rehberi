@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-07T16:45:03.582Z",
+  "type": "hidden",
+  "id": "gh-claudiajs-claudia-bot-builder",
+  "title": "claudia-bot-builder"
+ },
+ {
+  "at": "2026-11-07T16:45:03.582Z",
+  "type": "hidden",
+  "id": "gh-vynect-venom",
+  "title": "venom"
+ },
+ {
+  "at": "2026-11-07T16:45:03.582Z",
+  "type": "hidden",
+  "id": "gh-sunhaiy-reflex",
+  "title": "Reflex"
+ },
+ {
+  "at": "2026-11-07T16:45:03.582Z",
+  "type": "hidden",
+  "id": "gh-hey-telo-admyral",
+  "title": "admyral"
+ },
+ {
   "at": "2026-11-07T15:44:12.414Z",
   "type": "hidden",
   "id": "gh-lightricks-ltx-video",
@@ -574,29 +598,5 @@
   "type": "hidden",
   "id": "gh-pawanosman-googlebard",
   "title": "GoogleBard"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-lee88688-aider-composer",
-  "title": "aider-composer"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-hemulgm-chatgpt",
-  "title": "ChatGPT"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-lencx-gpthub",
-  "title": "GPTHub"
- },
- {
-  "at": "2026-11-06T20:51:24.827Z",
-  "type": "hidden",
-  "id": "gh-kaarthik108-snowchat",
-  "title": "snowChat"
  }
 ]
