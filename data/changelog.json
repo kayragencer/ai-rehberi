@@ -1,5 +1,47 @@
 [
  {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "hidden",
+  "id": "gh-openai-openai-dotnet",
+  "title": "openai-dotnet"
+ },
+ {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "hidden",
+  "id": "gh-aprilnea-achat",
+  "title": "AChat"
+ },
+ {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "hidden",
+  "id": "gh-othersideai-self-operating-computer",
+  "title": "self-operating-computer"
+ },
+ {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "hidden",
+  "id": "gh-arenukvern-mcp-flutter",
+  "title": "mcp_flutter"
+ },
+ {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "hidden",
+  "id": "gh-humanplane-homunculus",
+  "title": "homunculus"
+ },
+ {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "added",
+  "id": "gh-shanselman-sandbox-mcp",
+  "title": "sandbox-mcp"
+ },
+ {
+  "at": "2026-11-07T12:54:15.048Z",
+  "type": "added",
+  "id": "gh-zaxiu88888-issue-rag",
+  "title": "issue-rag"
+ },
+ {
   "at": "2026-11-07T11:44:54.952Z",
   "type": "hidden",
   "id": "gh-zhimaai-chatclaw",
@@ -556,47 +598,5 @@
   "type": "hidden",
   "id": "gh-haotian-liu-llava",
   "title": "LLaVA"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-laion-ai-open-assistant",
-  "title": "Open-Assistant"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-eylonmiz-react-agent",
-  "title": "react-agent"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-swark-io-swark",
-  "title": "swark"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-patoles-agent-flow",
-  "title": "agent-flow"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-undertheseanlp-underthesea",
-  "title": "underthesea"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-run-llama-llama-deploy",
-  "title": "llama_deploy"
- },
- {
-  "at": "2026-11-06T17:53:31.014Z",
-  "type": "hidden",
-  "id": "gh-gammalabtechnologies-harmonist",
-  "title": "harmonist"
  }
 ]
