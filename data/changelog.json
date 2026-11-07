@@ -1,5 +1,65 @@
 [
  {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-heyjunpenn-aigotools",
+  "title": "aigotools"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-sparrow-js-an-codeai",
+  "title": "an-codeAI"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-azure-samples-miyagi",
+  "title": "miyagi"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-theodo-group-genossgpt",
+  "title": "GenossGPT"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-yvann-ba-robby-chatbot",
+  "title": "Robby-chatbot"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-zaidmukaddam-scira-mcp-chat",
+  "title": "scira-mcp-chat"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-vercel-labs-tersa",
+  "title": "tersa"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-rapidpages-rapidpages",
+  "title": "rapidpages"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-scale3-labs-langtrace",
+  "title": "langtrace"
+ },
+ {
+  "at": "2026-11-07T13:54:23.758Z",
+  "type": "hidden",
+  "id": "gh-okisdev-chatchat",
+  "title": "ChatChat"
+ },
+ {
   "at": "2026-11-07T12:54:15.048Z",
   "type": "hidden",
   "id": "gh-openai-openai-dotnet",
@@ -538,65 +598,5 @@
   "type": "hidden",
   "id": "gh-neumtry-neumai",
   "title": "NeumAI"
- },
- {
-  "at": "2026-11-06T19:55:07.946Z",
-  "type": "hidden",
-  "id": "gh-gair-nlp-factool",
-  "title": "factool"
- },
- {
-  "at": "2026-11-06T19:55:07.946Z",
-  "type": "hidden",
-  "id": "gh-nodatafound-hackgpt",
-  "title": "hackGPT"
- },
- {
-  "at": "2026-11-06T19:55:07.946Z",
-  "type": "hidden",
-  "id": "gh-ai-genie-chatgpt-vscode",
-  "title": "chatgpt-vscode"
- },
- {
-  "at": "2026-11-06T19:55:07.946Z",
-  "type": "hidden",
-  "id": "gh-sobelio-llm-chain",
-  "title": "llm-chain"
- },
- {
-  "at": "2026-11-06T19:55:07.946Z",
-  "type": "hidden",
-  "id": "gh-okgodoit-openai-api-dotnet",
-  "title": "OpenAI-API-dotnet"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-memodb-io-memobase",
-  "title": "memobase"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-opengvlab-ask-anything",
-  "title": "Ask-Anything"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-tbxark-chatgpt-telegram-workers",
-  "title": "ChatGPT-Telegram-Workers"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-qwenaudio-cosyvoice",
-  "title": "CosyVoice"
- },
- {
-  "at": "2026-11-06T18:56:29.538Z",
-  "type": "hidden",
-  "id": "gh-haotian-liu-llava",
-  "title": "LLaVA"
  }
 ]
