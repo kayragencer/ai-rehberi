@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-08T02:55:40.869Z",
+  "type": "removed",
+  "id": "gh-zoicware-removewindowsai",
+  "title": "RemoveWindowsAI"
+ },
+ {
+  "at": "2026-11-08T02:55:40.869Z",
+  "type": "added",
+  "id": "gh-juneo-lab-decision-forge",
+  "title": "decision-forge"
+ },
+ {
   "at": "2026-11-08T02:08:54.335Z",
   "type": "added",
   "id": "gh-dhruvthakur11-youtube-ai-video-editing-system",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-wandb-openui",
   "title": "openui"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-onepointai-onepoint",
-  "title": "onepoint"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-gustavz-datachad",
-  "title": "DataChad"
  }
 ]
