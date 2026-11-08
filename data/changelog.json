@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-08T21:41:53.572Z",
+  "type": "added",
+  "id": "gh-smokeeaasd-flawless-ui-ux",
+  "title": "flawless-ui-ux"
+ },
+ {
   "at": "2026-11-08T20:43:24.642Z",
   "type": "removed",
   "id": "gh-herdbuilderestimate-roblox-studio-mcp",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-coframe-coffee",
   "title": "coffee"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-web",
-  "title": "alan-sdk-web"
  }
 ]
