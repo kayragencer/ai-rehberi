@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-08T02:08:54.335Z",
+  "type": "added",
+  "id": "gh-dhruvthakur11-youtube-ai-video-editing-system",
+  "title": "youtube-ai-video-editing-system"
+ },
+ {
+  "at": "2026-11-08T02:08:54.335Z",
+  "type": "added",
+  "id": "gh-gogoymh-auto-ontology-mcp",
+  "title": "auto-ontology-mcp"
+ },
+ {
   "at": "2026-11-07T18:48:55.848Z",
   "type": "hidden",
   "id": "gh-surebot-eventline",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-gustavz-datachad",
   "title": "DataChad"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-engageintellect-spatz-2",
-  "title": "spatz-2"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-reflex-dev-reflex-chat",
-  "title": "reflex-chat"
  }
 ]
