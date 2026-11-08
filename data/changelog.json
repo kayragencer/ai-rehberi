@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-08T20:43:24.642Z",
+  "type": "removed",
+  "id": "gh-herdbuilderestimate-roblox-studio-mcp",
+  "title": "roblox-studio-mcp"
+ },
+ {
   "at": "2026-11-08T16:44:15.349Z",
   "type": "added",
   "id": "gh-kubai087-kubai-icons",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-web",
   "title": "alan-sdk-web"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-moazbuilds-codemachine-cli",
-  "title": "CodeMachine-CLI"
  }
 ]
