@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-08T16:44:15.349Z",
+  "type": "added",
+  "id": "gh-kubai087-kubai-icons",
+  "title": "kubai-icons"
+ },
+ {
+  "at": "2026-11-08T16:44:15.349Z",
+  "type": "added",
+  "id": "gh-tiger-ai-lab-websitebench",
+  "title": "WebsiteBench"
+ },
+ {
   "at": "2026-11-08T02:55:40.869Z",
   "type": "removed",
   "id": "gh-zoicware-removewindowsai",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-moazbuilds-codemachine-cli",
   "title": "CodeMachine-CLI"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-lightricks-ltx-2",
-  "title": "LTX-2"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-wandb-openui",
-  "title": "openui"
  }
 ]
