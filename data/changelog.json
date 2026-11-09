@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-09T18:00:06.733Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-pcf",
+  "title": "alan-sdk-pcf"
+ },
+ {
+  "at": "2026-11-09T18:00:06.733Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-reactnative",
+  "title": "alan-sdk-reactnative"
+ },
+ {
+  "at": "2026-11-09T18:00:06.733Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-ionic",
+  "title": "alan-sdk-ionic"
+ },
+ {
+  "at": "2026-11-09T18:00:06.733Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-android",
+  "title": "alan-sdk-android"
+ },
+ {
+  "at": "2026-11-09T18:00:06.733Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-flutter",
+  "title": "alan-sdk-flutter"
+ },
+ {
   "at": "2026-11-09T09:17:02.046Z",
   "type": "added",
   "id": "gh-howznguyen-shorts-kit",
@@ -568,35 +598,5 @@
   "type": "hidden",
   "id": "gh-fellouai-eko",
   "title": "eko"
- },
- {
-  "at": "2026-11-07T01:01:46.175Z",
-  "type": "hidden",
-  "id": "gh-datahaven-xyz-datahaven",
-  "title": "datahaven"
- },
- {
-  "at": "2026-11-06T22:47:09.804Z",
-  "type": "hidden",
-  "id": "gh-corespeed-io-zypher-agent",
-  "title": "zypher-agent"
- },
- {
-  "at": "2026-11-06T22:47:09.804Z",
-  "type": "hidden",
-  "id": "gh-ivaniscoding-resullme",
-  "title": "ResuLLMe"
- },
- {
-  "at": "2026-11-06T22:47:09.804Z",
-  "type": "hidden",
-  "id": "gh-taylorsatula-mira",
-  "title": "mira"
- },
- {
-  "at": "2026-11-06T22:47:09.804Z",
-  "type": "hidden",
-  "id": "gh-mrwadams-stride-gpt",
-  "title": "stride-gpt"
  }
 ]
