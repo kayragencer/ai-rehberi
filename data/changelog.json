@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-09T09:17:02.046Z",
+  "type": "added",
+  "id": "gh-howznguyen-shorts-kit",
+  "title": "shorts-kit"
+ },
+ {
   "at": "2026-11-09T03:59:57.020Z",
   "type": "hidden",
   "id": "gh-0xacx-chatgpt-shell-cli",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-mrwadams-stride-gpt",
   "title": "stride-gpt"
- },
- {
-  "at": "2026-11-06T22:47:09.804Z",
-  "type": "added",
-  "id": "gh-voyager-so-vork",
-  "title": "vork"
  }
 ]
