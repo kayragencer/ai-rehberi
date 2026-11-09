@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-09T03:59:57.020Z",
+  "type": "hidden",
+  "id": "gh-0xacx-chatgpt-shell-cli",
+  "title": "chatGPT-shell-cli"
+ },
+ {
   "at": "2026-11-08T21:41:53.572Z",
   "type": "added",
   "id": "gh-smokeeaasd-flawless-ui-ux",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-voyager-so-vork",
   "title": "vork"
- },
- {
-  "at": "2026-11-06T21:45:34.213Z",
-  "type": "hidden",
-  "id": "gh-coframe-coffee",
-  "title": "coffee"
  }
 ]
