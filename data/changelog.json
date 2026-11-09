@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-09T18:58:57.554Z",
+  "type": "hidden",
+  "id": "gh-modal-labs-quillman",
+  "title": "quillman"
+ },
+ {
+  "at": "2026-11-09T18:58:57.554Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-ios",
+  "title": "alan-sdk-ios"
+ },
+ {
   "at": "2026-11-09T18:00:06.733Z",
   "type": "restored",
   "id": "gh-alan-ai-alan-sdk-pcf",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-pentesterflow-agent",
   "title": "agent"
- },
- {
-  "at": "2026-11-07T01:59:45.671Z",
-  "type": "hidden",
-  "id": "gh-lynpoint-cyberverse",
-  "title": "CyberVerse"
- },
- {
-  "at": "2026-11-07T01:01:46.175Z",
-  "type": "hidden",
-  "id": "gh-fellouai-eko",
-  "title": "eko"
  }
 ]
