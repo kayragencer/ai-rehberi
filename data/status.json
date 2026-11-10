@@ -1,1 +1,1 @@
-{"translate":{"ok":2,"fail":0,"provider":"gtx","tried":{"gemini":1,"gtx":2},"lastError":"gemini: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem"}}
+{"translate":{"ok":4,"fail":0,"provider":"gemini","tried":{"gemini":2},"lastError":""}}
