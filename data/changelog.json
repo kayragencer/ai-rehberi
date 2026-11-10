@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-10T02:08:58.251Z",
+  "type": "hidden",
+  "id": "gh-balanov-uncut",
+  "title": "uncut"
+ },
+ {
   "at": "2026-11-09T18:58:57.554Z",
   "type": "hidden",
   "id": "gh-modal-labs-quillman",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-andrepimenta-claude-code-chat",
   "title": "claude-code-chat"
- },
- {
-  "at": "2026-11-07T01:59:45.671Z",
-  "type": "hidden",
-  "id": "gh-pentesterflow-agent",
-  "title": "agent"
  }
 ]
