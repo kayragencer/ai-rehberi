@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-10T13:06:10.442Z",
+  "type": "restored",
+  "id": "gh-alan-ai-alan-sdk-web",
+  "title": "alan-sdk-web"
+ },
+ {
   "at": "2026-11-10T10:56:42.533Z",
   "type": "hidden",
   "id": "gh-trypear-pearai-master",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-getclawe-clawe",
   "title": "clawe"
- },
- {
-  "at": "2026-11-07T03:53:39.779Z",
-  "type": "hidden",
-  "id": "gh-vllora-vllora",
-  "title": "vllora"
  }
 ]
