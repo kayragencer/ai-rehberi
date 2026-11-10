@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-10T03:55:17.487Z",
+  "type": "added",
+  "id": "gh-dodaios-ste80-humanizer",
+  "title": "ste80-humanizer"
+ },
+ {
   "at": "2026-11-10T02:55:15.926Z",
   "type": "restored",
   "id": "gh-sunhaiy-reflex",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-christopherkarani-wax",
   "title": "Wax"
- },
- {
-  "at": "2026-11-07T02:53:17.325Z",
-  "type": "hidden",
-  "id": "gh-zhangjinhahaha-agentlens",
-  "title": "AgentLens"
  }
 ]
