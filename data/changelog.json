@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-10T02:55:15.926Z",
+  "type": "restored",
+  "id": "gh-sunhaiy-reflex",
+  "title": "Reflex"
+ },
+ {
   "at": "2026-11-10T02:08:58.251Z",
   "type": "hidden",
   "id": "gh-balanov-uncut",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-zhangjinhahaha-agentlens",
   "title": "AgentLens"
- },
- {
-  "at": "2026-11-07T02:53:17.325Z",
-  "type": "hidden",
-  "id": "gh-andrepimenta-claude-code-chat",
-  "title": "claude-code-chat"
  }
 ]
