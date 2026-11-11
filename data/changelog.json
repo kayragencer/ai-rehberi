@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-11T23:53:28.247Z",
+  "type": "removed",
+  "id": "gh-potterremember37-capri-ai-desktop",
+  "title": "Capri-AI-Desktop"
+ },
+ {
   "at": "2026-11-11T22:56:22.371Z",
   "type": "added",
   "id": "gh-future-proof-ds-interactive-ai-ml-tools",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-assemblyai-community-minimagen",
   "title": "MinImagen"
- },
- {
-  "at": "2026-11-07T05:52:05.746Z",
-  "type": "hidden",
-  "id": "gh-lightricks-comfyui-ltxvideo",
-  "title": "ComfyUI-LTXVideo"
  }
 ]
