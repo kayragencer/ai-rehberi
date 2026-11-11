@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-11T11:59:25.436Z",
+  "type": "hidden",
+  "id": "gh-guardrails-ai-guardrails",
+  "title": "guardrails"
+ },
+ {
   "at": "2026-11-11T10:03:52.972Z",
   "type": "restored",
   "id": "gh-tencent-weknora",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-wenhaochai-moviechat",
   "title": "MovieChat"
- },
- {
-  "at": "2026-11-07T04:56:04.624Z",
-  "type": "hidden",
-  "id": "gh-yuniko-software-minecraft-mcp-server",
-  "title": "minecraft-mcp-server"
  }
 ]
