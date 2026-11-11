@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-11T19:00:31.248Z",
+  "type": "added",
+  "id": "gh-minimax-ai-minimax-h3-image",
+  "title": "MiniMax-H3-Image"
+ },
+ {
+  "at": "2026-11-11T19:00:31.248Z",
+  "type": "added",
+  "id": "gh-stevenmichaelthomas-numbrone",
+  "title": "numbrone"
+ },
+ {
   "at": "2026-11-11T17:58:33.546Z",
   "type": "hidden",
   "id": "gh-agents-flex-agents-flex",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-bigscience-workshop-data-preparation",
   "title": "data-preparation"
- },
- {
-  "at": "2026-11-07T05:52:05.746Z",
-  "type": "hidden",
-  "id": "gh-tonicai-tonic-validate",
-  "title": "tonic_validate"
- },
- {
-  "at": "2026-11-07T05:52:05.746Z",
-  "type": "hidden",
-  "id": "gh-dataprofessor-llama2",
-  "title": "llama2"
  }
 ]
