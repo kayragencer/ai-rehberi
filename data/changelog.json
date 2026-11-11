@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-11T17:58:33.546Z",
+  "type": "hidden",
+  "id": "gh-agents-flex-agents-flex",
+  "title": "agents-flex"
+ },
+ {
   "at": "2026-11-11T11:59:25.436Z",
   "type": "hidden",
   "id": "gh-guardrails-ai-guardrails",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-dataprofessor-llama2",
   "title": "llama2"
- },
- {
-  "at": "2026-11-07T04:56:04.624Z",
-  "type": "hidden",
-  "id": "gh-wenhaochai-moviechat",
-  "title": "MovieChat"
  }
 ]
