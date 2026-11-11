@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-11T06:03:59.270Z",
+  "type": "added",
+  "id": "gh-alexeyw-lot-map",
+  "title": "lot-map"
+ },
+ {
   "at": "2026-11-10T23:41:50.141Z",
   "type": "added",
   "id": "gh-expo-exact",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-oneirocom-magick",
   "title": "Magick"
- },
- {
-  "at": "2026-11-07T03:53:39.779Z",
-  "type": "hidden",
-  "id": "gh-homanp-infinite-monitor",
-  "title": "infinite-monitor"
  }
 ]
