@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-12T18:59:17.634Z",
+  "type": "removed",
+  "id": "gh-esengine-deepseek-reasonix",
+  "title": "DeepSeek-Reasonix"
+ },
+ {
   "at": "2026-11-12T13:18:15.316Z",
   "type": "restored",
   "id": "gh-arenukvern-mcp-flutter",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-open-mmlab-amphion",
   "title": "Amphion"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-wolverinn-stable-diffusion-multi-user",
-  "title": "stable-diffusion-multi-user"
  }
 ]
