@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-12T03:58:39.162Z",
+  "type": "added",
+  "id": "gh-sskandon-blender-ai-mcp-addon",
+  "title": "blender-ai-mcp-addon"
+ },
+ {
   "at": "2026-11-12T01:17:26.750Z",
   "type": "hidden",
   "id": "gh-rath-team-openrath",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-carefree0910-carefree-drawboard",
   "title": "carefree-drawboard"
- },
- {
-  "at": "2026-11-07T07:00:18.123Z",
-  "type": "hidden",
-  "id": "gh-isekaidev-stable-art",
-  "title": "stable.art"
  }
 ]
