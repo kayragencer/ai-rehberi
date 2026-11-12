@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-12T23:49:46.513Z",
+  "type": "removed",
+  "id": "gh-run-llama-llama-deploy",
+  "title": "llama_deploy"
+ },
+ {
+  "at": "2026-11-12T23:49:46.513Z",
+  "type": "added",
+  "id": "gh-pktq-lasik",
+  "title": "lasik"
+ },
+ {
   "at": "2026-11-12T18:59:17.634Z",
   "type": "removed",
   "id": "gh-esengine-deepseek-reasonix",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-android",
   "title": "alan-sdk-android"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-metavoiceio-metavoice-src",
-  "title": "metavoice-src"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-open-mmlab-amphion",
-  "title": "Amphion"
  }
 ]
