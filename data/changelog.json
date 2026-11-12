@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-12T13:18:15.316Z",
+  "type": "restored",
+  "id": "gh-arenukvern-mcp-flutter",
+  "title": "mcp_flutter"
+ },
+ {
   "at": "2026-11-12T05:05:17.863Z",
   "type": "added",
   "id": "gh-huawei-csl-macaq",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-wolverinn-stable-diffusion-multi-user",
   "title": "stable-diffusion-multi-user"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-dakenf-diffusers-js",
-  "title": "diffusers.js"
  }
 ]
