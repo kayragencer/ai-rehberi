@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-12T05:05:17.863Z",
+  "type": "added",
+  "id": "gh-huawei-csl-macaq",
+  "title": "MACaQ"
+ },
+ {
   "at": "2026-11-12T03:58:39.162Z",
   "type": "added",
   "id": "gh-sskandon-blender-ai-mcp-addon",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-dakenf-diffusers-js",
   "title": "diffusers.js"
- },
- {
-  "at": "2026-11-07T07:00:18.123Z",
-  "type": "hidden",
-  "id": "gh-carefree0910-carefree-drawboard",
-  "title": "carefree-drawboard"
  }
 ]
