@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-12T01:17:26.750Z",
+  "type": "hidden",
+  "id": "gh-rath-team-openrath",
+  "title": "OpenRath"
+ },
+ {
+  "at": "2026-11-12T01:17:26.750Z",
+  "type": "added",
+  "id": "gh-agentes-chat-agentes-chat",
+  "title": "agentes-chat"
+ },
+ {
   "at": "2026-11-11T23:53:28.247Z",
   "type": "removed",
   "id": "gh-potterremember37-capri-ai-desktop",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-isekaidev-stable-art",
   "title": "stable.art"
- },
- {
-  "at": "2026-11-07T07:00:18.123Z",
-  "type": "hidden",
-  "id": "gh-deforum-sd-webui-deforum",
-  "title": "sd-webui-deforum"
- },
- {
-  "at": "2026-11-07T07:00:18.123Z",
-  "type": "hidden",
-  "id": "gh-assemblyai-community-minimagen",
-  "title": "MinImagen"
  }
 ]
