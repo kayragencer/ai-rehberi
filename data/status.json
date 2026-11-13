@@ -1,1 +1,1 @@
-{"translate":{"ok":6,"fail":0,"provider":"gemini","tried":{"gemini":1},"lastError":""}}
+{"translate":{"ok":105,"fail":0,"provider":"gemini","tried":{"gemini":14,"gtx":13,"lingva":5,"mymemory":8},"lastError":"lingva: HTTP 500"}}

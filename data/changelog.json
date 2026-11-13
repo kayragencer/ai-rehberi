@@ -1,602 +1,602 @@
 [
  {
-  "at": "2026-11-13T15:54:36.576Z",
-  "type": "restored",
-  "id": "gh-vonage-vonage-php-sdk-core",
-  "title": "vonage-php-sdk-core"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-kingston5390-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-13T11:59:45.873Z",
-  "type": "hidden",
-  "id": "gh-zju-llms-agent-kernel",
-  "title": "Agent-Kernel"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-nerds-coach-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-13T11:59:45.873Z",
-  "type": "removed",
-  "id": "gh-sskandon-blender-ai-mcp-addon",
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-irakli-ika-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-ttobulevicius-cpu-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-irakli-ika-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-mellevm-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-eagrafki-byte-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-hitkeeen-blender-ai-mcp-addon",
   "title": "blender-ai-mcp-addon"
  },
  {
-  "at": "2026-11-13T09:03:36.362Z",
-  "type": "hidden",
-  "id": "gh-prismer-ai-prismercloud",
-  "title": "PrismerCloud"
- },
- {
-  "at": "2026-11-13T09:03:36.362Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-bytesbay-pi-gpui",
-  "title": "pi-gpui"
+  "id": "gh-hade6556-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-13T07:21:11.424Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-hyperionaidev-smolmaxxing",
-  "title": "smolmaxxing"
+  "id": "gh-gooie-goo-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-13T05:03:49.690Z",
-  "type": "hidden",
-  "id": "gh-lilmgenius-paperthin",
-  "title": "paperthin"
- },
- {
-  "at": "2026-11-12T23:49:46.513Z",
-  "type": "removed",
-  "id": "gh-run-llama-llama-deploy",
-  "title": "llama_deploy"
- },
- {
-  "at": "2026-11-12T23:49:46.513Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-pktq-lasik",
-  "title": "lasik"
+  "id": "gh-gooie-goo-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-12T18:59:17.634Z",
-  "type": "removed",
-  "id": "gh-esengine-deepseek-reasonix",
-  "title": "DeepSeek-Reasonix"
- },
- {
-  "at": "2026-11-12T13:18:15.316Z",
-  "type": "restored",
-  "id": "gh-arenukvern-mcp-flutter",
-  "title": "mcp_flutter"
- },
- {
-  "at": "2026-11-12T05:05:17.863Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-huawei-csl-macaq",
-  "title": "MACaQ"
+  "id": "gh-ttobulevicius-cpu-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-12T03:58:39.162Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-sskandon-blender-ai-mcp-addon",
-  "title": "blender-ai-mcp-addon"
+  "id": "gh-ass039514-debug-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-12T01:17:26.750Z",
-  "type": "hidden",
-  "id": "gh-rath-team-openrath",
-  "title": "OpenRath"
- },
- {
-  "at": "2026-11-12T01:17:26.750Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-agentes-chat-agentes-chat",
-  "title": "agentes-chat"
+  "id": "gh-derbelonix-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-11T23:53:28.247Z",
-  "type": "removed",
-  "id": "gh-potterremember37-capri-ai-desktop",
-  "title": "Capri-AI-Desktop"
- },
- {
-  "at": "2026-11-11T22:56:22.371Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-future-proof-ds-interactive-ai-ml-tools",
-  "title": "interactive-ai-ml-tools"
+  "id": "gh-ass039514-debug-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-11T19:00:31.248Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-minimax-ai-minimax-h3-image",
-  "title": "MiniMax-H3-Image"
+  "id": "gh-verrohe9-web-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-11T19:00:31.248Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-stevenmichaelthomas-numbrone",
-  "title": "numbrone"
+  "id": "gh-derbelonix-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-11T17:58:33.546Z",
-  "type": "hidden",
-  "id": "gh-agents-flex-agents-flex",
-  "title": "agents-flex"
- },
- {
-  "at": "2026-11-11T11:59:25.436Z",
-  "type": "hidden",
-  "id": "gh-guardrails-ai-guardrails",
-  "title": "guardrails"
- },
- {
-  "at": "2026-11-11T10:03:52.972Z",
-  "type": "restored",
-  "id": "gh-tencent-weknora",
-  "title": "WeKnora"
- },
- {
-  "at": "2026-11-11T06:03:59.270Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-alexeyw-lot-map",
-  "title": "lot-map"
+  "id": "gh-lua822-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-10T23:41:50.141Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-expo-exact",
-  "title": "exact"
+  "id": "gh-bk9cj-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-10T17:52:20.617Z",
-  "type": "hidden",
-  "id": "gh-im4codes-imcodes",
-  "title": "imcodes"
- },
- {
-  "at": "2026-11-10T13:06:10.442Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-web",
-  "title": "alan-sdk-web"
- },
- {
-  "at": "2026-11-10T10:56:42.533Z",
-  "type": "hidden",
-  "id": "gh-trypear-pearai-master",
-  "title": "pearai-master"
- },
- {
-  "at": "2026-11-10T03:55:17.487Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-dodaios-ste80-humanizer",
-  "title": "ste80-humanizer"
+  "id": "gh-lua822-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-10T02:55:15.926Z",
-  "type": "restored",
-  "id": "gh-sunhaiy-reflex",
-  "title": "Reflex"
- },
- {
-  "at": "2026-11-10T02:08:58.251Z",
-  "type": "hidden",
-  "id": "gh-balanov-uncut",
-  "title": "uncut"
- },
- {
-  "at": "2026-11-09T18:58:57.554Z",
-  "type": "hidden",
-  "id": "gh-modal-labs-quillman",
-  "title": "quillman"
- },
- {
-  "at": "2026-11-09T18:58:57.554Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-ios",
-  "title": "alan-sdk-ios"
- },
- {
-  "at": "2026-11-09T18:00:06.733Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-pcf",
-  "title": "alan-sdk-pcf"
- },
- {
-  "at": "2026-11-09T18:00:06.733Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-reactnative",
-  "title": "alan-sdk-reactnative"
- },
- {
-  "at": "2026-11-09T18:00:06.733Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-ionic",
-  "title": "alan-sdk-ionic"
- },
- {
-  "at": "2026-11-09T18:00:06.733Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-android",
-  "title": "alan-sdk-android"
- },
- {
-  "at": "2026-11-09T18:00:06.733Z",
-  "type": "restored",
-  "id": "gh-alan-ai-alan-sdk-flutter",
-  "title": "alan-sdk-flutter"
- },
- {
-  "at": "2026-11-09T09:17:02.046Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-howznguyen-shorts-kit",
-  "title": "shorts-kit"
+  "id": "gh-verrohe9-web-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-09T03:59:57.020Z",
-  "type": "hidden",
-  "id": "gh-0xacx-chatgpt-shell-cli",
-  "title": "chatGPT-shell-cli"
- },
- {
-  "at": "2026-11-08T21:41:53.572Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-smokeeaasd-flawless-ui-ux",
-  "title": "flawless-ui-ux"
+  "id": "gh-jsabguy1-cpu-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-08T20:43:24.642Z",
-  "type": "removed",
-  "id": "gh-herdbuilderestimate-roblox-studio-mcp",
-  "title": "roblox-studio-mcp"
- },
- {
-  "at": "2026-11-08T16:44:15.349Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-kubai087-kubai-icons",
-  "title": "kubai-icons"
+  "id": "gh-jopetkin-code-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-08T16:44:15.349Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-tiger-ai-lab-websitebench",
-  "title": "WebsiteBench"
+  "id": "gh-n0-name0-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-08T02:55:40.869Z",
-  "type": "removed",
-  "id": "gh-zoicware-removewindowsai",
-  "title": "RemoveWindowsAI"
- },
- {
-  "at": "2026-11-08T02:55:40.869Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-juneo-lab-decision-forge",
-  "title": "decision-forge"
+  "id": "gh-jsabguy1-cpu-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-08T02:08:54.335Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-dhruvthakur11-youtube-ai-video-editing-system",
-  "title": "youtube-ai-video-editing-system"
+  "id": "gh-floki12342-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-08T02:08:54.335Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-gogoymh-auto-ontology-mcp",
-  "title": "auto-ontology-mcp"
+  "id": "gh-jopetkin-code-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T18:48:55.848Z",
-  "type": "hidden",
-  "id": "gh-surebot-eventline",
-  "title": "Eventline"
- },
- {
-  "at": "2026-11-07T18:48:55.848Z",
-  "type": "hidden",
-  "id": "gh-peiiii-agentverse",
-  "title": "AgentVerse"
- },
- {
-  "at": "2026-11-07T18:48:55.848Z",
-  "type": "hidden",
-  "id": "gh-sohelamin-chatbot",
-  "title": "chatbot"
- },
- {
-  "at": "2026-11-07T17:40:45.437Z",
-  "type": "hidden",
-  "id": "gh-enginebai-pymessager",
-  "title": "PyMessager"
- },
- {
-  "at": "2026-11-07T17:40:45.437Z",
-  "type": "hidden",
-  "id": "gh-botlibre-botlibre",
-  "title": "BotLibre"
- },
- {
-  "at": "2026-11-07T17:40:45.437Z",
-  "type": "hidden",
-  "id": "gh-ahmadfaizalbh-chatbot",
-  "title": "Chatbot"
- },
- {
-  "at": "2026-11-07T17:40:45.437Z",
-  "type": "hidden",
-  "id": "gh-operable-cog",
-  "title": "cog"
- },
- {
-  "at": "2026-11-07T16:45:03.582Z",
-  "type": "hidden",
-  "id": "gh-claudiajs-claudia-bot-builder",
-  "title": "claudia-bot-builder"
- },
- {
-  "at": "2026-11-07T16:45:03.582Z",
-  "type": "hidden",
-  "id": "gh-vynect-venom",
-  "title": "venom"
- },
- {
-  "at": "2026-11-07T16:45:03.582Z",
-  "type": "hidden",
-  "id": "gh-sunhaiy-reflex",
-  "title": "Reflex"
- },
- {
-  "at": "2026-11-07T16:45:03.582Z",
-  "type": "hidden",
-  "id": "gh-hey-telo-admyral",
-  "title": "admyral"
- },
- {
-  "at": "2026-11-07T15:44:12.414Z",
-  "type": "hidden",
-  "id": "gh-lightricks-ltx-video",
-  "title": "LTX-Video"
- },
- {
-  "at": "2026-11-07T15:44:12.414Z",
-  "type": "hidden",
-  "id": "gh-foundationvision-omnitokenizer",
-  "title": "OmniTokenizer"
- },
- {
-  "at": "2026-11-07T15:44:12.414Z",
-  "type": "hidden",
-  "id": "gh-ha0tang-selectiongan",
-  "title": "SelectionGAN"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-pnkvalavala-repochat",
-  "title": "repochat"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-firecrawl-firesearch",
-  "title": "firesearch"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-litanlitudan-skyagi",
-  "title": "skyagi"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-safiullah-rahu-knowledge-intelligence",
-  "title": "knowledge-intelligence"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-feiyuyu0503-free-dall-e-proxy",
-  "title": "free-dall-e-proxy"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-lyuai-agentok",
-  "title": "agentok"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-wil3-gymfc",
-  "title": "gymfc"
- },
- {
-  "at": "2026-11-07T14:46:33.370Z",
-  "type": "hidden",
-  "id": "gh-stepanogil-autonomous-hr-chatbot",
-  "title": "autonomous-hr-chatbot"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-heyjunpenn-aigotools",
-  "title": "aigotools"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-sparrow-js-an-codeai",
-  "title": "an-codeAI"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-azure-samples-miyagi",
-  "title": "miyagi"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-theodo-group-genossgpt",
-  "title": "GenossGPT"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-yvann-ba-robby-chatbot",
-  "title": "Robby-chatbot"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-zaidmukaddam-scira-mcp-chat",
-  "title": "scira-mcp-chat"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-vercel-labs-tersa",
-  "title": "tersa"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-rapidpages-rapidpages",
-  "title": "rapidpages"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-scale3-labs-langtrace",
-  "title": "langtrace"
- },
- {
-  "at": "2026-11-07T13:54:23.758Z",
-  "type": "hidden",
-  "id": "gh-okisdev-chatchat",
-  "title": "ChatChat"
- },
- {
-  "at": "2026-11-07T12:54:15.048Z",
-  "type": "hidden",
-  "id": "gh-openai-openai-dotnet",
-  "title": "openai-dotnet"
- },
- {
-  "at": "2026-11-07T12:54:15.048Z",
-  "type": "hidden",
-  "id": "gh-aprilnea-achat",
-  "title": "AChat"
- },
- {
-  "at": "2026-11-07T12:54:15.048Z",
-  "type": "hidden",
-  "id": "gh-othersideai-self-operating-computer",
-  "title": "self-operating-computer"
- },
- {
-  "at": "2026-11-07T12:54:15.048Z",
-  "type": "hidden",
-  "id": "gh-arenukvern-mcp-flutter",
-  "title": "mcp_flutter"
- },
- {
-  "at": "2026-11-07T12:54:15.048Z",
-  "type": "hidden",
-  "id": "gh-humanplane-homunculus",
-  "title": "homunculus"
- },
- {
-  "at": "2026-11-07T12:54:15.048Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-shanselman-sandbox-mcp",
-  "title": "sandbox-mcp"
+  "id": "gh-n0-name0-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T12:54:15.048Z",
+  "at": "2026-11-13T16:58:35.998Z",
   "type": "added",
-  "id": "gh-zaxiu88888-issue-rag",
-  "title": "issue-rag"
+  "id": "gh-jeremypires-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T11:44:54.952Z",
-  "type": "hidden",
-  "id": "gh-zhimaai-chatclaw",
-  "title": "ChatClaw"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-floki12342-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T11:44:54.952Z",
-  "type": "hidden",
-  "id": "gh-ramseygithub-ai-legal-compliance-assistant",
-  "title": "ai-legal-compliance-assistant"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-jeremypires-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T11:44:54.952Z",
-  "type": "hidden",
-  "id": "gh-ilearn-lab-novelclaw",
-  "title": "NovelClaw"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-mellevm-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T11:44:54.952Z",
-  "type": "hidden",
-  "id": "gh-mindinventory-mindsql",
-  "title": "MindSQL"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-itprogamatikdedsec-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T11:44:54.952Z",
-  "type": "hidden",
-  "id": "gh-premai-io-premsql",
-  "title": "premsql"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-datrify-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T11:44:54.952Z",
-  "type": "hidden",
-  "id": "gh-tilmangriesel-chipper",
-  "title": "chipper"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-prathmeshya-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T10:48:11.835Z",
-  "type": "hidden",
-  "id": "gh-afx-team-petercat",
-  "title": "petercat"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-buttheadtrenton16-byte-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T10:48:11.835Z",
-  "type": "hidden",
-  "id": "gh-vemtoorg-vemto2",
-  "title": "vemto2"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-elpepe200086-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T10:48:11.835Z",
-  "type": "hidden",
-  "id": "gh-inverseui-inverseui-recorder",
-  "title": "InverseUI-Recorder"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-datrify-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T10:48:11.835Z",
-  "type": "hidden",
-  "id": "gh-amir9480-vscode-cpp-helper",
-  "title": "vscode-cpp-helper"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-tyesheh-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T10:48:11.835Z",
-  "type": "hidden",
-  "id": "gh-specui-specui",
-  "title": "specui"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-sofixleon-arch-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T10:48:11.835Z",
-  "type": "hidden",
-  "id": "gh-grigorij-dudnik-clean-coder-ai",
-  "title": "Clean-Coder-AI"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-acgboss-manus-ai",
+  "title": "manus--ai"
  },
  {
-  "at": "2026-11-07T08:55:44.782Z",
-  "type": "hidden",
-  "id": "gh-semperai-amica",
-  "title": "amica"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-xtwinsarax-ai-manus",
+  "title": "ai--manus"
  },
  {
-  "at": "2026-11-07T08:55:44.782Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-ios",
-  "title": "alan-sdk-ios"
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-kazim768-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-jose-perez-thecloudgroup-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-melchersimon011-bot-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-redderz-code-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-prathmeshya-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-rambotronado112-sudo-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-sidvvkk-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-jose-perez-thecloudgroup-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-rambotronado112-sudo-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-bk9cj-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-sandypandymandy-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-lloweryfn-rgb-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-acgboss-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-ronni35-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-nachalnikokk-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-sofixleon-arch-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-sandypandymandy-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-lebronstx-collab-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-axillios1-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-arberpilafi8-blip-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-xombiensar-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-mtn-imran-khan-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-alphafalcongamer-creator-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-tyesheh-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-wlfear-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-tonikriegers14-hue-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-nachalnikokk-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-agdinis-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-eagrafki-byte-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-kazim768-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-arberpilafi8-blip-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-qweqeqeqweqeqwe-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-floxaep1-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-floxaep1-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-axillios1-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-buttheadtrenton16-byte-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-xombiensar-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-python001-dev-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-tonikriegers14-hue-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-agdinis-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-obasideyvid-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-lloweryfn-rgb-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-sidvvkk-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-elpepe200086-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-ronni35-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-wlfear-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-redderz-code-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-qweqeqeqweqeqwe-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-lebronstx-collab-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-melchersimon011-bot-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-xtwinsarax-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-stancaedy10-glitch-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-stancaedy10-glitch-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-alphafalcongamer-creator-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-obasideyvid-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-mtn-imran-khan-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-itprogamatikdedsec-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-13T16:58:35.998Z",
+  "type": "added",
+  "id": "gh-python001-dev-manus-ai",
+  "title": "manus--ai"
  }
 ]
