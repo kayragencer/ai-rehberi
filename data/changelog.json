@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-13T15:54:36.576Z",
+  "type": "restored",
+  "id": "gh-vonage-vonage-php-sdk-core",
+  "title": "vonage-php-sdk-core"
+ },
+ {
   "at": "2026-11-13T11:59:45.873Z",
   "type": "hidden",
   "id": "gh-zju-llms-agent-kernel",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-ios",
   "title": "alan-sdk-ios"
- },
- {
-  "at": "2026-11-07T08:55:44.782Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-pcf",
-  "title": "alan-sdk-pcf"
  }
 ]
