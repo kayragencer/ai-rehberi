@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-13T11:59:45.873Z",
+  "type": "hidden",
+  "id": "gh-zju-llms-agent-kernel",
+  "title": "Agent-Kernel"
+ },
+ {
+  "at": "2026-11-13T11:59:45.873Z",
+  "type": "removed",
+  "id": "gh-sskandon-blender-ai-mcp-addon",
+  "title": "blender-ai-mcp-addon"
+ },
+ {
   "at": "2026-11-13T09:03:36.362Z",
   "type": "hidden",
   "id": "gh-prismer-ai-prismercloud",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-pcf",
   "title": "alan-sdk-pcf"
- },
- {
-  "at": "2026-11-07T08:55:44.782Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-reactnative",
-  "title": "alan-sdk-reactnative"
- },
- {
-  "at": "2026-11-07T08:55:44.782Z",
-  "type": "hidden",
-  "id": "gh-vonage-vonage-php-sdk-core",
-  "title": "vonage-php-sdk-core"
  }
 ]
