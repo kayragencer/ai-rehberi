@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-13T07:21:11.424Z",
+  "type": "added",
+  "id": "gh-hyperionaidev-smolmaxxing",
+  "title": "smolmaxxing"
+ },
+ {
   "at": "2026-11-13T05:03:49.690Z",
   "type": "hidden",
   "id": "gh-lilmgenius-paperthin",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-ionic",
   "title": "alan-sdk-ionic"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-flutter",
-  "title": "alan-sdk-flutter"
  }
 ]
