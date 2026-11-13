@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-13T05:03:49.690Z",
+  "type": "hidden",
+  "id": "gh-lilmgenius-paperthin",
+  "title": "paperthin"
+ },
+ {
   "at": "2026-11-12T23:49:46.513Z",
   "type": "removed",
   "id": "gh-run-llama-llama-deploy",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-alan-ai-alan-sdk-flutter",
   "title": "alan-sdk-flutter"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-android",
-  "title": "alan-sdk-android"
  }
 ]
