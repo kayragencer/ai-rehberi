@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-13T09:03:36.362Z",
+  "type": "hidden",
+  "id": "gh-prismer-ai-prismercloud",
+  "title": "PrismerCloud"
+ },
+ {
+  "at": "2026-11-13T09:03:36.362Z",
+  "type": "added",
+  "id": "gh-bytesbay-pi-gpui",
+  "title": "pi-gpui"
+ },
+ {
   "at": "2026-11-13T07:21:11.424Z",
   "type": "added",
   "id": "gh-hyperionaidev-smolmaxxing",
@@ -586,17 +598,5 @@
   "type": "hidden",
   "id": "gh-vonage-vonage-php-sdk-core",
   "title": "vonage-php-sdk-core"
- },
- {
-  "at": "2026-11-07T08:55:44.782Z",
-  "type": "hidden",
-  "id": "gh-codeforequity-at-botium-speech-processing",
-  "title": "botium-speech-processing"
- },
- {
-  "at": "2026-11-07T08:04:39.416Z",
-  "type": "hidden",
-  "id": "gh-alan-ai-alan-sdk-ionic",
-  "title": "alan-sdk-ionic"
  }
 ]
