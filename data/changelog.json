@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-14T07:04:34.570Z",
+  "type": "added",
+  "id": "gh-stormbrawlersack-legwork-osint-ai-investigator",
+  "title": "legwork-osint-ai-investigator"
+ },
+ {
   "at": "2026-11-14T05:55:08.133Z",
   "type": "removed",
   "id": "gh-openmind-om1",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-melchersimon011-bot-ai-manus",
   "title": "ai--manus"
- },
- {
-  "at": "2026-11-13T16:58:35.998Z",
-  "type": "added",
-  "id": "gh-xtwinsarax-manus-ai",
-  "title": "manus--ai"
  }
 ]
