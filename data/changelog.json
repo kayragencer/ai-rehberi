@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-14T17:42:31.644Z",
+  "type": "hidden",
+  "id": "gh-opendatalab-mineru-html",
+  "title": "MinerU-HTML"
+ },
+ {
   "at": "2026-11-14T16:46:22.285Z",
   "type": "added",
   "id": "gh-colonyproduction-ai-manus",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T08:55:43.797Z",
   "type": "added",
   "id": "gh-bladesmithpanel-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-bravecrownvalve-ai-manus",
   "title": "ai--manus"
  }
 ]
