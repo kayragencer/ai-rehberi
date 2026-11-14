@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-14T22:43:37.962Z",
+  "type": "added",
+  "id": "gh-outpostkrewhirl86-capri-ai",
+  "title": "Capri-AI"
+ },
+ {
   "at": "2026-11-14T20:44:55.038Z",
   "type": "added",
   "id": "gh-trapbladesmith-github-copilot-app",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T08:55:43.797Z",
   "type": "added",
   "id": "gh-clawdukesmelter-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-classhalberdier-ai-manus",
   "title": "ai--manus"
  }
 ]
