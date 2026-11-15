@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-15T03:56:19.411Z",
+  "type": "added",
+  "id": "gh-alicebrown323-pro-tools-desktop",
+  "title": "pro-tools-desktop"
+ },
+ {
   "at": "2026-11-14T22:43:37.962Z",
   "type": "added",
   "id": "gh-outpostkrewhirl86-capri-ai",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T08:55:43.797Z",
   "type": "added",
   "id": "gh-cockatricedeputy-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-clawdukesmelter-ai-manus",
   "title": "ai--manus"
  }
 ]
