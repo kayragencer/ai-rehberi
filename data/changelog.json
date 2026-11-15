@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-15T19:48:15.867Z",
+  "type": "added",
+  "id": "gh-vaibhav-space-my-ai-coding-workflow",
+  "title": "my-ai-coding-workflow"
+ },
+ {
   "at": "2026-11-15T17:43:20.665Z",
   "type": "added",
   "id": "gh-fendouai-viralforge",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T08:55:43.797Z",
   "type": "added",
   "id": "gh-circlechandlersack-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-coatpathvalve-ai-manus",
   "title": "ai--manus"
  }
 ]
