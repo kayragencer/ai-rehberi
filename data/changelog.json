@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-16T20:00:13.346Z",
+  "type": "added",
+  "id": "gh-alexturkey-z-image-turbo-pascal-4gb",
+  "title": "z-image-turbo-pascal-4gb"
+ },
+ {
   "at": "2026-11-16T15:10:41.578Z",
   "type": "removed",
   "id": "gh-mellevm-ai-manus",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T19:47:54.331Z",
   "type": "added",
   "id": "gh-toppatronweave-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-webbookkeeper-github-copilot-app",
   "title": "GitHub-Copilot-app"
  }
 ]
