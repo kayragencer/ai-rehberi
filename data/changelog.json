@@ -1,5 +1,47 @@
 [
  {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-slayerkiwileap4-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-pelicanmultiplexer-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-rectanglewand-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-meteorwayoscillator7-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-realscholarfury-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-rayhemomancerfill-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T04:19:57.115Z",
+  "type": "removed",
+  "id": "gh-primemiconverter-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
   "at": "2026-11-16T03:00:10.082Z",
   "type": "removed",
   "id": "gh-noblecranecatch-github-copilot-app",
@@ -555,48 +597,6 @@
   "at": "2026-11-14T16:46:22.285Z",
   "type": "added",
   "id": "gh-colonyproduction-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T15:45:01.907Z",
-  "type": "restored",
-  "id": "gh-im4codes-imcodes",
-  "title": "imcodes"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-circumferencebeat-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-coasttenjerk-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-columnpheasantvoid-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-centralmistir-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-chancellorruffle-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-14T08:55:43.797Z",
-  "type": "added",
-  "id": "gh-celestialdritrough-ai-manus",
   "title": "ai--manus"
  }
 ]
