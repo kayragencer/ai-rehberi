@@ -1,5 +1,47 @@
 [
  {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-tradesmanrecord-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-trapaccountant-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-torusdrasocket-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-tremorrattackle-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-tornadonovicewhirl40-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-titanshieldravine-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-16T06:20:42.748Z",
+  "type": "removed",
+  "id": "gh-topkiflare74-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
   "at": "2026-11-16T04:19:57.115Z",
   "type": "removed",
   "id": "gh-slayerkiwileap4-github-copilot-app",
@@ -556,47 +598,5 @@
   "type": "added",
   "id": "gh-truedefenderrouter-github-copilot-app",
   "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-unitsenseimonitor-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-turkeydesignate-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-trapkrostride-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-topconstableinlet67-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-tarantulacorrect-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T17:42:31.644Z",
-  "type": "hidden",
-  "id": "gh-opendatalab-mineru-html",
-  "title": "MinerU-HTML"
- },
- {
-  "at": "2026-11-14T16:46:22.285Z",
-  "type": "added",
-  "id": "gh-colonyproduction-ai-manus",
-  "title": "ai--manus"
  }
 ]
