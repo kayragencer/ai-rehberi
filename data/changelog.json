@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-16T09:45:29.559Z",
+  "type": "added",
+  "id": "gh-molly554-whiteboard-ai-tutor",
+  "title": "whiteboard-ai-tutor"
+ },
+ {
   "at": "2026-11-16T06:20:42.748Z",
   "type": "removed",
   "id": "gh-tradesmanrecord-github-copilot-app",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T19:47:54.331Z",
   "type": "added",
   "id": "gh-tealplesense-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-truedefenderrouter-github-copilot-app",
   "title": "GitHub-Copilot-app"
  }
 ]
