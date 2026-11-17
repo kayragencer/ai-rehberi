@@ -1256,7 +1256,7 @@ function setCat(cat) { appState.currentCat = cat; if (appState.activePage === 'd
 /* ===== Hesap / Profil ===== */
 var AVATARS = ['\ud83e\udd16', '\ud83e\udd8a', '\ud83d\udc3c', '\ud83d\ude80', '\ud83e\udde0', '\ud83c\udfa8', '\ud83d\udcbb', '\ud83c\udfa7', '\u26a1', '\ud83c\udf1f'];
 var USERS_KEY = 'ai_directory_users', SESSION_KEY = 'ai_directory_session';
-var CONTACT_EMAIL = ''; // destek ve bekleme listesi e-postalar\u0131 bu adrese y\u00f6nlendirilir (\u00f6rn: 'destek@siteadin.com')
+var CONTACT_EMAIL = 'iletisim@seninyapayzekan.com'; // destek ve bekleme listesi e-postalar\u0131 bu adrese y\u00f6nlendirilir (\u00f6rn: 'destek@siteadin.com')
 var authTab = 'login', regInterests = [];
 var profile = { name: '', avatar: '\ud83e\udd16', bio: '', job: '', city: '', email: '', interests: [], viewed: [], loggedIn: false };
 function lsGet(k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
