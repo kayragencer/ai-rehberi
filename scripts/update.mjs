@@ -310,7 +310,7 @@ async function updateTools() {
     const pages = [null, state.ph && state.ph.after ? state.ph.after : null];
     let cursor = null;
     for (let i = 0; i < 6; i++) {
-      const after = i === 0 ? null : cursor || (i === 1 ? (state.ph && state.ph.after) || null : null);
+      const after = i === 0 ? null : i === 1 ? ((state.ph && state.ph.after) || cursor) : cursor;
       if (i > 0 && !after) break;
       try {
         const r = await get('https://api.producthunt.com/v2/api/graphql', { method: 'POST', headers: { ...headers, 'content-type': 'application/json', Authorization: 'Bearer ' + E.PRODUCTHUNT_TOKEN }, body: JSON.stringify({ query: q, variables: { after } }) });
