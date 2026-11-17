@@ -306,11 +306,11 @@ async function updateTools() {
 
   // c) Product Hunt (ticari yeni ara\u00e7lar) - PRODUCTHUNT_TOKEN tan\u0131ml\u0131ysa \u00e7al\u0131\u015f\u0131r
   if (E.PRODUCTHUNT_TOKEN) {
-    const q = 'query($after:String){ posts(topic:"artificial-intelligence", order:NEWEST, first:20, after:$after){ pageInfo{endCursor hasNextPage} edges{ node{ name tagline description website createdAt votesCount } } } }';
-    const pages = [null, state.ph && state.ph.after ? state.ph.after : null];
+    const q = 'query($after:String){ posts(topic:"artificial-intelligence", order:VOTES, first:20, after:$after){ pageInfo{endCursor hasNextPage} edges{ node{ name tagline description website url createdAt votesCount } } } }';
     let cursor = null; const phc = { seen: 0, lowVotes: 0, noSite: 0, dup: 0, added: 0 };
-    for (let i = 0; i < 6; i++) {
-      const after = i === 0 ? null : i === 1 ? ((state.ph && state.ph.after) || cursor) : cursor;
+    cursor = (state.phv && state.phv.after) || null;
+    for (let i = 0; i < 10; i++) {
+      const after = cursor;
       if (i > 0 && !after) break;
       try {
         const r = await get('https://api.producthunt.com/v2/api/graphql', { method: 'POST', headers: { ...headers, 'content-type': 'application/json', Authorization: 'Bearer ' + E.PRODUCTHUNT_TOKEN }, body: JSON.stringify({ query: q, variables: { after } }) });
@@ -323,14 +323,15 @@ async function updateTools() {
           let site = '';
           try { const r0 = await get(n.website, { headers, redirect: 'manual' }); const loc = r0.headers.get('location'); if (loc && !/producthunt\.com/.test(loc)) site = new URL(loc, n.website).origin; } catch {}
           if (!site) try { site = new URL((await get(n.website, { headers })).url).origin; } catch {}
-          if (!site || /producthunt\.com/.test(site)) { phc.noSite++; continue; }
-          if (hosts.has(hostOf(site))) { phc.dup++; continue; }
+          const phOnly = !site || /producthunt\.com/.test(site);
+          if (phOnly) { phc.noSite++; site = n.url; }
+          else if (hosts.has(hostOf(site))) { phc.dup++; continue; }
           const t = { id, title: n.name, category: guess(n.name + ' ' + n.tagline + ' ' + (n.description || '')), price: 'Belirsiz', url: site, featured: false,
             descOrig: (n.tagline + '. ' + (n.description || '')).slice(0, 300), tr: false, source: 'producthunt', votes: n.votesCount || 0, status: 'active', failCount: 0, addedAt: n.createdAt.slice(0, 10) };
-          tools.push(t); byId.set(id, t); hosts.add(hostOf(site)); ev('added', t); phc.added++;
+          tools.push(t); byId.set(id, t); if (!phOnly) hosts.add(hostOf(site)); ev('added', t); phc.added++;
         }
         cursor = posts.pageInfo.hasNextPage ? posts.pageInfo.endCursor : null;
-        if (i >= 1) state.ph = { after: cursor };
+        state.phv = { after: cursor };
       } catch (e) { console.warn('Product Hunt hatas\u0131:', e.message); break; }
     }
     console.log('Product Hunt:', JSON.stringify(phc));
