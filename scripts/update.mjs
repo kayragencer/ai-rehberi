@@ -308,7 +308,7 @@ async function updateTools() {
   if (E.PRODUCTHUNT_TOKEN) {
     const q = 'query($after:String){ posts(topic:"artificial-intelligence", order:NEWEST, first:20, after:$after){ pageInfo{endCursor hasNextPage} edges{ node{ name tagline description website createdAt votesCount } } } }';
     const pages = [null, state.ph && state.ph.after ? state.ph.after : null];
-    let cursor = null;
+    let cursor = null; const phc = { seen: 0, lowVotes: 0, noSite: 0, dup: 0, added: 0 };
     for (let i = 0; i < 6; i++) {
       const after = i === 0 ? null : i === 1 ? ((state.ph && state.ph.after) || cursor) : cursor;
       if (i > 0 && !after) break;
@@ -317,18 +317,23 @@ async function updateTools() {
         if (!r.ok) throw new Error(r.status);
         const posts = (await r.json()).data.posts;
         for (const { node: n } of posts.edges) {
-          const id = 'ph-' + slug(n.name);
+          const id = 'ph-' + slug(n.name); phc.seen++;
+          if ((n.votesCount || 0) < CFG.PH_MIN_VOTES) { phc.lowVotes++; continue; }
           if (byId.has(id) || block.ids.includes(id) || tools.length >= CFG.MAX_TOOLS || (n.votesCount || 0) < CFG.PH_MIN_VOTES || bad((n.name + ' ' + n.tagline).toLowerCase())) continue;
-          let site = ''; try { site = new URL((await get(n.website, { headers })).url).origin; } catch {}
-          if (!site || /producthunt\.com/.test(site) || hosts.has(hostOf(site))) continue;
+          let site = '';
+          try { const r0 = await get(n.website, { headers, redirect: 'manual' }); const loc = r0.headers.get('location'); if (loc && !/producthunt\.com/.test(loc)) site = new URL(loc, n.website).origin; } catch {}
+          if (!site) try { site = new URL((await get(n.website, { headers })).url).origin; } catch {}
+          if (!site || /producthunt\.com/.test(site)) { phc.noSite++; continue; }
+          if (hosts.has(hostOf(site))) { phc.dup++; continue; }
           const t = { id, title: n.name, category: guess(n.name + ' ' + n.tagline + ' ' + (n.description || '')), price: 'Belirsiz', url: site, featured: false,
             descOrig: (n.tagline + '. ' + (n.description || '')).slice(0, 300), tr: false, source: 'producthunt', votes: n.votesCount || 0, status: 'active', failCount: 0, addedAt: n.createdAt.slice(0, 10) };
-          tools.push(t); byId.set(id, t); hosts.add(hostOf(site)); ev('added', t);
+          tools.push(t); byId.set(id, t); hosts.add(hostOf(site)); ev('added', t); phc.added++;
         }
         cursor = posts.pageInfo.hasNextPage ? posts.pageInfo.endCursor : null;
         if (i >= 1) state.ph = { after: cursor };
       } catch (e) { console.warn('Product Hunt hatas\u0131:', e.message); break; }
     }
+    console.log('Product Hunt:', JSON.stringify(phc));
   }
 
   // e) Hazir arac listeleri (GitHub'daki "awesome" derlemeleri): her calismada bir kismi, link kontrol edilerek eklenir
