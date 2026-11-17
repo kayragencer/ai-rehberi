@@ -218,7 +218,7 @@ async function updateNews() {
   const todo = items.filter(i => !i.tr).slice(0, CFG.TR_PER_RUN);
   for (let i = 0; i < todo.length; i += 8) {
     const b = todo.slice(i, i + 8);
-    b.forEach(n => { n.titleOrig = n.titleOrig || n.title; });
+    b.forEach(n => { n.titleOrig = n.titleOrig || n.title; if (n.descOrig === undefined) n.descOrig = n.description || ''; });
     const out = await translate(b.flatMap(n => [n.titleOrig, n.description || '.']));
     b.forEach((n, k) => { const t = out[2 * k], d = out[2 * k + 1]; if (t) { n.title = t; if (d && n.description) n.description = d; n.tr = true; } });
   }
