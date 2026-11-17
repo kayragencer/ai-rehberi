@@ -132,9 +132,20 @@ async function qualityFilter(tools, ev) {
     if (!t.source || t.locked) continue;
     if (t.descOrig) { const d = t.descOrig.replace(/^\s*(?:[-–—:)|•]+\s*|review\s*[-–—:]\s*|\(?(?:eu|us|uk)\)\s*)+/i, '').trim(); if (d !== t.descOrig) { t.descOrig = d; if (!t.descTr) t.tr = false; } }
     if (t.descTr) { const d = t.descTr.replace(/^\s*(?:[-–—:)|•]+\s*|(?:review|inceleme)\s*[-–—:]\s*|\(?(?:eu|us|uk|ab|abd)\)\s*)+/i, '').trim(); if (d !== t.descTr) t.descTr = d; }
-    if (!t.qc && (/^https?:\/\//i.test(t.title) || /beehiiv\.|[?&](ref|via|aff|affiliate|referral|fpr)=/i.test(t.url))) { t.qc = 'bad'; t.qcWhy = 'url/affiliate'; ev('qc-hidden', t); }
+    if (t.qc === 'bad' && t.qcWhy === 'url/affiliate' && t.source === 'github') { delete t.qc; delete t.qcWhy; }
+    if (!t.qc && t.source === 'awesome' && (/^https?:\/\//i.test(t.title) || /beehiiv\./i.test(t.url))) { t.qc = 'bad'; t.qcWhy = 'url/affiliate'; ev('qc-hidden', t); }
   }
   if (!E.GEMINI_API_KEY) return;
+  if (E.QC_TEST) {
+    const sample = [
+      { name: 'Suno', url: 'https://suno.com', source: 'awesome', desc: 'Make a song about anything with AI.' },
+      { name: 'ai-system-design', url: 'https://outcomeschool.com/program/ai', source: 'github', desc: 'AI System Design - Learn how to design AI systems built on LLMs, RAG, and AI Agents step by step.' },
+      { name: 'langchain', url: 'https://langchain.com', source: 'github', desc: 'Build context-aware reasoning applications.' },
+      { name: 'Llama-2-7b', url: 'https://huggingface.co/meta-llama/Llama-2-7b', source: 'github', desc: 'Llama 2 7B pretrained model weights.' },
+      { name: 'awesome-chatgpt-prompts', url: 'https://prompts.chat', source: 'github', desc: 'A curated list of ChatGPT prompts.' },
+      { name: 'Seq2seqChatbots', url: 'https://github.com/ricsinaruto/Seq2seqChatbots', source: 'github', desc: 'A wrapper around tensor2tensor to flexibly train, interact, and generate data for neural chatbots.' }];
+    try { console.log('QC test:', JSON.stringify(await geminiJson(SYS_QC, sample, sample.length))); } catch (e) { console.warn('QC test hatasi', e.message); }
+  }
   // 2) Gemini ile inceleme: once Product Hunt ve hazir listeler, sonra en populer GitHub projeleri
   const order = { producthunt: 0, awesome: 1, github: 2 };
   const need = tools.filter(t => t.source && !t.qc && !t.locked)
