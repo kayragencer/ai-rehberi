@@ -8,7 +8,7 @@ const headers = { 'User-Agent': 'ai-rehberi-bot/1.0' };
 const ghHeaders = { ...headers, Accept: 'application/vnd.github+json', ...(E.GITHUB_TOKEN ? { Authorization: 'Bearer ' + E.GITHUB_TOKEN } : {}) };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
-const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40, AWESOME_PER_RUN: 500 };
+const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40, AWESOME_PER_RUN: 500, QC_PER_RUN: 120, QC_BATCH: 30 };
 
 if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 120;
 const FEEDS = [
@@ -103,6 +103,52 @@ async function geminiTr(texts) {
   if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 120));
   const parts = (((await r.json()).candidates || [])[0] || {}).content;
   return parseArr(((parts || {}).parts || []).map(p => p.text || '').join(''), texts.length);
+}
+
+
+/* --- Kalite filtresi: Gemini, bot tarafindan eklenen kayitlarin gercek bir yapay zeka araci olup olmadigina karar verir --- */
+const SYS_QC = 'You review entries for a Turkish AI tools directory. For each entry decide if it is a real, usable AI-powered product, app, service or software tool that a visitor could use today. ' +
+  'KEEP: AI apps, SaaS products, browser extensions, desktop/mobile apps, APIs, and open-source AI software/libraries/frameworks that developers can install and use. ' +
+  'REJECT: tutorials, courses, books, lists, awesome-lists, roadmaps, papers or research code with no usable tool, model weight/checkpoint pages, datasets, benchmarks, personal projects or toy demos, ' +
+  'company or agency homepages that are not a product, newsletters, blogs, affiliate or referral links, entries whose name is a URL or garbled, non-AI products, adult/gambling/crypto-speculation content. ' +
+  'Return ONLY a JSON array with one object per entry in the same order: {"k":true|false,"r":"max 6 words reason in English"}.';
+async function geminiJson(sys, payload, n) {
+  const model = await geminiPick();
+  const r = await get('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent?key=' + E.GEMINI_API_KEY, {
+    method: 'POST', headers: { ...headers, 'content-type': 'application/json' },
+    body: JSON.stringify({ systemInstruction: { parts: [{ text: sys }] }, contents: [{ role: 'user', parts: [{ text: JSON.stringify(payload) }] }],
+      generationConfig: { temperature: 0, maxOutputTokens: 8000, responseMimeType: 'application/json' } })
+  });
+  if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 120));
+  const c = (((await r.json()).candidates || [])[0] || {}).content;
+  const txt = ((c || {}).parts || []).map(p => p.text || '').join('');
+  const a = JSON.parse(txt.slice(txt.indexOf('['), txt.lastIndexOf(']') + 1));
+  if (!Array.isArray(a) || a.length !== n) throw new Error('uzunluk uyumsuz');
+  return a;
+}
+async function qualityFilter(tools, ev) {
+  // 1) Kural tabanli temizlik (Gemini olmadan da calisir)
+  for (const t of tools) {
+    if (!t.source || t.locked) continue;
+    if (t.descOrig) { const d = t.descOrig.replace(/^\s*(?:[-–—:)|•]+\s*|review\s*[-–—:]\s*|\(?(?:eu|us|uk)\)\s*)+/i, '').trim(); if (d !== t.descOrig) { t.descOrig = d; if (!t.descTr) t.tr = false; } }
+    if (t.descTr) { const d = t.descTr.replace(/^\s*(?:[-–—:)|•]+\s*|(?:review|inceleme)\s*[-–—:]\s*|\(?(?:eu|us|uk|ab|abd)\)\s*)+/i, '').trim(); if (d !== t.descTr) t.descTr = d; }
+    if (!t.qc && (/^https?:\/\//i.test(t.title) || /beehiiv\.|[?&](ref|via|aff|affiliate|referral|fpr)=/i.test(t.url))) { t.qc = 'bad'; t.qcWhy = 'url/affiliate'; ev('qc-hidden', t); }
+  }
+  if (!E.GEMINI_API_KEY) return;
+  // 2) Gemini ile inceleme: once Product Hunt ve hazir listeler, sonra en populer GitHub projeleri
+  const order = { producthunt: 0, awesome: 1, github: 2 };
+  const need = tools.filter(t => t.source && !t.qc && !t.locked)
+    .sort((a, b) => (order[a.source] - order[b.source]) || ((b.stars || b.votes || 0) - (a.stars || a.votes || 0))).slice(0, CFG.QC_PER_RUN);
+  let ok = 0, badN = 0;
+  for (let i = 0; i < need.length; i += CFG.QC_BATCH) {
+    const b = need.slice(i, i + CFG.QC_BATCH);
+    try {
+      const out = await geminiJson(SYS_QC, b.map(t => ({ name: t.title, url: t.url, source: t.source, desc: (t.descOrig || '').slice(0, 220) })), b.length);
+      b.forEach((t, k) => { const v = out[k] || {}; if (v.k === false) { t.qc = 'bad'; t.qcWhy = String(v.r || '').slice(0, 60); badN++; ev('qc-hidden', t); } else if (v.k === true) { t.qc = 'ok'; ok++; } });
+    } catch (e) { console.warn('Kalite filtresi hatasi:', e.message); break; }
+    await sleep(4500);
+  }
+  console.log('Kalite filtresi: incelenen', ok + badN, '| uygun', ok, '| gizlenen', badN, '| kalan', tools.filter(t => t.source && !t.qc).length);
 }
 
 /* --- Claude (ANTHROPIC_API_KEY) --- */
@@ -404,9 +450,12 @@ async function updateTools() {
   for (let i = 0; i < batch.length; i += 8) await Promise.all(batch.slice(i, i + 8).map(check));
   tools = tools.filter(t => !t.remove);
 
+  // g) Kalite filtresi
+  await qualityFilter(tools, ev);
+
   // e) T\u00fcrk\u00e7e \u00e7eviri (her \u00e7al\u0131\u015fmada en pop\u00fcler \u00e7evrilmemi\u015flerden bir k\u0131sm\u0131)
   tools.forEach(t => { if (!t.tr && isTr(t.descOrig)) t.tr = true; });
-  const need = tools.filter(t => !t.tr && t.descOrig).sort((a, b) => ((a.source === 'github') - (b.source === 'github')) || (b.stars || 0) - (a.stars || 0)).slice(0, CFG.TR_PER_RUN);
+  const need = tools.filter(t => !t.tr && t.descOrig && t.qc !== 'bad').sort((a, b) => ((a.source === 'github') - (b.source === 'github')) || (b.stars || 0) - (a.stars || 0)).slice(0, CFG.TR_PER_RUN);
   for (let i = 0; i < need.length; i += 8) {
     const b = need.slice(i, i + 8);
     const out = await translate(b.map(t => t.descOrig.slice(0, 300)));

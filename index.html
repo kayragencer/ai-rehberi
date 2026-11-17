@@ -2727,7 +2727,7 @@ function refreshTools() {
     .then(function(r) { if (!r.ok) throw 0; return r.json(); })
     .then(function(d) {
       if (!d.tools || !d.tools.length) return;
-      appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive'; }).map(function(t) {
+      appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive' && t.qc !== 'bad'; }).map(function(t) {
         return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew, tr: t.tr !== false,
                  desc: fixText(langTool(t)), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
