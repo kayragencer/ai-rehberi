@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Senin Yapay Zekan | T&#252;rkiye'nin Yapay Zeka Dizini</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<script>(function(){var A={50:'#f6f3ff',100:'#ede7fe',200:'#dcd0fd',300:'#c3adfa',400:'#a888f4',500:'#9068ea',600:'#7d50dc',700:'#6a40c2',800:'#57359e',900:'#482e80',950:'#2c1a52'},G={50:'#faf9fc',100:'#f3f1f7',200:'#e5e2ec',300:'#d2cdde',400:'#a59fb4',500:'#77718a',600:'#565067',700:'#332e40',800:'#24202e',900:'#17141e',950:'#070708'};tailwind.config = { darkMode: 'class', theme: { extend: { colors: { purple: A, indigo: A, violet: A, fuchsia: A, blue: A, sky: A, cyan: A, gray: G, slate: G } } } };})();</script>
+<script>(function(){var A={50:'#faf5ff',100:'#f3e8ff',200:'#e9d5ff',300:'#d8b4fe',400:'#c084fc',500:'#b46ef9',600:'#a855f7',700:'#9333ea',800:'#7e22ce',900:'#581c87',950:'#3b0764'},G={50:'#fafafa',100:'#f5f5f5',200:'#e5e5e5',300:'#d4d4d4',400:'#a3a3a3',500:'#737373',600:'#525252',700:'#3a3a3a',800:'#262626',900:'#141414',950:'#000000'};tailwind.config = { darkMode: 'class', theme: { extend: { colors: { purple: A, indigo: A, violet: A, fuchsia: A, blue: A, sky: A, cyan: A, gray: G, slate: G } } } };})();</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 body { font-family: 'Plus Jakarta Sans', sans-serif; transition: background-color .3s, color .3s; }
-.dark body { background-color: #070708; color: #f3f1f7; }
+.dark body { background-color: #000000; color: #fafafa; }
 .light body { background-color: #f1f5f9; color: #0f172a; }
 /* A&#231;&#305;k tema: dark: &#246;neki olmayan a&#231;&#305;k renkli yaz&#305;lar&#305; okunur yap */
 html.light .text-gray-200, html.light .text-gray-300 { color: #334155; }
@@ -18,11 +18,11 @@ html.light .bg-gray-800\/50, html.light .bg-gray-800 { background-color: #e2e8f0
 html.light .hover\:bg-gray-800:hover { background-color: #e2e8f0; }
 html.light .bg-gray-900.cat-red { background-color: #fff; }
 .fld{width:100%;padding:.75rem;border-radius:.75rem;font-size:.75rem;outline:none;border:1px solid #cbd5e1;background:#f8fafc;color:#0f172a}
-.dark .fld{background:#070708;border-color:#2c2737;color:#fff}
-.fld:focus{border-color:#9068ea}
+.dark .fld{background:#000000;border-color:#262626;color:#fff}
+.fld:focus{border-color:#a855f7}
 html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 @media (max-width:640px),(hover:none){input,select,textarea,.fld{font-size:16px !important}}
-@media (hover:none){button,a{-webkit-tap-highlight-color:rgba(144,104,234,.18)}}
+@media (hover:none){button,a{-webkit-tap-highlight-color:rgba(168,85,247,.18)}}
 /* Yatay kaydirma cubuklarini gizle, kaydirma calismaya devam eder */
 .overflow-x-auto{scrollbar-width:none;-ms-overflow-style:none}
 .overflow-x-auto::-webkit-scrollbar{display:none;width:0;height:0}
@@ -33,20 +33,20 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 
 /* ---- Profesyonel gorunum ---- */
 body { font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif; letter-spacing: -0.005em; }
-.dark body { background-color: #070708; }
-.light body { background-color: #f8f7fb; }
+.dark body { background-color: #000000; }
+.light body { background-color: #f7f7f7; }
 h1, h2, h3 { letter-spacing: -0.02em; }
 .hbtn { height: 2.5rem; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: 0 .8rem; border-radius: .75rem; font-size: .75rem; font-weight: 700; white-space: nowrap; transition: background-color .15s, color .15s, border-color .15s; }
 .navlink { position: relative; padding: .5rem .7rem; border-radius: .6rem; white-space: nowrap; font-weight: 600; transition: color .15s, background-color .15s; }
 .sec-h { font-size: 1.15rem; font-weight: 800; }
-.sec-sub { font-size: .75rem; color: #8d879c; margin-top: .15rem; }
+.sec-sub { font-size: .75rem; color: #8f8f8f; margin-top: .15rem; }
 .tcard { transition: border-color .15s, transform .15s, box-shadow .15s; }
 .tcard:hover { transform: translateY(-2px); }
 .pill { display: inline-flex; align-items: center; gap: .3rem; font-size: 11px; font-weight: 700; padding: .15rem .55rem; border-radius: 9999px; white-space: nowrap; }
 .pill-free { background: rgba(16,185,129,.12); color: #10b981; }
-.pill-freemium { background: rgba(165,159,180,.12); color: #c9c3d6; }
+.pill-freemium { background: rgba(163,163,163,.12); color: #d4d4d4; }
 .pill-paid { background: rgba(148,163,184,.14); color: #94a3b8; }
-.pill-new { background: rgba(144,104,234,.14); color: #c3adfa; }
+.pill-new { background: rgba(168,85,247,.14); color: #c084fc; }
 .pill-pick { background: rgba(245,158,11,.14); color: #f59e0b; }
 html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a40c2; } html.light .pill-pick { color: #b45309; } html.light .pill-free { color: #047857; }
 .help-topic { display: flex; align-items: center; gap: .6rem; width: 100%; text-align: left; padding: .6rem .75rem; border-radius: .9rem; font-size: 12px; font-weight: 600; transition: background-color .15s, border-color .15s; }
