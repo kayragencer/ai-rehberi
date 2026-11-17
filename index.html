@@ -1382,6 +1382,23 @@ var authTab = 'login', regInterests = [];
 var profile = { name: '', avatar: '\ud83e\udd16', bio: '', job: '', city: '', email: '', interests: [], viewed: [], loggedIn: false };
 function lsGet(k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } }
 function lsSet(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+/* Sifre goster / gizle */
+function sifreGozleri() {
+  document.querySelectorAll('input[type=password]').forEach(function (inp) {
+    if (inp.dataset.goz) return; inp.dataset.goz = '1';
+    var w = document.createElement('div'); w.className = 'relative';
+    inp.parentNode.insertBefore(w, inp); w.appendChild(inp); inp.style.paddingRight = '2.75rem';
+    var b = document.createElement('button'); b.type = 'button'; b.tabIndex = -1;
+    b.className = 'absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg flex items-center justify-center text-gray-400 hover:text-purple-400 transition';
+    var goz = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>';
+    var kapali = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M9.9 4.2A10 10 0 0 1 12 4c6.5 0 10 8 10 8a17 17 0 0 1-2.2 3.3M6.6 6.6C3.7 8.5 2 12 2 12s3.5 7 10 7a9.7 9.7 0 0 0 5.4-1.6M14.1 14.1a3 3 0 0 1-4.2-4.2M2 2l20 20"/></svg>';
+    b.innerHTML = goz; b.setAttribute('aria-label', 'Şifreyi göster'); b.title = 'Şifreyi göster';
+    b.onclick = function () { var ac = inp.type === 'password'; inp.type = ac ? 'text' : 'password'; b.innerHTML = ac ? kapali : goz; b.title = ac ? 'Şifreyi gizle' : 'Şifreyi göster'; b.setAttribute('aria-label', b.title); };
+    w.appendChild(b);
+  });
+}
+
 /* ===== Supabase: hesaplar, favoriler, yorumlar ===== */
 var SB_URL = 'https://swzynrjalzyripvfiggz.supabase.co', SB_KEY = 'sb_publishable_bTVyvB-Q9sQ8Isco8lqq0w_pWw0G0IZ';
 var SB = (window.supabase && window.supabase.createClient) ? window.supabase.createClient(SB_URL, SB_KEY) : null;
@@ -1492,7 +1509,7 @@ function renderInterestChips(boxId, selected, onChange) {
   CATS.slice(2, 8).forEach(function(c) {
     var on = selected.indexOf(c[0]) > -1, b = document.createElement('button'); b.type = 'button';
     b.className = 'px-3 py-1.5 rounded-xl text-xs font-bold border transition ' + (on ? 'bg-purple-600 text-white border-transparent' : 'dark:bg-gray-950 bg-gray-50 dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300');
-    b.textContent = c[2] + ' ' + c[1];
+    b.innerHTML = catIcon(c[0], 'inline-block w-3.5 h-3.5 -mt-0.5 mr-1') + esc(c[1]);
     b.onclick = function() { var i = selected.indexOf(c[0]); if (i > -1) selected.splice(i, 1); else selected.push(c[0]); onChange(); renderInterestChips(boxId, selected, onChange); };
     box.appendChild(b);
   });
@@ -2773,7 +2790,7 @@ function startApp() {
   if (started) return;
   started = true;
   appState.allTools = buildDatabase();
-  loadProfile(); sbBaslat(); renderExamples(); renderHomeExamples(); renderHomeSections(); renderNav();
+  loadProfile(); sbBaslat(); sifreGozleri(); renderExamples(); renderHomeExamples(); renderHomeSections(); renderNav();
   fillPromptSelects(); buildPrompt();
   startPlaceholderRotation();
   try {
