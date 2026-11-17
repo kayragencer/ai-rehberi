@@ -1,602 +1,602 @@
 [
  {
-  "at": "2026-11-17T17:10:04.849Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-mackzyfiston-cmd-html-ppt-generator",
-  "title": "html-ppt-generator"
+  "id": "aw-stable-diffusion-models",
+  "title": "Stable Diffusion Models"
  },
  {
-  "at": "2026-11-17T10:13:03.708Z",
-  "type": "removed",
-  "id": "gh-coaljusticetower-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T10:13:03.708Z",
-  "type": "removed",
-  "id": "gh-closedcountravine-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T10:13:03.708Z",
-  "type": "removed",
-  "id": "gh-coasttenjerk-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T10:13:03.708Z",
-  "type": "removed",
-  "id": "gh-closedbuntingflare-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T10:13:03.708Z",
-  "type": "removed",
-  "id": "gh-cockatoochant-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T10:13:03.708Z",
-  "type": "removed",
-  "id": "gh-columngrecurse30-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T09:08:09.517Z",
-  "type": "removed",
-  "id": "gh-clipvovanquish-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-17T07:24:37.305Z",
-  "type": "removed",
-  "id": "gh-hussein1labtop-jpg-ai-manus",
-  "title": "ai-manus"
- },
- {
-  "at": "2026-11-17T07:24:37.305Z",
-  "type": "removed",
-  "id": "gh-ik190-macos-chatgpt-overlay-bar",
-  "title": "macos-chatgpt-overlay-bar"
- },
- {
-  "at": "2026-11-17T07:24:37.305Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-routeinferno-shamus-osint-ai-agent",
-  "title": "shamus-osint-ai-agent"
+  "id": "aw-stable-horde",
+  "title": "Stable Horde"
  },
  {
-  "at": "2026-11-17T05:03:47.403Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-boringmarketer-boring-marketing-skills",
-  "title": "boring-marketing-skills"
+  "id": "aw-libraire",
+  "title": "Libraire"
  },
  {
-  "at": "2026-11-17T03:58:24.007Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-sybil-solutions-inference-optimisation-skill",
-  "title": "inference-optimisation-skill"
+  "id": "aw-rephrase-ai",
+  "title": "Rephrase AI"
  },
  {
-  "at": "2026-11-17T02:22:53.512Z",
-  "type": "removed",
-  "id": "gh-mrbizarro-phosphene",
-  "title": "Phosphene"
- },
- {
-  "at": "2026-11-16T21:53:56.047Z",
-  "type": "restored",
-  "id": "gh-milvus-io-milvus",
-  "title": "milvus"
- },
- {
-  "at": "2026-11-16T20:55:25.085Z",
-  "type": "restored",
-  "id": "gh-balanov-uncut",
-  "title": "uncut"
- },
- {
-  "at": "2026-11-16T20:00:13.346Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-alexturkey-z-image-turbo-pascal-4gb",
-  "title": "z-image-turbo-pascal-4gb"
+  "id": "aw-svgstud-io",
+  "title": "SVGStud.io"
  },
  {
-  "at": "2026-11-16T15:10:41.578Z",
-  "type": "removed",
-  "id": "gh-mellevm-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-16T09:45:29.559Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-molly554-whiteboard-ai-tutor",
-  "title": "whiteboard-ai-tutor"
+  "id": "aw-planttattoosai",
+  "title": "PlantTattoosAI"
  },
  {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-tradesmanrecord-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-trapaccountant-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-torusdrasocket-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-tremorrattackle-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-tornadonovicewhirl40-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-titanshieldravine-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-16T06:20:42.748Z",
-  "type": "removed",
-  "id": "gh-topkiflare74-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-slayerkiwileap4-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-pelicanmultiplexer-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-rectanglewand-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-meteorwayoscillator7-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-realscholarfury-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-rayhemomancerfill-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T04:19:57.115Z",
-  "type": "removed",
-  "id": "gh-primemiconverter-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-noblecranecatch-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-nightrihatchet-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-nautilusmill-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-naturalturkeygate21-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-pegasusvendorharbor-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-manepugilistembody19-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-olivebladesmanrepair-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-outercaptainmeditate-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-webbookkeeper-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-truedefenderrouter-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-unitsenseimonitor-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-tealplesense-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-16T03:00:10.082Z",
-  "type": "removed",
-  "id": "gh-turkeydesignate-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-15T19:48:15.867Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-vaibhav-space-my-ai-coding-workflow",
-  "title": "my-ai-coding-workflow"
+  "id": "aw-brandmark",
+  "title": "Brandmark"
  },
  {
-  "at": "2026-11-15T17:43:20.665Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-fendouai-viralforge",
-  "title": "ViralForge"
+  "id": "aw-text2infographic",
+  "title": "Text2Infographic"
  },
  {
-  "at": "2026-11-15T16:48:32.005Z",
-  "type": "restored",
-  "id": "gh-devchat-ai-devchat",
-  "title": "devchat"
- },
- {
-  "at": "2026-11-15T14:50:13.674Z",
-  "type": "removed",
-  "id": "gh-aspectnisafeguard-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-15T03:56:19.411Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-alicebrown323-pro-tools-desktop",
-  "title": "pro-tools-desktop"
+  "id": "aw-seede-ai",
+  "title": "Seede.ai"
  },
  {
-  "at": "2026-11-14T22:43:37.962Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-outpostkrewhirl86-capri-ai",
-  "title": "Capri-AI"
+  "id": "aw-ai-boost",
+  "title": "AI Boost"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trapbladesmith-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-ai-photo-forge",
+  "title": "AI Photo Forge"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-tradesmanrecord-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-suit-me-up",
+  "title": "Suit me Up"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trackersnailgrip-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-icoloring",
+  "title": "iColoring"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trapaccountant-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-plantphotoai",
+  "title": "PlantPhotoAI"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trackboatwrightplan-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-avatar-ai",
+  "title": "Avatar AI"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trackboatwrightplan-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-black-headshots",
+  "title": "Black Headshots"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-tonephorepair-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-room-reinvented",
+  "title": "Room Reinvented"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-taboospecialistblade-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-rundiffusion",
+  "title": "RunDiffusion"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-violetkomodolimit-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-human-generator",
+  "title": "Human Generator"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-tremorrattackle-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-vectorart-ai",
+  "title": "VectorArt.ai"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-torusdrasocket-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-genshare",
+  "title": "GenShare"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trapbladesmith-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-patience-ai",
+  "title": "Patience.ai"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-ultimateakiln-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-imagine-by-magic-studio",
+  "title": "Imagine by Magic Studio"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-trackersnailgrip-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-photoguruai",
+  "title": "PhotoGuruAI"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-titanshieldravine-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-magic-eraser",
+  "title": "Magic Eraser"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-tornadonovicewhirl40-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-alpaca",
+  "title": "Alpaca"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-topconstableinlet67-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-flexapp",
+  "title": "FlexApp"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-toppatronweave-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-dreamstudio",
+  "title": "DreamStudio"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-topapothecarycanal-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-kilo-code",
+  "title": "Kilo Code"
  },
  {
-  "at": "2026-11-14T20:44:55.038Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-topkiflare74-ai-manus2-0",
-  "title": "ai--manus2.0"
+  "id": "aw-codiumai",
+  "title": "CodiumAI"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-pelicanmultiplexer-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-runcell",
+  "title": "Runcell"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-primerollerportal-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-ai2sql",
+  "title": "AI2sql"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-shoreaeromancer-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-imagen",
+  "title": "Imagen"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-slayerkiwileap4-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-capacity",
+  "title": "Capacity"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-silversmithhem-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-tensorzero",
+  "title": "TensorZero"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-ordercocoondrag-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-mintlify",
+  "title": "Mintlify"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-silentsaintfactory-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-calmo",
+  "title": "Calmo"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-slatecontrol-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-stenography",
+  "title": "Stenography"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-slateplanner-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-ghostwriter",
+  "title": "Ghostwriter"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-monsterfromdeliver-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-gocodeo",
+  "title": "GoCodeo"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-rectanglewand-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-codeflash",
+  "title": "Codeflash"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-restflyroller-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-cleanlab",
+  "title": "Cleanlab"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-powerorioledescribe-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-ai-ml-api",
+  "title": "AI/ML API"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-rayhemomancerfill-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-kiln",
+  "title": "Kiln"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-realscholarfury-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-phoenix",
+  "title": "Phoenix"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-primeiloscillate-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-openai-downtime-monitor",
+  "title": "OpenAI Downtime Monitor"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-samuraivacuum-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-maxim-ai",
+  "title": "Maxim AI"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-meteorwayoscillator7-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-hexabot",
+  "title": "Hexabot"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-primemiconverter-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-prediction-guard",
+  "title": "Prediction Guard"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-officialkind-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-singlebasecloud",
+  "title": "SinglebaseCloud"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-optichokagecharm-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-wordware",
+  "title": "Wordware"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-nanogeninmove-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-portia-ai",
+  "title": "Portia AI"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-nightrihatchet-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-dear-ai",
+  "title": "Dear AI"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-moatpemanacle-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-aidbase",
+  "title": "Aidbase"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-mergeshaloot-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-emailtriager",
+  "title": "EmailTriager"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-noblecranecatch-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-co-here",
+  "title": "co:here"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-meteornyuspeed-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-llamaindex",
+  "title": "LlamaIndex"
  },
  {
-  "at": "2026-11-14T19:47:54.331Z",
+  "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
-  "id": "gh-plateyedome90-github-copilot-app",
-  "title": "GitHub-Copilot-app"
+  "id": "aw-keploy",
+  "title": "Keploy"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-langfuse",
+  "title": "Langfuse"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-twig",
+  "title": "Twig"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-inline-help",
+  "title": "Inline Help"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-gpthelp-ai",
+  "title": "GPTHelp.ai"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-mathos-ai",
+  "title": "Mathos AI"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-elicit",
+  "title": "Elicit"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-sitegpt",
+  "title": "SiteGPT"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-sitespeakai",
+  "title": "SiteSpeakAI"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-genei",
+  "title": "genei"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-sourcely",
+  "title": "Sourcely"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-sybill",
+  "title": "Sybill"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-summara",
+  "title": "Summara"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-excelmatic",
+  "title": "Excelmatic"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-whisper-api",
+  "title": "Whisper API"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-firmos",
+  "title": "FirmOS"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-kosmik",
+  "title": "Kosmik"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-salesagent-chat",
+  "title": "SalesAgent Chat"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-minusx",
+  "title": "MinusX"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-marblism",
+  "title": "Marblism"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-smmry",
+  "title": "Smmry"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-nudge-ai",
+  "title": "Nudge AI"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-mindpal",
+  "title": "MindPal"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-slideswizard",
+  "title": "SlidesWizard"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-qurate",
+  "title": "Qurate"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-transgate",
+  "title": "Transgate"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-rabbitholes-ai",
+  "title": "RabbitHoles AI"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-rember",
+  "title": "Rember"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-ai-for-google-slides",
+  "title": "AI for Google Slides"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-farsite",
+  "title": "FARSITE"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-createeasily",
+  "title": "CreateEasily"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-ankidecks-ai",
+  "title": "AnkiDecks AI"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-emilio",
+  "title": "Emilio"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-recall",
+  "title": "Recall"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-aipdf",
+  "title": "aiPDF"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-chat-with-pdf-by-copilot-us",
+  "title": "Chat With PDF by Copilot.us"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-pieces",
+  "title": "Pieces"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-cosmos",
+  "title": "Cosmos"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-merlin",
+  "title": "Merlin"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-forefront",
+  "title": "Forefront"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-google-sheets-formula-generator",
+  "title": "Google Sheets Formula Generator"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-editgpt",
+  "title": "editGPT"
+ },
+ {
+  "at": "2026-11-17T18:04:55.972Z",
+  "type": "added",
+  "id": "aw-nekton-ai",
+  "title": "Nekton AI"
  }
 ]
