@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-17T07:24:37.305Z",
+  "type": "removed",
+  "id": "gh-hussein1labtop-jpg-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-17T07:24:37.305Z",
+  "type": "removed",
+  "id": "gh-ik190-macos-chatgpt-overlay-bar",
+  "title": "macos-chatgpt-overlay-bar"
+ },
+ {
+  "at": "2026-11-17T07:24:37.305Z",
+  "type": "added",
+  "id": "gh-routeinferno-shamus-osint-ai-agent",
+  "title": "shamus-osint-ai-agent"
+ },
+ {
   "at": "2026-11-17T05:03:47.403Z",
   "type": "added",
   "id": "gh-boringmarketer-boring-marketing-skills",
@@ -579,24 +597,6 @@
   "at": "2026-11-14T19:47:54.331Z",
   "type": "added",
   "id": "gh-pegasusvendorharbor-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-momentumfecloak-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-nexusgrucontrol-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-outercaptainmeditate-github-copilot-app",
   "title": "GitHub-Copilot-app"
  }
 ]
