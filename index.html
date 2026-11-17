@@ -863,9 +863,11 @@ function toggleFavorite(id, event) {
 }
 
 /* ---------- Detay sayfas\u0131 ---------- */
+var BEKLEYEN_ARAC = null;
 function openToolDetail(id) {
-  var tool = appState.allTools.find(function(t) { return t.id === id; });
-  if (!tool) return;
+  var tool = appState.allTools.find(function(t) { return String(t.id) === String(id); });
+  if (!tool) { BEKLEYEN_ARAC = id; return; }
+  BEKLEYEN_ARAC = null; id = tool.id;
   appState.currentActiveToolId = id; pushViewed(id);
   document.getElementById('detailToolTitle').textContent = tool.title;
   document.getElementById('detailToolCategory').textContent = catMeta(tool.category)[1];
@@ -2707,6 +2709,7 @@ function refreshTools() {
         return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew, tr: t.tr !== false,
                  desc: fixText(langTool(t)), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
+      if (BEKLEYEN_ARAC != null) { var bk = BEKLEYEN_ARAC; yonlendirme = true; openToolDetail(bk); yonlendirme = false; }
       renderChips(); updateHomeCounts(); renderHomeExtras(); if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
     }).catch(function() {});
 }
