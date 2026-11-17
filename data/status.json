@@ -1,1 +1,1 @@
-{"translate":{"ok":127,"fail":0,"provider":"mymemory","tried":{"gemini":8,"gtx":19,"lingva":5,"mymemory":89},"lastError":"gemini: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem"}}
+{"translate":{"ok":80,"fail":0,"provider":"gemini","tried":{"gemini":11,"gtx":13,"lingva":5,"mymemory":8},"lastError":"lingva: HTTP 500"}}

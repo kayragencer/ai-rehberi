@@ -1,5 +1,377 @@
 [
  {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-melies",
+  "title": "Melies"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-luthor",
+  "title": "Luthor"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-nvidia-omniverse-ai-animal-explorer-extension",
+  "title": "NVIDIA Omniverse AI Animal Explorer Extension"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-hyperbrowser",
+  "title": "Hyperbrowser"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-bricks",
+  "title": "Bricks"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-langmagic",
+  "title": "LangMagic"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ai-watermark-remover",
+  "title": "AI Watermark Remover"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-socialsonic",
+  "title": "Socialsonic"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-fynk",
+  "title": "fynk"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-podify-io",
+  "title": "Podify.io"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-resumedive",
+  "title": "ResumeDive"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-looksmax-ai",
+  "title": "LooksMax AI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-fairytailai",
+  "title": "FairyTailAI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-gradgpt",
+  "title": "GradGPT"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-compass",
+  "title": "Compass"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-architecture-helper",
+  "title": "Architecture Helper"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-context-data",
+  "title": "Context Data"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ezjobs",
+  "title": "ezJobs"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ai-wedding-toast",
+  "title": "AI Wedding Toast"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ai-flow",
+  "title": "AI-Flow"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-taplio",
+  "title": "Taplio"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ai-dungeon",
+  "title": "AI Dungeon"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-gummysearch",
+  "title": "GummySearch"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-presspulse-ai",
+  "title": "PressPulse AI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-shotstack-workflows",
+  "title": "Shotstack Workflows"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-scale-spellbook",
+  "title": "Scale Spellbook"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-finchat",
+  "title": "FinChat"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-scenario",
+  "title": "Scenario"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-custompod-io",
+  "title": "CustomPod.io"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-have-i-been-trained",
+  "title": "Have I Been Trained?"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-eleven-labs",
+  "title": "Eleven Labs"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ekhos-ai",
+  "title": "EKHOS AI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-harmonai",
+  "title": "Harmonai"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-this-image-does-not-exist",
+  "title": "This Image Does Not Exist"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-rosie",
+  "title": "Rosie"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-keyla-ai",
+  "title": "Keyla.AI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-chatfuel",
+  "title": "Chatfuel"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-cald-ai",
+  "title": "Cald.ai"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-logicballs",
+  "title": "LogicBalls"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-publish7",
+  "title": "Publish7"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-aicaller-io",
+  "title": "AICaller.io"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-marketmuse",
+  "title": "MarketMuse"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ai-voice-agents",
+  "title": "AI Voice Agents"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-rupert-ai",
+  "title": "Rupert AI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-crimson-hexagon",
+  "title": "Crimson Hexagon"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-seventh-sense",
+  "title": "Seventh Sense"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ecrett-music",
+  "title": "Ecrett Music"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ai-music-generator",
+  "title": "AI Music Generator"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-adzooma",
+  "title": "Adzooma"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-phrasee",
+  "title": "Phrasee"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-smartly-io",
+  "title": "Smartly.io"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-clearbit",
+  "title": "Clearbit"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-mutiny",
+  "title": "Mutiny"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-audify-ai",
+  "title": "Audify AI"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-zenmic-com",
+  "title": "Zenmic.com"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-klingai",
+  "title": "klingai"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-recast-studio",
+  "title": "Recast Studio"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-clipwing",
+  "title": "Clipwing"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-sisif",
+  "title": "Sisif"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-ispeech",
+  "title": "iSpeech"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-respeecher",
+  "title": "Respeecher"
+ },
+ {
+  "at": "2026-11-17T18:17:22.516Z",
+  "type": "added",
+  "id": "aw-based-ai",
+  "title": "Based AI"
+ },
+ {
   "at": "2026-11-17T18:04:55.972Z",
   "type": "added",
   "id": "aw-stable-diffusion-models",
@@ -226,377 +598,5 @@
   "type": "added",
   "id": "aw-stenography",
   "title": "Stenography"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-ghostwriter",
-  "title": "Ghostwriter"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-gocodeo",
-  "title": "GoCodeo"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-codeflash",
-  "title": "Codeflash"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-cleanlab",
-  "title": "Cleanlab"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-ai-ml-api",
-  "title": "AI/ML API"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-kiln",
-  "title": "Kiln"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-phoenix",
-  "title": "Phoenix"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-openai-downtime-monitor",
-  "title": "OpenAI Downtime Monitor"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-maxim-ai",
-  "title": "Maxim AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-hexabot",
-  "title": "Hexabot"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-prediction-guard",
-  "title": "Prediction Guard"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-singlebasecloud",
-  "title": "SinglebaseCloud"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-wordware",
-  "title": "Wordware"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-portia-ai",
-  "title": "Portia AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-dear-ai",
-  "title": "Dear AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-aidbase",
-  "title": "Aidbase"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-emailtriager",
-  "title": "EmailTriager"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-co-here",
-  "title": "co:here"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-llamaindex",
-  "title": "LlamaIndex"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-keploy",
-  "title": "Keploy"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-langfuse",
-  "title": "Langfuse"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-twig",
-  "title": "Twig"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-inline-help",
-  "title": "Inline Help"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-gpthelp-ai",
-  "title": "GPTHelp.ai"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-mathos-ai",
-  "title": "Mathos AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-elicit",
-  "title": "Elicit"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-sitegpt",
-  "title": "SiteGPT"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-sitespeakai",
-  "title": "SiteSpeakAI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-genei",
-  "title": "genei"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-sourcely",
-  "title": "Sourcely"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-sybill",
-  "title": "Sybill"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-summara",
-  "title": "Summara"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-excelmatic",
-  "title": "Excelmatic"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-whisper-api",
-  "title": "Whisper API"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-firmos",
-  "title": "FirmOS"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-kosmik",
-  "title": "Kosmik"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-salesagent-chat",
-  "title": "SalesAgent Chat"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-minusx",
-  "title": "MinusX"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-marblism",
-  "title": "Marblism"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-smmry",
-  "title": "Smmry"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-nudge-ai",
-  "title": "Nudge AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-mindpal",
-  "title": "MindPal"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-slideswizard",
-  "title": "SlidesWizard"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-qurate",
-  "title": "Qurate"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-transgate",
-  "title": "Transgate"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-rabbitholes-ai",
-  "title": "RabbitHoles AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-rember",
-  "title": "Rember"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-ai-for-google-slides",
-  "title": "AI for Google Slides"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-farsite",
-  "title": "FARSITE"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-createeasily",
-  "title": "CreateEasily"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-ankidecks-ai",
-  "title": "AnkiDecks AI"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-emilio",
-  "title": "Emilio"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-recall",
-  "title": "Recall"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-aipdf",
-  "title": "aiPDF"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-chat-with-pdf-by-copilot-us",
-  "title": "Chat With PDF by Copilot.us"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-pieces",
-  "title": "Pieces"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-cosmos",
-  "title": "Cosmos"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-merlin",
-  "title": "Merlin"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-forefront",
-  "title": "Forefront"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-google-sheets-formula-generator",
-  "title": "Google Sheets Formula Generator"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-editgpt",
-  "title": "editGPT"
- },
- {
-  "at": "2026-11-17T18:04:55.972Z",
-  "type": "added",
-  "id": "aw-nekton-ai",
-  "title": "Nekton AI"
  }
 ]
