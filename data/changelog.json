@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-17T17:10:04.849Z",
+  "type": "added",
+  "id": "gh-mackzyfiston-cmd-html-ppt-generator",
+  "title": "html-ppt-generator"
+ },
+ {
   "at": "2026-11-17T10:13:03.708Z",
   "type": "removed",
   "id": "gh-coaljusticetower-ai-manus",
@@ -591,12 +597,6 @@
   "at": "2026-11-14T19:47:54.331Z",
   "type": "added",
   "id": "gh-plateyedome90-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-14T19:47:54.331Z",
-  "type": "added",
-  "id": "gh-naturalturkeygate21-github-copilot-app",
   "title": "GitHub-Copilot-app"
  }
 ]
