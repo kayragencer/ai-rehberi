@@ -65,13 +65,12 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <nav id="navDesktop" class="hidden lg:flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav>
     </div>
     <div class="flex items-center gap-2">
-      <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
-        <span id="themeIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></span><span class="hidden md:inline lg:hidden" id="themeText">Dark</span>
-      </button>
+      <span id="themeIcon" class="hidden"></span><span id="themeText" class="hidden"></span>
       <button id="profileBtn" onclick="openProfileModal()" title="Hesab&#305;m" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
         <span id="headerAvatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="headerUserName" class="text-xs font-bold hidden md:inline">Giri&#351; Yap</span>
       </button>
       <button onclick="openProModal()" class="hbtn bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white shadow-lg shadow-amber-500/20">PREMIUM</button>
+      <button id="mainMenuBtn" onclick="mmToggle()" title="Men&#252;" aria-label="Men&#252;" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </div>
 </header>
@@ -528,7 +527,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
         <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span class="flex-1 text-left">Profilim</span><span>&#8594;</span>
       </button>
       <button onclick="pmGit('favoriler')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-rose-600 hover:text-white transition">
-        <span></span><span class="flex-1 text-left">Favorilerim</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></span><span class="flex-1 text-left">Favorilerim</span>
         <span id="pmFavCount" class="px-1.5 py-0.5 rounded-full text-[10px] dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
       </button>
       <button onclick="pmGit('oneri')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-sky-600 hover:text-white transition">
@@ -539,6 +538,10 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <button id="pmAuth" onclick="pmAuthTikla()" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition"></button>
     </div>
   </div>
+</div>
+
+<div id="mainMenu" class="hidden fixed z-50 w-72 max-w-[calc(100vw-1.5rem)]">
+  <div id="mainMenuInner" class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-2xl shadow-2xl overflow-hidden max-h-[80vh] overflow-y-auto"></div>
 </div>
 
 <footer class="border-t dark:border-gray-800 border-gray-300 dark:bg-gray-950 bg-white p-6 text-center text-xs text-gray-500 transition">
@@ -1393,6 +1396,7 @@ function pmAc() {
 }
 function pmKapat() { var b = document.getElementById('profileMenu'); if (b) b.classList.add('hidden'); }
 function openProfileModal() {
+  mmKapat();
   var box = document.getElementById('profileMenu');
   if (box.classList.contains('hidden')) pmAc(); else pmKapat();
 }
@@ -1422,7 +1426,67 @@ document.addEventListener('click', function (e) {
   if (e.target.closest && e.target.closest('#profileBtn')) return;
   pmKapat();
 });
-document.addEventListener('keydown', function (e) { if (e.key === 'Escape') pmKapat(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { pmKapat(); mmKapat(); } });
+
+/* ===== Hamburger menü ===== */
+function mmSatir(icon, yazi, fn, aktif) {
+  return '<button type="button" data-mm="' + fn + '" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition ' +
+    (aktif ? 'bg-purple-600 text-white' : 'dark:text-gray-200 text-gray-800 hover:bg-purple-500/10 hover:text-purple-500') + '">' +
+    '<span class="' + (aktif ? '' : 'text-purple-400') + '">' + ico(icon) + '</span><span class="flex-1 text-left">' + esc(yazi) + '</span></button>';
+}
+function mmBaslik(t) { return '<div class="px-3 pt-3 pb-1 text-[10px] font-bold uppercase tracking-wider text-gray-500">' + t + '</div>'; }
+function mmCiz() {
+  var box = document.getElementById('mainMenuInner'); if (!box) return;
+  var dark = document.getElementById('htmlTag').classList.contains('dark');
+  var h = '<div class="p-1.5">' + mmBaslik('Keşfet');
+  NAV.forEach(function (n) {
+    var on = appState.activePage === n[0] || (n[0] === 'biz' && appState.activePage === 'bizDetail');
+    h += mmSatir(n[3], n[1], 'sayfa:' + n[0], on);
+  });
+  h += '</div><div class="p-1.5 border-t dark:border-gray-800 border-gray-100">' + mmBaslik('Ayarlar') +
+    '<button type="button" data-mm="tema" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-purple-500/10 transition">' +
+      '<span class="text-purple-400">' + ico(dark ? 'moon' : 'sun') + '</span><span class="flex-1 text-left">Tema: ' + (dark ? 'Koyu' : 'Açık') + '</span>' +
+      '<span class="relative w-9 h-5 rounded-full transition ' + (dark ? 'bg-purple-600' : 'bg-gray-300') + '"><span class="absolute top-0.5 w-4 h-4 rounded-full bg-white shadow transition-all ' + (dark ? 'left-[18px]' : 'left-0.5') + '"></span></span></button>' +
+    mmSatir('user', profile.loggedIn ? 'Hesabım' : 'Giriş Yap / Kayıt Ol', 'hesap') +
+    mmSatir('help', 'Yardım Merkezi', 'yardim') +
+    mmSatir('message', 'Öneri / Şikayet', 'oneri') +
+    '</div><div class="p-1.5 border-t dark:border-gray-800 border-gray-100">' + mmBaslik('Yasal') +
+    '<div class="px-3 pb-2 flex flex-wrap gap-x-3 gap-y-1.5 text-[11px] text-gray-400">' +
+      [['gizlilik', 'Gizlilik'], ['kvkk', 'KVKK'], ['kullanim-sartlari', 'Kullanım Şartları'], ['cerezler', 'Çerezler']].map(function (x) {
+        return '<button type="button" data-mm="yasal:' + x[0] + '" class="hover:text-purple-400 transition">' + x[1] + '</button>';
+      }).join('') + '</div></div>';
+  box.innerHTML = h;
+}
+function mmKonum() {
+  var box = document.getElementById('mainMenu'), btn = document.getElementById('mainMenuBtn');
+  if (!box || !btn || box.classList.contains('hidden')) return;
+  var r = btn.getBoundingClientRect();
+  box.style.top = (r.bottom + 8) + 'px';
+  box.style.right = Math.max(12, window.innerWidth - r.right) + 'px';
+}
+function mmAc() { pmKapat(); mmCiz(); document.getElementById('mainMenu').classList.remove('hidden'); mmKonum(); }
+function mmKapat() { var b = document.getElementById('mainMenu'); if (b) b.classList.add('hidden'); }
+function mmToggle() { var b = document.getElementById('mainMenu'); if (b.classList.contains('hidden')) mmAc(); else mmKapat(); }
+window.addEventListener('resize', mmKonum);
+window.addEventListener('scroll', mmKonum, { passive: true });
+document.addEventListener('click', function (e) {
+  var box = document.getElementById('mainMenu');
+  if (!box || box.classList.contains('hidden')) return;
+  var t = e.target.closest && e.target.closest('[data-mm]');
+  if (t && box.contains(t)) {
+    var a = t.getAttribute('data-mm');
+    if (a === 'tema') { toggleDarkMode(); mmCiz(); return; }
+    mmKapat();
+    if (a.indexOf('sayfa:') === 0) switchPage(a.slice(6));
+    else if (a.indexOf('yasal:') === 0) openLegal(a.slice(6));
+    else if (a === 'hesap') { if (profile.loggedIn) pmGit('profil'); else pmAuthTikla(); }
+    else if (a === 'yardim') { var p = document.getElementById('asstPanel'); if (p && p.classList.contains('hidden')) toggleAssistant(); }
+    else if (a === 'oneri') pmGit('oneri');
+    return;
+  }
+  if (box.contains(e.target) || (e.target.closest && e.target.closest('#mainMenuBtn'))) return;
+  mmKapat();
+});
 
 /* ===== Premium ===== */
 function openProModal() { if (profile.email) document.getElementById('waitEmail').value = profile.email; document.getElementById('proModal').classList.remove('hidden'); }
@@ -1553,6 +1617,7 @@ function asstSend(e, preset) {
 
 
 /* ===== Gezinme ===== */
+var NAV_MAIN = { directory: 1, tools: 1, news: 1 };
 var NAV = [
   ['directory', 'Ana Sayfa', 'Ana Sayfa', 'home', 'bg-purple-600'],
   ['tools', 'AI Ara\u00e7lar\u0131', 'Ara\u00e7lar', 'grid', 'bg-purple-600'],
@@ -1567,6 +1632,7 @@ function renderNav() {
   if (!d || !m) return;
   d.innerHTML = ''; m.innerHTML = '';
   NAV.forEach(function (n) {
+    if (!NAV_MAIN[n[0]]) return;
     var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail') || (n[0] === 'news' && appState.activePage === 'newsDetail');
     var b = document.createElement('button');
     b.className = 'px-2 xl:px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
