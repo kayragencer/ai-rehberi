@@ -556,7 +556,7 @@ function i18nT(t) {
   if (r === undefined) {
     for (var i = 0; i < I18N_PAT.length; i++) if (I18N_PAT[i][0].test(k)) { r = k.replace(I18N_PAT[i][0], I18N_PAT[i][1]); break; }
     if (r === undefined && k.indexOf('Anladığım: ') === 0) r = 'What I understood: ' + k.slice(11).split(' · ').map(function (x) { return I18N[x] || x; }).join(' · ');
-    if (r === undefined && k.indexOf(' · ') > 0) { var ps = k.split(' · '), ch = false; ps = ps.map(function (x) { if (I18N[x] !== undefined) { ch = true; return I18N[x]; } return x; }); if (ch) r = ps.join(' · '); }
+    if (r === undefined && k.indexOf(' · ') > 0) { var ps = k.split(' · '), ch = false; ps = ps.map(function (x) { var y = i18nT(x); if (y !== x) ch = true; return y; }); if (ch) r = ps.join(' · '); }
   }
   if (r === undefined) return t;
   var m = t.match(/^(\s*)[\s\S]*?(\s*)$/);
