@@ -8,7 +8,7 @@ const headers = { 'User-Agent': 'ai-rehberi-bot/1.0' };
 const ghHeaders = { ...headers, Accept: 'application/vnd.github+json', ...(E.GITHUB_TOKEN ? { Authorization: 'Bearer ' + E.GITHUB_TOKEN } : {}) };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
-const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40, AWESOME_PER_RUN: 250 };
+const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40, AWESOME_PER_RUN: 500 };
 
 if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 120;
 const FEEDS = [
