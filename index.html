@@ -155,6 +155,12 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <div class="pt-2 px-1"><div class="sec-h dark:text-white text-gray-900">T&#252;m Ara&#231;lar</div><div class="sec-sub">Edit&#246;r&#252;n se&#231;tikleri en &#252;stte</div></div>
     </div>
 
+    <div id="searchBest" class="hidden mb-8 p-5 sm:p-6 rounded-2xl border border-purple-500/30 dark:bg-purple-500/5 bg-purple-50">
+      <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900">&#127942; Senin i&#231;in en iyi se&#231;imler</div><div class="sec-sub">Arad&#305;&#287;&#305;n i&#351; i&#231;in en uygun ve en i&#351;levsel ara&#231;lar</div></div>
+      <div id="searchBestGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+    <div id="searchTabs" class="hidden flex flex-wrap gap-2 mb-4"></div>
+
     <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
     <div id="favoritesRecommendedSection" class="hidden mt-16 pt-10 border-t dark:border-gray-800 border-gray-200">
@@ -1105,7 +1111,7 @@ function filterTools() {
   var q = norm(document.getElementById('searchInput').value);
   var hl = document.getElementById('toolsHighlights');
   if (hl) hl.classList.toggle('hidden', !!q || appState.currentCat !== 'all' || !!((document.getElementById('priceFilter') || {}).value) || ((document.getElementById('sortFilter') || {}).value || 'rec') !== 'rec');
-  if (q !== appState.lastQ) { appState.visibleLimit = 30; appState.lastQ = q; }
+  if (q !== appState.lastQ) { appState.visibleLimit = 30; appState.lastQ = q; appState.searchTab = 'ready'; }
   var info = q ? parseQuery(q) : null;
   updateSearchHint(info);
   var list = appState.allTools.filter(function(item) {
@@ -1122,13 +1128,47 @@ function filterTools() {
       if (sf === 'pop') return (b.stars || 0) - (a.stars || 0);
       return a.title.localeCompare(b.title, 'tr');
     });
-    if (!info) return renderTools(list, true);
+    if (!info) { hideSearchExtras(); return renderTools(list, true); }
   }
-  if (!info) return renderTools(list);
+  if (!info) { hideSearchExtras(); return renderTools(list); }
   var scored = [];
   list.forEach(function(it) { var sc = scoreItem(it, info); if (sc > 0) { it._score = sc; scored.push(it); } });
-  scored.sort(function(a, b) { return b._score - a._score || (b.isVip - a.isVip); });
-  renderTools(scored, true);
+  if (sf === 'rec') scored.sort(function(a, b) { return b._score - a._score || (b.isVip - a.isVip); });
+  var ready = scored.filter(function(it) { return it.source !== 'github'; });
+  var dev = scored.filter(function(it) { return it.source === 'github'; });
+  var best = (sf === 'rec' ? ready : ready.slice().sort(function(a, b) { return b._score - a._score; })).slice(0, 5);
+  if (best.length < 3) best = best.concat(dev.slice().sort(function(a, b) { return b._score - a._score || (b.stars || 0) - (a.stars || 0); }).slice(0, 3 - best.length));
+  if (sf === 'rec') dev.sort(function(a, b) { return (b.stars || 0) - (a.stars || 0); });
+  if (appState.searchTab === 'dev' && !dev.length) appState.searchTab = 'ready';
+  if (appState.searchTab !== 'dev' && !ready.length && dev.length) appState.searchTab = 'dev';
+  renderSearchBest(best);
+  renderSearchTabs(ready.length, dev.length);
+  renderTools(appState.searchTab === 'dev' ? dev : ready, true);
+}
+function hideSearchExtras() {
+  var b = document.getElementById('searchBest'), t = document.getElementById('searchTabs');
+  if (b) b.classList.add('hidden'); if (t) t.classList.add('hidden');
+}
+function renderSearchBest(best) {
+  var wrap = document.getElementById('searchBest'), grid = document.getElementById('searchBestGrid');
+  if (!wrap || !grid) return;
+  grid.innerHTML = '';
+  if (!best.length) { wrap.classList.add('hidden'); return; }
+  best.forEach(function(it) { grid.appendChild(renderCardHTML(it, false)); });
+  wrap.classList.remove('hidden');
+}
+function renderSearchTabs(nReady, nDev) {
+  var box = document.getElementById('searchTabs'); if (!box) return;
+  box.classList.remove('hidden'); box.innerHTML = '';
+  [['ready', '\u2705 Haz\u0131r ara\u00e7lar', nReady, 'Hemen kullanabilece\u011fin siteler ve uygulamalar'], ['dev', '\ud83d\udcbb Yaz\u0131l\u0131mc\u0131lar i\u00e7in', nDev, 'Kurulum gerektiren GitHub projeleri, pop\u00fclerli\u011fe g\u00f6re']].forEach(function(t) {
+    var on = (appState.searchTab || 'ready') === t[0], b = document.createElement('button');
+    b.type = 'button'; b.title = t[3];
+    b.className = 'px-4 py-2 rounded-xl text-xs font-bold border transition ' + (on ? 'bg-purple-600 text-white border-transparent' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
+    b.textContent = t[1] + ' (' + t[2] + ')';
+    if (!t[2]) b.disabled = true, b.classList.add('opacity-50');
+    b.onclick = function() { appState.searchTab = t[0]; appState.visibleLimit = 30; filterTools(); };
+    box.appendChild(b);
+  });
 }
 
 /* ===== Kategori \u00e7ipleri ===== */
