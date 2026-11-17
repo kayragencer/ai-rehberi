@@ -8,7 +8,7 @@ const headers = { 'User-Agent': 'ai-rehberi-bot/1.0' };
 const ghHeaders = { ...headers, Accept: 'application/vnd.github+json', ...(E.GITHUB_TOKEN ? { Authorization: 'Bearer ' + E.GITHUB_TOKEN } : {}) };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
-const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14 };
+const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40 };
 
 if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 120;
 const FEEDS = [
@@ -306,7 +306,7 @@ async function updateTools() {
 
   // c) Product Hunt (ticari yeni ara\u00e7lar) - PRODUCTHUNT_TOKEN tan\u0131ml\u0131ysa \u00e7al\u0131\u015f\u0131r
   if (E.PRODUCTHUNT_TOKEN) {
-    const q = 'query($after:String){ posts(topic:"artificial-intelligence", order:NEWEST, first:20, after:$after){ pageInfo{endCursor hasNextPage} edges{ node{ name tagline description website createdAt } } } }';
+    const q = 'query($after:String){ posts(topic:"artificial-intelligence", order:NEWEST, first:20, after:$after){ pageInfo{endCursor hasNextPage} edges{ node{ name tagline description website createdAt votesCount } } } }';
     const pages = [null, state.ph && state.ph.after ? state.ph.after : null];
     let cursor = null;
     for (let i = 0; i < 6; i++) {
@@ -318,11 +318,11 @@ async function updateTools() {
         const posts = (await r.json()).data.posts;
         for (const { node: n } of posts.edges) {
           const id = 'ph-' + slug(n.name);
-          if (byId.has(id) || block.ids.includes(id) || tools.length >= CFG.MAX_TOOLS || bad((n.name + ' ' + n.tagline).toLowerCase())) continue;
+          if (byId.has(id) || block.ids.includes(id) || tools.length >= CFG.MAX_TOOLS || (n.votesCount || 0) < CFG.PH_MIN_VOTES || bad((n.name + ' ' + n.tagline).toLowerCase())) continue;
           let site = ''; try { site = new URL((await get(n.website, { headers })).url).origin; } catch {}
           if (!site || /producthunt\.com/.test(site) || hosts.has(hostOf(site))) continue;
           const t = { id, title: n.name, category: guess(n.name + ' ' + n.tagline + ' ' + (n.description || '')), price: 'Belirsiz', url: site, featured: false,
-            descOrig: (n.tagline + '. ' + (n.description || '')).slice(0, 300), tr: false, source: 'producthunt', status: 'active', failCount: 0, addedAt: n.createdAt.slice(0, 10) };
+            descOrig: (n.tagline + '. ' + (n.description || '')).slice(0, 300), tr: false, source: 'producthunt', votes: n.votesCount || 0, status: 'active', failCount: 0, addedAt: n.createdAt.slice(0, 10) };
           tools.push(t); byId.set(id, t); hosts.add(hostOf(site)); ev('added', t);
         }
         cursor = posts.pageInfo.hasNextPage ? posts.pageInfo.endCursor : null;

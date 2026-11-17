@@ -1059,11 +1059,13 @@ function parseQuery(q) {
 }
 function prepItem(it) {
   it._t = norm(it.title); it._tw = it._t.split(' ');
-  it._h = norm(it.title + ' ' + it.desc + ' ' + it.category + ' ' + (it.tags || []).join(' ') + ' ' + (CAT_SYN[it.category] || ''));
+  it._d = norm(it.title + ' ' + it.desc + ' ' + (it.tags || []).join(' '));
+  it._h = it._d + ' ' + norm(it.category + ' ' + (CAT_SYN[it.category] || ''));
 }
 function tokenScore(it, tk) {
   if (it._tw.indexOf(tk) > -1) return 12;
   if (it._t.indexOf(tk) > -1) return 8;
+  if (it._d.indexOf(tk) > -1) return 7;
   if (it._h.indexOf(tk) > -1) return 3;
   if (tk.length >= 5) for (var i = 0; i < it._tw.length; i++) if (it._tw[i].length >= 4 && lev1(it._tw[i], tk)) return 4;
   return 0;
@@ -1130,7 +1132,7 @@ function filterTools() {
   if (sf !== 'rec') {
     list = list.slice().sort(function (a, b) {
       if (sf === 'new') return (b.addedAt || '').localeCompare(a.addedAt || '');
-      if (sf === 'pop') return (b.stars || 0) - (a.stars || 0);
+      if (sf === 'pop') return (b.stars || b.votes || 0) - (a.stars || a.votes || 0);
       return a.title.localeCompare(b.title, 'tr');
     });
     if (!info) { hideSearchExtras(); return renderTools(list, true); }
