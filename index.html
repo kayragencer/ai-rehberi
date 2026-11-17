@@ -66,10 +66,10 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
     </div>
     <div class="flex items-center gap-2">
       <button onclick="toggleDarkMode()" title="Tema De&#287;i&#351;tir" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
-        <span id="themeIcon">&#127769;</span><span class="hidden md:inline lg:hidden" id="themeText">Dark</span>
+        <span id="themeIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/></svg></span><span class="hidden md:inline lg:hidden" id="themeText">Dark</span>
       </button>
       <button id="profileBtn" onclick="openProfileModal()" title="Hesab&#305;m" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
-        <span id="headerAvatar">&#128100;</span><span id="headerUserName" class="text-xs font-bold hidden md:inline">Giri&#351; Yap</span>
+        <span id="headerAvatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="headerUserName" class="text-xs font-bold hidden md:inline">Giri&#351; Yap</span>
       </button>
       <button onclick="openProModal()" class="hbtn bg-gradient-to-r from-amber-500 to-orange-500 hover:opacity-90 text-white shadow-lg shadow-amber-500/20">PREMIUM</button>
     </div>
@@ -109,7 +109,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- AI ARACLARI -->
   <div id="pageTools" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-4">&#129520; T&#252;m Yapay Zeka Ara&#231;lar&#305;</div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg> T&#252;m Yapay Zeka Ara&#231;lar&#305;</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">AI Ara&#231;lar&#305;</h1>
       <p class="text-gray-400 text-sm">Arama yap, kategoriye ve fiyata g&#246;re filtrele.</p>
       <div class="mt-6">
@@ -156,7 +156,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
     </div>
 
     <div id="searchBest" class="hidden mb-8 p-5 sm:p-6 rounded-2xl border border-purple-500/30 dark:bg-purple-500/5 bg-purple-50">
-      <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900">&#127942; Senin i&#231;in en iyi se&#231;imler</div><div class="sec-sub">Arad&#305;&#287;&#305;n i&#351; i&#231;in en uygun ve en i&#351;levsel ara&#231;lar</div></div>
+      <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.7V17c0 .6-.5 1-1 1.2-1.2.5-2 2-2 3.8M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 2 2 3.8M18 2H6v7a6 6 0 0 0 12 0z"/></svg> Senin i&#231;in en iyi se&#231;imler</div><div class="sec-sub">Arad&#305;&#287;&#305;n i&#351; i&#231;in en uygun ve en i&#351;levsel ara&#231;lar</div></div>
       <div id="searchBestGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
     </div>
     <div id="searchTabs" class="hidden flex flex-wrap gap-2 mb-4"></div>
@@ -164,16 +164,16 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
     <div id="toolsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
     <div id="favoritesRecommendedSection" class="hidden mt-16 pt-10 border-t dark:border-gray-800 border-gray-200">
-      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">&#128161; Favorilerine Ekleyebilece&#287;in Edit&#246;r &#214;nerileri</span></div>
+      <div class="text-left mb-6"><span class="text-xs font-bold uppercase tracking-wider text-purple-400">Favorilerine Ekleyebilece&#287;in Edit&#246;r &#214;nerileri</span></div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="favoritesRecommendedGrid"></div>
     </div>
 
     <div id="loadMoreContainer" class="text-center mt-12 mb-6">
-      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">&#9889; Daha Fazla Y&#252;kle (+30 Ara&#231;)</button>
+      <button onclick="loadMoreTools()" class="px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-purple-600 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl">Daha Fazla Y&#252;kle (+30 Ara&#231;)</button>
     </div>
 
     <div id="emptyState" class="hidden text-center py-20">
-      <div class="w-16 h-16 dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl">&#128269;</div>
+      <div class="w-16 h-16 dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
       <h3 class="text-lg font-bold dark:text-white text-gray-900">Arad&#305;&#287;&#305;n&#305;z kriterde yapay zeka bulunamad&#305;</h3>
       <p class="text-gray-400 text-sm mt-1">Farkl&#305; anahtar kelimeler deneyebilirsiniz.</p>
       <button onclick="resetApp()" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-bold">Aramay&#305; S&#305;f&#305;rla</button>
@@ -183,13 +183,13 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- SAYFA 2 -->
   <div id="pageNews" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-8">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-4">&#128225; T&#252;rk&#231;e AI Haber Ak&#305;&#351;&#305; (otomatik &#231;evrilir)</div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg> T&#252;rk&#231;e AI Haber Ak&#305;&#351;&#305; (otomatik &#231;evrilir)</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Yapay Zeka D&#252;nyas&#305;ndan Haberler</h1>
       <p class="text-gray-400 text-sm">Yapay zeka modelleri, g&#252;ncellemeler ve yeni &#231;&#305;kan ara&#231;lar.</p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center items-center">
         <input type="text" id="newsSearchInput" oninput="filterNews()" placeholder="Haberlerde ara (&#246;rn: OpenAI, Google, Model)..."
           class="w-full sm:w-96 p-3.5 pl-5 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 text-xs focus:outline-none focus:border-blue-500 shadow-xl">
-        <button onclick="fetchLiveAINews()" class="px-5 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs rounded-2xl transition shadow-lg shadow-blue-600/20">&#128260; Haberleri G&#252;ncelle</button>
+        <button onclick="fetchLiveAINews()" class="px-5 py-3.5 bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs rounded-2xl transition shadow-lg shadow-purple-900/20"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg> Haberleri G&#252;ncelle</button>
       </div>
     </div>
     <div id="newsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
@@ -214,7 +214,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- AI IS MODELLERI -->
   <div id="pageBiz" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-2">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20 mb-4">&#128188; AI &#304;&#351; Modelleri</div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg> AI &#304;&#351; Modelleri</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Yapay Zeka ile &#304;&#351; ve Gelir</h1>
       <div id="bizTabs" class="mt-6 flex gap-2 overflow-x-auto sm:flex-wrap sm:justify-center pb-2 -mx-4 px-4 sm:mx-0 sm:px-0"></div>
       <div id="bizSortWrap" class="hidden mt-4 flex justify-center"><button id="bizSortBtn" onclick="toggleBizSort()" class="px-4 py-2.5 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 dark:text-gray-200 text-gray-800 text-xs font-bold hover:border-green-500 transition shadow"></button></div>
@@ -235,7 +235,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
     <div class="px-2 sm:px-6">
 
     <div id="authView" class="px-6 pb-6 -mt-8">
-      <div class="w-16 h-16 rounded-2xl bg-white dark:bg-gray-950 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center text-3xl mb-3">&#128100;</div>
+      <div class="w-16 h-16 rounded-2xl bg-white dark:bg-gray-950 border-4 border-white dark:border-gray-900 shadow-xl flex items-center justify-center text-3xl mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
       <h3 class="text-lg font-extrabold dark:text-white text-gray-900">AI Rehberi'ne Ho&#351; Geldin</h3>
       <p class="text-xs text-gray-400 mb-4">Hesap olu&#351;tur, ilgi alanlar&#305;na g&#246;re ki&#351;iselle&#351;tirilmi&#351; &#246;neriler al.</p>
       <div class="flex p-1 rounded-xl dark:bg-gray-950 bg-gray-100 text-xs font-bold mb-4">
@@ -256,14 +256,14 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
         <input id="regPass2" type="password" required minlength="8" placeholder="&#350;ifre tekrar" autocomplete="new-password" class="fld">
         <div><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">&#304;lgi alanlar&#305;n</div><div id="regInterests" class="flex flex-wrap gap-2"></div></div>
         <div class="p-3 rounded-xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200">
-          <label for="capA" class="text-[11px] font-bold text-gray-400 uppercase block mb-2">&#129302; Robot de&#287;ilsin, de&#287;il mi? &#199;&#246;z: <span id="capQ" class="text-purple-400"></span></label>
-          <div class="flex gap-2"><input id="capA" type="number" inputmode="numeric" required placeholder="Cevap" class="fld"><button type="button" onclick="newCaptcha()" title="Yeni soru" class="px-3 rounded-xl dark:bg-gray-800 bg-gray-200 text-sm">&#128260;</button></div>
+          <label for="capA" class="text-[11px] font-bold text-gray-400 uppercase block mb-2">Robot de&#287;ilsin, de&#287;il mi? &#199;&#246;z: <span id="capQ" class="text-purple-400"></span></label>
+          <div class="flex gap-2"><input id="capA" type="number" inputmode="numeric" required placeholder="Cevap" class="fld"><button type="button" onclick="newCaptcha()" title="Yeni soru" class="px-3 rounded-xl dark:bg-gray-800 bg-gray-200 text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button></div>
           <input id="hpWebsite" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         </div>
         <label class="flex items-start gap-2 text-[11px] text-gray-400 leading-relaxed cursor-pointer"><input id="regConsent" type="checkbox" required class="mt-0.5"><span><a href="#yasal/kullanim-sartlari" target="_blank" class="text-purple-400 underline">Kullan&#305;m &#350;artlar&#305;</a>'n&#305; ve <a href="#yasal/gizlilik" target="_blank" class="text-purple-400 underline">Gizlilik Politikas&#305;</a>'n&#305; okudum; bilgilerimin bu taray&#305;c&#305;da saklanmas&#305;n&#305; kabul ediyorum.</span></label>
         <button type="submit" class="w-full py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Hesap Olu&#351;tur</button>
       </form>
-      <p class="mt-4 text-[11px] text-gray-400 leading-relaxed">&#128274; &#350;ifren cihaz&#305;nda &#351;ifrelenerek (PBKDF2) saklan&#305;r, bize g&#246;nderilmez. Hesab&#305;n &#351;u an yaln&#305;zca bu taray&#305;c&#305;da ge&#231;erlidir.</p>
+      <p class="mt-4 text-[11px] text-gray-400 leading-relaxed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> &#350;ifren cihaz&#305;nda &#351;ifrelenerek (PBKDF2) saklan&#305;r, bize g&#246;nderilmez. Hesab&#305;n &#351;u an yaln&#305;zca bu taray&#305;c&#305;da ge&#231;erlidir.</p>
     </div>
 
     <div id="accountView" class="px-6 pb-6 -mt-10 hidden">
@@ -284,36 +284,36 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <div class="mb-4"><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Son bakt&#305;klar&#305;n</div><div id="profRecent" class="space-y-1.5"></div></div>
       <div id="accMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
       <div class="grid grid-cols-2 gap-2">
-        <button onclick="saveAccount()" class="py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">&#128190; Kaydet</button>
-        <button onclick="switchPage('profile');" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#10084;&#65039; Favorilerim</button>
-        <button onclick="doLogout()" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#128682; &#199;&#305;k&#305;&#351; Yap</button>
-        <button onclick="deleteAccount()" class="py-3 bg-red-500/10 text-red-500 font-bold rounded-xl text-xs">&#128465; Hesab&#305; Sil</button>
+        <button onclick="saveAccount()" class="py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Kaydet</button>
+        <button onclick="switchPage('profile');" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">Favorilerim</button>
+        <button onclick="doLogout()" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg> &#199;&#305;k&#305;&#351; Yap</button>
+        <button onclick="deleteAccount()" class="py-3 bg-red-500/10 text-red-500 font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg> Hesab&#305; Sil</button>
       </div>
     </div>
 
 
     <div class="mt-12 p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-md">
       <div class="flex items-center gap-2 mb-1">
-        <span class="w-9 h-9 rounded-2xl bg-sky-500/10 flex items-center justify-center text-base">&#128172;</span>
+        <span class="w-9 h-9 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-base"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
         <h3 class="text-sm font-extrabold dark:text-white text-gray-900">&#214;neri ve &#350;ikayet</h3>
       </div>
       <p class="text-xs text-gray-400 mb-5 leading-relaxed">Eksik buldu&#287;un bir ara&#231;, bir hata ya da fikrin mi var? Yaz, bize e-posta olarak ula&#351;s&#305;n.</p>
       <form onsubmit="sendFeedback(event)" class="space-y-3">
         <div class="grid sm:grid-cols-2 gap-3">
           <select id="fbType" class="fld font-bold">
-            <option value="Oneri">&#128161; &#214;neri</option>
-            <option value="Sikayet">&#9888;&#65039; &#350;ikayet</option>
-            <option value="Hata bildirimi">&#128030; Hata bildirimi</option>
-            <option value="Arac ekleme talebi">&#10133; Ara&#231; ekleme talebi</option>
-            <option value="Diger">&#128172; Di&#287;er</option>
+            <option value="Oneri">&#214;neri</option>
+            <option value="Sikayet">&#350;ikayet</option>
+            <option value="Hata bildirimi">Hata bildirimi</option>
+            <option value="Arac ekleme talebi">Ara&#231; ekleme talebi</option>
+            <option value="Diger">Di&#287;er</option>
           </select>
           <input id="fbEmail" type="email" placeholder="E-posta adresin (iste&#287;e ba&#287;l&#305;)" autocomplete="email" class="fld">
         </div>
         <textarea id="fbText" required rows="4" maxlength="1500" placeholder="Mesaj&#305;n&#305; buraya yaz..." class="fld"></textarea>
         <div id="fbMsg" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
         <div class="flex flex-col sm:flex-row gap-2">
-          <button type="submit" class="flex-1 py-3 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-xl text-xs">&#9993;&#65039; E-posta ile G&#246;nder</button>
-          <button type="button" onclick="copyFeedback()" class="py-3 px-5 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">&#128203; Metni Kopyala</button>
+          <button type="submit" class="flex-1 py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> E-posta ile G&#246;nder</button>
+          <button type="button" onclick="copyFeedback()" class="py-3 px-5 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Metni Kopyala</button>
         </div>
         <p id="fbHint" class="text-[11px] text-gray-400 leading-relaxed"></p>
       </form>
@@ -324,18 +324,18 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- FAVORILER -->
   <div id="pageFavorites" class="hidden max-w-5xl mx-auto space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-2">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-500/10 text-rose-500 border border-rose-500/20 mb-4">&#10084;&#65039; Favorilerim</div>
+      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-rose-500/10 text-rose-500 border border-rose-500/20 mb-4">Favorilerim</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Kaydettiklerim</h1>
       <p class="text-gray-400 text-sm">Be&#287;endi&#287;in ara&#231;lar, eklentiler ve kaynaklar kategorilere ayr&#305;lm&#305;&#351; halde burada.</p>
     </div>
   <div id="profileFavs" class="space-y-10">
     <div class="flex items-center gap-2 px-1">
-      <span class="w-9 h-9 rounded-2xl bg-rose-500/10 flex items-center justify-center text-base">&#10084;&#65039;</span>
+      <span class="w-9 h-9 rounded-2xl bg-rose-500/10 flex items-center justify-center text-base"></span>
       <span class="text-xs font-bold uppercase tracking-wider text-rose-500">Favorilerim</span>
       <span id="profFavTotal" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
     </div>
     <div id="favEmptyAll" class="hidden text-center py-12 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200">
-      <div class="text-3xl mb-3">&#129293;</div>
+      <div class="text-3xl mb-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></svg></div>
       <h3 class="text-base font-bold dark:text-white text-gray-900">Hen&#252;z favorin yok</h3>
       <p class="text-gray-400 text-xs mt-1 mb-4">Kartlardaki kalp simgesine basarak buraya ekleyebilirsin.</p>
       <div class="flex flex-wrap justify-center gap-2">
@@ -351,7 +351,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- CLAUDE EKLENTILERI -->
   <div id="pagePlugins" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-500 border border-amber-500/20 mb-4">&#129513; Claude Eklentileri</div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a6 6 0 0 1-12 0V8z"/></svg> Claude Eklentileri</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Claude Eklentileri ve MCP Sunucular&#305;</h1>
       <p class="text-gray-400 text-sm">Claude'u kendi ara&#231;lar&#305;n&#305;za, dosyalariniza ve servislerinize ba&#287;layan a&#231;&#305;k kaynak eklentiler.</p>
       <div class="mt-6">
@@ -372,7 +372,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- E-KITAP -->
   <div id="pageEbooks" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 mb-4">&#128218; &#220;cretsiz Kaynaklar</div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> &#220;cretsiz Kaynaklar</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">E-Kitap ve E&#287;itim Kaynaklar&#305;</h1>
       <p class="text-gray-400 text-sm">Yapay zeka &#246;&#287;renmek i&#231;in se&#231;ilmi&#351;, tamam&#305; &#252;cretsiz kitaplar ve kurslar. &#304;&#231;erik b&#252;y&#252;k &#246;l&#231;&#252;de &#304;ngilizcedir.</p>
       <div class="mt-6">
@@ -389,14 +389,14 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
   <!-- PROMPT REHBERI -->
   <div id="pagePrompt" class="hidden space-y-10">
     <div class="text-center max-w-3xl mx-auto">
-      <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-4">&#9999;&#65039; Prompt Olu&#351;turucu</div>
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg> Prompt Olu&#351;turucu</div>
       <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">Prompt Olu&#351;turucu</h1>
       <p class="text-gray-400 text-sm">Alanlar&#305; doldur, yapay zekaya yap&#305;&#351;t&#305;rabilece&#287;in haz&#305;r istemi an&#305;nda al.</p>
     </div>
 
 
     <div class="p-6 sm:p-8 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl">
-      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-1">&#128736;&#65039; Prompt Olu&#351;turucu</h3>
+      <h3 class="text-lg font-extrabold dark:text-white text-gray-900 mb-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg> Prompt Olu&#351;turucu</h3>
       <p class="text-xs text-gray-400 mb-5">A&#351;a&#287;&#305;daki alanlar&#305; doldur, altta haz&#305;r istemini kopyala.</p>
       <div class="grid sm:grid-cols-2 gap-3">
         <select id="pbRole" onchange="buildPrompt()" class="fld"><option value="">Kim gibi davrans&#305;n? (rol)</option></select>
@@ -409,7 +409,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <div class="mt-5">
         <div class="flex items-center justify-between mb-2">
           <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Haz&#305;r istemin</span>
-          <button onclick="copyPrompt()" class="px-3.5 py-2 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold">&#128203; Kopyala</button>
+          <button onclick="copyPrompt()" class="px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Kopyala</button>
         </div>
         <pre id="pbOutput" class="p-4 rounded-2xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 text-xs dark:text-gray-200 text-gray-800 whitespace-pre-wrap leading-relaxed min-h-[6rem]"></pre>
         <div id="pbCopied" class="hidden mt-2 text-xs font-bold text-emerald-500">Panoya kopyaland&#305;.</div>
@@ -461,7 +461,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 
   <!-- YASAL -->
   <div id="pageLegal" class="hidden max-w-3xl mx-auto space-y-5">
-    <div class="flex gap-1 p-1 rounded-xl dark:bg-gray-900 bg-gray-100 text-xs font-bold overflow-x-auto no-scrollbar"><button data-lg="gizlilik" onclick="openLegal('gizlilik')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#128274; Gizlilik Politikas&#305;</button><button data-lg="kvkk" onclick="openLegal('kvkk')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#128196; KVKK Ayd&#305;nlatma Metni</button><button data-lg="kullanim-sartlari" onclick="openLegal('kullanim-sartlari')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#128220; Kullan&#305;m &#350;artlar&#305;</button><button data-lg="cerezler" onclick="openLegal('cerezler')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap">&#127850; &#199;erez Politikas&#305;</button></div>
+    <div class="flex gap-1 p-1 rounded-xl dark:bg-gray-900 bg-gray-100 text-xs font-bold overflow-x-auto no-scrollbar"><button data-lg="gizlilik" onclick="openLegal('gizlilik')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Gizlilik Politikas&#305;</button><button data-lg="kvkk" onclick="openLegal('kvkk')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg> KVKK Ayd&#305;nlatma Metni</button><button data-lg="kullanim-sartlari" onclick="openLegal('kullanim-sartlari')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg> Kullan&#305;m &#350;artlar&#305;</button><button data-lg="cerezler" onclick="openLegal('cerezler')" class="lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/></svg> &#199;erez Politikas&#305;</button></div>
     <div class="rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl p-6 sm:p-8 text-sm leading-relaxed dark:text-gray-300 text-gray-700"><section id="lg-gizlilik" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">Gizlilik Politikas&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">Bu politika, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> (bundan sonra &#8220;Site&#8221;) kullan&#305;l&#305;rken hangi bilgilerin nerede tutuldu&#287;unu ve nas&#305;l kullan&#305;ld&#305;&#287;&#305;n&#305; a&#231;&#305;klar. K&#305;sa &#246;zet: <strong class="dark:text-gray-100 text-gray-900">Hesap bilgilerin, favorilerin ve ayarlar&#305;n sunucumuza g&#246;nderilmez; yaln&#305;zca senin taray&#305;c&#305;nda saklan&#305;r.</strong></p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Senin taray&#305;c&#305;nda saklanan bilgiler</h3><p class="mb-3">Site, a&#351;a&#287;&#305;daki bilgileri taray&#305;c&#305;n&#305;n yerel depolama alan&#305;nda (localStorage) tutar. Bu bilgiler bize ya da ba&#351;ka bir sunucuya iletilmez; taray&#305;c&#305; verilerini sildi&#287;inde kal&#305;c&#305; olarak silinir:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Hesap olu&#351;turursan: ad soyad, e-posta adresi, ilgi alanlar&#305;n, profil notun ve se&#231;ti&#287;in avatar</li><li>&#350;ifren: d&#252;z metin olarak de&#287;il, cihaz&#305;nda PBKDF2 y&#246;ntemiyle &#351;ifrelenmi&#351; (hash) h&#226;liyle</li><li>Favoriye ekledi&#287;in ara&#231;lar, eklentiler ve e-kitaplar; son bakt&#305;&#287;&#305;n ara&#231;lar</li><li>Tema tercihin (a&#231;&#305;k/koyu) ve ara&#231; sayfalar&#305;na yazd&#305;&#287;&#305;n yorumlar</li></ul><p class="mb-3">Hesab&#305;n &#351;u an yaln&#305;zca kulland&#305;&#287;&#305;n taray&#305;c&#305;da ge&#231;erlidir. Ba&#351;ka bir cihazdan giri&#351; yapamazs&#305;n ve taray&#305;c&#305; verilerini temizlersen hesab&#305;n da silinir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Ziyaret istatistikleri</h3><p class="mb-3">Sitenin ka&#231; ki&#351;i taraf&#305;ndan ve hangi sayfalar&#305;n&#305;n ziyaret edildi&#287;ini g&#246;rmek i&#231;in <strong class="dark:text-gray-100 text-gray-900">Cloudflare Web Analytics</strong> kullan&#305;yoruz. Bu hizmet &#231;erez kullanmaz, seni ki&#351;isel olarak tan&#305;mlamaz ve ziyaret&#231;ileri tek tek takip etmez. Biz yaln&#305;zca toplam ziyaret say&#305;s&#305;, g&#246;r&#252;nt&#252;lenen sayfalar, &#252;lke, taray&#305;c&#305; ve cihaz t&#252;r&#252; gibi <strong class="dark:text-gray-100 text-gray-900">toplu ve anonim</strong> say&#305;lar&#305; g&#246;r&#252;r&#252;z.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. Bar&#305;nd&#305;rma ve &#252;&#231;&#252;nc&#252; taraf hizmetler</h3><p class="mb-3">Site <strong class="dark:text-gray-100 text-gray-900">GitHub Pages</strong> &#252;zerinde yay&#305;nlan&#305;r. Bir web sayfas&#305; a&#231;t&#305;&#287;&#305;nda taray&#305;c&#305;n, sayfay&#305; sunan sunuculara IP adresin ve taray&#305;c&#305; bilgilerin gibi teknik bilgileri teknik zorunluluk gere&#287;i iletir. Sitenin d&#252;zg&#252;n g&#246;r&#252;nmesi i&#231;in a&#351;a&#287;&#305;daki hizmetlerden dosya y&#252;klenir; bu hizmetler kendi gizlilik politikalar&#305;na tabidir:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>GitHub Pages (sitenin bar&#305;nd&#305;r&#305;lmas&#305;)</li><li>Cloudflare (ziyaret istatistikleri)</li><li>Tailwind CSS CDN ve Google Fonts (tasar&#305;m ve yaz&#305; tipleri)</li><li>Google favicon servisi, Simple Icons ve Unsplash (ara&#231; logolar&#305; ve g&#246;rseller)</li><li>rss2json (yaln&#305;zca kendi haber listemiz y&#252;klenemezse yedek haber kayna&#287;&#305; olarak)</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. &#214;neri ve &#351;ik&#226;yet mesajlar&#305;</h3><p class="mb-3">Profil sayfas&#305;ndaki &#214;neri / &#350;ik&#226;yet formunu kulland&#305;&#287;&#305;nda mesaj&#305;n <strong class="dark:text-gray-100 text-gray-900">kendi e-posta uygulaman</strong> &#252;zerinden bize g&#246;nderilir. Bu durumda e-posta adresini ve yazd&#305;&#287;&#305;n mesaj&#305; g&#246;r&#252;r&#252;z. Bu bilgileri yaln&#305;zca mesaj&#305;na cevap vermek ve Siteyi geli&#351;tirmek i&#231;in kullan&#305;r&#305;z; &#252;&#231;&#252;nc&#252; ki&#351;ilerle payla&#351;may&#305;z ve satmay&#305;z.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. D&#305;&#351; ba&#287;lant&#305;lar</h3><p class="mb-3">Site, listelenen yapay zeka ara&#231;lar&#305;n&#305;n, haber kaynaklar&#305;n&#305;n ve di&#287;er sitelerin ba&#287;lant&#305;lar&#305;n&#305; i&#231;erir. Bu ba&#287;lant&#305;lara t&#305;klad&#305;&#287;&#305;nda o sitenin kendi gizlilik politikas&#305; ge&#231;erli olur; o sitelerin uygulamalar&#305;ndan sorumlu de&#287;iliz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. &#199;ocuklar</h3><p class="mb-3">Site genel bilgilendirme ama&#231;l&#305;d&#305;r. 18 ya&#351;&#305;ndan k&#252;&#231;&#252;ksen hesap olu&#351;turmadan &#246;nce bir velinden izin alman&#305; &#246;neririz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. De&#287;i&#351;iklikler ve ileti&#351;im</h3><p class="mb-3">Bu politikay&#305; gerekti&#287;inde g&#252;ncelleyebiliriz; g&#252;ncel h&#226;li her zaman bu sayfadad&#305;r. Sorular&#305;n&#305; <span class="lgContact"></span> iletebilirsin.</p></section><section id="lg-kvkk" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">KVKK Ayd&#305;nlatma Metni</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">6698 say&#305;l&#305; Ki&#351;isel Verilerin Korunmas&#305; Kanunu (&#8220;KVKK&#8221;) kapsam&#305;nda, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> ziyaret&#231;ilerini ve kullan&#305;c&#305;lar&#305;n&#305; bilgilendirmek amac&#305;yla bu metin haz&#305;rlanm&#305;&#351;t&#305;r.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Veri sorumlusu</h3><p class="mb-3">Veri sorumlusu: <strong class="dark:text-gray-100 text-gray-900"><span class="lgOwner"></span></strong>. Bize <span class="lgContact"></span> ula&#351;abilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Hangi ki&#351;isel veriler i&#351;leniyor?</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li><strong class="dark:text-gray-100 text-gray-900">Hesap bilgileri</strong> (ad soyad, e-posta, ilgi alanlar&#305;): Yaln&#305;zca senin taray&#305;c&#305;nda saklan&#305;r, taraf&#305;m&#305;za aktar&#305;lmaz.</li><li><strong class="dark:text-gray-100 text-gray-900">&#304;leti&#351;im bilgileri</strong> (e-posta adresin ve mesaj i&#231;eri&#287;in): Yaln&#305;zca &#246;neri/&#351;ik&#226;yet i&#231;in bize e-posta g&#246;nderdi&#287;inde taraf&#305;m&#305;za ula&#351;&#305;r.</li><li><strong class="dark:text-gray-100 text-gray-900">Teknik veriler</strong> (IP adresi, taray&#305;c&#305; ve cihaz bilgisi): Sayfa a&#231;&#305;l&#305;rken bar&#305;nd&#305;rma ve altyap&#305; sa&#287;lay&#305;c&#305;lar&#305;na teknik zorunluluk gere&#287;i iletilir. Ziyaret istatistikleri anonim ve toplu olarak tutulur.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#304;&#351;leme ama&#231;lar&#305;</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Siteyi sunmak, g&#252;venli&#287;ini ve d&#252;zg&#252;n &#231;al&#305;&#351;mas&#305;n&#305; sa&#287;lamak</li><li>&#214;neri ve &#351;ik&#226;yetlerine cevap vermek</li><li>Toplu ziyaret istatistikleriyle Siteyi geli&#351;tirmek</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Hukuki sebepler</h3><p class="mb-3">Ki&#351;isel verilerin KVKK madde 5/2 kapsam&#305;nda; bir s&#246;zle&#351;menin kurulmas&#305; veya ifas&#305;yla do&#287;rudan ilgili olmas&#305;, veri sorumlusunun hukuki y&#252;k&#252;ml&#252;l&#252;&#287;&#252;n&#252; yerine getirmesi ve temel hak ve &#246;zg&#252;rl&#252;klerine zarar vermemek kayd&#305;yla veri sorumlusunun me&#351;ru menfaati hukuki sebeplerine dayan&#305;larak i&#351;lenir. Hesap bilgilerinin taray&#305;c&#305;nda saklanmas&#305; i&#351;e kay&#305;t s&#305;ras&#305;nda verdi&#287;in onaya dayan&#305;r.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. Aktar&#305;m</h3><p class="mb-3">Ki&#351;isel verilerini satmay&#305;z ve pazarlama amac&#305;yla kimseyle payla&#351;may&#305;z. Site, yurt d&#305;&#351;&#305;nda sunucular&#305; bulunan hizmet sa&#287;lay&#305;c&#305;lar (GitHub, Cloudflare, Google gibi) &#252;zerinden &#231;al&#305;&#351;t&#305;&#287;&#305; i&#231;in sayfa a&#231;&#305;l&#305;rken olu&#351;an teknik veriler bu sa&#287;lay&#305;c&#305;lar&#305;n sunucular&#305;na iletilebilir. Yasal bir zorunluluk olmas&#305; h&#226;linde yetkili kamu kurumlar&#305;yla payla&#351;&#305;m yap&#305;labilir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. Saklama s&#252;resi</h3><p class="mb-3">Taray&#305;c&#305;nda tutulan bilgiler sen silene kadar cihaz&#305;nda kal&#305;r. Bize g&#246;nderdi&#287;in e-postalar, talebin sonu&#231;land&#305;ktan sonra en fazla 2 y&#305;l saklan&#305;r ve ard&#305;ndan silinir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. Haklar&#305;n (KVKK madde 11)</h3><p class="mb-3">Bize ba&#351;vurarak; ki&#351;isel verilerinin i&#351;lenip i&#351;lenmedi&#287;ini &#246;&#287;renme, i&#351;lenmi&#351;se bilgi talep etme, i&#351;lenme amac&#305;n&#305; ve amac&#305;na uygun kullan&#305;l&#305;p kullan&#305;lmad&#305;&#287;&#305;n&#305; &#246;&#287;renme, aktar&#305;ld&#305;&#287;&#305; &#252;&#231;&#252;nc&#252; ki&#351;ileri bilme, eksik veya yanl&#305;&#351; i&#351;lenmi&#351;se d&#252;zeltilmesini, KVKK'daki &#351;artlar &#231;er&#231;evesinde silinmesini veya yok edilmesini isteme, bu i&#351;lemlerin aktar&#305;lan &#252;&#231;&#252;nc&#252; ki&#351;ilere bildirilmesini isteme, otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonu&#231; &#231;&#305;kmas&#305;na itiraz etme ve kanuna ayk&#305;r&#305; i&#351;leme nedeniyle zarara u&#287;raman h&#226;linde zarar&#305;n giderilmesini talep etme haklar&#305;na sahipsin.</p><p class="mb-3">Ba&#351;vurular&#305;n&#305; <span class="lgContact"></span> iletebilirsin. Ba&#351;vurun en ge&#231; 30 g&#252;n i&#231;inde &#252;cretsiz olarak sonu&#231;land&#305;r&#305;l&#305;r.</p></section><section id="lg-kullanim-sartlari" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">Kullan&#305;m &#350;artlar&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">Bu &#351;artlar, <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span></strong> (bundan sonra &#8220;Site&#8221;) kullan&#305;m&#305;n&#305; d&#252;zenler. Siteyi kullanarak bu &#351;artlar&#305; kabul etmi&#351; say&#305;l&#305;rs&#305;n.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Sitenin amac&#305;</h3><p class="mb-3">Site, yapay zeka ara&#231;lar&#305;, haberleri, eklentileri, e-kitaplar&#305; ve i&#351; modelleri hakk&#305;nda <strong class="dark:text-gray-100 text-gray-900">&#252;cretsiz ve genel bilgilendirme</strong> ama&#231;l&#305; bir rehberdir. Buradaki i&#231;erikler yat&#305;r&#305;m, hukuk, vergi veya mesleki dan&#305;&#351;manl&#305;k de&#287;ildir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. Bilgilerin do&#287;rulu&#287;u</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Ara&#231; listeleri, a&#231;&#305;klamalar ve haberlerin bir k&#305;sm&#305; otomatik sistemlerle toplan&#305;r ve yapay zeka yard&#305;m&#305;yla T&#252;rk&#231;eye &#231;evrilir. Bu nedenle hatal&#305;, eksik veya g&#252;ncelli&#287;ini yitirmi&#351; bilgi bulunabilir.</li><li>Ara&#231;lar&#305;n fiyatlar&#305;, &#246;zellikleri ve kullan&#305;m ko&#351;ullar&#305; ilgili &#351;irketler taraf&#305;ndan haber verilmeden de&#287;i&#351;tirilebilir. Bir arac&#305; kullanmadan veya sat&#305;n almadan &#246;nce bilgileri her zaman arac&#305;n kendi sitesinden kontrol et.</li><li>&#304;&#351; modelleri b&#246;l&#252;m&#252;ndeki kazan&#231; &#246;rnekleri garanti de&#287;ildir; sonu&#231;lar ki&#351;iden ki&#351;iye b&#252;y&#252;k farkl&#305;l&#305;k g&#246;sterir.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#220;&#231;&#252;nc&#252; taraf siteler ve markalar</h3><p class="mb-3">Sitede listelenen ara&#231;lar ve ba&#287;lant&#305; verilen siteler bize ait de&#287;ildir; onlar&#305; kullan&#305;rken o sitelerin kendi &#351;artlar&#305; ve gizlilik politikalar&#305; ge&#231;erlidir. Sitede ge&#231;en marka, logo ve &#252;r&#252;n adlar&#305; sahiplerine aittir ve yaln&#305;zca tan&#305;t&#305;m ve bilgilendirme amac&#305;yla kullan&#305;l&#305;r. Bir markan&#305;n sahibiysen ve i&#231;eri&#287;in kald&#305;r&#305;lmas&#305;n&#305; ya da d&#252;zeltilmesini istiyorsan bize ula&#351;abilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Hesaplar</h3><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Hesab&#305;n yaln&#305;zca kulland&#305;&#287;&#305;n taray&#305;c&#305;da saklan&#305;r. Taray&#305;c&#305; verilerini silersen hesab&#305;n, favorilerin ve ayarlar&#305;n geri getirilemez &#351;ekilde silinir.</li><li>&#350;ifreni g&#252;vende tutmak senin sorumlulu&#287;undad&#305;r.</li><li>Sitede ileride &#252;cretli (premium) &#246;zellikler sunulabilir. Bu durumda &#252;cretli &#246;zelliklere &#246;zel &#351;artlar ayr&#305;ca duyurulur.</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">5. Kullan&#305;m kurallar&#305;</h3><p class="mb-3">Siteyi kullan&#305;rken &#351;unlar&#305; yapmamay&#305; kabul edersin:</p><ul class="list-disc pl-5 space-y-1.5 mb-3"><li>Siteye zarar verecek, a&#351;&#305;r&#305; y&#252;k bindirecek veya g&#252;venli&#287;ini a&#351;maya &#231;al&#305;&#351;acak i&#351;lemler</li><li>Yorum veya mesajlarda hakaret, nefret s&#246;ylemi, spam ya da yasa d&#305;&#351;&#305; i&#231;erik payla&#351;mak</li><li>Sitenin i&#231;eri&#287;ini toplu olarak kopyalay&#305;p kendi i&#231;eri&#287;inmi&#351; gibi yay&#305;nlamak</li></ul><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">6. Fikri m&#252;lkiyet</h3><p class="mb-3">Sitenin tasar&#305;m&#305;, &#246;zg&#252;n metinleri, i&#351; modeli ve prompt rehberleri gibi i&#231;erikleri <span class="lgSite">AI Rehberi</span> y&#246;netimine aittir. Kaynak g&#246;stererek k&#305;sa al&#305;nt&#305; yapabilirsin.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">7. Sorumlulu&#287;un s&#305;n&#305;r&#305;</h3><p class="mb-3">Site &#8220;oldu&#287;u gibi&#8221; sunulur. Sitenin kesintisiz veya hatas&#305;z &#231;al&#305;&#351;aca&#287;&#305;n&#305; garanti etmeyiz. Sitedeki bilgilere dayanarak ald&#305;&#287;&#305;n kararlardan ve &#252;&#231;&#252;nc&#252; taraf ara&#231;lar&#305;n kullan&#305;m&#305;ndan do&#287;abilecek zararlardan, yasalar&#305;n izin verdi&#287;i &#246;l&#231;&#252;de sorumlu de&#287;iliz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">8. De&#287;i&#351;iklikler ve uygulanacak hukuk</h3><p class="mb-3">Bu &#351;artlar&#305; gerekti&#287;inde g&#252;ncelleyebiliriz; g&#252;ncel h&#226;li her zaman bu sayfadad&#305;r. Bu &#351;artlar T&#252;rkiye Cumhuriyeti hukukuna tabidir. Sorular&#305;n&#305; <span class="lgContact"></span> iletebilirsin.</p></section><section id="lg-cerezler" class="lgSec hidden"><h2 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-1">&#199;erez Politikas&#305;</h2><div class="text-[11px] text-gray-400 mb-5">Son g&#252;ncelleme: 4 Kas&#305;m 2026</div><p class="mb-3">K&#305;sa cevap: <strong class="dark:text-gray-100 text-gray-900"><span class="lgSite">AI Rehberi</span> &#231;erez kullanmaz.</strong></p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">1. Taray&#305;c&#305; depolamas&#305;</h3><p class="mb-3">&#199;erez yerine, hesab&#305;n&#305;, favorilerini ve tema tercihini hat&#305;rlamak i&#231;in taray&#305;c&#305;n&#305;n yerel depolama alan&#305;n&#305; (localStorage) kullan&#305;r&#305;z. Bu bilgiler yaln&#305;zca senin cihaz&#305;nda kal&#305;r, bize g&#246;nderilmez ve reklam ya da takip amac&#305;yla kullan&#305;lmaz. Sitenin bu &#246;zellikleri sunabilmesi i&#231;in gereklidir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">2. &#304;statistik</h3><p class="mb-3">Ziyaret istatistikleri i&#231;in kulland&#305;&#287;&#305;m&#305;z Cloudflare Web Analytics &#231;erezsiz &#231;al&#305;&#351;&#305;r ve seni ki&#351;isel olarak tan&#305;mlamaz.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">3. &#220;&#231;&#252;nc&#252; taraf hizmetler</h3><p class="mb-3">Tasar&#305;m ve g&#246;rseller i&#231;in dosya y&#252;kledi&#287;imiz hizmetler (Google Fonts, Tailwind CDN, Unsplash gibi) kendi teknik kay&#305;tlar&#305;n&#305; tutabilir. Bu hizmetler kendi politikalar&#305;na tabidir.</p><h3 class="text-base font-extrabold dark:text-white text-gray-900 mt-6 mb-2">4. Nas&#305;l silebilirim?</h3><p class="mb-3">Taray&#305;c&#305;n&#305;n ayarlar&#305;ndan bu siteye ait &#8220;site verilerini&#8221; sildi&#287;inde t&#252;m bilgiler kald&#305;r&#305;l&#305;r. Bunu yaparsan hesab&#305;n ve favorilerin de silinir.</p></section><p class="mt-8 pt-4 border-t dark:border-gray-800 border-gray-200 text-[11px] text-gray-400">Bu metinler genel bilgilendirme amac&#305;yla haz&#305;rlanm&#305;&#351;t&#305;r.</p></div>
   </div>
 </main>
@@ -472,7 +472,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 
 <div id="proModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden z-50">
   <div class="dark:bg-gray-900 bg-white border border-amber-500/50 rounded-3xl w-full max-w-2xl relative shadow-2xl max-h-[92vh] overflow-y-auto">
-    <button onclick="closeProModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 text-white font-bold hover:bg-black/50">&#10005;</button>
+    <button onclick="closeProModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-black/30 text-white font-bold hover:bg-black/50"></button>
     <div class="p-6 sm:p-8 text-center bg-gradient-to-br from-amber-500/20 via-orange-500/10 to-transparent rounded-t-3xl">
       <span class="inline-block px-3 py-1 rounded-full bg-amber-500 text-black text-[11px] font-extrabold mb-3">&#199;OK YAKINDA</span>
       <h3 class="text-2xl font-extrabold dark:text-white text-gray-900 mb-2">AI Rehberi Premium</h3>
@@ -482,12 +482,12 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
       <div class="p-5 rounded-2xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200">
         <div class="text-xs font-bold text-gray-400 uppercase mb-1">&#220;cretsiz</div>
         <div class="text-2xl font-extrabold dark:text-white text-gray-900 mb-3">&#8378;0</div>
-        <ul class="space-y-2 text-xs dark:text-gray-300 text-gray-700"><li>&#9989; T&#252;m AI ara&#231;lar&#305;na eri&#351;im</li><li>&#9989; Ak&#305;ll&#305; arama ve AI asistan</li><li>&#9989; T&#252;rk&#231;e AI haberleri</li><li>&#9989; Favoriler ve yorumlar</li></ul>
+        <ul class="space-y-2 text-xs dark:text-gray-300 text-gray-700"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> T&#252;m AI ara&#231;lar&#305;na eri&#351;im</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Ak&#305;ll&#305; arama ve AI asistan</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> T&#252;rk&#231;e AI haberleri</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Favoriler ve yorumlar</li></ul>
       </div>
       <div class="p-5 rounded-2xl bg-gradient-to-br from-amber-500/15 to-orange-500/10 border border-amber-500/50">
         <div class="text-xs font-bold text-amber-500 uppercase mb-1">Premium</div>
         <div class="text-2xl font-extrabold dark:text-white text-gray-900 mb-3">&#8378;99 <span class="text-xs font-medium text-gray-400">/ ay (planlanan)</span></div>
-        <ul class="space-y-2 text-xs dark:text-gray-300 text-gray-700"><li>&#10024; Haftal&#305;k T&#252;rk&#231;e AI b&#252;lteni</li><li>&#128276; Yeni ara&#231; bildirimleri</li><li>&#128193; &#214;zel ara&#231; koleksiyonlar&#305;</li><li>&#128640; Yeni &#246;zelliklere erken eri&#351;im</li><li>&#127941; Profil rozeti</li></ul>
+        <ul class="space-y-2 text-xs dark:text-gray-300 text-gray-700"><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Haftal&#305;k T&#252;rk&#231;e AI b&#252;lteni</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Yeni ara&#231; bildirimleri</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> &#214;zel ara&#231; koleksiyonlar&#305;</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Yeni &#246;zelliklere erken eri&#351;im</li><li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Profil rozeti</li></ul>
       </div>
     </div>
     <div class="p-6 sm:p-8">
@@ -503,8 +503,8 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 <button id="asstBtn" onclick="toggleAssistant()" class="fixed bottom-5 right-5 z-40 flex items-center gap-2 px-4 h-12 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs shadow-2xl shadow-purple-600/40 transition"><span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm">?</span><span class="hidden sm:inline">Yard&#305;m</span></button>
 <div id="asstPanel" class="hidden fixed bottom-5 right-5 z-50 w-[calc(100vw-2.5rem)] sm:w-96 h-[32rem] max-h-[85vh] flex flex-col rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-2xl overflow-hidden">
   <div class="px-4 py-3 bg-purple-600 text-white flex items-center justify-between">
-    <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center">&#128172;</span><div><div class="font-extrabold text-sm">Yard&#305;m Merkezi</div><div class="text-[11px] opacity-85 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>Sorular&#305;n&#305; hemen yan&#305;tlar</div></div></div>
-    <button onclick="toggleAssistant()" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 font-bold">&#10005;</button>
+    <div class="flex items-center gap-2.5"><span class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><div class="font-extrabold text-sm">Yard&#305;m Merkezi</div><div class="text-[11px] opacity-85 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>Sorular&#305;n&#305; hemen yan&#305;tlar</div></div></div>
+    <button onclick="toggleAssistant()" class="w-10 h-10 rounded-full bg-white/20 hover:bg-white/30 font-bold"></button>
   </div>
   <div id="asstMsgs" class="flex-1 overflow-y-auto p-4 space-y-3 text-xs"></div>
   <div id="asstChips" class="px-3 pb-2 flex gap-1.5 overflow-x-auto"></div>
@@ -517,7 +517,7 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 <div id="profileMenu" class="hidden fixed z-50 w-60">
   <div class="dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 rounded-2xl shadow-2xl overflow-hidden">
     <div class="px-4 py-3 border-b dark:border-gray-800 border-gray-100 flex items-center gap-3">
-      <span id="pmAvatar" class="w-9 h-9 rounded-xl dark:bg-gray-950 bg-gray-100 flex items-center justify-center text-lg">&#128100;</span>
+      <span id="pmAvatar" class="w-9 h-9 rounded-xl dark:bg-gray-950 bg-gray-100 flex items-center justify-center text-lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
       <span class="min-w-0">
         <span id="pmName" class="block text-xs font-bold dark:text-white text-gray-900 truncate">Misafir</span>
         <span id="pmSub" class="block text-[11px] text-gray-400 truncate">Giri&#351; yapmad&#305;n</span>
@@ -525,14 +525,14 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
     </div>
     <div class="p-1.5">
       <button onclick="pmGit('profil')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white transition">
-        <span>&#128100;</span><span class="flex-1 text-left">Profilim</span><span>&#8594;</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span class="flex-1 text-left">Profilim</span><span>&#8594;</span>
       </button>
       <button onclick="pmGit('favoriler')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-rose-600 hover:text-white transition">
-        <span>&#10084;&#65039;</span><span class="flex-1 text-left">Favorilerim</span>
+        <span></span><span class="flex-1 text-left">Favorilerim</span>
         <span id="pmFavCount" class="px-1.5 py-0.5 rounded-full text-[10px] dark:bg-gray-800 bg-gray-100 text-gray-400">0</span>
       </button>
       <button onclick="pmGit('oneri')" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-sky-600 hover:text-white transition">
-        <span>&#128172;</span><span class="flex-1 text-left">&#214;neri / &#350;ikayet</span><span>&#8594;</span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="flex-1 text-left">&#214;neri / &#350;ikayet</span><span>&#8594;</span>
       </button>
     </div>
     <div class="p-1.5 border-t dark:border-gray-800 border-gray-100">
@@ -547,6 +547,8 @@ html.light .pill-freemium { color: #2563eb; } html.light .pill-new { color: #933
 </footer>
 
 <script>
+var ICONS = {"grid": "<path d=\"M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z\"/>", "home": "<path d=\"m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/><path d=\"M9 22V12h6v10\"/>", "news": "<path d=\"M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2\"/><path d=\"M18 14h-8M15 18h-5M10 6h8v4h-8z\"/>", "briefcase": "<rect x=\"2\" y=\"7\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16\"/>", "plug": "<path d=\"M12 22v-5M9 8V2M15 8V2M18 8v5a6 6 0 0 1-12 0V8z\"/>", "book": "<path d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20\"/>", "pen": "<path d=\"M12 20h9\"/><path d=\"M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z\"/>", "search": "<circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/>", "user": "<path d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/>", "moon": "<path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z\"/>", "sun": "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M6.3 17.7l-1.4 1.4M19.1 4.9l-1.4 1.4\"/>", "refresh": "<path d=\"M21 12a9 9 0 1 1-3-6.7L21 8\"/><path d=\"M21 3v5h-5\"/>", "message": "<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/>", "heart": "<path d=\"M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z\"/>", "star": "<path d=\"m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z\"/>", "check": "<path d=\"M20 6 9 17l-5-5\"/>", "copy": "<rect x=\"9\" y=\"9\" width=\"13\" height=\"13\" rx=\"2\"/><path d=\"M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\"/>", "lock": "<rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\"/><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"/>", "file": "<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"/><path d=\"M14 2v6h6M16 13H8M16 17H8\"/>", "trophy": "<path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.7V17c0 .6-.5 1-1 1.2-1.2.5-2 2-2 3.8M14 14.7V17c0 .6.5 1 1 1.2 1.2.5 2 2 2 3.8M18 2H6v7a6 6 0 0 0 12 0z\"/>", "logout": "<path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9\"/>", "login": "<path d=\"M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3\"/>", "trash": "<path d=\"M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2\"/>", "mail": "<rect x=\"2\" y=\"4\" width=\"20\" height=\"16\" rx=\"2\"/><path d=\"m22 7-10 6L2 7\"/>", "help": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01\"/>", "alert": "<path d=\"m21.7 18-8-14a2 2 0 0 0-3.4 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3zM12 9v4M12 17h.01\"/>", "trend": "<path d=\"m22 7-8.5 8.5-5-5L2 17\"/><path d=\"M16 7h6v6\"/>", "building": "<rect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/><path d=\"M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01\"/>", "cpu": "<rect x=\"4\" y=\"4\" width=\"16\" height=\"16\" rx=\"2\"/><rect x=\"9\" y=\"9\" width=\"6\" height=\"6\"/><path d=\"M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2\"/>", "users": "<path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8\"/>", "target": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><circle cx=\"12\" cy=\"12\" r=\"6\"/><circle cx=\"12\" cy=\"12\" r=\"2\"/>", "list": "<path d=\"M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01\"/>", "coins": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8M12 18V6\"/>", "compass": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z\"/>"};
+function ico(n, cls) { return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="' + (cls || 'inline-block w-[1.1em] h-[1.1em] align-[-0.18em]') + '" aria-hidden="true">' + (ICONS[n] || '') + '</svg>'; }
 var IMG = {
   Metin: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=1200&q=80",
   G\u00f6rsel: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=1200&q=80",
@@ -702,16 +704,16 @@ function renderCardHTML(item, featured) {
       '<div class="logo-tile w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0 overflow-hidden" style="background:' + esc(item.brand.bg) + '"></div>' +
       '<div class="min-w-0 flex-1 pt-0.5">' +
         '<h3 class="font-bold text-[15px] leading-snug dark:text-white text-gray-900 group-hover:text-purple-400 transition truncate">' + esc(item.title) + '</h3>' +
-        '<div class="mt-1 text-[12px] text-gray-500 truncate">' + cm[2] + ' ' + esc(cm[1]) + '</div>' +
+        '<div class="mt-1 text-[12px] text-gray-500 truncate flex items-center gap-1">' + catIcon(item.category, 'w-3.5 h-3.5 flex-shrink-0') + esc(cm[1]) + '</div>' +
       '</div>' +
-      '<button data-fav="' + item.id + '" title="Favorilere ekle" class="w-9 h-9 -mt-1 -mr-1 rounded-full flex items-center justify-center text-sm transition dark:hover:bg-gray-800 hover:bg-gray-100">' + (isFav ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>' +
+      '<button data-fav="' + item.id + '" title="Favorilere ekle" class="w-9 h-9 -mt-1 -mr-1 rounded-full flex items-center justify-center text-sm transition dark:hover:bg-gray-800 hover:bg-gray-100">' + (isFav ? ico('heart', 'w-4 h-4 text-rose-500 fill-current') : ico('heart', 'w-4 h-4 text-gray-400')) + '</button>' +
     '</div>' +
     '<p class="mt-3.5 text-[13px] leading-relaxed dark:text-gray-400 text-gray-600 line-clamp-2 min-h-[2.6rem]">' + esc(String(item.desc || '').split('\n')[0]) + '</p>' +
     '<div class="mt-4 flex items-center gap-1.5 flex-wrap">' +
       fiyatPill(item.price) +
-      (vip ? '<span class="pill pill-pick">\u2605 Edit\u00f6r\u00fcn se\u00e7imi</span>' : '') +
+      (vip ? '<span class="pill pill-pick">' + ico('star', 'inline-block w-3 h-3 -mt-0.5 mr-0.5') + ' Edit\u00f6r\u00fcn se\u00e7imi</span>' : '') +
       (item.isNew ? '<span class="pill pill-new">Yeni</span>' : '') +
-      (item.stars ? '<span class="pill pill-paid">\u2b50 ' + kisaSayi(item.stars) + '</span>' : '') +
+      (item.stars ? '<span class="pill pill-paid">' + ico('star', 'inline-block w-3 h-3 -mt-0.5 mr-0.5') + ' ' + kisaSayi(item.stars) + '</span>' : '') +
       '<span class="ml-auto text-[12px] font-semibold text-gray-500 group-hover:text-purple-400 transition">\u0130ncele \u2192</span>' +
     '</div>';
   fillTile(card.querySelector('.logo-tile'), item.brand, item.title, { img: 'w-9 h-9 object-contain', letter: 'text-2xl' });
@@ -791,7 +793,7 @@ function toggleFav(kind, id, event) {
 }
 function heartBtn(kind, id) {
   var on = (kind === 'plugin' ? appState.favPlugins : appState.favEbooks).indexOf(id) > -1;
-  return '<button type="button" data-fav="1" title="Favorilere ekle" class="w-9 h-9 rounded-full dark:bg-gray-800 bg-gray-100 hover:bg-rose-500/20 flex items-center justify-center text-sm transition">' + (on ? '\u2764\ufe0f' : '\ud83e\udd0d') + '</button>';
+  return '<button type="button" data-fav="1" title="Favorilere ekle" class="w-9 h-9 rounded-full dark:bg-gray-800 bg-gray-100 hover:bg-rose-500/20 flex items-center justify-center text-sm transition">' + (on ? ico('heart', 'w-4 h-4 text-rose-500 fill-current') : ico('heart', 'w-4 h-4 text-gray-400')) + '</button>';
 }
 function toggleFavorite(id, event) {
   event.stopPropagation();
@@ -808,7 +810,7 @@ function openToolDetail(id) {
   if (!tool) return;
   appState.currentActiveToolId = id; pushViewed(id);
   document.getElementById('detailToolTitle').textContent = tool.title;
-  document.getElementById('detailToolCategory').textContent = catMeta(tool.category)[2] + ' ' + catMeta(tool.category)[1];
+  document.getElementById('detailToolCategory').textContent = catMeta(tool.category)[1];
   document.getElementById('detailToolDesc').textContent = tool.desc;
   document.getElementById('detailToolLink').href = safeUrl(tool.url);
   var img = document.getElementById('detailToolImage'), tile = document.getElementById('detailLogoTile');
@@ -996,7 +998,7 @@ function toggleDarkMode() {
   var dark = html.classList.contains('dark');
   html.classList.toggle('dark', !dark);
   html.classList.toggle('light', dark);
-  document.getElementById('themeIcon').innerText = dark ? "\u2600\ufe0f" : "\ud83c\udf19";
+  document.getElementById('themeIcon').innerHTML = ico(dark ? 'sun' : 'moon');
   document.getElementById('themeText').innerText = dark ? "Light" : "Dark";
   try { localStorage.setItem('ai_directory_theme', dark ? 'light' : 'dark'); } catch (e) {}
 }
@@ -1102,9 +1104,9 @@ function updateSearchHint(info) {
   var h = document.getElementById('searchHint'), ex = document.getElementById('searchExamples');
   if (!info) { h.textContent = ''; ex.classList.remove('hidden'); return; }
   ex.classList.add('hidden');
-  var parts = info.intents.map(function(c) { var m = catMeta(c); return m[2] + ' ' + m[1]; });
-  if (info.free) parts.push('\ud83d\udcb8 \u00fccretsiz se\u00e7enekler \u00f6ne \u00e7\u0131kar\u0131ld\u0131');
-  if (info.open) parts.push('\ud83e\udde9 a\u00e7\u0131k kaynak');
+  var parts = info.intents.map(function(c) { return catMeta(c)[1]; });
+  if (info.free) parts.push('\u00fccretsiz se\u00e7enekler \u00f6ne \u00e7\u0131kar\u0131ld\u0131');
+  if (info.open) parts.push('a\u00e7\u0131k kaynak');
   h.textContent = parts.length ? 'Anlad\u0131\u011f\u0131m: ' + parts.join(' \u00b7 ') : '';
 }
 function filterTools() {
@@ -1160,7 +1162,7 @@ function renderSearchBest(best) {
 function renderSearchTabs(nReady, nDev) {
   var box = document.getElementById('searchTabs'); if (!box) return;
   box.classList.remove('hidden'); box.innerHTML = '';
-  [['ready', '\u2705 Haz\u0131r ara\u00e7lar', nReady, 'Hemen kullanabilece\u011fin siteler ve uygulamalar'], ['dev', '\ud83d\udcbb Yaz\u0131l\u0131mc\u0131lar i\u00e7in', nDev, 'Kurulum gerektiren GitHub projeleri, pop\u00fclerli\u011fe g\u00f6re']].forEach(function(t) {
+  [['ready', 'Haz\u0131r ara\u00e7lar', nReady, 'Hemen kullanabilece\u011fin siteler ve uygulamalar'], ['dev', 'Yaz\u0131l\u0131mc\u0131lar i\u00e7in', nDev, 'Kurulum gerektiren GitHub projeleri, pop\u00fclerli\u011fe g\u00f6re']].forEach(function(t) {
     var on = (appState.searchTab || 'ready') === t[0], b = document.createElement('button');
     b.type = 'button'; b.title = t[3];
     b.className = 'px-4 py-2 rounded-xl text-xs font-bold border transition ' + (on ? 'bg-purple-600 text-white border-transparent' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
@@ -1179,6 +1181,21 @@ var CATS = [
   ['Video', 'Video & 3D', '\ud83c\udfac', 'from-orange-500 to-red-500'], ['\u00dcretkenlik', '\u00dcretkenlik & SEO', '\u26a1', 'from-amber-500 to-yellow-600'],
   ['open', 'A\u00e7\u0131k Kaynak', '\ud83e\udde9', 'from-lime-500 to-green-600']
 ];
+/* Kategori ikonlari (sade cizgi ikonlar) */
+var CAT_ICONS = {
+  all: '<path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/>',
+  'Metin': '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+  'G\u00f6rsel': '<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>',
+  'M\u00fczik': '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+  'Kodlama': '<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>',
+  'Video': '<rect x="2" y="6" width="14" height="12" rx="2"/><path d="m22 8-6 4 6 4z"/>',
+  '\u00dcretkenlik': '<path d="M13 2 3 14h9l-1 8 10-12h-9z"/>',
+  open: '<path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.1-1.3-.3-2.5-1-3.5.3-1.2.3-2.4 0-3.5 0 0-1 0-3 1.5a10.6 10.6 0 0 0-6 0C7 2 6 2 6 2c-.3 1.1-.3 2.3 0 3.5A5.4 5.4 0 0 0 5 9c0 3.5 3 5.5 6 5.5-.4.5-.8 1.2-1 2v5.5"/><path d="M9 18c-4.5 2-5-2-7-2"/>',
+  favorites: '<path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/>'
+};
+function catIcon(k, cls) {
+  return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="' + (cls || 'w-4 h-4') + '" aria-hidden="true">' + (CAT_ICONS[k] || CAT_ICONS.all) + '</svg>';
+}
 function catMeta(k) { for (var i = 0; i < CATS.length; i++) if (CATS[i][0] === k) return CATS[i]; return CATS[0]; }
 function renderChips() {
   var box = document.getElementById('categoryChips'); if (!box) return;
@@ -1187,8 +1204,8 @@ function renderChips() {
   appState.allTools.forEach(function(t) { counts[t.category] = (counts[t.category] || 0) + 1; if (t.openSource) counts.open = (counts.open || 0) + 1; });
   CATS.forEach(function(c) {
     var active = appState.currentCat === c[0], b = document.createElement('button');
-    b.className = 'cat-btn flex-shrink-0 flex items-center gap-2 pl-2 pr-3 py-2 rounded-2xl font-bold transition border ' + (active ? 'bg-gradient-to-r ' + c[3] + ' text-white border-transparent shadow-lg' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
-    b.innerHTML = '<span class="w-7 h-7 rounded-xl flex items-center justify-center text-sm ' + (active ? 'bg-white/20' : 'bg-gradient-to-br ' + c[3]) + '">' + c[2] + '</span><span>' + c[1] + '</span><span class="text-[10px] px-1.5 py-0.5 rounded-full ' + (active ? 'bg-white/25' : 'dark:bg-gray-800 bg-gray-100 text-gray-400') + '">' + (counts[c[0]] || 0) + '</span>';
+    b.className = 'cat-btn flex-shrink-0 flex items-center gap-2 pl-2 pr-3 py-2 rounded-2xl font-bold transition border ' + (active ? 'bg-purple-600 text-white border-transparent shadow-lg shadow-purple-900/20' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
+    b.innerHTML = '<span class="w-7 h-7 rounded-lg flex items-center justify-center ' + (active ? 'bg-white/15 text-white' : 'dark:bg-white/5 bg-gray-100 text-purple-400') + '">' + catIcon(c[0]) + '</span><span>' + c[1] + '</span><span class="text-[10px] px-1.5 py-0.5 rounded-full ' + (active ? 'bg-white/25' : 'dark:bg-gray-800 bg-gray-100 text-gray-400') + '">' + (counts[c[0]] || 0) + '</span>';
     b.onclick = function() { setCat(c[0]); };
     box.appendChild(b);
   });
@@ -1324,7 +1341,7 @@ function renderAccountUI() {
     var t = appState.allTools.find(function(x) { return x.id === id; }); if (!t) return; shown++;
     var b = document.createElement('button'); b.type = 'button';
     b.className = 'w-full text-left px-3 py-2 rounded-xl dark:bg-gray-950 bg-gray-100 hover:bg-purple-600/20 text-xs dark:text-gray-200 text-gray-800 transition';
-    b.textContent = catMeta(t.category)[2] + ' ' + t.title;
+    b.textContent = t.title;
     b.onclick = function() { closeProfileModal(); openToolDetail(t.id); }; rec.appendChild(b);
   });
   if (!shown) rec.innerHTML = '<p class="text-xs text-gray-400">Hen\u00fcz bir ara\u00e7 incelemedin.</p>';
@@ -1333,7 +1350,7 @@ function updateProfileStats() {
   var set = function(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
   set('profFavCount', appState.favorites.length + appState.favPlugins.length + appState.favEbooks.length); set('profViewCount', profile.viewed.length);
   var rc = 0; Object.keys(appState.reviewsDB).forEach(function(k) { rc += appState.reviewsDB[k].length; }); set('profReviewCount', rc);
-  set('headerAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
+  document.getElementById('headerAvatar').innerHTML = profile.loggedIn ? esc(profile.avatar) : ico('user');
   if (document.getElementById('profileMenu')) pmYenile();
   set('headerUserName', profile.loggedIn ? (profile.name.split(' ')[0] || 'Profil') : 'Giri\u015f Yap');
 }
@@ -1355,14 +1372,14 @@ function pmYenile() {
   var set = function (id, v) { var el = document.getElementById(id); if (el) el.textContent = v; };
   set('pmFavCount', toplam);
   document.querySelectorAll('.navFav').forEach(function (e) { e.textContent = toplam; e.className = 'navFav ml-0.5 px-1.5 rounded-full text-[10px] font-bold ' + (toplam ? 'bg-rose-500 text-white' : 'dark:bg-gray-800 bg-gray-200 text-gray-500'); });
-  set('pmAvatar', profile.loggedIn ? profile.avatar : '\ud83d\udc64');
+  document.getElementById('pmAvatar').innerHTML = profile.loggedIn ? esc(profile.avatar) : ico('user');
   set('pmName', profile.loggedIn ? (profile.name || 'Hesabim') : 'Misafir');
   set('pmSub', profile.loggedIn ? profile.email : 'Giri\u015f yapmad\u0131n');
   var a = document.getElementById('pmAuth');
   if (a) {
     a.innerHTML = profile.loggedIn
-      ? '<span>\ud83d\udeaa</span><span class="flex-1 text-left">\u00c7\u0131k\u0131\u015f Yap</span>'
-      : '<span>\ud83d\udd11</span><span class="flex-1 text-left">Giri\u015f Yap / Kay\u0131t Ol</span>';
+      ? '<span>' + ico('logout') + '</span><span class="flex-1 text-left">\u00c7\u0131k\u0131\u015f Yap</span>'
+      : '<span>' + ico('login') + '</span><span class="flex-1 text-left">Giri\u015f Yap / Kay\u0131t Ol</span>';
     a.className = 'w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition ' +
       (profile.loggedIn ? 'text-rose-500 hover:bg-rose-500/10' : 'dark:text-gray-200 text-gray-800 hover:bg-purple-600 hover:text-white');
   }
@@ -1415,24 +1432,24 @@ function joinWaitlist(e) {
   var email = document.getElementById('waitEmail').value.trim();
   lsSet('ai_directory_waitlist', { email: email, at: new Date().toISOString() });
   if (CONTACT_EMAIL) window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('Premium bekleme listesi') + '&body=' + encodeURIComponent('Bekleme listesine kat\u0131lmak istiyorum: ' + email);
-  showMsg('waitMsg', 'Te\u015fekk\u00fcrler! Premium a\u00e7\u0131ld\u0131\u011f\u0131nda haber verece\u011fiz. \ud83c\udf89', true);
+  showMsg('waitMsg', 'Te\u015fekk\u00fcrler! Premium a\u00e7\u0131ld\u0131\u011f\u0131nda haber verece\u011fiz.', true);
 }
 
 /* ===== Site asistan\u0131 ===== */
 // Ger\u00e7ek yapay zeka yan\u0131tlar\u0131 i\u00e7in worker/assistant-worker.js adresini buraya yaz. Bo\u015fsa asistan site i\u00e7i ak\u0131ll\u0131 modda \u00e7al\u0131\u015f\u0131r.
 var ASSISTANT_API_URL = '';
 var asstHistory = [];
-var ASST_TOPICS = [['hesap','\ud83d\udc64','Hesap ve giri\u015f'],['favori','\u2764\ufe0f','Favoriler'],['arac','\ud83d\udd0e','Ara\u00e7 bulma'],['premium','\u2b50','Premium'],['gizlilik','\ud83d\udd12','Gizlilik ve verilerim'],['sorun','\ud83d\udc1e','Sorun bildir'],['site','\ud83e\udded','Bu site ne i\u015fe yarar?'],['insan','\u2709\ufe0f','Bize yaz']];
-var HELP = [['hesap', /(kayit|uye ol|giris|hesap|sifre|profil|cikis|oturum)/, 'Hesap a\u00e7mak i\u00e7in sa\u011f \u00fcstteki \ud83d\udc64 butonuna, sonra "Giri\u015f Yap / Kay\u0131t Ol"a bas. Ad, e-posta ve \u015fifre yeterli.\n\nBilmen gereken: Hesab\u0131n \u015fu an yaln\u0131zca kay\u0131t oldu\u011fun taray\u0131c\u0131da saklan\u0131yor. Ba\u015fka cihazdan ayn\u0131 hesapla giri\u015f yapamazs\u0131n, taray\u0131c\u0131 verilerini silersen hesap da silinir.\n\n\u015eifreni unuttuysan \u015fimdilik yeni bir hesap a\u00e7man gerekiyor.', [['Kay\u0131t ol / Giri\u015f yap','giris'],['Profilime git','profil']]],
-  ['favori', /(favori|kalp|kaydet|begendi)/, 'Bir arac\u0131n, eklentinin ya da e-kitab\u0131n kart\u0131ndaki \ud83e\udd0d simgesine bas\u0131nca favorilerine eklenir.\n\nHepsini sa\u011f \u00fcstteki \ud83d\udc64 butonuna bas\u0131p \u2764\ufe0f Favorilerim\'e girerek g\u00f6r\u00fcrs\u00fcn; ara\u00e7, eklenti ve e-kitap diye ayr\u0131lm\u0131\u015f h\u00e2lde. Favoriler i\u00e7in hesap a\u00e7man gerekmez.', [['Favorilerime git','favoriler']]],
+var ASST_TOPICS = [['hesap','user','Hesap ve giri\u015f'],['favori','heart','Favoriler'],['arac','search','Ara\u00e7 bulma'],['premium','star','Premium'],['gizlilik','lock','Gizlilik ve verilerim'],['sorun','alert','Sorun bildir'],['site','compass','Bu site ne i\u015fe yarar?'],['insan','mail','Bize yaz']];
+var HELP = [['hesap', /(kayit|uye ol|giris|hesap|sifre|profil|cikis|oturum)/, 'Hesap a\u00e7mak i\u00e7in sa\u011f \u00fcstteki profil butonuna, sonra "Giri\u015f Yap / Kay\u0131t Ol"a bas. Ad, e-posta ve \u015fifre yeterli.\n\nBilmen gereken: Hesab\u0131n \u015fu an yaln\u0131zca kay\u0131t oldu\u011fun taray\u0131c\u0131da saklan\u0131yor. Ba\u015fka cihazdan ayn\u0131 hesapla giri\u015f yapamazs\u0131n, taray\u0131c\u0131 verilerini silersen hesap da silinir.\n\n\u015eifreni unuttuysan \u015fimdilik yeni bir hesap a\u00e7man gerekiyor.', [['Kay\u0131t ol / Giri\u015f yap','giris'],['Profilime git','profil']]],
+  ['favori', /(favori|kalp|kaydet|begendi)/, 'Bir arac\u0131n, eklentinin ya da e-kitab\u0131n kart\u0131ndaki kalp simgesine bas\u0131nca favorilerine eklenir.\n\nHepsini sa\u011f \u00fcstteki profil butonuna bas\u0131p \u2764\ufe0f Favorilerim\'e girerek g\u00f6r\u00fcrs\u00fcn; ara\u00e7, eklenti ve e-kitap diye ayr\u0131lm\u0131\u015f h\u00e2lde. Favoriler i\u00e7in hesap a\u00e7man gerekmez.', [['Favorilerime git','favoriler']]],
   ['arac', /(arac bul|nasil ara|arama|bulamiyorum|arac oner|hangi arac|ne kullan)/, 'Ana sayfadaki arama kutusuna ne yapmak istedi\u011fini kendi c\u00fcmlenle yazman yeterli. \u00d6rne\u011fin: "bana bir video yap", "\u00fccretsiz logo arac\u0131", "sesimi klonla".\n\nAra\u00e7lar sayfas\u0131nda kategoriye ve fiyata g\u00f6re de filtreleyebilirsin. \u0130stersen ihtiyac\u0131n\u0131 buraya da yazabilirsin, ben de birka\u00e7 ara\u00e7 \u00f6nereyim.', [['Ara\u00e7lar sayfas\u0131','araclar']]],
   ['premium', /(premium|uyelik|abonelik|odeme|para|ucret|fiyat)/, 'Sitedeki b\u00fct\u00fcn ara\u00e7lar, haberler ve rehberler \u00fccretsiz. Premium \u00fcyelik hen\u00fcz a\u00e7\u0131lmad\u0131, \u015fu an hi\u00e7bir \u00f6deme al\u0131nm\u0131yor.\n\nA\u00e7\u0131ld\u0131\u011f\u0131nda haber almak istersen sa\u011f \u00fcstteki \u2b50 Premium butonundan bekleme listesine kat\u0131labilirsin. Ara\u00e7lar\u0131n kendi fiyatlar\u0131 i\u015fe o arac\u0131n sitesinde belirlenir.', [['Bekleme listesi','premium']]],
   ['gizlilik', /(gizlilik|kvkk|verilerim|veri|cerez|guvenli|kisisel)/, 'Hesap bilgilerin, favorilerin ve ayarlar\u0131n bize g\u00f6nderilmez, yaln\u0131zca senin taray\u0131c\u0131nda saklan\u0131r. \u015eifren de cihaz\u0131nda \u015fifrelenerek tutulur.\n\nZiyaret istatistikleri \u00e7erezsiz ve anonim. Ayr\u0131nt\u0131lar Gizlilik Politikas\u0131 ve KVKK Ayd\u0131nlatma Metni sayfalar\u0131nda.', [['Gizlilik Politikas\u0131','gizlilik'],['KVKK Metni','kvkk']]],
-  ['sorun', /(hata|bug|calismiyor|acilmiyor|bozuk|sorun|sikayet|yanlis)/, 'Sorun ya\u015fad\u0131\u011f\u0131na \u00fcz\u00fcld\u00fcm \ud83d\ude15 \u00c7o\u011fu sorunu \u015fu iki ad\u0131m \u00e7\u00f6z\u00fcyor:\n1. Sayfay\u0131 yenile (bilgisayarda Ctrl + F5).\n2. H\u00e2l\u00e2 olmuyorsa ba\u015fka bir taray\u0131c\u0131da dene.\n\nD\u00fczelmezse hangi sayfada, ne yap\u0131nca oldu\u011funu bize yaz, inceleyelim.', [['Sorunu bize bildir','oneri']]],
+  ['sorun', /(hata|bug|calismiyor|acilmiyor|bozuk|sorun|sikayet|yanlis)/, 'Sorun ya\u015fad\u0131\u011f\u0131na \u00fcz\u00fcld\u00fcm \u00c7o\u011fu sorunu \u015fu iki ad\u0131m \u00e7\u00f6z\u00fcyor:\n1. Sayfay\u0131 yenile (bilgisayarda Ctrl + F5).\n2. H\u00e2l\u00e2 olmuyorsa ba\u015fka bir taray\u0131c\u0131da dene.\n\nD\u00fczelmezse hangi sayfada, ne yap\u0131nca oldu\u011funu bize yaz, inceleyelim.', [['Sorunu bize bildir','oneri']]],
   ['site', /(site ne|bu site|ne ise yarar|nedir burasi|hakkinda)/, 'Buras\u0131 yapay zeka ara\u00e7lar\u0131n\u0131 T\u00fcrk\u00e7e olarak ke\u015ffedebilece\u011fin bir rehber. Bot her saat yeni \u00e7\u0131kan ara\u00e7lar\u0131 ve haberleri tarar, a\u00e7\u0131klamalar\u0131 T\u00fcrk\u00e7eye \u00e7evirir.\n\nAra\u00e7lar\u0131n yan\u0131nda AI haberleri, yapay zekayla para kazanma yollar\u0131, Claude eklentileri, \u00fccretsiz e-kitaplar ve bir prompt olu\u015fturucu var.', [['Ara\u00e7lara g\u00f6z at','araclar'],['\u0130\u015f modelleri','is']]],
   ['insan', /(insan|yetkili|biriyle|iletisim|ulas|mail|e-posta|eposta|bize yaz|oneri)/, '\u00d6neri, \u015fik\u00e2yet, hata bildirimi ya da ara\u00e7 ekleme talebin i\u00e7in Profil sayfas\u0131ndaki \u00d6neri / \u015eik\u00e2yet formunu kullanabilirsin. Mesaj\u0131n\u0131 okuyup d\u00f6n\u00fc\u015f yap\u0131yoruz.', [['Formu a\u00e7','oneri']]],
-  ['selam', /^(merhaba|selam|slm|hey|gunaydin|iyi aksamlar|iyi gunler|naber|nasilsin)\b/, 'Merhaba! \ud83d\udc4b Sana nas\u0131l yard\u0131mc\u0131 olabilirim? A\u015fa\u011f\u0131daki konulardan birini se\u00e7ebilir ya da sorunu kendi c\u00fcmlenle yazabilirsin.', []],
-  ['tesekkur', /(tesekkur|sagol|saol|eyvallah)/, 'Rica ederim! Ba\u015fka bir sorun olursa buraday\u0131m \ud83d\ude0a', []],
+  ['selam', /^(merhaba|selam|slm|hey|gunaydin|iyi aksamlar|iyi gunler|naber|nasilsin)\b/, 'Merhaba! Sana nas\u0131l yard\u0131mc\u0131 olabilirim? A\u015fa\u011f\u0131daki konulardan birini se\u00e7ebilir ya da sorunu kendi c\u00fcmlenle yazabilirsin.', []],
+  ['tesekkur', /(tesekkur|sagol|saol|eyvallah)/, 'Rica ederim! Ba\u015fka bir sorun olursa buraday\u0131m', []],
   ['kim', /(sen kimsin|adin ne|nesin|bot musun|robot)/, 'Ben bu sitenin yard\u0131m asistan\u0131y\u0131m. Siteyle ilgili sorular\u0131n\u0131 yan\u0131tlar, ihtiyac\u0131na uygun yapay zeka arac\u0131n\u0131 bulmana yard\u0131m ederim.', []]];
 var ASST_ACT = {
   giris: function () { toggleAssistant(); switchPage('profile'); pmKaydir('authView'); },
@@ -1452,13 +1469,13 @@ function toggleAssistant() {
   if (open) { if (!asstHistory.length) asstWelcome(); document.getElementById('asstInput').focus(); }
 }
 function asstWelcome() {
-  asstAdd('bot', 'Merhaba! \ud83d\udc4b Ben bu sitenin yard\u0131m asistan\u0131y\u0131m.\nA\u015fa\u011f\u0131dan bir konu se\u00e7 ya da sorunu kendi c\u00fcmlenle yaz. Hangi yapay zeka arac\u0131n\u0131 kullanaca\u011f\u0131n\u0131 bilmiyorsan onu da sorabilirsin.');
+  asstAdd('bot', 'Merhaba! Ben bu sitenin yard\u0131m asistan\u0131y\u0131m.\nA\u015fa\u011f\u0131dan bir konu se\u00e7 ya da sorunu kendi c\u00fcmlenle yaz. Hangi yapay zeka arac\u0131n\u0131 kullanaca\u011f\u0131n\u0131 bilmiyorsan onu da sorabilirsin.');
   var msgs = document.getElementById('asstMsgs'), grid = document.createElement('div');
   grid.className = 'grid grid-cols-2 gap-1.5';
   ASST_TOPICS.forEach(function (t) {
     var b = document.createElement('button'); b.type = 'button';
     b.className = 'help-topic border dark:border-gray-800 border-gray-200 dark:bg-gray-950 bg-gray-50 dark:text-gray-200 text-gray-800 hover:border-purple-500';
-    b.innerHTML = '<span class="text-base">' + t[1] + '</span><span>' + esc(t[2]) + '</span>';
+    b.innerHTML = '<span class="text-purple-400">' + ico(t[1]) + '</span><span>' + esc(t[2]) + '</span>';
     b.onclick = function () { asstKonu(t[0], t[2]); };
     grid.appendChild(b);
   });
@@ -1480,7 +1497,7 @@ function asstAdd(role, text, tools, extra) {
   (tools || []).forEach(function(t) {
     var c = document.createElement('div');
     c.className = 'mt-2 w-full max-w-[90%] p-2.5 rounded-xl dark:bg-gray-950 bg-white border dark:border-gray-700 border-gray-200';
-    var h = document.createElement('div'); h.className = 'font-bold dark:text-white text-gray-900'; h.textContent = catMeta(t.category)[2] + ' ' + t.title;
+    var h = document.createElement('div'); h.className = 'font-bold dark:text-white text-gray-900'; h.textContent = t.title;
     var m = document.createElement('div'); m.className = 'text-[11px] text-gray-400 mb-1'; m.textContent = t.price + ' \u00b7 ' + catMeta(t.category)[1];
     var d = document.createElement('div'); d.className = 'text-[11px] dark:text-gray-300 text-gray-600 mb-2'; d.textContent = (t.desc || '').split('\n')[0].slice(0, 110);
     var b = document.createElement('button'); b.className = 'px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white text-[11px] font-bold'; b.textContent = '\u0130ncele \u2197';
@@ -1500,7 +1517,7 @@ function asstAdd(role, text, tools, extra) {
   if (extra && extra.support && CONTACT_EMAIL) {
     var lastUser = ''; asstHistory.forEach(function(x) { if (x.role === 'user') lastUser = x.content; });
     var s = document.createElement('a'); s.className = 'mt-2 inline-block px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-[11px] font-bold';
-    s.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('AI Rehberi destek') + '&body=' + encodeURIComponent(lastUser); s.textContent = '\u2709\ufe0f Destek mesaj\u0131 g\u00f6nder'; wrap.appendChild(s);
+    s.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent('AI Rehberi destek') + '&body=' + encodeURIComponent(lastUser); s.textContent = 'Destek mesaj\u0131 g\u00f6nder'; wrap.appendChild(s);
   }
   msgs.appendChild(wrap); msgs.scrollTop = msgs.scrollHeight; return wrap;
 }
@@ -1514,7 +1531,7 @@ function asstLocal(q, found) {
     return { text: HELP[i][2], tools: [], actions: HELP[i][3] };
   }
   if (found.length && found[0]._score >= 8) return { text: asstIntro(q), tools: found };
-  return { text: 'Bunu tam anlayamad\u0131m \ud83e\udd14 Sorunu biraz daha a\u00e7\u0131k yazar m\u0131s\u0131n? \u00d6rne\u011fin: "favorilerim nerede", "\u015fifremi unuttum", "video yapmak istiyorum".\n\nCevab\u0131n\u0131 bulamazsan bize do\u011frudan yazabilirsin.', tools: [], actions: [['Bize yaz', 'oneri']] };
+  return { text: 'Bunu tam anlayamad\u0131m Sorunu biraz daha a\u00e7\u0131k yazar m\u0131s\u0131n? \u00d6rne\u011fin: "favorilerim nerede", "\u015fifremi unuttum", "video yapmak istiyorum".\n\nCevab\u0131n\u0131 bulamazsan bize do\u011frudan yazabilirsin.', tools: [], actions: [['Bize yaz', 'oneri']] };
 }
 function asstReply(text) {
   var q = norm(text), found = topTools(q, 4, 8);
@@ -1537,13 +1554,13 @@ function asstSend(e, preset) {
 
 /* ===== Gezinme ===== */
 var NAV = [
-  ['directory', 'Ana Sayfa', 'Ana Sayfa', '\u{1F3E0}', 'bg-purple-600'],
-  ['tools', 'AI Ara\u00e7lar\u0131', 'Ara\u00e7lar', '\u{1F9F0}', 'bg-purple-600'],
-  ['news', 'AI Haberleri', 'Haberler', '\u{1F4F0}', 'bg-blue-600'],
-  ['biz', 'AI \u0130\u015f Modelleri', '\u0130\u015f', '\ud83d\udcbc', 'bg-green-600'],
-  ['plugins', 'Claude Eklentileri', 'Eklenti', '\u{1F9E9}', 'bg-amber-500'],
-  ['ebooks', 'E-Kitap', 'E-Kitap', '\u{1F4DA}', 'bg-emerald-600'],
-  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', '\u270d\ufe0f', 'bg-sky-600']
+  ['directory', 'Ana Sayfa', 'Ana Sayfa', 'home', 'bg-purple-600'],
+  ['tools', 'AI Ara\u00e7lar\u0131', 'Ara\u00e7lar', 'grid', 'bg-purple-600'],
+  ['news', 'AI Haberleri', 'Haberler', 'news', 'bg-purple-600'],
+  ['biz', 'AI \u0130\u015f Modelleri', '\u0130\u015f', 'briefcase', 'bg-purple-600'],
+  ['plugins', 'Claude Eklentileri', 'Eklenti', 'plug', 'bg-purple-600'],
+  ['ebooks', 'E-Kitap', 'E-Kitap', 'book', 'bg-purple-600'],
+  ['prompt', 'Prompt Olu\u015fturucu', 'Prompt', 'pen', 'bg-purple-600']
 ];
 function renderNav() {
   var d = document.getElementById('navDesktop'), m = document.getElementById('navMobile');
@@ -1553,34 +1570,33 @@ function renderNav() {
     var on = appState.activePage === n[0] || (n[0] === 'tools' && appState.activePage === 'toolDetail') || (n[0] === 'biz' && appState.activePage === 'bizDetail') || (n[0] === 'news' && appState.activePage === 'newsDetail');
     var b = document.createElement('button');
     b.className = 'px-2 xl:px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? n[4] + ' text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
-    b.innerHTML = n[3] + ' <span class="2xl:hidden">' + esc(n[2]) + '</span><span class="hidden 2xl:inline">' + esc(n[1]) + '</span>';
+    b.innerHTML = ico(n[3]) + ' <span class="2xl:hidden">' + esc(n[2]) + '</span><span class="hidden 2xl:inline">' + esc(n[1]) + '</span>';
     b.onclick = function () { switchPage(n[0]); };
     d.appendChild(b);
     var x = document.createElement('button');
     x.className = 'flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap ' + (on ? n[4] + ' text-white' : 'dark:text-gray-400 text-gray-600');
-    x.textContent = n[3] + ' ' + n[2];
+    x.innerHTML = ico(n[3]) + ' ' + esc(n[2]);
     x.onclick = function () { switchPage(n[0]); };
     m.appendChild(x);
   });
 }
 var HOME_SECTIONS = [
-  ['tools', '\ud83e\uddf0', 'AI Ara\u00e7lar\u0131', 'Y\u00fczlerce arac\u0131 ara, kategoriye ve fiyata g\u00f6re filtrele.', 'from-purple-600 to-indigo-600', 'toolCount', 'ara\u00e7'],
-  ['news', '\ud83d\udcf0', 'AI Haberleri', 'D\u00fcnyadan ve T\u00fcrkiye\u2019den geli\u015fmeler, T\u00fcrk\u00e7e \u00e7evrilmi\u015f.', 'from-blue-600 to-sky-600', 'newsCount', 'haber'],
-  ['biz', '\ud83d\udcbc', 'AI \u0130\u015f Modelleri', 'Para kazanma yollar\u0131 ve i\u015fletme kullan\u0131m senaryolar\u0131.', 'from-green-600 to-emerald-600', 'bizCount', 'model'],
-  ['plugins', '\ud83e\udde9', 'Claude Eklentileri', 'Claude\u2019u kendi ara\u00e7lar\u0131na ba\u011flayan eklentiler.', 'from-amber-500 to-orange-500', 'pluginTotal', 'eklenti'],
-  ['ebooks', '\ud83d\udcda', 'E-Kitap', '\u00dccretsiz yapay zeka kitaplar\u0131 ve kurslar\u0131.', 'from-emerald-600 to-teal-600', 'ebookTotal', 'kaynak'],
-  ['prompt', '\u270d\ufe0f', 'Prompt Olu\u015fturucu', 'Yapay zekaya yap\u0131\u015ft\u0131raca\u011f\u0131n haz\u0131r istemi olu\u015ftur.', 'from-sky-600 to-cyan-600', '', '']
+  ['tools', 'grid', 'AI Ara\u00e7lar\u0131', 'Y\u00fczlerce arac\u0131 ara, kategoriye ve fiyata g\u00f6re filtrele.', 'from-purple-600 to-indigo-600', 'toolCount', 'ara\u00e7'],
+  ['news', 'news', 'AI Haberleri', 'D\u00fcnyadan ve T\u00fcrkiye\u2019den geli\u015fmeler, T\u00fcrk\u00e7e \u00e7evrilmi\u015f.', 'from-blue-600 to-sky-600', 'newsCount', 'haber'],
+  ['biz', 'briefcase', 'AI \u0130\u015f Modelleri', 'Para kazanma yollar\u0131 ve i\u015fletme kullan\u0131m senaryolar\u0131.', 'from-green-600 to-emerald-600', 'bizCount', 'model'],
+  ['plugins', 'plug', 'Claude Eklentileri', 'Claude\u2019u kendi ara\u00e7lar\u0131na ba\u011flayan eklentiler.', 'from-amber-500 to-orange-500', 'pluginTotal', 'eklenti'],
+  ['ebooks', 'book', 'E-Kitap', '\u00dccretsiz yapay zeka kitaplar\u0131 ve kurslar\u0131.', 'from-emerald-600 to-teal-600', 'ebookTotal', 'kaynak'],
+  ['prompt', 'pen', 'Prompt Olu\u015fturucu', 'Yapay zekaya yap\u0131\u015ft\u0131raca\u011f\u0131n haz\u0131r istemi olu\u015ftur.', 'from-sky-600 to-cyan-600', '', '']
 ];
 function renderHomeSections() {
   var box = document.getElementById('homeSections'); if (!box) return;
   box.innerHTML = '';
   HOME_SECTIONS.forEach(function (sec) {
     var c = document.createElement('button');
-    c.className = 'group relative overflow-hidden text-left p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500 hover:-translate-y-1 transition duration-200 shadow-md hover:shadow-xl';
+    c.className = 'group relative overflow-hidden text-left p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500/60 transition duration-200';
     c.innerHTML =
-      '<div class="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-gradient-to-br ' + sec[4] + ' opacity-10 group-hover:opacity-25 group-hover:scale-125 transition duration-300"></div>' +
-      '<div class="relative">' +
-        '<div class="w-12 h-12 rounded-2xl bg-gradient-to-br ' + sec[4] + ' flex items-center justify-center text-xl shadow-lg mb-4">' + sec[1] + '</div>' +
+            '<div class="relative">' +
+        '<div class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 group-hover:text-purple-300 flex items-center justify-center mb-4 transition">' + ico(sec[1], 'w-5 h-5') + '</div>' +
         '<div class="flex items-center gap-2 mb-1.5">' +
           '<span class="font-extrabold text-sm dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(sec[2]) + '</span>' +
           (sec[5] ? '<span id="' + sec[5] + '" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">\u2026</span>' : '') +
@@ -1645,7 +1661,7 @@ function renderHomeExamples() {
   EXAMPLES.slice(0, 5).forEach(function (t) {
     var b = document.createElement('button'); b.type = 'button';
     b.className = 'px-3 py-1.5 rounded-full dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-300 dark:text-gray-300 text-gray-700 hover:border-purple-500 hover:text-purple-500 transition';
-    b.textContent = '\u{1F4A1} ' + t;
+    b.textContent = t;
     b.onclick = function () { document.getElementById('homeSearch').value = t; goSearch(); };
     box.appendChild(b);
   });
@@ -1653,9 +1669,9 @@ function renderHomeExamples() {
 
 /* ===== AI Is Modelleri ===== */
 var BIZ_TABS = [
-  ['gelir', '\u{1F4B0}', 'Para Kazanma Yollar\u0131', 'from-green-600 to-emerald-600'],
-  ['kullanim', '\u{1F3E2}', '\u0130\u015fletmelerde Kullan\u0131m', 'from-blue-600 to-indigo-600'],
-  ['sirket', '\u{1F3DB}\ufe0f', 'AI \u015eirketlerinin Modeli', 'from-purple-600 to-fuchsia-600']
+  ['gelir', 'coins', 'Para Kazanma Yollar\u0131', 'from-green-600 to-emerald-600'],
+  ['kullanim', 'building', '\u0130\u015fletmelerde Kullan\u0131m', 'from-blue-600 to-indigo-600'],
+  ['sirket', 'cpu', 'AI \u015eirketlerinin Modeli', 'from-purple-600 to-fuchsia-600']
 ];
 var BIZ_GELIR = [
   ['\u270d\ufe0f', '\u0130\u00e7erik ve SEO yazarl\u0131\u011f\u0131', 'Kolay', 'D\u00fc\u015f\u00fck', '1-4 hafta',
@@ -1765,8 +1781,8 @@ function renderBizTabs() {
   BIZ_TABS.forEach(function (t) {
     var on = appState.bizTab === t[0], b = document.createElement('button');
     b.className = 'flex-shrink-0 flex items-center gap-2 px-4 py-2.5 rounded-2xl text-xs font-bold border transition ' +
-      (on ? 'bg-gradient-to-r ' + t[3] + ' text-white border-transparent shadow-lg' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
-    b.innerHTML = '<span>' + t[1] + '</span><span>' + esc(t[2]) + '</span>';
+      (on ? 'bg-purple-600 text-white border-transparent shadow-lg' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
+    b.innerHTML = '<span>' + ico(t[1]) + '</span><span>' + esc(t[2]) + '</span>';
     b.onclick = function () { appState.bizTab = t[0]; renderBizTabs(); renderBiz(); };
     box.appendChild(b);
   });
@@ -1805,7 +1821,7 @@ function renderBiz() {
     liste.forEach(function (m) {
       var kart = bizCard(
         '<div class="flex items-start gap-3 mb-3">' +
-          '<span class="w-11 h-11 rounded-2xl bg-green-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
+          '<span class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('coins', 'w-5 h-5') + '</span>' +
           '<div class="min-w-0"><h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3>' +
           '<span class="inline-block mt-1 px-2 py-0.5 rounded-lg text-[10px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
         '<div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">' +
@@ -1823,7 +1839,7 @@ function renderBiz() {
     BIZ_KULLANIM.forEach(function (m) {
       grid.appendChild(bizCard(
         '<div class="flex items-center gap-3 mb-3">' +
-          '<span class="w-11 h-11 rounded-2xl bg-blue-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
+          '<span class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('building', 'w-5 h-5') + '</span>' +
           '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
         '<p class="text-xs text-gray-400 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
         '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Kullan\u0131m alanlar\u0131</div>' + liList(m[3], 'blue') +
@@ -1834,7 +1850,7 @@ function renderBiz() {
     BIZ_SIRKET.forEach(function (m) {
       grid.appendChild(bizCard(
         '<div class="flex items-center gap-3 mb-3">' +
-          '<span class="w-11 h-11 rounded-2xl bg-purple-500/10 flex items-center justify-center text-lg flex-shrink-0">' + m[0] + '</span>' +
+          '<span class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('cpu', 'w-5 h-5') + '</span>' +
           '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
         '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
         '<div class="text-[11px] font-bold text-gray-400 uppercase mb-1">\u00d6rnekler</div>' + tagRow(m[3], 'purple') +
@@ -1974,7 +1990,7 @@ function openBizDetail(baslik) {
   box.innerHTML =
     '<div class="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-green-600/15 via-emerald-600/5 to-transparent border border-green-500/30 shadow-xl">' +
       '<div class="flex items-start gap-4 mb-4">' +
-        '<span class="w-14 h-14 rounded-2xl bg-green-600/15 flex items-center justify-center text-2xl flex-shrink-0">' + m[0] + '</span>' +
+        '<span class="w-14 h-14 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('briefcase', 'w-6 h-6') + '</span>' +
         '<div><h1 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 mb-2">' + esc(m[1]) + '</h1>' +
         '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
       '<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4 text-xs">' +
@@ -1984,16 +2000,16 @@ function openBizDetail(baslik) {
       '<p class="text-sm dark:text-gray-200 text-gray-700 leading-relaxed">' + esc(d.ozet) + '</p>' +
     '</div>' +
     '<div class="grid md:grid-cols-2 gap-6">' +
-      bizBlok('\ud83d\udc64 Kimler i\u00e7in uygun', bizMadde(d.uygun, 'green'), 'green') +
-      bizBlok('\ud83c\udfaf Gereken beceriler', bizMadde(d.beceri, 'green'), 'green') +
+      bizBlok(ico('users') + ' Kimler i\u00e7in uygun', bizMadde(d.uygun, 'green'), 'green') +
+      bizBlok(ico('target') + ' Gereken beceriler', bizMadde(d.beceri, 'green'), 'green') +
     '</div>' +
-    bizBlok('\ud83d\uddfa\ufe0f Ad\u0131m ad\u0131m nas\u0131l ba\u015flan\u0131r', bizNumarali(d.adimlar), 'green') +
+    bizBlok(ico('list') + ' Ad\u0131m ad\u0131m nas\u0131l ba\u015flan\u0131r', bizNumarali(d.adimlar), 'green') +
     '<div class="grid md:grid-cols-2 gap-6">' +
-      bizBlok('\ud83e\udd1d Ilk m\u00fc\u015fteriyi nerede bulursun', bizMadde(d.musteri, 'blue'), 'blue') +
-      bizBlok('\u26a0\ufe0f S\u0131k yap\u0131lan hatalar', bizMadde(d.hatalar, 'rose'), 'rose') +
+      bizBlok(ico('users') + ' \u0130lk m\u00fc\u015fteriyi nerede bulursun', bizMadde(d.musteri, 'blue'), 'blue') +
+      bizBlok(ico('alert') + ' S\u0131k yap\u0131lan hatalar', bizMadde(d.hatalar, 'rose'), 'rose') +
     '</div>' +
-    bizBlok('\ud83d\udcb5 Nas\u0131l fiyatlan\u0131r', '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(d.fiyat) + '</p>', 'amber') +
-    bizBlok('\ud83e\uddf0 \u0130\u015fe yarayan ara\u00e7lar',
+    bizBlok(ico('coins') + ' Nas\u0131l fiyatlan\u0131r', '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed">' + esc(d.fiyat) + '</p>', 'amber') +
+    bizBlok(ico('grid') + ' \u0130\u015fe yarayan ara\u00e7lar',
       '<div class="flex flex-wrap gap-2 mb-4">' + m[7].map(function (x) {
         return '<span class="px-3 py-1.5 rounded-xl text-xs font-bold bg-green-500/10 text-green-500 border border-green-500/20">' + esc(x) + '</span>';
       }).join('') + '</div>' +
@@ -2043,11 +2059,11 @@ function renderFavorites() {
   var tot = document.getElementById('profFavTotal');
   if (tot) tot.textContent = toplam;
   if (!toplam) return;
-  box.appendChild(favBolum('AI Ara\u00e7lar\u0131', '\ud83e\uddf0', 'purple', t.length,
+  box.appendChild(favBolum('AI Ara\u00e7lar\u0131', ico('grid', 'w-5 h-5'), 'purple', t.length,
     t.map(function (x) { return renderCardHTML(x, false); }), 'Hen\u00fcz favori arac\u0131n yok.', 'tools'));
-  box.appendChild(favBolum('Claude Eklentileri', '\ud83e\udde9', 'amber', p.length,
+  box.appendChild(favBolum('Claude Eklentileri', ico('plug', 'w-5 h-5'), 'amber', p.length,
     p.map(pluginCard), 'Hen\u00fcz favori eklentin yok.', 'plugins'));
-  box.appendChild(favBolum('E-Kitap ve Kaynaklar', '\ud83d\udcda', 'emerald', e.length,
+  box.appendChild(favBolum('E-Kitap ve Kaynaklar', ico('book', 'w-5 h-5'), 'emerald', e.length,
     e.map(ebookCard), 'Hen\u00fcz favori kayna\u011f\u0131n yok.', 'ebooks'));
 }
 
@@ -2070,7 +2086,7 @@ function renderPluginChips() {
   PLUGIN_CATS.forEach(function (c) {
     var fav = c === 'Favorilerim', on = appState.pluginCat === c, b = document.createElement('button');
     b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? (fav ? 'bg-rose-600' : 'bg-amber-500') + ' text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white ' + (fav ? 'text-rose-400 border-rose-500/30' : 'dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300') + ' hover:border-amber-500');
-    b.textContent = fav ? '\u2764\ufe0f ' + c + ' (' + appState.favPlugins.length + ')' : c;
+    b.textContent = fav ? c + ' (' + appState.favPlugins.length + ')' : c;
     b.onclick = function () { appState.pluginCat = c; appState.pluginLimit = 30; renderPluginChips(); filterPlugins(); };
     box.appendChild(b);
   });
@@ -2080,8 +2096,8 @@ function pluginCard(p) {
     c.className = 'p-6 rounded-3xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 flex flex-col justify-between hover:border-amber-500 transition shadow-md group';
     c.innerHTML =
       '<div><div class="flex justify-between items-center mb-3 text-xs">' +
-        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">\u2b50 ' + esc((p.stars || 0).toLocaleString('tr-TR')) + '</span>' +
-        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 \u{1F195}' : '') + '</span>' + heartBtn('plugin', p.id) + '</span></div>' +
+        '<span class="px-2.5 py-1 rounded-lg bg-amber-500/10 text-amber-500 font-bold border border-amber-500/20">' + ico('star', 'inline-block w-3 h-3 -mt-0.5 mr-0.5') + ' ' + esc((p.stars || 0).toLocaleString('tr-TR')) + '</span>' +
+        '<span class="flex items-center gap-2"><span class="text-gray-400 font-bold text-[11px]">' + esc(p.category || '') + (p.isNew ? ' \u00b7 Yeni' : '') + '</span>' + heartBtn('plugin', p.id) + '</span></div>' +
         '<h3 class="text-base font-bold mb-1 dark:text-white text-gray-900 group-hover:text-amber-500 transition font-mono break-all">' + esc(p.title) + '</h3>' +
         '<div class="text-[11px] text-gray-400 mb-2 font-mono">' + esc(p.owner || '') + '</div>' +
         '<p class="text-gray-400 text-xs leading-relaxed mb-4">' + esc(fixText(p.desc || '')) + '</p></div>' +
@@ -2106,7 +2122,7 @@ function filterPlugins() {
   if (list.length > appState.pluginLimit) {
     var more = document.createElement('button');
     more.className = 'col-span-full mx-auto mt-4 px-8 py-3.5 dark:bg-gray-900 bg-white hover:bg-amber-500 hover:text-white border dark:border-gray-800 border-gray-300 dark:text-white text-gray-900 font-bold rounded-2xl text-xs transition shadow-xl';
-    more.textContent = '\u26a1 Daha Fazla Y\u00fckle';
+    more.textContent = 'Daha Fazla Y\u00fckle';
     more.onclick = function () { appState.pluginLimit += 30; filterPlugins(); };
     grid.appendChild(more);
   }
@@ -2129,7 +2145,7 @@ function renderEbookChips() {
   cats.forEach(function (c) {
     var fav = c === 'Favorilerim', on = appState.ebookCat === c, b = document.createElement('button');
     b.className = 'flex-shrink-0 px-3.5 py-2 rounded-xl font-bold border transition ' + (on ? (fav ? 'bg-rose-600' : 'bg-emerald-600') + ' text-white border-transparent shadow' : 'dark:bg-gray-900 bg-white ' + (fav ? 'text-rose-400 border-rose-500/30' : 'dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300') + ' hover:border-emerald-500');
-    b.textContent = fav ? '\u2764\ufe0f ' + c + ' (' + appState.favEbooks.length + ')' : c;
+    b.textContent = fav ? c + ' (' + appState.favEbooks.length + ')' : c;
     b.onclick = function () { appState.ebookCat = c; renderEbookChips(); filterEbooks(); };
     box.appendChild(b);
   });
@@ -2347,7 +2363,7 @@ function aracSatiri(t, sag) {
   r.onclick = function() { openToolDetail(t.id); };
   r.innerHTML = '<div class="row-logo w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 overflow-hidden"></div>' +
     '<div class="min-w-0 flex-1"><div class="flex items-center gap-2"><span class="font-bold text-sm dark:text-white text-gray-900 truncate">' + esc(t.title) + '</span>' +
-    '<span class="flex-shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded-md dark:bg-gray-800 bg-gray-100 text-gray-400">' + catMeta(t.category)[2] + ' ' + esc(catMeta(t.category)[1]) + '</span></div>' +
+    '<span class="flex-shrink-0 text-[10px] font-bold px-1.5 py-0.5 rounded-md dark:bg-gray-800 bg-gray-100 text-gray-400">' + esc(catMeta(t.category)[1]) + '</span></div>' +
     '<div class="text-[11px] text-gray-500 truncate">' + esc(String(t.desc || '').split('\n')[0]) + '</div></div>' +
     '<div class="flex-shrink-0 text-[11px] font-bold text-gray-400 text-right">' + sag + '</div>';
   fillTile(r.querySelector('.row-logo'), t.brand, t.title, { img: 'w-7 h-7 object-contain', letter: 'text-lg' });
@@ -2365,7 +2381,7 @@ function renderHomeLists() {
   yeni.innerHTML = ''; pop.innerHTML = '';
   if (!y.length) yeni.innerHTML = '<p class="text-xs text-gray-500 py-4">Son iki haftada yeni ara\u00e7 eklenmedi.</p>';
   y.forEach(function(t) { yeni.appendChild(aracSatiri(t, gunFarki(t.addedAt))); });
-  p.forEach(function(t) { pop.appendChild(aracSatiri(t, '\u2b50 ' + kisaSayi(t.stars))); });
+  p.forEach(function(t) { pop.appendChild(aracSatiri(t, ico('star', 'inline-block w-3 h-3 -mt-0.5 mr-0.5') + ' ' + kisaSayi(t.stars))); });
 }
 function renderSpotlight() {
   var wrap = document.getElementById('spotlightWrap'), box = document.getElementById('spotlightCard');
@@ -2385,7 +2401,7 @@ function renderSpotlight() {
   c.onclick = function() { openToolDetail(t.id); };
   c.innerHTML = '<div class="spot-logo w-20 h-20 sm:w-24 sm:h-24 rounded-3xl flex items-center justify-center flex-shrink-0 overflow-hidden shadow-lg"></div>' +
     '<div class="min-w-0 flex-1"><div class="flex flex-wrap items-center gap-2 mb-1.5">' +
-      '<span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-gradient-to-r ' + catMeta(t.category)[3] + ' text-white">' + catMeta(t.category)[2] + ' ' + esc(catMeta(t.category)[1]) + '</span>' +
+      '<span class="inline-flex items-center gap-1.5 text-[11px] font-bold px-2.5 py-1 rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">' + catIcon(t.category, 'w-3.5 h-3.5') + esc(catMeta(t.category)[1]) + '</span>' +
       '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full dark:bg-gray-800 bg-gray-100 text-gray-400">' + esc(t.price) + '</span>' +
       (sponsor ? '<span class="text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-500 text-black">' + esc(SPOTLIGHT_SPONSOR.etiket || 'Sponsorlu') + '</span>' : '') + '</div>' +
       '<h3 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 group-hover:text-purple-400 transition mb-1.5">' + esc(t.title) + '</h3>' +
