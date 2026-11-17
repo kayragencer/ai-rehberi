@@ -2636,6 +2636,7 @@ function openLegal(bolum) {
   document.querySelectorAll('.lgTab').forEach(function (e) {
     var on = e.getAttribute('data-lg') === bolum;
     e.className = 'lgTab flex-shrink-0 px-3 py-2 rounded-lg whitespace-nowrap transition ' + (on ? 'bg-purple-600 text-white shadow' : 'dark:text-gray-400 text-gray-600 hover:text-purple-500');
+    if (on && e.parentNode) { var pr = e.parentNode; pr.scrollLeft = e.offsetLeft - (pr.clientWidth - e.offsetWidth) / 2; }
   });
   if (appState.activePage !== 'legal') switchPage('legal'); else { hashYaz(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 }
@@ -2732,7 +2733,7 @@ function refreshTools() {
                  desc: fixText(langTool(t)), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
       if (BEKLEYEN_ARAC != null) { var bk = BEKLEYEN_ARAC; yonlendirme = true; openToolDetail(bk); yonlendirme = false; }
-      renderChips(); updateHomeCounts(); renderHomeExtras(); if (appState.activePage === 'directory') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
+      renderChips(); updateHomeCounts(); renderHomeExtras(); if (appState.activePage === 'directory' || appState.activePage === 'tools') { filterTools(); renderFeatured('featuredRecommendedGrid'); }
     }).catch(function() {});
 }
 
