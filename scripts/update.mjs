@@ -517,5 +517,10 @@ await updateNews();
 await updateTools();
 await updatePlugins();
 await updateEbooks();
+// Supabase ucretsiz proje 7 gun bos kalirsa durur; her calismada kucuk bir okuma yap
+try {
+  const r = await get('https://swzynrjalzyripvfiggz.supabase.co/rest/v1/reviews?select=id&limit=1', { headers: { ...headers, apikey: 'sb_publishable_bTVyvB-Q9sQ8Isco8lqq0w_pWw0G0IZ' } });
+  console.log('Supabase canli tutma:', r.status);
+} catch (e) { console.warn('Supabase canli tutma hatasi:', e.message); }
 await save('data/status.json', JSON.stringify({ translate: TSTAT }) + '\n');
 console.log('Ceviri durumu:', JSON.stringify(TSTAT));
