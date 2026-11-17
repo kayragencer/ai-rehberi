@@ -26,6 +26,7 @@ html,body{overflow-x:hidden;-webkit-text-size-adjust:100%}
 /* Yatay kaydirma cubuklarini gizle, kaydirma calismaya devam eder */
 .overflow-x-auto{scrollbar-width:none;-ms-overflow-style:none}
 .overflow-x-auto::-webkit-scrollbar{display:none;width:0;height:0}
+@media (max-width:639px){ #searchExamples > button:nth-child(n+5), #homeExamples > button:nth-child(n+4) { display:none; } }
 #asstMsgs{scrollbar-width:thin}
 #asstMsgs::-webkit-scrollbar{width:6px}
 #asstMsgs::-webkit-scrollbar-thumb{background:rgba(148,163,184,.35);border-radius:9999px}
@@ -36,6 +37,7 @@ body { font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif; letter-
 .dark body { background-color: #000000; }
 .light body { background-color: #f7f7f7; }
 h1, h2, h3 { letter-spacing: -0.02em; }
+@media (max-width:639px){ .hbtn { height: 2.25rem !important; padding: 0 .6rem !important; } }
 .hbtn { height: 2.5rem; display: inline-flex; align-items: center; justify-content: center; gap: .4rem; padding: 0 .8rem; border-radius: .75rem; font-size: .75rem; font-weight: 700; white-space: nowrap; transition: background-color .15s, color .15s, border-color .15s; }
 .navlink { position: relative; padding: .5rem .7rem; border-radius: .6rem; white-space: nowrap; font-weight: 600; transition: color .15s, background-color .15s; }
 .sec-h { font-size: 1.15rem; font-weight: 800; }
@@ -58,18 +60,18 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
 <header class="border-b dark:border-gray-800 border-gray-200 dark:bg-gray-950/80 bg-white/90 backdrop-blur-md p-3 sm:p-4 sticky top-0 z-40 transition">
   <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
     <div class="flex items-center gap-4 min-w-0">
-      <div class="flex items-center space-x-2.5 cursor-pointer" onclick="switchPage('directory')">
-        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-sm text-white">SY</div>
-        <span class="text-base sm:text-lg font-bold dark:text-white text-gray-900 whitespace-nowrap tracking-tight">Senin Yapay Zekan</span>
+      <div class="flex items-center space-x-2 sm:space-x-2.5 cursor-pointer min-w-0" onclick="switchPage('directory')">
+        <div class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 rounded-xl bg-purple-600 flex items-center justify-center font-bold text-sm text-white">SY</div>
+        <span class="text-[15px] sm:text-lg font-bold dark:text-white text-gray-900 whitespace-nowrap tracking-tight">Senin Yapay Zekan</span>
       </div>
       <nav id="navDesktop" class="hidden lg:flex items-center gap-0.5 bg-gray-800/10 dark:bg-gray-900/50 p-1 rounded-xl border dark:border-gray-800 border-gray-200 text-xs font-bold"></nav>
     </div>
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
       <span id="themeIcon" class="hidden"></span><span id="themeText" class="hidden"></span>
       <button id="profileBtn" onclick="openProfileModal()" title="Hesab&#305;m" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700">
         <span id="headerAvatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span id="headerUserName" class="text-xs font-bold hidden md:inline">Giri&#351; Yap</span>
       </button>
-      <button onclick="openProModal()" class="hbtn border border-amber-400/50 text-amber-300 hover:bg-amber-400/10">PREMIUM</button>
+      <button onclick="openProModal()" class="hbtn border border-amber-400/50 text-amber-300 hover:bg-amber-400/10" title="Premium"><span class="hidden sm:inline">PREMIUM</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="sm:hidden w-4 h-4" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></button>
       <button id="mainMenuBtn" onclick="mmToggle()" title="Men&#252;" aria-label="Men&#252;" class="hbtn border dark:border-gray-800 border-gray-200 dark:bg-gray-900 bg-white hover:border-purple-500 dark:text-gray-300 text-gray-700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
   </div>
@@ -101,15 +103,15 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
 
     <div>
       <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900">Sitede Neler Var?</div><div class="sec-sub">Ara&#231;lardan haberlere, para kazanma yollar&#305;ndan &#252;cretsiz kitaplara</div></div>
-      <div id="homeSections" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      <div id="homeSections" class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4"></div>
     </div>
   </div>
 
   <!-- AI ARACLARI -->
   <div id="pageTools" class="hidden space-y-6">
     <div class="text-center max-w-3xl mx-auto mb-6">
-      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg> T&#252;m Yapay Zeka Ara&#231;lar&#305;</div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold mb-3 tracking-tight dark:text-white text-gray-900">AI Ara&#231;lar&#305;</h1>
+      <div class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold dark:bg-white/5 bg-gray-900/5 dark:text-gray-300 text-gray-600 border dark:border-white/10 border-gray-900/10 mb-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg> T&#252;m Yapay Zeka Ara&#231;lar&#305;</div>
+      <h1 class="text-2xl sm:text-4xl font-extrabold mb-2 sm:mb-3 tracking-tight dark:text-white text-gray-900">AI Ara&#231;lar&#305;</h1>
       <p class="text-gray-400 text-sm">Arama yap, kategoriye ve fiyata g&#246;re filtrele.</p>
       <div class="mt-6">
         <input type="text" id="searchInput" oninput="filterTools()" placeholder="Ne yapmak istiyorsun? &#214;rn: bana bir video yap"
@@ -424,9 +426,9 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
   <div id="pageToolDetail" class="hidden space-y-6 max-w-4xl mx-auto">
     <div><button onclick="switchPage('directory')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-purple-600 hover:text-white transition">&#8592; Geri D&#246;n</button></div>
     <div class="rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl overflow-hidden">
-      <div class="h-48 sm:h-64 w-full relative overflow-hidden bg-gray-900">
+      <div class="h-52 sm:h-64 w-full relative overflow-hidden bg-gray-900">
         <img id="detailToolImage" src="" alt="" class="w-full h-full object-cover opacity-90">
-        <div id="detailLogoTile" class="absolute inset-0 flex items-center justify-center hidden"></div>
+        <div id="detailLogoTile" class="absolute inset-0 flex items-start sm:items-center justify-center pt-6 sm:pt-0 hidden"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
         <div class="absolute bottom-4 left-6 right-6 flex items-end justify-between">
           <div>
@@ -871,7 +873,7 @@ function openToolDetail(id) {
   document.getElementById('detailToolLink').href = safeUrl(tool.url);
   var img = document.getElementById('detailToolImage'), tile = document.getElementById('detailLogoTile');
   function showTile() { img.classList.add('hidden'); tile.classList.remove('hidden'); }
-  tile.style.background = tool.brand.bg; fillTile(tile, tool.brand, tool.title, { img: 'w-28 h-28 object-contain', letter: 'text-8xl' }); img.alt = tool.title;
+  tile.style.background = tool.brand.bg; fillTile(tile, tool.brand, tool.title, { img: 'w-16 h-16 sm:w-28 sm:h-28 object-contain', letter: 'text-5xl sm:text-8xl' }); img.alt = tool.title;
   if (tool.hasOg) { img.classList.remove('hidden'); tile.classList.add('hidden'); img.onerror = function() { img.onerror = null; showTile(); }; img.src = tool.image; }
   else { img.removeAttribute('src'); showTile(); }
   document.getElementById('detailToolPrice').textContent = tool.price;
@@ -1939,16 +1941,16 @@ function renderHomeSections() {
   box.innerHTML = '';
   HOME_SECTIONS.forEach(function (sec) {
     var c = document.createElement('button');
-    c.className = 'group relative overflow-hidden text-left p-6 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500/60 transition duration-200';
+    c.className = 'group relative overflow-hidden text-left p-4 sm:p-6 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500/60 transition duration-200';
     c.innerHTML =
             '<div class="relative">' +
-        '<div class="w-11 h-11 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 group-hover:bg-purple-500/25 flex items-center justify-center mb-4 transition">' + ico(sec[1], 'w-5 h-5') + '</div>' +
+        '<div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 group-hover:bg-purple-500/25 flex items-center justify-center mb-3 sm:mb-4 transition">' + ico(sec[1], 'w-5 h-5') + '</div>' +
         '<div class="flex items-center gap-2 mb-1.5">' +
           '<span class="font-extrabold text-sm dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(sec[2]) + '</span>' +
           (sec[5] ? '<span id="' + sec[5] + '" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">\u2026</span>' : '') +
         '</div>' +
-        '<div class="text-xs text-gray-400 leading-relaxed mb-4 min-h-[2.5rem]">' + esc(sec[3]) + '</div>' +
-        '<span class="inline-flex items-center gap-1 text-xs font-bold text-gray-400 group-hover:text-purple-500 transition">Ke\u015ffet <span class="group-hover:translate-x-1 inline-block transition">\u2192</span></span>' +
+        '<div class="hidden sm:block text-xs text-gray-400 leading-relaxed mb-4 min-h-[2.5rem]">' + esc(sec[3]) + '</div>' +
+        '<span class="hidden sm:inline-flex items-center gap-1 text-xs font-bold text-gray-400 group-hover:text-purple-500 transition">Ke\u015ffet <span class="group-hover:translate-x-1 inline-block transition">\u2192</span></span>' +
       '</div>';
     c.onclick = function () { switchPage(sec[0]); };
     box.appendChild(c);
