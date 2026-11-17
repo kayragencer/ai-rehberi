@@ -1440,6 +1440,7 @@ function mmCiz() {
   var dark = document.getElementById('htmlTag').classList.contains('dark');
   var h = '<div class="p-1.5">' + mmBaslik('Keşfet');
   NAV.forEach(function (n) {
+    if (NAV_MAIN[n[0]]) return;
     var on = appState.activePage === n[0] || (n[0] === 'biz' && appState.activePage === 'bizDetail');
     h += mmSatir(n[3], n[1], 'sayfa:' + n[0], on);
   });
@@ -1447,7 +1448,6 @@ function mmCiz() {
     '<button type="button" data-mm="tema" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold dark:text-gray-200 text-gray-800 hover:bg-purple-500/10 transition">' +
       '<span class="text-purple-400">' + ico(dark ? 'moon' : 'sun') + '</span><span class="flex-1 text-left">Tema: ' + (dark ? 'Koyu' : 'Açık') + '</span>' +
       '<span class="relative w-9 h-5 rounded-full transition ' + (dark ? 'bg-purple-600' : 'bg-gray-300') + '"><span class="absolute top-0.5 w-4 h-4 rounded-full bg-white shadow transition-all ' + (dark ? 'left-[18px]' : 'left-0.5') + '"></span></span></button>' +
-    mmSatir('user', profile.loggedIn ? 'Hesabım' : 'Giriş Yap / Kayıt Ol', 'hesap') +
     mmSatir('help', 'Yardım Merkezi', 'yardim') +
     mmSatir('message', 'Öneri / Şikayet', 'oneri') +
     '</div><div class="p-1.5 border-t dark:border-gray-800 border-gray-100">' + mmBaslik('Yasal') +
