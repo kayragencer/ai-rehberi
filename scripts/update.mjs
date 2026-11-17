@@ -8,7 +8,7 @@ const headers = { 'User-Agent': 'ai-rehberi-bot/1.0' };
 const ghHeaders = { ...headers, Accept: 'application/vnd.github+json', ...(E.GITHUB_TOKEN ? { Authorization: 'Bearer ' + E.GITHUB_TOKEN } : {}) };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const SEARCH_WAIT = E.FAST ? 0 : 2300;
-const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40 };
+const CFG = { MAX_TOOLS: 8000, GH_PAGES_PER_RUN: 12, MIN_STARS: 300, NEW_MIN_STARS: 120, CHECK_PER_RUN: 150, TR_PER_RUN: 40, FAIL_LIMIT: 4, NEW_DAYS: 14, PH_MIN_VOTES: 40, AWESOME_PER_RUN: 250 };
 
 if (E.ANTHROPIC_API_KEY || E.GEMINI_API_KEY) CFG.TR_PER_RUN = 120;
 const FEEDS = [
@@ -331,7 +331,52 @@ async function updateTools() {
     }
   }
 
-  // d) Sa\u011fl\u0131k kontrol\u00fc: en uzun s\u00fcredir bak\u0131lmayan ara\u00e7lar (her \u00e7al\u0131\u015fmada bir k\u0131sm\u0131)
+  // e) Hazir arac listeleri (GitHub'daki "awesome" derlemeleri): her calismada bir kismi, link kontrol edilerek eklenir
+  {
+    const SRC = ['mahseema/awesome-ai-tools', 'steven2358/awesome-generative-ai', 'ikaijua/Awesome-AITools', 'filipecalegario/awesome-generative-ai',
+      'eudk/awesome-ai-tools', 'ai-collection/ai-collection', 'yousefebrahimi0/1000-AI-collection-tools', 'jamesmurdza/awesome-ai-devtools', 'humanloop/awesome-chatgpt'];
+    const SKIP_HOST = /(^|\.)(github\.com|githubusercontent\.com|gitlab\.com|github\.io|huggingface\.co|arxiv\.org|youtube\.com|youtu\.be|twitter\.com|x\.com|medium\.com|reddit\.com|wikipedia\.org|producthunt\.com|discord\.(gg|com)|linkedin\.com|facebook\.com|instagram\.com|t\.me|notion\.site|substack\.com|google\.com|bit\.ly|colab\.research\.google\.com|paperswithcode\.com|openreview\.net|aclanthology\.org|npmjs\.com|pypi\.org|shields\.io)$/;
+    const st = state.aw || { i: 0, queue: [] };
+    // kuyruk bosaldiysa siradaki listeyi oku
+    for (let tries = 0; !st.queue.length && tries < SRC.length; tries++) {
+      const repo = SRC[st.i % SRC.length]; st.i = (st.i + 1) % SRC.length;
+      try {
+        const r = await get('https://api.github.com/repos/' + repo + '/readme', { headers: { ...ghHeaders, Accept: 'application/vnd.github.raw' } });
+        if (!r.ok) throw new Error(r.status);
+        const md = await r.text();
+        for (const line of md.split('\n')) {
+          const m = line.match(/\[([^\]]{2,60})\]\((https?:\/\/[^)\s]+)\)\s*(?:[-–—:|]\s*)?(.*)$/);
+          if (!m) continue;
+          const name = m[1].replace(/[*_`]/g, '').trim(), url = m[2], desc = m[3].replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_`|]/g, ' ').replace(/\s+/g, ' ').trim();
+          const h = hostOf(url);
+          if (!h || SKIP_HOST.test(h) || desc.length < 15 || /^(back to top|contents|table of contents)/i.test(name)) continue;
+          st.queue.push([name, url, desc.slice(0, 300)]);
+        }
+        console.log('Liste okundu:', repo, st.queue.length);
+      } catch (e) { console.warn('Liste okunamadı:', repo, e.message); }
+    }
+    const take = st.queue.splice(0, CFG.AWESOME_PER_RUN);
+    const cand = take.filter(([name, url, desc]) => {
+      const h = hostOf(url), id = 'aw-' + slug(name);
+      return id.length > 3 && !byId.has(id) && !hosts.has(h) && !block.ids.includes(id) && !bad((name + ' ' + desc).toLowerCase()) && !NONLATIN.test(name + desc) && !isJunk(name + ' ' + desc);
+    });
+    const seen = new Set();
+    const uniq = cand.filter(([, url]) => { const h = hostOf(url); if (seen.has(h)) return false; seen.add(h); return true; });
+    for (let k = 0; k < uniq.length; k += 10) {
+      await Promise.all(uniq.slice(k, k + 10).map(async ([name, url, desc]) => {
+        if (tools.length >= CFG.MAX_TOOLS || !(await alive(url))) return;
+        const id = 'aw-' + slug(name), h = hostOf(url);
+        if (byId.has(id) || hosts.has(h)) return;
+        const free = /\bfree\b|open[- ]source|ücretsiz/i.test(desc), paid = /\bpaid\b|\$\d/i.test(desc);
+        const t = { id, title: name, category: guess(name + ' ' + desc), price: free && !paid ? 'Freemium' : 'Belirsiz', url: new URL(url).origin, featured: false,
+          descOrig: desc, tr: false, source: 'awesome', status: 'active', failCount: 0, addedAt: TODAY };
+        tools.push(t); byId.set(id, t); hosts.add(h); ev('added', t);
+      }));
+    }
+    state.aw = st;
+  }
+
+  // d) Sağlık kontrolü: en uzun s\u00fcredir bak\u0131lmayan ara\u00e7lar (her \u00e7al\u0131\u015fmada bir k\u0131sm\u0131)
   const batch = tools.filter(t => !t.locked).sort((a, b) => (a.checkedAt || '').localeCompare(b.checkedAt || '')).slice(0, CFG.CHECK_PER_RUN);
   const check = async t => {
     t.checkedAt = now.toISOString();
@@ -355,7 +400,7 @@ async function updateTools() {
 
   // e) T\u00fcrk\u00e7e \u00e7eviri (her \u00e7al\u0131\u015fmada en pop\u00fcler \u00e7evrilmemi\u015flerden bir k\u0131sm\u0131)
   tools.forEach(t => { if (!t.tr && isTr(t.descOrig)) t.tr = true; });
-  const need = tools.filter(t => !t.tr && t.descOrig).sort((a, b) => (b.stars || 0) - (a.stars || 0)).slice(0, CFG.TR_PER_RUN);
+  const need = tools.filter(t => !t.tr && t.descOrig).sort((a, b) => ((a.source === 'github') - (b.source === 'github')) || (b.stars || 0) - (a.stars || 0)).slice(0, CFG.TR_PER_RUN);
   for (let i = 0; i < need.length; i += 8) {
     const b = need.slice(i, i + 8);
     const out = await translate(b.map(t => t.descOrig.slice(0, 300)));

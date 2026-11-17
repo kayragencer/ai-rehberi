@@ -1008,7 +1008,7 @@ function toggleDarkMode() {
 
 /* ===== Ak\u0131ll\u0131 arama ===== */
 /* SEARCH_START */
-var RANK = { curated: 0, producthunt: 1, github: 2 };
+var RANK = { curated: 0, producthunt: 1, awesome: 1, github: 2 };
 function norm(s) {
   return String(s || '').toLocaleLowerCase('tr').replace(/\u0307/g, '').replace(/\u00e7/g, 'c').replace(/\u011f/g, 'g').replace(/\u0131/g, 'i').replace(/\u00f6/g, 'o').replace(/\u015f/g, 's').replace(/\u00fc/g, 'u').replace(/[^a-z0-9\s+#.]/g, ' ').replace(/\s+/g, ' ').trim();
 }
@@ -1075,7 +1075,7 @@ function scoreItem(it, info) {
   var s = 0;
   info.tokens.forEach(function(pair) { var w = tokenScore(it, pair[0]); if (!w && pair[1] !== pair[0]) w = tokenScore(it, pair[1]); s += w; });
   if (info.intents.length && info.intents.indexOf(it.category) > -1) s += 15 + (info.intents[0] === it.category ? 3 : 0);
-  if (s > 0) s += (it.source === 'curated' ? 12 : it.source === 'producthunt' ? 4 : 0);
+  if (s > 0) s += (it.source === 'curated' ? 12 : (it.source === 'producthunt' || it.source === 'awesome') ? 4 : 0);
   if (s > 0 && info.free && (it.price === '\u00dccretsiz' || it.price === 'Freemium')) s += 4;
   if (s > 0 && info.open && it.openSource) s += 6;
   return s;
