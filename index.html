@@ -127,7 +127,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
         <select id="sortFilter" onchange="filterTools()" class="fld w-auto font-bold">
           <option value="rec">&#214;nerilen s&#305;ralama</option><option value="new">En yeni</option><option value="pop">En pop&#252;ler</option><option value="az">A-Z</option>
         </select>
-        <button type="button" onclick="resetApp()" class="px-3 py-2.5 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold">S&#305;f&#305;rla</button>
+        <button type="button" onclick="resetApp()" class="px-3 py-2.5 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold">S&#305;f&#305;rla</button>
         <span class="text-gray-400 font-medium ml-1"><span id="resultCount" class="text-purple-400 font-bold">0</span> ara&#231;</span>
       </div>
     </div>
@@ -192,7 +192,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
 
   <!-- HABER DETAY -->
   <div id="pageNewsDetail" class="hidden max-w-3xl mx-auto space-y-8">
-    <div><button onclick="switchPage('news')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-blue-600 hover:text-white transition">&#8592; Haberlere D&#246;n</button></div>
+    <div><button onclick="switchPage('news')" class="px-4 py-2 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold text-xs">&#8592; Haberlere D&#246;n</button></div>
     <article id="newsDetailBody" class="rounded-2xl dark:bg-gray-900/70 bg-white border dark:border-gray-800 border-gray-200 p-6 sm:p-10"></article>
     <div>
       <div class="px-1 mb-4"><div class="sec-h dark:text-white text-gray-900">Di&#287;er Haberler</div><div class="sec-sub">Yapay zeka d&#252;nyas&#305;ndan son geli&#351;meler</div></div>
@@ -215,7 +215,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
 
   <!-- IS MODELI DETAY -->
   <div id="pageBizDetail" class="hidden space-y-6 max-w-4xl mx-auto">
-    <div><button onclick="switchPage('biz')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-green-600 hover:text-white transition">&#8592; &#304;&#351; Modellerine D&#246;n</button></div>
+    <div><button onclick="switchPage('biz')" class="px-4 py-2 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold text-xs">&#8592; &#304;&#351; Modellerine D&#246;n</button></div>
     <div id="bizDetailBody" class="space-y-6"></div>
   </div>
 
@@ -248,7 +248,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
         <div><div class="text-[11px] font-bold text-gray-400 uppercase mb-2">&#304;lgi alanlar&#305;n</div><div id="regInterests" class="flex flex-wrap gap-2"></div></div>
         <div class="p-3 rounded-xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200">
           <label for="capA" class="text-[11px] font-bold text-gray-400 uppercase block mb-2">Robot de&#287;ilsin, de&#287;il mi? &#199;&#246;z: <span id="capQ" class="text-purple-400"></span></label>
-          <div class="flex gap-2"><input id="capA" type="number" inputmode="numeric" required placeholder="Cevap" class="fld"><button type="button" onclick="newCaptcha()" title="Yeni soru" class="px-3 rounded-xl dark:bg-gray-800 bg-gray-200 text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button></div>
+          <div class="flex gap-2"><input id="capA" type="number" inputmode="numeric" required placeholder="Cevap" class="fld"><button type="button" onclick="newCaptcha()" title="Yeni soru" class="px-3 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button></div>
           <input id="hpWebsite" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         </div>
         <label class="flex items-start gap-2 text-[11px] text-gray-400 leading-relaxed cursor-pointer"><input id="regConsent" type="checkbox" required class="mt-0.5"><span><a href="#yasal/kullanim-sartlari" target="_blank" class="text-purple-400 underline">Kullanım Şartları</a>'nı ve <a href="#yasal/gizlilik" target="_blank" class="text-purple-400 underline">Gizlilik Politikası</a>'nı okudum, kabul ediyorum.</span></label>
@@ -278,8 +278,8 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
       <div id="accMsg" class="hidden mb-3 p-3 rounded-xl text-xs font-semibold"></div>
       <div class="grid grid-cols-2 gap-2">
         <button onclick="saveAccount()" class="py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs">Kaydet</button>
-        <button onclick="switchPage('profile');" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs">Favorilerim</button>
-        <button onclick="doLogout()" class="py-3 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg> &#199;&#305;k&#305;&#351; Yap</button>
+        <button onclick="switchPage('profile');" class="py-3 bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold rounded-xl text-xs">Favorilerim</button>
+        <button onclick="doLogout()" class="py-3 bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg> &#199;&#305;k&#305;&#351; Yap</button>
         <button onclick="deleteAccount()" class="py-3 bg-red-500/10 text-red-500 font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg> Hesab&#305; Sil</button>
       </div>
     </div>
@@ -306,7 +306,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
         <div id="fbMsg" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
         <div class="flex flex-col sm:flex-row gap-2">
           <button type="submit" class="flex-1 py-3 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> E-posta ile G&#246;nder</button>
-          <button type="button" onclick="copyFeedback()" class="py-3 px-5 dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Metni Kopyala</button>
+          <button type="button" onclick="copyFeedback()" class="py-3 px-5 bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold rounded-xl text-xs"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="inline-block w-[1.1em] h-[1.1em] align-[-0.18em]" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Metni Kopyala</button>
         </div>
         <p id="fbHint" class="text-[11px] text-gray-400 leading-relaxed"></p>
       </form>
@@ -322,7 +322,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
       <div id="admStats" class="grid grid-cols-2 sm:grid-cols-5 gap-3"></div>
       <div><div class="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">Şikayet edilen / gizlenen yorumlar</div><div id="admReported" class="space-y-3"></div></div>
       <div><div class="text-xs font-bold uppercase tracking-wider text-purple-400 mb-3">Son yorumlar</div><div id="admRecent" class="space-y-3"></div></div>
-      <button type="button" onclick="renderAdmin()" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-800 text-xs font-bold">Yenile</button>
+      <button type="button" onclick="renderAdmin()" class="px-4 py-2 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition text-xs font-bold">Yenile</button>
     </div>
   </div>
 
@@ -424,7 +424,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
 
   <!-- SAYFA 4 -->
   <div id="pageToolDetail" class="hidden space-y-6 max-w-4xl mx-auto">
-    <div><button onclick="switchPage('directory')" class="px-4 py-2 rounded-xl dark:bg-gray-800 bg-gray-200 dark:text-gray-300 text-gray-800 font-bold text-xs hover:bg-purple-600 hover:text-white transition">&#8592; Geri D&#246;n</button></div>
+    <div><button onclick="switchPage('directory')" class="px-4 py-2 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold text-xs">&#8592; Geri D&#246;n</button></div>
     <div class="rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-xl overflow-hidden">
       <div class="h-52 sm:h-64 w-full relative overflow-hidden bg-gray-900">
         <img id="detailToolImage" src="" alt="" class="w-full h-full object-cover opacity-90">
@@ -988,7 +988,7 @@ function admSatir(rev, sikayetler, kutu) {
       SB.from('reviews').update({ hidden: false }).eq('id', rev.id).then(function () { renderAdmin(); });
     });
   });
-  else dugme('Gizle', 'dark:bg-gray-800 bg-gray-200 dark:text-gray-200 text-gray-700', function () {
+  else dugme('Gizle', 'bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition', function () {
     SB.from('reviews').update({ hidden: true }).eq('id', rev.id).then(function () { renderAdmin(); });
   });
   ust.appendChild(sol); ust.appendChild(btns);
