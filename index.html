@@ -1199,7 +1199,7 @@ function renderChips() {
   CATS.forEach(function(c) {
     var active = appState.currentCat === c[0], b = document.createElement('button');
     b.className = 'cat-btn flex-shrink-0 flex items-center gap-2 pl-2 pr-3 py-2 rounded-2xl font-bold transition border ' + (active ? 'bg-purple-600 text-white border-transparent' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
-    b.innerHTML = '<span class="w-7 h-7 rounded-lg flex items-center justify-center ' + (active ? 'bg-white/15 text-white' : 'dark:bg-white/5 bg-gray-100 text-purple-400') + '">' + catIcon(c[0]) + '</span><span>' + c[1] + '</span><span class="text-[10px] px-1.5 py-0.5 rounded-full ' + (active ? 'bg-white/25' : 'dark:bg-gray-800 bg-gray-100 text-gray-400') + '">' + (counts[c[0]] || 0) + '</span>';
+    b.innerHTML = '<span class="w-7 h-7 rounded-lg flex items-center justify-center ' + (active ? 'bg-white/15 text-white' : 'bg-purple-500/15 dark:text-purple-300 text-purple-600') + '">' + catIcon(c[0]) + '</span><span>' + c[1] + '</span><span class="text-[10px] px-1.5 py-0.5 rounded-full ' + (active ? 'bg-white/25' : 'dark:bg-gray-800 bg-gray-100 text-gray-400') + '">' + (counts[c[0]] || 0) + '</span>';
     b.onclick = function() { setCat(c[0]); };
     box.appendChild(b);
   });
@@ -1653,7 +1653,7 @@ function renderHomeSections() {
     c.className = 'group relative overflow-hidden text-left p-6 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 hover:border-purple-500/60 transition duration-200';
     c.innerHTML =
             '<div class="relative">' +
-        '<div class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 group-hover:text-purple-300 flex items-center justify-center mb-4 transition">' + ico(sec[1], 'w-5 h-5') + '</div>' +
+        '<div class="w-11 h-11 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 group-hover:bg-purple-500/25 flex items-center justify-center mb-4 transition">' + ico(sec[1], 'w-5 h-5') + '</div>' +
         '<div class="flex items-center gap-2 mb-1.5">' +
           '<span class="font-extrabold text-sm dark:text-white text-gray-900 group-hover:text-purple-500 transition">' + esc(sec[2]) + '</span>' +
           (sec[5] ? '<span id="' + sec[5] + '" class="px-2 py-0.5 rounded-full text-[10px] font-bold dark:bg-gray-800 bg-gray-100 text-gray-400">\u2026</span>' : '') +
@@ -1878,7 +1878,7 @@ function renderBiz() {
     liste.forEach(function (m) {
       var kart = bizCard(
         '<div class="flex items-start gap-3 mb-3">' +
-          '<span class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('coins', 'w-5 h-5') + '</span>' +
+          '<span class="w-11 h-11 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 flex items-center justify-center flex-shrink-0">' + ico('coins', 'w-5 h-5') + '</span>' +
           '<div class="min-w-0"><h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3>' +
           '<span class="inline-block mt-1 px-2 py-0.5 rounded-lg text-[10px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
         '<div class="grid grid-cols-2 gap-2 mb-3 text-[11px]">' +
@@ -1896,7 +1896,7 @@ function renderBiz() {
     BIZ_KULLANIM.forEach(function (m) {
       grid.appendChild(bizCard(
         '<div class="flex items-center gap-3 mb-3">' +
-          '<span class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('building', 'w-5 h-5') + '</span>' +
+          '<span class="w-11 h-11 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 flex items-center justify-center flex-shrink-0">' + ico('building', 'w-5 h-5') + '</span>' +
           '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
         '<p class="text-xs text-gray-400 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
         '<div class="text-[11px] font-bold text-gray-400 uppercase mb-2">Kullan\u0131m alanlar\u0131</div>' + liList(m[3], 'blue') +
@@ -1907,7 +1907,7 @@ function renderBiz() {
     BIZ_SIRKET.forEach(function (m) {
       grid.appendChild(bizCard(
         '<div class="flex items-center gap-3 mb-3">' +
-          '<span class="w-11 h-11 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('cpu', 'w-5 h-5') + '</span>' +
+          '<span class="w-11 h-11 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 flex items-center justify-center flex-shrink-0">' + ico('cpu', 'w-5 h-5') + '</span>' +
           '<h3 class="font-bold text-sm dark:text-white text-gray-900">' + esc(m[1]) + '</h3></div>' +
         '<p class="text-xs dark:text-gray-300 text-gray-600 leading-relaxed mb-3">' + esc(m[2]) + '</p>' +
         '<div class="text-[11px] font-bold text-gray-400 uppercase mb-1">\u00d6rnekler</div>' + tagRow(m[3], 'purple') +
@@ -2047,7 +2047,7 @@ function openBizDetail(baslik) {
   box.innerHTML =
     '<div class="p-6 sm:p-8 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200">' +
       '<div class="flex items-start gap-4 mb-4">' +
-        '<span class="w-14 h-14 rounded-xl border dark:border-gray-700/70 border-gray-200 dark:bg-gray-800/50 bg-gray-50 text-purple-400 flex items-center justify-center flex-shrink-0">' + ico('briefcase', 'w-6 h-6') + '</span>' +
+        '<span class="w-14 h-14 rounded-xl border border-purple-500/30 bg-purple-500/15 dark:text-purple-300 text-purple-600 flex items-center justify-center flex-shrink-0">' + ico('briefcase', 'w-6 h-6') + '</span>' +
         '<div><h1 class="text-xl sm:text-2xl font-extrabold dark:text-white text-gray-900 mb-2">' + esc(m[1]) + '</h1>' +
         '<span class="px-2.5 py-1 rounded-lg text-[11px] font-bold border ' + (BIZ_LEVEL[m[2]] || BIZ_LEVEL.Orta) + '">' + esc(m[2]) + '</span></div></div>' +
       '<div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-4 text-xs">' +
