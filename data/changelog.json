@@ -1,602 +1,602 @@
 [
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-auditzap",
-  "title": "AuditZap"
+  "id": "aw-boolpic",
+  "title": "Boolpic"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-rankingrider",
-  "title": "RankingRider"
+  "id": "aw-ai-host",
+  "title": "AI Host"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-handyai",
-  "title": "HandyAI"
+  "id": "aw-rythmex",
+  "title": "Rythmex"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-doacam",
-  "title": "DoaCam"
+  "id": "aw-translatevideo",
+  "title": "TranslateVideo"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-llm-optimizer",
-  "title": "LLM Optimizer"
+  "id": "aw-deciphr-ai",
+  "title": "Deciphr AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-waldium",
-  "title": "Waldium"
+  "id": "aw-voicetapp",
+  "title": "Voicetapp"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-onranko",
-  "title": "Onranko"
+  "id": "aw-rephrasely",
+  "title": "Rephrasely"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-serplux",
-  "title": "Serplux"
+  "id": "aw-supertranslate",
+  "title": "Supertranslate"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-scribe-ai",
-  "title": "Scribe AI"
+  "id": "aw-scribebuddy",
+  "title": "Scribebuddy"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-typeface",
-  "title": "Typeface"
+  "id": "aw-graphic-ai",
+  "title": "Graphic AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-riverside-fm",
-  "title": "Riverside.fm"
+  "id": "aw-deepgram",
+  "title": "Deepgram"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-notion-ai",
-  "title": "Notion AI"
+  "id": "aw-taption",
+  "title": "Taption"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-regie-ai",
-  "title": "Regie.ai"
+  "id": "aw-article-audio",
+  "title": "Article.Audio"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-beautifulsoup",
-  "title": "Beautifulsoup"
+  "id": "aw-listnr-2-0",
+  "title": "Listnr 2.0"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-ai-or-not",
-  "title": "AI or Not"
+  "id": "aw-speechelo",
+  "title": "Speechelo"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-fontvibe",
-  "title": "FontVibe"
+  "id": "aw-verbatik",
+  "title": "VERBATIK"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-murph-ai",
-  "title": "Murph AI"
+  "id": "aw-ava",
+  "title": "Ava"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-metorial",
-  "title": "Metorial"
+  "id": "aw-snazzy-ai",
+  "title": "Snazzy AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-regexai",
-  "title": "RegexAI"
+  "id": "aw-affine-ai",
+  "title": "AFFiNE AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-haiper",
-  "title": "Haiper"
+  "id": "aw-coverletter-app",
+  "title": "coverletter.app"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-magic-dev",
-  "title": "Magic.dev"
+  "id": "aw-startup-pitch-generator",
+  "title": "Startup Pitch Generator"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-adapt-or-die",
-  "title": "Adapt or Die"
+  "id": "aw-storywizard",
+  "title": "Storywizard"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "aw-cronai",
-  "title": "CronAI"
+  "id": "aw-your-cover-letter",
+  "title": "Your Cover Letter"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-pitchboom-io",
-  "title": "pitchboom.io"
+  "id": "aw-texti",
+  "title": "Texti"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-webrun",
-  "title": "WebRun"
+  "id": "aw-sheet-ai",
+  "title": "Sheet AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-zalcro",
-  "title": "Zalcro"
+  "id": "aw-speedwrite",
+  "title": "SpeedWrite"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-sell-personal-agents-with-pickaxe",
-  "title": "Sell Personal Agents with Pickaxe"
+  "id": "aw-writemeacoverletter",
+  "title": "Writemeacoverletter"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-blooper-ai",
-  "title": "Blooper.ai"
+  "id": "aw-sheetgod",
+  "title": "SheetGod"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-miingl-social",
-  "title": "miingl social"
+  "id": "aw-myess",
+  "title": "Myess"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-vakilat",
-  "title": "Vakilat"
+  "id": "aw-namewizard",
+  "title": "Namewizard"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-leadport-ai",
-  "title": "Leadport AI"
+  "id": "aw-philosophy",
+  "title": "Philosophy"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-searchtok",
-  "title": "Searchtok"
+  "id": "aw-politepost",
+  "title": "Politepost"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-translucent-ai",
-  "title": "Translucent AI"
+  "id": "aw-replai",
+  "title": "ReplAI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-recepto",
-  "title": "Recepto"
+  "id": "aw-scarlettpanda",
+  "title": "Scarlettpanda"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-levo",
-  "title": "Levo"
+  "id": "aw-proposalgenie",
+  "title": "Proposalgenie"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-startupflow-ai-2-0",
-  "title": "StartupFlow AI 2.0"
+  "id": "aw-namelix",
+  "title": "Namelix"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-koltrix",
-  "title": "Koltrix"
+  "id": "aw-justlearn",
+  "title": "Justlearn"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-orgsync",
-  "title": "OrgSync"
+  "id": "aw-jot",
+  "title": "Jot"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-billing-mcp-by-subscriptionflow",
-  "title": "Billing MCP By SubscriptionFlow"
+  "id": "aw-infiniteconversation",
+  "title": "Infiniteconversation"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-cloptima",
-  "title": "Cloptima"
+  "id": "aw-goatchat",
+  "title": "Goatchat"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-scrollsnacks",
-  "title": "Scrollsnacks"
+  "id": "aw-formulagod",
+  "title": "Formulagod"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-hitpay-agentic-discovery",
-  "title": "HitPay Agentic Discovery"
+  "id": "aw-goalsgpt",
+  "title": "GoalsGPT"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-woven-video",
-  "title": "Woven Video"
+  "id": "aw-formula-dog",
+  "title": "Formula Dog"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-royak",
-  "title": "Royak"
+  "id": "aw-gandhiji",
+  "title": "Gandhiji"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-kivo",
-  "title": "Kivo"
+  "id": "aw-lingostar",
+  "title": "Lingostar"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-chronos-db",
-  "title": "Chronos DB"
+  "id": "aw-excelformulabot",
+  "title": "Excelformulabot"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-free-ai-visibility-report",
-  "title": "Free AI Visibility Report"
+  "id": "aw-econtext",
+  "title": "eContext"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-kata-send",
-  "title": "Kata Send"
+  "id": "aw-digital-dogs",
+  "title": "Digital Dogs"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-meshia",
-  "title": "Meshia"
+  "id": "aw-valideo",
+  "title": "Valideo"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-aws-emulator",
-  "title": "AWS Emulator"
+  "id": "aw-coverletterwrite",
+  "title": "Coverletterwrite"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-beaquaro-studio",
-  "title": "Beaquaro Studio"
+  "id": "aw-explainpaper",
+  "title": "Explainpaper"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-peji",
-  "title": "Peji"
+  "id": "aw-diffusion-chat",
+  "title": "Diffusion.chat"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-trading-agents",
-  "title": "Trading Agents"
+  "id": "aw-tweept3",
+  "title": "TweePT3"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-snaptiles",
-  "title": "SnapTiles"
+  "id": "aw-gpt-for-slides",
+  "title": "GPT for Slides"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-tetriz-engg-intelligence-connectors",
-  "title": "Tetriz Engg Intelligence + Connectors"
+  "id": "aw-tweethunter",
+  "title": "Tweethunter"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-datashake-mcp",
-  "title": "Datashake MCP"
+  "id": "aw-tweetspear",
+  "title": "Tweetspear"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-dearinside",
-  "title": "DearInside"
+  "id": "aw-roast",
+  "title": "Roast"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-backlane",
-  "title": "backlane"
+  "id": "aw-stockgpt",
+  "title": "StockGPT"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-seamcult",
-  "title": "Seamcult"
+  "id": "aw-akkio",
+  "title": "Akkio"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-veilcc",
-  "title": "VeilCC"
+  "id": "aw-reply",
+  "title": "Reply"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-cc-auto-review",
-  "title": "CC Auto Review"
+  "id": "aw-chatba",
+  "title": "ChatBA"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-testera-probe",
-  "title": "Testera Probe"
+  "id": "aw-briefly",
+  "title": "Briefly"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-moreframe",
-  "title": "MoreFrame"
+  "id": "aw-altera-ai",
+  "title": "Altera AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-runthru",
-  "title": "RunThru"
+  "id": "aw-reviewz",
+  "title": "Reviewz"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-cubbypad",
-  "title": "CubbyPad"
+  "id": "aw-hoppy-copy",
+  "title": "Hoppy Copy"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-agentic-cleanslop",
-  "title": "Agentic CleanSlop"
+  "id": "aw-unbounce",
+  "title": "unbounce"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-spaceo",
-  "title": "SpaceO"
+  "id": "aw-getresponse",
+  "title": "GetResponse"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-polyroom",
-  "title": "polyroom"
+  "id": "aw-octie-ai",
+  "title": "Octie.ai"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-resum",
-  "title": "Resum"
+  "id": "aw-jpgrm",
+  "title": "jpgRM"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-infaiw",
-  "title": "infaiw"
+  "id": "aw-splashai",
+  "title": "SplashAI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-freeflow-dictation",
-  "title": "FreeFlow Dictation"
+  "id": "aw-jpghd",
+  "title": "jpghd"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-mcpcore",
-  "title": "MCPCore"
+  "id": "aw-unfake",
+  "title": "Unfake"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-kettle",
-  "title": "Kettle"
+  "id": "aw-autoname",
+  "title": "Autoname"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-toweb-15",
-  "title": "TOWeb 15"
+  "id": "aw-stillgram",
+  "title": "Stillgram"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-openring",
-  "title": "openring"
+  "id": "aw-geniusreview",
+  "title": "Geniusreview"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-mmory",
-  "title": "Mmory"
+  "id": "aw-extendimage",
+  "title": "ExtendImage"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-wispos",
-  "title": "WispOS"
+  "id": "aw-colorize",
+  "title": "Colorize"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-thunder",
-  "title": "Thunder"
+  "id": "aw-photorestoration",
+  "title": "Photorestoration"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-chatnest",
-  "title": "ChatNest"
+  "id": "aw-imgcreator",
+  "title": "ImgCreator"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-wisp",
-  "title": "Wisp"
+  "id": "aw-imagecolorizer",
+  "title": "ImageColorizer"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-tracex",
-  "title": "TraceX"
+  "id": "aw-photofix",
+  "title": "PhotoFix"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-praex",
-  "title": "Praex"
+  "id": "aw-photospells",
+  "title": "Photospells"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-dearcameo",
-  "title": "DearCameo"
+  "id": "aw-hama",
+  "title": "Hama"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-plainmail",
-  "title": "Plainmail"
+  "id": "aw-product-launch-ai",
+  "title": "Product Launch AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-hashference",
-  "title": "Hashference"
+  "id": "aw-avc-ai",
+  "title": "AVC AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-sorcerer",
-  "title": "Sorcerer"
+  "id": "aw-ai-image-enlarger",
+  "title": "AI Image Enlarger"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-lugh-xtudio",
-  "title": "Lugh Xtudio"
+  "id": "aw-musico",
+  "title": "Musico"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-klang",
-  "title": "Klang"
+  "id": "aw-hexowatch",
+  "title": "Hexowatch"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-willder",
-  "title": "Willder"
+  "id": "aw-buildai",
+  "title": "BuildAI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-the-new-beings",
-  "title": "The New Beings"
+  "id": "aw-mem",
+  "title": "mem"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-base-studio",
-  "title": "BASE Studio"
+  "id": "aw-magic-hour",
+  "title": "Magic Hour"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-boltbar",
-  "title": "Boltbar"
+  "id": "aw-paralegal-ai",
+  "title": "Paralegal AI"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-our-silly-games",
-  "title": "Our Silly Games"
+  "id": "aw-jd-generator",
+  "title": "JD Generator"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-koi",
-  "title": "Koi"
+  "id": "aw-ai-lawyer",
+  "title": "AI Lawyer"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-rungle",
-  "title": "Rungle"
+  "id": "aw-hireyay",
+  "title": "HireYaY"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-daytwo",
-  "title": "Daytwo"
+  "id": "aw-spellbook",
+  "title": "Spellbook"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-make0-brain-oss",
-  "title": "Make0 Brain OSS"
+  "id": "aw-legaliser",
+  "title": "Legaliser"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-hako",
-  "title": "Hako"
+  "id": "aw-lazyapply",
+  "title": "LazyApply"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-operum",
-  "title": "Operum"
+  "id": "aw-patentpal",
+  "title": "PatentPal"
  },
  {
-  "at": "2026-11-17T20:58:33.691Z",
+  "at": "2026-11-17T22:59:26.654Z",
   "type": "added",
-  "id": "ph-easein-health",
-  "title": "EaseIn Health"
+  "id": "aw-donotpay",
+  "title": "DoNotPay"
  }
 ]
