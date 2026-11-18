@@ -1,5 +1,95 @@
 [
  {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-kite",
+  "title": "Kite"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-nexmo-api",
+  "title": "Nexmo API"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-paintings-by-style-on-wikiart",
+  "title": "Paintings by Style on WikiArt"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-generrated",
+  "title": "Generrated"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-touchretouch",
+  "title": "TouchRetouch"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-art-es",
+  "title": "AI Art ES"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-vsco",
+  "title": "VSCO"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-voctro-labs",
+  "title": "Voctro Labs"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-audiolabs",
+  "title": "Audiolabs"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-voicery",
+  "title": "Voicery"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-dadabots",
+  "title": "Dadabots"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "qc-hidden",
+  "id": "aw-nsynth-super",
+  "title": "NSynth Super"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "removed",
+  "id": "gh-outpostkrewhirl86-capri-ai",
+  "title": "Capri-AI"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "removed",
+  "id": "gh-hade6556-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-18T10:10:30.567Z",
+  "type": "removed",
+  "id": "gh-hitkeeen-blender-ai-mcp-addon",
+  "title": "blender-ai-mcp-addon"
+ },
+ {
   "at": "2026-11-18T09:10:14.006Z",
   "type": "qc-hidden",
   "id": "aw-build-club",
@@ -508,95 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-ai-timeline",
   "title": "AI Timeline"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-the-aikea-effect",
-  "title": "The AIKEA Effect"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-timeline-of-ai-and-language-models",
-  "title": "Timeline of AI and language models"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-generative-ai-exists-because-of-the-transformer",
-  "title": "Generative AI exists because of the transformer"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-genai-prism-infographic-by-brian-solis",
-  "title": "GenAI Prism Infographic by Brian Solis"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-who-owns-the-generative-ai-platform-andreessen-horowitz",
-  "title": "Who Owns the Generative AI Platform? | Andreessen Horowitz"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-the-four-wars-of-the-ai-stack-dec-2023-recap",
-  "title": "The Four Wars of the AI Stack (Dec 2023 Recap)"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-index-report-2023-artificial-intelligence-index",
-  "title": "AI Index Report 2023 \u2013 Artificial Intelligence Index"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-early-days-of-ai-by-elad-gil",
-  "title": "Early days of AI - by Elad Gil"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-generative-ai-in-a-nutshell",
-  "title": "Generative AI in a nutshell"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-60-generative-ai-terms-you-must-know-by-heart",
-  "title": "60+ Generative AI\u00a0Terms You Must Know By Heart"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-the-rise-of-generative-ai-large-language-models-llms",
-  "title": "The Rise of Generative AI Large Language Models (LLMs)"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "aw-generative-ai-a-creative-new-world",
-  "title": "Generative AI: A Creative New World"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "aw-chatgpt-heralds-an-intellectual-revolution",
-  "title": "ChatGPT Heralds an Intellectual Revolution"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-aws-emulator",
-  "title": "AWS Emulator"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-beaquaro-studio",
-  "title": "Beaquaro Studio"
  }
 ]
