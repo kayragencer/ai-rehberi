@@ -1,5 +1,101 @@
 [
  {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-zidage-alcedostudio",
+  "title": "AlcedoStudio"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-d2phap-exifglass",
+  "title": "ExifGlass"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-zylwithxy-hrdit",
+  "title": "HRDiT"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-daviddinkevich-story2board",
+  "title": "Story2Board"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-huawei-csl-macaq",
+  "title": "MACaQ"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-tonephorepair-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-trapbladesmith-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-taboospecialistblade-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-juneo-lab-decision-forge",
+  "title": "decision-forge"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-kalcaddle-kodbox",
+  "title": "kodbox"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-vapi-network-vapi-network",
+  "title": "vapi-network"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-zeromicro-go-zero",
+  "title": "go-zero"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-mukul975-anthropic-cybersecurity-skills",
+  "title": "Anthropic-Cybersecurity-Skills"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-mouredev-hello-python",
+  "title": "Hello-Python"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-lightrag",
+  "title": "LightRAG"
+ },
+ {
+  "at": "2026-11-18T20:04:15.088Z",
+  "type": "qc-hidden",
+  "id": "gh-paperless-ngx-paperless-ngx",
+  "title": "paperless-ngx"
+ },
+ {
   "at": "2026-11-18T19:00:27.033Z",
   "type": "qc-hidden",
   "id": "gh-hkuds-deeptutor",
@@ -502,101 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-attacking-large-language-models",
   "title": "Attacking Large Language Models"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-owasp-top-10-for-large-language-model-applications",
-  "title": "OWASP Top 10 for Large Language Model Applications"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-mitre-atlas",
-  "title": "MITRE ATLAS\u2122"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-lmexamqa",
-  "title": "LMExamQA"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-prometheus-2-cookbook-llamaindex",
-  "title": "Prometheus-2 Cookbook - LlamaIndex"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-the-pile",
-  "title": "The Pile"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-evaluating-llms-is-a-minefield",
-  "title": "Evaluating LLMs is a minefield"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-evaluating-large-language-models",
-  "title": "Evaluating Large Language Models"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-livebench",
-  "title": "LiveBench"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-featured-gpts",
-  "title": "Featured GPTs"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-allgpts",
-  "title": "AllGPTs"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-top-large-language-models-llms-in-2023-marktechpost",
-  "title": "Top Large Language Models (LLMs) in 2023 | MarkTechPost"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-streamingllm-gives-language-models-unlimited-context",
-  "title": "StreamingLLM gives language models unlimited context"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-why-llama-is-a-big-deal-hackaday",
-  "title": "Why LLaMa Is A Big Deal | Hackaday"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-generative-ai-for-strategy-innovation",
-  "title": "Generative AI for Strategy & Innovation"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-future-tools-find-the-exact-ai-tool-for-your-needs",
-  "title": "Future Tools - Find The Exact AI Tool For Your Needs"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-futurepedia-the-largest-ai-tools-directory-home",
-  "title": "Futurepedia - The Largest AI Tools Directory | Home"
  }
 ]
