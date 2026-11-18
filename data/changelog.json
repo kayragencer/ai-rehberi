@@ -1,5 +1,77 @@
 [
  {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "aw-generative-ai-a-creative-new-world",
+  "title": "Generative AI: A Creative New World"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "aw-chatgpt-heralds-an-intellectual-revolution",
+  "title": "ChatGPT Heralds an Intellectual Revolution"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-aws-emulator",
+  "title": "AWS Emulator"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-beaquaro-studio",
+  "title": "Beaquaro Studio"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-snaptiles",
+  "title": "SnapTiles"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-dearinside",
+  "title": "DearInside"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-cubbypad",
+  "title": "CubbyPad"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-dearcameo",
+  "title": "DearCameo"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-easein-health",
+  "title": "EaseIn Health"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-kafkador",
+  "title": "Kafkador"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-dover-startup-jobs",
+  "title": "Dover Startup Jobs"
+ },
+ {
+  "at": "2026-11-18T02:56:53.922Z",
+  "type": "qc-hidden",
+  "id": "ph-pwned-coffee",
+  "title": "pwned.coffee"
+ },
+ {
   "at": "2026-11-18T01:21:33.007Z",
   "type": "qc-hidden",
   "id": "ph-kalender-sync",
@@ -526,77 +598,5 @@
   "type": "added",
   "id": "aw-hermes-ide",
   "title": "Hermes IDE"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-clirank",
-  "title": "CLIRank"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-marmot",
-  "title": "Marmot"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-micro-agent",
-  "title": "Micro Agent"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-shadcn-space-mcp",
-  "title": "Shadcn Space MCP"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-aixcoder",
-  "title": "aiXcoder"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-flyonui-mcp",
-  "title": "FlyonUI MCP"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-sourcery",
-  "title": "Sourcery"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-dbforge-ai-assistant",
-  "title": "dbForge AI Assistant"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-traycer",
-  "title": "Traycer"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-shadcn-studio-mcp",
-  "title": "shadcn/studio MCP"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-easycode",
-  "title": "EasyCode"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-swimm",
-  "title": "Swimm"
  }
 ]
