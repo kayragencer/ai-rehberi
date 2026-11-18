@@ -1,5 +1,95 @@
 [
  {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-cc0",
+  "title": "![CC0"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-carolina",
+  "title": "Carolina"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-birme",
+  "title": "BIRME"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-computer-vision-art-gallery-cvpr-2021",
+  "title": "Computer Vision Art Gallery : CVPR 2021"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-laion",
+  "title": "LAION"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-lyria-by-google-deepmind",
+  "title": "Lyria by Google DeepMind"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-phenaki-google-research",
+  "title": "Phenaki \u2013 Google Research"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-model-database-upscale-wiki",
+  "title": "Model Database - Upscale Wiki"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-official-overview",
+  "title": "Official overview"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-verify",
+  "title": "Verify"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-url",
+  "title": "URL"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "qc-hidden",
+  "id": "aw-selfies-with-sama",
+  "title": "Selfies with Sama"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "restored",
+  "id": "gh-semperai-amica",
+  "title": "amica"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "removed",
+  "id": "gh-trackboatwrightplan-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-18T07:22:50.386Z",
+  "type": "removed",
+  "id": "gh-trackboatwrightplan-ai-manus2-0",
+  "title": "ai--manus2.0"
+ },
+ {
   "at": "2026-11-18T06:11:03.653Z",
   "type": "qc-hidden",
   "id": "aw-moltbook",
@@ -508,95 +598,5 @@
   "type": "added",
   "id": "aw-diagramgpt",
   "title": "DiagramGPT"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-costpilot",
-  "title": "CostPilot"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-zenable",
-  "title": "Zenable"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-contextmcp",
-  "title": "ContextMCP"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-gitbrain",
-  "title": "GitBrain"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-gitbutler",
-  "title": "GitButler"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-agentskb",
-  "title": "AgentsKB"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-costgoat",
-  "title": "CostGoat"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codecosts",
-  "title": "CodeCosts"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-domscribe",
-  "title": "Domscribe"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-wopee-io",
-  "title": "Wopee.io"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-recurse-ml",
-  "title": "Recurse ML"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-martinloop",
-  "title": "MartinLoop"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-conductor",
-  "title": "Conductor"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-agentsmesh",
-  "title": "AgentsMesh"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-superset",
-  "title": "Superset"
  }
 ]
