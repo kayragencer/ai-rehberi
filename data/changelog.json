@@ -1,5 +1,83 @@
 [
  {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-phillipi-pix2pix",
+  "title": "pix2pix"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-startrail-org-pixelrag",
+  "title": "PixelRAG"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-kalyanks-nlp-llm-engineer-toolkit",
+  "title": "llm-engineer-toolkit"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-lightricks-ltx-video",
+  "title": "LTX-Video"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-fareedkhan-dev-kimi-k3-in-c",
+  "title": "kimi-k3-in-c"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-openmoss-moss",
+  "title": "MOSS"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-sapientinc-hrm",
+  "title": "HRM"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-eugeneyan-open-llms",
+  "title": "open-llms"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-wong2-chatgpt-google-extension",
+  "title": "chatgpt-google-extension"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-shishirpatil-gorilla",
+  "title": "gorilla"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-thesysdev-openui",
+  "title": "openui"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-corsairdev-corsair",
+  "title": "corsair"
+ },
+ {
+  "at": "2026-11-18T23:55:46.966Z",
+  "type": "qc-hidden",
+  "id": "gh-camenduru-stable-diffusion-webui-colab",
+  "title": "stable-diffusion-webui-colab"
+ },
+ {
   "at": "2026-11-18T22:57:19.669Z",
   "type": "qc-hidden",
   "id": "gh-kubesphere-kubesphere",
@@ -520,83 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-ai-art-es",
   "title": "AI Art ES"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "qc-hidden",
-  "id": "aw-vsco",
-  "title": "VSCO"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "qc-hidden",
-  "id": "aw-voctro-labs",
-  "title": "Voctro Labs"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "qc-hidden",
-  "id": "aw-audiolabs",
-  "title": "Audiolabs"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "qc-hidden",
-  "id": "aw-voicery",
-  "title": "Voicery"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "qc-hidden",
-  "id": "aw-dadabots",
-  "title": "Dadabots"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "qc-hidden",
-  "id": "aw-nsynth-super",
-  "title": "NSynth Super"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "removed",
-  "id": "gh-outpostkrewhirl86-capri-ai",
-  "title": "Capri-AI"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "removed",
-  "id": "gh-hade6556-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-18T10:10:30.567Z",
-  "type": "removed",
-  "id": "gh-hitkeeen-blender-ai-mcp-addon",
-  "title": "blender-ai-mcp-addon"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-build-club",
-  "title": "Build Club"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-deep-angel",
-  "title": "Deep Angel"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-aimatchpro",
-  "title": "aimatchpro"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-rescuetime",
-  "title": "RescueTime"
  }
 ]
