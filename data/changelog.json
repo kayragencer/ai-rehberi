@@ -1,5 +1,65 @@
 [
  {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-moltbook",
+  "title": "moltbook"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-runthisllm",
+  "title": "RunThisLLM"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-seal-llm-leaderboard",
+  "title": "SEAL LLM Leaderboard"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-llm-stats",
+  "title": "LLM Stats"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-arena",
+  "title": "Arena"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-openrouter-llm-rankings",
+  "title": "OpenRouter LLM Rankings"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-artificial-analysis",
+  "title": "Artificial Analysis"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-s-new-creative-streak-sparks-a-silicon-valley-gold-rush",
+  "title": "AI's New Creative Streak Sparks a Silicon Valley Gold Rush"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "removed",
+  "id": "gh-dragoncomputer-dragonfire",
+  "title": "Dragonfire"
+ },
+ {
+  "at": "2026-11-18T06:11:03.653Z",
+  "type": "added",
+  "id": "aw-eye-type-detector",
+  "title": "Eye Type Detector"
+ },
+ {
   "at": "2026-11-18T05:06:50.267Z",
   "type": "qc-hidden",
   "id": "aw-atlas-krea-stable-diffusion",
@@ -538,65 +598,5 @@
   "type": "added",
   "id": "aw-superset",
   "title": "Superset"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-vibebox",
-  "title": "VibeBox"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-stoneforge",
-  "title": "Stoneforge"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-traceroot-ai",
-  "title": "TraceRoot AI"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-revieko",
-  "title": "Revieko"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-meticulous-ai",
-  "title": "Meticulous.ai"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-grit",
-  "title": "Grit"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-diffblue",
-  "title": "DiffBlue"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-checksum-ai",
-  "title": "Checksum AI"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-pr-triage",
-  "title": "PR Triage"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codehawk",
-  "title": "CodeHawk"
  }
 ]
