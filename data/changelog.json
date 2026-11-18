@@ -1,5 +1,131 @@
 [
  {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-build-club",
+  "title": "Build Club"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-deep-angel",
+  "title": "Deep Angel"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-aimatchpro",
+  "title": "aimatchpro"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-rescuetime",
+  "title": "RescueTime"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-monday-com",
+  "title": "Monday.com"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-google-ai",
+  "title": "Google AI"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-free-tegami-tools-jp",
+  "title": "Free Tegami Tools JP"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-bestaipacks",
+  "title": "bestAIpacks"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-free-ai-tools-jp",
+  "title": "Free AI Tools JP"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-oracle-ai",
+  "title": "Oracle AI"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-neuralink",
+  "title": "Neuralink"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-tesla-bot",
+  "title": "Tesla Bot"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-engineer-pack",
+  "title": "AI Engineer Pack"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-student-pack",
+  "title": "AI Student Pack"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-google-ai-pro-for-students",
+  "title": "Google AI Pro for Students"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-mongodb",
+  "title": "MongoDB"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-deepseek-v4-flash",
+  "title": "deepseek-v4-flash"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-digitalocean",
+  "title": "DigitalOcean"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-qwen3-6-max-preview",
+  "title": "qwen3.6-max-preview"
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "qc-hidden",
+  "id": "aw-buy-me-a-coffee",
+  "title": "![\"Buy Me A Coffee\""
+ },
+ {
+  "at": "2026-11-18T09:10:14.006Z",
+  "type": "removed",
+  "id": "gh-mellevm-manus-ai",
+  "title": "manus--ai"
+ },
+ {
   "at": "2026-11-18T07:22:50.386Z",
   "type": "qc-hidden",
   "id": "aw-cc0",
@@ -472,131 +598,5 @@
   "type": "qc-hidden",
   "id": "ph-beaquaro-studio",
   "title": "Beaquaro Studio"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-snaptiles",
-  "title": "SnapTiles"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-dearinside",
-  "title": "DearInside"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-cubbypad",
-  "title": "CubbyPad"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-dearcameo",
-  "title": "DearCameo"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-easein-health",
-  "title": "EaseIn Health"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-kafkador",
-  "title": "Kafkador"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-dover-startup-jobs",
-  "title": "Dover Startup Jobs"
- },
- {
-  "at": "2026-11-18T02:56:53.922Z",
-  "type": "qc-hidden",
-  "id": "ph-pwned-coffee",
-  "title": "pwned.coffee"
- },
- {
-  "at": "2026-11-18T01:21:33.007Z",
-  "type": "qc-hidden",
-  "id": "ph-kalender-sync",
-  "title": "Kalender Sync"
- },
- {
-  "at": "2026-11-18T01:21:33.007Z",
-  "type": "qc-hidden",
-  "id": "ph-axonnic",
-  "title": "Axonnic"
- },
- {
-  "at": "2026-11-18T01:21:33.007Z",
-  "type": "qc-hidden",
-  "id": "ph-customer-io-fall-release",
-  "title": "Customer.io Fall Release"
- },
- {
-  "at": "2026-11-18T01:21:33.007Z",
-  "type": "qc-hidden",
-  "id": "ph-ernd",
-  "title": "ernd"
- },
- {
-  "at": "2026-11-18T01:21:33.007Z",
-  "type": "added",
-  "id": "aw-summary-with-ai",
-  "title": "Summary With AI"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "qc-hidden",
-  "id": "ph-bee-frontier-and-bee-eclipse",
-  "title": "Bee Frontier and Bee Eclipse"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "qc-hidden",
-  "id": "ph-paxper",
-  "title": "Paxper"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "qc-hidden",
-  "id": "ph-asimov-1",
-  "title": "Asimov 1"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "qc-hidden",
-  "id": "ph-modelpeers",
-  "title": "Modelpeers"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "qc-hidden",
-  "id": "ph-lifeval",
-  "title": "LifeVal"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-ai-coding-compare",
-  "title": "AI Coding Compare"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-docuwriter-ai",
-  "title": "DocuWriter.ai"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-diagramgpt",
-  "title": "DiagramGPT"
  }
 ]
