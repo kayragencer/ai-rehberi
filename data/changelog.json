@@ -1,5 +1,113 @@
 [
  {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-kubesphere-kubesphere",
+  "title": "kubesphere"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-deepseek-ai-janus",
+  "title": "Janus"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-googlecloudplatform-generative-ai",
+  "title": "generative-ai"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-nvidia-megatron-lm",
+  "title": "Megatron-LM"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-nari-labs-dia",
+  "title": "dia"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-wanshuiyin-auto-claude-code-research-in-sleep",
+  "title": "Auto-claude-code-research-in-sleep"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-alibaba-nlp-deepresearch",
+  "title": "DeepResearch"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-ai4finance-foundation-fingpt",
+  "title": "FinGPT"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-huggingface-datasets",
+  "title": "datasets"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-microsoft-unilm",
+  "title": "unilm"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-docmost-docmost",
+  "title": "docmost"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-haotian-liu-llava",
+  "title": "LLaVA"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-dapr-dapr",
+  "title": "dapr"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-humanlayer-12-factor-agents",
+  "title": "12-factor-agents"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-python-telegram-bot-python-telegram-bot",
+  "title": "python-telegram-bot"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "qc-hidden",
+  "id": "gh-gitleaks-gitleaks",
+  "title": "gitleaks"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "removed",
+  "id": "gh-superglue-ai-superglue",
+  "title": "superglue"
+ },
+ {
+  "at": "2026-11-18T22:57:19.669Z",
+  "type": "hidden",
+  "id": "gh-tensorchord-pgvecto-rs",
+  "title": "pgvecto.rs"
+ },
+ {
   "at": "2026-11-18T21:56:49.617Z",
   "type": "qc-hidden",
   "id": "aw-beautifulsoup",
@@ -490,113 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-rescuetime",
   "title": "RescueTime"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-monday-com",
-  "title": "Monday.com"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-google-ai",
-  "title": "Google AI"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-free-tegami-tools-jp",
-  "title": "Free Tegami Tools JP"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-bestaipacks",
-  "title": "bestAIpacks"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-free-ai-tools-jp",
-  "title": "Free AI Tools JP"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-oracle-ai",
-  "title": "Oracle AI"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-neuralink",
-  "title": "Neuralink"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-tesla-bot",
-  "title": "Tesla Bot"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-engineer-pack",
-  "title": "AI Engineer Pack"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-student-pack",
-  "title": "AI Student Pack"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-google-ai-pro-for-students",
-  "title": "Google AI Pro for Students"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-mongodb",
-  "title": "MongoDB"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-deepseek-v4-flash",
-  "title": "deepseek-v4-flash"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-digitalocean",
-  "title": "DigitalOcean"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-qwen3-6-max-preview",
-  "title": "qwen3.6-max-preview"
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "qc-hidden",
-  "id": "aw-buy-me-a-coffee",
-  "title": "![\"Buy Me A Coffee\""
- },
- {
-  "at": "2026-11-18T09:10:14.006Z",
-  "type": "removed",
-  "id": "gh-mellevm-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-cc0",
-  "title": "![CC0"
  }
 ]
