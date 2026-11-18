@@ -1,5 +1,305 @@
 [
  {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-atlas-krea-stable-diffusion",
+  "title": "Atlas KREA Stable Diffusion"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-generative-art-tools",
+  "title": "Ai generative art tools"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-attacking-large-language-models",
+  "title": "Attacking Large Language Models"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-owasp-top-10-for-large-language-model-applications",
+  "title": "OWASP Top 10 for Large Language Model Applications"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-mitre-atlas",
+  "title": "MITRE ATLAS\u2122"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-lmexamqa",
+  "title": "LMExamQA"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-prometheus-2-cookbook-llamaindex",
+  "title": "Prometheus-2 Cookbook - LlamaIndex"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-the-pile",
+  "title": "The Pile"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-evaluating-llms-is-a-minefield",
+  "title": "Evaluating LLMs is a minefield"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-evaluating-large-language-models",
+  "title": "Evaluating Large Language Models"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-livebench",
+  "title": "LiveBench"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-featured-gpts",
+  "title": "Featured GPTs"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-allgpts",
+  "title": "AllGPTs"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-top-large-language-models-llms-in-2023-marktechpost",
+  "title": "Top Large Language Models (LLMs) in 2023 | MarkTechPost"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-streamingllm-gives-language-models-unlimited-context",
+  "title": "StreamingLLM gives language models unlimited context"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-why-llama-is-a-big-deal-hackaday",
+  "title": "Why LLaMa Is A Big Deal | Hackaday"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-generative-ai-for-strategy-innovation",
+  "title": "Generative AI for Strategy & Innovation"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-future-tools-find-the-exact-ai-tool-for-your-needs",
+  "title": "Future Tools - Find The Exact AI Tool For Your Needs"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-futurepedia-the-largest-ai-tools-directory-home",
+  "title": "Futurepedia - The Largest AI Tools Directory | Home"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-finder",
+  "title": "AI Finder"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-lunroo",
+  "title": "Lunroo"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-datacamp-s-become-a-generative-ai-developer-series",
+  "title": "DataCamp's Become a Generative AI Developer series"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-tool-master-list",
+  "title": "AI Tool Master List"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-aiforme",
+  "title": "AIForme"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-aisupersmart-ai-tool-directory",
+  "title": "AiSuperSmart Ai Tool Directory"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ainave",
+  "title": "ainave"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-technologies-in-lablab",
+  "title": "Technologies in LabLab"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-hd-robots",
+  "title": "HD Robots"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-toolify",
+  "title": "Toolify"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-search",
+  "title": "AI Search"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-orbicai",
+  "title": "OrbicAI"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-presentation-makers",
+  "title": "AI Presentation Makers"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-it-s-time-to-retire-the-term-user",
+  "title": "It\u2019s time to retire the term \u201cuser\u201d"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-toollist-ai",
+  "title": "ToolList.ai"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-tracking-ai",
+  "title": "Tracking AI"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-data-laundering-waxy-org",
+  "title": "AI Data Laundering - Waxy.org"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-base11-research-generative-ai",
+  "title": "Base11 Research - generative-ai"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-can-computers-create-art-by-aaron-hertzmann",
+  "title": "Can Computers Create Art? by Aaron Hertzmann"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-timeline",
+  "title": "AI Timeline"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-the-aikea-effect",
+  "title": "The AIKEA Effect"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-timeline-of-ai-and-language-models",
+  "title": "Timeline of AI and language models"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-generative-ai-exists-because-of-the-transformer",
+  "title": "Generative AI exists because of the transformer"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-genai-prism-infographic-by-brian-solis",
+  "title": "GenAI Prism Infographic by Brian Solis"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-who-owns-the-generative-ai-platform-andreessen-horowitz",
+  "title": "Who Owns the Generative AI Platform? | Andreessen Horowitz"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-the-four-wars-of-the-ai-stack-dec-2023-recap",
+  "title": "The Four Wars of the AI Stack (Dec 2023 Recap)"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-index-report-2023-artificial-intelligence-index",
+  "title": "AI Index Report 2023 \u2013 Artificial Intelligence Index"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-early-days-of-ai-by-elad-gil",
+  "title": "Early days of AI - by Elad Gil"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-generative-ai-in-a-nutshell",
+  "title": "Generative AI in a nutshell"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-60-generative-ai-terms-you-must-know-by-heart",
+  "title": "60+ Generative AI\u00a0Terms You Must Know By Heart"
+ },
+ {
+  "at": "2026-11-18T05:06:50.267Z",
+  "type": "qc-hidden",
+  "id": "aw-the-rise-of-generative-ai-large-language-models-llms",
+  "title": "The Rise of Generative AI Large Language Models (LLMs)"
+ },
+ {
   "at": "2026-11-18T02:56:53.922Z",
   "type": "qc-hidden",
   "id": "aw-generative-ai-a-creative-new-world",
@@ -298,305 +598,5 @@
   "type": "added",
   "id": "aw-codehawk",
   "title": "CodeHawk"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-baz",
-  "title": "Baz"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codegen",
-  "title": "Codegen"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-greptile",
-  "title": "Greptile"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codeant-ai",
-  "title": "CodeAnt AI"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-pixee",
-  "title": "Pixee"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codereviewbot",
-  "title": "CodeReviewBot"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-corgea",
-  "title": "Corgea"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-goast",
-  "title": "Goast"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-pr-explainer-bot",
-  "title": "PR Explainer Bot"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-macroscope",
-  "title": "Macroscope"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-enigmaeasel",
-  "title": "EnigmaEasel"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-mantra",
-  "title": "Mantra"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-ai-code-convert",
-  "title": "AI Code Convert"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-sqlai-ai",
-  "title": "SQLAI.ai"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-patapim",
-  "title": "PATAPIM"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-memex",
-  "title": "Memex"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-onepilot",
-  "title": "Onepilot"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-jsonfix",
-  "title": "JSONFix"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codepal",
-  "title": "CodePal"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-autoregex",
-  "title": "AutoRegex"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-css-picker",
-  "title": "CSS Picker"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-kasava",
-  "title": "Kasava"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-factory",
-  "title": "Factory"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-sourcegraph-cody",
-  "title": "Sourcegraph Cody"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-contextwire",
-  "title": "ContextWire"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-magnet",
-  "title": "Magnet"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-gru-ai",
-  "title": "Gru.ai"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-frontman",
-  "title": "Frontman"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-unblocked",
-  "title": "Unblocked"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-vulk",
-  "title": "VULK"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-tempo",
-  "title": "Tempo"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-frontly",
-  "title": "Frontly"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-fastshot",
-  "title": "Fastshot"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-polymet",
-  "title": "Polymet"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-make-real",
-  "title": "Make Real"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-glowbom",
-  "title": "Glowbom"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-mage",
-  "title": "Mage"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-e2bfragments",
-  "title": "e2bFragments"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-pythagora",
-  "title": "Pythagora"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-softgen",
-  "title": "SoftGen"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-llamacoder",
-  "title": "LlamaCoder"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-co-dev",
-  "title": "Co.dev"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-pico",
-  "title": "Pico"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-leap-new",
-  "title": "Leap.new"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-openhands",
-  "title": "OpenHands"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-adal",
-  "title": "AdaL"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-cosine",
-  "title": "Cosine"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-backgrounder-dev",
-  "title": "Backgrounder.dev"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-butterfish",
-  "title": "Butterfish"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-hermes-ide",
-  "title": "Hermes IDE"
  }
 ]
