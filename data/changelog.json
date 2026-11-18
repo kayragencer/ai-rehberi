@@ -1,5 +1,47 @@
 [
  {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "qc-hidden",
+  "id": "aw-beautifulsoup",
+  "title": "Beautifulsoup"
+ },
+ {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "qc-hidden",
+  "id": "aw-adapt-or-die",
+  "title": "Adapt or Die"
+ },
+ {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "qc-hidden",
+  "id": "aw-bestaifor-com",
+  "title": "BestAIFor.com"
+ },
+ {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "qc-hidden",
+  "id": "aw-figure-ai",
+  "title": "Figure AI"
+ },
+ {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "qc-hidden",
+  "id": "aw-facebook-s-aroma",
+  "title": "Facebook's Aroma"
+ },
+ {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "added",
+  "id": "aw-neural-formula",
+  "title": "Neural Formula"
+ },
+ {
+  "at": "2026-11-18T21:56:49.617Z",
+  "type": "added",
+  "id": "aw-recruiting-emails-ai-by-dover",
+  "title": "Recruiting Emails AI by Dover"
+ },
+ {
   "at": "2026-11-18T20:58:46.615Z",
   "type": "qc-hidden",
   "id": "gh-boringmarketer-boring-marketing-skills",
@@ -556,47 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-cc0",
   "title": "![CC0"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-carolina",
-  "title": "Carolina"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-birme",
-  "title": "BIRME"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-computer-vision-art-gallery-cvpr-2021",
-  "title": "Computer Vision Art Gallery : CVPR 2021"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-laion",
-  "title": "LAION"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-lyria-by-google-deepmind",
-  "title": "Lyria by Google DeepMind"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-phenaki-google-research",
-  "title": "Phenaki \u2013 Google Research"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-model-database-upscale-wiki",
-  "title": "Model Database - Upscale Wiki"
  }
 ]
