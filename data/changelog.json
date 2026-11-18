@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-18T01:21:33.007Z",
+  "type": "qc-hidden",
+  "id": "ph-kalender-sync",
+  "title": "Kalender Sync"
+ },
+ {
+  "at": "2026-11-18T01:21:33.007Z",
+  "type": "qc-hidden",
+  "id": "ph-axonnic",
+  "title": "Axonnic"
+ },
+ {
+  "at": "2026-11-18T01:21:33.007Z",
+  "type": "qc-hidden",
+  "id": "ph-customer-io-fall-release",
+  "title": "Customer.io Fall Release"
+ },
+ {
+  "at": "2026-11-18T01:21:33.007Z",
+  "type": "qc-hidden",
+  "id": "ph-ernd",
+  "title": "ernd"
+ },
+ {
+  "at": "2026-11-18T01:21:33.007Z",
+  "type": "added",
+  "id": "aw-summary-with-ai",
+  "title": "Summary With AI"
+ },
+ {
   "at": "2026-11-17T23:26:11.159Z",
   "type": "qc-hidden",
   "id": "ph-bee-frontier-and-bee-eclipse",
@@ -568,35 +598,5 @@
   "type": "added",
   "id": "aw-swimm",
   "title": "Swimm"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-askcodi",
-  "title": "AskCodi"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-codemate",
-  "title": "CodeMate"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-builderstudio",
-  "title": "BuilderStudio"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-quack-ai",
-  "title": "Quack AI"
- },
- {
-  "at": "2026-11-17T23:26:11.159Z",
-  "type": "added",
-  "id": "aw-gitwit",
-  "title": "GitWit"
  }
 ]
