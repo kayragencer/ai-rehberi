@@ -1,5 +1,125 @@
 [
  {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-boringmarketer-boring-marketing-skills",
+  "title": "boring-marketing-skills"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-molly554-whiteboard-ai-tutor",
+  "title": "whiteboard-ai-tutor"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-sybil-solutions-inference-optimisation-skill",
+  "title": "inference-optimisation-skill"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-vaibhav-space-my-ai-coding-workflow",
+  "title": "my-ai-coding-workflow"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-glen-web-app-best-agent-memory-mcp",
+  "title": "best-agent-memory-mcp"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-smokeeaasd-flawless-ui-ux",
+  "title": "flawless-ui-ux"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-alicebrown323-pro-tools-desktop",
+  "title": "pro-tools-desktop"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-future-proof-ds-interactive-ai-ml-tools",
+  "title": "interactive-ai-ml-tools"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-zjunlp-skillx",
+  "title": "SkillX"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
+  "title": "Context-Engineering-for-Multi-Agent-Systems"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-mrpowerscripts-reddit-karma-farming-bot",
+  "title": "reddit-karma-farming-bot"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-surebot-eventline",
+  "title": "Eventline"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-ruolinzheng08-twewy-discord-chatbot",
+  "title": "twewy-discord-chatbot"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-attzonko-mmpy-bot",
+  "title": "mmpy_bot"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-snakeztc-neuraldialog-cvae",
+  "title": "NeuralDialog-CVAE"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-rlhf-v-rlhf-v",
+  "title": "RLHF-V"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-mckinziebrandon-deepchatmodels",
+  "title": "DeepChatModels"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-oswaldoludwig-seq2seq-chatbot-for-keras",
+  "title": "Seq2seq-Chatbot-for-Keras"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-tembo-voxl",
+  "title": "voxl"
+ },
+ {
+  "at": "2026-11-18T20:58:46.615Z",
+  "type": "qc-hidden",
+  "id": "gh-sheprd-labs-sheprd",
+  "title": "sheprd"
+ },
+ {
   "at": "2026-11-18T20:04:15.088Z",
   "type": "qc-hidden",
   "id": "gh-zidage-alcedostudio",
@@ -478,125 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-model-database-upscale-wiki",
   "title": "Model Database - Upscale Wiki"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-official-overview",
-  "title": "Official overview"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-verify",
-  "title": "Verify"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-url",
-  "title": "URL"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "qc-hidden",
-  "id": "aw-selfies-with-sama",
-  "title": "Selfies with Sama"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "restored",
-  "id": "gh-semperai-amica",
-  "title": "amica"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "removed",
-  "id": "gh-trackboatwrightplan-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-18T07:22:50.386Z",
-  "type": "removed",
-  "id": "gh-trackboatwrightplan-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-moltbook",
-  "title": "moltbook"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-runthisllm",
-  "title": "RunThisLLM"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-seal-llm-leaderboard",
-  "title": "SEAL LLM Leaderboard"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-llm-stats",
-  "title": "LLM Stats"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-arena",
-  "title": "Arena"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-openrouter-llm-rankings",
-  "title": "OpenRouter LLM Rankings"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-artificial-analysis",
-  "title": "Artificial Analysis"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-s-new-creative-streak-sparks-a-silicon-valley-gold-rush",
-  "title": "AI's New Creative Streak Sparks a Silicon Valley Gold Rush"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "removed",
-  "id": "gh-dragoncomputer-dragonfire",
-  "title": "Dragonfire"
- },
- {
-  "at": "2026-11-18T06:11:03.653Z",
-  "type": "added",
-  "id": "aw-eye-type-detector",
-  "title": "Eye Type Detector"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-atlas-krea-stable-diffusion",
-  "title": "Atlas KREA Stable Diffusion"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-generative-art-tools",
-  "title": "Ai generative art tools"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-attacking-large-language-models",
-  "title": "Attacking Large Language Models"
  }
 ]
