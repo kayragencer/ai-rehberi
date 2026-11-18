@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-18T17:59:50.397Z",
+  "type": "added",
+  "id": "aw-gpt-3-apps",
+  "title": "GPT-3 Apps"
+ },
+ {
   "at": "2026-11-18T13:19:39.545Z",
   "type": "qc-hidden",
   "id": "gh-noodle-rest-noodle",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-ai-tool-master-list",
   "title": "AI Tool Master List"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-aiforme",
-  "title": "AIForme"
  }
 ]
