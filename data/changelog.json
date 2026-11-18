@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-18T19:00:27.033Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-deeptutor",
+  "title": "DeepTutor"
+ },
+ {
+  "at": "2026-11-18T19:00:27.033Z",
+  "type": "qc-hidden",
+  "id": "gh-tw93-pake",
+  "title": "Pake"
+ },
+ {
+  "at": "2026-11-18T19:00:27.033Z",
+  "type": "qc-hidden",
+  "id": "gh-thedaviddias-front-end-checklist",
+  "title": "Front-End-Checklist"
+ },
+ {
+  "at": "2026-11-18T19:00:27.033Z",
+  "type": "qc-hidden",
+  "id": "gh-microsoft-ai-agents-for-beginners",
+  "title": "ai-agents-for-beginners"
+ },
+ {
   "at": "2026-11-18T17:59:50.397Z",
   "type": "added",
   "id": "aw-gpt-3-apps",
@@ -574,29 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-futurepedia-the-largest-ai-tools-directory-home",
   "title": "Futurepedia - The Largest AI Tools Directory | Home"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-finder",
-  "title": "AI Finder"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-lunroo",
-  "title": "Lunroo"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-datacamp-s-become-a-generative-ai-developer-series",
-  "title": "DataCamp's Become a Generative AI Developer series"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-tool-master-list",
-  "title": "AI Tool Master List"
  }
 ]
