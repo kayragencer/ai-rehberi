@@ -1,5 +1,95 @@
 [
  {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-noodle-rest-noodle",
+  "title": "noodle"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-minimax-ai-minimax-h3-image",
+  "title": "MiniMax-H3-Image"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-zaxiu88888-issue-rag",
+  "title": "issue-rag"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-tiger-ai-lab-websitebench",
+  "title": "WebsiteBench"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-nvlabs-nano-rl",
+  "title": "nano-rl"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-hyperionaidev-smolmaxxing",
+  "title": "smolmaxxing"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-yangyuhou-qwen2api",
+  "title": "qwen2API"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-lilmgenius-paperthin",
+  "title": "paperthin"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-voyager-so-vork",
+  "title": "vork"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-remocn-remocn",
+  "title": "remocn"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-iainkay-ram-altman",
+  "title": "ram-altman"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-lollipopkit-flutter-server-box",
+  "title": "flutter_server_box"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-microsoft-generative-ai-for-beginners",
+  "title": "generative-ai-for-beginners"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "qc-hidden",
+  "id": "gh-shadcn-ui-ui",
+  "title": "ui"
+ },
+ {
+  "at": "2026-11-18T13:19:39.545Z",
+  "type": "added",
+  "id": "gh-ysunyang4-nexus",
+  "title": "Nexus"
+ },
+ {
   "at": "2026-11-18T10:10:30.567Z",
   "type": "qc-hidden",
   "id": "aw-kite",
@@ -508,95 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-aiforme",
   "title": "AIForme"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-aisupersmart-ai-tool-directory",
-  "title": "AiSuperSmart Ai Tool Directory"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ainave",
-  "title": "ainave"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-technologies-in-lablab",
-  "title": "Technologies in LabLab"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-hd-robots",
-  "title": "HD Robots"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-toolify",
-  "title": "Toolify"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-search",
-  "title": "AI Search"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-orbicai",
-  "title": "OrbicAI"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-presentation-makers",
-  "title": "AI Presentation Makers"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-it-s-time-to-retire-the-term-user",
-  "title": "It\u2019s time to retire the term \u201cuser\u201d"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-toollist-ai",
-  "title": "ToolList.ai"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-tracking-ai",
-  "title": "Tracking AI"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-data-laundering-waxy-org",
-  "title": "AI Data Laundering - Waxy.org"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-base11-research-generative-ai",
-  "title": "Base11 Research - generative-ai"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-can-computers-create-art-by-aaron-hertzmann",
-  "title": "Can Computers Create Art? by Aaron Hertzmann"
- },
- {
-  "at": "2026-11-18T05:06:50.267Z",
-  "type": "qc-hidden",
-  "id": "aw-ai-timeline",
-  "title": "AI Timeline"
  }
 ]
