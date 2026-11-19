@@ -931,8 +931,11 @@ function openToolDetail(id) {
 
 /* ===== Türkiye bilgisi (data/tr-info.json): Türkçe biliyor mu, ücretsizi yetiyor mu, 3 adımda kullanım ===== */
 var TRINFO = {};
+function isClosedTool(id) { var d = TRINFO[id]; return !!(d && (d.closed || d.access === 'kapandi')); }
 fetch('data/tr-info.json', { cache: 'no-cache' }).then(function(r) { return r.ok ? r.json() : {}; }).then(function(d) {
   TRINFO = d || {};
+  appState.allTools = appState.allTools.filter(function(t) { return !isClosedTool(t.id); });
+  if (appState.allTools.length && typeof renderHomeExtras === 'function') { try { updateHomeCounts(); renderHomeExtras(); renderFeatured('featuredRecommendedGrid'); } catch (e) {} }
   if (appState.activePage === 'toolDetail' && appState.currentActiveToolId) { var t = appState.allTools.find(function(x) { return x.id === appState.currentActiveToolId; }); if (t) renderTrInfo(t); }
   if (appState.activePage === 'directory' || appState.activePage === 'tools') filterTools();
 }).catch(function() {});
@@ -2814,7 +2817,7 @@ function refreshTools() {
     .then(function(r) { if (!r.ok) throw 0; return r.json(); })
     .then(function(d) {
       if (!d.tools || !d.tools.length) return;
-      appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive' && t.qc !== 'bad'; }).map(function(t) {
+      appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive' && t.qc !== 'bad' && !isClosedTool(t.id); }).map(function(t) {
         return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew, tr: t.tr !== false,
                  desc: fixText(langTool(t)), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
