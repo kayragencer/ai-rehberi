@@ -1,5 +1,155 @@
 [
  {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-aiming-lab-metaclaw",
+  "title": "MetaClaw"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-minimax-ai-minimax-01",
+  "title": "MiniMax-01"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-jaymody-picogpt",
+  "title": "picoGPT"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-xtekky-chatgpt-clone",
+  "title": "chatgpt-clone"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-videorag",
+  "title": "VideoRAG"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-wppconnect-team-wppconnect",
+  "title": "wppconnect"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-strelov1-freehire",
+  "title": "freehire"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-chaskiq-chaskiq",
+  "title": "chaskiq"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-agavra-tuicr",
+  "title": "tuicr"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-open-webui-open-terminal",
+  "title": "open-terminal"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-dave-jennifer",
+  "title": "jennifer"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-telegrambots-telegram-bot",
+  "title": "Telegram.Bot"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-modelscope-evalscope",
+  "title": "evalscope"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-zou-group-textgrad",
+  "title": "textgrad"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-thudm-agentbench",
+  "title": "AgentBench"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-nvlabs-eagle",
+  "title": "Eagle"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-stack-of-tasks-pinocchio",
+  "title": "pinocchio"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-aiming-lab-simplemem",
+  "title": "SimpleMem"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-janspiry-image-super-resolution-via-iterative-refinement",
+  "title": "Image-Super-Resolution-via-Iterative-Refinement"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-tutti-os-tutti",
+  "title": "tutti"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-jetbrains-go-modern-guidelines",
+  "title": "go-modern-guidelines"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-thu-ml-sageattention",
+  "title": "SageAttention"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-billmei-every-chatgpt-gui",
+  "title": "every-chatgpt-gui"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-baichuan-inc-baichuan2",
+  "title": "Baichuan2"
+ },
+ {
+  "at": "2026-11-19T09:12:08.322Z",
+  "type": "qc-hidden",
+  "id": "gh-lencx-nofwl",
+  "title": "nofwl"
+ },
+ {
   "at": "2026-11-19T07:24:07.134Z",
   "type": "qc-hidden",
   "id": "gh-square-kotlinpoet",
@@ -448,155 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-gentleman-programming-gentle-ai",
   "title": "gentle-ai"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-miqdadbadjuber-anti-slop",
-  "title": "anti-slop"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-unicity-sphere-sphere",
-  "title": "sphere"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-apache-seatunnel",
-  "title": "seatunnel"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-evolution-foundation-evolution-api",
-  "title": "evolution-api"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-astrid-runtime-astrid",
-  "title": "astrid"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-neuraltext",
-  "title": "Neuraltext"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-quattr",
-  "title": "Quattr"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-kafkai",
-  "title": "Kafkai"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-creator-ai",
-  "title": "Creator AI"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-content-brief-generator",
-  "title": "Content brief generator"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-decile",
-  "title": "Decile"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-postedby",
-  "title": "postedby"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-onranko",
-  "title": "Onranko"
- },
- {
-  "at": "2026-11-19T01:18:06.116Z",
-  "type": "qc-hidden",
-  "id": "aw-serplux",
-  "title": "Serplux"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-phillipi-pix2pix",
-  "title": "pix2pix"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-startrail-org-pixelrag",
-  "title": "PixelRAG"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-kalyanks-nlp-llm-engineer-toolkit",
-  "title": "llm-engineer-toolkit"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-lightricks-ltx-video",
-  "title": "LTX-Video"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-fareedkhan-dev-kimi-k3-in-c",
-  "title": "kimi-k3-in-c"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-openmoss-moss",
-  "title": "MOSS"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-sapientinc-hrm",
-  "title": "HRM"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-eugeneyan-open-llms",
-  "title": "open-llms"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-wong2-chatgpt-google-extension",
-  "title": "chatgpt-google-extension"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-shishirpatil-gorilla",
-  "title": "gorilla"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-thesysdev-openui",
-  "title": "openui"
  }
 ]
