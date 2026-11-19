@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-19T10:13:52.724Z",
+  "type": "qc-hidden",
+  "id": "gh-vectara-hallucination-leaderboard",
+  "title": "hallucination-leaderboard"
+ },
+ {
+  "at": "2026-11-19T10:13:52.724Z",
+  "type": "qc-hidden",
+  "id": "gh-bbuf-how-to-optim-algorithm-in-cuda",
+  "title": "how-to-optim-algorithm-in-cuda"
+ },
+ {
+  "at": "2026-11-19T10:13:52.724Z",
+  "type": "qc-hidden",
+  "id": "gh-opengvlab-ask-anything",
+  "title": "Ask-Anything"
+ },
+ {
+  "at": "2026-11-19T10:13:52.724Z",
+  "type": "qc-hidden",
+  "id": "gh-vainf-torch-pruning",
+  "title": "Torch-Pruning"
+ },
+ {
   "at": "2026-11-19T09:12:08.322Z",
   "type": "qc-hidden",
   "id": "gh-aiming-lab-metaclaw",
@@ -574,29 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-ashawkey-stable-dreamfusion",
   "title": "stable-dreamfusion"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-lencx-noi",
-  "title": "Noi"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-poloclub-transformer-explainer",
-  "title": "transformer-explainer"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-yagop-node-telegram-bot-api",
-  "title": "node-telegram-bot-api"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-gentleman-programming-gentle-ai",
-  "title": "gentle-ai"
  }
 ]
