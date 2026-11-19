@@ -1,5 +1,83 @@
 [
  {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-mw00-project-maya",
+  "title": "project-maya"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-autoark-gpa",
+  "title": "GPA"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-cvlab-columbia-zero123",
+  "title": "zero123"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-ridgerchu-matmulfreellm",
+  "title": "matmulfreellm"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-supabase-agent-skills",
+  "title": "agent-skills"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-robert-mcdermott-ai-knowledge-graph",
+  "title": "ai-knowledge-graph"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-ictnlp-llama-omni",
+  "title": "LLaMA-Omni"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-skyworkai-skywork-r1v",
+  "title": "Skywork-R1V"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-minimax-ai-minimax-m1",
+  "title": "MiniMax-M1"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-xlang-ai-osworld",
+  "title": "OSWorld"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-prism-shadow-penguin-harness",
+  "title": "penguin-harness"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "qc-hidden",
+  "id": "gh-av-harbor",
+  "title": "harbor"
+ },
+ {
+  "at": "2026-11-19T17:59:34.465Z",
+  "type": "added",
+  "id": "gh-bookwjitchieni1986-blender-ai-mcp-addon",
+  "title": "blender-ai-mcp-addon"
+ },
+ {
   "at": "2026-11-19T13:22:44.116Z",
   "type": "qc-hidden",
   "id": "aw-infiniteconversation",
@@ -520,83 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-ailab-cvc-videocrafter",
   "title": "VideoCrafter"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-icip-cas-pptagent",
-  "title": "PPTAgent"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-unlayer-react-email-editor",
-  "title": "react-email-editor"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-camel-ai-oasis",
-  "title": "oasis"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-imoneoi-openchat",
-  "title": "openchat"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-bit-datalab-edit-banana",
-  "title": "Edit-Banana"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-hey-api-hey-api",
-  "title": "hey-api"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-baichuan-inc-baichuan-7b",
-  "title": "Baichuan-7B"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-skyzh-tiny-llm",
-  "title": "tiny-llm"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-cog-creators-red-discordbot",
-  "title": "Red-DiscordBot"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-pbek-qownnotes",
-  "title": "QOwnNotes"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-princeton-nlp-tree-of-thought-llm",
-  "title": "tree-of-thought-llm"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-botman-botman",
-  "title": "botman"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-javaparser-javaparser",
-  "title": "javaparser"
  }
 ]
