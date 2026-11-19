@@ -1,5 +1,95 @@
 [
  {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-square-kotlinpoet",
+  "title": "kotlinpoet"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-muxuuu-serenity-skill",
+  "title": "serenity-skill"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-dataelement-clawith",
+  "title": "Clawith"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-bragai-brag-langchain",
+  "title": "bRAG-langchain"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-ysymyth-react",
+  "title": "ReAct"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-deepflowio-deepflow",
+  "title": "deepflow"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-instruction-tuning-with-gpt-4-gpt-4-llm",
+  "title": "GPT-4-LLM"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-openmoss-moss-tts",
+  "title": "MOSS-TTS"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-giovannipasq-agentic-rag-for-dummies",
+  "title": "agentic-rag-for-dummies"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-synthetic-sciences-openscience",
+  "title": "openscience"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-panaversity-learn-agentic-ai",
+  "title": "learn-agentic-ai"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-zai-org-glm-4-5",
+  "title": "GLM-4.5"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-leonxlnx-unlazy",
+  "title": "unlazy"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-cortexreach-memory-lancedb-pro",
+  "title": "memory-lancedb-pro"
+ },
+ {
+  "at": "2026-11-19T07:24:07.134Z",
+  "type": "qc-hidden",
+  "id": "gh-nyldn-claude-octopus",
+  "title": "claude-octopus"
+ },
+ {
   "at": "2026-11-19T06:09:20.158Z",
   "type": "qc-hidden",
   "id": "gh-alibaba-chatui",
@@ -508,95 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-thesysdev-openui",
   "title": "openui"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-corsairdev-corsair",
-  "title": "corsair"
- },
- {
-  "at": "2026-11-18T23:55:46.966Z",
-  "type": "qc-hidden",
-  "id": "gh-camenduru-stable-diffusion-webui-colab",
-  "title": "stable-diffusion-webui-colab"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-kubesphere-kubesphere",
-  "title": "kubesphere"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-deepseek-ai-janus",
-  "title": "Janus"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-googlecloudplatform-generative-ai",
-  "title": "generative-ai"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-nvidia-megatron-lm",
-  "title": "Megatron-LM"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-nari-labs-dia",
-  "title": "dia"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-wanshuiyin-auto-claude-code-research-in-sleep",
-  "title": "Auto-claude-code-research-in-sleep"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-alibaba-nlp-deepresearch",
-  "title": "DeepResearch"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-ai4finance-foundation-fingpt",
-  "title": "FinGPT"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-huggingface-datasets",
-  "title": "datasets"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-microsoft-unilm",
-  "title": "unilm"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-docmost-docmost",
-  "title": "docmost"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-haotian-liu-llava",
-  "title": "LLaVA"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-dapr-dapr",
-  "title": "dapr"
  }
 ]
