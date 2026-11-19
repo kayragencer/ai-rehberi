@@ -148,6 +148,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
         <select id="sortFilter" onchange="filterTools()" class="fld w-auto font-bold">
           <option value="rec">&#214;nerilen s&#305;ralama</option><option value="new">En yeni</option><option value="pop">En pop&#252;ler</option><option value="az">A-Z</option>
         </select>
+        <button type="button" id="trOnlyBtn" onclick="toggleTrOnly()" aria-pressed="false" class="px-3 py-2.5 rounded-xl font-bold border transition dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500">Sadece T&#252;rk&#231;e bilenler</button>
         <button type="button" onclick="resetApp()" class="px-3 py-2.5 rounded-xl bg-purple-500/15 border border-purple-500/30 dark:text-purple-200 text-purple-700 hover:bg-purple-600 hover:text-white hover:border-transparent transition font-bold">S&#305;f&#305;rla</button>
         <span class="text-gray-400 font-medium ml-1"><span id="resultCount" class="text-purple-400 font-bold">0</span> ara&#231;</span>
       </div>
@@ -858,6 +859,7 @@ function resetApp() {
   document.getElementById('searchInput').value = '';
   var pf = document.getElementById('priceFilter'), sf = document.getElementById('sortFilter');
   if (pf) pf.value = ''; if (sf) sf.value = 'rec';
+  if (appState.trOnly) { appState.trOnly = false; var tb = document.getElementById('trOnlyBtn'); if (tb) { tb.setAttribute('aria-pressed', 'false'); tb.className = 'px-3 py-2.5 rounded-xl font-bold border transition dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500'; } }
   setPrice('all'); setCat('all');
 }
 
@@ -1328,16 +1330,23 @@ function updateSearchHint(info) {
   if (info.open) parts.push('a\u00e7\u0131k kaynak');
   h.textContent = parts.length ? 'Anlad\u0131\u011f\u0131m: ' + parts.join(' \u00b7 ') : '';
 }
+function toggleTrOnly() {
+  appState.trOnly = !appState.trOnly;
+  var b = document.getElementById('trOnlyBtn');
+  if (b) { b.setAttribute('aria-pressed', appState.trOnly ? 'true' : 'false'); b.className = 'px-3 py-2.5 rounded-xl font-bold border transition ' + (appState.trOnly ? 'bg-purple-600 text-white border-transparent' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500'); }
+  appState.visibleLimit = 30; filterTools();
+}
 function filterTools() {
   var q = norm(document.getElementById('searchInput').value);
   var hl = document.getElementById('toolsHighlights');
-  if (hl) hl.classList.toggle('hidden', !!q || appState.currentCat !== 'all' || !!((document.getElementById('priceFilter') || {}).value) || ((document.getElementById('sortFilter') || {}).value || 'rec') !== 'rec');
+  if (hl) hl.classList.toggle('hidden', !!q || !!appState.trOnly || appState.currentCat !== 'all' || !!((document.getElementById('priceFilter') || {}).value) || ((document.getElementById('sortFilter') || {}).value || 'rec') !== 'rec');
   if (q !== appState.lastQ) { appState.visibleLimit = 30; appState.lastQ = q; appState.searchTab = 'ready'; }
   var info = q ? parseQuery(q) : null;
   updateSearchHint(info);
   var list = appState.allTools.filter(function(item) {
     var pf = (document.getElementById('priceFilter') || {}).value || '';
     if (pf && item.price !== pf.replace('\u00dccretsiz', '\u00dccretsiz').replace('\u00dccretli', '\u00dccretli')) return false;
+    if (appState.trOnly && !(typeof TRINFO !== 'undefined' && TRINFO[item.id] && TRINFO[item.id].tr === 'evet')) return false;
     if (appState.currentCat === 'favorites') return appState.favorites.indexOf(item.id) > -1;
     if (appState.currentCat === 'open') return !!item.openSource;
     return appState.currentCat === 'all' || item.category === appState.currentCat;
