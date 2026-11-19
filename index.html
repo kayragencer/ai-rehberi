@@ -1363,7 +1363,7 @@ function renderSearchBest(best, picks) {
 }
 
 /* ===== Yapay zeka (Gemini) köprüsü: anahtar Cloudflare Worker'da gizli, kişi başı günlük sınır var ===== */
-var AI_URL = '';
+var AI_URL = 'https://syz-ai.kg-projeyonetim.workers.dev';
 var aiPickCache = {}, aiPickTimer = null, aiPickSeq = 0;
 function setBestLabel(mode) {
   var el = document.getElementById('searchBestSub'); if (!el) return;
