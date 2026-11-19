@@ -72,7 +72,7 @@ ${ld.map((o) => `<script type="application/ld+json">${J(o)}</script>`).join('\n'
 ${body}
 </main>
 <footer class="foot"><div class="wrap">
-  <div class="links"><a href="/#yasal/gizlilik">Gizlilik Politikası</a><a href="/#yasal/kvkk">KVKK Aydınlatma Metni</a><a href="/#yasal/kullanim-sartlari">Kullanım Şartları</a><a href="/#yasal/cerezler">Çerez Politikası</a></div>
+  <div class="links"><a href="/hakkinda/">Nasıl seçiyoruz?</a><a href="/#yasal/gizlilik">Gizlilik Politikası</a><a href="/#yasal/kvkk">KVKK Aydınlatma Metni</a><a href="/#yasal/kullanim-sartlari">Kullanım Şartları</a><a href="/#yasal/cerezler">Çerez Politikası</a></div>
   <div>© 2026 Senin Yapay Zekan</div>
 </div></footer>
 </body>
@@ -164,7 +164,7 @@ function listPage(rel, h1, intro, items, title, metaDesc) {
   urls.push({ loc: `/${rel}/`, pri: '0.8', freq: 'weekly' });
 }
 
-for (const f of ['kategori', 'rehber']) fs.rmSync(path.join(ROOT, f), { recursive: true, force: true });
+for (const f of ['kategori', 'rehber', 'hakkinda']) fs.rmSync(path.join(ROOT, f), { recursive: true, force: true });
 const rank = (t) => (tr[t.id].tr === 'evet' ? 0 : tr[t.id].tr === 'kismen' ? 1 : 2) * 10 + (tr[t.id].free === 'yeterli' ? 0 : tr[t.id].free === 'sinirli' ? 1 : 2) - (t.featured ? 100 : 0);
 const sorted = (arr) => arr.slice().sort((a, b) => rank(a) - rank(b) || a.title.localeCompare(b.title, 'tr'));
 
@@ -190,6 +190,28 @@ for (const [slug, h1, blurb, fn] of GUIDES) {
   if (items.length < 3) continue;
   listPage(`rehber/${slug}`, h1, `${blurb} ${items.length} araç listeleniyor.`, items,
     `${h1} | Senin Yapay Zekan`, `${blurb} Her araç için Türkçe biliyor mu, Türkiye’den açılıyor mu, ücretsizi yetiyor mu bilgisi var.`);
+}
+
+
+// ---------- Hakkında / Nasıl seçiyoruz ----------
+{
+  const nCur = list.length;
+  const body = `
+<nav class="crumbs"><a href="/">Ana Sayfa</a> › <span>Nasıl seçiyoruz?</span></nav>
+<h1 class="ph">Araçları nasıl seçiyoruz?</h1>
+<p class="intro">Senin Yapay Zekan, yapay zeka araçlarını Türkçe ve sade bir dille anlatan ücretsiz bir rehberdir. Amacımız, “bana hangi araç lazım?” sorusuna kısa ve işe yarar bir cevap vermek.</p>
+<section class="box"><h2>İki tür araç var</h2>
+<p><b>Hazır araçlar (${nCur}):</b> Elle seçilen, tarayıcıdan veya telefondan hemen kullanılabilen araçlardır. Her biri için Türkçe biliyor mu, Türkiye’den açılıyor mu, ücretsiz sürümü yetiyor mu bilgisi ve 3 adımlık kullanım notu hazırlanır. Kapanan araçlar listeden kaldırılır.</p>
+<p><b>Açık kaynak projeler:</b> Yazılımcılar için GitHub ve benzeri herkese açık listelerden otomatik toplanır. Bu projeler “Açık Kaynak” sekmesindedir ve aramada ayrı gösterilir.</p></section>
+<section class="box"><h2>Nasıl çalışıyoruz?</h2>
+<p>Liste her saat otomatik güncellenir. Yeni araçlar herkese açık kaynaklardan bulunur, bozuk bağlantılar ve araç olmayan kayıtlar (kurs, liste, model sayfası gibi) yapay zeka yardımıyla ayıklanır. Açıklamalar yapay zeka yardımıyla Türkçeye çevrilir.</p>
+<p>Türkiye bilgileri yapay zeka desteğiyle hazırlanır; bu nedenle hatalı veya eskimiş olabilir. Bir araçta yanlış bilgi görürsen bize yaz, düzeltelim.</p></section>
+<section class="box"><h2>Para ve tarafsızlık</h2>
+<p>Şu anda sitede reklam, sponsorlu yer veya komisyonlu bağlantı yoktur. İleride eklenirse “İş birliği” etiketiyle açıkça belirtilir ve Editörün Seçimi satılmaz.</p></section>
+<section class="box"><h2>İletişim</h2><p>Öneri, düzeltme ve şikâyetler için: <a href="mailto:iletisim@seninyapayzekan.com" style="color:var(--acc)">iletisim@seninyapayzekan.com</a></p></section>
+<div class="cta"><a class="btn" href="/#araclar">Araçlara göz at</a></div>`;
+  write('hakkinda', page({ title: 'Araçları nasıl seçiyoruz? | Senin Yapay Zekan', desc: 'Senin Yapay Zekan’daki yapay zeka araçları nasıl seçiliyor, nasıl güncelleniyor ve sitede reklam var mı?', canonical: '/hakkinda/', body }));
+  urls.push({ loc: '/hakkinda/', pri: '0.5', freq: 'monthly' });
 }
 
 // ---------- sitemap ----------

@@ -590,7 +590,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
 </div>
 
 <footer class="border-t dark:border-gray-800 border-gray-300 dark:bg-gray-950 bg-white p-6 text-center text-xs text-gray-500 transition">
-  <div class="flex flex-wrap justify-center gap-x-2 gap-y-1 mb-2"><a href="#yasal/gizlilik" class="hover:text-purple-400 transition">Gizlilik Politikas&#305;</a> <span class="opacity-40">&#183;</span> <a href="#yasal/kvkk" class="hover:text-purple-400 transition">KVKK Ayd&#305;nlatma Metni</a> <span class="opacity-40">&#183;</span> <a href="#yasal/kullanim-sartlari" class="hover:text-purple-400 transition">Kullan&#305;m &#350;artlar&#305;</a> <span class="opacity-40">&#183;</span> <a href="#yasal/cerezler" class="hover:text-purple-400 transition">&#199;erez Politikas&#305;</a></div>
+  <div class="flex flex-wrap justify-center gap-x-2 gap-y-1 mb-2"><a href="/hakkinda/" class="hover:text-purple-400 transition">Nas&#305;l se&#231;iyoruz?</a> <span class="opacity-40">&#183;</span> <a href="#yasal/gizlilik" class="hover:text-purple-400 transition">Gizlilik Politikas&#305;</a> <span class="opacity-40">&#183;</span> <a href="#yasal/kvkk" class="hover:text-purple-400 transition">KVKK Ayd&#305;nlatma Metni</a> <span class="opacity-40">&#183;</span> <a href="#yasal/kullanim-sartlari" class="hover:text-purple-400 transition">Kullan&#305;m &#350;artlar&#305;</a> <span class="opacity-40">&#183;</span> <a href="#yasal/cerezler" class="hover:text-purple-400 transition">&#199;erez Politikas&#305;</a></div>
   &#169; 2026 Senin Yapay Zekan - T&#252;m Haklar&#305; Sakl&#305;d&#305;r.
 </footer>
 
@@ -2934,7 +2934,7 @@ function renderHomeTrFree() {
   var list = (appState.allTools || []).filter(function (t) { var d = TRINFO[t.id]; return d && d.tr === 'evet' && d.access === 'evet' && d.free === 'yeterli' && !t.openSource; });
   list.sort(function (a, b) { return (b.isVip ? 1 : 0) - (a.isVip ? 1 : 0); });
   box.innerHTML = '';
-  list.slice(0, 6).forEach(function (t) { box.appendChild(aracSatiri(t, '<span class="text-emerald-400">\u00dccretsiz yeter</span>')); });
+  list.slice(0, 6).forEach(function (t) { box.appendChild(aracSatiri(t, '<span class="hidden sm:inline text-emerald-400">\u00dccretsiz yeter</span>')); });
   var w = document.getElementById('homeTrFreeWrap'); if (w) w.classList.toggle('hidden', !list.length);
 }
 function renderHomeNews() {
