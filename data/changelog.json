@@ -1,5 +1,71 @@
 [
  {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-alibaba-chatui",
+  "title": "ChatUI"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-knplabs-snappy",
+  "title": "snappy"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-evolvinglmms-lab-lmms-eval",
+  "title": "lmms-eval"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-open-compass-vlmevalkit",
+  "title": "VLMEvalKit"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-kyegomez-tree-of-thoughts",
+  "title": "tree-of-thoughts"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-tencent-hunyuan-hunyuanvideo-1-5",
+  "title": "HunyuanVideo-1.5"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-dav1dde-glad",
+  "title": "glad"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-gradio-app-fastrtc",
+  "title": "fastrtc"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-asmjit-asmjit",
+  "title": "asmjit"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-joanrod-star-vector",
+  "title": "star-vector"
+ },
+ {
+  "at": "2026-11-19T06:09:20.158Z",
+  "type": "qc-hidden",
+  "id": "gh-intuitem-ciso-assistant-community",
+  "title": "ciso-assistant-community"
+ },
+ {
   "at": "2026-11-19T05:11:49.665Z",
   "type": "qc-hidden",
   "id": "gh-nikolaydubina-go-recipes",
@@ -532,71 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-dapr-dapr",
   "title": "dapr"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-humanlayer-12-factor-agents",
-  "title": "12-factor-agents"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-python-telegram-bot-python-telegram-bot",
-  "title": "python-telegram-bot"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "qc-hidden",
-  "id": "gh-gitleaks-gitleaks",
-  "title": "gitleaks"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "removed",
-  "id": "gh-superglue-ai-superglue",
-  "title": "superglue"
- },
- {
-  "at": "2026-11-18T22:57:19.669Z",
-  "type": "hidden",
-  "id": "gh-tensorchord-pgvecto-rs",
-  "title": "pgvecto.rs"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "qc-hidden",
-  "id": "aw-beautifulsoup",
-  "title": "Beautifulsoup"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "qc-hidden",
-  "id": "aw-adapt-or-die",
-  "title": "Adapt or Die"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "qc-hidden",
-  "id": "aw-bestaifor-com",
-  "title": "BestAIFor.com"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "qc-hidden",
-  "id": "aw-figure-ai",
-  "title": "Figure AI"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "qc-hidden",
-  "id": "aw-facebook-s-aroma",
-  "title": "Facebook's Aroma"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "added",
-  "id": "aw-neural-formula",
-  "title": "Neural Formula"
  }
 ]
