@@ -1,5 +1,53 @@
 [
  {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-sahibzada-allahyar-formal-verification-rsi",
+  "title": "Formal-Verification-RSI"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-baichuan-inc-baichuan-13b",
+  "title": "Baichuan-13B"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-thunlp-ultrachat",
+  "title": "UltraChat"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-openmoss-moss-image",
+  "title": "MOSS-Image"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-tiger3807861189-j-space-cognition-suite",
+  "title": "J-Space-Cognition-Suite"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-rohitg00-pro-workflow",
+  "title": "pro-workflow"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-reloadware-reloadium",
+  "title": "reloadium"
+ },
+ {
+  "at": "2026-11-19T19:04:40.633Z",
+  "type": "qc-hidden",
+  "id": "gh-ashishpatel26-llm-finetuning",
+  "title": "LLM-Finetuning"
+ },
+ {
   "at": "2026-11-19T17:59:34.465Z",
   "type": "qc-hidden",
   "id": "gh-mw00-project-maya",
@@ -550,53 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-asmjit-asmjit",
   "title": "asmjit"
- },
- {
-  "at": "2026-11-19T06:09:20.158Z",
-  "type": "qc-hidden",
-  "id": "gh-joanrod-star-vector",
-  "title": "star-vector"
- },
- {
-  "at": "2026-11-19T06:09:20.158Z",
-  "type": "qc-hidden",
-  "id": "gh-intuitem-ciso-assistant-community",
-  "title": "ciso-assistant-community"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-nikolaydubina-go-recipes",
-  "title": "go-recipes"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-mlabonne-llm-datasets",
-  "title": "llm-datasets"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-xlang-ai-openagents",
-  "title": "OpenAgents"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-rivet-dev-agentos",
-  "title": "agentos"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-mailru-easyjson",
-  "title": "easyjson"
- },
- {
-  "at": "2026-11-19T05:11:49.665Z",
-  "type": "qc-hidden",
-  "id": "gh-ailab-cvc-videocrafter",
-  "title": "VideoCrafter"
  }
 ]
