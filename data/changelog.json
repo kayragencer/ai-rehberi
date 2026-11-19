@@ -1,5 +1,191 @@
 [
  {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-inria-spoon",
+  "title": "spoon"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-ai4finance-foundation-finrl-meta",
+  "title": "FinRL-Meta"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-jia-lab-research-dreamomni2",
+  "title": "DreamOmni2"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-foundationvision-llamagen",
+  "title": "LlamaGen"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-akalikong-minionerec",
+  "title": "MiniOneRec"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-showlab-show-o",
+  "title": "Show-o"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-openmotionlab-motiongpt",
+  "title": "MotionGPT"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-fareedkhan-dev-all-rl-algorithms",
+  "title": "all-rl-algorithms"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-dreambigou-eli5",
+  "title": "ELI5"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-cambrian-mllm-cambrian",
+  "title": "cambrian"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-eosphoros-ai-db-gpt-hub",
+  "title": "DB-GPT-Hub"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-pris-cv-demofusion",
+  "title": "DemoFusion"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-minirag",
+  "title": "MiniRAG"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-amazon-science-auto-cot",
+  "title": "auto-cot"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-stripe-ai",
+  "title": "ai"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-hyperspaceai-agi",
+  "title": "agi"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-krishhgg-insomnia",
+  "title": "Insomnia"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-bilibili-index-translate",
+  "title": "Index-Translate"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-ise-uiuc-magicoder",
+  "title": "magicoder"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-microsoft-promptcraft-robotics",
+  "title": "PromptCraft-Robotics"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-apioo-fusio",
+  "title": "fusio"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-uber-adr",
+  "title": "ADR"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-elastio-bon",
+  "title": "bon"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-openvidu-openvidu",
+  "title": "openvidu"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-huggingface-evaluation-guidebook",
+  "title": "evaluation-guidebook"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-fatchord-wavernn",
+  "title": "WaveRNN"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-moonshotai-moba",
+  "title": "MoBA"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-nx-ai-xlstm",
+  "title": "xlstm"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-ziyang-xie-worldgen",
+  "title": "WorldGen"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-dluc-kernel-memory",
+  "title": "kernel-memory"
+ },
+ {
+  "at": "2026-11-19T22:55:02.102Z",
+  "type": "qc-hidden",
+  "id": "gh-dicklesworthstone-mcp-agent-mail",
+  "title": "mcp_agent_mail"
+ },
+ {
   "at": "2026-11-19T21:56:02.780Z",
   "type": "qc-hidden",
   "id": "gh-eagrafki-byte-manus-ai",
@@ -411,192 +597,6 @@
   "at": "2026-11-19T21:56:02.780Z",
   "type": "qc-hidden",
   "id": "gh-apothecarydesign-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-feathershosmash-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-advisorshake-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-gooie-goo-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-ttobulevicius-cpu-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-armsworminterface-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-winnerbrokerbarrow-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-ass039514-debug-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-derbelonix-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-bk9cj-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-ass039514-debug-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-verrohe9-web-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-derbelonix-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-lua822-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-lua822-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-verrohe9-web-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-jsabguy1-cpu-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-jopetkin-code-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-n0-name0-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-jsabguy1-cpu-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-floki12342-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-jopetkin-code-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-n0-name0-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-jeremypires-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-floki12342-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-jeremypires-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-itprogamatikdedsec-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-datrify-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-prathmeshya-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-buttheadtrenton16-byte-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-elpepe200086-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-datrify-ai-manus",
   "title": "ai--manus"
  }
 ]
