@@ -1,5 +1,95 @@
 [
  {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-nikolaydubina-go-recipes",
+  "title": "go-recipes"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-mlabonne-llm-datasets",
+  "title": "llm-datasets"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-xlang-ai-openagents",
+  "title": "OpenAgents"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-rivet-dev-agentos",
+  "title": "agentos"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-mailru-easyjson",
+  "title": "easyjson"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-ailab-cvc-videocrafter",
+  "title": "VideoCrafter"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-icip-cas-pptagent",
+  "title": "PPTAgent"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-unlayer-react-email-editor",
+  "title": "react-email-editor"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-camel-ai-oasis",
+  "title": "oasis"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-imoneoi-openchat",
+  "title": "openchat"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-bit-datalab-edit-banana",
+  "title": "Edit-Banana"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-hey-api-hey-api",
+  "title": "hey-api"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-baichuan-inc-baichuan-7b",
+  "title": "Baichuan-7B"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-skyzh-tiny-llm",
+  "title": "tiny-llm"
+ },
+ {
+  "at": "2026-11-19T05:11:49.665Z",
+  "type": "qc-hidden",
+  "id": "gh-cog-creators-red-discordbot",
+  "title": "Red-DiscordBot"
+ },
+ {
   "at": "2026-11-19T04:02:04.828Z",
   "type": "qc-hidden",
   "id": "gh-pbek-qownnotes",
@@ -508,95 +598,5 @@
   "type": "added",
   "id": "aw-neural-formula",
   "title": "Neural Formula"
- },
- {
-  "at": "2026-11-18T21:56:49.617Z",
-  "type": "added",
-  "id": "aw-recruiting-emails-ai-by-dover",
-  "title": "Recruiting Emails AI by Dover"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-boringmarketer-boring-marketing-skills",
-  "title": "boring-marketing-skills"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-molly554-whiteboard-ai-tutor",
-  "title": "whiteboard-ai-tutor"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-sybil-solutions-inference-optimisation-skill",
-  "title": "inference-optimisation-skill"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-vaibhav-space-my-ai-coding-workflow",
-  "title": "my-ai-coding-workflow"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-glen-web-app-best-agent-memory-mcp",
-  "title": "best-agent-memory-mcp"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-smokeeaasd-flawless-ui-ux",
-  "title": "flawless-ui-ux"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-alicebrown323-pro-tools-desktop",
-  "title": "pro-tools-desktop"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-future-proof-ds-interactive-ai-ml-tools",
-  "title": "interactive-ai-ml-tools"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-zjunlp-skillx",
-  "title": "SkillX"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
-  "title": "Context-Engineering-for-Multi-Agent-Systems"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-mrpowerscripts-reddit-karma-farming-bot",
-  "title": "reddit-karma-farming-bot"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-surebot-eventline",
-  "title": "Eventline"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-ruolinzheng08-twewy-discord-chatbot",
-  "title": "twewy-discord-chatbot"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-attzonko-mmpy-bot",
-  "title": "mmpy_bot"
  }
 ]
