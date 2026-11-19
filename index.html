@@ -113,7 +113,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
       <form onsubmit="goSearch(event)" class="mt-6 relative" autocomplete="off">
         <svg class="absolute left-5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
         <input type="text" id="homeSearch" oninput="homeSuggest()" onfocus="homeSuggest()"
-          placeholder="Ne yapmak istiyorsun? &#214;rn: bana bir video yap"
+          placeholder="Ne yapmak istiyorsun?"
           class="w-full p-4 sm:p-5 pl-12 sm:pl-14 pr-28 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-700 border-gray-300 dark:text-white text-gray-900 placeholder-gray-500 focus:outline-none focus:border-purple-500 focus:ring-4 focus:ring-purple-500/15 text-sm sm:text-base shadow-xl transition">
         <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2.5 sm:py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-bold">Ara</button>
         <div id="homeSuggestBox" class="hidden absolute z-30 left-0 right-0 mt-2 rounded-2xl dark:bg-gray-900 bg-white border dark:border-gray-800 border-gray-200 shadow-2xl overflow-hidden text-left"></div>
@@ -121,6 +121,16 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
       <div id="homeExamples" class="mt-4 flex flex-wrap justify-center gap-2 text-xs"></div>
     </div>
 
+
+    <div id="homeFeaturedWrap">
+      <div class="mb-4 px-1 flex items-end justify-between gap-3"><div><div class="sec-h dark:text-white text-gray-900">Edit&#246;r&#252;n Se&#231;imi</div><div class="sec-sub">En i&#351;e yarayan, T&#252;rkiye&#8217;den rahat kullan&#305;lan ara&#231;lar</div></div><button type="button" onclick="setCat('all')" class="text-xs font-bold text-purple-400 hover:text-purple-300 flex-shrink-0">T&#252;m ara&#231;lar &#8594;</button></div>
+      <div id="homeFeaturedGrid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-x-10 gap-y-12">
+      <div id="homeTrFreeWrap" class="hidden"><div class="mb-3 px-1"><div class="sec-h dark:text-white text-gray-900">T&#252;rk&#231;e bilen, &#252;cretsizi yeten ara&#231;lar</div><div class="sec-sub">Kay&#305;t ol, hemen kullan</div></div><div id="homeTrFree"></div></div>
+      <div id="homeNewsWrap" class="hidden"><div class="mb-3 px-1 flex items-end justify-between gap-3"><div><div class="sec-h dark:text-white text-gray-900">Son haberler</div><div class="sec-sub">T&#252;rk&#231;eye &#231;evrilmi&#351; yapay zeka haberleri</div></div><button type="button" onclick="switchPage('news')" class="text-xs font-bold text-purple-400 hover:text-purple-300 flex-shrink-0">T&#252;m&#252; &#8594;</button></div><div id="homeNewsList"></div></div>
+    </div>
 
     <div>
       <div class="mb-4 px-1"><div class="sec-h dark:text-white text-gray-900">Sitede Neler Var?</div><div class="sec-sub">Ara&#231;lardan haberlere, para kazanma yollar&#305;ndan &#252;cretsiz kitaplara</div></div>
@@ -1352,6 +1362,7 @@ function filterTools() {
     if (appState.trOnly && !(typeof TRINFO !== 'undefined' && TRINFO[item.id] && TRINFO[item.id].tr === 'evet')) return false;
     if (appState.currentCat === 'favorites') return appState.favorites.indexOf(item.id) > -1;
     if (appState.currentCat === 'open') return !!item.openSource;
+    if (item.openSource && !q) return false;
     return appState.currentCat === 'all' || item.category === appState.currentCat;
   });
   var sf = (document.getElementById('sortFilter') || {}).value || 'rec';
@@ -1477,8 +1488,8 @@ function catMeta(k) { for (var i = 0; i < CATS.length; i++) if (CATS[i][0] === k
 function renderChips() {
   var box = document.getElementById('categoryChips'); if (!box) return;
   box.innerHTML = '';
-  var counts = { all: appState.allTools.length, favorites: appState.favorites.length };
-  appState.allTools.forEach(function(t) { counts[t.category] = (counts[t.category] || 0) + 1; if (t.openSource) counts.open = (counts.open || 0) + 1; });
+  var counts = { all: 0, favorites: appState.favorites.length };
+  appState.allTools.forEach(function(t) { if (t.openSource) { counts.open = (counts.open || 0) + 1; return; } counts.all++; counts[t.category] = (counts[t.category] || 0) + 1; });
   CATS.forEach(function(c) {
     var active = appState.currentCat === c[0], b = document.createElement('button');
     b.className = 'cat-btn flex-shrink-0 flex items-center gap-2 pl-2 pr-3 py-2 rounded-2xl font-bold transition border ' + (active ? 'bg-purple-600 text-white border-transparent' : 'dark:bg-gray-900 bg-white dark:text-gray-300 text-gray-700 dark:border-gray-800 border-gray-300 hover:border-purple-500');
@@ -2072,7 +2083,8 @@ function renderHomeSections() {
 }
 function updateHomeCounts() {
   var set = function (id, n, w) { var el = document.getElementById(id); if (el) el.textContent = n ? n.toLocaleString('tr-TR') + ' ' + w : '\u2026'; };
-  set('toolCount', appState.allTools.length, 'ara\u00e7');
+  set('toolCount', hazirSayisi(), 'ara\u00e7');
+  try { renderHomeNews(); } catch (e) {}
   set('newsCount', appState.liveNewsList.length, 'haber');
   set('bizCount', BIZ_GELIR.length + BIZ_KULLANIM.length + BIZ_SIRKET.length, 'model');
   set('pluginTotal', appState.plugins.length, 'eklenti');
@@ -2764,6 +2776,14 @@ function hashOku() {
     if (kok !== appState.activePage) switchPage(kok);
   } finally { yonlendirme = false; }
 }
+document.addEventListener('keydown', function (e) {
+  if (e.key !== '/' || e.ctrlKey || e.metaKey || e.altKey) return;
+  var a = document.activeElement, t = a && a.tagName;
+  if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT' || (a && a.isContentEditable)) return;
+  var home = appState.activePage === 'directory';
+  var el = document.getElementById(home ? 'homeSearch' : 'searchInput');
+  if (el && el.offsetParent !== null) { e.preventDefault(); el.focus(); }
+});
 window.addEventListener('hashchange', hashOku);
 window.addEventListener('popstate', hashOku);
 
@@ -2818,7 +2838,7 @@ function refreshTools() {
     .then(function(d) {
       if (!d.tools || !d.tools.length) return;
       appState.allTools = d.tools.filter(function(t) { return t.status !== 'inactive' && t.qc !== 'bad' && !isClosedTool(t.id); }).map(function(t) {
-        return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: !!t.isNew, tr: t.tr !== false,
+        return { id: t.id, title: fixText(t.title), category: t.category, price: t.price, url: t.url, isVip: !!t.featured, isNew: tazeMi(t), tr: t.tr !== false,
                  desc: fixText(langTool(t)), addedAt: t.addedAt || '', source: t.source || 'curated', stars: t.stars || 0, openSource: t.source === 'github', image: t.image || '', hasOg: !!t.image, brand: t.source === 'github' && t.repo ? ghBrand(t.repo) : brandOf(t.url), tags: [String(t.category).toLowerCase(), 'ai', 'yapay zeka'] };
       });
       if (BEKLEYEN_ARAC != null) { var bk = BEKLEYEN_ARAC; yonlendirme = true; openToolDetail(bk); yonlendirme = false; }
@@ -2889,17 +2909,43 @@ function renderSpotlight() {
   box.appendChild(c);
   wrap.classList.remove('hidden');
 }
+function hazirSayisi() { return (appState.allTools || []).filter(function (x) { return !x.openSource; }).length; }
+function tazeMi(t) {
+  if (!t.addedAt) return false;
+  var g = (Date.now() - Date.parse(t.addedAt + 'T00:00:00')) / 864e5;
+  return g >= 0 && g <= 4 && (t.source !== 'github' || (t.stars || 0) >= 1000);
+}
 function renderHeroStats() {
   var box = document.getElementById('heroStats'); if (!box) return;
-  var t = (appState.allTools || []).length, yeni = (appState.allTools || []).filter(function (x) { return x.isNew; }).length;
+  var all = appState.allTools || [], h = hazirSayisi(), ok = all.length - h;
   var parca = [];
-  if (t > 200) parca.push('<b class="dark:text-white text-gray-900">' + t.toLocaleString('tr-TR') + '</b> ara\u00e7');
-  if (yeni) parca.push('<b class="dark:text-white text-gray-900">' + yeni + '</b> yeni (son 2 hafta)');
-  parca.push('<b class="dark:text-white text-gray-900">7</b> kategori');
+  if (h > 100) parca.push('<b class="dark:text-white text-gray-900">' + h.toLocaleString('tr-TR') + '</b> haz\u0131r ara\u00e7');
+  if (ok > 100) parca.push('<b class="dark:text-white text-gray-900">' + ok.toLocaleString('tr-TR') + '</b> a\u00e7\u0131k kaynak proje');
   parca.push('T\u00fcrk\u00e7e a\u00e7\u0131klamalar');
-  box.innerHTML = parca.map(function (p) { return '<span>' + p + '</span>'; }).join('<span class="opacity-30">\u2022</span>');
+  box.innerHTML = parca.map(function (p) { return '<span>' + p + '</span>'; }).join('');
 }
-function renderHomeExtras() { renderSpotlight(); renderHomeLists(); renderHeroStats(); }
+function renderHomeTrFree() {
+  var box = document.getElementById('homeTrFree'); if (!box) return;
+  var list = (appState.allTools || []).filter(function (t) { var d = TRINFO[t.id]; return d && d.tr === 'evet' && d.access === 'evet' && d.free === 'yeterli' && !t.openSource; });
+  list.sort(function (a, b) { return (b.isVip ? 1 : 0) - (a.isVip ? 1 : 0); });
+  box.innerHTML = '';
+  list.slice(0, 6).forEach(function (t) { box.appendChild(aracSatiri(t, '<span class="text-emerald-400">\u00dccretsiz yeter</span>')); });
+  var w = document.getElementById('homeTrFreeWrap'); if (w) w.classList.toggle('hidden', !list.length);
+}
+function renderHomeNews() {
+  var box = document.getElementById('homeNewsList'); if (!box) return;
+  var list = (appState.liveNewsList || []).slice(0, 5);
+  var w = document.getElementById('homeNewsWrap'); if (w) w.classList.toggle('hidden', !list.length);
+  box.innerHTML = '';
+  list.forEach(function (n) {
+    var r = document.createElement('div');
+    r.className = 'flex items-start gap-3 p-2.5 -mx-2.5 rounded-2xl cursor-pointer hover:bg-purple-500/10 transition';
+    r.onclick = function () { openNewsDetail(n); };
+    r.innerHTML = '<div class="min-w-0 flex-1"><div class="font-bold text-sm dark:text-white text-gray-900 line-clamp-2">' + esc(n.title) + '</div><div class="text-[11px] text-gray-500 mt-0.5">' + esc(n.source || '') + '</div></div>';
+    box.appendChild(r);
+  });
+}
+function renderHomeExtras() { renderSpotlight(); renderHomeLists(); renderHeroStats(); renderFeatured('homeFeaturedGrid'); renderHomeTrFree(); renderHomeNews(); }
 
 /* ---------- Ba\u015flat (tek sefer) ---------- */
 var started = false;
