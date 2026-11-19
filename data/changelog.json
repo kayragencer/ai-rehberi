@@ -1,5 +1,53 @@
 [
  {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-infiniteconversation",
+  "title": "Infiniteconversation"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-digital-dogs",
+  "title": "Digital Dogs"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-getresponse",
+  "title": "GetResponse"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-hexowatch",
+  "title": "Hexowatch"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-nanit",
+  "title": "nanit"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-aerial",
+  "title": "aerial"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-jokelub",
+  "title": "Jokelub"
+ },
+ {
+  "at": "2026-11-19T13:22:44.116Z",
+  "type": "qc-hidden",
+  "id": "aw-chess-ai",
+  "title": "Chess AI"
+ },
+ {
   "at": "2026-11-19T12:04:10.881Z",
   "type": "qc-hidden",
   "id": "gh-openai-openai-dotnet",
@@ -550,53 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-javaparser-javaparser",
   "title": "javaparser"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-nirholas-fresh-start",
-  "title": "fresh-start"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-dsherret-ts-morph",
-  "title": "ts-morph"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-amazon-science-chronos-forecasting",
-  "title": "chronos-forecasting"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-yl4579-styletts2",
-  "title": "StyleTTS2"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-canopyai-orpheus-tts",
-  "title": "Orpheus-TTS"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-flashlight-wav2letter",
-  "title": "wav2letter"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-j3ssie-osmedeus",
-  "title": "osmedeus"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-pig-mesh-pig",
-  "title": "pig"
  }
 ]
