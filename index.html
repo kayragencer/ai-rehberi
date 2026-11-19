@@ -464,6 +464,7 @@ html.light .pill-freemium { color: #52525b; } html.light .pill-new { color: #6a4
         <div>
           <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Ara&#231; Hakk&#305;nda</h3>
           <p id="detailToolDesc" class="dark:text-gray-300 text-gray-700 text-sm sm:text-base leading-relaxed whitespace-pre-line"></p>
+          <div id="detailTrInfo" class="hidden mt-6"></div>
         </div>
         <a id="detailToolLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full block text-center py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-2xl text-sm transition">Siteye Git & Kullan &#8599;</a>
       </div>
@@ -792,6 +793,7 @@ function renderCardHTML(item, featured) {
       fiyatPill(item.price) +
       (vip ? '<span class="pill pill-pick">' + ico('star', 'inline-block w-3 h-3 -mt-0.5 mr-0.5') + ' Edit\u00f6r\u00fcn se\u00e7imi</span>' : '') +
       (item.isNew ? '<span class="pill pill-new">Yeni</span>' : '') +
+      (typeof TRINFO !== 'undefined' && TRINFO[item.id] && TRINFO[item.id].tr === 'evet' && LANG !== 'en' ? '<span class="pill pill-new" title="T\u00fcrk\u00e7e anlar ve yaz\u0131r">T\u00fcrk\u00e7e</span>' : '') +
       (item.stars ? '<span class="pill pill-paid">' + ico('star', 'inline-block w-3 h-3 -mt-0.5 mr-0.5') + ' ' + kisaSayi(item.stars) + '</span>' : '') +
       '<span class="ml-auto text-[12px] font-semibold text-gray-500 group-hover:text-purple-400 transition">\u0130ncele \u2192</span>' +
     '</div>';
@@ -902,6 +904,7 @@ function openToolDetail(id) {
   if (tool.hasOg) { img.classList.remove('hidden'); tile.classList.add('hidden'); img.onerror = function() { img.onerror = null; showTile(); }; img.src = tool.image; }
   else { img.removeAttribute('src'); showTile(); }
   document.getElementById('detailToolPrice').textContent = tool.price;
+  renderTrInfo(tool);
 
   var grid = document.getElementById('detailSameCatGrid');
   grid.innerHTML = '';
@@ -921,6 +924,33 @@ function openToolDetail(id) {
   });
   renderReviews(id);
   switchPage('toolDetail');
+}
+
+
+/* ===== Türkiye bilgisi (data/tr-info.json): Türkçe biliyor mu, ücretsizi yetiyor mu, 3 adımda kullanım ===== */
+var TRINFO = {};
+fetch('data/tr-info.json', { cache: 'no-cache' }).then(function(r) { return r.ok ? r.json() : {}; }).then(function(d) {
+  TRINFO = d || {};
+  if (appState.activePage === 'toolDetail' && appState.currentActiveToolId) { var t = appState.allTools.find(function(x) { return x.id === appState.currentActiveToolId; }); if (t) renderTrInfo(t); }
+  if (appState.activePage === 'directory' || appState.activePage === 'tools') filterTools();
+}).catch(function() {});
+function renderTrInfo(tool) {
+  var box = document.getElementById('detailTrInfo'); if (!box) return;
+  var d = (typeof TRINFO !== 'undefined' && TRINFO) ? TRINFO[tool.id] : null;
+  if (!d || LANG === 'en') { box.classList.add('hidden'); box.innerHTML = ''; return; }
+  var TR = { evet: ['Evet', 'text-emerald-400'], kismen: ['K\u0131smen', 'text-amber-400'], hayir: ['Hay\u0131r', 'text-red-400'] };
+  var FR = { yeterli: ['Yeterli', 'text-emerald-400'], sinirli: ['S\u0131n\u0131rl\u0131', 'text-amber-400'], yok: ['Yok', 'text-red-400'] };
+  var AC = { evet: ['Evet', 'text-emerald-400'], vpn: ['Engelli', 'text-red-400'], bilinmiyor: ['Kontrol edilmedi', 'text-gray-400'] };
+  function kut(baslik, v) { return '<div class="flex-1 min-w-[7rem] rounded-xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 px-3 py-2.5"><div class="text-[11px] text-gray-500 mb-0.5">' + baslik + '</div><div class="font-bold text-sm ' + v[1] + '">' + v[0] + '</div></div>'; }
+  var h = '<div class="rounded-2xl border border-purple-500/30 dark:bg-purple-500/5 bg-purple-50 p-4 sm:p-5">' +
+    '<div class="sec-h dark:text-white text-gray-900 mb-3 text-base">T\u00fcrkiye\u2019den kullan\u0131rken</div>' +
+    '<div class="flex flex-wrap gap-2 mb-3">' + kut('T\u00fcrk\u00e7e biliyor mu?', TR[d.tr] || TR.kismen) + kut('T\u00fcrkiye\u2019den eri\u015fim', AC[d.access] || AC.bilinmiyor) + kut('\u00dccretsiz s\u00fcr\u00fcm\u00fc', FR[d.free] || FR.sinirli) + '</div>' +
+    '<p class="text-[13px] leading-relaxed dark:text-gray-300 text-gray-700 mb-4">' + esc(d.note) + '</p>' +
+    '<div class="font-bold text-sm dark:text-white text-gray-900 mb-2">3 ad\u0131mda nas\u0131l kullan\u0131l\u0131r?</div>' +
+    '<ol class="space-y-2 mb-3">' + (d.steps || []).map(function(st, i) { return '<li class="flex gap-2.5 text-[13px] leading-relaxed dark:text-gray-300 text-gray-700"><span class="w-6 h-6 flex-shrink-0 rounded-full bg-purple-600 text-white text-[11px] font-bold flex items-center justify-center">' + (i + 1) + '</span><span class="pt-0.5">' + esc(st) + '</span></li>'; }).join('') + '</ol>' +
+    '<div class="text-[11px] text-gray-500">Bilgiler Kas\u0131m 2026\u2019da derlendi; ara\u00e7lar fiyat ve \u00f6zelliklerini de\u011fi\u015ftirebilir. Yanl\u0131\u015f bir \u015fey g\u00f6r\u00fcrsen Profil \u2192 \u00d6neri / \u015eik\u00e2yet\u2019ten bildir.</div>' +
+    '</div>';
+  box.innerHTML = h; box.classList.remove('hidden');
 }
 
 function sbTarih(s) {
