@@ -1,5 +1,137 @@
 [
  {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-steipete-agent-scripts",
+  "title": "agent-scripts"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-cloneofsimo-lora",
+  "title": "lora"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-guardrails-ai-guardrails",
+  "title": "guardrails"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-sschmid-entitas",
+  "title": "Entitas"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-visuallyjs-visuallyjs",
+  "title": "visuallyjs"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-datahaven-xyz-datahaven",
+  "title": "datahaven"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-deanpeters-product-manager-skills",
+  "title": "Product-Manager-Skills"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-lucidrains-imagen-pytorch",
+  "title": "imagen-pytorch"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-deeplethe-utopia",
+  "title": "utopia"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-aipentest-cyberstrikeai",
+  "title": "CyberStrikeAI"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-zai-org-codegeex",
+  "title": "CodeGeeX"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-fishaudio-bert-vits2",
+  "title": "Bert-VITS2"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-ashawkey-stable-dreamfusion",
+  "title": "stable-dreamfusion"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-lencx-noi",
+  "title": "Noi"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-poloclub-transformer-explainer",
+  "title": "transformer-explainer"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-yagop-node-telegram-bot-api",
+  "title": "node-telegram-bot-api"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-gentleman-programming-gentle-ai",
+  "title": "gentle-ai"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-miqdadbadjuber-anti-slop",
+  "title": "anti-slop"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-unicity-sphere-sphere",
+  "title": "sphere"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-apache-seatunnel",
+  "title": "seatunnel"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-evolution-foundation-evolution-api",
+  "title": "evolution-api"
+ },
+ {
+  "at": "2026-11-19T02:57:09.237Z",
+  "type": "qc-hidden",
+  "id": "gh-astrid-runtime-astrid",
+  "title": "astrid"
+ },
+ {
   "at": "2026-11-19T01:18:06.116Z",
   "type": "qc-hidden",
   "id": "aw-neuraltext",
@@ -466,137 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-vapi-network-vapi-network",
   "title": "vapi-network"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-zeromicro-go-zero",
-  "title": "go-zero"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-mukul975-anthropic-cybersecurity-skills",
-  "title": "Anthropic-Cybersecurity-Skills"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-mouredev-hello-python",
-  "title": "Hello-Python"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-hkuds-lightrag",
-  "title": "LightRAG"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-paperless-ngx-paperless-ngx",
-  "title": "paperless-ngx"
- },
- {
-  "at": "2026-11-18T19:00:27.033Z",
-  "type": "qc-hidden",
-  "id": "gh-hkuds-deeptutor",
-  "title": "DeepTutor"
- },
- {
-  "at": "2026-11-18T19:00:27.033Z",
-  "type": "qc-hidden",
-  "id": "gh-tw93-pake",
-  "title": "Pake"
- },
- {
-  "at": "2026-11-18T19:00:27.033Z",
-  "type": "qc-hidden",
-  "id": "gh-thedaviddias-front-end-checklist",
-  "title": "Front-End-Checklist"
- },
- {
-  "at": "2026-11-18T19:00:27.033Z",
-  "type": "qc-hidden",
-  "id": "gh-microsoft-ai-agents-for-beginners",
-  "title": "ai-agents-for-beginners"
- },
- {
-  "at": "2026-11-18T17:59:50.397Z",
-  "type": "added",
-  "id": "aw-gpt-3-apps",
-  "title": "GPT-3 Apps"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-noodle-rest-noodle",
-  "title": "noodle"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-minimax-ai-minimax-h3-image",
-  "title": "MiniMax-H3-Image"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-zaxiu88888-issue-rag",
-  "title": "issue-rag"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-tiger-ai-lab-websitebench",
-  "title": "WebsiteBench"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-nvlabs-nano-rl",
-  "title": "nano-rl"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-hyperionaidev-smolmaxxing",
-  "title": "smolmaxxing"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-yangyuhou-qwen2api",
-  "title": "qwen2API"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-lilmgenius-paperthin",
-  "title": "paperthin"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-voyager-so-vork",
-  "title": "vork"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-remocn-remocn",
-  "title": "remocn"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-iainkay-ram-altman",
-  "title": "ram-altman"
- },
- {
-  "at": "2026-11-18T13:19:39.545Z",
-  "type": "qc-hidden",
-  "id": "gh-lollipopkit-flutter-server-box",
-  "title": "flutter_server_box"
  }
 ]
