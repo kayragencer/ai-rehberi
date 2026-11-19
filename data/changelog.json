@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-19T11:09:06.515Z",
+  "type": "restored",
+  "id": "gh-vllora-vllora",
+  "title": "vllora"
+ },
+ {
   "at": "2026-11-19T10:13:52.724Z",
   "type": "qc-hidden",
   "id": "gh-vectara-hallucination-leaderboard",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-fishaudio-bert-vits2",
   "title": "Bert-VITS2"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-ashawkey-stable-dreamfusion",
-  "title": "stable-dreamfusion"
  }
 ]
