@@ -1,5 +1,263 @@
 [
  {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-tigerresearch-tigerbot",
+  "title": "TigerBot"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-pku-yuangroup-helios",
+  "title": "Helios"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-openmoss-moss-transcribe-diarize",
+  "title": "MOSS-Transcribe-Diarize"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-adtexterry-lgtm-unigit-ecosystem",
+  "title": "unigit-ecosystem"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-kubeshop-botkube",
+  "title": "botkube"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-google-gnostic",
+  "title": "gnostic"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-lucasjinreal-weibo-terminater",
+  "title": "weibo_terminater"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-rayhane-mamah-tacotron-2",
+  "title": "Tacotron-2"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-buaacyw-meshanything",
+  "title": "MeshAnything"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-casadi-casadi",
+  "title": "casadi"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-beir-cellar-beir",
+  "title": "beir"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-sapientinc-hrm-text",
+  "title": "HRM-Text"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-deeplethe-solid-glass",
+  "title": "solid-glass"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-adithya-s-k-ai-engineering-academy",
+  "title": "AI-Engineering.academy"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-zebbern-no-cost-ai",
+  "title": "no-cost-ai"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-drl990114-markflowy",
+  "title": "MarkFlowy"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-denissergeevitch-agents-best-practices",
+  "title": "agents-best-practices"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-taesungp-contrastive-unpaired-translation",
+  "title": "contrastive-unpaired-translation"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-openai-openai-openapi",
+  "title": "openai-openapi"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-apache-hamilton",
+  "title": "hamilton"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "qc-hidden",
+  "id": "gh-serenity-is-serenity",
+  "title": "Serenity"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-canfit",
+  "title": "canfit"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-upsolve-mcp-connections",
+  "title": "Upsolve MCP Connections"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-nuko",
+  "title": "Nuko"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-polylane-for-azure",
+  "title": "Polylane for Azure"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-trellus",
+  "title": "Trellus"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-assemblyai-stt-3-7",
+  "title": "AssemblyAI-STT-3.7"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-every-signal",
+  "title": "Every Signal"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-tecla",
+  "title": "Tecla"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-fieldwork-code",
+  "title": "Fieldwork Code"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-ai-canvas",
+  "title": "AI Canvas"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-heygen-avatar-6",
+  "title": "HeyGen Avatar 6"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-room-ai",
+  "title": "Room AI"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-kino",
+  "title": "Kino"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-qwen4-max",
+  "title": "Qwen4-Max"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-tooljet",
+  "title": "ToolJet"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-polylane-for-ci",
+  "title": "Polylane for CI"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-enrichable-by-context-dev",
+  "title": "Enrichable by Context.dev"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-kadeep-ai",
+  "title": "KaDeep AI"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-sendr-v4-lovable-for-gtm",
+  "title": "Sendr V4: Lovable for GTM"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-ui-verify",
+  "title": "UI Verify"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-urun",
+  "title": "uRun"
+ },
+ {
+  "at": "2026-11-19T20:58:52.471Z",
+  "type": "added",
+  "id": "ph-tencent-hy4-flash",
+  "title": "Tencent Hy4 flash"
+ },
+ {
   "at": "2026-11-19T20:10:25.680Z",
   "type": "qc-hidden",
   "id": "gh-sierra-research-tau2-bench",
@@ -340,263 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-ictnlp-llama-omni",
   "title": "LLaMA-Omni"
- },
- {
-  "at": "2026-11-19T17:59:34.465Z",
-  "type": "qc-hidden",
-  "id": "gh-skyworkai-skywork-r1v",
-  "title": "Skywork-R1V"
- },
- {
-  "at": "2026-11-19T17:59:34.465Z",
-  "type": "qc-hidden",
-  "id": "gh-minimax-ai-minimax-m1",
-  "title": "MiniMax-M1"
- },
- {
-  "at": "2026-11-19T17:59:34.465Z",
-  "type": "qc-hidden",
-  "id": "gh-xlang-ai-osworld",
-  "title": "OSWorld"
- },
- {
-  "at": "2026-11-19T17:59:34.465Z",
-  "type": "qc-hidden",
-  "id": "gh-prism-shadow-penguin-harness",
-  "title": "penguin-harness"
- },
- {
-  "at": "2026-11-19T17:59:34.465Z",
-  "type": "qc-hidden",
-  "id": "gh-av-harbor",
-  "title": "harbor"
- },
- {
-  "at": "2026-11-19T17:59:34.465Z",
-  "type": "added",
-  "id": "gh-bookwjitchieni1986-blender-ai-mcp-addon",
-  "title": "blender-ai-mcp-addon"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-infiniteconversation",
-  "title": "Infiniteconversation"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-digital-dogs",
-  "title": "Digital Dogs"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-getresponse",
-  "title": "GetResponse"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-hexowatch",
-  "title": "Hexowatch"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-nanit",
-  "title": "nanit"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-aerial",
-  "title": "aerial"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-jokelub",
-  "title": "Jokelub"
- },
- {
-  "at": "2026-11-19T13:22:44.116Z",
-  "type": "qc-hidden",
-  "id": "aw-chess-ai",
-  "title": "Chess AI"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-openai-openai-dotnet",
-  "title": "openai-dotnet"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-dvorka-mindforger",
-  "title": "mindforger"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-itayinbarr-little-coder",
-  "title": "little-coder"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-control-theory-gonzo",
-  "title": "gonzo"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-go-dev-frame-sponge",
-  "title": "sponge"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-ehforwarderbot-ehforwarderbot",
-  "title": "ehForwarderBot"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-macpaw-openai",
-  "title": "OpenAI"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-mmcloughlin-avo",
-  "title": "avo"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-weld-project-weld",
-  "title": "weld"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-apollographql-apollo-tooling",
-  "title": "apollo-tooling"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-elegantapp-pwa-asset-generator",
-  "title": "pwa-asset-generator"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-kane50613-takumi",
-  "title": "takumi"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-leo-lilinxiao-codex-autoresearch",
-  "title": "codex-autoresearch"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-irazasyed-telegram-bot-sdk",
-  "title": "telegram-bot-sdk"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-tencent-hunyuan-hunyuanimage-3-0",
-  "title": "HunyuanImage-3.0"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-errbotio-errbot",
-  "title": "errbot"
- },
- {
-  "at": "2026-11-19T12:04:10.881Z",
-  "type": "qc-hidden",
-  "id": "gh-jia-lab-research-mgm",
-  "title": "MGM"
- },
- {
-  "at": "2026-11-19T11:09:06.515Z",
-  "type": "restored",
-  "id": "gh-vllora-vllora",
-  "title": "vllora"
- },
- {
-  "at": "2026-11-19T10:13:52.724Z",
-  "type": "qc-hidden",
-  "id": "gh-vectara-hallucination-leaderboard",
-  "title": "hallucination-leaderboard"
- },
- {
-  "at": "2026-11-19T10:13:52.724Z",
-  "type": "qc-hidden",
-  "id": "gh-bbuf-how-to-optim-algorithm-in-cuda",
-  "title": "how-to-optim-algorithm-in-cuda"
- },
- {
-  "at": "2026-11-19T10:13:52.724Z",
-  "type": "qc-hidden",
-  "id": "gh-opengvlab-ask-anything",
-  "title": "Ask-Anything"
- },
- {
-  "at": "2026-11-19T10:13:52.724Z",
-  "type": "qc-hidden",
-  "id": "gh-vainf-torch-pruning",
-  "title": "Torch-Pruning"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-aiming-lab-metaclaw",
-  "title": "MetaClaw"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-minimax-ai-minimax-01",
-  "title": "MiniMax-01"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-jaymody-picogpt",
-  "title": "picoGPT"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-xtekky-chatgpt-clone",
-  "title": "chatgpt-clone"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-hkuds-videorag",
-  "title": "VideoRAG"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-wppconnect-team-wppconnect",
-  "title": "wppconnect"
- },
- {
-  "at": "2026-11-19T09:12:08.322Z",
-  "type": "qc-hidden",
-  "id": "gh-strelov1-freehire",
-  "title": "freehire"
  }
 ]
