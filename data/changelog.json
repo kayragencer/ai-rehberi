@@ -1,5 +1,107 @@
 [
  {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-openai-openai-dotnet",
+  "title": "openai-dotnet"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-dvorka-mindforger",
+  "title": "mindforger"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-itayinbarr-little-coder",
+  "title": "little-coder"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-control-theory-gonzo",
+  "title": "gonzo"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-go-dev-frame-sponge",
+  "title": "sponge"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-ehforwarderbot-ehforwarderbot",
+  "title": "ehForwarderBot"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-macpaw-openai",
+  "title": "OpenAI"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-mmcloughlin-avo",
+  "title": "avo"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-weld-project-weld",
+  "title": "weld"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-apollographql-apollo-tooling",
+  "title": "apollo-tooling"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-elegantapp-pwa-asset-generator",
+  "title": "pwa-asset-generator"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-kane50613-takumi",
+  "title": "takumi"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-leo-lilinxiao-codex-autoresearch",
+  "title": "codex-autoresearch"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-irazasyed-telegram-bot-sdk",
+  "title": "telegram-bot-sdk"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-tencent-hunyuan-hunyuanimage-3-0",
+  "title": "HunyuanImage-3.0"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-errbotio-errbot",
+  "title": "errbot"
+ },
+ {
+  "at": "2026-11-19T12:04:10.881Z",
+  "type": "qc-hidden",
+  "id": "gh-jia-lab-research-mgm",
+  "title": "MGM"
+ },
+ {
   "at": "2026-11-19T11:09:06.515Z",
   "type": "restored",
   "id": "gh-vllora-vllora",
@@ -496,107 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-pig-mesh-pig",
   "title": "pig"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-greptimeteam-greptimedb",
-  "title": "greptimedb"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-internlm-internlm",
-  "title": "InternLM"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-albertan017-llm4decompile",
-  "title": "LLM4Decompile"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-minedojo-voyager",
-  "title": "Voyager"
- },
- {
-  "at": "2026-11-19T04:02:04.828Z",
-  "type": "qc-hidden",
-  "id": "gh-zai-org-glm-5",
-  "title": "GLM-5"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-steipete-agent-scripts",
-  "title": "agent-scripts"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-cloneofsimo-lora",
-  "title": "lora"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-guardrails-ai-guardrails",
-  "title": "guardrails"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-sschmid-entitas",
-  "title": "Entitas"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-visuallyjs-visuallyjs",
-  "title": "visuallyjs"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-datahaven-xyz-datahaven",
-  "title": "datahaven"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-deanpeters-product-manager-skills",
-  "title": "Product-Manager-Skills"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-lucidrains-imagen-pytorch",
-  "title": "imagen-pytorch"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-deeplethe-utopia",
-  "title": "utopia"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-aipentest-cyberstrikeai",
-  "title": "CyberStrikeAI"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-zai-org-codegeex",
-  "title": "CodeGeeX"
- },
- {
-  "at": "2026-11-19T02:57:09.237Z",
-  "type": "qc-hidden",
-  "id": "gh-fishaudio-bert-vits2",
-  "title": "Bert-VITS2"
  }
 ]
