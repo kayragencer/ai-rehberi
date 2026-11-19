@@ -1,5 +1,107 @@
 [
  {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-pbek-qownnotes",
+  "title": "QOwnNotes"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-princeton-nlp-tree-of-thought-llm",
+  "title": "tree-of-thought-llm"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-botman-botman",
+  "title": "botman"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-javaparser-javaparser",
+  "title": "javaparser"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-nirholas-fresh-start",
+  "title": "fresh-start"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-dsherret-ts-morph",
+  "title": "ts-morph"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-amazon-science-chronos-forecasting",
+  "title": "chronos-forecasting"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-yl4579-styletts2",
+  "title": "StyleTTS2"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-canopyai-orpheus-tts",
+  "title": "Orpheus-TTS"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-flashlight-wav2letter",
+  "title": "wav2letter"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-j3ssie-osmedeus",
+  "title": "osmedeus"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-pig-mesh-pig",
+  "title": "pig"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-greptimeteam-greptimedb",
+  "title": "greptimedb"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-internlm-internlm",
+  "title": "InternLM"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-albertan017-llm4decompile",
+  "title": "LLM4Decompile"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-minedojo-voyager",
+  "title": "Voyager"
+ },
+ {
+  "at": "2026-11-19T04:02:04.828Z",
+  "type": "qc-hidden",
+  "id": "gh-zai-org-glm-5",
+  "title": "GLM-5"
+ },
+ {
   "at": "2026-11-19T02:57:09.237Z",
   "type": "qc-hidden",
   "id": "gh-steipete-agent-scripts",
@@ -496,107 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-attzonko-mmpy-bot",
   "title": "mmpy_bot"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-snakeztc-neuraldialog-cvae",
-  "title": "NeuralDialog-CVAE"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-rlhf-v-rlhf-v",
-  "title": "RLHF-V"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-mckinziebrandon-deepchatmodels",
-  "title": "DeepChatModels"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-oswaldoludwig-seq2seq-chatbot-for-keras",
-  "title": "Seq2seq-Chatbot-for-Keras"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-tembo-voxl",
-  "title": "voxl"
- },
- {
-  "at": "2026-11-18T20:58:46.615Z",
-  "type": "qc-hidden",
-  "id": "gh-sheprd-labs-sheprd",
-  "title": "sheprd"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-zidage-alcedostudio",
-  "title": "AlcedoStudio"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-d2phap-exifglass",
-  "title": "ExifGlass"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-zylwithxy-hrdit",
-  "title": "HRDiT"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-daviddinkevich-story2board",
-  "title": "Story2Board"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-huawei-csl-macaq",
-  "title": "MACaQ"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-tonephorepair-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-trapbladesmith-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-taboospecialistblade-ai-manus2-0",
-  "title": "ai--manus2.0"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-juneo-lab-decision-forge",
-  "title": "decision-forge"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-kalcaddle-kodbox",
-  "title": "kodbox"
- },
- {
-  "at": "2026-11-18T20:04:15.088Z",
-  "type": "qc-hidden",
-  "id": "gh-vapi-network-vapi-network",
-  "title": "vapi-network"
  }
 ]
