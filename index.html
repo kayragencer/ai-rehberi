@@ -942,7 +942,7 @@ function renderTrInfo(tool) {
   if (!d || LANG === 'en') { box.classList.add('hidden'); box.innerHTML = ''; return; }
   var TR = { evet: ['Evet', 'text-emerald-400'], kismen: ['K\u0131smen', 'text-amber-400'], hayir: ['Hay\u0131r', 'text-red-400'] };
   var FR = { yeterli: ['Yeterli', 'text-emerald-400'], sinirli: ['S\u0131n\u0131rl\u0131', 'text-amber-400'], yok: ['Yok', 'text-red-400'] };
-  var AC = { evet: ['Evet', 'text-emerald-400'], vpn: ['Engelli', 'text-red-400'], bilinmiyor: ['Kontrol edilmedi', 'text-gray-400'] };
+  var AC = { evet: ['Evet', 'text-emerald-400'], vpn: ['Engelli', 'text-red-400'], bilinmiyor: ['Kontrol edilmedi', 'text-gray-400'], kapandi: ['Kapand\u0131', 'text-red-400'] };
   function kut(baslik, v) { return '<div class="flex-1 min-w-[7rem] rounded-xl dark:bg-gray-950 bg-gray-50 border dark:border-gray-800 border-gray-200 px-3 py-2.5"><div class="text-[11px] text-gray-500 mb-0.5">' + baslik + '</div><div class="font-bold text-sm ' + v[1] + '">' + v[0] + '</div></div>'; }
   var h = '<div class="rounded-2xl border border-purple-500/30 dark:bg-purple-500/5 bg-purple-50 p-4 sm:p-5">' +
     '<div class="sec-h dark:text-white text-gray-900 mb-3 text-base">T\u00fcrkiye\u2019den kullan\u0131rken</div>' +
