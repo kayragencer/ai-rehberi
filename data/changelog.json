@@ -1,5 +1,77 @@
 [
  {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-richmondu-libfaceid",
+  "title": "libfaceid"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-onion-liu-blendgan",
+  "title": "BlendGAN"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-ankanbhunia-pidm",
+  "title": "PIDM"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-ziqihuangg-reversion",
+  "title": "ReVersion"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-nisaaragharia-advanced-rag",
+  "title": "Advanced_RAG"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-piti-synthesis-piti",
+  "title": "PITI"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "qc-hidden",
+  "id": "gh-lakonik-lakonlab",
+  "title": "LakonLab"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "removed",
+  "id": "gh-flowelement-xinliuyuansu-m-flow",
+  "title": "m_flow"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "added",
+  "id": "gh-cc4w-adobe-firefly-image-generator",
+  "title": "adobe-firefly-image-generator"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "added",
+  "id": "gh-chase1225-anythingllm-verona-document-chat",
+  "title": "anythingllm-verona-document-chat"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "added",
+  "id": "gh-kenzz-devv-open-webui-talora-ai-workspace",
+  "title": "open-webui-talora-ai-workspace"
+ },
+ {
+  "at": "2026-11-20T21:54:20.859Z",
+  "type": "added",
+  "id": "gh-senickimoro-art-pinokio-olvara-ai-workspace",
+  "title": "pinokio-olvara-ai-workspace"
+ },
+ {
   "at": "2026-11-20T20:56:27.592Z",
   "type": "qc-hidden",
   "id": "gh-denis2054-transformers-for-nlp-and-computer-vision-3rd-edition",
@@ -526,77 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-vita-mllm-woodpecker",
   "title": "Woodpecker"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-jmerelnyc-photo-agents",
-  "title": "Photo-agents"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-alphaville-optimization-engine",
-  "title": "optimization-engine"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-matiasbattocchia-open-bsp-api",
-  "title": "open-bsp-api"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-demiseom-specaugment",
-  "title": "SpecAugment"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-zpdesu-sean",
-  "title": "SEAN"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-zhenye234-llasa-training",
-  "title": "LLaSA_training"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-cswry-seesr",
-  "title": "SeeSR"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-chenwu98-cycle-diffusion",
-  "title": "cycle-diffusion"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-noizai-helixworld",
-  "title": "HelixWorld"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-heyjunpenn-aigotools",
-  "title": "aigotools"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-choosewhatulike-trainable-agents",
-  "title": "trainable-agents"
- },
- {
-  "at": "2026-11-20T19:04:11.639Z",
-  "type": "qc-hidden",
-  "id": "gh-sunrainyg-randopt",
-  "title": "RandOpt"
  }
 ]
