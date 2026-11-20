@@ -1,5 +1,119 @@
 [
  {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-boo-ai",
+  "title": "Boo AI"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-aspen",
+  "title": "Aspen"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-ask-poppy",
+  "title": "Ask Poppy"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-baruaai",
+  "title": "BaruaAI"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-avtrs",
+  "title": "Avtrs"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-atlas-navi",
+  "title": "Atlas Navi"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-athena",
+  "title": "Athena"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-artistator",
+  "title": "Artistator"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-adobe-podcast",
+  "title": "Adobe Podcast"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-project-description-generator",
+  "title": "AI Project Description Generator"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-rental-cover-letter",
+  "title": "AI Rental Cover Letter"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-aiart",
+  "title": "AIArt"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-act-1",
+  "title": "ACT-1"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-content-generator",
+  "title": "AI Content Generator"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-time-machine",
+  "title": "ai time machine"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-host",
+  "title": "AI Host"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-scribebuddy",
+  "title": "Scribebuddy"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-startup-pitch-generator",
+  "title": "Startup Pitch Generator"
+ },
+ {
+  "at": "2026-11-20T03:58:37.911Z",
+  "type": "qc-hidden",
+  "id": "aw-sheetgod",
+  "title": "SheetGod"
+ },
+ {
   "at": "2026-11-20T02:17:52.487Z",
   "type": "qc-hidden",
   "id": "gh-ray-r-ren-agent-apprenticeship",
@@ -484,119 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-eosphoros-ai-db-gpt-hub",
   "title": "DB-GPT-Hub"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-pris-cv-demofusion",
-  "title": "DemoFusion"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-hkuds-minirag",
-  "title": "MiniRAG"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-amazon-science-auto-cot",
-  "title": "auto-cot"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-stripe-ai",
-  "title": "ai"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-hyperspaceai-agi",
-  "title": "agi"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-krishhgg-insomnia",
-  "title": "Insomnia"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-bilibili-index-translate",
-  "title": "Index-Translate"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-ise-uiuc-magicoder",
-  "title": "magicoder"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-microsoft-promptcraft-robotics",
-  "title": "PromptCraft-Robotics"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-apioo-fusio",
-  "title": "fusio"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-uber-adr",
-  "title": "ADR"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-elastio-bon",
-  "title": "bon"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-openvidu-openvidu",
-  "title": "openvidu"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-huggingface-evaluation-guidebook",
-  "title": "evaluation-guidebook"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-fatchord-wavernn",
-  "title": "WaveRNN"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-moonshotai-moba",
-  "title": "MoBA"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-nx-ai-xlstm",
-  "title": "xlstm"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-ziyang-xie-worldgen",
-  "title": "WorldGen"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-dluc-kernel-memory",
-  "title": "kernel-memory"
  }
 ]
