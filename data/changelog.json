@@ -1,5 +1,203 @@
 [
  {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-docailab-xrag",
+  "title": "XRAG"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-lightreasoner",
+  "title": "LightReasoner"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-segmind-distill-sd",
+  "title": "distill-sd"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-skytliang-multi-agents-debate",
+  "title": "Multi-Agents-Debate"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-robustnlp-cipherchat",
+  "title": "CipherChat"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-ten-framework-ten-turn-detection",
+  "title": "ten-turn-detection"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-yonaskolb-swaggen",
+  "title": "SwagGen"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-omriav-blended-latent-diffusion",
+  "title": "blended-latent-diffusion"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-ruc-gsai-yulan-chat",
+  "title": "YuLan-Chat"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-breezewish-codexpotter",
+  "title": "CodexPotter"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-johnsonhk88-ai-bank-statement-document-automation-by-llm-and-personal-finanical-analysis-prediction",
+  "title": "AI-Bank-Statement-Document-Automation-By-LLM-And-Personal-Finanical-Analysis-Prediction"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-denis2054-rag-driven-generative-ai",
+  "title": "RAG-Driven-Generative-AI"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-inducer-loopy",
+  "title": "loopy"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-huawei-csl-sinq",
+  "title": "SINQ"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-onyx-dot-app-enterpriserag-bench",
+  "title": "EnterpriseRAG-Bench"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-mon-ius-docker-warp-socks",
+  "title": "Docker-Warp-Socks"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-foundationvision-liquid",
+  "title": "Liquid"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-marketingpipeline-termino-js",
+  "title": "Termino.js"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-vita-mllm-woodpecker",
+  "title": "Woodpecker"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-jmerelnyc-photo-agents",
+  "title": "Photo-agents"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-alphaville-optimization-engine",
+  "title": "optimization-engine"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-matiasbattocchia-open-bsp-api",
+  "title": "open-bsp-api"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-demiseom-specaugment",
+  "title": "SpecAugment"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-zpdesu-sean",
+  "title": "SEAN"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-zhenye234-llasa-training",
+  "title": "LLaSA_training"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-cswry-seesr",
+  "title": "SeeSR"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-chenwu98-cycle-diffusion",
+  "title": "cycle-diffusion"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-noizai-helixworld",
+  "title": "HelixWorld"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-heyjunpenn-aigotools",
+  "title": "aigotools"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-choosewhatulike-trainable-agents",
+  "title": "trainable-agents"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-sunrainyg-randopt",
+  "title": "RandOpt"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "gh-ryota-kawamura-generative-ai-with-llms",
+  "title": "Generative-AI-with-LLMs"
+ },
+ {
+  "at": "2026-11-20T19:04:11.639Z",
+  "type": "qc-hidden",
+  "id": "aw-gpt-3-apps",
+  "title": "GPT-3 Apps"
+ },
+ {
   "at": "2026-11-20T18:01:42.764Z",
   "type": "qc-hidden",
   "id": "gh-samvallad33-vestige",
@@ -400,203 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-aiagentskit-claude-agents-library",
   "title": "claude-agents-library"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-pascaldekloe-colfer",
-  "title": "colfer"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-dabit3-semantic-search-nextjs-pinecone-langchain-chatgpt",
-  "title": "semantic-search-nextjs-pinecone-langchain-chatgpt"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-amazingang-old-coder",
-  "title": "old-coder"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-bakrianoo-mini-rag",
-  "title": "mini-rag"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-mganss-xmlschemaclassgenerator",
-  "title": "XmlSchemaClassGenerator"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-microsoft-trace",
-  "title": "Trace"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-inmve-free-ai-coding",
-  "title": "free-ai-coding"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-best-of-ai-best-of-ai",
-  "title": "best-of-ai"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-dondebonair-slack-machine",
-  "title": "slack-machine"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-myniuuu-mofa-video",
-  "title": "MOFA-Video"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-snap-research-grid",
-  "title": "GRID"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-llava-vl-llava-plus-codebase",
-  "title": "LLaVA-Plus-Codebase"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-yuval-alaluf-attend-and-excite",
-  "title": "Attend-and-Excite"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-nvlabs-toolorchestra",
-  "title": "ToolOrchestra"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-litanlitudan-skyagi",
-  "title": "skyagi"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-swiftylab-metacodable",
-  "title": "MetaCodable"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-opral-lix",
-  "title": "lix"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-haoliuhl-ringattention",
-  "title": "ringattention"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-mit-han-lab-anycost-gan",
-  "title": "anycost-gan"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-boese0601-magicdance",
-  "title": "MagicDance"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-chengsokdara-use-whisper",
-  "title": "use-whisper"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-stackblitz-labs-use-stick-to-bottom",
-  "title": "use-stick-to-bottom"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-thomasvitale-llm-apps-java-spring-ai",
-  "title": "llm-apps-java-spring-ai"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-panaverse-learn-generative-ai",
-  "title": "learn-generative-ai"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-twitter-scrooge",
-  "title": "scrooge"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-mathiasbynens-jsesc",
-  "title": "jsesc"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-mme-benchmarks-video-mme",
-  "title": "Video-MME"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-foivospar-arc2face",
-  "title": "Arc2Face"
- },
- {
-  "at": "2026-11-20T11:09:10.671Z",
-  "type": "qc-hidden",
-  "id": "gh-omissis-go-jsonschema",
-  "title": "go-jsonschema"
- },
- {
-  "at": "2026-11-20T11:09:10.671Z",
-  "type": "qc-hidden",
-  "id": "gh-shilin-lu-tf-icon",
-  "title": "TF-ICON"
- },
- {
-  "at": "2026-11-20T11:09:10.671Z",
-  "type": "qc-hidden",
-  "id": "gh-yiranran-apdrawinggan",
-  "title": "APDrawingGAN"
- },
- {
-  "at": "2026-11-20T11:09:10.671Z",
-  "type": "qc-hidden",
-  "id": "gh-yvann-ba-robby-chatbot",
-  "title": "Robby-chatbot"
- },
- {
-  "at": "2026-11-20T11:09:10.671Z",
-  "type": "qc-hidden",
-  "id": "gh-openvglab-omnilottie",
-  "title": "OmniLottie"
  }
 ]
