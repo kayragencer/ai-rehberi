@@ -1,5 +1,125 @@
 [
  {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-shadow2496-viton-hd",
+  "title": "VITON-HD"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-gen-verse-latentmas",
+  "title": "LatentMAS"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-rudrankriyam-foundation-models-framework-lab",
+  "title": "Foundation-Models-Framework-Lab"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-adrianhajdin-project-ai-mern-image-generation",
+  "title": "project_ai_mern_image_generation"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-zukixa-cool-ai-stuff",
+  "title": "cool-ai-stuff"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-modal-labs-quillman",
+  "title": "quillman"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-nodatafound-hackgpt",
+  "title": "hackGPT"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-zjunlp-lightmem",
+  "title": "LightMem"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-rasbt-mini-coding-agent",
+  "title": "mini-coding-agent"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-declare-lab-tango",
+  "title": "tango"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-mravanelli-sincnet",
+  "title": "SincNet"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-uclaml-spin",
+  "title": "SPIN"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-ictnlp-streamspeech",
+  "title": "StreamSpeech"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-puppyone-ai-puppyone-cloud",
+  "title": "puppyone-cloud"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-ferdinandobons-startup-skill",
+  "title": "startup-skill"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-ai-builder-club-skills",
+  "title": "skills"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-pashov-skills",
+  "title": "skills"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-tiger-ai-lab-clawbench",
+  "title": "ClawBench"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-cstr-edinburgh-merlin",
+  "title": "merlin"
+ },
+ {
+  "at": "2026-11-20T06:11:08.817Z",
+  "type": "qc-hidden",
+  "id": "gh-jishengpeng-wavtokenizer",
+  "title": "WavTokenizer"
+ },
+ {
   "at": "2026-11-20T05:06:33.642Z",
   "type": "qc-hidden",
   "id": "gh-autoark-tinyengram",
@@ -478,125 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-slackapi-bolt-python",
   "title": "bolt-python"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-pku-yuangroup-magictime",
-  "title": "MagicTime"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-hexdigest-gowrap",
-  "title": "gowrap"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-dadhi-fastexpressioncompiler",
-  "title": "FastExpressionCompiler"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-clipperhouse-gen",
-  "title": "gen"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-k-dense-ai-k-dense-byok",
-  "title": "k-dense-byok"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-tiger-ai-lab-theoremexplainagent",
-  "title": "TheoremExplainAgent"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-camenduru-text-to-video-synthesis-colab",
-  "title": "text-to-video-synthesis-colab"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-mbzuai-oryx-video-chatgpt",
-  "title": "Video-ChatGPT"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-phantom-video-phantom",
-  "title": "Phantom"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-ath-maas-ovis",
-  "title": "Ovis"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-daveebbelaar-python-whatsapp-bot",
-  "title": "python-whatsapp-bot"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-tmijs-tmi-js",
-  "title": "tmi.js"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-bai-lab-memoryos",
-  "title": "MemoryOS"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-symforce-org-symforce",
-  "title": "symforce"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-awtkns-fastapi-crudrouter",
-  "title": "fastapi-crudrouter"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-lucasbassetti-react-simple-chatbot",
-  "title": "react-simple-chatbot"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-matthiasrobbers-shortbread",
-  "title": "shortbread"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-microsoft-botframework-webchat",
-  "title": "BotFramework-WebChat"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-harskish-ganspace",
-  "title": "ganspace"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-claudiajs-claudia-bot-builder",
-  "title": "claudia-bot-builder"
  }
 ]
