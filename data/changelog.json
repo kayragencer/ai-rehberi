@@ -1,5 +1,101 @@
 [
  {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-autoark-tinyengram",
+  "title": "TinyEngram"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-opendrivelab-drivelm",
+  "title": "DriveLM"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-bytedance-uno",
+  "title": "UNO"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-prismer-ai-prismercloud",
+  "title": "PrismerCloud"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-shivammehta25-matcha-tts",
+  "title": "Matcha-TTS"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-aws-samples-generative-ai-use-cases",
+  "title": "generative-ai-use-cases"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-coqui-ai-open-speech-corpora",
+  "title": "open-speech-corpora"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-adrianhajdin-project-openai-codex",
+  "title": "project_openai_codex"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-openmoss-moss-ttsd",
+  "title": "MOSS-TTSD"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-buaacyw-gaussianeditor",
+  "title": "GaussianEditor"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-hello-simpleai-chatgpt-comparison-detection",
+  "title": "chatgpt-comparison-detection"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-ant-research-4danyone",
+  "title": "4DAnyone"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-mohitagw15856-pm-claude-skills",
+  "title": "pm-claude-skills"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-bytedance-salmonn",
+  "title": "SALMONN"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-foundationvision-infinity",
+  "title": "Infinity"
+ },
+ {
+  "at": "2026-11-20T05:06:33.642Z",
+  "type": "qc-hidden",
+  "id": "gh-thudm-webglm",
+  "title": "WebGLM"
+ },
+ {
   "at": "2026-11-20T03:58:37.911Z",
   "type": "qc-hidden",
   "id": "aw-boo-ai",
@@ -502,101 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-claudiajs-claudia-bot-builder",
   "title": "claudia-bot-builder"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-xhluca-bm25s",
-  "title": "bm25s"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-laminas-laminas-code",
-  "title": "laminas-code"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-bottenderjs-messaging-apis",
-  "title": "messaging-apis"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "qc-hidden",
-  "id": "gh-aleph-alpha-ts-rs",
-  "title": "ts-rs"
- },
- {
-  "at": "2026-11-19T23:51:39.025Z",
-  "type": "added",
-  "id": "aw-bito-ai",
-  "title": "Bito AI"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-inria-spoon",
-  "title": "spoon"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-ai4finance-foundation-finrl-meta",
-  "title": "FinRL-Meta"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-jia-lab-research-dreamomni2",
-  "title": "DreamOmni2"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-foundationvision-llamagen",
-  "title": "LlamaGen"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-akalikong-minionerec",
-  "title": "MiniOneRec"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-showlab-show-o",
-  "title": "Show-o"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-openmotionlab-motiongpt",
-  "title": "MotionGPT"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-fareedkhan-dev-all-rl-algorithms",
-  "title": "all-rl-algorithms"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-dreambigou-eli5",
-  "title": "ELI5"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-cambrian-mllm-cambrian",
-  "title": "cambrian"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-eosphoros-ai-db-gpt-hub",
-  "title": "DB-GPT-Hub"
  }
 ]
