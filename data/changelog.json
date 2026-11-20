@@ -1,5 +1,137 @@
 [
  {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-kubeflow-katib",
+  "title": "katib"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-marclou-mailcheap",
+  "title": "mailcheap"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-tokenrhythm-neohorse",
+  "title": "NeoHorse"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-auto-deep-research",
+  "title": "Auto-Deep-Research"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-amitshekhariitbhu-llm-internals",
+  "title": "llm-internals"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-answerdotai-modernbert",
+  "title": "ModernBERT"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-parthsarthi03-raptor",
+  "title": "raptor"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-potamides-detikzify",
+  "title": "DeTikZify"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-a2aproject-a2a-samples",
+  "title": "a2a-samples"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-evalplus-evalplus",
+  "title": "evalplus"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-yangling0818-rpg-diffusionmaster",
+  "title": "RPG-DiffusionMaster"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-vchitect-vbench",
+  "title": "VBench"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-luchengthu-dpm-solver",
+  "title": "dpm-solver"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-syhw-wer-are-we",
+  "title": "wer_are_we"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-microsoft-mattergen",
+  "title": "mattergen"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-prime-rl-prime",
+  "title": "PRIME"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-unicodeveloper-globalthreatmap",
+  "title": "globalthreatmap"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-thudm-longwriter",
+  "title": "LongWriter"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-squeezeailab-llmcompiler",
+  "title": "LLMCompiler"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-astorfi-lip-reading-deeplearning",
+  "title": "lip-reading-deeplearning"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-openchoreo-openchoreo",
+  "title": "openchoreo"
+ },
+ {
+  "at": "2026-11-20T01:12:15.596Z",
+  "type": "qc-hidden",
+  "id": "gh-mordavid-bruteforceai",
+  "title": "BruteForceAI"
+ },
+ {
   "at": "2026-11-19T23:51:39.025Z",
   "type": "qc-hidden",
   "id": "gh-leanbitlab-leantype",
@@ -465,138 +597,6 @@
   "at": "2026-11-19T21:56:02.780Z",
   "type": "qc-hidden",
   "id": "gh-nerds-coach-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-kingston5390-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-nerds-coach-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-irakli-ika-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-beachnuconceal-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-armysystemsun-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-beigeexecutivefix-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-ttobulevicius-cpu-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-beastblazeattract-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-blendhokagedestroy-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-archiveeutrough-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-basingradejudge-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-avalanchegnatbeat95-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-blendoasheave-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-analogflitempo-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-avenuebudgieshop-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-barricadesenior-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-beigeheadstore-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-beigeloencoder-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-bannercatbird-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-bladesmithpanel-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-irakli-ika-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-gooie-goo-manus-ai",
   "title": "manus--ai"
  }
 ]
