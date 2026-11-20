@@ -1,5 +1,245 @@
 [
  {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-ziqihuangg-collaborative-diffusion",
+  "title": "Collaborative-Diffusion"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-360cvgroup-qihoo-t2x",
+  "title": "Qihoo-T2X"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-createapi-createapi",
+  "title": "CreateAPI"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-gilch-hissp",
+  "title": "hissp"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-donahowe-autostudio",
+  "title": "AutoStudio"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-mirros-lab-code-as-world",
+  "title": "Code-as-World"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-microsoft-openrca",
+  "title": "OpenRCA"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-poboisvert-gptars-interstellar",
+  "title": "GPTARS_Interstellar"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-laumss-loominary",
+  "title": "loominary"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-open-compass-lawbench",
+  "title": "LawBench"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-inclusionai-ming-uniaudio",
+  "title": "Ming-UniAudio"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-hisabi-app-hisabi",
+  "title": "hisabi"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-howerj-dbcc",
+  "title": "dbcc"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-usethesource-rascal",
+  "title": "rascal"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-alaalab-instructcv",
+  "title": "InstructCV"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-urbangpt",
+  "title": "UrbanGPT"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-tensorgi-tpa",
+  "title": "TPA"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-miccunifi-ladi-vton",
+  "title": "ladi-vton"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-ha0tang-selectiongan",
+  "title": "SelectionGAN"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-fsoft-ai4code-agilecoder",
+  "title": "AgileCoder"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-yl4579-styletts",
+  "title": "StyleTTS"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-gillesdemey-google-speech-v2",
+  "title": "google-speech-v2"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-double22a-speech-dataset",
+  "title": "speech_dataset"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-bytevisionlab-tokenflow",
+  "title": "TokenFlow"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-autollm-arxivdigest",
+  "title": "ArxivDigest"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-zjunlp-autokg",
+  "title": "AutoKG"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-idosal-agentllm",
+  "title": "AgentLLM"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-bryandlee-freezeg",
+  "title": "FreezeG"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-vincentgranville-large-language-models",
+  "title": "Large-Language-Models"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-evolvinglmms-lab-egolife",
+  "title": "EgoLife"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-yuangongnd-ltu",
+  "title": "ltu"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-hemulgm-chatgpt",
+  "title": "ChatGPT"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-naver-ai-stylekeeper",
+  "title": "StyleKeeper"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-zjunlp-omnithink",
+  "title": "OmniThink"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-chiennv2000-orthrus",
+  "title": "orthrus"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-calvin-ll-is-even-ai",
+  "title": "is-even-ai"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-qwenlm-parscale",
+  "title": "ParScale"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "qc-hidden",
+  "id": "gh-marcoferrer-kroto-plus",
+  "title": "kroto-plus"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "added",
+  "id": "aw-ask-command",
+  "title": "Ask Command"
+ },
+ {
+  "at": "2026-11-20T23:53:14.416Z",
+  "type": "added",
+  "id": "aw-passphoto",
+  "title": "Passphoto"
+ },
+ {
   "at": "2026-11-20T22:53:19.387Z",
   "type": "qc-hidden",
   "id": "gh-rambotronado112-sudo-ai-manus",
@@ -358,245 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-yetibot-yetibot",
   "title": "yetibot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-internlm-agent-flan",
-  "title": "Agent-FLAN"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-nettlesh-calypsobot",
-  "title": "CalypsoBot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-aichaos-rivescript-js",
-  "title": "rivescript-js"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-imlixinyang-director3d",
-  "title": "Director3D"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-thetarnav-streaming-markdown",
-  "title": "streaming-markdown"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-getgort-gort",
-  "title": "gort"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-ywk991112-pytorch-chatbot",
-  "title": "pytorch-chatbot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-llimllib-limbo",
-  "title": "limbo"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-alizeruncaged-desktop-waifu",
-  "title": "desktop-waifu"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-sohelamin-chatbot",
-  "title": "chatbot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-protonlumo-android-lumo",
-  "title": "android-lumo"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-r1j1t-contextualspellcheck",
-  "title": "contextualSpellCheck"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-nicolas-ivanov-tf-seq2seq-chatbot",
-  "title": "tf_seq2seq_chatbot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-erickwendel-semana-javascript-expert09",
-  "title": "semana-javascript-expert09"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-mishushakov-dialogflow-web-v2",
-  "title": "dialogflow-web-v2"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-instafluff-comfyjs",
-  "title": "ComfyJS"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-polakowo-gpt2bot",
-  "title": "gpt2bot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-amberkakkar01-health-care-chatbot",
-  "title": "Health-Care-Chatbot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-zhen-dong-magic-me",
-  "title": "Magic-Me"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-rlhf-v-rlaif-v",
-  "title": "RLAIF-V"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-ricsinaruto-seq2seqchatbots",
-  "title": "Seq2seqChatbots"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-foundationvision-flashvideo",
-  "title": "FlashVideo"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-crowbartools-firebot",
-  "title": "Firebot"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-pinellolab-dna-diffusion",
-  "title": "DNA-Diffusion"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-gnormal-gnorm",
-  "title": "gnorm"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-studio-dots-ai-dots-llm1",
-  "title": "dots.llm1"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-richmondu-libfaceid",
-  "title": "libfaceid"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-onion-liu-blendgan",
-  "title": "BlendGAN"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-ankanbhunia-pidm",
-  "title": "PIDM"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-ziqihuangg-reversion",
-  "title": "ReVersion"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-nisaaragharia-advanced-rag",
-  "title": "Advanced_RAG"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-piti-synthesis-piti",
-  "title": "PITI"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "qc-hidden",
-  "id": "gh-lakonik-lakonlab",
-  "title": "LakonLab"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "removed",
-  "id": "gh-flowelement-xinliuyuansu-m-flow",
-  "title": "m_flow"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "added",
-  "id": "gh-cc4w-adobe-firefly-image-generator",
-  "title": "adobe-firefly-image-generator"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "added",
-  "id": "gh-chase1225-anythingllm-verona-document-chat",
-  "title": "anythingllm-verona-document-chat"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "added",
-  "id": "gh-kenzz-devv-open-webui-talora-ai-workspace",
-  "title": "open-webui-talora-ai-workspace"
- },
- {
-  "at": "2026-11-20T21:54:20.859Z",
-  "type": "added",
-  "id": "gh-senickimoro-art-pinokio-olvara-ai-workspace",
-  "title": "pinokio-olvara-ai-workspace"
- },
- {
-  "at": "2026-11-20T20:56:27.592Z",
-  "type": "qc-hidden",
-  "id": "gh-denis2054-transformers-for-nlp-and-computer-vision-3rd-edition",
-  "title": "Transformers-for-NLP-and-Computer-Vision-3rd-Edition"
- },
- {
-  "at": "2026-11-20T20:56:27.592Z",
-  "type": "qc-hidden",
-  "id": "gh-jqtangust-robust-r1",
-  "title": "Robust-R1"
  }
 ]
