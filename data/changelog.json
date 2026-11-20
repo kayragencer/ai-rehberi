@@ -1,5 +1,245 @@
 [
  {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-openlemur-lemur",
+  "title": "Lemur"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-speechcolab-leaderboard",
+  "title": "Leaderboard"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-lencx-gpthub",
+  "title": "GPTHub"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-helloianneo-ian-xiaohei-scenes",
+  "title": "ian-xiaohei-scenes"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-eugeneyan-obsidian-copilot",
+  "title": "obsidian-copilot"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-hangoutsbot-hangoutsbot",
+  "title": "hangoutsbot"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-liaoyuhua-llm4ts",
+  "title": "LLM4TS"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-shawroad-nlp-pytorch-project",
+  "title": "NLP_pytorch_project"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-suriyadeepan-practical-seq2seq",
+  "title": "practical_seq2seq"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-opengvlab-multi-modality-arena",
+  "title": "Multi-Modality-Arena"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-deep-polyu-linearrag",
+  "title": "LinearRAG"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-meetpateltech-ai-infinity",
+  "title": "AI-Infinity"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-osu-nlp-group-travelplanner",
+  "title": "TravelPlanner"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-yegor256-rultor",
+  "title": "rultor"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-sepllm",
+  "title": "SepLLM"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-seanlee97-angle",
+  "title": "AnglE"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-volcanicarts-vrcosc",
+  "title": "VRCOSC"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-githubharald-ctcwordbeamsearch",
+  "title": "CTCWordBeamSearch"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-rohan-paul-llm-finetuning-large-language-models",
+  "title": "LLM-FineTuning-Large-Language-Models"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-texttron-hyde",
+  "title": "hyde"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-zekesnider-jared",
+  "title": "Jared"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-allenai-holodeck",
+  "title": "Holodeck"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-vchitect-venhancer",
+  "title": "VEnhancer"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-foundationvision-groma",
+  "title": "Groma"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-omriav-blended-diffusion",
+  "title": "blended-diffusion"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-showlab-vlog",
+  "title": "VLog"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-uclaml-sppo",
+  "title": "SPPO"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-shahrayar123-python-projects",
+  "title": "Python-Projects"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-kjsman-stable-diffusion-pytorch",
+  "title": "stable-diffusion-pytorch"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-giuven95-chatgpt-failures",
+  "title": "chatgpt-failures"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-erikbjare-are-copilots-local-yet",
+  "title": "are-copilots-local-yet"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-wheelry-deep-skill-finder",
+  "title": "deep-skill-finder"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-zsdonghao-text-to-image",
+  "title": "text-to-image"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-slackapi-java-slack-sdk",
+  "title": "java-slack-sdk"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-huawei-noah-speech-backbones",
+  "title": "Speech-Backbones"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-huchenxucs-chatdb",
+  "title": "ChatDB"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-enginebai-pymessager",
+  "title": "PyMessager"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-limuloo-migc",
+  "title": "MIGC"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-linzhiqiu-t2v-metrics",
+  "title": "t2v_metrics"
+ },
+ {
+  "at": "2026-11-20T20:05:46.969Z",
+  "type": "qc-hidden",
+  "id": "gh-hkust-nlp-deita",
+  "title": "deita"
+ },
+ {
   "at": "2026-11-20T19:04:11.639Z",
   "type": "qc-hidden",
   "id": "gh-docailab-xrag",
@@ -358,245 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-nv-tlabs-chronoedit",
   "title": "ChronoEdit"
- },
- {
-  "at": "2026-11-20T18:01:42.764Z",
-  "type": "qc-hidden",
-  "id": "gh-wenhaochai-moviechat",
-  "title": "MovieChat"
- },
- {
-  "at": "2026-11-20T18:01:42.764Z",
-  "type": "qc-hidden",
-  "id": "gh-kwsong0113-diffusion-forcing-transformer",
-  "title": "diffusion-forcing-transformer"
- },
- {
-  "at": "2026-11-20T18:01:42.764Z",
-  "type": "qc-hidden",
-  "id": "gh-pnlpal-dictionariez",
-  "title": "dictionariez"
- },
- {
-  "at": "2026-11-20T18:01:42.764Z",
-  "type": "qc-hidden",
-  "id": "gh-j178-leetgo",
-  "title": "leetgo"
- },
- {
-  "at": "2026-11-20T18:01:42.764Z",
-  "type": "qc-hidden",
-  "id": "gh-reversepoco-entityframework-reverse-poco-code-first-generator",
-  "title": "EntityFramework-Reverse-POCO-Code-First-Generator"
- },
- {
-  "at": "2026-11-20T17:03:41.934Z",
-  "type": "removed",
-  "id": "gh-langstream-langstream",
-  "title": "langstream"
- },
- {
-  "at": "2026-11-20T17:03:41.934Z",
-  "type": "added",
-  "id": "gh-mankidev-antialgorithm",
-  "title": "antialgorithm"
- },
- {
-  "at": "2026-11-20T16:01:16.080Z",
-  "type": "restored",
-  "id": "gh-vercel-labs-tersa",
-  "title": "tersa"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-jaywalnut310-glow-tts",
-  "title": "glow-tts"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-endlesssora-focal-frequency-loss",
-  "title": "focal-frequency-loss"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-sparrow-js-an-codeai",
-  "title": "an-codeAI"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-devitocodes-devito",
-  "title": "devito"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-pat-jj-deepretrieval",
-  "title": "DeepRetrieval"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-ahren09-agentreview",
-  "title": "AgentReview"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-serverlessllm-serverlessllm",
-  "title": "ServerlessLLM"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-evotecit-officeimo",
-  "title": "OfficeIMO"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-homanp-infinite-monitor",
-  "title": "infinite-monitor"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-ltjed-freephdlabor",
-  "title": "freephdlabor"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-squeezeailab-squeezellm",
-  "title": "SqueezeLLM"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-agi-arena-mars",
-  "title": "MARS"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-peters-horizon",
-  "title": "horizon"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-salesforce-xgen",
-  "title": "xgen"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-kyegomez-longnet",
-  "title": "LongNet"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-tech-systems-panes",
-  "title": "panes"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-nvlabs-long-rl",
-  "title": "Long-RL"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-aledipa-free-gpt4-web-api",
-  "title": "Free-GPT4-WEB-API"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-mit-han-lab-distrifuser",
-  "title": "distrifuser"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-cryptodmitry-ghost-agent",
-  "title": "Ghost-Agent"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-widget-js-widgets",
-  "title": "widgets"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-staruhub-claudeskills",
-  "title": "ClaudeSkills"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-yzhao062-agent-style",
-  "title": "agent-style"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-vicgalle-stable-diffusion-aesthetic-gradients",
-  "title": "stable-diffusion-aesthetic-gradients"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-taco-group-sparkvsr",
-  "title": "SparkVSR"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-azure-samples-miyagi",
-  "title": "miyagi"
- },
- {
-  "at": "2026-11-20T13:17:49.333Z",
-  "type": "qc-hidden",
-  "id": "gh-twurple-twurple",
-  "title": "twurple"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-polyrabbit-hacker-news-digest",
-  "title": "hacker-news-digest"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-umputun-agterm",
-  "title": "agterm"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-mindsdb-anton",
-  "title": "anton"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-rageagainstthepixel-openai-dotnet",
-  "title": "OpenAI-DotNet"
- },
- {
-  "at": "2026-11-20T12:03:07.193Z",
-  "type": "qc-hidden",
-  "id": "gh-aiagentskit-claude-agents-library",
-  "title": "claude-agents-library"
  }
 ]
