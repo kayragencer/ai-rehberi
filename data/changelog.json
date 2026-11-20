@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-20T16:01:16.080Z",
+  "type": "restored",
+  "id": "gh-vercel-labs-tersa",
+  "title": "tersa"
+ },
+ {
   "at": "2026-11-20T13:17:49.333Z",
   "type": "qc-hidden",
   "id": "gh-jaywalnut310-glow-tts",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-locuslab-wanda",
   "title": "wanda"
- },
- {
-  "at": "2026-11-20T10:10:25.992Z",
-  "type": "qc-hidden",
-  "id": "gh-panaversity-learn-modern-ai-python",
-  "title": "learn-modern-ai-python"
  }
 ]
