@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-20T17:03:41.934Z",
+  "type": "removed",
+  "id": "gh-langstream-langstream",
+  "title": "langstream"
+ },
+ {
+  "at": "2026-11-20T17:03:41.934Z",
+  "type": "added",
+  "id": "gh-mankidev-antialgorithm",
+  "title": "antialgorithm"
+ },
+ {
   "at": "2026-11-20T16:01:16.080Z",
   "type": "restored",
   "id": "gh-vercel-labs-tersa",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-moment-timeseries-foundation-model-moment",
   "title": "moment"
- },
- {
-  "at": "2026-11-20T10:10:25.992Z",
-  "type": "qc-hidden",
-  "id": "gh-lyl1015-jarvisart",
-  "title": "JarvisArt"
- },
- {
-  "at": "2026-11-20T10:10:25.992Z",
-  "type": "qc-hidden",
-  "id": "gh-locuslab-wanda",
-  "title": "wanda"
  }
 ]
