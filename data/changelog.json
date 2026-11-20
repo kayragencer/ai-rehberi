@@ -1,5 +1,89 @@
 [
  {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-ray-r-ren-agent-apprenticeship",
+  "title": "agent-apprenticeship"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-tencent-hunyuan-auk",
+  "title": "AuK"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-maks-s-sd-akashic",
+  "title": "sd-akashic"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-aratako-irodori-tts",
+  "title": "Irodori-TTS"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-all-in-aigc-gpts-works",
+  "title": "gpts-works"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-ariacom-seal-report",
+  "title": "Seal-Report"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-openedclaude-claude-reviews-claude",
+  "title": "claude-reviews-claude"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-psalias2006-gpu-hot",
+  "title": "gpu-hot"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-frigadehq-trench",
+  "title": "trench"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-koreainvestment-open-trading-api",
+  "title": "open-trading-api"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-razzant-ouroboros",
+  "title": "ouroboros"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-bjoernkarmann-project-alias",
+  "title": "project_alias"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-bytedance-sa2va",
+  "title": "Sa2VA"
+ },
+ {
+  "at": "2026-11-20T02:17:52.487Z",
+  "type": "qc-hidden",
+  "id": "gh-omerbt-tokenflow",
+  "title": "TokenFlow"
+ },
+ {
   "at": "2026-11-20T01:12:15.596Z",
   "type": "qc-hidden",
   "id": "gh-kubeflow-katib",
@@ -514,89 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-dluc-kernel-memory",
   "title": "kernel-memory"
- },
- {
-  "at": "2026-11-19T22:55:02.102Z",
-  "type": "qc-hidden",
-  "id": "gh-dicklesworthstone-mcp-agent-mail",
-  "title": "mcp_agent_mail"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-eagrafki-byte-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-borderorioleprime-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-breezefutrap-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-boltregenerate-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-breezesamuraiplay-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-breakcartwright-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-bravecrownvalve-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-boldpleinverter-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-boardglacode-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-boardblazegrid-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-boarddrunail-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-krzysztof132435-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-19T21:56:02.780Z",
-  "type": "qc-hidden",
-  "id": "gh-nerds-coach-manus-ai",
-  "title": "manus--ai"
  }
 ]
