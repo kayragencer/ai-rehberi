@@ -1,5 +1,443 @@
 [
  {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-primerollerportal-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-shoreaeromancer-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-silversmithhem-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-ordercocoondrag-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-silentsaintfactory-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-slatecontrol-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-slateplanner-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-monsterfromdeliver-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-jumbomuffin777-frontier-ui",
+  "title": "Frontier-UI"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-restflyroller-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-powerorioledescribe-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-primeiloscillate-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-samuraivacuum-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-officialkind-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-optichokagecharm-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-nanogeninmove-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-moatpemanacle-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-mergeshaloot-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-meteornyuspeed-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-plateyedome90-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-sightsaintconverter-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-navyzorsteal-github-copilot-app",
+  "title": "GitHub-Copilot-app"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-w0ldan-exoproc",
+  "title": "exoproc"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-hubastard-speedrun",
+  "title": "speedrun"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-tenstorrent-tt-metal",
+  "title": "tt-metal"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-monirchemrubd-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-kolg123-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-abdoandqsnk-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-teolimaof-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-fedibenameur11-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-willsmanuel123-creator-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-thecoderrrer-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-gigachad-byte-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-quyetcao-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-abdul-rehman7826-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-rtmandreyev-construct",
+  "title": "construct"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-colonyproduction-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-columnpheasantvoid-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-closedthroughlobby-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-codestalkerform-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-coastorbcalm-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-coatpathvalve-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-cockatricedeputy-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-coatflamevice-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-circumferencebeat-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-cityoepurify-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-circlechandlersack-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-clawdukesmelter-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-classhalberdier-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-chromeseamanpatch60-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-centralmistir-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-chancellorruffle-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-celestialdritrough-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-chunkzenobey-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-cementduckcry-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-chainderrick-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-championegret-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-celestialassembly-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-cascadepidetach-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-ceilingbuffalopray64-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-caretakerrhythm-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-calmsagetrolley-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-buntingbreed-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-bridgeshuconform-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-brinkmousecastle-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-tonikriegers14-hue-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-xtwinsarax-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-kazim768-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-jose-perez-thecloudgroup-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-melchersimon011-bot-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-redderz-code-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-prathmeshya-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-21T11:50:40.750Z",
+  "type": "qc-hidden",
+  "id": "gh-cacheplane-b4run",
+  "title": "b4run"
+ },
+ {
   "at": "2026-11-21T10:53:16.502Z",
   "type": "qc-hidden",
   "id": "gh-khanh020905-my-office",
@@ -160,443 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-bigscience-workshop-data-preparation",
   "title": "data-preparation"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-youngwoocho02-unity-cli",
-  "title": "unity-cli"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-evestera-json-typegen",
-  "title": "json_typegen"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-vita-group-neurallift-360",
-  "title": "NeuralLift-360"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-ath-maas-ovis-image",
-  "title": "Ovis-Image"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-woctezuma-stable-diffusion-colab",
-  "title": "stable-diffusion-colab"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-deng-haoyang-parnmpc",
-  "title": "ParNMPC"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-p1atdev-leco",
-  "title": "LECO"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-mkshing-e4t-diffusion",
-  "title": "e4t-diffusion"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-sled-group-chat-with-nerf",
-  "title": "chat-with-nerf"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-vinairesearch-anti-dreambooth",
-  "title": "Anti-DreamBooth"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-kodcode-ai-kodcode",
-  "title": "kodcode"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-x-plug-chatplug",
-  "title": "ChatPLUG"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-raymarch-shame",
-  "title": "shame"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-saurav-z-free-image-generation-api",
-  "title": "free-image-generation-api"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-stevekgyang-mentalllama",
-  "title": "MentalLLaMA"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-mobile-next-mobilecli",
-  "title": "mobilecli"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-ptn1411-skill",
-  "title": "skill"
- },
- {
-  "at": "2026-11-21T09:53:13.716Z",
-  "type": "removed",
-  "id": "gh-dhruvthakur11-youtube-ai-video-editing-system",
-  "title": "youtube-ai-video-editing-system"
- },
- {
-  "at": "2026-11-21T09:53:13.716Z",
-  "type": "added",
-  "id": "aw-soundai",
-  "title": "SoundAI"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-tobran-df-gan",
-  "title": "DF-GAN"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-bigcode-project-selfcodealign",
-  "title": "selfcodealign"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-rucaibox-llmrank",
-  "title": "LLMRank"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-colin97-openshape-code",
-  "title": "OpenShape_code"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-watzon-goshot",
-  "title": "goshot"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-open-speech-ekstep-vakyansh-models",
-  "title": "vakyansh-models"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-sinanuozdemir-oreilly-ai-agents",
-  "title": "oreilly-ai-agents"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-imoonlab-hyper-rag",
-  "title": "Hyper-RAG"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-edapinenut-cbgbench",
-  "title": "CBGBench"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-petroivaniuk-llms-tools",
-  "title": "llms-tools"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-meta-prompting-meta-prompting",
-  "title": "meta-prompting"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-yu-yang-li-starwhisper",
-  "title": "StarWhisper"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-foundationvision-omnitokenizer",
-  "title": "OmniTokenizer"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-azure-samples-sql-ai-samples",
-  "title": "SQL-AI-samples"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-blackdotsh-getipintel",
-  "title": "getIPIntel"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-audiollms-audiobench",
-  "title": "AudioBench"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-haidog-yaqub-ezaudio",
-  "title": "EzAudio"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-r1tsuu-payload-enchants",
-  "title": "payload-enchants"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-gair-nlp-abel",
-  "title": "abel"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-yusuke710-nanoperplexityai",
-  "title": "nanoPerplexityAI"
- },
- {
-  "at": "2026-11-21T08:18:21.990Z",
-  "type": "qc-hidden",
-  "id": "gh-hkuds-opengraph",
-  "title": "OpenGraph"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-keonlee9420-portaspeech",
-  "title": "PortaSpeech"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-ramseygithub-ai-legal-compliance-assistant",
-  "title": "ai-legal-compliance-assistant"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-vemtoorg-vemto2",
-  "title": "vemto2"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-mahimairaja-voiceai",
-  "title": "voiceai"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-i365dev-letterdrop",
-  "title": "LetterDrop"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-reflex-dev-reflex-chat",
-  "title": "reflex-chat"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-taoliveaigc-tlive-omni",
-  "title": "TLive-Omni"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-openmeshlab-meshxl",
-  "title": "MeshXL"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-nv-tlabs-atiss",
-  "title": "ATISS"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-nxnai-voost",
-  "title": "Voost"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-openbmb-bmlist",
-  "title": "BMList"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-tianyi-lab-hallusionbench",
-  "title": "HallusionBench"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-viiika-meissonic",
-  "title": "Meissonic"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-karine-huang-t2i-compbench",
-  "title": "T2I-CompBench"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-lakonik-mvedit",
-  "title": "MVEdit"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-kafyx-3-worm-ai",
-  "title": "worm-ai"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-goforj-wire",
-  "title": "wire"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-vita-group-diffusion4d",
-  "title": "Diffusion4D"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-huggingface-datablations",
-  "title": "datablations"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-rgbkrk-genai",
-  "title": "genai"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-polyx-research-robust-u1",
-  "title": "Robust-U1"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-fareedkhan-dev-optimize-ai-agent-memory",
-  "title": "optimize-ai-agent-memory"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-charlie85270-dorothy",
-  "title": "Dorothy"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-bagh2178-sg-nav",
-  "title": "SG-Nav"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-guyyariv-dype",
-  "title": "DyPE"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-swaggest-openapi-go",
-  "title": "openapi-go"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-sangmichaelxie-doremi",
-  "title": "doremi"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-nerority-advanced-gpts",
-  "title": "Advanced-GPTs"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-sakanaai-evo-memory",
-  "title": "evo-memory"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-tencent-hunyuan-hunyuanportrait",
-  "title": "HunyuanPortrait"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-lupantech-mathvista",
-  "title": "MathVista"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-emarco177-documentation-helper",
-  "title": "documentation-helper"
- },
- {
-  "at": "2026-11-21T07:13:55.066Z",
-  "type": "qc-hidden",
-  "id": "gh-ayanami0730-arag",
-  "title": "arag"
  }
 ]
