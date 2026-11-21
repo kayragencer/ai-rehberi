@@ -1,5 +1,65 @@
 [
  {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-volcano",
+  "title": "Volcano"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-exa-websets-v2",
+  "title": "Exa Websets V2"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-tamekoshi",
+  "title": "Tamekoshi"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-glassmail",
+  "title": "Glassmail"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-kuc-kuc",
+  "title": "Kuc-kuc"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-ai-context-flow-mcp",
+  "title": "AI Context Flow MCP"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-altercontacts",
+  "title": "AlterContacts"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-docker",
+  "title": "Docker"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "ph-tripmojo",
+  "title": "Tripmojo"
+ },
+ {
+  "at": "2026-11-21T20:48:43.252Z",
+  "type": "added",
+  "id": "gh-beyondtahir-beyondgtaclips",
+  "title": "beyondgtaclips"
+ },
+ {
   "at": "2026-11-21T19:51:46.473Z",
   "type": "qc-hidden",
   "id": "aw-what-on-earth",
@@ -537,66 +597,6 @@
   "at": "2026-11-21T11:50:40.750Z",
   "type": "qc-hidden",
   "id": "gh-chainderrick-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-championegret-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-celestialassembly-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-cascadepidetach-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-ceilingbuffalopray64-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-caretakerrhythm-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-calmsagetrolley-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-buntingbreed-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-bridgeshuconform-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-brinkmousecastle-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-tonikriegers14-hue-ai-manus",
   "title": "ai--manus"
  }
 ]
