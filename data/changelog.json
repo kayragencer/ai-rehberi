@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-21T05:59:39.439Z",
+  "type": "restored",
+  "id": "gh-moazbuilds-codemachine-cli",
+  "title": "CodeMachine-CLI"
+ },
+ {
   "at": "2026-11-21T04:59:42.746Z",
   "type": "qc-hidden",
   "id": "gh-bbc-esq-vectordb-plugin",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-miccunifi-ladi-vton",
   "title": "ladi-vton"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-ha0tang-selectiongan",
-  "title": "SelectionGAN"
  }
 ]
