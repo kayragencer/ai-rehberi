@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-21T14:04:12.710Z",
+  "type": "qc-hidden",
+  "id": "gh-cactus-compute-needle",
+  "title": "needle"
+ },
+ {
+  "at": "2026-11-21T14:04:12.710Z",
+  "type": "qc-hidden",
+  "id": "gh-balanov-skein",
+  "title": "skein"
+ },
+ {
+  "at": "2026-11-21T14:04:12.710Z",
+  "type": "added",
+  "id": "aw-voicera",
+  "title": "Voicera"
+ },
+ {
   "at": "2026-11-21T11:50:40.750Z",
   "type": "qc-hidden",
   "id": "gh-primerollerportal-github-copilot-app",
@@ -580,23 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-didi-unify",
   "title": "Unify"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-zhenye234-xcodec",
-  "title": "xcodec"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-unjs-knitwork",
-  "title": "knitwork"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-bigscience-workshop-data-preparation",
-  "title": "data-preparation"
  }
 ]
