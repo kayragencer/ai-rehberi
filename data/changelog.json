@@ -1,5 +1,131 @@
 [
  {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "gh-zlab-princeton-i1",
+  "title": "i1"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "gh-inmve-agentic-coding-practices",
+  "title": "agentic-coding-practices"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "gh-phuryn-product-engineering",
+  "title": "product-engineering"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "gh-mjmirza-app-store-compliance",
+  "title": "app-store-compliance"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "aw-ai-coding-compare",
+  "title": "AI Coding Compare"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "aw-codecosts",
+  "title": "CodeCosts"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "ph-prompt-puncher",
+  "title": "Prompt Puncher"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "qc-hidden",
+  "id": "ph-makepixel",
+  "title": "MakePixel"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-nova-by-vybe",
+  "title": "Nova by Vybe"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-baby-s-day-in",
+  "title": "Baby's Day In"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-source",
+  "title": "Source"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-earthsort",
+  "title": "EarthSort"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-prompt-puncher",
+  "title": "Prompt Puncher"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-threadlore",
+  "title": "ThreadLore"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-shipyard",
+  "title": "Shipyard"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-makepixel",
+  "title": "MakePixel"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-fack-d",
+  "title": "Fack\u2019d"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-memanto-cloud",
+  "title": "Memanto Cloud"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-compass-os",
+  "title": "Compass OS"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-openvorld",
+  "title": "OpenVorld"
+ },
+ {
+  "at": "2026-11-21T21:47:01.902Z",
+  "type": "added",
+  "id": "ph-tensorviz",
+  "title": "tensorViz"
+ },
+ {
   "at": "2026-11-21T20:48:43.252Z",
   "type": "added",
   "id": "ph-volcano",
@@ -472,131 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-abdul-rehman7826-ai-manus",
   "title": "ai-manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-rtmandreyev-construct",
-  "title": "construct"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-colonyproduction-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-columnpheasantvoid-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-closedthroughlobby-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-codestalkerform-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-coastorbcalm-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-coatpathvalve-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-cockatricedeputy-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-coatflamevice-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-circumferencebeat-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-cityoepurify-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-circlechandlersack-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-clawdukesmelter-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-classhalberdier-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-chromeseamanpatch60-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-centralmistir-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-chancellorruffle-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-celestialdritrough-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-chunkzenobey-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-cementduckcry-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-chainderrick-ai-manus",
-  "title": "ai--manus"
  }
 ]
