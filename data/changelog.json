@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-21T16:52:37.802Z",
+  "type": "qc-hidden",
+  "id": "aw-smmry",
+  "title": "Smmry"
+ },
+ {
+  "at": "2026-11-21T16:52:37.802Z",
+  "type": "qc-hidden",
+  "id": "aw-rember",
+  "title": "Rember"
+ },
+ {
+  "at": "2026-11-21T16:52:37.802Z",
+  "type": "qc-hidden",
+  "id": "aw-gopher",
+  "title": "Gopher"
+ },
+ {
+  "at": "2026-11-21T16:52:37.802Z",
+  "type": "qc-hidden",
+  "id": "aw-vicuna-13b",
+  "title": "Vicuna-13B"
+ },
+ {
+  "at": "2026-11-21T16:52:37.802Z",
+  "type": "qc-hidden",
+  "id": "aw-altern-newsletter",
+  "title": "Altern Newsletter"
+ },
+ {
   "at": "2026-11-21T14:04:12.710Z",
   "type": "qc-hidden",
   "id": "gh-cactus-compute-needle",
@@ -568,35 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-westlake-repl-microlens",
   "title": "MicroLens"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-nurettincoban-ai-prd-workflow",
-  "title": "ai-prd-workflow"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-aratako-t5gemma-tts",
-  "title": "T5Gemma-TTS"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-deep-diver-llamaduo",
-  "title": "llamaduo"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-luauminati-tiny-lua-compiler",
-  "title": "Tiny-Lua-Compiler"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-didi-unify",
-  "title": "Unify"
  }
 ]
