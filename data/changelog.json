@@ -1,5 +1,59 @@
 [
  {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-bbc-esq-vectordb-plugin",
+  "title": "VectorDB-Plugin"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-3dtopia-materialanything",
+  "title": "MaterialAnything"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-graphagent",
+  "title": "GraphAgent"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-yuhattor-copilot-patterns",
+  "title": "copilot-patterns"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-ilearn-lab-novelclaw",
+  "title": "NovelClaw"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-x-lance-voiceflow-tts",
+  "title": "VoiceFlow-TTS"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-baaivision-eve",
+  "title": "EVE"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-java-ai-tech-spring-ai-summary",
+  "title": "spring-ai-summary"
+ },
+ {
+  "at": "2026-11-21T04:59:42.746Z",
+  "type": "qc-hidden",
+  "id": "gh-worldbench-danceopd",
+  "title": "DanceOPD"
+ },
+ {
   "at": "2026-11-21T03:57:16.629Z",
   "type": "qc-hidden",
   "id": "gh-opengvlab-instruct2act",
@@ -544,59 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-ha0tang-selectiongan",
   "title": "SelectionGAN"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-fsoft-ai4code-agilecoder",
-  "title": "AgileCoder"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-yl4579-styletts",
-  "title": "StyleTTS"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-gillesdemey-google-speech-v2",
-  "title": "google-speech-v2"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-double22a-speech-dataset",
-  "title": "speech_dataset"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-bytevisionlab-tokenflow",
-  "title": "TokenFlow"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-autollm-arxivdigest",
-  "title": "ArxivDigest"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-zjunlp-autokg",
-  "title": "AutoKG"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-idosal-agentllm",
-  "title": "AgentLLM"
- },
- {
-  "at": "2026-11-20T23:53:14.416Z",
-  "type": "qc-hidden",
-  "id": "gh-bryandlee-freezeg",
-  "title": "FreezeG"
  }
 ]
