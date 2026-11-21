@@ -1,5 +1,221 @@
 [
  {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-bobazooba-xllm",
+  "title": "xllm"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-mpschrader-gym-sokoban",
+  "title": "gym-sokoban"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-genia-dev-genia",
+  "title": "GeniA"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-osu-nlp-group-magicbrush",
+  "title": "MagicBrush"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-zju-vipa-odyssey",
+  "title": "Odyssey"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-ash-project-igniter",
+  "title": "igniter"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-snap-research-stable-flow",
+  "title": "stable-flow"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-oneil512-insight",
+  "title": "INSIGHT"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-shikiw-opera",
+  "title": "OPERA"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-hao-ai-lab-consistency-llm",
+  "title": "Consistency_LLM"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-firecubestudios-clippy",
+  "title": "Clippy"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-iaar-shanghai-crud-rag",
+  "title": "CRUD_RAG"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-arthurfdlr-whisper-youtube",
+  "title": "whisper-youtube"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-gair-nlp-mathpile",
+  "title": "MathPile"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-nupurkmr9-vision-aided-gan",
+  "title": "vision-aided-gan"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-lpengyang-freedrag",
+  "title": "FreeDrag"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-manycore-research-spatialgen",
+  "title": "SpatialGen"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-voltagent-official-mcp-servers",
+  "title": "official-mcp-servers"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-rafaballerini-assistentepessoal",
+  "title": "AssistentePessoal"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-yuanze-lin-olympus",
+  "title": "Olympus"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-eleutherai-dalle-mtf",
+  "title": "DALLE-mtf"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-jia-lab-research-video-p2p",
+  "title": "Video-P2P"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-cs-chan-artgan",
+  "title": "ArtGAN"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-longyuewangdcu-chinese-llama-2",
+  "title": "Chinese-Llama-2"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-camel-ai-crab",
+  "title": "crab"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-upb-lea-gym-electric-motor",
+  "title": "gym-electric-motor"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-xiaoachen98-open-llava-next",
+  "title": "Open-LLaVA-NeXT"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-squeezeailab-kvquant",
+  "title": "KVQuant"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-jy-yuan-kivi",
+  "title": "KIVI"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-tohinz-consingan",
+  "title": "ConSinGAN"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-wil3-gymfc",
+  "title": "gymfc"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-revdotcom-reverb",
+  "title": "reverb"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-shm007g-llama-cult-and-more",
+  "title": "LLaMA-Cult-and-More"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-zarazhangrui-personalized-podcast",
+  "title": "personalized-podcast"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "qc-hidden",
+  "id": "gh-egorsmkv-speech-recognition-uk",
+  "title": "speech-recognition-uk"
+ },
+ {
+  "at": "2026-11-21T01:15:52.603Z",
+  "type": "removed",
+  "id": "gh-microsoft-autogen",
+  "title": "autogen"
+ },
+ {
   "at": "2026-11-20T23:53:14.416Z",
   "type": "qc-hidden",
   "id": "gh-ziqihuangg-collaborative-diffusion",
@@ -382,221 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-eagrafki-byte-ai-manus",
   "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-kazim768-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-arberpilafi8-blip-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-qweqeqeqweqeqwe-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-floxaep1-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-floxaep1-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-axillios1-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-buttheadtrenton16-byte-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-xombiensar-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-python001-dev-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-agdinis-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-obasideyvid-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-lloweryfn-rgb-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-sidvvkk-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-elpepe200086-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-ronni35-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-wlfear-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-redderz-code-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-qweqeqeqweqeqwe-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-lebronstx-collab-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-melchersimon011-bot-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-xtwinsarax-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-stancaedy10-glitch-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-stancaedy10-glitch-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-lxa9867-imagefolder",
-  "title": "ImageFolder"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-ji4chenli-t2v-turbo",
-  "title": "t2v-turbo"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-simonhamp-the-og",
-  "title": "the-og"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-vakovalskii-neuraldeskapp",
-  "title": "NeuralDeskApp"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-nealcly-mutual",
-  "title": "MuTual"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-wechaty-wechaty-puppet-padplus",
-  "title": "wechaty-puppet-padplus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-telegram-bot-sdk-telegram-bot-sdk",
-  "title": "telegram-bot-sdk"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-titanembeds-titan",
-  "title": "Titan"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-keiffster-program-y",
-  "title": "program-y"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-googleworkspace-add-ons-samples",
-  "title": "add-ons-samples"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-eneskaraosman-swiftychat",
-  "title": "SwiftyChat"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-secreto31126-whatsapp-api-js",
-  "title": "whatsapp-api-js"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-yetibot-yetibot",
-  "title": "yetibot"
  }
 ]
