@@ -1,5 +1,83 @@
 [
  {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-project-blink",
+  "title": "Project Blink"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-prettysmart-co",
+  "title": "Prettysmart.co"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-raw-query",
+  "title": "raw query"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-orchard",
+  "title": "Orchard"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-opus",
+  "title": "Opus"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-magic-mate",
+  "title": "Magic Mate"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-jinnee",
+  "title": "Jinnee"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-infinite-drum-machine",
+  "title": "Infinite Drum Machine"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-linkedin-posts-generator",
+  "title": "Linkedin Posts Generator"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-handywriter",
+  "title": "Handywriter"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-hotconvo",
+  "title": "HotConvo"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-langmagic",
+  "title": "LangMagic"
+ },
+ {
+  "at": "2026-11-21T18:53:43.545Z",
+  "type": "qc-hidden",
+  "id": "aw-this-image-does-not-exist",
+  "title": "This Image Does Not Exist"
+ },
+ {
   "at": "2026-11-21T17:48:26.014Z",
   "type": "qc-hidden",
   "id": "aw-stable-diffusion-models",
@@ -520,83 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-0xdevalias-chatgpt-source-watch",
   "title": "chatgpt-source-watch"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-aicademyorg-aicademy",
-  "title": "AIcademy"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-g-u-n-gen-l-video",
-  "title": "Gen-L-Video"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-aiot-mlsys-lab-svd-llm",
-  "title": "SVD-LLM"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-sleeepeer-poisonedrag",
-  "title": "PoisonedRAG"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-petergriffinjin-graph-cot",
-  "title": "Graph-CoT"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-ai4co-reevo",
-  "title": "reevo"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-atomflow-ai-molecode",
-  "title": "MoleCode"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-iiis-ai-cumulative-reasoning",
-  "title": "cumulative-reasoning"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-sazardev-goca",
-  "title": "goca"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-soul-ailab-soulx-transcriber",
-  "title": "SoulX-Transcriber"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-assemblyai-community-minimagen",
-  "title": "MinImagen"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-mbzuai-oryx-llmvox",
-  "title": "LLMVoX"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-sdv-dev-sdgym",
-  "title": "SDGym"
  }
 ]
