@@ -1,5 +1,65 @@
 [
  {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-what-on-earth",
+  "title": "What on earth?"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-unpromptedgame",
+  "title": "Unpromptedgame"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-diffbot",
+  "title": "Diffbot"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-text-assistant",
+  "title": "Text Assistant"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-storiesbyai",
+  "title": "StoriesbyAI"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-swagai",
+  "title": "SwagAI"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-scribe",
+  "title": "Scribe"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-resume-studio",
+  "title": "Resume Studio"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-resumai",
+  "title": "ResumAI"
+ },
+ {
+  "at": "2026-11-21T19:51:46.473Z",
+  "type": "qc-hidden",
+  "id": "aw-recommendme",
+  "title": "Recommendme"
+ },
+ {
   "at": "2026-11-21T18:53:43.545Z",
   "type": "qc-hidden",
   "id": "aw-project-blink",
@@ -538,65 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-tonikriegers14-hue-ai-manus",
   "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-xtwinsarax-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-kazim768-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-jose-perez-thecloudgroup-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-melchersimon011-bot-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-redderz-code-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-prathmeshya-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-cacheplane-b4run",
-  "title": "b4run"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-khanh020905-my-office",
-  "title": "my-office"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-1989ryan-llm-mcts",
-  "title": "llm-mcts"
- },
- {
-  "at": "2026-11-21T10:53:16.502Z",
-  "type": "qc-hidden",
-  "id": "gh-0xdevalias-chatgpt-source-watch",
-  "title": "chatgpt-source-watch"
  }
 ]
