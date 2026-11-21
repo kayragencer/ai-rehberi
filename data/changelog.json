@@ -1,5 +1,131 @@
 [
  {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-tobran-df-gan",
+  "title": "DF-GAN"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-bigcode-project-selfcodealign",
+  "title": "selfcodealign"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-rucaibox-llmrank",
+  "title": "LLMRank"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-colin97-openshape-code",
+  "title": "OpenShape_code"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-watzon-goshot",
+  "title": "goshot"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-open-speech-ekstep-vakyansh-models",
+  "title": "vakyansh-models"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-sinanuozdemir-oreilly-ai-agents",
+  "title": "oreilly-ai-agents"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-imoonlab-hyper-rag",
+  "title": "Hyper-RAG"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-edapinenut-cbgbench",
+  "title": "CBGBench"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-petroivaniuk-llms-tools",
+  "title": "llms-tools"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-meta-prompting-meta-prompting",
+  "title": "meta-prompting"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-yu-yang-li-starwhisper",
+  "title": "StarWhisper"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-foundationvision-omnitokenizer",
+  "title": "OmniTokenizer"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-azure-samples-sql-ai-samples",
+  "title": "SQL-AI-samples"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-blackdotsh-getipintel",
+  "title": "getIPIntel"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-audiollms-audiobench",
+  "title": "AudioBench"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-haidog-yaqub-ezaudio",
+  "title": "EzAudio"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-r1tsuu-payload-enchants",
+  "title": "payload-enchants"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-gair-nlp-abel",
+  "title": "abel"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-yusuke710-nanoperplexityai",
+  "title": "nanoPerplexityAI"
+ },
+ {
+  "at": "2026-11-21T08:18:21.990Z",
+  "type": "qc-hidden",
+  "id": "gh-hkuds-opengraph",
+  "title": "OpenGraph"
+ },
+ {
   "at": "2026-11-21T07:13:55.066Z",
   "type": "qc-hidden",
   "id": "gh-keonlee9420-portaspeech",
@@ -472,131 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-freshllms-freshqa",
   "title": "freshqa"
- },
- {
-  "at": "2026-11-21T03:57:16.629Z",
-  "type": "qc-hidden",
-  "id": "gh-switchupcb-copygen",
-  "title": "copygen"
- },
- {
-  "at": "2026-11-21T03:57:16.629Z",
-  "type": "qc-hidden",
-  "id": "gh-garibida-cross-image-attention",
-  "title": "cross-image-attention"
- },
- {
-  "at": "2026-11-21T03:57:16.629Z",
-  "type": "qc-hidden",
-  "id": "gh-bowang-lab-bioreason",
-  "title": "BioReason"
- },
- {
-  "at": "2026-11-21T02:17:59.029Z",
-  "type": "added",
-  "id": "gh-ccarter01011-traxagent-claude-plugin",
-  "title": "traxagent-claude-plugin"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-bobazooba-xllm",
-  "title": "xllm"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-mpschrader-gym-sokoban",
-  "title": "gym-sokoban"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-genia-dev-genia",
-  "title": "GeniA"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-osu-nlp-group-magicbrush",
-  "title": "MagicBrush"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-zju-vipa-odyssey",
-  "title": "Odyssey"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-ash-project-igniter",
-  "title": "igniter"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-snap-research-stable-flow",
-  "title": "stable-flow"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-oneil512-insight",
-  "title": "INSIGHT"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-shikiw-opera",
-  "title": "OPERA"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-hao-ai-lab-consistency-llm",
-  "title": "Consistency_LLM"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-firecubestudios-clippy",
-  "title": "Clippy"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-iaar-shanghai-crud-rag",
-  "title": "CRUD_RAG"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-arthurfdlr-whisper-youtube",
-  "title": "whisper-youtube"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-gair-nlp-mathpile",
-  "title": "MathPile"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-nupurkmr9-vision-aided-gan",
-  "title": "vision-aided-gan"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-lpengyang-freedrag",
-  "title": "FreeDrag"
- },
- {
-  "at": "2026-11-21T01:15:52.603Z",
-  "type": "qc-hidden",
-  "id": "gh-manycore-research-spatialgen",
-  "title": "SpatialGen"
  }
 ]
