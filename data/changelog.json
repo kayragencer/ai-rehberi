@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-21T02:17:59.029Z",
+  "type": "added",
+  "id": "gh-ccarter01011-traxagent-claude-plugin",
+  "title": "traxagent-claude-plugin"
+ },
+ {
   "at": "2026-11-21T01:15:52.603Z",
   "type": "qc-hidden",
   "id": "gh-bobazooba-xllm",
@@ -591,12 +597,6 @@
   "at": "2026-11-20T22:53:19.387Z",
   "type": "qc-hidden",
   "id": "gh-agdinis-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-20T22:53:19.387Z",
-  "type": "qc-hidden",
-  "id": "gh-eagrafki-byte-ai-manus",
   "title": "ai--manus"
  }
 ]
