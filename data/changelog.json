@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-21T09:53:13.716Z",
+  "type": "removed",
+  "id": "gh-dhruvthakur11-youtube-ai-video-editing-system",
+  "title": "youtube-ai-video-editing-system"
+ },
+ {
+  "at": "2026-11-21T09:53:13.716Z",
+  "type": "added",
+  "id": "aw-soundai",
+  "title": "SoundAI"
+ },
+ {
   "at": "2026-11-21T08:18:21.990Z",
   "type": "qc-hidden",
   "id": "gh-tobran-df-gan",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-vita-mllm-freeze-omni",
   "title": "Freeze-Omni"
- },
- {
-  "at": "2026-11-21T03:57:16.629Z",
-  "type": "qc-hidden",
-  "id": "gh-wilfredinni-noodle",
-  "title": "noodle"
- },
- {
-  "at": "2026-11-21T03:57:16.629Z",
-  "type": "qc-hidden",
-  "id": "gh-freshllms-freshqa",
-  "title": "freshqa"
  }
 ]
