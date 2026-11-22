@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-22T15:51:21.980Z",
+  "type": "removed",
+  "id": "gh-krzysztof132435-ai-manus",
+  "title": "ai--manus"
+ },
+ {
   "at": "2026-11-22T14:01:59.046Z",
   "type": "removed",
   "id": "gh-rustxng-rustxng",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-linkedin-posts-generator",
   "title": "Linkedin Posts Generator"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-handywriter",
-  "title": "Handywriter"
  }
 ]
