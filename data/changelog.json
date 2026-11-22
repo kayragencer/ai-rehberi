@@ -1,5 +1,65 @@
 [
  {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "qc-hidden",
+  "id": "gh-suryacode04-jasper-ai-win",
+  "title": "jasper-ai-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "qc-hidden",
+  "id": "gh-isanders5152-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "qc-hidden",
+  "id": "gh-josephyoung28-capcut-seedance-win",
+  "title": "capcut-seedance-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "qc-hidden",
+  "id": "gh-vitalymukherjee92-lightroom-classic-win",
+  "title": "lightroom-classic-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "qc-hidden",
+  "id": "gh-jiefedorov81-runway-ml-pro-win",
+  "title": "runway-ml-pro-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "added",
+  "id": "gh-suryacode04-jasper-ai-win",
+  "title": "jasper-ai-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "added",
+  "id": "gh-isanders5152-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "added",
+  "id": "gh-josephyoung28-capcut-seedance-win",
+  "title": "capcut-seedance-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "added",
+  "id": "gh-jiefedorov81-runway-ml-pro-win",
+  "title": "runway-ml-pro-win"
+ },
+ {
+  "at": "2026-11-22T07:15:23.497Z",
+  "type": "added",
+  "id": "gh-vitalymukherjee92-lightroom-classic-win",
+  "title": "lightroom-classic-win"
+ },
+ {
   "at": "2026-11-22T06:01:26.398Z",
   "type": "qc-hidden",
   "id": "gh-morriswawan05-elevenlabs-pro-win",
@@ -538,65 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-stable-diffusion-models",
   "title": "Stable Diffusion Models"
- },
- {
-  "at": "2026-11-21T17:48:26.014Z",
-  "type": "qc-hidden",
-  "id": "aw-imagen",
-  "title": "Imagen"
- },
- {
-  "at": "2026-11-21T17:48:26.014Z",
-  "type": "added",
-  "id": "gh-w01fb0ss-pibot",
-  "title": "PiBot"
- },
- {
-  "at": "2026-11-21T16:52:37.802Z",
-  "type": "qc-hidden",
-  "id": "aw-smmry",
-  "title": "Smmry"
- },
- {
-  "at": "2026-11-21T16:52:37.802Z",
-  "type": "qc-hidden",
-  "id": "aw-rember",
-  "title": "Rember"
- },
- {
-  "at": "2026-11-21T16:52:37.802Z",
-  "type": "qc-hidden",
-  "id": "aw-gopher",
-  "title": "Gopher"
- },
- {
-  "at": "2026-11-21T16:52:37.802Z",
-  "type": "qc-hidden",
-  "id": "aw-vicuna-13b",
-  "title": "Vicuna-13B"
- },
- {
-  "at": "2026-11-21T16:52:37.802Z",
-  "type": "qc-hidden",
-  "id": "aw-altern-newsletter",
-  "title": "Altern Newsletter"
- },
- {
-  "at": "2026-11-21T14:04:12.710Z",
-  "type": "qc-hidden",
-  "id": "gh-cactus-compute-needle",
-  "title": "needle"
- },
- {
-  "at": "2026-11-21T14:04:12.710Z",
-  "type": "qc-hidden",
-  "id": "gh-balanov-skein",
-  "title": "skein"
- },
- {
-  "at": "2026-11-21T14:04:12.710Z",
-  "type": "added",
-  "id": "aw-voicera",
-  "title": "Voicera"
  }
 ]
