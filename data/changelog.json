@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-22T14:01:59.046Z",
+  "type": "removed",
+  "id": "gh-rustxng-rustxng",
+  "title": "RustXNG"
+ },
+ {
   "at": "2026-11-22T10:52:05.840Z",
   "type": "hidden",
   "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-handywriter",
   "title": "Handywriter"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-hotconvo",
-  "title": "HotConvo"
  }
 ]

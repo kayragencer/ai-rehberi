@@ -1,1 +1,1 @@
-{"translate":{"ok":6,"fail":0,"provider":"gemini","tried":{"gemini":2},"lastError":""}}
+{"translate":{"ok":6,"fail":0,"provider":"gtx","tried":{"gemini":2,"gtx":4},"lastError":"gemini: HTTP 500 {\n  \"error\": {\n    \"code\": 500,\n    \"message\": \"Internal error encountered.\",\n    \"status\": \"INTERNAL\"\n  }\n}\n"}}
