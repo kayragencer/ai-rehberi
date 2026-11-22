@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-22T21:50:15.190Z",
+  "type": "qc-hidden",
+  "id": "gh-stonelogic2002-cursor-pro-win",
+  "title": "cursor-pro-win"
+ },
+ {
+  "at": "2026-11-22T21:50:15.190Z",
+  "type": "qc-hidden",
+  "id": "gh-guptafedor-cursor-pro-win",
+  "title": "cursor-pro-win"
+ },
+ {
   "at": "2026-11-22T20:50:12.206Z",
   "type": "removed",
   "id": "gh-nexu-io-nexu",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-prettysmart-co",
   "title": "Prettysmart.co"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-raw-query",
-  "title": "raw query"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-orchard",
-  "title": "Orchard"
  }
 ]
