@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-22T10:52:05.840Z",
+  "type": "hidden",
+  "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
+  "title": "Context-Engineering-for-Multi-Agent-Systems"
+ },
+ {
   "at": "2026-11-22T09:53:06.410Z",
   "type": "added",
   "id": "gh-therandomsecurityguy-signet",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-hotconvo",
   "title": "HotConvo"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-langmagic",
-  "title": "LangMagic"
  }
 ]
