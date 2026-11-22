@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-22T23:49:21.380Z",
+  "type": "qc-hidden",
+  "id": "gh-big-api-server-microsoft-365-win",
+  "title": "microsoft-365-win"
+ },
+ {
+  "at": "2026-11-22T23:49:21.380Z",
+  "type": "qc-hidden",
+  "id": "gh-igwei-topaz-video-ai-win",
+  "title": "topaz-video-ai-win"
+ },
+ {
+  "at": "2026-11-22T23:49:21.380Z",
+  "type": "qc-hidden",
+  "id": "gh-cliblacktech-unreal-5-6-win",
+  "title": "unreal-5-6-win"
+ },
+ {
   "at": "2026-11-22T21:50:15.190Z",
   "type": "qc-hidden",
   "id": "gh-stonelogic2002-cursor-pro-win",
@@ -580,23 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-resumai",
   "title": "ResumAI"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-recommendme",
-  "title": "Recommendme"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-project-blink",
-  "title": "Project Blink"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-prettysmart-co",
-  "title": "Prettysmart.co"
  }
 ]
