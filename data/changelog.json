@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-22T09:53:06.410Z",
+  "type": "added",
+  "id": "gh-therandomsecurityguy-signet",
+  "title": "signet"
+ },
+ {
+  "at": "2026-11-22T09:53:06.410Z",
+  "type": "added",
+  "id": "gh-sous-labs-songe",
+  "title": "songe"
+ },
+ {
   "at": "2026-11-22T07:15:23.497Z",
   "type": "qc-hidden",
   "id": "gh-suryacode04-jasper-ai-win",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-langmagic",
   "title": "LangMagic"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-this-image-does-not-exist",
-  "title": "This Image Does Not Exist"
- },
- {
-  "at": "2026-11-21T17:48:26.014Z",
-  "type": "qc-hidden",
-  "id": "aw-stable-diffusion-models",
-  "title": "Stable Diffusion Models"
  }
 ]
