@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-22T20:50:12.206Z",
+  "type": "removed",
+  "id": "gh-nexu-io-nexu",
+  "title": "nexu"
+ },
+ {
   "at": "2026-11-22T16:53:10.602Z",
   "type": "qc-hidden",
   "id": "gh-carol-lyh-jeveration",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-orchard",
   "title": "Orchard"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-opus",
-  "title": "Opus"
  }
 ]
