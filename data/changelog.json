@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-22T03:58:17.611Z",
+  "type": "added",
+  "id": "gh-praseesh369-youtube-ai-video-editing-system",
+  "title": "youtube-ai-video-editing-system"
+ },
+ {
   "at": "2026-11-21T22:48:16.969Z",
   "type": "qc-hidden",
   "id": "ph-cup-of-sugar",
@@ -591,12 +597,6 @@
   "at": "2026-11-21T11:50:40.750Z",
   "type": "qc-hidden",
   "id": "gh-samuraivacuum-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-officialkind-github-copilot-app",
   "title": "GitHub-Copilot-app"
  }
 ]
