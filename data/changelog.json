@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-22T16:53:10.602Z",
+  "type": "qc-hidden",
+  "id": "gh-carol-lyh-jeveration",
+  "title": "Jeveration"
+ },
+ {
+  "at": "2026-11-22T16:53:10.602Z",
+  "type": "added",
+  "id": "gh-carol-lyh-jeveration",
+  "title": "Jeveration"
+ },
+ {
+  "at": "2026-11-22T16:53:10.602Z",
+  "type": "added",
+  "id": "gh-pierridotite-mobile-agent-testers",
+  "title": "mobile-agent-testers"
+ },
+ {
+  "at": "2026-11-22T16:53:10.602Z",
+  "type": "added",
+  "id": "gh-lumidarin-agy-capsule",
+  "title": "agy-capsule"
+ },
+ {
   "at": "2026-11-22T15:51:21.980Z",
   "type": "removed",
   "id": "gh-krzysztof132435-ai-manus",
@@ -574,29 +598,5 @@
   "type": "qc-hidden",
   "id": "aw-opus",
   "title": "Opus"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-magic-mate",
-  "title": "Magic Mate"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-jinnee",
-  "title": "Jinnee"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-infinite-drum-machine",
-  "title": "Infinite Drum Machine"
- },
- {
-  "at": "2026-11-21T18:53:43.545Z",
-  "type": "qc-hidden",
-  "id": "aw-linkedin-posts-generator",
-  "title": "Linkedin Posts Generator"
  }
 ]
