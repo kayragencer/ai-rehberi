@@ -1,5 +1,77 @@
 [
  {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "qc-hidden",
+  "id": "gh-morriswawan05-elevenlabs-pro-win",
+  "title": "elevenlabs-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "qc-hidden",
+  "id": "gh-cloudcode04-runway-ml-pro-win",
+  "title": "runway-ml-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "qc-hidden",
+  "id": "gh-guzmanjacqueline93-copy-ai-pro-win",
+  "title": "copy-ai-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "qc-hidden",
+  "id": "gh-juanlabs1989-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "qc-hidden",
+  "id": "gh-aroralayla99-capcut-seedance-win",
+  "title": "capcut-seedance-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "qc-hidden",
+  "id": "gh-debugdigital677-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "added",
+  "id": "gh-morriswawan05-elevenlabs-pro-win",
+  "title": "elevenlabs-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "added",
+  "id": "gh-cloudcode04-runway-ml-pro-win",
+  "title": "runway-ml-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "added",
+  "id": "gh-guzmanjacqueline93-copy-ai-pro-win",
+  "title": "copy-ai-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "added",
+  "id": "gh-juanlabs1989-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "added",
+  "id": "gh-aroralayla99-capcut-seedance-win",
+  "title": "capcut-seedance-win"
+ },
+ {
+  "at": "2026-11-22T06:01:26.398Z",
+  "type": "added",
+  "id": "gh-debugdigital677-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
   "at": "2026-11-22T05:02:32.215Z",
   "type": "added",
   "id": "gh-el4cteo-fast-anything",
@@ -526,77 +598,5 @@
   "type": "added",
   "id": "aw-voicera",
   "title": "Voicera"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-primerollerportal-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-shoreaeromancer-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-silversmithhem-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-ordercocoondrag-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-silentsaintfactory-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-slatecontrol-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-slateplanner-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-monsterfromdeliver-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-jumbomuffin777-frontier-ui",
-  "title": "Frontier-UI"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-restflyroller-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-powerorioledescribe-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-primeiloscillate-github-copilot-app",
-  "title": "GitHub-Copilot-app"
  }
 ]
