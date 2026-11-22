@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-22T05:02:32.215Z",
+  "type": "added",
+  "id": "gh-el4cteo-fast-anything",
+  "title": "fast-anything"
+ },
+ {
   "at": "2026-11-22T03:58:17.611Z",
   "type": "added",
   "id": "gh-praseesh369-youtube-ai-video-editing-system",
@@ -591,12 +597,6 @@
   "at": "2026-11-21T11:50:40.750Z",
   "type": "qc-hidden",
   "id": "gh-primeiloscillate-github-copilot-app",
-  "title": "GitHub-Copilot-app"
- },
- {
-  "at": "2026-11-21T11:50:40.750Z",
-  "type": "qc-hidden",
-  "id": "gh-samuraivacuum-github-copilot-app",
   "title": "GitHub-Copilot-app"
  }
 ]
