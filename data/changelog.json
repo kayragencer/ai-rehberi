@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-23T13:25:58.166Z",
+  "type": "hidden",
+  "id": "lovo",
+  "title": "LOVO"
+ },
+ {
+  "at": "2026-11-23T13:25:58.166Z",
+  "type": "removed",
+  "id": "gh-sahenjp-rustxng",
+  "title": "RustXNG"
+ },
+ {
   "at": "2026-11-23T07:41:12.335Z",
   "type": "added",
   "id": "gh-lukendeasy-open-diagram",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "ph-tensorviz",
   "title": "tensorViz"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-volcano",
-  "title": "Volcano"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-exa-websets-v2",
-  "title": "Exa Websets V2"
  }
 ]
