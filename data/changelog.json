@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-23T04:12:17.439Z",
+  "type": "hidden",
+  "id": "gh-devchat-ai-devchat",
+  "title": "devchat"
+ },
+ {
   "at": "2026-11-23T01:19:25.802Z",
   "type": "qc-hidden",
   "id": "gh-marketzy-codex-cli-repo-workbench",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "ph-glassmail",
   "title": "Glassmail"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-kuc-kuc",
-  "title": "Kuc-kuc"
  }
 ]
