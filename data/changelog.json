@@ -1,5 +1,83 @@
 [
  {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "qc-hidden",
+  "id": "ph-tesla-self-driving-v15",
+  "title": "Tesla Self-Driving V15"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-orpheus",
+  "title": "Orpheus"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-mobile-agent-testers",
+  "title": "Mobile Agent Testers"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-zapyso",
+  "title": "Zapyso"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-teaserkit",
+  "title": "TeaserKit"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-ashwa",
+  "title": "Ashwa"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-freddy",
+  "title": "freddy"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-omi-work",
+  "title": "Omi Work"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-replit-missions",
+  "title": "Replit Missions"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-tesla-self-driving-v15",
+  "title": "Tesla Self-Driving V15"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-ulika",
+  "title": "Ulika"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-omi-cli",
+  "title": "Omi CLI"
+ },
+ {
+  "at": "2026-11-23T23:56:22.341Z",
+  "type": "added",
+  "id": "ph-hydrilla",
+  "title": "Hydrilla"
+ },
+ {
   "at": "2026-11-23T22:58:51.183Z",
   "type": "qc-hidden",
   "id": "ph-inkling-2-mini",
@@ -520,83 +598,5 @@
   "type": "added",
   "id": "ph-pickfit",
   "title": "pickfit"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-supermailbox",
-  "title": "SuperMailbox"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-undoguard",
-  "title": "UndoGuard"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-ai-call",
-  "title": "AI Call"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-tinytldr",
-  "title": "tinytldr"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-badya",
-  "title": "Badya"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-storiara",
-  "title": "Storiara"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-groundwork",
-  "title": "Groundwork"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-greatai-review",
-  "title": "greatai Review"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-zethos",
-  "title": "Zethos"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-stormi",
-  "title": "Stormi"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-interview-coach",
-  "title": "Interview Coach"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-stitch-loop",
-  "title": "Stitch Loop"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-conversaflex",
-  "title": "Conversaflex"
  }
 ]
