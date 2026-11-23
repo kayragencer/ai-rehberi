@@ -1,5 +1,89 @@
 [
  {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "qc-hidden",
+  "id": "gh-marketzy-codex-cli-repo-workbench",
+  "title": "codex-cli-repo-workbench"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "qc-hidden",
+  "id": "gh-zavi2997-droid-claude-code-agent-workspace",
+  "title": "claude-code-agent-workspace"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "qc-hidden",
+  "id": "gh-prajwaljeevan50-web-openclaw-personal-workspace",
+  "title": "openclaw-personal-workspace"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "qc-hidden",
+  "id": "gh-wozniakalan323-bit-opencode-project-workbench",
+  "title": "opencode-project-workbench"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-ai4xe-ai4ai",
+  "title": "ai4ai"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-ai4xe-parallax",
+  "title": "Parallax"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-tthanh2k6-turbo-browser-mcp",
+  "title": "turbo-browser-mcp"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-nestjs-agent-skills",
+  "title": "agent-skills"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-prajwaljeevan50-web-openclaw-personal-workspace",
+  "title": "openclaw-personal-workspace"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-liufelix2004-dsh-workbuddy",
+  "title": "dsh-workbuddy"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-marketzy-codex-cli-repo-workbench",
+  "title": "codex-cli-repo-workbench"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-zavi2997-droid-claude-code-agent-workspace",
+  "title": "claude-code-agent-workspace"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-han938-open-webui-private-ai-desk",
+  "title": "open-webui-private-ai-desk"
+ },
+ {
+  "at": "2026-11-23T01:19:25.802Z",
+  "type": "added",
+  "id": "gh-wozniakalan323-bit-opencode-project-workbench",
+  "title": "opencode-project-workbench"
+ },
+ {
   "at": "2026-11-22T23:49:21.380Z",
   "type": "qc-hidden",
   "id": "gh-big-api-server-microsoft-365-win",
@@ -514,89 +598,5 @@
   "type": "added",
   "id": "ph-kuc-kuc",
   "title": "Kuc-kuc"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-ai-context-flow-mcp",
-  "title": "AI Context Flow MCP"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-altercontacts",
-  "title": "AlterContacts"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-docker",
-  "title": "Docker"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "ph-tripmojo",
-  "title": "Tripmojo"
- },
- {
-  "at": "2026-11-21T20:48:43.252Z",
-  "type": "added",
-  "id": "gh-beyondtahir-beyondgtaclips",
-  "title": "beyondgtaclips"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-what-on-earth",
-  "title": "What on earth?"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-unpromptedgame",
-  "title": "Unpromptedgame"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-diffbot",
-  "title": "Diffbot"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-text-assistant",
-  "title": "Text Assistant"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-storiesbyai",
-  "title": "StoriesbyAI"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-swagai",
-  "title": "SwagAI"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-scribe",
-  "title": "Scribe"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-resume-studio",
-  "title": "Resume Studio"
- },
- {
-  "at": "2026-11-21T19:51:46.473Z",
-  "type": "qc-hidden",
-  "id": "aw-resumai",
-  "title": "ResumAI"
  }
 ]
