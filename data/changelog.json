@@ -1,5 +1,41 @@
 [
  {
+  "at": "2026-11-23T21:57:32.929Z",
+  "type": "qc-hidden",
+  "id": "gh-fujc683-seedance-2-5-flash-free-tier",
+  "title": "seedance-2-5-flash-free-tier"
+ },
+ {
+  "at": "2026-11-23T21:57:32.929Z",
+  "type": "qc-hidden",
+  "id": "gh-fujc683-seedance-2-5-flash-reference-video",
+  "title": "seedance-2-5-flash-reference-video"
+ },
+ {
+  "at": "2026-11-23T21:57:32.929Z",
+  "type": "qc-hidden",
+  "id": "gh-fujc683-cheap-video-api",
+  "title": "cheap-video-api"
+ },
+ {
+  "at": "2026-11-23T21:57:32.929Z",
+  "type": "qc-hidden",
+  "id": "gh-fujc683-seedance-2-5-flash-alternatives",
+  "title": "seedance-2-5-flash-alternatives"
+ },
+ {
+  "at": "2026-11-23T21:57:32.929Z",
+  "type": "qc-hidden",
+  "id": "gh-fujc683-seedance-2-5-flash-pricing",
+  "title": "seedance-2-5-flash-pricing"
+ },
+ {
+  "at": "2026-11-23T21:57:32.929Z",
+  "type": "hidden",
+  "id": "aw-ibm-watson",
+  "title": "IBM Watson"
+ },
+ {
   "at": "2026-11-23T20:09:00.705Z",
   "type": "qc-hidden",
   "id": "gh-lalipa2003-arch-jailbreakhub",
@@ -562,41 +598,5 @@
   "type": "added",
   "id": "ph-prompt-puncher",
   "title": "Prompt Puncher"
- },
- {
-  "at": "2026-11-21T21:47:01.902Z",
-  "type": "added",
-  "id": "ph-threadlore",
-  "title": "ThreadLore"
- },
- {
-  "at": "2026-11-21T21:47:01.902Z",
-  "type": "added",
-  "id": "ph-shipyard",
-  "title": "Shipyard"
- },
- {
-  "at": "2026-11-21T21:47:01.902Z",
-  "type": "added",
-  "id": "ph-makepixel",
-  "title": "MakePixel"
- },
- {
-  "at": "2026-11-21T21:47:01.902Z",
-  "type": "added",
-  "id": "ph-fack-d",
-  "title": "Fack\u2019d"
- },
- {
-  "at": "2026-11-21T21:47:01.902Z",
-  "type": "added",
-  "id": "ph-memanto-cloud",
-  "title": "Memanto Cloud"
- },
- {
-  "at": "2026-11-21T21:47:01.902Z",
-  "type": "added",
-  "id": "ph-compass-os",
-  "title": "Compass OS"
  }
 ]
