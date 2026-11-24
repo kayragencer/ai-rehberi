@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-24T01:15:46.072Z",
+  "type": "added",
+  "id": "ph-perfstaq",
+  "title": "Perfstaq"
+ },
+ {
+  "at": "2026-11-24T01:15:46.072Z",
+  "type": "added",
+  "id": "ph-mai-image-2-7",
+  "title": "MAI Image 2.7"
+ },
+ {
+  "at": "2026-11-24T01:15:46.072Z",
+  "type": "added",
+  "id": "ph-mailpipe",
+  "title": "Mailpipe"
+ },
+ {
+  "at": "2026-11-24T01:15:46.072Z",
+  "type": "added",
+  "id": "ph-squint",
+  "title": "Squint"
+ },
+ {
   "at": "2026-11-23T23:56:22.341Z",
   "type": "qc-hidden",
   "id": "ph-tesla-self-driving-v15",
@@ -574,29 +598,5 @@
   "type": "added",
   "id": "ph-telo",
   "title": "Telo"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-cup-of-sugar",
-  "title": "Cup of Sugar"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-croon",
-  "title": "CROON"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-loudflow",
-  "title": "LoudFlow"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-pickfit",
-  "title": "pickfit"
  }
 ]
