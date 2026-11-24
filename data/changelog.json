@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-24T13:22:53.105Z",
+  "type": "qc-hidden",
+  "id": "gh-micro-saas-examples-best-micro-saas-tools",
+  "title": "Best-Micro-SaaS-Tools"
+ },
+ {
+  "at": "2026-11-24T13:22:53.105Z",
+  "type": "removed",
+  "id": "gh-kazim768-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-24T13:22:53.105Z",
+  "type": "removed",
+  "id": "gh-itprogamatikdedsec-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-24T13:22:53.105Z",
+  "type": "removed",
+  "id": "gh-agentsdroid-agentsdroid",
+  "title": "agentsdroid"
+ },
+ {
   "at": "2026-11-24T12:03:56.160Z",
   "type": "qc-hidden",
   "id": "gh-sobranie2406-modureader",
@@ -574,29 +598,5 @@
   "type": "added",
   "id": "gh-isanders5152-descript-pro-win",
   "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "added",
-  "id": "gh-josephyoung28-capcut-seedance-win",
-  "title": "capcut-seedance-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "added",
-  "id": "gh-jiefedorov81-runway-ml-pro-win",
-  "title": "runway-ml-pro-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "added",
-  "id": "gh-vitalymukherjee92-lightroom-classic-win",
-  "title": "lightroom-classic-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "qc-hidden",
-  "id": "gh-morriswawan05-elevenlabs-pro-win",
-  "title": "elevenlabs-pro-win"
  }
 ]
