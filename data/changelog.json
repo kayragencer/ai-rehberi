@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-24T02:24:16.453Z",
+  "type": "hidden",
+  "id": "aw-hexowatch",
+  "title": "Hexowatch"
+ },
+ {
+  "at": "2026-11-24T02:24:16.453Z",
+  "type": "added",
+  "id": "gh-manuelgscom-inside-llm",
+  "title": "inside-llm"
+ },
+ {
   "at": "2026-11-24T01:15:46.072Z",
   "type": "added",
   "id": "ph-perfstaq",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "ph-cup-of-sugar",
   "title": "Cup of Sugar"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-dwaste",
-  "title": "DWaste"
- },
- {
-  "at": "2026-11-21T22:48:16.969Z",
-  "type": "added",
-  "id": "ph-telo",
-  "title": "Telo"
  }
 ]
