@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-24T15:08:43.367Z",
+  "type": "removed",
+  "id": "gh-itprogamatikdedsec-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-24T15:08:43.367Z",
+  "type": "removed",
+  "id": "gh-kazim768-ai-manus",
+  "title": "ai--manus"
+ },
+ {
   "at": "2026-11-24T13:22:53.105Z",
   "type": "qc-hidden",
   "id": "gh-micro-saas-examples-best-micro-saas-tools",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-jiefedorov81-runway-ml-pro-win",
   "title": "runway-ml-pro-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "added",
-  "id": "gh-suryacode04-jasper-ai-win",
-  "title": "jasper-ai-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "added",
-  "id": "gh-isanders5152-descript-pro-win",
-  "title": "descript-pro-win"
  }
 ]
