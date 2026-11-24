@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-24T16:18:23.945Z",
+  "type": "restored",
+  "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
+  "title": "Context-Engineering-for-Multi-Agent-Systems"
+ },
+ {
+  "at": "2026-11-24T16:18:23.945Z",
+  "type": "removed",
+  "id": "gh-juanjuandog-finsight-ai",
+  "title": "FinSight-AI"
+ },
+ {
   "at": "2026-11-24T15:08:43.367Z",
   "type": "removed",
   "id": "gh-itprogamatikdedsec-manus-ai",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-josephyoung28-capcut-seedance-win",
   "title": "capcut-seedance-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "qc-hidden",
-  "id": "gh-vitalymukherjee92-lightroom-classic-win",
-  "title": "lightroom-classic-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "qc-hidden",
-  "id": "gh-jiefedorov81-runway-ml-pro-win",
-  "title": "runway-ml-pro-win"
  }
 ]
