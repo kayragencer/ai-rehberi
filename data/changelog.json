@@ -1,5 +1,41 @@
 [
  {
+  "at": "2026-11-24T12:03:56.160Z",
+  "type": "qc-hidden",
+  "id": "gh-sobranie2406-modureader",
+  "title": "modureader"
+ },
+ {
+  "at": "2026-11-24T12:03:56.160Z",
+  "type": "removed",
+  "id": "gh-suryacode04-jasper-ai-win",
+  "title": "jasper-ai-win"
+ },
+ {
+  "at": "2026-11-24T12:03:56.160Z",
+  "type": "removed",
+  "id": "gh-jiefedorov81-runway-ml-pro-win",
+  "title": "runway-ml-pro-win"
+ },
+ {
+  "at": "2026-11-24T12:03:56.160Z",
+  "type": "removed",
+  "id": "gh-josephyoung28-capcut-seedance-win",
+  "title": "capcut-seedance-win"
+ },
+ {
+  "at": "2026-11-24T12:03:56.160Z",
+  "type": "removed",
+  "id": "gh-vitalymukherjee92-lightroom-classic-win",
+  "title": "lightroom-classic-win"
+ },
+ {
+  "at": "2026-11-24T12:03:56.160Z",
+  "type": "removed",
+  "id": "gh-isanders5152-descript-pro-win",
+  "title": "descript-pro-win"
+ },
+ {
   "at": "2026-11-24T10:20:11.414Z",
   "type": "removed",
   "id": "gh-aroralayla99-capcut-seedance-win",
@@ -560,42 +596,6 @@
  {
   "at": "2026-11-22T06:01:26.398Z",
   "type": "qc-hidden",
-  "id": "gh-morriswawan05-elevenlabs-pro-win",
-  "title": "elevenlabs-pro-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "qc-hidden",
-  "id": "gh-cloudcode04-runway-ml-pro-win",
-  "title": "runway-ml-pro-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "qc-hidden",
-  "id": "gh-guzmanjacqueline93-copy-ai-pro-win",
-  "title": "copy-ai-pro-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "qc-hidden",
-  "id": "gh-juanlabs1989-descript-pro-win",
-  "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "qc-hidden",
-  "id": "gh-aroralayla99-capcut-seedance-win",
-  "title": "capcut-seedance-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "qc-hidden",
-  "id": "gh-debugdigital677-descript-pro-win",
-  "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-22T06:01:26.398Z",
-  "type": "added",
   "id": "gh-morriswawan05-elevenlabs-pro-win",
   "title": "elevenlabs-pro-win"
  }
