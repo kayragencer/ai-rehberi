@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-24T22:03:38.908Z",
+  "type": "added",
+  "id": "gh-el4cteo-shrink-anything",
+  "title": "shrink-anything"
+ },
+ {
   "at": "2026-11-24T16:18:23.945Z",
   "type": "restored",
   "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
@@ -592,11 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-isanders5152-descript-pro-win",
   "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "qc-hidden",
-  "id": "gh-josephyoung28-capcut-seedance-win",
-  "title": "capcut-seedance-win"
  }
 ]
