@@ -1,5 +1,47 @@
 [
  {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-zavi2997-droid-claude-code-agent-workspace",
+  "title": "claude-code-agent-workspace"
+ },
+ {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-prajwaljeevan50-web-openclaw-personal-workspace",
+  "title": "openclaw-personal-workspace"
+ },
+ {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-wozniakalan323-bit-opencode-project-workbench",
+  "title": "opencode-project-workbench"
+ },
+ {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-marketzy-codex-cli-repo-workbench",
+  "title": "codex-cli-repo-workbench"
+ },
+ {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-han938-open-webui-private-ai-desk",
+  "title": "open-webui-private-ai-desk"
+ },
+ {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-johnstiles-ai-manus",
+  "title": "ai-manus"
+ },
+ {
+  "at": "2026-11-25T11:03:55.202Z",
+  "type": "removed",
+  "id": "gh-monirchemrubd-ai-manus",
+  "title": "ai-manus"
+ },
+ {
   "at": "2026-11-25T09:18:01.264Z",
   "type": "removed",
   "id": "gh-igwei-topaz-video-ai-win",
@@ -556,47 +598,5 @@
   "type": "added",
   "id": "gh-han938-open-webui-private-ai-desk",
   "title": "open-webui-private-ai-desk"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-wozniakalan323-bit-opencode-project-workbench",
-  "title": "opencode-project-workbench"
- },
- {
-  "at": "2026-11-22T23:49:21.380Z",
-  "type": "qc-hidden",
-  "id": "gh-big-api-server-microsoft-365-win",
-  "title": "microsoft-365-win"
- },
- {
-  "at": "2026-11-22T23:49:21.380Z",
-  "type": "qc-hidden",
-  "id": "gh-igwei-topaz-video-ai-win",
-  "title": "topaz-video-ai-win"
- },
- {
-  "at": "2026-11-22T23:49:21.380Z",
-  "type": "qc-hidden",
-  "id": "gh-cliblacktech-unreal-5-6-win",
-  "title": "unreal-5-6-win"
- },
- {
-  "at": "2026-11-22T21:50:15.190Z",
-  "type": "qc-hidden",
-  "id": "gh-stonelogic2002-cursor-pro-win",
-  "title": "cursor-pro-win"
- },
- {
-  "at": "2026-11-22T21:50:15.190Z",
-  "type": "qc-hidden",
-  "id": "gh-guptafedor-cursor-pro-win",
-  "title": "cursor-pro-win"
- },
- {
-  "at": "2026-11-22T20:50:12.206Z",
-  "type": "removed",
-  "id": "gh-nexu-io-nexu",
-  "title": "nexu"
  }
 ]
