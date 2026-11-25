@@ -1,5 +1,29 @@
 [
  {
+  "at": "2026-11-25T05:18:01.189Z",
+  "type": "removed",
+  "id": "gh-beam-cloud-beta9",
+  "title": "beta9"
+ },
+ {
+  "at": "2026-11-25T05:18:01.189Z",
+  "type": "removed",
+  "id": "gh-stonelogic2002-cursor-pro-win",
+  "title": "cursor-pro-win"
+ },
+ {
+  "at": "2026-11-25T05:18:01.189Z",
+  "type": "removed",
+  "id": "gh-guptafedor-cursor-pro-win",
+  "title": "cursor-pro-win"
+ },
+ {
+  "at": "2026-11-25T05:18:01.189Z",
+  "type": "added",
+  "id": "gh-w1ccc-sap-data-mcp",
+  "title": "sap-data-mcp"
+ },
+ {
   "at": "2026-11-25T04:12:47.766Z",
   "type": "removed",
   "id": "gh-senickimoro-art-pinokio-olvara-ai-workspace",
@@ -574,29 +598,5 @@
   "type": "added",
   "id": "gh-lumidarin-agy-capsule",
   "title": "agy-capsule"
- },
- {
-  "at": "2026-11-22T15:51:21.980Z",
-  "type": "removed",
-  "id": "gh-krzysztof132435-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-22T14:01:59.046Z",
-  "type": "removed",
-  "id": "gh-rustxng-rustxng",
-  "title": "RustXNG"
- },
- {
-  "at": "2026-11-22T10:52:05.840Z",
-  "type": "hidden",
-  "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
-  "title": "Context-Engineering-for-Multi-Agent-Systems"
- },
- {
-  "at": "2026-11-22T09:53:06.410Z",
-  "type": "added",
-  "id": "gh-therandomsecurityguy-signet",
-  "title": "signet"
  }
 ]
