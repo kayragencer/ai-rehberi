@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-25T04:12:47.766Z",
+  "type": "removed",
+  "id": "gh-senickimoro-art-pinokio-olvara-ai-workspace",
+  "title": "pinokio-olvara-ai-workspace"
+ },
+ {
+  "at": "2026-11-25T04:12:47.766Z",
+  "type": "removed",
+  "id": "gh-yashabcyber7-nexadroid",
+  "title": "nexadroid"
+ },
+ {
+  "at": "2026-11-25T04:12:47.766Z",
+  "type": "removed",
+  "id": "gh-chase1225-anythingllm-verona-document-chat",
+  "title": "anythingllm-verona-document-chat"
+ },
+ {
   "at": "2026-11-24T22:03:38.908Z",
   "type": "added",
   "id": "gh-el4cteo-shrink-anything",
@@ -580,23 +598,5 @@
   "type": "added",
   "id": "gh-therandomsecurityguy-signet",
   "title": "signet"
- },
- {
-  "at": "2026-11-22T09:53:06.410Z",
-  "type": "added",
-  "id": "gh-sous-labs-songe",
-  "title": "songe"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "qc-hidden",
-  "id": "gh-suryacode04-jasper-ai-win",
-  "title": "jasper-ai-win"
- },
- {
-  "at": "2026-11-22T07:15:23.497Z",
-  "type": "qc-hidden",
-  "id": "gh-isanders5152-descript-pro-win",
-  "title": "descript-pro-win"
  }
 ]
