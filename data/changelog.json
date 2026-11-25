@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-25T09:18:01.264Z",
+  "type": "removed",
+  "id": "gh-igwei-topaz-video-ai-win",
+  "title": "topaz-video-ai-win"
+ },
+ {
+  "at": "2026-11-25T09:18:01.264Z",
+  "type": "removed",
+  "id": "gh-cliblacktech-unreal-5-6-win",
+  "title": "unreal-5-6-win"
+ },
+ {
+  "at": "2026-11-25T09:18:01.264Z",
+  "type": "removed",
+  "id": "gh-big-api-server-microsoft-365-win",
+  "title": "microsoft-365-win"
+ },
+ {
   "at": "2026-11-25T07:28:21.676Z",
   "type": "qc-hidden",
   "id": "gh-voxdance-lab-voxmel",
@@ -580,23 +598,5 @@
   "type": "removed",
   "id": "gh-nexu-io-nexu",
   "title": "nexu"
- },
- {
-  "at": "2026-11-22T16:53:10.602Z",
-  "type": "qc-hidden",
-  "id": "gh-carol-lyh-jeveration",
-  "title": "Jeveration"
- },
- {
-  "at": "2026-11-22T16:53:10.602Z",
-  "type": "added",
-  "id": "gh-carol-lyh-jeveration",
-  "title": "Jeveration"
- },
- {
-  "at": "2026-11-22T16:53:10.602Z",
-  "type": "added",
-  "id": "gh-pierridotite-mobile-agent-testers",
-  "title": "mobile-agent-testers"
  }
 ]
