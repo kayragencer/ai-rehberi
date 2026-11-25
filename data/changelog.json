@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-25T18:58:39.759Z",
+  "type": "qc-hidden",
+  "id": "gh-liuharold98-chatgpt-desktop",
+  "title": "chatgpt-desktop"
+ },
+ {
+  "at": "2026-11-25T18:58:39.759Z",
+  "type": "added",
+  "id": "gh-liuharold98-chatgpt-desktop",
+  "title": "chatgpt-desktop"
+ },
+ {
   "at": "2026-11-25T12:08:56.025Z",
   "type": "removed",
   "id": "gh-epicgiantite13205-ai-manus",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "gh-prajwaljeevan50-web-openclaw-personal-workspace",
   "title": "openclaw-personal-workspace"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-liufelix2004-dsh-workbuddy",
-  "title": "dsh-workbuddy"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-marketzy-codex-cli-repo-workbench",
-  "title": "codex-cli-repo-workbench"
  }
 ]
