@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-25T07:28:21.676Z",
+  "type": "qc-hidden",
+  "id": "gh-voxdance-lab-voxmel",
+  "title": "VoxMel"
+ },
+ {
   "at": "2026-11-25T05:18:01.189Z",
   "type": "removed",
   "id": "gh-beam-cloud-beta9",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-pierridotite-mobile-agent-testers",
   "title": "mobile-agent-testers"
- },
- {
-  "at": "2026-11-22T16:53:10.602Z",
-  "type": "added",
-  "id": "gh-lumidarin-agy-capsule",
-  "title": "agy-capsule"
  }
 ]
