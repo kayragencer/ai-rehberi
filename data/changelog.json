@@ -1,5 +1,179 @@
 [
  {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "qc-hidden",
+  "id": "gh-mbzuai-oryx-loopedwsp",
+  "title": "LoopedWSP"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "qc-hidden",
+  "id": "ph-continual-arc",
+  "title": "Continual-ARC"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "hidden",
+  "id": "aw-digital-dogs",
+  "title": "Digital Dogs"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-doodle",
+  "title": "Doodle"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-deskfleet",
+  "title": "DeskFleet"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-partgenie-2-0",
+  "title": "PartGenie 2.0"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-statefold",
+  "title": "Statefold"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-almma-s-pii-guard",
+  "title": "Almma's PII Guard"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-kagi-mail",
+  "title": "Kagi Mail"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-steerlatch",
+  "title": "SteerLatch"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-tendeck",
+  "title": "Tendeck"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-finseo",
+  "title": "Finseo"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-continual-arc",
+  "title": "Continual-ARC"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-memoryworks",
+  "title": "MemoryWorks"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-heroui-pro-1-0",
+  "title": "HeroUI Pro 1.0"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-eluna",
+  "title": "eluna"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-bifura",
+  "title": "Bifura"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-falcon-by-vybe",
+  "title": "Falcon by Vybe"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-vibecode-surf",
+  "title": "VibeCode.surf"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-astor",
+  "title": "Astor"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-magi-2",
+  "title": "MAGI-2"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-3way-social-mcp",
+  "title": "3way.Social MCP"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-fleetify",
+  "title": "Fleetify"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-pax-by-pydantic",
+  "title": "Pax by Pydantic"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-pinned",
+  "title": "Pinned"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-omi-x-2-0",
+  "title": "Omi X 2.0"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-doola-mcp",
+  "title": "doola MCP"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "ph-hai",
+  "title": "Hai"
+ },
+ {
+  "at": "2026-11-26T13:27:57.413Z",
+  "type": "added",
+  "id": "gh-mbzuai-oryx-loopedwsp",
+  "title": "LoopedWSP"
+ },
+ {
   "at": "2026-11-26T12:07:46.775Z",
   "type": "added",
   "id": "ph-koed",
@@ -424,179 +598,5 @@
   "type": "added",
   "id": "ph-orpheus",
   "title": "Orpheus"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-mobile-agent-testers",
-  "title": "Mobile Agent Testers"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-zapyso",
-  "title": "Zapyso"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-teaserkit",
-  "title": "TeaserKit"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-ashwa",
-  "title": "Ashwa"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-freddy",
-  "title": "freddy"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-omi-work",
-  "title": "Omi Work"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-replit-missions",
-  "title": "Replit Missions"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-tesla-self-driving-v15",
-  "title": "Tesla Self-Driving V15"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-ulika",
-  "title": "Ulika"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-omi-cli",
-  "title": "Omi CLI"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-hydrilla",
-  "title": "Hydrilla"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "qc-hidden",
-  "id": "ph-inkling-2-mini",
-  "title": "Inkling 2 Mini"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "qc-hidden",
-  "id": "ph-dog-translator-supertranslator",
-  "title": "Dog Translator SuperTranslator"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-chat-with-work",
-  "title": "Chat with Work"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-inkling-2-mini",
-  "title": "Inkling 2 Mini"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-webless-agents",
-  "title": "Webless Agents"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-polylane-swarms",
-  "title": "Polylane Swarms"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-oovi",
-  "title": "oovi"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-dog-translator-supertranslator",
-  "title": "Dog Translator SuperTranslator"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-resurf",
-  "title": "Resurf"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-modem",
-  "title": "Modem"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-motionflare",
-  "title": "Motionflare"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-gauth-personal-study-agent",
-  "title": "Gauth Personal Study Agent"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-rankhog",
-  "title": "Rankhog"
- },
- {
-  "at": "2026-11-23T22:58:51.183Z",
-  "type": "added",
-  "id": "ph-yoroll",
-  "title": "Yoroll"
- },
- {
-  "at": "2026-11-23T21:57:32.929Z",
-  "type": "qc-hidden",
-  "id": "gh-fujc683-seedance-2-5-flash-free-tier",
-  "title": "seedance-2-5-flash-free-tier"
- },
- {
-  "at": "2026-11-23T21:57:32.929Z",
-  "type": "qc-hidden",
-  "id": "gh-fujc683-seedance-2-5-flash-reference-video",
-  "title": "seedance-2-5-flash-reference-video"
- },
- {
-  "at": "2026-11-23T21:57:32.929Z",
-  "type": "qc-hidden",
-  "id": "gh-fujc683-cheap-video-api",
-  "title": "cheap-video-api"
- },
- {
-  "at": "2026-11-23T21:57:32.929Z",
-  "type": "qc-hidden",
-  "id": "gh-fujc683-seedance-2-5-flash-alternatives",
-  "title": "seedance-2-5-flash-alternatives"
  }
 ]
