@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-26T04:08:22.810Z",
+  "type": "removed",
+  "id": "gh-bookwjitchieni1986-blender-ai-mcp-addon",
+  "title": "blender-ai-mcp-addon"
+ },
+ {
   "at": "2026-11-26T03:00:22.425Z",
   "type": "qc-hidden",
   "id": "gh-gf007-game-rebuild-kit",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-ai4xe-ai4ai",
   "title": "ai4ai"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-ai4xe-parallax",
-  "title": "Parallax"
  }
 ]
