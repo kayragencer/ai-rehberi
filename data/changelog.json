@@ -1,5 +1,89 @@
 [
  {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-koed",
+  "title": "Koed"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-valley",
+  "title": "Valley"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-agenda-hero-magic-labs",
+  "title": "Agenda Hero Magic Labs"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-tday-com",
+  "title": "tday.com"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-snag-by-parallel",
+  "title": "Snag by Parallel"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-frwrd-to",
+  "title": "frwrd.to"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-claude-ship",
+  "title": "Claude Ship"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-clam-ai",
+  "title": "Clam AI"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-viktor-code",
+  "title": "Viktor Code"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-hiring-right-now",
+  "title": "Hiring Right Now"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-granular-build",
+  "title": "Granular.Build"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-airbot",
+  "title": "Airbot"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "ph-myclaw-3-0",
+  "title": "MyClaw 3.0"
+ },
+ {
+  "at": "2026-11-26T12:07:46.775Z",
+  "type": "added",
+  "id": "gh-nexu-io-opengame",
+  "title": "opengame"
+ },
+ {
   "at": "2026-11-26T04:08:22.810Z",
   "type": "removed",
   "id": "gh-bookwjitchieni1986-blender-ai-mcp-addon",
@@ -514,89 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-fujc683-seedance-2-5-flash-alternatives",
   "title": "seedance-2-5-flash-alternatives"
- },
- {
-  "at": "2026-11-23T21:57:32.929Z",
-  "type": "qc-hidden",
-  "id": "gh-fujc683-seedance-2-5-flash-pricing",
-  "title": "seedance-2-5-flash-pricing"
- },
- {
-  "at": "2026-11-23T21:57:32.929Z",
-  "type": "hidden",
-  "id": "aw-ibm-watson",
-  "title": "IBM Watson"
- },
- {
-  "at": "2026-11-23T20:09:00.705Z",
-  "type": "qc-hidden",
-  "id": "gh-lalipa2003-arch-jailbreakhub",
-  "title": "JailbreakHub"
- },
- {
-  "at": "2026-11-23T20:09:00.705Z",
-  "type": "hidden",
-  "id": "aw-code-to-flow",
-  "title": "Code to Flow"
- },
- {
-  "at": "2026-11-23T13:25:58.166Z",
-  "type": "hidden",
-  "id": "lovo",
-  "title": "LOVO"
- },
- {
-  "at": "2026-11-23T13:25:58.166Z",
-  "type": "removed",
-  "id": "gh-sahenjp-rustxng",
-  "title": "RustXNG"
- },
- {
-  "at": "2026-11-23T07:41:12.335Z",
-  "type": "added",
-  "id": "gh-lukendeasy-open-diagram",
-  "title": "open-diagram"
- },
- {
-  "at": "2026-11-23T07:41:12.335Z",
-  "type": "added",
-  "id": "gh-erkamyaman-safe-anything",
-  "title": "safe-anything"
- },
- {
-  "at": "2026-11-23T04:12:17.439Z",
-  "type": "hidden",
-  "id": "gh-devchat-ai-devchat",
-  "title": "devchat"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "qc-hidden",
-  "id": "gh-marketzy-codex-cli-repo-workbench",
-  "title": "codex-cli-repo-workbench"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "qc-hidden",
-  "id": "gh-zavi2997-droid-claude-code-agent-workspace",
-  "title": "claude-code-agent-workspace"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "qc-hidden",
-  "id": "gh-prajwaljeevan50-web-openclaw-personal-workspace",
-  "title": "openclaw-personal-workspace"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "qc-hidden",
-  "id": "gh-wozniakalan323-bit-opencode-project-workbench",
-  "title": "opencode-project-workbench"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-ai4xe-ai4ai",
-  "title": "ai4ai"
  }
 ]
