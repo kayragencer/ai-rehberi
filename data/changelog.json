@@ -1,5 +1,197 @@
 [
  {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-flourish",
+  "title": "Flourish"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-qapilot-go-play-policy-checker",
+  "title": "QApilot Go - Play Policy Checker"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-dreamwork",
+  "title": "Dreamwork"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-claude-mem-cloud-sync",
+  "title": "Claude-Mem Cloud Sync"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-ottante",
+  "title": "Ottante"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-whipdesk",
+  "title": "WhipDesk"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-prates",
+  "title": "Prates"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-openeight",
+  "title": "OpenEight"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-deskmagic",
+  "title": "DeskMagic"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-adanotch",
+  "title": "Adanotch"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-qube",
+  "title": "Qube"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-coderabbit-verify",
+  "title": " CodeRabbit Verify"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-antipode",
+  "title": "Antipode"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-k-stra",
+  "title": "K-Stra"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-ohhai",
+  "title": "Ohhai"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-musicproductionai",
+  "title": "MusicProductionAI"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-peerband",
+  "title": "PeerBand"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-meetfolks",
+  "title": "MeetFolks"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-tendor",
+  "title": "Tendor"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-scribase-mcp-server",
+  "title": "Scribase MCP Server"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-openchat",
+  "title": "OpenChat"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-superframes",
+  "title": "Superframes"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-mime",
+  "title": "Mime"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-hold-em",
+  "title": "Hold'em"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-upsolve-harness-2-0",
+  "title": "Upsolve Harness 2.0"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-ground",
+  "title": "Ground"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-iwantmy-app",
+  "title": "iwantmy.app"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-mindyone",
+  "title": "mindyOne"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-cullman",
+  "title": "Cullman"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "ph-flurra",
+  "title": "Flurra"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "gh-langchain-samples-persistent-agent",
+  "title": "Persistent-Agent"
+ },
+ {
+  "at": "2026-11-26T15:09:45.496Z",
+  "type": "added",
+  "id": "gh-haruhi764-omnicad-skill",
+  "title": "OmniCAD-Skill"
+ },
+ {
   "at": "2026-11-26T13:27:57.413Z",
   "type": "qc-hidden",
   "id": "gh-mbzuai-oryx-loopedwsp",
@@ -406,197 +598,5 @@
   "type": "removed",
   "id": "gh-yashabcyber7-nexadroid",
   "title": "nexadroid"
- },
- {
-  "at": "2026-11-25T04:12:47.766Z",
-  "type": "removed",
-  "id": "gh-chase1225-anythingllm-verona-document-chat",
-  "title": "anythingllm-verona-document-chat"
- },
- {
-  "at": "2026-11-24T22:03:38.908Z",
-  "type": "added",
-  "id": "gh-el4cteo-shrink-anything",
-  "title": "shrink-anything"
- },
- {
-  "at": "2026-11-24T16:18:23.945Z",
-  "type": "restored",
-  "id": "gh-denis2054-context-engineering-for-multi-agent-systems",
-  "title": "Context-Engineering-for-Multi-Agent-Systems"
- },
- {
-  "at": "2026-11-24T16:18:23.945Z",
-  "type": "removed",
-  "id": "gh-juanjuandog-finsight-ai",
-  "title": "FinSight-AI"
- },
- {
-  "at": "2026-11-24T15:08:43.367Z",
-  "type": "removed",
-  "id": "gh-itprogamatikdedsec-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-24T15:08:43.367Z",
-  "type": "removed",
-  "id": "gh-kazim768-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-24T13:22:53.105Z",
-  "type": "qc-hidden",
-  "id": "gh-micro-saas-examples-best-micro-saas-tools",
-  "title": "Best-Micro-SaaS-Tools"
- },
- {
-  "at": "2026-11-24T13:22:53.105Z",
-  "type": "removed",
-  "id": "gh-kazim768-manus-ai",
-  "title": "manus--ai"
- },
- {
-  "at": "2026-11-24T13:22:53.105Z",
-  "type": "removed",
-  "id": "gh-itprogamatikdedsec-ai-manus",
-  "title": "ai--manus"
- },
- {
-  "at": "2026-11-24T13:22:53.105Z",
-  "type": "removed",
-  "id": "gh-agentsdroid-agentsdroid",
-  "title": "agentsdroid"
- },
- {
-  "at": "2026-11-24T12:03:56.160Z",
-  "type": "qc-hidden",
-  "id": "gh-sobranie2406-modureader",
-  "title": "modureader"
- },
- {
-  "at": "2026-11-24T12:03:56.160Z",
-  "type": "removed",
-  "id": "gh-suryacode04-jasper-ai-win",
-  "title": "jasper-ai-win"
- },
- {
-  "at": "2026-11-24T12:03:56.160Z",
-  "type": "removed",
-  "id": "gh-jiefedorov81-runway-ml-pro-win",
-  "title": "runway-ml-pro-win"
- },
- {
-  "at": "2026-11-24T12:03:56.160Z",
-  "type": "removed",
-  "id": "gh-josephyoung28-capcut-seedance-win",
-  "title": "capcut-seedance-win"
- },
- {
-  "at": "2026-11-24T12:03:56.160Z",
-  "type": "removed",
-  "id": "gh-vitalymukherjee92-lightroom-classic-win",
-  "title": "lightroom-classic-win"
- },
- {
-  "at": "2026-11-24T12:03:56.160Z",
-  "type": "removed",
-  "id": "gh-isanders5152-descript-pro-win",
-  "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-24T10:20:11.414Z",
-  "type": "removed",
-  "id": "gh-aroralayla99-capcut-seedance-win",
-  "title": "capcut-seedance-win"
- },
- {
-  "at": "2026-11-24T10:20:11.414Z",
-  "type": "removed",
-  "id": "gh-morriswawan05-elevenlabs-pro-win",
-  "title": "elevenlabs-pro-win"
- },
- {
-  "at": "2026-11-24T10:20:11.414Z",
-  "type": "removed",
-  "id": "gh-guzmanjacqueline93-copy-ai-pro-win",
-  "title": "copy-ai-pro-win"
- },
- {
-  "at": "2026-11-24T10:20:11.414Z",
-  "type": "removed",
-  "id": "gh-cloudcode04-runway-ml-pro-win",
-  "title": "runway-ml-pro-win"
- },
- {
-  "at": "2026-11-24T10:20:11.414Z",
-  "type": "removed",
-  "id": "gh-juanlabs1989-descript-pro-win",
-  "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-24T10:20:11.414Z",
-  "type": "removed",
-  "id": "gh-debugdigital677-descript-pro-win",
-  "title": "descript-pro-win"
- },
- {
-  "at": "2026-11-24T04:05:39.009Z",
-  "type": "hidden",
-  "id": "aw-ai-host",
-  "title": "AI Host"
- },
- {
-  "at": "2026-11-24T04:05:39.009Z",
-  "type": "added",
-  "id": "gh-developing-gamer-agent-sim",
-  "title": "agent-sim"
- },
- {
-  "at": "2026-11-24T02:24:16.453Z",
-  "type": "hidden",
-  "id": "aw-hexowatch",
-  "title": "Hexowatch"
- },
- {
-  "at": "2026-11-24T02:24:16.453Z",
-  "type": "added",
-  "id": "gh-manuelgscom-inside-llm",
-  "title": "inside-llm"
- },
- {
-  "at": "2026-11-24T01:15:46.072Z",
-  "type": "added",
-  "id": "ph-perfstaq",
-  "title": "Perfstaq"
- },
- {
-  "at": "2026-11-24T01:15:46.072Z",
-  "type": "added",
-  "id": "ph-mai-image-2-7",
-  "title": "MAI Image 2.7"
- },
- {
-  "at": "2026-11-24T01:15:46.072Z",
-  "type": "added",
-  "id": "ph-mailpipe",
-  "title": "Mailpipe"
- },
- {
-  "at": "2026-11-24T01:15:46.072Z",
-  "type": "added",
-  "id": "ph-squint",
-  "title": "Squint"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "qc-hidden",
-  "id": "ph-tesla-self-driving-v15",
-  "title": "Tesla Self-Driving V15"
- },
- {
-  "at": "2026-11-23T23:56:22.341Z",
-  "type": "added",
-  "id": "ph-orpheus",
-  "title": "Orpheus"
  }
 ]
