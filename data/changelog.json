@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-26T03:00:22.425Z",
+  "type": "qc-hidden",
+  "id": "gh-gf007-game-rebuild-kit",
+  "title": "game-rebuild-kit"
+ },
+ {
+  "at": "2026-11-26T03:00:22.425Z",
+  "type": "added",
+  "id": "gh-gf007-game-rebuild-kit",
+  "title": "game-rebuild-kit"
+ },
+ {
   "at": "2026-11-25T23:55:22.942Z",
   "type": "hidden",
   "id": "gh-nexus-router-nexus",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "gh-ai4xe-parallax",
   "title": "Parallax"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-tthanh2k6-turbo-browser-mcp",
-  "title": "turbo-browser-mcp"
- },
- {
-  "at": "2026-11-23T01:19:25.802Z",
-  "type": "added",
-  "id": "gh-nestjs-agent-skills",
-  "title": "agent-skills"
  }
 ]
