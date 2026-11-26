@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-26T23:03:34.529Z",
+  "type": "removed",
+  "id": "gh-wlfear-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-26T23:03:34.529Z",
+  "type": "removed",
+  "id": "gh-ragapp-ragapp",
+  "title": "ragapp"
+ },
+ {
+  "at": "2026-11-26T23:03:34.529Z",
+  "type": "removed",
+  "id": "gh-python001-dev-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-26T23:03:34.529Z",
+  "type": "removed",
+  "id": "gh-lloweryfn-rgb-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-26T23:03:34.529Z",
+  "type": "removed",
+  "id": "gh-wlfear-manus-ai",
+  "title": "manus--ai"
+ },
+ {
   "at": "2026-11-26T22:00:27.494Z",
   "type": "removed",
   "id": "gh-stancaedy10-glitch-ai-manus",
@@ -568,35 +598,5 @@
   "type": "removed",
   "id": "gh-cliblacktech-unreal-5-6-win",
   "title": "unreal-5-6-win"
- },
- {
-  "at": "2026-11-25T09:18:01.264Z",
-  "type": "removed",
-  "id": "gh-big-api-server-microsoft-365-win",
-  "title": "microsoft-365-win"
- },
- {
-  "at": "2026-11-25T07:28:21.676Z",
-  "type": "qc-hidden",
-  "id": "gh-voxdance-lab-voxmel",
-  "title": "VoxMel"
- },
- {
-  "at": "2026-11-25T05:18:01.189Z",
-  "type": "removed",
-  "id": "gh-beam-cloud-beta9",
-  "title": "beta9"
- },
- {
-  "at": "2026-11-25T05:18:01.189Z",
-  "type": "removed",
-  "id": "gh-stonelogic2002-cursor-pro-win",
-  "title": "cursor-pro-win"
- },
- {
-  "at": "2026-11-25T05:18:01.189Z",
-  "type": "removed",
-  "id": "gh-guptafedor-cursor-pro-win",
-  "title": "cursor-pro-win"
  }
 ]
