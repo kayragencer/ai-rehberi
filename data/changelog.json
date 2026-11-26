@@ -1,5 +1,23 @@
 [
  {
+  "at": "2026-11-26T22:00:27.494Z",
+  "type": "removed",
+  "id": "gh-stancaedy10-glitch-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-26T22:00:27.494Z",
+  "type": "removed",
+  "id": "gh-stancaedy10-glitch-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-26T22:00:27.494Z",
+  "type": "removed",
+  "id": "gh-python001-dev-manus-ai",
+  "title": "manus--ai"
+ },
+ {
   "at": "2026-11-26T15:09:45.496Z",
   "type": "added",
   "id": "ph-flourish",
@@ -580,23 +598,5 @@
   "type": "removed",
   "id": "gh-guptafedor-cursor-pro-win",
   "title": "cursor-pro-win"
- },
- {
-  "at": "2026-11-25T05:18:01.189Z",
-  "type": "added",
-  "id": "gh-w1ccc-sap-data-mcp",
-  "title": "sap-data-mcp"
- },
- {
-  "at": "2026-11-25T04:12:47.766Z",
-  "type": "removed",
-  "id": "gh-senickimoro-art-pinokio-olvara-ai-workspace",
-  "title": "pinokio-olvara-ai-workspace"
- },
- {
-  "at": "2026-11-25T04:12:47.766Z",
-  "type": "removed",
-  "id": "gh-yashabcyber7-nexadroid",
-  "title": "nexadroid"
  }
 ]
