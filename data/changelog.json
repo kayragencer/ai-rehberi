@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-27T20:05:20.361Z",
+  "type": "added",
+  "id": "gh-cybedefend-cybedefend",
+  "title": "cybedefend"
+ },
+ {
   "at": "2026-11-27T09:15:44.235Z",
   "type": "qc-hidden",
   "id": "gh-zyphra-zonos3-mini",
@@ -592,11 +598,5 @@
   "type": "removed",
   "id": "gh-epicgiantite13205-ai-manus",
   "title": "ai--manus"
- },
- {
-  "at": "2026-11-25T12:08:56.025Z",
-  "type": "added",
-  "id": "gh-matheusmongarde-garimpo",
-  "title": "garimpo"
  }
 ]
