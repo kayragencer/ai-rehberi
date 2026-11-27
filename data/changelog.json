@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-27T22:01:32.914Z",
+  "type": "restored",
+  "id": "gh-taylorsatula-mira",
+  "title": "mira"
+ },
+ {
+  "at": "2026-11-27T22:01:32.914Z",
+  "type": "removed",
+  "id": "gh-leeroo-ai-mergoo",
+  "title": "mergoo"
+ },
+ {
   "at": "2026-11-27T20:05:20.361Z",
   "type": "added",
   "id": "gh-cybedefend-cybedefend",
@@ -586,17 +598,5 @@
   "type": "qc-hidden",
   "id": "gh-liuharold98-chatgpt-desktop",
   "title": "chatgpt-desktop"
- },
- {
-  "at": "2026-11-25T18:58:39.759Z",
-  "type": "added",
-  "id": "gh-liuharold98-chatgpt-desktop",
-  "title": "chatgpt-desktop"
- },
- {
-  "at": "2026-11-25T12:08:56.025Z",
-  "type": "removed",
-  "id": "gh-epicgiantite13205-ai-manus",
-  "title": "ai--manus"
  }
 ]
