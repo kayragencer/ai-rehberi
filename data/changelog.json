@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-27T01:26:27.656Z",
+  "type": "added",
+  "id": "gh-mgolcu00-freeimage-local",
+  "title": "freeimage-local"
+ },
+ {
   "at": "2026-11-27T00:01:49.386Z",
   "type": "removed",
   "id": "gh-prathmeshya-manus-ai",
@@ -592,11 +598,5 @@
   "type": "removed",
   "id": "gh-wozniakalan323-bit-opencode-project-workbench",
   "title": "opencode-project-workbench"
- },
- {
-  "at": "2026-11-25T11:03:55.202Z",
-  "type": "removed",
-  "id": "gh-marketzy-codex-cli-repo-workbench",
-  "title": "codex-cli-repo-workbench"
  }
 ]
