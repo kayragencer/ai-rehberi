@@ -1,5 +1,35 @@
 [
  {
+  "at": "2026-11-27T00:01:49.386Z",
+  "type": "removed",
+  "id": "gh-prathmeshya-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-27T00:01:49.386Z",
+  "type": "removed",
+  "id": "gh-lloweryfn-rgb-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-27T00:01:49.386Z",
+  "type": "removed",
+  "id": "gh-prathmeshya-ai-manus",
+  "title": "ai--manus"
+ },
+ {
+  "at": "2026-11-27T00:01:49.386Z",
+  "type": "removed",
+  "id": "gh-sandypandymandy-manus-ai",
+  "title": "manus--ai"
+ },
+ {
+  "at": "2026-11-27T00:01:49.386Z",
+  "type": "removed",
+  "id": "gh-sandypandymandy-ai-manus",
+  "title": "ai--manus"
+ },
+ {
   "at": "2026-11-26T23:03:34.529Z",
   "type": "removed",
   "id": "gh-wlfear-ai-manus",
@@ -568,35 +598,5 @@
   "type": "removed",
   "id": "gh-marketzy-codex-cli-repo-workbench",
   "title": "codex-cli-repo-workbench"
- },
- {
-  "at": "2026-11-25T11:03:55.202Z",
-  "type": "removed",
-  "id": "gh-han938-open-webui-private-ai-desk",
-  "title": "open-webui-private-ai-desk"
- },
- {
-  "at": "2026-11-25T11:03:55.202Z",
-  "type": "removed",
-  "id": "gh-johnstiles-ai-manus",
-  "title": "ai-manus"
- },
- {
-  "at": "2026-11-25T11:03:55.202Z",
-  "type": "removed",
-  "id": "gh-monirchemrubd-ai-manus",
-  "title": "ai-manus"
- },
- {
-  "at": "2026-11-25T09:18:01.264Z",
-  "type": "removed",
-  "id": "gh-igwei-topaz-video-ai-win",
-  "title": "topaz-video-ai-win"
- },
- {
-  "at": "2026-11-25T09:18:01.264Z",
-  "type": "removed",
-  "id": "gh-cliblacktech-unreal-5-6-win",
-  "title": "unreal-5-6-win"
  }
 ]
