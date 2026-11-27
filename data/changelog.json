@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-27T03:02:29.739Z",
+  "type": "added",
+  "id": "gh-duzhenxun-pop-agent",
+  "title": "pop-agent"
+ },
+ {
   "at": "2026-11-27T01:26:27.656Z",
   "type": "added",
   "id": "gh-mgolcu00-freeimage-local",
@@ -592,11 +598,5 @@
   "type": "removed",
   "id": "gh-prajwaljeevan50-web-openclaw-personal-workspace",
   "title": "openclaw-personal-workspace"
- },
- {
-  "at": "2026-11-25T11:03:55.202Z",
-  "type": "removed",
-  "id": "gh-wozniakalan323-bit-opencode-project-workbench",
-  "title": "opencode-project-workbench"
  }
 ]
