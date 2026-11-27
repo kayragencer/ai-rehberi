@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-27T23:02:11.526Z",
+  "type": "removed",
+  "id": "gh-aipentest-cyberstrikeai",
+  "title": "CyberStrikeAI"
+ },
+ {
   "at": "2026-11-27T22:01:32.914Z",
   "type": "restored",
   "id": "gh-taylorsatula-mira",
@@ -592,11 +598,5 @@
   "type": "hidden",
   "id": "gh-nexus-router-nexus",
   "title": "nexus"
- },
- {
-  "at": "2026-11-25T18:58:39.759Z",
-  "type": "qc-hidden",
-  "id": "gh-liuharold98-chatgpt-desktop",
-  "title": "chatgpt-desktop"
  }
 ]
