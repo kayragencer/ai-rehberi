@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-28T02:58:19.220Z",
+  "type": "removed",
+  "id": "gh-liuharold98-chatgpt-desktop",
+  "title": "chatgpt-desktop"
+ },
+ {
   "at": "2026-11-27T23:57:05.294Z",
   "type": "added",
   "id": "gh-samuelz12-research-sources",
@@ -590,12 +596,6 @@
  {
   "at": "2026-11-26T03:00:22.425Z",
   "type": "qc-hidden",
-  "id": "gh-gf007-game-rebuild-kit",
-  "title": "game-rebuild-kit"
- },
- {
-  "at": "2026-11-26T03:00:22.425Z",
-  "type": "added",
   "id": "gh-gf007-game-rebuild-kit",
   "title": "game-rebuild-kit"
  }
