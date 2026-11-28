@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-28T10:55:49.853Z",
+  "type": "restored",
+  "id": "aw-code-to-flow",
+  "title": "Code to Flow"
+ },
+ {
+  "at": "2026-11-28T10:55:49.853Z",
+  "type": "added",
+  "id": "aw-hyperframes",
+  "title": "HyperFrames"
+ },
+ {
   "at": "2026-11-28T07:20:49.785Z",
   "type": "qc-hidden",
   "id": "gh-mahmoudaameralkilany-commits-nano-banana-pro-api",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "ph-valley",
   "title": "Valley"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-agenda-hero-magic-labs",
-  "title": "Agenda Hero Magic Labs"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-tday-com",
-  "title": "tday.com"
  }
 ]
