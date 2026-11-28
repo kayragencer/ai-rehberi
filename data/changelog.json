@@ -1,5 +1,77 @@
 [
  {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-snibl",
+  "title": "snibl"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-graypass",
+  "title": "GrayPass"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-superrelay",
+  "title": "Superrelay"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-dex-telemetry",
+  "title": "Dex Telemetry"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-pushary-calls",
+  "title": "Pushary Calls"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-retainiq",
+  "title": "RetainIQ"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-periscope",
+  "title": "Periscope"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-contral",
+  "title": "Contral"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-overads-io",
+  "title": "overads.io"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-depost-ai",
+  "title": "Depost AI"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-qa-tech-mcp",
+  "title": "QA.tech MCP"
+ },
+ {
+  "at": "2026-11-28T15:53:27.047Z",
+  "type": "added",
+  "id": "ph-wizstar-r1",
+  "title": "Wizstar R1"
+ },
+ {
   "at": "2026-11-28T13:05:10.475Z",
   "type": "added",
   "id": "gh-enwove-flyx",
@@ -526,77 +598,5 @@
   "type": "added",
   "id": "ph-falcon-by-vybe",
   "title": "Falcon by Vybe"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-vibecode-surf",
-  "title": "VibeCode.surf"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-astor",
-  "title": "Astor"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-magi-2",
-  "title": "MAGI-2"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-3way-social-mcp",
-  "title": "3way.Social MCP"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-fleetify",
-  "title": "Fleetify"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-pax-by-pydantic",
-  "title": "Pax by Pydantic"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-pinned",
-  "title": "Pinned"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-omi-x-2-0",
-  "title": "Omi X 2.0"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-doola-mcp",
-  "title": "doola MCP"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-hai",
-  "title": "Hai"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "gh-mbzuai-oryx-loopedwsp",
-  "title": "LoopedWSP"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-koed",
-  "title": "Koed"
  }
 ]
