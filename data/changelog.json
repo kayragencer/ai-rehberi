@@ -1,5 +1,17 @@
 [
  {
+  "at": "2026-11-28T06:05:36.612Z",
+  "type": "qc-hidden",
+  "id": "aw-whiskey-ai",
+  "title": "Whiskey AI"
+ },
+ {
+  "at": "2026-11-28T06:05:36.612Z",
+  "type": "added",
+  "id": "aw-whiskey-ai",
+  "title": "Whiskey AI"
+ },
+ {
   "at": "2026-11-28T05:07:25.301Z",
   "type": "added",
   "id": "gh-clipy-recorder-clipy",
@@ -586,17 +598,5 @@
   "type": "added",
   "id": "ph-airbot",
   "title": "Airbot"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-myclaw-3-0",
-  "title": "MyClaw 3.0"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "gh-nexu-io-opengame",
-  "title": "opengame"
  }
 ]
