@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-28T05:07:25.301Z",
+  "type": "added",
+  "id": "gh-clipy-recorder-clipy",
+  "title": "clipy"
+ },
+ {
   "at": "2026-11-28T04:01:32.862Z",
   "type": "removed",
   "id": "gh-mackzyfiston-cmd-html-ppt-generator",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-nexu-io-opengame",
   "title": "opengame"
- },
- {
-  "at": "2026-11-26T04:08:22.810Z",
-  "type": "removed",
-  "id": "gh-bookwjitchieni1986-blender-ai-mcp-addon",
-  "title": "blender-ai-mcp-addon"
  }
 ]
