@@ -1,5 +1,125 @@
 [
  {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "qc-hidden",
+  "id": "gh-jakeschincariol-chatgpt-youtube-agent-skill",
+  "title": "chatgpt-youtube-agent-skill"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "qc-hidden",
+  "id": "ph-cognition-swe-2-1",
+  "title": "Cognition SWE-2.1"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "hidden",
+  "id": "aw-photorestoration",
+  "title": "Photorestoration"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "aw-magician",
+  "title": "Magician"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "aw-autoportrait",
+  "title": "Autoportrait"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-deardarling",
+  "title": "DearDarling"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-spark-ai",
+  "title": "Spark AI"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-cognition-swe-2-1",
+  "title": "Cognition SWE-2.1"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-watch-reader",
+  "title": "Watch Reader"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-remora",
+  "title": "Remora"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-microsoft-decision-1-1",
+  "title": "Microsoft-Decision-1.1"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-ploid",
+  "title": "Ploid"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-airoom",
+  "title": "airoom"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-monton",
+  "title": "Monton"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-gpyou",
+  "title": "gpyou"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-onset",
+  "title": "Onset"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-nova",
+  "title": "NOVA"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-slay",
+  "title": "slay"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-woomool",
+  "title": "Woomool"
+ },
+ {
+  "at": "2026-11-28T16:55:30.648Z",
+  "type": "added",
+  "id": "ph-clary",
+  "title": "Clary"
+ },
+ {
   "at": "2026-11-28T15:53:27.047Z",
   "type": "added",
   "id": "ph-snibl",
@@ -478,125 +598,5 @@
   "type": "added",
   "id": "ph-flurra",
   "title": "Flurra"
- },
- {
-  "at": "2026-11-26T15:09:45.496Z",
-  "type": "added",
-  "id": "gh-langchain-samples-persistent-agent",
-  "title": "Persistent-Agent"
- },
- {
-  "at": "2026-11-26T15:09:45.496Z",
-  "type": "added",
-  "id": "gh-haruhi764-omnicad-skill",
-  "title": "OmniCAD-Skill"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "qc-hidden",
-  "id": "gh-mbzuai-oryx-loopedwsp",
-  "title": "LoopedWSP"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "qc-hidden",
-  "id": "ph-continual-arc",
-  "title": "Continual-ARC"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "hidden",
-  "id": "aw-digital-dogs",
-  "title": "Digital Dogs"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-doodle",
-  "title": "Doodle"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-deskfleet",
-  "title": "DeskFleet"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-partgenie-2-0",
-  "title": "PartGenie 2.0"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-statefold",
-  "title": "Statefold"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-almma-s-pii-guard",
-  "title": "Almma's PII Guard"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-kagi-mail",
-  "title": "Kagi Mail"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-steerlatch",
-  "title": "SteerLatch"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-tendeck",
-  "title": "Tendeck"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-finseo",
-  "title": "Finseo"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-continual-arc",
-  "title": "Continual-ARC"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-memoryworks",
-  "title": "MemoryWorks"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-heroui-pro-1-0",
-  "title": "HeroUI Pro 1.0"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-eluna",
-  "title": "eluna"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-bifura",
-  "title": "Bifura"
- },
- {
-  "at": "2026-11-26T13:27:57.413Z",
-  "type": "added",
-  "id": "ph-falcon-by-vybe",
-  "title": "Falcon by Vybe"
  }
 ]
