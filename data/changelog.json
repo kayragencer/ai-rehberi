@@ -1,5 +1,53 @@
 [
  {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "qc-hidden",
+  "id": "gh-mahmoudaameralkilany-commits-nano-banana-pro-api",
+  "title": "nano-banana-pro-api"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "qc-hidden",
+  "id": "gh-ndarrr07-pro-llm-api-hub",
+  "title": "pro-llm-api-hub"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "qc-hidden",
+  "id": "gh-titisseptian-ss-omniroute-explorer",
+  "title": "omniroute-explorer"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "hidden",
+  "id": "aw-ispeech",
+  "title": "iSpeech"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "added",
+  "id": "gh-mahmoudaameralkilany-commits-nano-banana-pro-api",
+  "title": "nano-banana-pro-api"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "added",
+  "id": "gh-mouhaa221-supoclip-gateway-whisper",
+  "title": "supoclip-gateway-whisper"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "added",
+  "id": "gh-ndarrr07-pro-llm-api-hub",
+  "title": "pro-llm-api-hub"
+ },
+ {
+  "at": "2026-11-28T07:20:49.785Z",
+  "type": "added",
+  "id": "gh-titisseptian-ss-omniroute-explorer",
+  "title": "omniroute-explorer"
+ },
+ {
   "at": "2026-11-28T06:05:36.612Z",
   "type": "qc-hidden",
   "id": "aw-whiskey-ai",
@@ -550,53 +598,5 @@
   "type": "added",
   "id": "ph-tday-com",
   "title": "tday.com"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-snag-by-parallel",
-  "title": "Snag by Parallel"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-frwrd-to",
-  "title": "frwrd.to"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-claude-ship",
-  "title": "Claude Ship"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-clam-ai",
-  "title": "Clam AI"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-viktor-code",
-  "title": "Viktor Code"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-hiring-right-now",
-  "title": "Hiring Right Now"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-granular-build",
-  "title": "Granular.Build"
- },
- {
-  "at": "2026-11-26T12:07:46.775Z",
-  "type": "added",
-  "id": "ph-airbot",
-  "title": "Airbot"
  }
 ]
