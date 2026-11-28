@@ -1,5 +1,11 @@
 [
  {
+  "at": "2026-11-27T23:57:05.294Z",
+  "type": "added",
+  "id": "gh-samuelz12-research-sources",
+  "title": "research-sources"
+ },
+ {
   "at": "2026-11-27T23:02:11.526Z",
   "type": "removed",
   "id": "gh-aipentest-cyberstrikeai",
@@ -592,11 +598,5 @@
   "type": "added",
   "id": "gh-gf007-game-rebuild-kit",
   "title": "game-rebuild-kit"
- },
- {
-  "at": "2026-11-25T23:55:22.942Z",
-  "type": "hidden",
-  "id": "gh-nexus-router-nexus",
-  "title": "nexus"
  }
 ]
